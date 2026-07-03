@@ -337,7 +337,7 @@ Do not include any other conversational text or wrap the response in markdown co
 
     } catch (err) {
         console.error("[-] AI Matchmaker error:", err);
-        return res.status(500).json({ error: "An internal error occurred during AI matching. Please try again later." });
+        return res.status(500).json({ error: "An internal error occurred during AI matching. Please try again later.", details: err.message || err.toString() });
     }
 });
 
