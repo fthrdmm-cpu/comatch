@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Database state
     let dbData = [];
     
+    // Active API Server URL (points to Render when live on Vercel)
+    const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        ? '' 
+        : 'https://comatch-33as.onrender.com';
+    
     // English Fallback database (in case brands.js is not loaded yet)
     const fallbackData = [
         {
@@ -258,7 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Check if server API is active
         if (window.location.protocol.startsWith('http')) {
             try {
-                const response = await fetch('/api/submit-brand', {
+                const response = await fetch(`${API_BASE_URL}/api/submit-brand`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -472,7 +477,7 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
         try {
             // Check if we are running in an HTTP/HTTPS context rather than file:///
             if (window.location.protocol.startsWith('http')) {
-                const response = await fetch('/api/brands');
+                const response = await fetch(`${API_BASE_URL}/api/brands`);
                 if (response.ok) {
                     const data = await response.json();
                     if (Array.isArray(data) && data.length > 0) {
@@ -838,7 +843,7 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                 // Dual-Mode Matchmaking (Online API vs Client-Side Direct AI)
                 if (window.location.protocol.startsWith('http')) {
                     // Online Mode: Fetch from Express backend server
-                    const res = await fetch('/api/match', {
+                    const res = await fetch(`${API_BASE_URL}/api/match`, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ description: desc })
