@@ -5,6 +5,8 @@
     { "src": "app.js", "use": "@vercel/static" },
     { "src": "brands.js", "use": "@vercel/static" },
     { "src": "logo.png", "use": "@vercel/static" },
+    { "src": "robots.txt", "use": "@vercel/static" },
+    { "src": "sitemap.xml", "use": "@vercel/static" },
     { "src": "assets/**", "use": "@vercel/static" }
   ]
 }

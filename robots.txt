@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://comatch.org/sitemap.xml
