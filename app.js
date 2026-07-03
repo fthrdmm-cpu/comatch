@@ -472,37 +472,18 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
         }
     }
 
-    // Fetch Brands from Server API (Dual-Mode loading)
+    // Fetch Brands from Server API (Dual-Mode loading optimized for instant load)
     async function loadBrands() {
-        try {
-            // Check if we are running in an HTTP/HTTPS context rather than file:///
-            if (window.location.protocol.startsWith('http')) {
-                const response = await fetch(`${API_BASE_URL}/api/brands`);
-                if (response.ok) {
-                    const data = await response.json();
-                    if (Array.isArray(data) && data.length > 0) {
-                        dbData = data;
-                        console.log(`[+] Loaded ${dbData.length} brands dynamically from Express API`);
-                        calculateStats();
-                        renderBrands();
-                        return;
-                    }
-                }
-            }
-        } catch (e) {
-            console.warn("[-] Express API server offline or unreachable. Falling back to local script memory.");
-        }
-
-        // Fallback to static brands.js file
+        // 1. Instantly load static memory so the page renders under 50ms!
         if (typeof BRANDS_DATA !== 'undefined' && Array.isArray(BRANDS_DATA)) {
             dbData = [...BRANDS_DATA];
-            console.log(`[+] Loaded ${dbData.length} brands from local static memory`);
+            console.log(`[+] Loaded ${dbData.length} brands from local static memory (instant)`);
         } else {
             console.warn("[-] brands.js not loaded. Using English fallback data.");
             dbData = [...fallbackData];
         }
 
-        // Load custom offline brands from localStorage
+        // Load custom offline brands from localStorage if any
         try {
             const customBrands = JSON.parse(localStorage.getItem("custom_brands") || "[]");
             if (Array.isArray(customBrands) && customBrands.length > 0) {
@@ -513,8 +494,29 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
             console.error("[-] Failed to load custom brands from localStorage:", err);
         }
 
+        // Render the UI instantly with the static/cached data
         calculateStats();
         renderBrands();
+
+        // 2. Fetch fresh database in the background without blocking the UI
+        if (window.location.protocol.startsWith('http')) {
+            console.log("[*] Fetching latest brands from API in the background...");
+            fetch(`${API_BASE_URL}/api/brands`)
+                .then(response => {
+                    if (response.ok) return response.json();
+                })
+                .then(data => {
+                    if (Array.isArray(data) && data.length > 0) {
+                        dbData = data;
+                        console.log(`[+] Updated ${dbData.length} brands dynamically from live API`);
+                        calculateStats();
+                        renderBrands();
+                    }
+                })
+                .catch(e => {
+                    console.warn("[-] Live API server is waking up or offline. Using cached/static data for now.");
+                });
+        }
     }
 
     // Helper functions
