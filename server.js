@@ -23,6 +23,10 @@ app.use(express.static(__dirname));
 const databasePath = path.join(__dirname, 'database.json');
 let dbData = [];
 
+// Status variables for debugging
+let dbError = null;
+let dbInitMode = "Local File System";
+
 // Initialize Supabase Client if env is defined
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY;
@@ -31,6 +35,7 @@ let supabase = null;
 if (supabaseUrl && supabaseKey) {
     const { createClient } = require('@supabase/supabase-js');
     supabase = createClient(supabaseUrl, supabaseKey);
+    dbInitMode = "Supabase Cloud (Attempting)";
     console.log("🔌 Supabase Cloud Database integration configured.");
 }
 
@@ -46,6 +51,7 @@ async function loadDatabase() {
             
             if (Array.isArray(data) && data.length > 0) {
                 dbData = data;
+                dbInitMode = "Supabase Cloud";
                 console.log(`[+] Loaded ${dbData.length} brands dynamically from Supabase.`);
             } else {
                 console.log("[-] Supabase table 'brands' is empty. Seeding with local database.json...");
@@ -62,6 +68,8 @@ async function loadDatabase() {
                 console.log(`[+] Seeded ${dbData.length} brands successfully to Supabase.`);
             }
         } catch (err) {
+            dbError = err.message || err.toString();
+            dbInitMode = "Local File System (Supabase Error)";
             console.error("[-] Supabase database load/seed error:", err.message);
             console.log("[*] Falling back to local file database.");
             loadLocalDatabase();
@@ -403,6 +411,17 @@ Do not include any other conversational text or wrap the response in markdown co
         console.error("[-] AI Matchmaker error:", err);
         return res.status(500).json({ error: "An internal error occurred during AI matching. Please try again later.", details: err.message || err.toString() });
     }
+});
+// Database Status Debug Route
+app.get('/api/db-status', (req, res) => {
+    res.json({
+        mode: dbInitMode,
+        supabaseConnected: supabase !== null,
+        supabaseUrlConfigured: !!supabaseUrl,
+        supabaseKeyConfigured: !!supabaseKey,
+        error: dbError,
+        brandsCount: dbData.length
+    });
 });
 
 // Fallback: serve index.html for undefined routes
