@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoMatch — Free B2B Partnership & Sponsorship Directory</title>
+    
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <img src="assets/logo.png" alt="CoMatch Logo" style="width: 38px; height: 38px; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);">
+                <h2>Co<span>Match</span></h2>
+            </div>
+            
+            <!-- Quick Stats -->
+            <div class="sidebar-section">
+                <h3>STATISTICS</h3>
+                <div class="stats-grid" style="grid-template-columns: 1fr;">
+                    <div class="stat-card" style="padding: 12px; text-align: center;">
+                        <span class="stat-value" id="stat-total-opportunities" style="font-size: 1.6rem; font-weight: 800; color: var(--color-primary); display: block; margin-bottom: 2px;">0</span>
+                        <span class="stat-label" style="font-size: 0.72rem; letter-spacing: 0.05em; color: var(--text-muted); text-transform: uppercase;">Active B2B Partners</span>
+                    </div>
+                </div>
+                <div style="margin-top: 12px;">
+                    <button class="btn" id="btn-sidebar-matchmaker" style="width: 100%; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); box-shadow: 0 4px 15px var(--color-primary-glow); justify-content: center; gap: 8px; font-weight: bold; font-size: 0.85rem; padding: 12px; border-radius: var(--border-radius-sm); border: none; color: #fff; cursor: pointer;">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Find Your Partner (AI)
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Filters -->
+            <div class="sidebar-section">
+                <h3>CATEGORY (NICHE)</h3>
+                <div class="filter-group" id="filter-category">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="Gaming">Gaming</button>
+                    <button class="filter-btn" data-category="Esports">Esports</button>
+                    <button class="filter-btn" data-category="Tech">Technology</button>
+                    <button class="filter-btn" data-category="Software/SaaS">Software/SaaS</button>
+                    <button class="filter-btn" data-category="Apparel">Apparel & Merch</button>
+                    <button class="filter-btn" data-category="Automotive">Automotive</button>
+                    <button class="filter-btn" data-category="FinTech">FinTech / Finance</button>
+                    <button class="filter-btn" data-category="Beverages">Beverages & Food</button>
+                    <button class="filter-btn" data-category="Travel">Travel & Flights</button>
+                    <button class="filter-btn" data-category="Hardware">Hardware / Gear</button>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>PARTNERSHIP TYPE</h3>
+                <div class="filter-group" id="filter-type">
+                    <button class="filter-btn active" data-sponsortype="all">All</button>
+                    <button class="filter-btn" data-sponsortype="Product Gifting">Barter / Product</button>
+                    <button class="filter-btn" data-sponsortype="Affiliate">Affiliate / Referral</button>
+                    <button class="filter-btn" data-sponsortype="Flat Fee">Sponsorship / Paid</button>
+                    <button class="filter-btn" data-sponsortype="B2B Partnership">B2B Collab</button>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>COLLABORATION SCALE</h3>
+                <div class="filter-group" id="filter-size">
+                    <button class="filter-btn active" data-size="all">All Scale</button>
+                    <button class="filter-btn" data-size="Micro">Startup / Mid-Scale</button>
+                    <button class="filter-btn" data-size="Macro">Enterprise / Tier-1</button>
+                </div>
+            </div>
+
+            <!-- Submit Brand Action -->
+            <div class="sidebar-footer">
+                <button class="btn btn-submit-brand" id="btn-sidebar-submit" style="margin-bottom: 8px;">
+                    <i class="fa-solid fa-circle-plus"></i> Submit a Partner
+                </button>
+                <button class="btn btn-action-secondary" id="btn-sidebar-guide" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 600; padding: 12px; border-radius: var(--border-radius-sm); border: 1px solid var(--border-color); background-color: var(--bg-card); color: var(--text-main); cursor: pointer; transition: all 0.2s ease;">
+                    <i class="fa-solid fa-circle-question" style="color: var(--color-primary);"></i> Partnership Guide
+                </button>
+                <button class="btn btn-action-secondary" id="btn-sidebar-about" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; font-weight: 600; padding: 12px; border-radius: var(--border-radius-sm); border: 1px solid var(--border-color); background-color: var(--bg-card); color: var(--text-main); cursor: pointer; transition: all 0.2s ease; margin-top: 8px;">
+                    <i class="fa-solid fa-circle-info" style="color: var(--color-accent);"></i> About CoMatch
+                </button>
+                <div class="footer-copyright" style="margin-top: 12px;">
+                    © 2026 CoMatch. Built for B2B Partnerships.
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="search-wrapper">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search brands, partners or publishers (e.g. Razer, Shopify, Ubisoft...)" autocomplete="off">
+                </div>
+                
+                <div class="header-actions">
+                    <div class="type-filter-pills">
+                        <button class="pill active" data-type="all">All Listings</button>
+                        <button class="pill" data-type="brand"><i class="fa-solid fa-building"></i> Brands</button>
+                        <button class="pill" data-type="team"><i class="fa-solid fa-handshake"></i> Partnerships</button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-body">
+                <!-- Welcome Banner -->
+                <div class="promo-banner" id="welcome-banner">
+                    <div class="promo-text">
+                        <h4>CoMatch is 100% Free & Open-Source! ⚡</h4>
+                        <p>No paywalls, no subscriptions. Explore B2B requirements, get direct partnership contacts, and copy pitching templates to jumpstart your brand collaborations. Help us grow by submitting new listings!</p>
+                    </div>
+                    <button class="btn btn-action-primary" id="btn-banner-submit" style="background-color: var(--color-premium); box-shadow: 0 4px 15px var(--color-premium-glow);">
+                        <i class="fa-solid fa-circle-plus"></i> Submit a Partner
+                    </button>
+                </div>
+
+                <!-- Grid header -->
+                <div class="results-header">
+                    <span class="results-count" id="results-count">Loading opportunities...</span>
+                </div>
+
+                <!-- Brand Grid -->
+                <div class="brand-grid" id="brand-grid">
+                    <!-- Cards will be injected dynamically -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Detail Drawer / Modal -->
+    <div class="modal-overlay" id="detail-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="modal-body" id="modal-body-content">
+                <!-- Dynamic detail content injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Submit Brand Modal -->
+    <div class="modal-overlay" id="submit-modal">
+        <div class="modal-content" style="width: 900px; max-width: 95%; justify-content: center;">
+            <button class="modal-close" id="submit-modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="modal-body">
+                <div style="text-align: center; margin-bottom: 24px;">
+                    <i class="fa-solid fa-paper-plane" style="font-size: 2rem; color: var(--color-primary); margin-bottom: 8px;"></i>
+                    <h2>Submit a B2B Partnership Listing</h2>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">Share a brand, software service, or publisher program to connect businesses.</p>
+                </div>
+
+                <div class="modal-grid-container" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 28px; align-items: start;">
+                    <!-- Left Column: Form -->
+                    <form id="submit-brand-form" style="display: flex; flex-direction: column; gap: 16px; text-align: left;">
+                        <div>
+                            <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">BRAND OR PARTNER NAME *</label>
+                            <input type="text" id="form-name" required placeholder="e.g. Shopify, Figma, Vercel" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem;">
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                            <div>
+                                <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">ENTITY TYPE *</label>
+                                <select id="form-type" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem; outline: none; cursor: pointer;">
+                                    <option value="brand">Brand / SaaS</option>
+                                    <option value="team">Partnership / Program</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">CATEGORY *</label>
+                                <select id="form-category" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem; outline: none; cursor: pointer;">
+                                    <option value="Gaming">Gaming</option>
+                                    <option value="Esports">Esports</option>
+                                    <option value="Tech">Technology</option>
+                                    <option value="Software/SaaS">Software/SaaS</option>
+                                    <option value="Apparel">Apparel & Merch</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                            <div>
+                                <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">PARTNERSHIP TYPE *</label>
+                                <select id="form-sponsor-type" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem; outline: none; cursor: pointer;">
+                                    <option value="Product Gifting">Barter / Product Support</option>
+                                    <option value="Affiliate">Affiliate / Referral</option>
+                                    <option value="Flat Fee">Sponsorship / Paid</option>
+                                    <option value="B2B Partnership">B2B Collab / Cross-Promo</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">COLLABORATION SCALE *</label>
+                                <select id="form-creator-size" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem; outline: none; cursor: pointer;">
+                                    <option value="Any Size">Any Scale / Startup</option>
+                                    <option value="Micro (10k-50k)">Startup / Mid-Scale</option>
+                                    <option value="Macro (50k+)">Enterprise / Tier-1</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">CONTACT EMAIL</label>
+                            <input type="email" id="form-email" placeholder="e.g. partnerships@brand.com" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem;">
+                        </div>
+
+                        <div>
+                            <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">WEBSITE / FORM URL *</label>
+                            <input type="url" id="form-url" required placeholder="e.g. https://brand.com/partners" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem;">
+                        </div>
+
+                        <div>
+                            <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">LOGO IMAGE URL (OPTIONAL)</label>
+                            <input type="url" id="form-logo" placeholder="e.g. https://brand.com/logo.png" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem;">
+                        </div>
+
+                        <div>
+                            <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">KEY REQUIREMENTS / DESCRIPTION *</label>
+                            <textarea id="form-reqs" required rows="2" placeholder="e.g. Open to co-marketing campaigns, event sponsorships, or hosting collaborative workshops..." style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem; resize: none; font-family: inherit;"></textarea>
+                        </div>
+
+                        <div id="api-key-container" style="border-top: 1px dashed var(--border-color); padding-top: 16px; margin-top: 4px;">
+                            <label style="font-size: 0.75rem; color: var(--color-accent); display: block; margin-bottom: 6px; font-weight: bold; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-key"></i> GEMINI API KEY (FOR OFFLINE AI EVALUATION)</label>
+                            <input type="password" id="form-api-key" placeholder="Paste your Gemini API Key here to run AI moderation" style="width: 100%; background: rgba(16, 185, 129, 0.05); border: 1px solid var(--color-accent); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem; outline: none;">
+                            <span style="font-size: 0.65rem; color: var(--text-muted); display: block; margin-top: 4px; line-height: 1.3;">Used to run the AI Auto-Moderator and NSFW checker directly in your browser. Saved locally.</span>
+                        </div>
+
+                        <button type="submit" class="btn" style="width: 100%; justify-content: center; padding: 12px; margin-top: 8px;">
+                            <i class="fa-solid fa-share-from-square"></i> Submit Listing
+                        </button>
+                    </form>
+
+                    <!-- Right Column: Live Card Preview -->
+                    <div class="preview-panel" style="background: rgba(255,255,255,0.02); border: 1px dashed var(--border-color); border-radius: var(--border-radius-md); padding: 20px; display: flex; flex-direction: column; gap: 12px; position: sticky; top: 10px; align-self: start; width: 100%;">
+                        <h3 style="font-size: 0.75rem; color: var(--color-accent); font-weight: bold; margin: 0; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 6px;"><i class="fa-solid fa-eye"></i> Live Listing Preview</h3>
+                        <p style="font-size: 0.68rem; color: var(--text-muted); margin: 0 0 8px 0; line-height: 1.2;">This is exactly how your listing card will look in the main directory grid.</p>
+                        
+                        <div id="live-card-preview" class="brand-card" style="margin: 0; pointer-events: none; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 1px solid var(--border-color); background: var(--bg-card);">
+                            <!-- Dynamic preview content will be injected by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sponsorship Guide Modal -->
+    <div class="modal-overlay" id="guide-modal">
+        <div class="modal-content" style="width: 580px; max-height: 85vh;">
+            <button class="modal-close" id="guide-modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="modal-body" style="padding-top: 8px;">
+                <div style="text-align: center; margin-bottom: 24px; border-bottom: 1px solid var(--border-color); padding-bottom: 16px;">
+                    <i class="fa-solid fa-circle-question" style="font-size: 2.2rem; color: var(--color-primary); margin-bottom: 8px;"></i>
+                    <h2 style="font-size: 1.5rem; font-weight: 800; color: #fff;">Creator Sponsorship Guide</h2>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Learn how to pitch, prepare media kits, and secure brand deals successfully.</p>
+                </div>
+                
+                <div class="guide-scrollable-content" style="max-height: 55vh; overflow-y: auto; padding-right: 8px; text-align: left;">
+                    
+                    <div class="guide-section" style="margin-bottom: 20px;">
+                        <h4 style="display: flex; align-items: center; gap: 8px; color: var(--color-primary); margin-bottom: 8px; font-weight: 700; font-size: 1rem;"><i class="fa-solid fa-1"></i> 1. Prepare Your Media Kit</h4>
+                        <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">Before contacting any brand, create a clean one-page PDF summarizing your channel's metrics. Include:
+                            <ul style="margin-left: 20px; margin-top: 6px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+                                <li>Channel links & active platform statistics (average views, subscriber count).</li>
+                                <li>Audience demographics (top countries, age groups).</li>
+                                <li>Past examples of sponsored integrations or reviews (if any).</li>
+                                <li>Direct contact email and professional socials.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="guide-section" style="margin-bottom: 20px;">
+                        <h4 style="display: flex; align-items: center; gap: 8px; color: var(--color-primary); margin-bottom: 8px; font-weight: 700; font-size: 1rem;"><i class="fa-solid fa-2"></i> 2. Craft a Professional Pitch</h4>
+                        <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">Do not spam brands with generic templates.
+                            <ul style="margin-left: 20px; margin-top: 6px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+                                <li>Use the **Pitch Helper** on CoMatch to copy a pre-formatted structure.</li>
+                                <li>Customize the brackets `[Name]`, `[Link]` with your real data.</li>
+                                <li>Focus on *how your audience benefits the brand* rather than what you want to get.</li>
+                                <li>Keep it brief: Marketing teams receive hundreds of emails daily.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="guide-section" style="margin-bottom: 20px;">
+                        <h4 style="display: flex; align-items: center; gap: 8px; color: var(--color-primary); margin-bottom: 8px; font-weight: 700; font-size: 1rem;"><i class="fa-solid fa-3"></i> 3. Understand Deal Structures</h4>
+                        <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">Sponsorship types depend mostly on your audience size:
+                            <ul style="margin-left: 20px; margin-top: 6px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+                                <li><strong>Product Gifting (Micro Creators):</strong> Perfect for setups and peripherals. Brands send free gear (mouses, headsets, chairs) in exchange for video reviews or stream overlay integration.</li>
+                                <li><strong>Affiliate (Commission):</strong> You get a custom discount code/link. You earn a percentage (usually 5% to 15%) per checkout. Excellent way to prove your conversions to the brand.</li>
+                                <li><strong>Flat Fee (Macro Creators):</strong> Contractual fixed payment per integration (e.g. 60-second video slot). Usually starts when you have an active average of 5,000+ views per video.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="guide-section" style="margin-bottom: 12px;">
+                        <h4 style="display: flex; align-items: center; gap: 8px; color: var(--color-primary); margin-bottom: 8px; font-weight: 700; font-size: 1rem;"><i class="fa-solid fa-4"></i> 4. When and How to Follow Up</h4>
+                        <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">Patience is key.
+                            <ul style="margin-left: 20px; margin-top: 6px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+                                <li>Give the partnerships team **7 to 10 business days** to review your pitch.</li>
+                                <li>If you don't receive a reply, send a polite follow-up email replying to your original thread, sharing a new stream milestone or a recent popular video link.</li>
+                                <li>If they decline or don't reply after two attempts, thank them and focus on building your audience. You can pitch again in 3 to 6 months!</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Matchmaker Modal -->
+    <div class="modal-overlay" id="matchmaker-modal">
+        <div class="modal-content" style="width: 680px; max-width: 95%; max-height: 85vh; justify-content: center;">
+            <button class="modal-close" id="matchmaker-modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="modal-body" style="padding-top: 8px; text-align: left;">
+                <div style="text-align: center; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 16px;">
+                    <i class="fa-solid fa-wand-magic-sparkles" style="font-size: 2.2rem; color: var(--color-primary); margin-bottom: 8px;"></i>
+                    <h2 style="font-size: 1.5rem; font-weight: 800; color: #fff;">CoMatch AI Matchmaker</h2>
+                    <p style="color: var(--text-muted); font-size: 0.88rem; margin-top: 4px; line-height: 1.3;">Describe your project, startup, stream, or event. Our AI will scan our 114-brand B2B database to recommend the top 3-5 best-matching partners.</p>
+                </div>
+                
+                <div style="display: flex; flex-direction: column; margin-bottom: 16px;">
+                    <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em;">Describe what you do & what you need *</label>
+                    <textarea id="matchmaker-desc" rows="4" placeholder="e.g. I run a software development YouTube channel in English with 30,000 subscribers. I am looking for a web hosting provider or developer tool partner for barter or video sponsorships..." style="width: 100%; background: rgba(0,0,0,0.25); border: 1px solid var(--border-color); padding: 12px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.88rem; resize: none; font-family: inherit; outline: none; line-height: 1.4; transition: border-color 0.2s;"></textarea>
+                </div>
+
+                <button id="btn-matchmaker-submit" class="btn" style="width: 100%; justify-content: center; padding: 12px; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); font-weight: bold; margin-bottom: 16px; border: none; cursor: pointer; color: #fff;">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Find Best Matches
+                </button>
+
+                <!-- Loading State -->
+                <div id="matchmaker-loading" style="display: none; text-align: center; padding: 32px 0;">
+                    <i class="fa-solid fa-circle-notch fa-spin" style="font-size: 2.2rem; color: var(--color-primary); margin-bottom: 12px;"></i>
+                    <p style="font-size: 0.88rem; color: var(--text-secondary); font-weight: 500;">AI is analyzing 114 opportunities to find your match...</p>
+                </div>
+
+                <!-- Results List -->
+                <div id="matchmaker-results-title" style="display: none; font-size: 0.75rem; color: var(--color-accent); font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;"><i class="fa-solid fa-star"></i> AI Match Recommendations</div>
+                <div id="matchmaker-results" style="max-height: 40vh; overflow-y: auto; padding-right: 8px; display: flex; flex-direction: column; gap: 16px; margin-top: 4px;">
+                    <!-- Recommendation cards injected dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Modal -->
+    <div class="modal-overlay" id="about-modal">
+        <div class="modal-content" style="width: 720px; max-width: 95%; max-height: 85vh; justify-content: center; overflow-y: auto;">
+            <button class="modal-close" id="about-modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="modal-body" style="padding-top: 8px; text-align: left; line-height: 1.6;">
+                <div style="text-align: center; margin-bottom: 24px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px;">
+                    <img src="assets/logo.png" alt="CoMatch Logo" style="width: 60px; height: 60px; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 8px 24px rgba(59, 130, 246, 0.25);">
+                    <h2 style="font-size: 1.8rem; font-weight: 800; color: #fff;">About CoMatch</h2>
+                    <p style="color: var(--color-accent); font-size: 0.95rem; font-weight: 600; margin-top: 4px; letter-spacing: 0.02em;">Building the World's Most Transparent B2B Partnership Registry</p>
+                </div>
+                
+                <p style="font-size: 0.92rem; color: var(--text-main); margin-bottom: 20px;">
+                    Finding the right brand partnerships or sponsorships shouldn't feel like throwing emails into a black hole. Millions of startups, content creators, and independent businesses struggle to find active partnership contacts, while hundreds of corporate sponsors have open programs waiting for high-quality pitches.
+                </p>
+                
+                <p style="font-size: 0.92rem; color: var(--text-main); margin-bottom: 24px; font-weight: 500;">
+                    <strong>CoMatch</strong> was built to solve this. We are a <strong>100% free, community-driven database</strong> dedicated to making B2B collaborations and sponsorships completely transparent, accessible, and structured.
+                </p>
+
+                <h3 style="font-size: 1.1rem; color: #fff; margin-bottom: 12px; border-left: 3px solid var(--color-primary); padding-left: 10px;">Our Three Core Pillars</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 24px;">
+                    <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); padding: 16px; border-radius: 8px; text-align: center;">
+                        <i class="fa-solid fa-hand-holding-dollar" style="font-size: 1.5rem; color: var(--color-primary); margin-bottom: 8px;"></i>
+                        <h4 style="font-size: 0.85rem; color: #fff; margin-bottom: 6px;">100% Free & Open</h4>
+                        <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">No subscriptions, no middleman fees, and no paywalls. Just direct connection links.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); padding: 16px; border-radius: 8px; text-align: center;">
+                        <i class="fa-solid fa-circle-check" style="font-size: 1.5rem; color: var(--color-accent); margin-bottom: 8px;"></i>
+                        <h4 style="font-size: 0.85rem; color: #fff; margin-bottom: 6px;">Curated & Verified</h4>
+                        <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">Every listing is verified to ensure they have active, open partnership programs.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); padding: 16px; border-radius: 8px; text-align: center;">
+                        <i class="fa-solid fa-wand-magic-sparkles" style="font-size: 1.5rem; color: var(--color-premium); margin-bottom: 8px;"></i>
+                        <h4 style="font-size: 0.85rem; color: #fff; margin-bottom: 6px;">AI-Driven Growth</h4>
+                        <p style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">Self-scaling database moderated instantly by Google Gemini AI submission checkers.</p>
+                    </div>
+                </div>
+
+                <h3 style="font-size: 1.1rem; color: #fff; margin-bottom: 12px; border-left: 3px solid var(--color-primary); padding-left: 10px;">How It Works</h3>
+                <ul style="margin-left: 20px; font-size: 0.88rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 24px;">
+                    <li><strong>Explore Opportunities:</strong> Scan through our curated seed registry featuring top-tier brands in Gaming, Tech, FinTech, Fashion, Beverages, and Travel.</li>
+                    <li><strong>Build Your Pitch:</strong> Every card features customized pitch blueprints (B2B templates) designed to capture the brand's exact partnership interests.</li>
+                    <li><strong>Match with AI:</strong> Use the built-in AI Matchmaker tool to explain what your startup or project does, and receive 3-5 immediate strategic recommendations.</li>
+                    <li><strong>Submit New Programs:</strong> Help our community scale! Submit open partnership programs you've discovered, and our AI moderator will list them instantly.</li>
+                </ul>
+
+                <div style="background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(168, 85, 247, 0.1)); border: 1px solid rgba(168, 85, 247, 0.2); padding: 16px; border-radius: var(--border-radius-sm); text-align: center; margin-bottom: 20px;">
+                    <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 4px;">Join the Open Registry Movement</h4>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.4;">Let's build a transparent network where any business can find its next strategic partner. 🚀</p>
+                </div>
+
+                <div style="border-top: 1px solid var(--border-color); padding-top: 16px; font-size: 0.74rem; color: var(--text-muted); line-height: 1.5;">
+                    <p style="margin-bottom: 8px;">
+                        <strong>Yasal Sorumluluk Reddi (Legal Disclaimer):</strong> CoMatch bağımsız, kar amacı gütmeyen (%100 ücretsiz) ve açık kaynaklı bir topluluk dizinidir. Bu sitede yer alan tüm marka isimleri, logolar ve tescilli ticari markalar kendi sahiplerinin mülkiyetindedir. CoMatch, listelenen hiçbir marka veya kuruluşla resmi bir ortaklık, sponsorluk veya yetkilendirme ilişkisine sahip değildir. Bilgiler sadece kolaylık sağlama ve eğitim amaçlı "olduğu gibi" sunulmuştur.
+                    </p>
+                    <p>
+                        <strong>DMCA & Content Removal:</strong> If you are an authorized brand representative and wish to update your program details or request the removal of your listing from this community directory, please contact us at <a href="mailto:hello@comatch.org" style="color: var(--color-primary); text-decoration: underline;">hello@comatch.org</a>. We respect your intellectual property and will process your request within 24 hours.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script imports -->
+    <script src="brands.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
