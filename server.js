@@ -120,15 +120,15 @@ async function sendTelegramNotification(brand, moderationApproved) {
     const status = moderationApproved ? "✅ AI Approved & Listed" : "⚠️ Fallback Local Save";
     const contactInfo = brand.contactEmail ? `📧 Email: ${brand.contactEmail}` : `📝 Form: ${brand.contactForm}`;
     
-    const text = `🚀 *New Brand Submission on CoMatch!*\n\n` +
-                 `*Name:* ${brand.name}\n` +
-                 `*Type:* ${brand.type}\n` +
-                 `*Category:* ${brand.category}\n` +
-                 `*Sponsor Type:* ${brand.sponsorType}\n` +
-                 `*Creator Size:* ${brand.creatorSize}\n` +
+    const text = `🚀 <b>New Brand Submission on CoMatch!</b>\n\n` +
+                 `<b>Name:</b> ${brand.name}\n` +
+                 `<b>Type:</b> ${brand.type}\n` +
+                 `<b>Category:</b> ${brand.category}\n` +
+                 `<b>Sponsor Type:</b> ${brand.sponsorType}\n` +
+                 `<b>Creator Size:</b> ${brand.creatorSize}\n` +
                  `${contactInfo}\n` +
-                 `*Status:* ${status}\n\n` +
-                 `🔗 [View Live Directory](https://comatch.org)`;
+                 `<b>Status:</b> ${status}\n\n` +
+                 `🔗 <a href="https://comatch.org">View Live Directory</a>`;
                  
     try {
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
@@ -138,7 +138,7 @@ async function sendTelegramNotification(brand, moderationApproved) {
             body: JSON.stringify({
                 chat_id: chatId,
                 text: text,
-                parse_mode: 'Markdown'
+                parse_mode: 'HTML'
             })
         });
         const data = await response.json();
