@@ -778,8 +778,13 @@ select {
 
 /* Responsive adjustment */
 @media (max-width: 900px) {
+    body {
+        overflow: auto;
+        height: auto;
+    }
     .app-container {
         flex-direction: column;
+        height: auto;
     }
     .sidebar {
         width: 100%;
