@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const http = require('http');
 const https = require('https');
-const { GoogleGenAI } = require('@google/generative-ai');
+const { GoogleGenerativeAI } = require('@google/generative-ai');
 require('dotenv').config();
 
 const app = express();
@@ -142,7 +142,7 @@ app.post('/api/submit-brand', async (req, res) => {
     }
 
     try {
-        const ai = new GoogleGenAI({ apiKey });
+        const ai = new GoogleGenerativeAI(apiKey);
         const model = ai.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
         const prompt = `You are the auto-moderator and submission processor bot for CoMatch, a web directory of B2B brand partnerships and sponsorships.
@@ -286,7 +286,7 @@ app.post('/api/match', async (req, res) => {
     }
 
     try {
-        const ai = new GoogleGenAI({ apiKey });
+        const ai = new GoogleGenerativeAI(apiKey);
         const model = ai.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
         // Summarize database for prompt to keep tokens low
