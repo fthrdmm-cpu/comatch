@@ -23,27 +23,77 @@ app.use(express.static(__dirname));
 const databasePath = path.join(__dirname, 'database.json');
 let dbData = [];
 
-// Initialize database from brands.js if database.json doesn't exist
-if (fs.existsSync(databasePath)) {
-    try {
-        dbData = JSON.parse(fs.readFileSync(databasePath, 'utf8'));
-        console.log(`[+] Loaded database.json containing ${dbData.length} opportunities`);
-    } catch (e) {
-        console.error("[-] Failed to read database.json:", e);
-    }
-} else {
-    const brandsJsPath = path.join(__dirname, 'brands.js');
-    if (fs.existsSync(brandsJsPath)) {
+// Initialize Supabase Client if env is defined
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+let supabase = null;
+
+if (supabaseUrl && supabaseKey) {
+    const { createClient } = require('@supabase/supabase-js');
+    supabase = createClient(supabaseUrl, supabaseKey);
+    console.log("🔌 Supabase Cloud Database integration configured.");
+}
+
+async function loadDatabase() {
+    if (supabase) {
         try {
-            const fileContent = fs.readFileSync(brandsJsPath, 'utf8');
-            const jsonStartIndex = fileContent.indexOf('[');
-            const jsonEndIndex = fileContent.lastIndexOf(']') + 1;
-            const jsonText = fileContent.substring(jsonStartIndex, jsonEndIndex);
-            dbData = JSON.parse(jsonText);
-            fs.writeFileSync(databasePath, JSON.stringify(dbData, null, 2), 'utf8');
-            console.log(`[+] Initialized database.json with ${dbData.length} seed opportunities from brands.js`);
+            console.log("[*] Querying brands from Supabase Cloud...");
+            const { data, error } = await supabase.from('brands').select('*').order('created_at', { ascending: false });
+            
+            if (error) {
+                throw error;
+            }
+            
+            if (Array.isArray(data) && data.length > 0) {
+                dbData = data;
+                console.log(`[+] Loaded ${dbData.length} brands dynamically from Supabase.`);
+            } else {
+                console.log("[-] Supabase table 'brands' is empty. Seeding with local database.json...");
+                loadLocalDatabase();
+                
+                // Seed data into Supabase in chunks to avoid payload limits
+                const chunkSize = 50;
+                for (let i = 0; i < dbData.length; i += chunkSize) {
+                    const chunk = dbData.slice(i, i + chunkSize);
+                    const { error: seedError } = await supabase.from('brands').insert(chunk);
+                    if (seedError) throw seedError;
+                }
+                
+                console.log(`[+] Seeded ${dbData.length} brands successfully to Supabase.`);
+            }
+        } catch (err) {
+            console.error("[-] Supabase database load/seed error:", err.message);
+            console.log("[*] Falling back to local file database.");
+            loadLocalDatabase();
+        }
+    } else {
+        console.log("[*] Supabase URL/Key environment variables not defined. Loading local database.json.");
+        loadLocalDatabase();
+    }
+}
+
+function loadLocalDatabase() {
+    if (fs.existsSync(databasePath)) {
+        try {
+            dbData = JSON.parse(fs.readFileSync(databasePath, 'utf8'));
+            console.log(`[+] Loaded database.json containing ${dbData.length} opportunities`);
         } catch (e) {
-            console.error("[-] Failed to parse brands.js for seed data:", e);
+            console.error("[-] Failed to read database.json:", e);
+        }
+    } else {
+        const brandsJsPath = path.join(__dirname, 'brands.js');
+        if (fs.existsSync(brandsJsPath)) {
+            try {
+                const fileContent = fs.readFileSync(brandsJsPath, 'utf8');
+                const jsonStartIndex = fileContent.indexOf('[');
+                const jsonEndIndex = fileContent.lastIndexOf(']') + 1;
+                const jsonText = fileContent.substring(jsonStartIndex, jsonEndIndex);
+                dbData = JSON.parse(jsonText);
+                fs.writeFileSync(databasePath, JSON.stringify(dbData, null, 2), 'utf8');
+                console.log(`[+] Initialized database.json with ${dbData.length} seed opportunities from brands.js`);
+            } catch (e) {
+                console.error("[-] Failed to parse brands.js for seed data:", e);
+            }
         }
     }
 }
@@ -136,6 +186,13 @@ app.post('/api/submit-brand', async (req, res) => {
             premium: false
         };
 
+        if (supabase) {
+            const { error } = await supabase.from('brands').insert(newBrand);
+            if (error) {
+                console.error("[-] Supabase save error:", error.message);
+                return res.status(500).json({ error: "Failed to save brand to cloud database." });
+            }
+        }
         dbData.unshift(newBrand);
         fs.writeFileSync(databasePath, JSON.stringify(dbData, null, 2), 'utf8');
         return res.json({ success: true, brand: newBrand });
@@ -209,6 +266,13 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
             enrichedBrand.logo = logoUrl;
         }
 
+        if (supabase) {
+            const { error } = await supabase.from('brands').insert(enrichedBrand);
+            if (error) {
+                console.error("[-] Supabase save error:", error.message);
+                return res.status(500).json({ error: "Failed to save brand to cloud database." });
+            }
+        }
         dbData.unshift(enrichedBrand);
         fs.writeFileSync(databasePath, JSON.stringify(dbData, null, 2), 'utf8');
         
@@ -347,10 +411,21 @@ app.get('*', (req, res) => {
 });
 
 // Start the server
-app.listen(PORT, () => {
-    console.log(`\n======================================================`);
-    console.log(`🚀 CoMatch Live API Server started on http://localhost:${PORT}`);
-    console.log(`💡 Serving frontend files and API endpoints...`);
-    console.log(`🔑 AI Bot runs if GEMINI_API_KEY env variable is defined.`);
-    console.log(`======================================================\n`);
-});
+async function startServer() {
+    await loadDatabase();
+    
+    app.listen(PORT, () => {
+        console.log(`\n======================================================`);
+        console.log(`🚀 CoMatch Live API Server started on http://localhost:${PORT}`);
+        console.log(`💡 Serving frontend files and API endpoints...`);
+        console.log(`🔑 AI Bot runs if GEMINI_API_KEY env variable is defined.`);
+        if (supabase) {
+            console.log(`🔌 Supabase Cloud Database is ACTIVE!`);
+        } else {
+            console.log(`📁 Using Local File Database (fallback).`);
+        }
+        console.log(`======================================================\n`);
+    });
+}
+
+startServer();
