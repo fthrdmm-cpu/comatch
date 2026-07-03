@@ -65,6 +65,7 @@ async function loadDatabase() {
                     if (seedError) throw seedError;
                 }
                 
+                dbInitMode = "Supabase Cloud";
                 console.log(`[+] Seeded ${dbData.length} brands successfully to Supabase.`);
             }
         } catch (err) {
