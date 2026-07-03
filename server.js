@@ -107,6 +107,51 @@ function loadLocalDatabase() {
     }
 }
 
+// Telegram Notification Helper
+async function sendTelegramNotification(brand, moderationApproved) {
+    const token = process.env.TELEGRAM_BOT_TOKEN;
+    const chatId = process.env.TELEGRAM_CHAT_ID;
+    
+    if (!token || !chatId) {
+        console.log("[-] Telegram bot token or chat ID not configured, skipping notification.");
+        return;
+    }
+    
+    const status = moderationApproved ? "✅ AI Approved & Listed" : "⚠️ Fallback Local Save";
+    const contactInfo = brand.contactEmail ? `📧 Email: ${brand.contactEmail}` : `📝 Form: ${brand.contactForm}`;
+    
+    const text = `🚀 *New Brand Submission on CoMatch!*\n\n` +
+                 `*Name:* ${brand.name}\n` +
+                 `*Type:* ${brand.type}\n` +
+                 `*Category:* ${brand.category}\n` +
+                 `*Sponsor Type:* ${brand.sponsorType}\n` +
+                 `*Creator Size:* ${brand.creatorSize}\n` +
+                 `${contactInfo}\n` +
+                 `*Status:* ${status}\n\n` +
+                 `🔗 [View Live Directory](https://comatch.org)`;
+                 
+    try {
+        const url = `https://api.telegram.org/bot${token}/sendMessage`;
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                chat_id: chatId,
+                text: text,
+                parse_mode: 'Markdown'
+            })
+        });
+        const data = await response.json();
+        if (data.ok) {
+            console.log(`[+] Telegram notification sent for [${brand.name}]`);
+        } else {
+            console.error("[-] Telegram API error:", data.description);
+        }
+    } catch (err) {
+        console.error("[-] Failed to send Telegram notification:", err.message);
+    }
+}
+
 // 1. Online Domain Verification Helper
 function pingDomain(urlStr) {
     return new Promise((resolve) => {
@@ -204,6 +249,10 @@ app.post('/api/submit-brand', async (req, res) => {
         }
         dbData.unshift(newBrand);
         fs.writeFileSync(databasePath, JSON.stringify(dbData, null, 2), 'utf8');
+        
+        // Send Telegram notification (async background)
+        sendTelegramNotification(newBrand, false);
+        
         return res.json({ success: true, brand: newBrand });
     }
 
@@ -286,6 +335,10 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
         fs.writeFileSync(databasePath, JSON.stringify(dbData, null, 2), 'utf8');
         
         console.log(`[+] AI Moderation approved and added brand: [${enrichedBrand.name}]`);
+        
+        // Send Telegram notification (async background)
+        sendTelegramNotification(enrichedBrand, true);
+        
         return res.json({ success: true, brand: enrichedBrand });
 
     } catch (err) {
