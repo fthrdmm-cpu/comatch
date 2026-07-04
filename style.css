@@ -869,7 +869,7 @@ select {
     width: 100vw;
     height: 100vh;
     background-color: #070a13;
-    background-image: linear-gradient(to bottom, rgba(7, 10, 19, 0.90), rgba(7, 10, 19, 0.96)), url('assets/skyscrapers_bg.png');
+    background-image: linear-gradient(to bottom, rgba(7, 10, 19, 0.40), rgba(7, 10, 19, 0.65)), url('assets/skyscrapers_bg_sharp.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
