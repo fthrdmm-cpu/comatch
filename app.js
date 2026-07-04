@@ -298,6 +298,160 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // --- Portal Navigation Logic ---
+    const portalPage = document.getElementById("portal-page");
+    const appContainer = document.querySelector(".app-container");
+    const btnBackPortal = document.getElementById("btn-sidebar-back-portal");
+    
+    const gotoSponsors = document.getElementById("portal-goto-sponsors");
+    const gotoInvestors = document.getElementById("portal-goto-investors");
+    const gotoSubmit = document.getElementById("portal-goto-submit");
+    const gotoAbout = document.getElementById("portal-goto-about");
+    
+    function showAppContainer(targetDirectory, autoOpenModal = null) {
+        if (!portalPage || !appContainer) return;
+        
+        // Switch active directory first
+        activeDirectory = targetDirectory;
+        dbData = activeDirectory === "sponsors" ? sponsorsData : investorsData;
+        
+        // Update active directory tab styles
+        const directoryTabs = document.querySelectorAll(".directory-tab");
+        directoryTabs.forEach(tab => {
+            if (tab.getAttribute("data-directory") === activeDirectory) {
+                tab.classList.add("active");
+            } else {
+                tab.classList.remove("active");
+            }
+        });
+        
+        // Trigger matching filter update logic
+        const typeFilterSection = document.querySelector("#filter-type") ? document.querySelector("#filter-type").parentElement : null;
+        const sizeFilterSection = document.querySelector("#filter-size") ? document.querySelector("#filter-size").parentElement : null;
+        const scaleTitle = sizeFilterSection ? sizeFilterSection.querySelector("h3") : null;
+        const typeTitle = typeFilterSection ? typeFilterSection.querySelector("h3") : null;
+        
+        if (activeDirectory === "investors") {
+            if (typeTitle) typeTitle.textContent = "INVESTOR TYPE";
+            if (typeBtns[0]) typeBtns[0].textContent = "All";
+            if (typeBtns[1]) {
+                typeBtns[1].textContent = "Accelerator";
+                typeBtns[1].setAttribute("data-sponsortype", "Accelerator");
+            }
+            if (typeBtns[2]) {
+                typeBtns[2].textContent = "Venture Capital";
+                typeBtns[2].setAttribute("data-sponsortype", "Venture Capital");
+            }
+            if (typeBtns[3]) {
+                typeBtns[3].textContent = "Angel Network";
+                typeBtns[3].setAttribute("data-sponsortype", "Angel Network");
+            }
+            if (typeBtns[4]) typeBtns[4].style.display = "none";
+            
+            if (scaleTitle) scaleTitle.textContent = "TARGET STAGE";
+            if (sizeBtns[0]) sizeBtns[0].textContent = "All Stages";
+            if (sizeBtns[1]) {
+                sizeBtns[1].textContent = "Pre-Seed / Seed";
+                sizeBtns[1].setAttribute("data-size", "Pre-Seed");
+            }
+            if (sizeBtns[2]) {
+                sizeBtns[2].textContent = "Series A / B";
+                sizeBtns[2].setAttribute("data-size", "Series A");
+            }
+            
+            const headerActions = document.querySelector(".header-actions");
+            if (headerActions) headerActions.style.display = "none";
+        } else {
+            if (typeTitle) typeTitle.textContent = "PARTNERSHIP TYPE";
+            if (typeBtns[0]) typeBtns[0].textContent = "All";
+            if (typeBtns[1]) {
+                typeBtns[1].textContent = "Barter / Product";
+                typeBtns[1].setAttribute("data-sponsortype", "Product Gifting");
+            }
+            if (typeBtns[2]) {
+                typeBtns[2].textContent = "Affiliate / Referral";
+                typeBtns[2].setAttribute("data-sponsortype", "Affiliate");
+            }
+            if (typeBtns[3]) {
+                typeBtns[3].textContent = "Sponsorship / Paid";
+                typeBtns[3].setAttribute("data-sponsortype", "Flat Fee");
+            }
+            if (typeBtns[4]) {
+                typeBtns[4].style.display = "block";
+                typeBtns[4].textContent = "B2B Collab";
+                typeBtns[4].setAttribute("data-sponsortype", "B2B Partnership");
+            }
+            
+            if (scaleTitle) scaleTitle.textContent = "COLLABORATION SCALE";
+            if (sizeBtns[0]) sizeBtns[0].textContent = "All Scale";
+            if (sizeBtns[1]) {
+                sizeBtns[1].textContent = "Startup / Mid-Scale";
+                sizeBtns[1].setAttribute("data-size", "Micro");
+            }
+            if (sizeBtns[2]) {
+                sizeBtns[2].textContent = "Enterprise / Tier-1";
+                sizeBtns[2].setAttribute("data-size", "Macro");
+            }
+            
+            const headerActions = document.querySelector(".header-actions");
+            if (headerActions) headerActions.style.display = "block";
+        }
+        
+        // Reset active filters
+        activeFilters.category = "all";
+        activeFilters.sponsorType = "all";
+        activeFilters.creatorSize = "all";
+        activeFilters.type = "all";
+        
+        categoryBtns.forEach(b => b.classList.remove("active"));
+        if (categoryBtns[0]) categoryBtns[0].classList.add("active");
+        
+        typeBtns.forEach(b => b.classList.remove("active"));
+        if (typeBtns[0]) typeBtns[0].classList.add("active");
+        
+        sizeBtns.forEach(b => b.classList.remove("active"));
+        if (sizeBtns[0]) sizeBtns[0].classList.add("active");
+        
+        typePills.forEach(p => p.classList.remove("active"));
+        if (typePills[0]) typePills[0].classList.add("active");
+
+        calculateStats();
+        renderBrands();
+        
+        // Fade portal and show container
+        portalPage.classList.add("fade-out");
+        appContainer.style.display = "flex";
+        setTimeout(() => {
+            portalPage.style.display = "none";
+            if (autoOpenModal) {
+                openModal(autoOpenModal);
+                if (autoOpenModal === submitModal) {
+                    updateLivePreview();
+                }
+            }
+        }, 400);
+    }
+    
+    function showPortalPage() {
+        if (!portalPage || !appContainer) return;
+        
+        portalPage.style.display = "flex";
+        // Force reflow
+        portalPage.offsetHeight;
+        portalPage.classList.remove("fade-out");
+        
+        setTimeout(() => {
+            appContainer.style.display = "none";
+        }, 400);
+    }
+    
+    if (gotoSponsors) gotoSponsors.addEventListener("click", () => showAppContainer("sponsors"));
+    if (gotoInvestors) gotoInvestors.addEventListener("click", () => showAppContainer("investors"));
+    if (gotoSubmit) gotoSubmit.addEventListener("click", () => showAppContainer("sponsors", submitModal));
+    if (gotoAbout) gotoAbout.addEventListener("click", () => showAppContainer("sponsors", aboutModal));
+    
+    if (btnBackPortal) btnBackPortal.addEventListener("click", showPortalPage);
+
     // Modal Close Triggers
     modalCloseBtn.addEventListener("click", () => closeModal(detailModal));
     detailModal.addEventListener("click", (e) => {
