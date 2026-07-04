@@ -127,6 +127,16 @@
             </header>
 
             <div class="content-body">
+                <!-- Directory Tabs -->
+                <div class="directory-tabs-container">
+                    <button class="directory-tab active" data-directory="sponsors">
+                        <i class="fa-solid fa-handshake-angle"></i> Find B2B Sponsors
+                    </button>
+                    <button class="directory-tab" data-directory="investors">
+                        <i class="fa-solid fa-chart-line"></i> Find B2B Investors
+                    </button>
+                </div>
+
                 <!-- Welcome Banner -->
                 <div class="promo-banner" id="welcome-banner">
                     <div class="promo-text">
@@ -182,20 +192,28 @@
                     <!-- Left Column: Form -->
                     <form id="submit-brand-form" style="display: flex; flex-direction: column; gap: 16px; text-align: left;">
                         <div>
-                            <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">BRAND OR PARTNER NAME *</label>
+                            <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">LISTING TYPE *</label>
+                            <select id="form-listing-type" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem; outline: none; cursor: pointer;">
+                                <option value="sponsor">Sponsor / Brand Program</option>
+                                <option value="startup">Startup Seeking Investment</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label id="label-form-name" style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">BRAND OR PARTNER NAME *</label>
                             <input type="text" id="form-name" required placeholder="e.g. Shopify, Figma, Vercel" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem;">
                         </div>
 
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
                             <div>
-                                <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">ENTITY TYPE *</label>
+                                <label id="label-form-type" style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">ENTITY TYPE *</label>
                                 <select id="form-type" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem; outline: none; cursor: pointer;">
                                     <option value="brand">Brand / SaaS</option>
                                     <option value="team">Partnership / Program</option>
                                 </select>
                             </div>
                             <div>
-                                <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">CATEGORY *</label>
+                                <label id="label-form-category" style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">CATEGORY *</label>
                                 <select id="form-category" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem; outline: none; cursor: pointer;">
                                     <option value="Gaming">Gaming</option>
                                     <option value="Esports">Esports</option>
@@ -208,7 +226,7 @@
 
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
                             <div>
-                                <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">PARTNERSHIP TYPE *</label>
+                                <label id="label-form-sponsor-type" style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">PARTNERSHIP TYPE *</label>
                                 <select id="form-sponsor-type" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem; outline: none; cursor: pointer;">
                                     <option value="Product Gifting">Barter / Product Support</option>
                                     <option value="Affiliate">Affiliate / Referral</option>
@@ -217,7 +235,7 @@
                                 </select>
                             </div>
                             <div>
-                                <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">COLLABORATION SCALE *</label>
+                                <label id="label-form-creator-size" style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">COLLABORATION SCALE *</label>
                                 <select id="form-creator-size" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem; outline: none; cursor: pointer;">
                                     <option value="Any Size">Any Scale / Startup</option>
                                     <option value="Micro (10k-50k)">Startup / Mid-Scale</option>
@@ -232,7 +250,7 @@
                         </div>
 
                         <div>
-                            <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">WEBSITE / FORM URL *</label>
+                            <label id="label-form-url" style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">WEBSITE / FORM URL *</label>
                             <input type="url" id="form-url" required placeholder="e.g. https://brand.com/partners" style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem;">
                         </div>
 
@@ -242,7 +260,7 @@
                         </div>
 
                         <div>
-                            <label style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">KEY REQUIREMENTS / DESCRIPTION *</label>
+                            <label id="label-form-reqs" style="font-size: 0.75rem; color: var(--text-secondary); display: block; margin-bottom: 6px; font-weight: 500;">KEY REQUIREMENTS / DESCRIPTION *</label>
                             <textarea id="form-reqs" required rows="2" placeholder="e.g. Open to co-marketing campaigns, event sponsorships, or hosting collaborative workshops..." style="width: 100%; background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.85rem; resize: none; font-family: inherit;"></textarea>
                         </div>
 
@@ -444,6 +462,7 @@
 
     <!-- Script imports -->
     <script src="brands.js"></script>
+    <script src="investors.js"></script>
     <script src="app.js"></script>
     <script defer src="/_vercel/insights/script.js"></script>
 </body>

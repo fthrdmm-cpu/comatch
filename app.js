@@ -3,6 +3,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Database state
     let dbData = [];
+    let sponsorsData = [];
+    let investorsData = typeof INVESTORS_DATA !== 'undefined' ? [...INVESTORS_DATA] : [];
+    let activeDirectory = "sponsors"; // Default active directory
     
     // Active API Server URL (points to Render when live on Vercel)
     const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
@@ -139,6 +142,117 @@ document.addEventListener("DOMContentLoaded", () => {
     loadBrands();
 
     // Event Listeners
+    // Directory Tabs Switcher (Sponsors vs. Investors)
+    const directoryTabs = document.querySelectorAll(".directory-tab");
+    directoryTabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            directoryTabs.forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+            activeDirectory = tab.getAttribute("data-directory");
+            
+            // Switch active data list
+            dbData = activeDirectory === "sponsors" ? sponsorsData : investorsData;
+            
+            // Reset filters to "all" when switching directories to prevent empty state bugs
+            activeFilters.category = "all";
+            activeFilters.sponsorType = "all";
+            activeFilters.creatorSize = "all";
+            activeFilters.type = "all";
+            
+            // Reset active states on sidebar buttons
+            categoryBtns.forEach(b => b.classList.remove("active"));
+            if (categoryBtns[0]) categoryBtns[0].classList.add("active");
+            
+            typeBtns.forEach(b => b.classList.remove("active"));
+            if (typeBtns[0]) typeBtns[0].classList.add("active");
+            
+            sizeBtns.forEach(b => b.classList.remove("active"));
+            if (sizeBtns[0]) sizeBtns[0].classList.add("active");
+            
+            typePills.forEach(p => p.classList.remove("active"));
+            if (typePills[0]) typePills[0].classList.add("active");
+
+            // Hide/Show sidebar filter groups based on tab selection
+            const typeFilterSection = document.querySelector("#filter-type") ? document.querySelector("#filter-type").parentElement : null;
+            const sizeFilterSection = document.querySelector("#filter-size") ? document.querySelector("#filter-size").parentElement : null;
+            const scaleTitle = sizeFilterSection ? sizeFilterSection.querySelector("h3") : null;
+            const typeTitle = typeFilterSection ? typeFilterSection.querySelector("h3") : null;
+            
+            if (activeDirectory === "investors") {
+                // For investors, "PARTNERSHIP TYPE" corresponds to VC, Angel, Incubator
+                if (typeTitle) typeTitle.textContent = "INVESTOR TYPE";
+                if (typeBtns[0]) typeBtns[0].textContent = "All";
+                if (typeBtns[1]) {
+                    typeBtns[1].textContent = "Accelerator";
+                    typeBtns[1].setAttribute("data-sponsortype", "Accelerator");
+                }
+                if (typeBtns[2]) {
+                    typeBtns[2].textContent = "Venture Capital";
+                    typeBtns[2].setAttribute("data-sponsortype", "Venture Capital");
+                }
+                if (typeBtns[3]) {
+                    typeBtns[3].textContent = "Angel Network";
+                    typeBtns[3].setAttribute("data-sponsortype", "Angel Network");
+                }
+                if (typeBtns[4]) typeBtns[4].style.display = "none"; // Hide B2B collab pill
+                
+                // For investors, "COLLABORATION SCALE" corresponds to Target Stage (Seed, Pre-Seed, Series A)
+                if (scaleTitle) scaleTitle.textContent = "TARGET STAGE";
+                if (sizeBtns[0]) sizeBtns[0].textContent = "All Stages";
+                if (sizeBtns[1]) {
+                    sizeBtns[1].textContent = "Pre-Seed / Seed";
+                    sizeBtns[1].setAttribute("data-size", "Pre-Seed");
+                }
+                if (sizeBtns[2]) {
+                    sizeBtns[2].textContent = "Series A / B";
+                    sizeBtns[2].setAttribute("data-size", "Series A");
+                }
+                
+                // Hide Brand vs Team pills on header actions (not relevant for VCs)
+                const headerActions = document.querySelector(".header-actions");
+                if (headerActions) headerActions.style.display = "none";
+            } else {
+                // Restore default sponsor filters
+                if (typeTitle) typeTitle.textContent = "PARTNERSHIP TYPE";
+                if (typeBtns[0]) typeBtns[0].textContent = "All";
+                if (typeBtns[1]) {
+                    typeBtns[1].textContent = "Barter / Product";
+                    typeBtns[1].setAttribute("data-sponsortype", "Product Gifting");
+                }
+                if (typeBtns[2]) {
+                    typeBtns[2].textContent = "Affiliate / Referral";
+                    typeBtns[2].setAttribute("data-sponsortype", "Affiliate");
+                }
+                if (typeBtns[3]) {
+                    typeBtns[3].textContent = "Sponsorship / Paid";
+                    typeBtns[3].setAttribute("data-sponsortype", "Flat Fee");
+                }
+                if (typeBtns[4]) {
+                    typeBtns[4].style.display = "block";
+                    typeBtns[4].textContent = "B2B Collab";
+                    typeBtns[4].setAttribute("data-sponsortype", "B2B Partnership");
+                }
+                
+                if (scaleTitle) scaleTitle.textContent = "COLLABORATION SCALE";
+                if (sizeBtns[0]) sizeBtns[0].textContent = "All Scale";
+                if (sizeBtns[1]) {
+                    sizeBtns[1].textContent = "Startup / Mid-Scale";
+                    sizeBtns[1].setAttribute("data-size", "Micro");
+                }
+                if (sizeBtns[2]) {
+                    sizeBtns[2].textContent = "Enterprise / Tier-1";
+                    sizeBtns[2].setAttribute("data-size", "Macro");
+                }
+                
+                const headerActions = document.querySelector(".header-actions");
+                if (headerActions) headerActions.style.display = "block";
+            }
+            
+            calculateStats();
+            renderBrands();
+        });
+    });
+
     searchInput.addEventListener("input", (e) => {
         activeFilters.search = e.target.value.toLowerCase().trim();
         renderBrands();
@@ -476,23 +590,26 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
     async function loadBrands() {
         // 1. Instantly load static memory so the page renders under 50ms!
         if (typeof BRANDS_DATA !== 'undefined' && Array.isArray(BRANDS_DATA)) {
-            dbData = [...BRANDS_DATA];
-            console.log(`[+] Loaded ${dbData.length} brands from local static memory (instant)`);
+            sponsorsData = [...BRANDS_DATA];
+            console.log(`[+] Loaded ${sponsorsData.length} brands from local static memory (instant)`);
         } else {
             console.warn("[-] brands.js not loaded. Using English fallback data.");
-            dbData = [...fallbackData];
+            sponsorsData = [...fallbackData];
         }
 
         // Load custom offline brands from localStorage if any
         try {
             const customBrands = JSON.parse(localStorage.getItem("custom_brands") || "[]");
             if (Array.isArray(customBrands) && customBrands.length > 0) {
-                dbData = [...customBrands, ...dbData];
+                sponsorsData = [...customBrands, ...sponsorsData];
                 console.log(`[+] Prepended ${customBrands.length} custom brands from localStorage`);
             }
         } catch (err) {
             console.error("[-] Failed to load custom brands from localStorage:", err);
         }
+
+        // Point dbData to the active list on startup
+        dbData = activeDirectory === "sponsors" ? sponsorsData : investorsData;
 
         // Render the UI instantly with the static/cached data
         calculateStats();
@@ -507,10 +624,15 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                 })
                 .then(data => {
                     if (Array.isArray(data) && data.length > 0) {
-                        dbData = data;
-                        console.log(`[+] Updated ${dbData.length} brands dynamically from live API`);
-                        calculateStats();
-                        renderBrands();
+                        sponsorsData = data;
+                        console.log(`[+] Updated ${sponsorsData.length} brands dynamically from live API`);
+                        
+                        // Only update UI if the active directory is sponsors
+                        if (activeDirectory === "sponsors") {
+                            dbData = sponsorsData;
+                            calculateStats();
+                            renderBrands();
+                        }
                     }
                 })
                 .catch(e => {
@@ -532,22 +654,52 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
         const filtered = dbData.filter(item => {
             // Search criteria
             const matchesSearch = item.name.toLowerCase().includes(activeFilters.search) || 
-                                  item.category.toLowerCase().includes(activeFilters.search) ||
-                                  (item.sponsorType && item.sponsorType.toLowerCase().includes(activeFilters.search));
+                                  (item.category && item.category.toLowerCase().includes(activeFilters.search)) ||
+                                  (item.sectors && item.sectors.toLowerCase().includes(activeFilters.search)) ||
+                                  (item.sponsorType && item.sponsorType.toLowerCase().includes(activeFilters.search)) ||
+                                  (item.investorType && item.investorType.toLowerCase().includes(activeFilters.search));
             
             // Category criteria
-            const matchesCategory = activeFilters.category === "all" || item.category === activeFilters.category;
+            let matchesCategory = false;
+            if (activeFilters.category === "all") {
+                matchesCategory = true;
+            } else {
+                if (activeDirectory === "sponsors") {
+                    matchesCategory = item.category === activeFilters.category;
+                } else {
+                    let cleanCat = activeFilters.category.toLowerCase();
+                    if (cleanCat.includes("/")) cleanCat = cleanCat.split("/")[0]; // e.g. Software/SaaS -> software
+                    if (cleanCat === "technology") cleanCat = "tech";
+                    matchesCategory = item.sectors && item.sectors.toLowerCase().includes(cleanCat);
+                }
+            }
             
-            // Sponsor Type criteria
-            const matchesSponsorType = activeFilters.sponsorType === "all" || 
-                                      (item.sponsorType && item.sponsorType.includes(activeFilters.sponsorType));
+            // Sponsor Type / Investor Type criteria
+            let matchesSponsorType = false;
+            if (activeFilters.sponsorType === "all") {
+                matchesSponsorType = true;
+            } else {
+                if (activeDirectory === "sponsors") {
+                    matchesSponsorType = item.sponsorType && item.sponsorType.includes(activeFilters.sponsorType);
+                } else {
+                    matchesSponsorType = item.investorType && item.investorType.includes(activeFilters.sponsorType);
+                }
+            }
             
-            // Creator Size criteria
-            const matchesSize = activeFilters.creatorSize === "all" || 
-                                (item.creatorSize && item.creatorSize.includes(activeFilters.creatorSize));
+            // Creator Size / Target Stage criteria
+            let matchesSize = false;
+            if (activeFilters.creatorSize === "all") {
+                matchesSize = true;
+            } else {
+                if (activeDirectory === "sponsors") {
+                    matchesSize = item.creatorSize && item.creatorSize.includes(activeFilters.creatorSize);
+                } else {
+                    matchesSize = item.targetStage && item.targetStage.includes(activeFilters.creatorSize);
+                }
+            }
             
-            // Entity type (brand / team) criteria
-            const matchesType = activeFilters.type === "all" || item.type === activeFilters.type;
+            // Entity type criteria (always true for investors)
+            const matchesType = activeDirectory === "investors" || activeFilters.type === "all" || item.type === activeFilters.type;
 
             return matchesSearch && matchesCategory && matchesSponsorType && matchesSize && matchesType;
         });
@@ -569,6 +721,9 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
             const card = document.createElement("div");
             card.className = "brand-card";
             card.setAttribute("data-id", item.id);
+            if (activeDirectory === "investors") {
+                card.classList.add("investor-card");
+            }
             
             const contactStatus = item.contactEmail ? 'available' : 'form-only';
             const contactText = item.contactEmail ? 'Email Available' : 'Application Link';
@@ -577,28 +732,53 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
             // Initials for avatar fallback
             const initials = item.name.substring(0, 2).toUpperCase();
 
-            card.innerHTML = `
-                <div class="card-header">
-                    <div class="brand-logo-container">
-                        <img src="${item.logo}" alt="${item.name}" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.15rem; border-radius: var(--border-radius-sm);">${initials}</div>
+            if (activeDirectory === "sponsors") {
+                card.innerHTML = `
+                    <div class="card-header">
+                        <div class="brand-logo-container">
+                            <img src="${item.logo}" alt="${item.name}" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.15rem; border-radius: var(--border-radius-sm);">${initials}</div>
+                        </div>
+                        <span class="badge-type ${item.type === 'team' ? 'team-badge' : 'brand-badge'}">
+                            ${item.type === 'team' ? 'PARTNERSHIP' : 'BRAND'}
+                        </span>
                     </div>
-                    <span class="badge-type ${item.type === 'team' ? 'team-badge' : 'brand-badge'}">
-                        ${item.type === 'team' ? 'PARTNERSHIP' : 'BRAND'}
-                    </span>
-                </div>
-                <h3>${item.name}</h3>
-                <p class="brand-category">${item.category}</p>
-                
-                <div class="card-tags">
-                    <span class="tag-capsule"><i class="fa-solid fa-tag"></i> ${getSponsorTypeLabel(item.sponsorType)}</span>
-                    <span class="tag-capsule"><i class="fa-solid fa-users"></i> ${getScaleLabel(item.creatorSize)}</span>
-                </div>
-                
-                <div class="card-contact-indicator ${contactStatus}">
-                    <i class="fa-solid ${contactIcon}"></i> ${contactText}
-                </div>
-            `;
+                    <h3>${item.name}</h3>
+                    <p class="brand-category">${item.category}</p>
+                    
+                    <div class="card-tags">
+                        <span class="tag-capsule"><i class="fa-solid fa-tag"></i> ${getSponsorTypeLabel(item.sponsorType)}</span>
+                        <span class="tag-capsule"><i class="fa-solid fa-users"></i> ${getScaleLabel(item.creatorSize)}</span>
+                    </div>
+                    
+                    <div class="card-contact-indicator ${contactStatus}">
+                        <i class="fa-solid ${contactIcon}"></i> ${contactText}
+                    </div>
+                `;
+            } else {
+                card.innerHTML = `
+                    <div class="card-header">
+                        <div class="brand-logo-container">
+                            <img src="${item.logo}" alt="${item.name}" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.15rem; border-radius: var(--border-radius-sm);">${initials}</div>
+                        </div>
+                        <span class="badge-type investor-badge" style="background: rgba(245, 158, 11, 0.1); color: var(--color-premium); border: 1px solid rgba(245, 158, 11, 0.2);">
+                            INVESTOR
+                        </span>
+                    </div>
+                    <h3>${item.name}</h3>
+                    <p class="brand-category" style="color: var(--color-premium); font-weight: 500;">${item.investorType}</p>
+                    
+                    <div class="card-tags">
+                        <span class="tag-capsule"><i class="fa-solid fa-sack-dollar"></i> ${item.ticketSize}</span>
+                        <span class="tag-capsule"><i class="fa-solid fa-layer-group"></i> ${item.targetStage}</span>
+                    </div>
+                    
+                    <div class="card-contact-indicator ${contactStatus}">
+                        <i class="fa-solid ${contactIcon}"></i> Pitch Available
+                    </div>
+                `;
+            }
 
             card.addEventListener("click", () => openBrandDetails(item.id));
             brandGrid.appendChild(card);
@@ -619,80 +799,231 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
         const pitchTemplate = item.dna.pitchHelper || "";
         const initials = item.name.substring(0, 2).toUpperCase();
 
-        modalBodyContent.innerHTML = `
-            <div class="modal-header-block">
-                <div style="width: 64px; height: 64px; border-radius: var(--border-radius-sm); overflow: hidden; border: 1px solid var(--border-color); display: flex; flex-shrink: 0; background: var(--bg-main);">
-                    <img src="${item.logo}" alt="${item.name}" style="width: 100%; height: 100%; object-fit: cover;" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.5rem;">${initials}</div>
-                </div>
-                <div class="modal-title-desc">
-                    <h2>${item.name}</h2>
-                    <div class="modal-badges">
-                        <span class="badge-type ${item.type === 'team' ? 'team-badge' : 'brand-badge'}">
-                            ${item.type === 'team' ? 'PARTNERSHIP' : 'BRAND'}
-                        </span>
-                        <span class="tag-capsule"><i class="fa-solid fa-tag"></i> ${item.category}</span>
-                        <span class="tag-capsule"><i class="fa-solid fa-users"></i> ${getScaleLabel(item.creatorSize)}</span>
-                        <span class="tag-capsule"><i class="fa-solid fa-handshake"></i> ${getSponsorTypeLabel(item.sponsorType)}</span>
+        if (activeDirectory === "sponsors") {
+            modalBodyContent.innerHTML = `
+                <div class="modal-header-block">
+                    <div style="width: 64px; height: 64px; border-radius: var(--border-radius-sm); overflow: hidden; border: 1px solid var(--border-color); display: flex; flex-shrink: 0; background: var(--bg-main);">
+                        <img src="${item.logo}" alt="${item.name}" style="width: 100%; height: 100%; object-fit: cover;" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.5rem;">${initials}</div>
+                    </div>
+                    <div class="modal-title-desc">
+                        <h2>${item.name}</h2>
+                        <div class="modal-badges">
+                            <span class="badge-type ${item.type === 'team' ? 'team-badge' : 'brand-badge'}">
+                                ${item.type === 'team' ? 'PARTNERSHIP' : 'BRAND'}
+                            </span>
+                            <span class="tag-capsule"><i class="fa-solid fa-tag"></i> ${item.category}</span>
+                            <span class="tag-capsule"><i class="fa-solid fa-users"></i> ${getScaleLabel(item.creatorSize)}</span>
+                            <span class="tag-capsule"><i class="fa-solid fa-handshake"></i> ${getSponsorTypeLabel(item.sponsorType)}</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="modal-section">
-                <h4><i class="fa-solid fa-bullseye"></i> Sponsorship DNA (Requirements)</h4>
-                <p>${item.dna.requirements || 'Not specified.'}</p>
-            </div>
-
-            <div class="modal-section">
-                <h4><i class="fa-solid fa-handshake"></i> Compensation Structure</h4>
-                <p>${item.dna.dealStructure || 'Not specified.'}</p>
-            </div>
-
-            <div class="modal-section">
-                <h4><i class="fa-solid fa-envelope-open-text"></i> Contact Channels</h4>
-                <div style="background-color: var(--bg-main); border: 1px solid var(--border-color); border-radius: var(--border-radius-sm); padding: 16px;">
-                    ${contactHTML}
-                    ${item.contactForm && item.contactEmail ? `<p style="margin-top: 8px;"><i class="fa-solid fa-link" style="color: var(--text-muted); margin-right: 8px;"></i> <a href="${item.contactForm}" target="_blank" style="color: #60A5FA; text-decoration: none; font-size: 0.85rem;">Alternative Form Link</a></p>` : ''}
+                <div class="modal-section">
+                    <h4><i class="fa-solid fa-bullseye"></i> Sponsorship DNA (Requirements)</h4>
+                    <p>${item.dna.requirements || 'Not specified.'}</p>
                 </div>
-            </div>
 
-            <div class="modal-section">
-                <h4><i class="fa-solid fa-magic"></i> Pitch Helper Template</h4>
-                <div class="pitch-box-wrapper">
-                    <pre class="pitch-code-block" id="pitch-text">${pitchTemplate}</pre>
-                    <button class="btn-copy" id="btn-copy-pitch">
-                        <i class="fa-solid fa-copy"></i> Copy
-                    </button>
+                <div class="modal-section">
+                    <h4><i class="fa-solid fa-handshake"></i> Compensation Structure</h4>
+                    <p>${item.dna.dealStructure || 'Not specified.'}</p>
                 </div>
-            </div>
 
-            <div class="modal-actions-footer">
-                <a href="${item.contactForm || '#'}" target="_blank" class="btn btn-action-primary">
-                    <i class="fa-solid fa-paper-plane"></i> Apply for Sponsorship
-                </a>
-                ${item.contactEmail ? `
-                    <a href="mailto:${item.contactEmail}?subject=Sponsorship Inquiry&body=${encodeURIComponent(pitchTemplate)}" class="btn btn-action-secondary">
-                        <i class="fa-solid fa-envelope"></i> Send Email
+                <div class="modal-section">
+                    <h4><i class="fa-solid fa-envelope-open-text"></i> Contact Channels</h4>
+                    <div style="background-color: var(--bg-main); border: 1px solid var(--border-color); border-radius: var(--border-radius-sm); padding: 16px;">
+                        ${contactHTML}
+                        ${item.contactForm && item.contactEmail ? `<p style="margin-top: 8px;"><i class="fa-solid fa-link" style="color: var(--text-muted); margin-right: 8px;"></i> <a href="${item.contactForm}" target="_blank" style="color: #60A5FA; text-decoration: none; font-size: 0.85rem;">Alternative Form Link</a></p>` : ''}
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fa-solid fa-magic"></i> Pitch Helper Template</h4>
+                    <div class="pitch-box-wrapper">
+                        <pre class="pitch-code-block" id="pitch-text">${pitchTemplate}</pre>
+                        <button class="btn-copy" id="btn-copy-pitch">
+                            <i class="fa-solid fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-actions-footer">
+                    <a href="${item.contactForm || '#'}" target="_blank" class="btn btn-action-primary">
+                        <i class="fa-solid fa-paper-plane"></i> Apply for Sponsorship
                     </a>
-                ` : ''}
-            </div>
-        `;
+                    ${item.contactEmail ? `
+                        <a href="mailto:${item.contactEmail}?subject=Sponsorship Inquiry&body=${encodeURIComponent(pitchTemplate)}" class="btn btn-action-secondary">
+                            <i class="fa-solid fa-envelope"></i> Send Email
+                        </a>
+                    ` : ''}
+                </div>
+            `;
 
-        // Pitch template copy button logic
-        const copyBtn = document.getElementById("btn-copy-pitch");
-        copyBtn.addEventListener("click", () => {
-            const text = document.getElementById("pitch-text").textContent;
-            navigator.clipboard.writeText(text).then(() => {
-                copyBtn.classList.add("success");
-                copyBtn.innerHTML = `<i class="fa-solid fa-check"></i> Copied!`;
-                setTimeout(() => {
-                    copyBtn.classList.remove("success");
-                    copyBtn.innerHTML = `<i class="fa-solid fa-copy"></i> Copy`;
-                }, 2000);
-            }).catch(err => {
-                console.error("Clipboard copy failed: ", err);
+            // Common copy logic
+            const copyBtn = document.getElementById("btn-copy-pitch");
+            copyBtn.addEventListener("click", () => {
+                const text = document.getElementById("pitch-text").textContent;
+                navigator.clipboard.writeText(text).then(() => {
+                    copyBtn.classList.add("success");
+                    copyBtn.innerHTML = `<i class="fa-solid fa-check"></i> Copied!`;
+                    setTimeout(() => {
+                        copyBtn.classList.remove("success");
+                        copyBtn.innerHTML = `<i class="fa-solid fa-copy"></i> Copy`;
+                    }, 2000);
+                }).catch(err => {
+                    console.error("Clipboard copy failed: ", err);
+                });
             });
-        });
+        } else {
+            modalBodyContent.innerHTML = `
+                <div class="modal-header-block">
+                    <div style="width: 64px; height: 64px; border-radius: var(--border-radius-sm); overflow: hidden; border: 1px solid var(--border-color); display: flex; flex-shrink: 0; background: var(--bg-main);">
+                        <img src="${item.logo}" alt="${item.name}" style="width: 100%; height: 100%; object-fit: cover;" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.5rem;">${initials}</div>
+                    </div>
+                    <div class="modal-title-desc">
+                        <h2>${item.name}</h2>
+                        <div class="modal-badges">
+                            <span class="badge-type investor-badge" style="background: rgba(245, 158, 11, 0.1); color: var(--color-premium); border: 1px solid rgba(245, 158, 11, 0.2);">INVESTOR</span>
+                            <span class="tag-capsule"><i class="fa-solid fa-building-columns"></i> ${item.investorType}</span>
+                            <span class="tag-capsule"><i class="fa-solid fa-chart-line"></i> ${item.targetStage}</span>
+                            <span class="tag-capsule"><i class="fa-solid fa-sack-dollar"></i> ${item.ticketSize}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fa-solid fa-bullseye"></i> Target Sectors</h4>
+                    <p style="color: var(--text-main); font-weight: 500;">${item.sectors}</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fa-solid fa-search"></i> Investment Criteria (What they look for)</h4>
+                    <p>${item.dna.requirements || 'Not specified.'}</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fa-solid fa-handshake"></i> Expected Deal Structure</h4>
+                    <p>${item.dna.dealStructure || 'Not specified.'}</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fa-solid fa-envelope-open-text"></i> Contact Channels</h4>
+                    <div style="background-color: var(--bg-main); border: 1px solid var(--border-color); border-radius: var(--border-radius-sm); padding: 16px;">
+                        ${contactHTML}
+                        ${item.contactForm && item.contactEmail ? `<p style="margin-top: 8px;"><i class="fa-solid fa-link" style="color: var(--text-muted); margin-right: 8px;"></i> <a href="${item.contactForm}" target="_blank" style="color: #60A5FA; text-decoration: none; font-size: 0.85rem;">Alternative Form Link</a></p>` : ''}
+                    </div>
+                </div>
+
+                <div class="modal-section" style="background: rgba(245, 158, 11, 0.03); border: 1px solid rgba(245, 158, 11, 0.15); padding: 20px; border-radius: var(--border-radius-lg); margin-top: 20px;">
+                    <h4 style="color: var(--color-premium); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;"><i class="fa-solid fa-wand-magic-sparkles"></i> Customize Your Investor Pitch</h4>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 16px; line-height: 1.4;">Fill out your startup details to automatically format a personalized cold email template matching this investor's criteria.</p>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+                        <div>
+                            <label style="font-size: 0.72rem; color: var(--text-secondary); display: block; margin-bottom: 4px; font-weight: bold;">YOUR STARTUP NAME</label>
+                            <input type="text" id="pitch-startup-name" placeholder="e.g. Acme AI" style="width: 100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.82rem; box-sizing: border-box;">
+                        </div>
+                        <div>
+                            <label style="font-size: 0.72rem; color: var(--text-secondary); display: block; margin-bottom: 4px; font-weight: bold;">FOUNDER NAME</label>
+                            <input type="text" id="pitch-founder-name" placeholder="e.g. Ahmet Yılmaz" style="width: 100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.82rem; box-sizing: border-box;">
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 12px; margin-bottom: 12px;">
+                        <div>
+                            <label style="font-size: 0.72rem; color: var(--text-secondary); display: block; margin-bottom: 4px; font-weight: bold;">TRACTION / METRICS (e.g. MRR, active users)</label>
+                            <input type="text" id="pitch-traction" placeholder="e.g. $8k MRR, 120% YoY growth" style="width: 100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.82rem; box-sizing: border-box;">
+                        </div>
+                        <div>
+                            <label style="font-size: 0.72rem; color: var(--text-secondary); display: block; margin-bottom: 4px; font-weight: bold;">PITCH DECK URL</label>
+                            <input type="url" id="pitch-deck-url" placeholder="e.g. https://docsend.com/..." style="width: 100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.82rem; box-sizing: border-box;">
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 16px;">
+                        <label style="font-size: 0.72rem; color: var(--text-secondary); display: block; margin-bottom: 4px; font-weight: bold;">ONE-LINER STARTUP DESCRIPTION</label>
+                        <input type="text" id="pitch-description" placeholder="e.g. We build automated B2B customer support agents for e-commerce sites." style="width: 100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.82rem; box-sizing: border-box;">
+                    </div>
+                    
+                    <button class="btn" id="btn-generate-investor-pitch" style="background: var(--color-premium); color: #0b0f19; font-weight: bold; width: 100%; padding: 12px; border-radius: var(--border-radius-sm); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 20px; font-size: 0.85rem;">
+                        <i class="fa-solid fa-gears"></i> Generate Personalized Pitch
+                    </button>
+
+                    <div class="pitch-box-wrapper" style="margin-top: 12px; position: relative;">
+                        <pre class="pitch-code-block" id="pitch-text" style="border-color: rgba(245, 158, 11, 0.3); max-height: 250px; overflow-y: auto; text-align: left; padding: 16px; background: rgba(0,0,0,0.2); border-radius: var(--border-radius-sm); color: var(--text-main); font-family: monospace; white-space: pre-wrap; font-size: 0.85rem; line-height: 1.5; margin: 0;">${pitchTemplate}</pre>
+                        <button class="btn-copy" id="btn-copy-pitch" style="border-color: rgba(245, 158, 11, 0.4); color: var(--color-premium); font-size: 0.75rem; padding: 6px 12px;">
+                            <i class="fa-solid fa-copy"></i> Copy
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-actions-footer">
+                    <a href="${item.contactForm || '#'}" target="_blank" class="btn btn-action-primary" style="background: var(--color-premium); color: #0b0f19;">
+                        <i class="fa-solid fa-paper-plane"></i> Apply for Investment
+                    </a>
+                    ${item.contactEmail ? `
+                        <a href="mailto:${item.contactEmail}?subject=Investment Pitch: [Startup Name]&body=${encodeURIComponent(pitchTemplate)}" id="btn-mailto-investor" class="btn btn-action-secondary">
+                            <i class="fa-solid fa-envelope"></i> Send Email
+                        </a>
+                    ` : ''}
+                </div>
+            `;
+
+            // Step 4 logic: Personalized Pitch Generator click listener
+            const btnGenerate = document.getElementById("btn-generate-investor-pitch");
+            const pitchTextBlock = document.getElementById("pitch-text");
+            const btnMailto = document.getElementById("btn-mailto-investor");
+
+            btnGenerate.addEventListener("click", () => {
+                const sName = document.getElementById("pitch-startup-name").value.trim() || "[Startup Name]";
+                const fName = document.getElementById("pitch-founder-name").value.trim() || "[Founder Name]";
+                const sTraction = document.getElementById("pitch-traction").value.trim() || "[ Traction / MRR]";
+                const sDeck = document.getElementById("pitch-deck-url").value.trim() || "[Link to Pitch Deck]";
+                const sDesc = document.getElementById("pitch-description").value.trim() || "[Core Tech / One-liner]";
+
+                let updatedPitch = pitchTemplate
+                    .replace(/\[Startup Name\]/g, sName)
+                    .replace(/\[Name\]/g, fName)
+                    .replace(/\[Founder Name\]/g, fName)
+                    .replace(/\[Your Name\]/g, fName)
+                    .replace(/\[ Traction \/ MRR \/ Users\]/g, sTraction)
+                    .replace(/\[ Traction \/ MRR\]/g, sTraction)
+                    .replace(/\[Mevcut Gelir \/ Metrik\]/g, sTraction)
+                    .replace(/\[Link to Pitch Deck\]/g, sDeck)
+                    .replace(/\[Pitch Deck URL\]/g, sDeck)
+                    .replace(/\[Sunum Dosyası\]/g, sDeck)
+                    .replace(/\[Core Tech \/ One-liner\]/g, sDesc)
+                    .replace(/\[Short Description \/ One-liner\]/g, sDesc)
+                    .replace(/\[Çözümünüz\]/g, sDesc)
+                    .replace(/\[Çözüm\]/g, sDesc);
+
+                pitchTextBlock.textContent = updatedPitch;
+                
+                // Update mailto link dynamically
+                if (btnMailto) {
+                    btnMailto.href = `mailto:${item.contactEmail}?subject=Investment Pitch: ${encodeURIComponent(sName)}&body=${encodeURIComponent(updatedPitch)}`;
+                }
+
+                showNotification("Pitch template personalized successfully!");
+            });
+
+            // Common copy logic for VC modal
+            const copyBtn = document.getElementById("btn-copy-pitch");
+            copyBtn.addEventListener("click", () => {
+                const text = document.getElementById("pitch-text").textContent;
+                navigator.clipboard.writeText(text).then(() => {
+                    copyBtn.classList.add("success");
+                    copyBtn.innerHTML = `<i class="fa-solid fa-check"></i> Copied!`;
+                    setTimeout(() => {
+                        copyBtn.classList.remove("success");
+                        copyBtn.innerHTML = `<i class="fa-solid fa-copy"></i> Copy`;
+                    }, 2000);
+                }).catch(err => {
+                    console.error("Clipboard copy failed: ", err);
+                });
+            });
+        }
 
         openModal(detailModal);
     }
@@ -773,12 +1104,110 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
     const formCreatorSize = document.getElementById("form-creator-size");
     const formEmail = document.getElementById("form-email");
     const formLogo = document.getElementById("form-logo");
+    const formListingType = document.getElementById("form-listing-type");
     const liveCardPreview = document.getElementById("live-card-preview");
+
+    // Dynamic Submit Form Customization (Sponsor vs. Startup)
+    if (formListingType) {
+        formListingType.addEventListener("change", () => {
+            const isStartup = formListingType.value === "startup";
+            
+            // DOM Labels
+            const labelName = document.getElementById("label-form-name");
+            const labelType = document.getElementById("label-form-type");
+            const labelSponsorType = document.getElementById("label-form-sponsor-type");
+            const labelSize = document.getElementById("label-form-creator-size");
+            const labelReqs = document.getElementById("label-form-reqs");
+            
+            // DOM Inputs
+            const inputName = document.getElementById("form-name");
+            const inputType = document.getElementById("form-type");
+            const inputSponsorType = document.getElementById("form-sponsor-type");
+            const inputSize = document.getElementById("form-creator-size");
+            const inputReqs = document.getElementById("form-reqs");
+            
+            if (isStartup) {
+                if (labelName) labelName.textContent = "STARTUP NAME *";
+                if (inputName) inputName.placeholder = "e.g. Acme AI, CarbonTech";
+                
+                if (labelType) labelType.textContent = "BUSINESS MODEL *";
+                if (inputType) {
+                    inputType.innerHTML = `
+                        <option value="B2B SaaS">B2B SaaS</option>
+                        <option value="B2C Tech">B2C / Consumer Tech</option>
+                        <option value="Deep Tech">Deep Tech / Hardware</option>
+                        <option value="Other">Other Category</option>
+                    `;
+                }
+                
+                if (labelSponsorType) labelSponsorType.textContent = "INVESTMENT STAGE *";
+                if (inputSponsorType) {
+                    inputSponsorType.innerHTML = `
+                        <option value="Pre-Seed">Pre-Seed</option>
+                        <option value="Seed">Seed Stage</option>
+                        <option value="Series A">Series A</option>
+                        <option value="Series B+">Series B or Later</option>
+                    `;
+                }
+                
+                if (labelSize) labelSize.textContent = "FUNDING GOAL *";
+                if (inputSize) {
+                    inputSize.innerHTML = `
+                        <option value="Under $100k">Under $100,000</option>
+                        <option value="$100k-$500k">$100,000 - $500,000</option>
+                        <option value="$500k-$2M">$500,000 - $2,000,000</option>
+                        <option value="Above $2M">Above $2,000,000</option>
+                    `;
+                }
+                
+                if (labelReqs) labelReqs.textContent = "STARTUP PITCH & KEY METRICS (e.g. MRR, traction) *";
+                if (inputReqs) inputReqs.placeholder = "e.g. Developing automated AI support agents. Reached $8k MRR, growing 15% MoM, seeking pre-seed to scale our dev team...";
+            } else {
+                // Restore Sponsor Defaults
+                if (labelName) labelName.textContent = "BRAND OR PARTNER NAME *";
+                if (inputName) inputName.placeholder = "e.g. Shopify, Figma, Vercel";
+                
+                if (labelType) labelType.textContent = "ENTITY TYPE *";
+                if (inputType) {
+                    inputType.innerHTML = `
+                        <option value="brand">Brand / SaaS</option>
+                        <option value="team">Partnership / Program</option>
+                    `;
+                }
+                
+                if (labelSponsorType) labelSponsorType.textContent = "PARTNERSHIP TYPE *";
+                if (inputSponsorType) {
+                    inputSponsorType.innerHTML = `
+                        <option value="Product Gifting">Barter / Product Support</option>
+                        <option value="Affiliate">Affiliate / Referral</option>
+                        <option value="Flat Fee">Sponsorship / Paid</option>
+                        <option value="B2B Partnership">B2B Collab / Cross-Promo</option>
+                    `;
+                }
+                
+                if (labelSize) labelSize.textContent = "COLLABORATION SCALE *";
+                if (inputSize) {
+                    inputSize.innerHTML = `
+                        <option value="Any Size">Any Scale / Startup</option>
+                        <option value="Micro (10k-50k)">Startup / Mid-Scale</option>
+                        <option value="Macro (50k+)">Enterprise / Tier-1</option>
+                    `;
+                }
+                
+                if (labelReqs) labelReqs.textContent = "KEY REQUIREMENTS / DESCRIPTION *";
+                if (inputReqs) inputReqs.placeholder = "e.g. Open to co-marketing campaigns, event sponsorships, or hosting collaborative workshops...";
+            }
+            updateLivePreview();
+        });
+    }
 
     function updateLivePreview() {
         if (!liveCardPreview) return;
         
-        const nameVal = (formName ? formName.value.trim() : "") || "Partner Name";
+        const listingType = formListingType ? formListingType.value : "sponsor";
+        const isStartup = listingType === "startup";
+        
+        const nameVal = (formName ? formName.value.trim() : "") || (isStartup ? "Startup Name" : "Partner Name");
         const typeVal = formType ? formType.value : "brand";
         const categoryVal = formCategory ? formCategory.value : "Gaming";
         const sponsorTypeVal = formSponsorType ? formSponsorType.value : "Product Gifting";
@@ -793,33 +1222,60 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
         const initials = nameVal.substring(0, 2).toUpperCase();
         const logoUrl = logoVal || `https://www.google.com/s2/favicons?domain=${nameVal.toLowerCase().replace(/[^a-z0-9]/g, "") || "brand"}.com&sz=128`;
         
-        liveCardPreview.innerHTML = `
-            <div class="card-header">
-                <div class="brand-logo-container">
-                    <img src="${logoUrl}" alt="${nameVal}" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.15rem; border-radius: var(--border-radius-sm);">${initials}</div>
+        if (!isStartup) {
+            liveCardPreview.className = "brand-card";
+            liveCardPreview.innerHTML = `
+                <div class="card-header">
+                    <div class="brand-logo-container">
+                        <img src="${logoUrl}" alt="${nameVal}" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.15rem; border-radius: var(--border-radius-sm);">${initials}</div>
+                    </div>
+                    <span class="badge-type ${typeVal === 'team' ? 'team-badge' : 'brand-badge'}">
+                        ${typeVal === 'team' ? 'PARTNERSHIP' : 'BRAND'}
+                    </span>
                 </div>
-                <span class="badge-type ${typeVal === 'team' ? 'team-badge' : 'brand-badge'}">
-                    ${typeVal === 'team' ? 'PARTNERSHIP' : 'BRAND'}
-                </span>
-            </div>
-            <h3>${nameVal}</h3>
-            <p class="brand-category">${categoryVal}</p>
-            
-            <div class="card-tags">
-                <span class="tag-capsule"><i class="fa-solid fa-tag"></i> ${getSponsorTypeLabel(sponsorTypeVal)}</span>
-                <span class="tag-capsule"><i class="fa-solid fa-users"></i> ${getScaleLabel(creatorSizeVal)}</span>
-            </div>
-            
-            <div class="card-contact-indicator ${contactStatus}">
-                <i class="fa-solid ${contactIcon}"></i> ${contactText}
-            </div>
-        `;
+                <h3>${nameVal}</h3>
+                <p class="brand-category">${categoryVal}</p>
+                
+                <div class="card-tags">
+                    <span class="tag-capsule"><i class="fa-solid fa-tag"></i> ${getSponsorTypeLabel(sponsorTypeVal)}</span>
+                    <span class="tag-capsule"><i class="fa-solid fa-users"></i> ${getScaleLabel(creatorSizeVal)}</span>
+                </div>
+                
+                <div class="card-contact-indicator ${contactStatus}">
+                    <i class="fa-solid ${contactIcon}"></i> ${contactText}
+                </div>
+            `;
+        } else {
+            liveCardPreview.className = "brand-card investor-card";
+            liveCardPreview.innerHTML = `
+                <div class="card-header">
+                    <div class="brand-logo-container">
+                        <img src="${logoUrl}" alt="${nameVal}" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.15rem; border-radius: var(--border-radius-sm);">${initials}</div>
+                    </div>
+                    <span class="badge-type team-badge" style="background: rgba(168, 85, 247, 0.1); color: #A855F7; border: 1px solid rgba(168, 85, 247, 0.2);">
+                        STARTUP
+                    </span>
+                </div>
+                <h3>${nameVal}</h3>
+                <p class="brand-category" style="color: #A855F7; font-weight: 500;">${typeVal}</p>
+                
+                <div class="card-tags">
+                    <span class="tag-capsule"><i class="fa-solid fa-layer-group"></i> ${sponsorTypeVal}</span>
+                    <span class="tag-capsule"><i class="fa-solid fa-sack-dollar"></i> ${creatorSizeVal}</span>
+                </div>
+                
+                <div class="card-contact-indicator ${contactStatus}">
+                    <i class="fa-solid ${contactIcon}"></i> Pitch Deck Ready
+                </div>
+            `;
+        }
     }
 
     if (formName) {
         [formName, formEmail, formLogo].forEach(el => el.addEventListener("input", updateLivePreview));
-        [formType, formCategory, formSponsorType, formCreatorSize].forEach(el => el.addEventListener("change", updateLivePreview));
+        [formType, formCategory, formSponsorType, formCreatorSize, formListingType].forEach(el => el.addEventListener("change", updateLivePreview));
     }
 
     // Handle AI Matchmaker Form Submission

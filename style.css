@@ -819,3 +819,44 @@ select {
         padding: 20px;
     }
 }
+
+/* --- Directory Tabs CoMatch 2.0 --- */
+.directory-tabs-container {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1.5px solid var(--border-color);
+    padding-bottom: 2px;
+    align-items: center;
+}
+
+.directory-tab {
+    background: none;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding-bottom: 12px;
+    border-bottom: 3px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+    outline: none;
+}
+
+.directory-tab:hover {
+    color: var(--text-primary);
+}
+
+.directory-tab.active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+.directory-tab[data-directory="investors"].active {
+    color: var(--color-premium);
+    border-bottom-color: var(--color-premium);
+}
