@@ -321,7 +321,12 @@ If it is safe and relevant, accept and enrich the data by returning the followin
     "dna": {
       "requirements": "Write a professional summary of requirements/criteria for startups in English based on their description.",
       "dealStructure": "Write investment terms details (equity, convertible notes, SAFE etc) in English.",
-      "pitchHelper": "Write a customized pitch email template in English for startups pitching this fund. Include brackets like [Startup Name] and [Your Name]."
+      "pitchHelper": "Write a customized pitch email template in English for startups pitching this fund. Include brackets like [Startup Name] and [Your Name].",
+      "pitchTips": [
+        "First specific tip to bypass spam filter or get their attention based on their criteria and website",
+        "Second specific tip on metrics they look for or pitch format",
+        "Third specific tip on outreach custom to this fund"
+      ]
     }
   }
 }
@@ -362,7 +367,12 @@ If it is safe and relevant, you MUST accept it and enrich the data by returning 
     "dna": {
       "requirements": "Write a professional summary of requirements for creators based on the brand's profile in English.",
       "dealStructure": "Write what kind of deal the brand likely offers (e.g., Product gifting, Affiliate code, Flat fee payout).",
-      "pitchHelper": "Write a customized, professional introductory pitch email template in English. Include brackets like [Name] and [Channel Link]."
+      "pitchHelper": "Write a customized, professional introductory pitch email template in English. Include brackets like [Name] and [Channel Link].",
+      "pitchTips": [
+        "First specific tip to bypass spam filter or get their attention based on their brand and guidelines",
+        "Second specific tip on target audience or channel statistics they value",
+        "Third specific tip on outreach custom to this sponsor"
+      ]
     }
   }
 }

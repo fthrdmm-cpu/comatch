@@ -618,7 +618,12 @@ If it is safe and relevant, you MUST accept it and enrich the data by returning 
     "dna": {
       "requirements": "Write a professional summary of requirements for creators based on the brand's profile in English.",
       "dealStructure": "Write what kind of deal the brand likely offers (e.g., Product gifting, Affiliate code, Flat fee payout).",
-      "pitchHelper": "Write a customized, professional introductory pitch email template in English. Include brackets like [Name] and [Channel Link]."
+      "pitchHelper": "Write a customized, professional introductory pitch email template in English. Include brackets like [Name] and [Channel Link].",
+      "pitchTips": [
+        "First specific tip to bypass spam filter or get their attention based on their brand and guidelines",
+        "Second specific tip on target audience or channel statistics they value",
+        "Third specific tip on outreach custom to this sponsor"
+      ]
     }
   }
 }
@@ -1019,6 +1024,8 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                     </div>
                 </div>
 
+                ${getPitchTipsHTML(item)}
+
                 <div class="modal-actions-footer">
                     <a href="${item.contactForm || '#'}" target="_blank" class="btn btn-action-primary">
                         <i class="fa-solid fa-paper-plane"></i> Apply for Sponsorship
@@ -1131,6 +1138,8 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                         </button>
                     </div>
                 </div>
+
+                ${getPitchTipsHTML(item)}
 
                 <div class="modal-actions-footer">
                     <a href="${item.contactForm || '#'}" target="_blank" class="btn btn-action-primary" style="background: var(--color-premium); color: #0b0f19;">
@@ -1268,6 +1277,25 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
         if (val.includes('Macro')) return 'Enterprise / Tier-1';
         if (val.includes('Any Size')) return 'Any Scale';
         return val;
+    }
+
+    function getPitchTipsHTML(item) {
+        const tips = item.dna && Array.isArray(item.dna.pitchTips) && item.dna.pitchTips.length > 0
+            ? item.dna.pitchTips
+            : [
+                "Personalize the Subject: Avoid generic words like 'Sponsorship Request'. Use: '[CoMatch Partner] - [Your Brand/Project Name]'.",
+                "Lead with Immediate Traction: Capture attention in the very first sentence by stating your key metric (CCV, MRR, Active Users, or Growth rate).",
+                "Keep it Under 150 Words: Sponsors and VCs scan emails. Keep the body short and direct, and link your pitch deck or media kit at the end."
+              ];
+              
+        return `
+            <div class="modal-section" style="background: rgba(59, 130, 246, 0.03); border: 1px solid rgba(59, 130, 246, 0.12); padding: 16px 20px; border-radius: var(--border-radius-sm); margin-top: 20px;">
+                <h4 style="color: var(--color-primary); margin-bottom: 10px; display: flex; align-items: center; gap: 8px; font-size: 0.95rem;"><i class="fa-solid fa-lightbulb" style="color: #EAB308;"></i> Spam-Proof Pitching Tips</h4>
+                <ul style="margin: 0; padding-left: 18px; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5; display: flex; flex-direction: column; gap: 6px; text-align: left;">
+                    ${tips.map(tip => `<li style="list-style-type: disc;">${tip}</li>`).join('')}
+                </ul>
+            </div>
+        `;
     }
 
     // Live Preview Logic for Submit Modal
