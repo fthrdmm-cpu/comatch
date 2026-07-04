@@ -1071,7 +1071,9 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
 
                 <div class="modal-section" style="background: rgba(245, 158, 11, 0.03); border: 1px solid rgba(245, 158, 11, 0.15); padding: 20px; border-radius: var(--border-radius-lg); margin-top: 20px;">
                     <h4 style="color: var(--color-premium); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;"><i class="fa-solid fa-wand-magic-sparkles"></i> Customize Your Investor Pitch</h4>
-                    <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 16px; line-height: 1.4;">Fill out your startup details to automatically format a personalized cold email template matching this investor's criteria.</p>
+                    <div style="background: rgba(245, 158, 11, 0.06); border-left: 3px solid var(--color-premium); padding: 12px 16px; border-radius: 4px; margin-bottom: 16px; font-size: 0.82rem; color: var(--text-secondary); line-height: 1.4; text-align: left;">
+                        <i class="fa-solid fa-circle-info" style="color: var(--color-premium); margin-right: 6px;"></i> Fill out your startup details to automatically format a personalized cold email template matching this investor's criteria.
+                    </div>
                     
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
                         <div>
