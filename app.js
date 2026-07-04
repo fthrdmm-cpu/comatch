@@ -1076,28 +1076,28 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
                         <div>
                             <label style="font-size: 0.72rem; color: var(--text-secondary); display: block; margin-bottom: 4px; font-weight: bold;">YOUR STARTUP NAME</label>
-                            <input type="text" id="pitch-startup-name" placeholder="e.g. Acme AI" style="width: 100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.82rem; box-sizing: border-box;">
+                            <input type="text" id="pitch-startup-name" placeholder="e.g. Acme AI" style="width: 100%; background: var(--bg-surface-hover); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #0f172a; font-size: 0.82rem; box-sizing: border-box;">
                         </div>
                         <div>
                             <label style="font-size: 0.72rem; color: var(--text-secondary); display: block; margin-bottom: 4px; font-weight: bold;">FOUNDER NAME</label>
-                            <input type="text" id="pitch-founder-name" placeholder="e.g. Ahmet Yılmaz" style="width: 100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.82rem; box-sizing: border-box;">
+                            <input type="text" id="pitch-founder-name" placeholder="e.g. Ahmet Yılmaz" style="width: 100%; background: var(--bg-surface-hover); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #0f172a; font-size: 0.82rem; box-sizing: border-box;">
                         </div>
                     </div>
                     
                     <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 12px; margin-bottom: 12px;">
                         <div>
                             <label style="font-size: 0.72rem; color: var(--text-secondary); display: block; margin-bottom: 4px; font-weight: bold;">TRACTION / METRICS (e.g. MRR, active users)</label>
-                            <input type="text" id="pitch-traction" placeholder="e.g. $8k MRR, 120% YoY growth" style="width: 100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.82rem; box-sizing: border-box;">
+                            <input type="text" id="pitch-traction" placeholder="e.g. $8k MRR, 120% YoY growth" style="width: 100%; background: var(--bg-surface-hover); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #0f172a; font-size: 0.82rem; box-sizing: border-box;">
                         </div>
                         <div>
                             <label style="font-size: 0.72rem; color: var(--text-secondary); display: block; margin-bottom: 4px; font-weight: bold;">PITCH DECK URL</label>
-                            <input type="url" id="pitch-deck-url" placeholder="e.g. https://docsend.com/..." style="width: 100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.82rem; box-sizing: border-box;">
+                            <input type="url" id="pitch-deck-url" placeholder="e.g. https://docsend.com/..." style="width: 100%; background: var(--bg-surface-hover); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #0f172a; font-size: 0.82rem; box-sizing: border-box;">
                         </div>
                     </div>
                     
                     <div style="margin-bottom: 16px;">
                         <label style="font-size: 0.72rem; color: var(--text-secondary); display: block; margin-bottom: 4px; font-weight: bold;">ONE-LINER STARTUP DESCRIPTION</label>
-                        <input type="text" id="pitch-description" placeholder="e.g. We build automated B2B customer support agents for e-commerce sites." style="width: 100%; background: var(--bg-main); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #fff; font-size: 0.82rem; box-sizing: border-box;">
+                        <input type="text" id="pitch-description" placeholder="e.g. We build automated B2B customer support agents for e-commerce sites." style="width: 100%; background: var(--bg-surface-hover); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #0f172a; font-size: 0.82rem; box-sizing: border-box;">
                     </div>
                     
                     <button class="btn" id="btn-generate-investor-pitch" style="background: var(--color-premium); color: #0b0f19; font-weight: bold; width: 100%; padding: 12px; border-radius: var(--border-radius-sm); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 20px; font-size: 0.85rem;">
