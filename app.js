@@ -516,6 +516,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const logoUrl = document.getElementById("form-logo").value;
         const reqs = document.getElementById("form-reqs").value;
         const apiKey = apiKeyInput ? apiKeyInput.value.trim() : "";
+        const listingType = formListingType ? formListingType.value : "sponsor";
 
         // Save API key if provided
         if (apiKey) {
@@ -541,15 +542,21 @@ document.addEventListener("DOMContentLoaded", () => {
                         url,
                         email,
                         description: reqs,
-                        logoUrl
+                        logoUrl,
+                        listingType
                     })
                 });
 
                 const result = await response.json();
 
                 if (response.ok && result.success) {
-                    // Prepend new listing from AI
-                    dbData.unshift(result.brand);
+                    // Prepend new listing from AI to the correct local list
+                    if (result.brand.type === 'investor') {
+                        investorsData.unshift(result.brand);
+                    } else {
+                        sponsorsData.unshift(result.brand);
+                    }
+                    dbData = activeDirectory === "sponsors" ? sponsorsData : investorsData;
                     
                     // Reset and close
                     submitBrandForm.reset();
@@ -778,15 +785,26 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                 })
                 .then(data => {
                     if (Array.isArray(data) && data.length > 0) {
-                        sponsorsData = data;
-                        console.log(`[+] Updated ${sponsorsData.length} brands dynamically from live API`);
+                        // Separate dynamic B2B sponsors vs. dynamic investors
+                        const dynamicSponsors = data.filter(item => item.type !== 'investor');
+                        const dynamicInvestors = data.filter(item => item.type === 'investor');
+
+                        sponsorsData = dynamicSponsors;
+
+                        // Merge dynamic investors with static seed list, avoiding duplicate IDs
+                        const staticInvestors = typeof INVESTORS_DATA !== 'undefined' && Array.isArray(INVESTORS_DATA) ? INVESTORS_DATA : [];
+                        const seenIds = new Set(staticInvestors.map(i => i.id));
+                        investorsData = [
+                            ...staticInvestors,
+                            ...dynamicInvestors.filter(item => !seenIds.has(item.id))
+                        ];
+
+                        console.log(`[+] Loaded ${sponsorsData.length} sponsors & ${investorsData.length} investors dynamically from live API`);
                         
-                        // Only update UI if the active directory is sponsors
-                        if (activeDirectory === "sponsors") {
-                            dbData = sponsorsData;
-                            calculateStats();
-                            renderBrands();
-                        }
+                        // Update active pointer and redraw
+                        dbData = activeDirectory === "sponsors" ? sponsorsData : investorsData;
+                        calculateStats();
+                        renderBrands();
                     }
                 })
                 .catch(e => {
@@ -1263,10 +1281,10 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
     const formListingType = document.getElementById("form-listing-type");
     const liveCardPreview = document.getElementById("live-card-preview");
 
-    // Dynamic Submit Form Customization (Sponsor vs. Startup)
+    // Dynamic Submit Form Customization (Sponsor vs. Investor)
     if (formListingType) {
         formListingType.addEventListener("change", () => {
-            const isStartup = formListingType.value === "startup";
+            const isInvestor = formListingType.value === "investor";
             
             // DOM Labels
             const labelName = document.getElementById("label-form-name");
@@ -1282,42 +1300,41 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
             const inputSize = document.getElementById("form-creator-size");
             const inputReqs = document.getElementById("form-reqs");
             
-            if (isStartup) {
-                if (labelName) labelName.textContent = "STARTUP NAME *";
-                if (inputName) inputName.placeholder = "e.g. Acme AI, CarbonTech";
+            if (isInvestor) {
+                if (labelName) labelName.textContent = "INVESTOR OR VC FUND NAME *";
+                if (inputName) inputName.placeholder = "e.g. scaleX Ventures, Sequoia, TRangels";
                 
-                if (labelType) labelType.textContent = "BUSINESS MODEL *";
+                if (labelType) labelType.textContent = "INVESTOR TYPE *";
                 if (inputType) {
                     inputType.innerHTML = `
-                        <option value="B2B SaaS">B2B SaaS</option>
-                        <option value="B2C Tech">B2C / Consumer Tech</option>
-                        <option value="Deep Tech">Deep Tech / Hardware</option>
-                        <option value="Other">Other Category</option>
+                        <option value="Venture Capital">Venture Capital (VC)</option>
+                        <option value="Angel Network">Angel Network</option>
+                        <option value="Accelerator">Accelerator / Incubator</option>
                     `;
                 }
                 
-                if (labelSponsorType) labelSponsorType.textContent = "INVESTMENT STAGE *";
+                if (labelSponsorType) labelSponsorType.textContent = "TARGET STAGE *";
                 if (inputSponsorType) {
                     inputSponsorType.innerHTML = `
-                        <option value="Pre-Seed">Pre-Seed</option>
-                        <option value="Seed">Seed Stage</option>
-                        <option value="Series A">Series A</option>
-                        <option value="Series B+">Series B or Later</option>
+                        <option value="Pre-Seed / Seed">Pre-Seed / Seed</option>
+                        <option value="Seed / Series A">Seed / Series A</option>
+                        <option value="Series A / B">Series A / B</option>
+                        <option value="Multi-Stage">Multi-Stage / Growth</option>
                     `;
                 }
                 
-                if (labelSize) labelSize.textContent = "FUNDING GOAL *";
+                if (labelSize) labelSize.textContent = "AVERAGE TICKET SIZE *";
                 if (inputSize) {
                     inputSize.innerHTML = `
-                        <option value="Under $100k">Under $100,000</option>
-                        <option value="$100k-$500k">$100,000 - $500,000</option>
-                        <option value="$500k-$2M">$500,000 - $2,000,000</option>
-                        <option value="Above $2M">Above $2,000,000</option>
+                        <option value="Under $250k">Under $250,000</option>
+                        <option value="$250k-$1M">$250,000 - $1,000,000</option>
+                        <option value="$1M-$5M">$1,000,000 - $5,000,000</option>
+                        <option value="Above $5M">Above $5,000,000</option>
                     `;
                 }
                 
-                if (labelReqs) labelReqs.textContent = "STARTUP PITCH & KEY METRICS (e.g. MRR, traction) *";
-                if (inputReqs) inputReqs.placeholder = "e.g. Developing automated AI support agents. Reached $8k MRR, growing 15% MoM, seeking pre-seed to scale our dev team...";
+                if (labelReqs) labelReqs.textContent = "INVESTMENT CRITERIA & SECTORS *";
+                if (inputReqs) inputReqs.placeholder = "e.g. Focus on B2B SaaS and AI. Requires MVP ready, Turkish founders targeting global markets, MRR > $5k...";
             } else {
                 // Restore Sponsor Defaults
                 if (labelName) labelName.textContent = "BRAND OR PARTNER NAME *";
@@ -1361,9 +1378,9 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
         if (!liveCardPreview) return;
         
         const listingType = formListingType ? formListingType.value : "sponsor";
-        const isStartup = listingType === "startup";
+        const isInvestor = listingType === "investor";
         
-        const nameVal = (formName ? formName.value.trim() : "") || (isStartup ? "Startup Name" : "Partner Name");
+        const nameVal = (formName ? formName.value.trim() : "") || (isInvestor ? "Investor Name" : "Partner Name");
         const typeVal = formType ? formType.value : "brand";
         const categoryVal = formCategory ? formCategory.value : "Gaming";
         const sponsorTypeVal = formSponsorType ? formSponsorType.value : "Product Gifting";
@@ -1378,7 +1395,7 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
         const initials = nameVal.substring(0, 2).toUpperCase();
         const logoUrl = logoVal || `https://www.google.com/s2/favicons?domain=${nameVal.toLowerCase().replace(/[^a-z0-9]/g, "") || "brand"}.com&sz=128`;
         
-        if (!isStartup) {
+        if (!isInvestor) {
             liveCardPreview.className = "brand-card";
             liveCardPreview.innerHTML = `
                 <div class="card-header">
@@ -1410,12 +1427,12 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                         <img src="${logoUrl}" alt="${nameVal}" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.15rem; border-radius: var(--border-radius-sm);">${initials}</div>
                     </div>
-                    <span class="badge-type team-badge" style="background: rgba(168, 85, 247, 0.1); color: #A855F7; border: 1px solid rgba(168, 85, 247, 0.2);">
-                        STARTUP
+                    <span class="badge-type team-badge" style="background: rgba(245, 158, 11, 0.1); color: var(--color-premium); border: 1px solid rgba(245, 158, 11, 0.2);">
+                        INVESTOR
                     </span>
                 </div>
                 <h3>${nameVal}</h3>
-                <p class="brand-category" style="color: #A855F7; font-weight: 500;">${typeVal}</p>
+                <p class="brand-category" style="color: var(--color-premium); font-weight: 500;">${typeVal}</p>
                 
                 <div class="card-tags">
                     <span class="tag-capsule"><i class="fa-solid fa-layer-group"></i> ${sponsorTypeVal}</span>
@@ -1423,7 +1440,7 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                 </div>
                 
                 <div class="card-contact-indicator ${contactStatus}">
-                    <i class="fa-solid ${contactIcon}"></i> Pitch Deck Ready
+                    <i class="fa-solid ${contactIcon}"></i> ${contactText}
                 </div>
             `;
         }

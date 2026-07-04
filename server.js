@@ -197,13 +197,13 @@ app.get('/api/brands', (req, res) => {
 
 // API: Submit a brand (AI Auto-moderation & verification)
 app.post('/api/submit-brand', async (req, res) => {
-    const { name, url, email, description, logoUrl } = req.body;
+    const { name, url, email, description, logoUrl, listingType } = req.body;
 
     if (!name || !url || !description) {
         return res.status(400).json({ error: "Missing required fields (Name, URL, Description)" });
     }
 
-    console.log(`[*] New Brand Submission Request: [${name}] - Website: [${url}]`);
+    console.log(`[*] New Submission Request: [${name}] - Type: [${listingType || 'sponsor'}] - Website: [${url}]`);
 
     // Step 1: Online Domain Verification
     const isOnline = await pingDomain(url);
@@ -222,29 +222,52 @@ app.post('/api/submit-brand', async (req, res) => {
         const domain = url.replace(/https?:\/\//i, "").replace("www.", "").split('/')[0];
         const finalLogo = logoUrl ? logoUrl : `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
         
-        const newBrand = {
-            id,
-            name,
-            type: "brand",
-            category: "Gaming",
-            sponsorType: "Product Gifting",
-            creatorSize: "Micro (10k-50k)",
-            contactEmail: email || null,
-            contactForm: url,
-            logo: finalLogo,
-            dna: {
-                requirements: "Requires gaming/tech stream coverage, positive community engagement.",
-                dealStructure: "Product gifting sponsorships.",
-                pitchHelper: `Hi ${name} Partnerships,\n\nI am [Name], a content developer at [Link]. I would love to explore a partnership to feature ${name} on my channel. Attached is my media kit.\n\nBest,\n[Name]`
-            },
-            premium: false
-        };
+        let newBrand;
+        const isInvestor = listingType === "investor";
+        if (isInvestor) {
+            newBrand = {
+                id,
+                name,
+                type: "investor",
+                investorType: "Venture Capital",
+                targetStage: "Pre-Seed / Seed",
+                sectors: "Tech, SaaS, AI",
+                ticketSize: "$250,000 - $1,000,000",
+                contactEmail: email || null,
+                contactForm: url,
+                logo: finalLogo,
+                dna: {
+                    requirements: description || "Requires MVP, strong team, scalable tech.",
+                    dealStructure: "Equity round, clean SAFE.",
+                    pitchHelper: `Dear ${name} Team,\n\nWe are building [Startup Name], a [One-liner]...`
+                },
+                premium: false
+            };
+        } else {
+            newBrand = {
+                id,
+                name,
+                type: "brand",
+                category: "Gaming",
+                sponsorType: "Product Gifting",
+                creatorSize: "Micro (10k-50k)",
+                contactEmail: email || null,
+                contactForm: url,
+                logo: finalLogo,
+                dna: {
+                    requirements: description || "Requires gaming/tech stream coverage, positive community engagement.",
+                    dealStructure: "Product gifting sponsorships.",
+                    pitchHelper: `Hi ${name} Partnerships,\n\nI am [Name], a content developer at [Link]. I would love to explore a partnership to feature ${name} on my channel. Attached is my media kit.\n\nBest,\n[Name]`
+                },
+                premium: false
+            };
+        }
 
         if (supabase) {
             const { error } = await supabase.from('brands').insert(newBrand);
             if (error) {
                 console.error("[-] Supabase save error:", error.message);
-                return res.status(500).json({ error: "Failed to save brand to cloud database." });
+                return res.status(500).json({ error: "Failed to save listing to cloud database." });
             }
         }
         dbData.unshift(newBrand);
@@ -260,7 +283,51 @@ app.post('/api/submit-brand', async (req, res) => {
         const ai = new GoogleGenerativeAI(apiKey);
         const model = ai.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
-        const prompt = `You are the auto-moderator and submission processor bot for CoMatch, a web directory of B2B brand partnerships and sponsorships.
+        const isInvestor = listingType === "investor";
+        const prompt = isInvestor 
+            ? `You are the auto-moderator and submission processor bot for CoMatch, a web directory of Venture Capital, Accelerators, and Angel Investors.
+Evaluate this investor/VC submission:
+Investor/Fund Name: "${name}"
+Website URL: "${url}"
+Contact Email: "${email || 'Not provided'}"
+Description / Focus: "${description}"
+User-provided Logo URL: "${logoUrl || 'Not provided'}"
+
+SAFETY / MODERATION CHECKS:
+- Check if this fund name or description contains NSFW, violence, drugs, gambling, or illegal activities.
+- Check if it is spam or gibberish (e.g. random letters, unrelated ads).
+- Verify if it represents an actual venture capital fund, accelerator, or angel network.
+
+If it is unsafe or spam, reject it by returning:
+{
+  "approved": false,
+  "reason": "Specify a rejection reason in English."
+}
+
+If it is safe and relevant, accept and enrich the data by returning the following JSON:
+{
+  "approved": true,
+  "brand": {
+    "id": "${name.toLowerCase().replace(/[^a-z0-9]/g, "-")}",
+    "name": "${name}",
+    "type": "investor",
+    "investorType": "Venture Capital | Angel Network | Accelerator (choose the most appropriate)",
+    "targetStage": "Pre-Seed / Seed | Seed / Series A | Series A / B | Multi-Stage (choose the most appropriate)",
+    "sectors": "Comma-separated target sectors (e.g. AI, SaaS, Fintech)",
+    "ticketSize": "Estimate ticket size (e.g. $100,000 - $500,000 or $250,000 - $1,000,000)",
+    "contactEmail": "${email || null}",
+    "contactForm": "${url}",
+    "logo": "Use user logo if valid. Otherwise generate: https://www.google.com/s2/favicons?domain=extracted-domain&sz=128",
+    "dna": {
+      "requirements": "Write a professional summary of requirements/criteria for startups in English based on their description.",
+      "dealStructure": "Write investment terms details (equity, convertible notes, SAFE etc) in English.",
+      "pitchHelper": "Write a customized pitch email template in English for startups pitching this fund. Include brackets like [Startup Name] and [Your Name]."
+    }
+  }
+}
+
+Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like \`\`\`json.`
+            : `You are the auto-moderator and submission processor bot for CoMatch, a web directory of B2B brand partnerships and sponsorships.
 Evaluate this brand submission:
 Brand Name: "${name}"
 Website URL: "${url}"
@@ -328,13 +395,13 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
             const { error } = await supabase.from('brands').insert(enrichedBrand);
             if (error) {
                 console.error("[-] Supabase save error:", error.message);
-                return res.status(500).json({ error: "Failed to save brand to cloud database." });
+                return res.status(500).json({ error: "Failed to save listing to cloud database." });
             }
         }
         dbData.unshift(enrichedBrand);
         fs.writeFileSync(databasePath, JSON.stringify(dbData, null, 2), 'utf8');
         
-        console.log(`[+] AI Moderation approved and added brand: [${enrichedBrand.name}]`);
+        console.log(`[+] AI Moderation approved and added listing: [${enrichedBrand.name}] (type: ${enrichedBrand.type})`);
         
         // Send Telegram notification (async background)
         sendTelegramNotification(enrichedBrand, true);
