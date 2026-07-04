@@ -1122,9 +1122,14 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                         </div>
                     </div>
                     
-                    <div style="margin-bottom: 16px;">
+                    <div style="margin-bottom: 12px;">
                         <label style="font-size: 0.72rem; color: var(--text-secondary); display: block; margin-bottom: 4px; font-weight: bold;">ONE-LINER STARTUP DESCRIPTION</label>
                         <input type="text" id="pitch-description" placeholder="e.g. We build automated B2B customer support agents for e-commerce sites." style="width: 100%; background: var(--bg-surface-hover); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #0f172a; font-size: 0.82rem; box-sizing: border-box;">
+                    </div>
+                    
+                    <div style="margin-bottom: 16px;">
+                        <label style="font-size: 0.72rem; color: var(--text-secondary); display: block; margin-bottom: 4px; font-weight: bold;">DETAILED STARTUP DESCRIPTION (Product, Problem, & Solution)</label>
+                        <textarea id="pitch-detail-desc" placeholder="e.g. Customer support in e-commerce is slow and expensive. We build AI-powered agents that integrate with Shopify and Zendesk, automatically resolving 70% of common tickets instantly. We have launched our beta with 15 active stores." style="width: 100%; height: 64px; background: var(--bg-surface-hover); border: 1px solid var(--border-color); padding: 10px; border-radius: var(--border-radius-sm); color: #0f172a; font-size: 0.82rem; box-sizing: border-box; resize: vertical; font-family: inherit; line-height: 1.4;"></textarea>
                     </div>
                     
                     <button class="btn" id="btn-generate-investor-pitch" style="background: var(--color-premium); color: #0b0f19; font-weight: bold; width: 100%; padding: 12px; border-radius: var(--border-radius-sm); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 20px; font-size: 0.85rem;">
@@ -1164,6 +1169,7 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                 const sTraction = document.getElementById("pitch-traction").value.trim() || "[ Traction / MRR]";
                 const sDeck = document.getElementById("pitch-deck-url").value.trim() || "[Link to Pitch Deck]";
                 const sDesc = document.getElementById("pitch-description").value.trim() || "[Core Tech / One-liner]";
+                const sDetail = document.getElementById("pitch-detail-desc").value.trim();
 
                 let updatedPitch = pitchTemplate
                     .replace(/\[Startup Name\]/g, sName)
@@ -1180,6 +1186,21 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                     .replace(/\[Short Description \/ One-liner\]/g, sDesc)
                     .replace(/\[Çözümünüz\]/g, sDesc)
                     .replace(/\[Çözüm\]/g, sDesc);
+
+                // Smartly integrate the detailed description if provided
+                if (sDetail) {
+                    if (updatedPitch.includes("solves [Problem] for [Target Customer]")) {
+                        updatedPitch = updatedPitch.replace(/solves \[Problem\] for \[Target Customer\]/g, `addresses this opportunity: ${sDetail}`);
+                    } else if (updatedPitch.includes("[Sektör / Problem] alanında [Çözümünüz] sunan")) {
+                        updatedPitch = updatedPitch.replace(/\[Sektör \/ Problem\] alanında \[Çözümünüz\] sunan/g, `${sDetail} sunan`);
+                    } else {
+                        updatedPitch = updatedPitch.replace(sDesc, `${sDesc}. Specifically, ${sDetail}`);
+                    }
+                } else {
+                    updatedPitch = updatedPitch
+                        .replace(/solves \[Problem\] for \[Target Customer\]/g, "solves a critical customer pain point")
+                        .replace(/\[Sektör \/ Problem\] alanında/g, "sektöründe");
+                }
 
                 pitchTextBlock.textContent = updatedPitch;
                 
