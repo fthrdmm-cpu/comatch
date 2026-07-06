@@ -5,6 +5,7 @@ import os
 print("[*] Starting GitHub Creator Email Finder Tool...")
 
 import re
+import random
 
 github_token = os.environ.get("GITHUB_TOKEN")
 headers = {
@@ -34,7 +35,28 @@ try:
         except Exception as err:
             print(f"[!] Warning: Could not scrape trending for {lang}:", err)
             
-    print(f"[+] Extracted {len(valid_repos)} trending repositories. Extracting owner emails...")
+    # Also fetch recently created public repositories (great source of individual devs)
+    try:
+        print("[*] Fetching recent public repositories list for fresh developer leads...")
+        # Generate a random starting ID between 850,000,000 and 960,000,000 (corresponds to active, new repos)
+        random_since = random.randint(850000000, 960000000)
+        repo_api_url = f"https://api.github.com/repositories?since={random_since}"
+        r_repos = requests.get(repo_api_url, headers=headers, timeout=15)
+        if r_repos.status_code == 200:
+            repos_data = r_repos.json()
+            for repo_item in repos_data:
+                owner_obj = repo_item.get("owner", {})
+                if owner_obj.get("type") == "User": # Exclude Organizations
+                    owner_name = owner_obj.get("login")
+                    repo_name = repo_item.get("name")
+                    if owner_name.lower() not in ignored and repo_name.lower() not in ignored:
+                        if (owner_name, repo_name) not in valid_repos:
+                            valid_repos.append((owner_name, repo_name))
+            print(f"[+] Added recent public repos. Total leads to check: {len(valid_repos)}")
+    except Exception as err:
+        print("[!] Warning: Could not fetch recent public repositories:", err)
+            
+    print(f"[+] Extracted {len(valid_repos)} total repository leads. Extracting owner emails...")
     
     creators_list = []
     
@@ -86,6 +108,10 @@ try:
                                     break
                             if email_found:
                                 break
+                else:
+                    print(f"  [!] Events HTTP {events_response.status_code} for user {owner_username}")
+        else:
+            print(f"  [!] Profile HTTP {user_response.status_code} for user {owner_username}")
                                 
         if idx >= 15: # Let's limit the sample test run so we don't hit rate limits
             break
