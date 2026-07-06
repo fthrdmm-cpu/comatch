@@ -12,6 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
         ? '' 
         : 'https://comatch-33as.onrender.com';
     
+    // Google Analytics Event Tracking Wrapper (Safe against blockers / undefined gtag)
+    function trackGAEvent(eventName, eventParams = {}) {
+        if (typeof gtag === 'function') {
+            gtag('event', eventName, eventParams);
+            console.log(`[GA Event] Tracked: ${eventName}`, eventParams);
+        }
+    }
+    
     // English Fallback database (in case brands.js is not loaded yet)
     const fallbackData = [
         {
@@ -558,6 +566,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                     dbData = activeDirectory === "sponsors" ? sponsorsData : investorsData;
                     
+                    // Track GA Event: Submit Listing (Server Mode)
+                    trackGAEvent("submit_listing", {
+                        listing_type: listingType,
+                        name: name,
+                        mode: "live_api"
+                    });
+
                     // Reset and close
                     submitBrandForm.reset();
                     closeModal(submitModal);
@@ -684,6 +699,14 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                 
                 calculateStats();
                 renderBrands();
+
+                // Track GA Event: Submit Listing (Client Gemini Mode)
+                trackGAEvent("submit_listing", {
+                    listing_type: listingType,
+                    name: name,
+                    mode: "client_gemini"
+                });
+
                 showNotification(`Success! ${enrichedBrand.name} approved by AI and added!`);
             } catch (err) {
                 console.error("[-] Client-side AI Moderation failed:", err);
@@ -733,6 +756,14 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
             
             calculateStats();
             renderBrands();
+
+            // Track GA Event: Submit Listing (Fallback Offline Mode)
+            trackGAEvent("submit_listing", {
+                listing_type: listingType,
+                name: name,
+                mode: "offline_fallback"
+            });
+
             showNotification(`Offline mode: ${name} added in-memory!`);
         } finally {
             submitBtn.disabled = false;
@@ -966,6 +997,14 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
         window.openBrandDetails = openBrandDetails; // Expose globally for matchmaker card clicks
         const item = dbData.find(b => b.id === id);
         if (!item) return;
+
+        // Track GA Event: View Item
+        trackGAEvent("view_item", {
+            item_id: item.id,
+            item_name: item.name,
+            item_category: item.category || item.sectors || "Unspecified",
+            item_type: item.type || "brand"
+        });
 
         modalBodyContent.innerHTML = "";
 
@@ -1225,6 +1264,51 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                     }, 2000);
                 }).catch(err => {
                     console.error("Clipboard copy failed: ", err);
+                });
+            });
+        }
+
+        // Bind GA tracking for button clicks inside detail modal dynamically
+        const copyBtn = document.getElementById("btn-copy-pitch");
+        if (copyBtn) {
+            copyBtn.addEventListener("click", () => {
+                trackGAEvent("copy_pitch", {
+                    item_id: item.id,
+                    item_name: item.name,
+                    item_type: item.type || "brand"
+                });
+            });
+        }
+
+        const mailtoBtn = modalBodyContent.querySelector('a[href^="mailto:"]');
+        if (mailtoBtn) {
+            mailtoBtn.addEventListener("click", () => {
+                trackGAEvent("send_email_click", {
+                    item_id: item.id,
+                    item_name: item.name,
+                    item_type: item.type || "brand"
+                });
+            });
+        }
+
+        const applyBtn = modalBodyContent.querySelector('.btn-action-primary');
+        if (applyBtn) {
+            applyBtn.addEventListener("click", () => {
+                trackGAEvent("apply_click", {
+                    item_id: item.id,
+                    item_name: item.name,
+                    item_type: item.type || "brand"
+                });
+            });
+        }
+
+        const btnGenerate = document.getElementById("btn-generate-investor-pitch");
+        if (btnGenerate) {
+            btnGenerate.addEventListener("click", () => {
+                trackGAEvent("generate_pitch", {
+                    item_id: item.id,
+                    item_name: item.name,
+                    item_type: item.type || "brand"
                 });
             });
         }
@@ -1508,6 +1592,9 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                 showNotification("Please write a description with at least 10 characters.", true);
                 return;
             }
+
+            // Track GA Event: Matchmaker Query
+            trackGAEvent("matchmaker_search", { query_length: desc.length });
 
             // UI Loading state
             btnMatchmakerSubmit.disabled = true;
