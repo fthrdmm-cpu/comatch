@@ -20,14 +20,25 @@ if not api_key:
         print("[-] Error: GEMINI_API_KEY environment variable is not configured.")
         exit(1)
 
-# List of already seeded investors to avoid duplication
-existing_investors = [
-    "Y Combinator", "scaleX Ventures", "TRangels", "Revo Capital",
-    "500 Emerging Europe", "Collective Spark", "Techstars", "Sequoia Capital"
-]
+# Load existing investors from investors.js dynamically to avoid duplicates
+existing_investors = []
+investors_js_path = "investors.js"
+if os.path.exists(investors_js_path):
+    try:
+        with open(investors_js_path, "r", encoding="utf-8") as f:
+            js_content = f.read()
+        existing_investors = list(set(re.findall(r'"name":\s*"([^"]+)"', js_content)))
+    except Exception as e:
+        print("[!] Warning loading existing investors:", e)
+
+if not existing_investors:
+    existing_investors = [
+        "Y Combinator", "scaleX Ventures", "TRangels", "Revo Capital",
+        "500 Emerging Europe", "Collective Spark", "Techstars", "Sequoia Capital"
+    ]
 
 prompt = f"""
-Find 5 active Venture Capital (VC) firms, startup accelerators, or angel investor networks (especially ones that invest in Turkish founders or European SaaS/AI startups at Pre-Seed or Seed stage, such as APY Ventures, Boğaziçi Ventures, Galata Business Angels, Keiretsu Forum, StartersHub, 212, Simya VC, Vestel Ventures, Tarvenn, etc.).
+Find 5 active global, European, or top-tier regional Venture Capital (VC) firms, startup accelerators, or angel investor networks (focusing on SaaS, AI, Deep Tech, or Fintech startups at Pre-Seed or Seed stage, such as Point Nine, Seedcamp, Creandum, Accel, Balderton, Index Ventures, Boğaziçi Ventures, etc.).
 Do NOT repeat the ones I already have: {", ".join(existing_investors)}.
 
 For each investor, find and extract:
