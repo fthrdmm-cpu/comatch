@@ -20,6 +20,11 @@ app.use(express.json());
 // Serve static frontend files from current directory
 app.use(express.static(__dirname));
 
+// Favicon redirect fallback to prevent console 404 errors
+app.get('/favicon.ico', (req, res) => {
+    res.sendFile(path.join(__dirname, 'assets', 'logo.png'));
+});
+
 const databasePath = path.join(__dirname, 'database.json');
 let dbData = [];
 

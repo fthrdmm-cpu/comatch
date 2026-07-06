@@ -144,7 +144,7 @@ const INVESTORS_DATA = [
     "ticketSize": "$120,000 (Standard Deal)",
     "contactEmail": "",
     "contactForm": "https://www.techstars.com/accelerators",
-    "logo": "https://www.google.com/s2/favicons?sz=128&domain=techstars.com",
+    "logo": "",
     "dna": {
       "requirements": "Strong founder alignment, scalable product prototype, passion for mentorship, and readiness to join a 3-month high-intensity accelerator program.",
       "dealStructure": "Standard deal: $20,000 investment in exchange for 6% equity (using common stock) + optional $100,000 convertible note.",

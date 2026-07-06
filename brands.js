@@ -331,7 +331,7 @@ const BRANDS_DATA = [
     "creatorSize": "Macro (50k+)",
     "contactEmail": "info@futesports.com",
     "contactForm": "https://futesports.com/contact/",
-    "logo": "https://www.google.com/s2/favicons?sz=128&domain=futesports.com",
+    "logo": "",
     "dna": {
       "requirements": "Representing the team as an official content creator/influencer. Family-friendly and highly engaging community presence.",
       "dealStructure": "Team jerseys/apparel support, partner brand peripherals, co-branded tournament participation revenues, and salary contracts.",
@@ -475,7 +475,7 @@ const BRANDS_DATA = [
     "creatorSize": "Macro (50k+)",
     "contactEmail": "partnerships@fazeclan.com",
     "contactForm": "https://fazeclan.com/",
-    "logo": "https://www.google.com/s2/favicons?sz=128&domain=fazeclan.com",
+    "logo": "",
     "dna": {
       "requirements": "Extreme skills in competitive gaming, high energy stream style, massive social media presence (Twitter/TikTok).",
       "dealStructure": "FaZe sponsor deal integrations, global merch line collaborations, custom gaming equipment packages, salary contracts.",
@@ -587,7 +587,7 @@ const BRANDS_DATA = [
     "creatorSize": "Macro (50k+)",
     "contactEmail": "omen_sponsorship@hp.com",
     "contactForm": "https://www.omen.com/",
-    "logo": "https://www.google.com/s2/favicons?sz=128&domain=omen.com",
+    "logo": "",
     "dna": {
       "requirements": "High esports tournament visibility, competitive FPS gaming, tech review channel profiles with professional overlays.",
       "dealStructure": "HP Omen high-refresh rate displays and gaming desktop sponsorship packages, influencer campaign fees.",
@@ -891,7 +891,7 @@ const BRANDS_DATA = [
     "creatorSize": "Macro (50k+)",
     "contactEmail": "info@fireflux.gg",
     "contactForm": "https://fireflux.gg/",
-    "logo": "https://www.google.com/s2/favicons?sz=128&domain=fireflux.gg",
+    "logo": "",
     "dna": {
       "requirements": "Turkish language Valorant or competitive mobile gaming streamer, active social content creator.",
       "dealStructure": "Fire Flux content squad contracts, jersey branding, team gaming facility access.",
@@ -1003,7 +1003,7 @@ const BRANDS_DATA = [
     "creatorSize": "Macro (50k+)",
     "contactEmail": "partnerships@koi.gg",
     "contactForm": "https://koi.gg/",
-    "logo": "https://www.google.com/s2/favicons?domain=koi.gg&sz=128",
+    "logo": "",
     "dna": {
       "requirements": "Spanish/English language content, active social media, gaming/entertainment streaming focus.",
       "dealStructure": "KOI squad streaming agreements, sponsor merchandise allocations, and collaborative content videos.",
@@ -1019,7 +1019,7 @@ const BRANDS_DATA = [
     "creatorSize": "Macro (50k+)",
     "contactEmail": "info@pcific.gg",
     "contactForm": "https://pcific.gg/",
-    "logo": "https://www.google.com/s2/favicons?domain=pcific.gg&sz=128",
+    "logo": "",
     "dna": {
       "requirements": "Turkish language Valorant or competitive shooter focus, team player attitude, active local competitive clips.",
       "dealStructure": "PCIFIC competitive squad contract, local brand sponsor gear support.",
@@ -1435,7 +1435,7 @@ const BRANDS_DATA = [
     "creatorSize": "Micro (10k-50k)",
     "contactEmail": "info@esportland.com",
     "contactForm": "https://esportland.com/",
-    "logo": "https://www.google.com/s2/favicons?domain=esportland.com&sz=128",
+    "logo": "",
     "dna": {
       "requirements": "Turkish competitive shooter streams, community league organization, active espor social media clips.",
       "dealStructure": "Local community tournament prize pool funding, co-branded marketing operations.",
@@ -1627,7 +1627,7 @@ const BRANDS_DATA = [
     "creatorSize": "Macro (50k+)",
     "contactEmail": "info@savvygamesgroup.com.sa",
     "contactForm": "https://savvygamesgroup.com.sa/",
-    "logo": "https://www.google.com/s2/favicons?domain=savvygamesgroup.com.sa&sz=128",
+    "logo": "",
     "dna": {
       "requirements": "Global gaming ecosystem developers, international esports events licensing, strategic B2B studio investments.",
       "dealStructure": "Sovereign wealth funding programs, B2B investment collaborations, infrastructure grants.",
@@ -1819,7 +1819,7 @@ const BRANDS_DATA = [
     "creatorSize": "Micro (10k-50k)",
     "contactEmail": "info@geekaygroup.com",
     "contactForm": "https://geekayesports.com/",
-    "logo": "https://www.google.com/s2/favicons?domain=geekayesports.com&sz=128",
+    "logo": "",
     "dna": {
       "requirements": "Middle Eastern esports casters, regional tournament organizers, GCC competitive players.",
       "dealStructure": "GCC tournament sponsorships, co-marketing retail giveaways, regional caster contracts.",
