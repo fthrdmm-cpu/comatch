@@ -87,27 +87,30 @@ async function loadDatabase() {
 }
 
 function loadLocalDatabase() {
+    // Always try to load from brands.js first (primary source of truth)
+    const brandsJsPath = path.join(__dirname, 'brands.js');
+    if (fs.existsSync(brandsJsPath)) {
+        try {
+            const fileContent = fs.readFileSync(brandsJsPath, 'utf8');
+            const jsonStartIndex = fileContent.indexOf('[');
+            const jsonEndIndex = fileContent.lastIndexOf(']') + 1;
+            const jsonText = fileContent.substring(jsonStartIndex, jsonEndIndex);
+            dbData = JSON.parse(jsonText);
+            // Write to database.json so API mutations are still persisted
+            fs.writeFileSync(databasePath, JSON.stringify(dbData, null, 2), 'utf8');
+            console.log(`[+] Loaded ${dbData.length} opportunities from brands.js (primary source)`);
+            return;
+        } catch (e) {
+            console.error("[-] Failed to parse brands.js:", e);
+        }
+    }
+    // Fallback: use database.json if brands.js is unavailable
     if (fs.existsSync(databasePath)) {
         try {
             dbData = JSON.parse(fs.readFileSync(databasePath, 'utf8'));
-            console.log(`[+] Loaded database.json containing ${dbData.length} opportunities`);
+            console.log(`[+] Fallback: loaded database.json with ${dbData.length} opportunities`);
         } catch (e) {
             console.error("[-] Failed to read database.json:", e);
-        }
-    } else {
-        const brandsJsPath = path.join(__dirname, 'brands.js');
-        if (fs.existsSync(brandsJsPath)) {
-            try {
-                const fileContent = fs.readFileSync(brandsJsPath, 'utf8');
-                const jsonStartIndex = fileContent.indexOf('[');
-                const jsonEndIndex = fileContent.lastIndexOf(']') + 1;
-                const jsonText = fileContent.substring(jsonStartIndex, jsonEndIndex);
-                dbData = JSON.parse(jsonText);
-                fs.writeFileSync(databasePath, JSON.stringify(dbData, null, 2), 'utf8');
-                console.log(`[+] Initialized database.json with ${dbData.length} seed opportunities from brands.js`);
-            } catch (e) {
-                console.error("[-] Failed to parse brands.js for seed data:", e);
-            }
         }
     }
 }
