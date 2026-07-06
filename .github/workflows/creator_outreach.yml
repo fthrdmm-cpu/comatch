@@ -27,6 +27,8 @@ jobs:
           pip install requests
 
       - name: Scrape Creator Emails
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python scratch/find_creator_emails.py
 

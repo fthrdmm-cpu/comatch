@@ -9,9 +9,12 @@ print("[*] Starting GitHub Creator Email Finder Tool...")
 # We can search users who have enabled the "Sponsor" button on GitHub, or simply active developers.
 url = "https://api.github.com/search/repositories?q=stars:50..500+language:javascript+type:user&sort=updated&order=desc&per_page=50"
 
+github_token = os.environ.get("GITHUB_TOKEN")
 headers = {
     "Accept": "application/vnd.github.v3+json"
 }
+if github_token:
+    headers["Authorization"] = f"token {github_token}"
 
 try:
     print("[*] Querying GitHub API for popular repositories...")
