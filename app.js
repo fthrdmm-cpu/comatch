@@ -1832,7 +1832,7 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
     
     // Dynamically calculate actual partners in the database
     const updateDashboardPartnersCount = () => {
-        const brandsCount = (typeof brandsData !== 'undefined') ? brandsData.length : 172;
+        const brandsCount = (typeof sponsorsData !== 'undefined') ? sponsorsData.length : 172;
         const investorsCount = (typeof investorsData !== 'undefined') ? investorsData.length : 13;
         const totalPartners = brandsCount + investorsCount;
         
