@@ -177,6 +177,116 @@ const INVESTORS_DATA = [
         "Technical founder advantage: Highlight if the CTO/founders have deep academic or elite engineering backgrounds."
       ]
     }
+  },
+  {
+    "id": "212-vc",
+    "name": "212",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "B2B SaaS, AI, Fintech, Health Tech, Logistics, E-commerce infrastructure",
+    "ticketSize": "$250,000 - $1,000,000",
+    "contactEmail": null,
+    "contactForm": "https://212.vc/pitch-us/",
+    "logo": "https://logo.clearbit.com/212.vc",
+    "dna": {
+      "requirements": "Strong team, disruptive technology, large addressable market, clear path to scalability, often post-revenue or strong traction. Focus on B2B SaaS, enterprise in Turkey, CEE, MENA.",
+      "dealStructure": "Standard equity investment. Dilution rates vary by stage and valuation, typically 10-25% for Seed stage.",
+      "pitchHelper": "Subject: Pitch: [Your Company Name] - Revolutionizing [Specific Sector] with AI/SaaS\n\nDear 212 Team,\n\nMy name is [Your Name] and I'm the Founder of [Your Company Name]. We are building a [briefly describe what your company does, e.g., AI-powered SaaS platform] that helps [target customer] solve [pain point] by [your unique solution].\n\nWe've already achieved [mention key traction: e.g., X customers, Y MRR, Z% MoM growth, successful pilot]. Our focus on [specific industry/niche] in the [CEE/MENA/Turkish] market positions us for rapid growth, targeting a $X billion market opportunity.\n\nWe are currently raising a [Pre-Seed/Seed] round of [$X] to [briefly state what funds will be used for, e.g., expand product features and accelerate customer acquisition]. Given 212's strong expertise in [mention a relevant sector, e.g., B2B SaaS, AI] and your track record with companies like [mention one of their portfolio companies if relevant], we believe we are a strong fit.\n\nWould you be open to a brief call next week to discuss how [Your Company Name] is set to disrupt [their specific market]?\n\nThank you,\n[Your Name]\n[Your Title]\n[Your Website]\n[Your LinkedIn]",
+      "pitchTips": [
+        "Use a concise subject line that immediately conveys value and relevance to 212's investment thesis (e.g., 'Seed Round: [Company Name] - B2B SaaS for [Industry] with $X MRR').",
+        "Lead with key metrics (MRR, user growth, pilot successes) in the first paragraph to grab attention and demonstrate execution capability, as 212 values traction.",
+        "Highlight your company's relevance to the Turkish, CEE, or MENA markets, aligning with 212's geographic focus. Mention specific market insights or existing regional customers."
+      ]
+    }
+  },
+  {
+    "id": "bogazici-ventures",
+    "name": "Boğaziçi Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "Fintech, SaaS, Gaming, AI, Health Tech, Mobility, Web3, Deep Tech, E-commerce, Marketplaces",
+    "ticketSize": "$100,000 - $500,000",
+    "contactEmail": null,
+    "contactForm": "https://bogaziciventures.com/apply/",
+    "logo": "https://logo.clearbit.com/bogaziciventures.com",
+    "dna": {
+      "requirements": "Strong team, innovative solution, scalable business model, early traction (MVP ready, initial users/revenue preferred). Focus on technology-driven solutions within Turkey and the region.",
+      "dealStructure": "Standard equity investment for Seed/Early Stage rounds.",
+      "pitchHelper": "Subject: Seed Round: [Your Company Name] - Innovating [Sector, e.g., Fintech/SaaS] for the [Turkish/European] Market\n\nDear Boğaziçi Ventures Team,\n\nMy name is [Your Name], CEO of [Your Company Name]. We are developing [briefly describe your AI/SaaS solution] to address the significant challenge of [pain point] for [target audience] in [Turkey/Europe].\n\nOur [product/platform] offers [key benefit/differentiation] and has already achieved [mention crucial milestones, e.g., successful MVP, X beta users, Y initial customers, early revenue]. We project reaching [future milestone] within the next 12-18 months.\n\nWe are raising a Seed round of [$X] to [explain fund usage: e.g., expand our engineering team and scale our go-to-market efforts]. We are particularly drawn to Boğaziçi Ventures' expertise in [mention relevant sector, e.g., Fintech, SaaS, AI] and your commitment to supporting high-growth Turkish and regional startups.\n\nWe would appreciate the opportunity to share a detailed deck and discuss how our vision aligns with your investment thesis. Would you be available for a quick chat next week?\n\nSincerely,\n[Your Name]\n[Your Title]\n[Your Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "Emphasize your connection to or understanding of the Turkish startup ecosystem if applicable, as Boğaziçi Ventures has a strong local presence.",
+        "Clearly articulate the innovative aspect of your solution and its technological edge, as they invest in tech-driven startups.",
+        "Provide specific and quantifiable traction metrics (e.g., 'acquired 5 enterprise clients,' 'achieved 15% MoM user growth') early in the email to demonstrate progress and potential."
+      ]
+    }
+  },
+  {
+    "id": "apy-ventures",
+    "name": "APY Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "AI, SaaS, Fintech, Deep Tech, Health Tech, Gaming, Agri-tech, Sustainability, Marketplaces",
+    "ticketSize": "$50,000 - $300,000",
+    "contactEmail": null,
+    "contactForm": "https://apyventures.com/apply/",
+    "logo": "https://logo.clearbit.com/apyventures.com",
+    "dna": {
+      "requirements": "Strong and dedicated team, innovative and scalable product/service, clear market fit, early traction (MVP, pilot projects, initial users/revenue) desirable. Focus on companies with global ambitions.",
+      "dealStructure": "Equity investment. Standard terms for early-stage VCs.",
+      "pitchHelper": "Subject: Pre-Seed Pitch: [Your Company Name] - Global SaaS Solution for [Industry]\n\nDear APY Ventures Team,\n\nI'm [Your Name], Founder & CEO of [Your Company Name]. We are developing an [AI-powered SaaS platform] that addresses [specific problem] for [target customers] by [unique value proposition].\n\nOur solution is designed for global scalability from day one, targeting the $X billion [specific market] market. We have successfully [mention key achievement, e.g., launched our MVP, secured 3 pilot customers, demonstrated X% efficiency improvement].\n\nWe are currently raising a Pre-Seed round of [$X] to [detail fund allocation: e.g., finalize product development, secure initial paid customers, expand into specific European markets]. APY Ventures' focus on early-stage, globally-minded tech companies, especially in SaaS and AI, makes you an ideal partner for our journey.\n\nWe would be thrilled to share our deck and discuss how [Your Company Name] is poised for significant international growth. Are you available for a brief introductory call next week?\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "Clearly articulate your international strategy and how your product can scale beyond Turkey from the outset, as APY Ventures looks for companies with global potential.",
+        "Highlight the expertise and experience of your founding team, especially if you have a strong technical co-founder or relevant domain knowledge in AI/SaaS.",
+        "Clearly define the problem you're solving and how your AI/SaaS solution uniquely addresses it, backed by any early validation or user feedback."
+      ]
+    }
+  },
+  {
+    "id": "galata-business-angels",
+    "name": "Galata Business Angels (GBA)",
+    "type": "investor",
+    "investorType": "Angel Network",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, AI, Fintech, E-commerce, Health Tech, Gaming, Mobility, Broad Tech",
+    "ticketSize": "$50,000 - $250,000",
+    "contactEmail": null,
+    "contactForm": "https://www.galatabusinessangels.com/en/for-entrepreneurs/",
+    "logo": "https://logo.clearbit.com/galatabusinessangels.com",
+    "dna": {
+      "requirements": "Strong, committed team, innovative idea with market potential, clear business model, preferably an MVP or proof of concept, scalable. Looking for high-growth potential, primarily in Turkey and with regional/global potential.",
+      "dealStructure": "Equity investment, typically alongside other angels or lead investors. Terms can be flexible depending on the round.",
+      "pitchHelper": "Subject: Pitch: [Your Company Name] - Pre-Seed AI/SaaS for [Target Market]\n\nDear GBA Team,\n\nI am [Your Name], Co-founder of [Your Company Name]. We are developing a [AI-driven SaaS solution] designed to revolutionize [specific industry] by [unique selling proposition].\n\nOur platform addresses [pain point] for [target customers] and has already achieved [mention key traction, e.g., MVP launch, X beta users, positive feedback from Y pilot customers]. We are targeting a rapidly growing market in [Turkey/Europe] with a clear path to profitability.\n\nWe are seeking a Pre-Seed investment of [$X] to [explain use of funds, e.g., expand our product features and initiate early user acquisition]. We believe our vision aligns well with GBA's focus on innovative, early-stage startups with strong teams and significant growth potential.\n\nCould we schedule a brief call next week to introduce our team and share our detailed business plan?\n\nThank you for your time,\n[Your Name]\n[Your Title]\n[Your Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "If possible, mention any connection or reference point you might have to GBA members or their portfolio companies, as angel networks often value warm introductions.",
+        "As an angel network, GBA places strong emphasis on the founding team. Emphasize your team's experience, dedication, and complementary skills.",
+        "Clearly define your target market and articulate how your product can achieve significant scale quickly, as angels look for rapid return potential."
+      ]
+    }
+  },
+  {
+    "id": "simya-vc",
+    "name": "Simya VC",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "AI, SaaS, Deep Tech, Fintech, Gaming, E-commerce, Health, Logistics, Agri-food",
+    "ticketSize": "$100,000 - $500,000",
+    "contactEmail": null,
+    "contactForm": "https://simya.vc/tr/iletisim/",
+    "logo": "https://logo.clearbit.com/simya.vc",
+    "dna": {
+      "requirements": "Strong founding team, innovative product/technology, clear market need, scalable business model, early traction (MVP completed, initial users/revenue, pilot projects). Emphasis on technology-driven solutions for Turkey and regional markets.",
+      "dealStructure": "Equity investment. Standard Seed round terms.",
+      "pitchHelper": "Subject: Seed Stage: [Your Company Name] - SaaS/AI Solution for [Specific Market]\n\nDear Simya VC Team,\n\nI'm [Your Name], Co-founder of [Your Company Name]. We are developing a [description of your AI-powered SaaS solution] to solve [specific problem] for [target customers] in the [Turkish/European] market.\n\nOur approach leverages [mention key tech/differentiation] to deliver [quantifiable benefit]. We have successfully [mention traction: e.g., launched our MVP, onboarded X pilot clients, achieved Y MRR, secured Z LOIs]. We project to reach [next key milestone] within the next 12 months.\n\nWe are currently raising a Seed round of [$X] to [explain how funds will be used: e.g., accelerate product development, expand our sales team, enter new geographies]. Simya VC's deep focus on early-stage, tech-centric ventures, particularly in AI and SaaS, makes you an ideal partner for us.\n\nWe've attached our pitch deck for your review and would greatly appreciate the opportunity for a brief introductory meeting.\n\nSincerely,\n[Your Name]\n[Your Title]\n[Your Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "Clearly articulate the technological uniqueness and IP of your AI/SaaS product, as Simya VC has a strong focus on deep tech and innovative solutions.",
+        "Immediately present your most compelling traction points (e.g., 'X paying customers,' 'Y% MoM growth'), as Simya VC looks for demonstrable progress and market validation.",
+        "Emphasize your potential or current presence in Turkey or the surrounding region, as Simya VC has a strong regional focus."
+      ]
+    }
   }
 ];
 
