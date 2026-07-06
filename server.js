@@ -552,42 +552,40 @@ app.post('/api/report-deal', async (req, res) => {
             return res.status(400).json({ error: "Missing required fields (projectName, matchedWith, dealValue, contactEmail)" });
         }
         
-        // Import nodemailer dynamically
-        const nodemailer = require('nodemailer');
+        const reportPath = path.join(__dirname, 'deal_reports.json');
+        let reports = [];
         
-        // Setup SMTP transporter using Hostinger SMTP (secured with environment variables)
-        const transporter = nodemailer.createTransport({
-            host: 'smtp.hostinger.com',
-            port: 465,
-            secure: true, // SSL
-            auth: {
-                user: 'hello@comatch.org',
-                pass: process.env.SMTP_PASSWORD || 'Fatiherdem.1'
+        // Load existing reports
+        if (fs.existsSync(reportPath)) {
+            try {
+                const fileData = fs.readFileSync(reportPath, 'utf8');
+                reports = JSON.parse(fileData);
+            } catch (e) {
+                console.error("[!] Warning: Could not parse deal_reports.json, resetting database.", e);
             }
-        });
+        }
         
-        const mailOptions = {
-            from: 'hello@comatch.org',
-            to: 'hello@comatch.org',
-            subject: `🎉 New Match Deal Reported: ${projectName} x ${matchedWith}`,
-            text: `
-CoMatch Match Success Report!
-
-- Project Name: ${projectName}
-- Matched With: ${matchedWith}
-- Deal Value: $${dealValue}
-- Contact Email: ${contactEmail}
-- Message: ${message || 'No message provided.'}
-
-This is a self-reported success lead from CoMatch. Use this to update marketing highlights or stats!
-            `
+        // Append new report with timestamp
+        const newReport = {
+            id: 'deal_' + Date.now(),
+            projectName,
+            matchedWith,
+            dealValue: parseInt(dealValue, 10),
+            contactEmail,
+            message: message || '',
+            timestamp: new Date().toISOString()
         };
         
-        await transporter.sendMail(mailOptions);
-        res.json({ success: true, message: "Success deal report received and forwarded." });
+        reports.push(newReport);
+        
+        // Save back to local JSON file
+        fs.writeFileSync(reportPath, JSON.stringify(reports, null, 2), 'utf8');
+        
+        console.log(`[+] New success deal reported: ${projectName} x ${matchedWith} ($${dealValue})`);
+        res.json({ success: true, message: "Success deal report logged successfully." });
     } catch (err) {
-        console.error("[-] Error handling deal report:", err);
-        res.status(500).json({ error: "Failed to process deal report. Please try again later." });
+        console.error("[-] Error logging deal report:", err);
+        res.status(500).json({ error: "Failed to log deal report. Please try again." });
     }
 });
 
