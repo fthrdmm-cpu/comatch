@@ -868,17 +868,18 @@ select {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #030712; /* Deep obsidian background */
-    background-image: linear-gradient(to bottom, rgba(3, 7, 18, 0.45), rgba(3, 7, 18, 0.75)), url('assets/skyscrapers_bg_sharp.png');
+    background-color: #030712;
+    background-image: linear-gradient(to bottom, rgba(3, 7, 18, 0.25), rgba(3, 7, 18, 0.70)), url('assets/skyscrapers_bg_sharp.png');
     background-size: cover;
-    background-position: center;
+    background-position: center 25%; /* Shift background up slightly to focus on tower structures */
     background-repeat: no-repeat;
     z-index: 1000;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Place brand/logo at the top area */
     overflow-y: auto;
-    padding: 40px 20px;
+    padding: 90px 20px 40px 20px; /* Generous top padding for brand logo positioning */
     font-family: 'Outfit', sans-serif;
     color: var(--text-main);
     transition: opacity 0.4s ease, visibility 0.4s ease;
@@ -1028,7 +1029,7 @@ select {
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 20px rgba(245, 158, 11, 0.05);
 }
 
-/* Card Icon Wrapper - Premium Glassmorphic Circle */
+/* Card Icon Wrapper - Premium Glowing Gradient Badges */
 .portal-card-icon-container {
     width: 48px;
     height: 48px;
@@ -1036,79 +1037,101 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(37, 99, 235, 0.08);
-    border: 1px solid rgba(37, 99, 235, 0.15);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.05);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 10;
 }
 
-.premium-card .portal-card-icon-container {
-    background: rgba(79, 70, 229, 0.08);
-    border: 1px solid rgba(79, 70, 229, 0.15);
-    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.05);
+/* Sponsors Badge (Blue) */
+#portal-goto-sponsors .portal-card-icon-container {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+/* Investors Badge (Indigo/Purple) */
+#portal-goto-investors .portal-card-icon-container {
+    background: linear-gradient(135deg, #4f46e5, #4338ca);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+}
+/* Submit Badge (Emerald) */
+#portal-goto-submit .portal-card-icon-container {
+    background: linear-gradient(135deg, #059669, #047857);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+/* About Badge (Cyan/Sky) */
+#portal-goto-about .portal-card-icon-container {
+    background: linear-gradient(135deg, #0284c7, #0369a1);
+    border: 1px solid rgba(14, 165, 233, 0.3);
 }
 
+/* Hover Zoom & Glow */
 .portal-card:hover .portal-card-icon-container {
-    transform: scale(1.1) rotate(4deg);
-    background: var(--color-primary);
-    border-color: var(--color-primary);
-    box-shadow: 0 0 16px rgba(37, 99, 235, 0.35);
+    transform: scale(1.12) rotate(4deg);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
 }
-
 .portal-card.premium-card:hover .portal-card-icon-container {
-    background: var(--color-premium);
-    border-color: var(--color-premium);
-    box-shadow: 0 0 16px rgba(79, 70, 229, 0.35);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
+#portal-goto-submit:hover .portal-card-icon-container {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+}
+#portal-goto-about:hover .portal-card-icon-container {
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
 }
 
+/* SVGs - Always White & Bold for High Visibility */
 .portal-card-icon-container svg {
     width: 22px;
     height: 22px;
-    stroke: var(--color-primary);
+    stroke: #ffffff !important; /* Force clean white */
+    stroke-width: 2.5; /* Slightly thicker for crispness */
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.premium-card .portal-card-icon-container svg {
-    stroke: var(--color-premium);
-}
-
 .portal-card:hover .portal-card-icon-container svg {
-    stroke: #ffffff;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .portal-card h3 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #ffffff;
     margin-bottom: 12px;
+    letter-spacing: -0.2px;
 }
 
 .portal-card p {
     font-size: 0.88rem;
-    color: var(--text-muted);
-    line-height: 1.5;
+    color: #e2e8f0; /* Brighter, high-contrast text color for better reading */
+    line-height: 1.55;
     margin-bottom: 24px;
     flex-grow: 1;
 }
 
 .portal-card-action {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--color-primary);
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: #3b82f6; /* Brighter Blue */
     display: flex;
     align-items: center;
     gap: 6px;
-    transition: transform 0.2s;
+    transition: all 0.2s ease;
 }
 
 .premium-card .portal-card-action {
-    color: var(--color-premium);
+    color: #818cf8; /* Brighter Indigo */
+}
+
+#portal-goto-submit .portal-card-action {
+    color: #34d399; /* Bright Emerald */
+}
+
+#portal-goto-about .portal-card-action {
+    color: #38bdf8; /* Bright Sky Blue */
 }
 
 .portal-card:hover .portal-card-action {
-    transform: translateX(4px);
+    transform: translateX(6px);
+    text-decoration: underline; /* Standard premium hover link effect */
 }
 
 /* Footer & Back Nav Button */
