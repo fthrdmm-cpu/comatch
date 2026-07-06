@@ -186,7 +186,7 @@ const INVESTORS_DATA = [
     "targetStage": "Seed",
     "sectors": "B2B SaaS, AI, Fintech, Health Tech, Logistics, E-commerce infrastructure",
     "ticketSize": "$250,000 - $1,000,000",
-    "contactEmail": null,
+    "contactEmail": "info@212.vc",
     "contactForm": "https://212.vc/pitch-us/",
     "logo": "https://www.google.com/s2/favicons?sz=128&domain=212.vc",
     "dna": {
@@ -208,7 +208,7 @@ const INVESTORS_DATA = [
     "targetStage": "Seed",
     "sectors": "Fintech, SaaS, Gaming, AI, Health Tech, Mobility, Web3, Deep Tech, E-commerce, Marketplaces",
     "ticketSize": "$100,000 - $500,000",
-    "contactEmail": null,
+    "contactEmail": "info@bogaziciventures.com",
     "contactForm": "https://bogaziciventures.com/apply/",
     "logo": "https://www.google.com/s2/favicons?sz=128&domain=bogaziciventures.com",
     "dna": {
@@ -230,7 +230,7 @@ const INVESTORS_DATA = [
     "targetStage": "Pre-Seed / Seed",
     "sectors": "AI, SaaS, Fintech, Deep Tech, Health Tech, Gaming, Agri-tech, Sustainability, Marketplaces",
     "ticketSize": "$50,000 - $300,000",
-    "contactEmail": null,
+    "contactEmail": "info@apyventures.com",
     "contactForm": "https://apyventures.com/apply/",
     "logo": "https://www.google.com/s2/favicons?sz=128&domain=apyventures.com",
     "dna": {
@@ -252,7 +252,7 @@ const INVESTORS_DATA = [
     "targetStage": "Pre-Seed / Seed",
     "sectors": "SaaS, AI, Fintech, E-commerce, Health Tech, Gaming, Mobility, Broad Tech",
     "ticketSize": "$50,000 - $250,000",
-    "contactEmail": null,
+    "contactEmail": "info@galatabusinessangels.com",
     "contactForm": "https://www.galatabusinessangels.com/en/for-entrepreneurs/",
     "logo": "https://www.google.com/s2/favicons?sz=128&domain=galatabusinessangels.com",
     "dna": {
@@ -274,7 +274,7 @@ const INVESTORS_DATA = [
     "targetStage": "Seed",
     "sectors": "AI, SaaS, Deep Tech, Fintech, Gaming, E-commerce, Health, Logistics, Agri-food",
     "ticketSize": "$100,000 - $500,000",
-    "contactEmail": null,
+    "contactEmail": "info@simya.vc",
     "contactForm": "https://simya.vc/tr/iletisim/",
     "logo": "https://www.google.com/s2/favicons?sz=128&domain=simya.vc",
     "dna": {

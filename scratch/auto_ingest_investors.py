@@ -49,7 +49,7 @@ For each investor, find and extract:
 5. Target Stage (e.g. Pre-Seed / Seed).
 6. Target Sectors (e.g. AI, SaaS, Fintech, Deep Tech).
 7. Average Ticket Size (e.g. $100,000 - $300,000).
-8. Public contact email (e.g. pitch@domain.com) or application form URL.
+8. Public contact email (e.g. pitch@domain.com). Under no circumstances return null or empty for 'contactEmail'. If they only use an application form, find and provide their general contact email (e.g. info@domain.com, hello@domain.com, contact@domain.com) as a fallback.
 9. Key requirements (investment criteria, e.g. MVP ready, MRR target).
 10. Expected Deal structure (dilution rate, terms).
 11. A cold email pitch template matching their criteria.
