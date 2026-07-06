@@ -376,7 +376,7 @@
     "creatorSize": "Macro (50k+)",
     "contactEmail": "omen_sponsorship@hp.com",
     "contactForm": "https://www.omen.com/",
-    "logo": "https://www.google.com/s2/favicons?sz=128&domain=omen.com",
+    "logo": "",
     "dna": {
       "requirements": "High esports tournament visibility, competitive FPS gaming, tech review channel profiles with professional overlays.",
       "dealStructure": "HP Omen high-refresh rate displays and gaming desktop sponsorship packages, influencer campaign fees.",
@@ -1160,7 +1160,7 @@
     "creatorSize": "Macro (50k+)",
     "contactEmail": "info@savvygamesgroup.com.sa",
     "contactForm": "https://savvygamesgroup.com.sa/",
-    "logo": "https://www.google.com/s2/favicons?domain=savvygamesgroup.com.sa&sz=128",
+    "logo": "",
     "dna": {
       "requirements": "Global gaming ecosystem developers, international esports events licensing, strategic B2B studio investments.",
       "dealStructure": "Sovereign wealth funding programs, B2B investment collaborations, infrastructure grants.",
@@ -1693,6 +1693,758 @@
       "requirements": "Photographers, filmmakers, tech reviewers, and digital media startup labs using Alpha camera systems.",
       "dealStructure": "Premium camera gear gifting, local camera exhibition sponsorships, and technical review collaborations.",
       "pitchHelper": "Dear Sony Alpha Partnerships,\n\nI run a filmmaking channel at [Link], producing technical tutorials. I would love to explore a B2B gear partnership to review and use the latest Sony Alpha series in our upcoming cinematography course. Attached is my channel media deck.\n\nBest regards,\n[Name]"
+    }
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "type": "brand",
+    "category": "AI",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partnerships@cursor.sh",
+    "contactForm": "https://cursor.sh",
+    "logo": "https://www.google.com/s2/favicons?domain=cursor.sh&sz=128",
+    "dna": {
+      "requirements": "Software engineers, tech influencers, and computer science creators publishing coding tutorials or AI development content.",
+      "dealStructure": "Free team licenses for creators + performance-based affiliate commissions + flat-fee sponsorship for popular YouTube developer channels.",
+      "pitchHelper": "Hi Cursor Partnerships Team,\n\nI run a developer channel at [Link] teaching software engineering. I have been using Cursor AI editor and love the DX. I would love to explore a partnership or affiliate campaign to introduce Cursor to my audience.\n\nBest regards,\n[Name]",
+      "pitchTips": [
+        "Focus on DX: Cursor values developer experience. Show a real coding flow or feature demo in your pitch.",
+        "Highlight your developer audience: Give clear demographics of your viewers (e.g. % of professional developers vs students).",
+        "Offer custom demos: Pitch a video concept showing Cursor's multi-file editing features on your project."
+      ]
+    }
+  },
+  {
+    "id": "linear",
+    "name": "Linear",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@linear.app",
+    "contactForm": "https://linear.app",
+    "logo": "https://www.google.com/s2/favicons?domain=linear.app&sz=128",
+    "dna": {
+      "requirements": "Tech startups, project managers, and product design creators sharing productivity and software cycle optimization tips.",
+      "dealStructure": "Affiliate revenue share program + custom startup sponsor deals + workspace credits.",
+      "pitchHelper": "Hi Linear Team,\n\nI am [Name] from [Startup Link]. We have been building our tool with Linear and want to feature your clean PM workflow in our upcoming founder journey series. We are looking for a B2B collaboration.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Emphasize design: Linear is obsessed with clean design and UI. Keep your outreach email structure pristine and elegant.",
+        "Share developer workflow: Explain how you use Linear's issues and cycles in your actual day-to-day operations.",
+        "Focus on productivity: Address how your partnership can help other startups optimize their product delivery speed."
+      ]
+    }
+  },
+  {
+    "id": "supabase",
+    "name": "Supabase",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Product Gifting",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@supabase.io",
+    "contactForm": "https://supabase.com",
+    "logo": "https://www.google.com/s2/favicons?domain=supabase.com&sz=128",
+    "dna": {
+      "requirements": "Full-stack developers, coding instructors, open-source maintainers, and tech hackathon organizers.",
+      "dealStructure": "Free developer tier upgrades + sponsored hackathon prize pools + dedicated sponsorship for dev video tutorials.",
+      "pitchHelper": "Hi Supabase Partnerships,\n\nI am organizing a hackathon at [Link] for [X] developers. We love open-source and would love to have Supabase as an official database sponsor. Attached are our partnership packages.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Highlight Open-Source: Supabase is the open-source Firebase alternative. Showcase your commitment to open-source.",
+        "Target Hackathons: They love sponsoring local and global dev hackathons. Make your event parameters clear.",
+        "Demo DB capabilities: If pitching content creation, propose a video focused on Postgres databases or real-time listeners."
+      ]
+    }
+  },
+  {
+    "id": "vellum",
+    "name": "Vellum",
+    "type": "brand",
+    "category": "AI",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partnerships@vellum.ai",
+    "contactForm": "https://vellum.ai",
+    "logo": "https://www.google.com/s2/favicons?domain=vellum.ai&sz=128",
+    "dna": {
+      "requirements": "LLM developers, AI engineers, product managers, and enterprise creators focusing on prompt engineering and model evaluations.",
+      "dealStructure": "Enterprise sandbox access + high-value referral commissions + co-marketing integrations.",
+      "pitchHelper": "Hi Vellum Team,\n\nI run an AI consulting firm/channel at [Link] and teach prompt engineering. We want to demonstrate Vellum's evaluation system to our clients/viewers. Let's discuss a partnership.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Focus on LLM Ops: Show your expertise in LLM operations, prompt deployment, and evaluations.",
+        "Pitch to AI Builders: Vellum caters to builders scaling AI in production. Your audience metrics should align with developers.",
+        "Suggest a case study: Offer to write an article or video outlining how Vellum saved you testing hours."
+      ]
+    }
+  },
+  {
+    "id": "replicate",
+    "name": "Replicate",
+    "type": "brand",
+    "category": "AI",
+    "sponsorType": "Product Gifting",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "pricing@replicate.com",
+    "contactForm": "https://replicate.com",
+    "logo": "https://www.google.com/s2/favicons?domain=replicate.com&sz=128",
+    "dna": {
+      "requirements": "AI developers, generative art creators, hackers, and open-source contributors using machine learning models.",
+      "dealStructure": "GPU credits for active creators + sponsorships for open-source model deployment demonstrations.",
+      "pitchHelper": "Hi Replicate Team,\n\nI am building an open-source AI project at [Link] and want to utilize your serverless GPU API to host [Model Name]. We are seeking developer credits to run our public beta.\n\nBest regards,\n[Name]",
+      "pitchTips": [
+        "Mention specific models: State which open-source models (like Llama, Stable Diffusion) you plan to host on Replicate.",
+        "Provide open-source link: Always include your GitHub repository link to prove it's a real developer project.",
+        "Keep it highly technical: Replicate is run by and for engineers; bypass marketing fluff and focus on technical architecture."
+      ]
+    }
+  },
+  {
+    "id": "huggingface",
+    "name": "Hugging Face",
+    "type": "brand",
+    "category": "AI",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partnerships@huggingface.co",
+    "contactForm": "https://huggingface.co",
+    "logo": "https://www.google.com/s2/favicons?domain=huggingface.co&sz=128",
+    "dna": {
+      "requirements": "Machine learning researchers, AI application developers, and data science community leaders.",
+      "dealStructure": "Hugging Face Spaces hosting credits + sponsored dataset creation partnerships + community event backing.",
+      "pitchHelper": "Dear Hugging Face Community Team,\n\nWe are launching a data science hackathon at [Link] and would love to host our models on Hugging Face Spaces. We want to explore an official platform partnership.\n\nSincerely,\n[Name]",
+      "pitchTips": [
+        "Highlight community: Hugging Face prioritizes open community science. Emphasize how your project helps the developer community.",
+        "Showcase your Space: Share a link to a demo Space you've already created on Hugging Face.",
+        "Propose a dataset: They value high-quality open-source datasets; mention if you are releasing one."
+      ]
+    }
+  },
+  {
+    "id": "sentry",
+    "name": "Sentry",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@sentry.io",
+    "contactForm": "https://sentry.io",
+    "logo": "https://www.google.com/s2/favicons?domain=sentry.io&sz=128",
+    "dna": {
+      "requirements": "Software engineering creators, DevOps influencers, and tech podcast hosts discussing error tracking and application performance monitoring (APM).",
+      "dealStructure": "Monthly flat-fee sponsorships + free developer enterprise credits + developer merchandise gifting.",
+      "pitchHelper": "Hi Sentry Partnerships,\n\nI host the tech podcast [Podcast Link] focusing on backend engineering. I would love to explore a sponsorship to feature Sentry's error tracking during our segment. Our podcast receives [X] downloads per episode.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Focus on debug stories: Sentry likes humor and practical debugging stories. Propose a fun way to showcase fixing a bug using Sentry.",
+        "Provide audience tech stack: Mention what frameworks (e.g. React, Next.js, Django) your audience uses most.",
+        "Target podcasts: They are highly active in developer podcast sponsorships."
+      ]
+    }
+  },
+  {
+    "id": "posthog",
+    "name": "PostHog",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@posthog.com",
+    "contactForm": "https://posthog.com",
+    "logo": "https://www.google.com/s2/favicons?domain=posthog.com&sz=128",
+    "dna": {
+      "requirements": "Product-led growth (PLG) advocates, SaaS founders, product managers, and analytics content creators.",
+      "dealStructure": "PostHog scale tier credits + product analytics integration sponsorships + affiliate revenue share.",
+      "pitchHelper": "Hi PostHog Team,\n\nI am [Name] from [Company Link]. We are publishing our product-led growth metrics and want to feature PostHog as our main analytics tool. We'd love to discuss a B2B collaboration.\n\nBest regards,\n[Name]",
+      "pitchTips": [
+        "Match their tone: PostHog has a very humorous, informal, developer-friendly brand voice (hedgehogs, memes). Keep your pitch casual.",
+        "Focus on PLG: Show how you use feature flags, session recordings, or product funnels.",
+        "Ask for credits: They have generous startup programs; pitching for credits is highly converting."
+      ]
+    }
+  },
+  {
+    "id": "loom",
+    "name": "Loom",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Affiliate / Referral",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "press@loom.com",
+    "contactForm": "https://www.loom.com",
+    "logo": "https://www.google.com/s2/favicons?domain=loom.com&sz=128",
+    "dna": {
+      "requirements": "Remote work advocates, productivity vloggers, design agencies, and sales coaches.",
+      "dealStructure": "Affiliate commission link + free Loom Business licenses for creators + occasional co-marketing features.",
+      "pitchHelper": "Hi Loom Team,\n\nI am [Name], and I publish remote productivity tutorials at [Link]. I use Loom to record all my design feedbacks. I would love to explore a partnership to recommend Loom to my audience.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Pitch with a Loom: Send your pitch email accompanied by a 1-minute Loom video link instead of just text!",
+        "Show remote workflows: Emphasize how your project uses asynchronous video communication.",
+        "Highlight onboarding: Propose showing Loom as a tool for team onboarding or sales pitches."
+      ]
+    }
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "partner@slack.com",
+    "contactForm": "https://slack.com",
+    "logo": "https://www.google.com/s2/favicons?domain=slack.com&sz=128",
+    "dna": {
+      "requirements": "Enterprise productivity consultants, workspace optimization creators, and developer community managers.",
+      "dealStructure": "Co-marketing campaigns + integration launch support + corporate ecosystem partnerships.",
+      "pitchHelper": "Dear Slack Partnerships,\n\nWe have built a Slack integration [Link] that improves remote team standups. We would love to discuss a B2B co-marketing partnership to launch on the Slack App Directory.\n\nBest regards,\n[Name]",
+      "pitchTips": [
+        "Build an integration: Slack prioritizes partners that expand their App Directory ecosystem.",
+        "Focus on security: If you are B2B, highlight how your integration keeps corporate data secure.",
+        "Showcase community scale: Mention how many active workspaces already use your Slack application."
+      ]
+    }
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "type": "brand",
+    "category": "Design",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "community@figma.com",
+    "contactForm": "https://figma.com",
+    "logo": "https://www.google.com/s2/favicons?domain=figma.com&sz=128",
+    "dna": {
+      "requirements": "UI/UX designers, product managers, front-end developers, and design community organizers.",
+      "dealStructure": "Figma Community plugin sponsorships + design hackathon prizes + educational license sponsorships.",
+      "pitchHelper": "Hi Figma Community Team,\n\nI run a UI/UX education channel at [Link] and have built a new design plugin for Figma. I would love to explore a community partnership to feature it on Figma Community.\n\nBest regards,\n[Name]",
+      "pitchTips": [
+        "Figma Community presence: Make sure you have public design files or plugins uploaded to Figma Community.",
+        "Target education: Figma loves supporting design bootcamps, university clubs, and student hackathons.",
+        "Design quality: Ensure your pitch deck, website, and portfolio are visually stunning."
+      ]
+    }
+  },
+  {
+    "id": "miro",
+    "name": "Miro",
+    "type": "brand",
+    "category": "Design",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partnerships@miro.com",
+    "contactForm": "https://miro.com",
+    "logo": "https://www.google.com/s2/favicons?domain=miro.com&sz=128",
+    "dna": {
+      "requirements": "Agile coaches, product managers, workshop hosts, and diagram/system architects.",
+      "dealStructure": "Miroverse template sponsorships + enterprise tool licensing + integration marketing support.",
+      "pitchHelper": "Hi Miro Team,\n\nI have developed an agile sprint template in Miro called [Name] and want to list it on Miroverse. We'd love to explore a partnership to highlight this to your users.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Pitch for Miroverse: Submit a high-quality whiteboard template to Miroverse before pitching partnerships.",
+        "Focus on collaboration: Emphasize how your project uses Miro to align cross-functional teams.",
+        "Suggest a workshop: Propose hosting a joint webinar demonstrating Miro for B2B planning."
+      ]
+    }
+  },
+  {
+    "id": "brex",
+    "name": "Brex",
+    "type": "brand",
+    "category": "Fintech",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@brex.com",
+    "contactForm": "https://brex.com",
+    "logo": "https://www.google.com/s2/favicons?domain=brex.com&sz=128",
+    "dna": {
+      "requirements": "Startup founders, accelerators, incubators, venture capital portfolios, and tech event organizers.",
+      "dealStructure": "High-value referral commissions ($250+ per startup sign-up) + co-branded startup events + portfolio discount perks.",
+      "pitchHelper": "Hi Brex Partnerships,\n\nI run an accelerator program for startups at [Link]. We want to add Brex corporate cards as a core financial perk for our cohort startups. Let's discuss a B2B partnership.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Focus on VC/Accelerators: Brex loves partnering with communities that host high-growth founders.",
+        "Show startup volume: Mention the exact number of startups in your current cohort or portfolio.",
+        "Position as a financial tool: Highlight how you help startups structure their corporate card expenses."
+      ]
+    }
+  },
+  {
+    "id": "ramp",
+    "name": "Ramp",
+    "type": "brand",
+    "category": "Fintech",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@ramp.com",
+    "contactForm": "https://ramp.com",
+    "logo": "https://www.google.com/s2/favicons?domain=ramp.com&sz=128",
+    "dna": {
+      "requirements": "Finance operations creators, corporate accountants, startup coaches, and SMB advisors.",
+      "dealStructure": "High-ticket referral program + co-marketing blog integrations + startup credit programs.",
+      "pitchHelper": "Hi Ramp Team,\n\nI run a financial advisory community for SMB founders at [Link]. We want to introduce Ramp's automated expense card software to our network. Let's discuss a B2B partner deal.\n\nBest regards,\n[Name]",
+      "pitchTips": [
+        "Focus on cost-saving: Ramp's primary marketing angle is saving companies money. Pitch how you help startups cut burn rates.",
+        "Audience validation: Validate that your audience consists of SMB owners or CFOs.",
+        "Mention accounting software: Show familiarity with QuickBooks, NetSuite, or Xero integrations."
+      ]
+    }
+  },
+  {
+    "id": "mercury",
+    "name": "Mercury",
+    "type": "brand",
+    "category": "Fintech",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@mercury.com",
+    "contactForm": "https://mercury.com",
+    "logo": "https://www.google.com/s2/favicons?domain=mercury.com&sz=128",
+    "dna": {
+      "requirements": "Tech startups seeking corporate banking, VC-backed companies, incubators, and founder communities.",
+      "dealStructure": "Mercury startup credit perks + community event sponsorships + customized banking integration deals.",
+      "pitchHelper": "Hi Mercury Team,\n\nI run [Startup Community Link], connecting 500+ tech founders. We want to partner with Mercury to offer corporate banking setups to our community members. Let's discuss a partnership.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Focus on Delaware C-Corps: Mercury prioritizes Delaware C-Corp startups raising VC capital. Emphasize if your network fits this.",
+        "Highlight startup ecosystem: Show your role in the startup ecosystem (e.g. demo days, angel networks).",
+        "Keep it highly professional: Financial banking requires strict compliance; ensure your pitch presents a verified business structure."
+      ]
+    }
+  },
+  {
+    "id": "deel",
+    "name": "Deel",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partners@deel.com",
+    "contactForm": "https://deel.com",
+    "logo": "https://www.google.com/s2/favicons?domain=deel.com&sz=128",
+    "dna": {
+      "requirements": "Remote recruitment creators, global hiring advisors, legal compliance podcasts, and startup HR managers.",
+      "dealStructure": "Affiliate commissions + sponsored international expansion articles + global HR consulting partnerships.",
+      "pitchHelper": "Hi Deel Partnerships,\n\nI host a weekly remote business vlog at [Link]. We are running a series on hiring developers in Emerging Europe and want to feature Deel as our legal compliance partner. Let's discuss a deal.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Highlight global payroll: Deel is focused on international EOR (Employer of Record) and contractor setups.",
+        "Target HR managers: Verify that your readers/viewers are decision-makers or hiring managers.",
+        "Suggest remote compliance topic: Pitch a content topic around avoiding compliance risks in global contracting."
+      ]
+    }
+  },
+  {
+    "id": "gusto",
+    "name": "Gusto",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@gusto.com",
+    "contactForm": "https://gusto.com",
+    "logo": "https://www.google.com/s2/favicons?domain=gusto.com&sz=128",
+    "dna": {
+      "requirements": "SMB leaders, payroll managers, accountants, and HR software comparison channels.",
+      "dealStructure": "Revenue sharing on payroll onboarding + co-branded payroll guides + referral incentives.",
+      "pitchHelper": "Hi Gusto Partnerships,\n\nI manage an SMB business consultation site at [Link]. We are writing a comparison guide on U.S. payroll software and want to feature Gusto. Let's discuss a partnership.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Focus on US SMBs: Gusto's primary market is small-to-medium businesses in the United States.",
+        "Highlight benefits setup: Mention if your audience is looking to set up health insurance, 401(k), or HR perks.",
+        "Suggest comparison: They convert well on payroll software comparison reviews."
+      ]
+    }
+  },
+  {
+    "id": "webflow",
+    "name": "Webflow",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@webflow.com",
+    "contactForm": "https://webflow.com",
+    "logo": "https://www.google.com/s2/favicons?domain=webflow.com&sz=128",
+    "dna": {
+      "requirements": "No-code developers, design agencies, web design educators, and startup product teams.",
+      "dealStructure": "Webflow Affiliate program (50% commission for 1 year) + certified partner program + design contest sponsorships.",
+      "pitchHelper": "Hi Webflow Team,\n\nI run a web design agency at [Link] and teach no-code on YouTube. I would love to explore a partnership to run a sponsored design hackathon for my community.\n\nBest regards,\n[Name]",
+      "pitchTips": [
+        "Show your Webflow sites: Link to visually complex Webflow sites you have personally designed or launched.",
+        "Target no-code: Focus your pitch around no-code development speed and the Webflow CMS capabilities.",
+        "Propose video tutorials: Webflow values high-quality CSS/HTML tutorials built inside their designer interface."
+      ]
+    }
+  },
+  {
+    "id": "framer",
+    "name": "Framer",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@framer.com",
+    "contactForm": "https://framer.com",
+    "logo": "https://www.google.com/s2/favicons?domain=framer.com&sz=128",
+    "dna": {
+      "requirements": "UI designers, product managers, Figma creators, and interactive web designers.",
+      "dealStructure": "Framer Partner commissions (50% affiliate share) + plugin launch support + designer community sponsorships.",
+      "pitchHelper": "Hi Framer Team,\n\nI run a Figma-to-web design channel at [Link] and have created a series showing how to build interactive portfolios in Framer. I would love to explore a creator partnership.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Focus on speed: Framer's killer feature is rapid site publishing. Propose tutorials showing how to publish Framer sites in minutes.",
+        "Demonstrate Figma import: Highlight Figma-to-Framer importer capabilities in your pitch.",
+        "Share template listings: Create Framer templates to list on their official template marketplace."
+      ]
+    }
+  },
+  {
+    "id": "fly-io",
+    "name": "Fly.io",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Product Gifting",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "support@fly.io",
+    "contactForm": "https://fly.io",
+    "logo": "https://www.google.com/s2/favicons?domain=fly.io&sz=128",
+    "dna": {
+      "requirements": "Systems developers, Elixir/Phoenix advocates, Docker deployments, and serverless hosting creators.",
+      "dealStructure": "Fly.io infrastructure hosting credits + developer meetup sponsorship + technical documentation partnerships.",
+      "pitchHelper": "Hi Fly.io Team,\n\nI run an open-source development community at [Link]. We are hosting a dev bootcamp and want to use Fly.io for deploying our containerized database apps. We are seeking hosting credits.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Show database focus: Fly.io has a strong focus on distributed PostgreSQL. Suggest a postgres-related project deployment.",
+        "Elixir / Phoenix match: They love the Elixir community; mention if your app uses Phoenix framework.",
+        "Highlight Docker: Fly.io deploys via Docker containers; mention container deployment in your pitch."
+      ]
+    }
+  },
+  {
+    "id": "railway",
+    "name": "Railway",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Product Gifting",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@railway.app",
+    "contactForm": "https://railway.app",
+    "logo": "https://www.google.com/s2/favicons?domain=railway.app&sz=128",
+    "dna": {
+      "requirements": "Full-stack indie hackers, Next.js/Node developers, dev vloggers, and open-source project managers.",
+      "dealStructure": "Railway developer credits + template creation sponsorships + co-branded template repository support.",
+      "pitchHelper": "Hi Railway Team,\n\nI build developer templates at [Link] and want to create a one-click deployment template for Railway. I would love to explore a partnership to highlight this to your users.\n\nBest regards,\n[Name]",
+      "pitchTips": [
+        "Build a template: Create a one-click Railway deploy template before pitching partnerships.",
+        "Focus on indie hackers: Railway is highly popular among solo developers and indie hackers. Match this audience description.",
+        "Suggest a quick-start guide: Propose a video or blog showing a zero-config setup."
+      ]
+    }
+  },
+  {
+    "id": "render",
+    "name": "Render",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Product Gifting",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@render.com",
+    "contactForm": "https://render.com",
+    "logo": "https://www.google.com/s2/favicons?domain=render.com&sz=128",
+    "dna": {
+      "requirements": "Web app developers, hosting reviewers, static site builders, and web service operators.",
+      "dealStructure": "Render infrastructure credits + technical dev blog sponsorships + event backing.",
+      "pitchHelper": "Hi Render Team,\n\nI operate a web hosting review site at [Link]. We are writing a detailed guide on deploying Node.js apps and want to showcase Render as the top choice. Let's discuss hosting credit sponsorships.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Show Heroku migration: Render is highly focused on Heroku-to-Render migrations. Propose a tutorial showing this migration.",
+        "Focus on Web Services: Emphasize Web Services, Cron Jobs, and background workers hosting capabilities.",
+        "State technical stack: State the database and backend tech stack of your project."
+      ]
+    }
+  },
+  {
+    "id": "retool",
+    "name": "Retool",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@retool.com",
+    "contactForm": "https://retool.com",
+    "logo": "https://www.google.com/s2/favicons?domain=retool.com&sz=128",
+    "dna": {
+      "requirements": "Internal tool developers, data engineers, operations managers, and database administrators.",
+      "dealStructure": "Retool Startup credits ($25k in free credits) + co-marketing partner case studies + referral bonuses.",
+      "pitchHelper": "Hi Retool Startup Team,\n\nI represent [Startup Name] at [Link]. We are building our internal admin dashboards and database control panels using Retool. We would love to join your startup discount program.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Focus on internal tooling: Retool is used for admin panels. Describe the specific database (SQL, MongoDB) you are connecting.",
+        "VC portfolio match: If you are VC-backed, mention your investor to unlock high-value Retool credits.",
+        "Offer to write a case study: Retool loves customer success stories outlining operational efficiency gains."
+      ]
+    }
+  },
+  {
+    "id": "zapier",
+    "name": "Zapier",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@zapier.com",
+    "contactForm": "https://zapier.com",
+    "logo": "https://www.google.com/s2/favicons?domain=zapier.com&sz=128",
+    "dna": {
+      "requirements": "No-code experts, workflow automation consultants, SaaS integration builders, and productivity creators.",
+      "dealStructure": "Integration partner listing + Zapier Developer platform support + co-marketing blog integrations.",
+      "pitchHelper": "Hi Zapier Developer Team,\n\nWe have built a B2B SaaS tool at [Link] and want to integrate it with Zapier to support 5000+ app integrations. Let's discuss an official partner integration.\n\nBest regards,\n[Name]",
+      "pitchTips": [
+        "Integrate first: Build and publish a public Zapier integration for your app before pitching B2B deals.",
+        "Focus on automation: Emphasize how many manual hours your integration saves for users.",
+        "Suggest automation tutorial: Propose a video showing a multi-step Zapier integration workflow."
+      ]
+    }
+  },
+  {
+    "id": "make",
+    "name": "Make.com",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@make.com",
+    "contactForm": "https://make.com",
+    "logo": "https://www.google.com/s2/favicons?domain=make.com&sz=128",
+    "dna": {
+      "requirements": "Visual workflow designers, advanced automation creators, and integration developers.",
+      "dealStructure": "Make.com Partner commissions + template marketplace placements + co-marketing webinars.",
+      "pitchHelper": "Hi Make Partnerships Team,\n\nI run an automation consultancy at [Link]. We build complex visual workflows for enterprise clients. We'd love to discuss joining your partner program.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Focus on visual flow: Make's key USP is visual drag-and-drop scenarios. Propose showing complex visual pipelines.",
+        "Build templates: Showcase custom Make templates you've built.",
+        "Mention API integrations: Show technical understanding of Webhooks, JSON parsing, and REST APIs."
+      ]
+    }
+  },
+  {
+    "id": "hubspot",
+    "name": "HubSpot",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@hubspot.com",
+    "contactForm": "https://hubspot.com",
+    "logo": "https://www.google.com/s2/favicons?domain=hubspot.com&sz=128",
+    "dna": {
+      "requirements": "Sales coaches, marketing agencies, CRM consultants, and SaaS software reviewers.",
+      "dealStructure": "HubSpot for Startups discounts + agency partner program commission + co-branded marketing integrations.",
+      "pitchHelper": "Hi HubSpot Team,\n\nI run a digital marketing consultancy at [Link] and want to guide our startup clients on using HubSpot CRM for inbound marketing. Let's discuss a partner deal.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Target startups: HubSpot has a massive focus on 'HubSpot for Startups' programs.",
+        "Highlight sales pipeline: Focus your pitch on sales pipeline tracking, inbound marketing, or customer service ticketing.",
+        "Show agency certification: HubSpot values certified HubSpot Academy developers and agencies."
+      ]
+    }
+  },
+  {
+    "id": "intercom",
+    "name": "Intercom",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@intercom.io",
+    "contactForm": "https://intercom.com",
+    "logo": "https://www.google.com/s2/favicons?domain=intercom.com&sz=128",
+    "dna": {
+      "requirements": "Customer support creators, SaaS founders, AI support agents advocates, and help desk consultants.",
+      "dealStructure": "Intercom for Startups program credits (90% off for 1 year) + app store listing support + co-marketing features.",
+      "pitchHelper": "Hi Intercom Startup Team,\n\nWe are building a new SaaS platform [Link] and want to use Intercom's Fin AI Agent for automated customer chat. We are seeking startup program credits.\n\nBest regards,\n[Name]",
+      "pitchTips": [
+        "Focus on Fin AI: Intercom is heavily promoting their Fin AI support agent. Pitching how you implement AI chat will get attention.",
+        "Startup validation: Validate that you are an early-stage startup under $1M in funding.",
+        "App Store listing: Propose building an app for the Intercom App Store to integrate your service."
+      ]
+    }
+  },
+  {
+    "id": "clerk",
+    "name": "Clerk",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Product Gifting",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@clerk.dev",
+    "contactForm": "https://clerk.com",
+    "logo": "https://www.google.com/s2/favicons?domain=clerk.com&sz=128",
+    "dna": {
+      "requirements": "Authentication developers, Next.js/React tutorials creators, and full-stack software engineers.",
+      "dealStructure": "Free Clerk Pro tier credits for developer portfolios + sponsored Next.js hackathons + tech blog partnerships.",
+      "pitchHelper": "Hi Clerk Team,\n\nI build React/Next.js developer tutorials at [Link] and want to create a video showing Clerk authentication integration. We are seeking developer tier sponsorships.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Focus on Next.js: Clerk is the developer favorite for React and Next.js authentication. Propose Next.js tutorials.",
+        "Show auth setup: Highlight user management, webhooks, or multi-tenant (organizations) auth features.",
+        "State developer metrics: Mention your audience size and how many are active react/next developers."
+      ]
+    }
+  },
+  {
+    "id": "resend",
+    "name": "Resend",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Product Gifting",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@resend.com",
+    "contactForm": "https://resend.com",
+    "logo": "https://www.google.com/s2/favicons?domain=resend.com&sz=128",
+    "dna": {
+      "requirements": "Developers building SaaS products, transactional email tutorial creators, React Email users, and serverless logs advocates.",
+      "dealStructure": "Resend API email sending credits + sponsored React Email projects + dev newsletter ad slots.",
+      "pitchHelper": "Hi Resend Team,\n\nI run a SaaS product at [Link]. We are implementing transactional onboarding emails using React Email and want to use Resend API. Let's discuss developer credits.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Mention React Email: Resend is the creator of React Email. Propose showing React Email component design.",
+        "Focus on email dev: Highlight transactional emails (receipts, logins, notifications) rather than bulk marketing mail.",
+        "Clean coding style: Resend values minimalist design and code. Keep your pitch email incredibly clean and text-focused."
+      ]
+    }
+  },
+  {
+    "id": "loops",
+    "name": "Loops",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Product Gifting",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@loops.so",
+    "contactForm": "https://loops.so",
+    "logo": "https://www.google.com/s2/favicons?domain=loops.so&sz=128",
+    "dna": {
+      "requirements": "SaaS builders, marketing automation creators, indie developers, and newsletter writers.",
+      "dealStructure": "Loops campaign credits + SaaS marketing guide collaborations + referral perks.",
+      "pitchHelper": "Hi Loops Team,\n\nWe have launched our SaaS beta at [Link] and want to design our product trigger emails in Loops. We would love to explore a developer credit deal.\n\nBest regards,\n[Name]",
+      "pitchTips": [
+        "Focus on SaaS: Loops is strictly built for SaaS (software-as-a-service) companies. Bypass other niches.",
+        "Show email triggers: Pitch how you trigger emails based on user signup or app activity.",
+        "Highlight ease-of-use: Talk about how Loops replaces complex legacy email marketing tools."
+      ]
+    }
+  },
+  {
+    "id": "dub-co",
+    "name": "Dub.co",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Product Gifting",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@dub.co",
+    "contactForm": "https://dub.co",
+    "logo": "https://www.google.com/s2/favicons?domain=dub.co&sz=128",
+    "dna": {
+      "requirements": "Link sharing advocates, social media marketers, analytics creators, and developer tools review channels.",
+      "dealStructure": "Dub Pro credits + custom domain redirect sponsorships + link analytics co-marketing.",
+      "pitchHelper": "Hi Dub Team,\n\nI run a tech community at [Link]. We share hundreds of resource links monthly and want to manage our redirects using Dub Pro for deep analytics. Let's discuss a partner deal.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Focus on analytics: Dub values detailed redirection analytics, geo-targeting, and link QR code creation. Propose showing these analytics.",
+        "Mention open-source: Dub is open-source; highlight your open-source community focus.",
+        "Showcase link volume: Mention how many links you share and average monthly link click metrics."
+      ]
+    }
+  },
+  {
+    "id": "axiom",
+    "name": "Axiom",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Product Gifting",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@axiom.co",
+    "contactForm": "https://axiom.co",
+    "logo": "https://www.google.com/s2/favicons?domain=axiom.co&sz=128",
+    "dna": {
+      "requirements": "Systems architects, serverless cloud hosting logs reviewers, Vercel integration builders, and security engineers.",
+      "dealStructure": "Axiom logging database credits + serverless log dashboard tutorials sponsorships + dev event backing.",
+      "pitchHelper": "Hi Axiom Team,\n\nI write backend development tutorials at [Link]. We are publishing a guide on Vercel serverless functions error logging and want to feature Axiom as the best choice. Let's discuss logging credits.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Focus on Serverless logging: Axiom is highly popular for serverless logging. Propose a tutorial with Vercel or NetSuite logging integrations.",
+        "Show query syntax: Mention showing Axiom's APL (Axiom Processing Language) logs querying capabilities.",
+        "Highlight data scale: If pitching database credits, state the volume of logs/events your project generates daily."
+      ]
+    }
+  },
+  {
+    "id": "esl-gaming",
+    "name": "ESL Gaming",
+    "type": "brand",
+    "category": "Events & Tournaments",
+    "sponsorType": "Flat Fee / Brand Partnership",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "partnerships@eslgaming.com",
+    "contactForm": "https://www.eslgaming.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=eslgaming.com&sz=128",
+    "dna": {
+      "requirements": "Professional CS2/Dota2 casting, community tournament organizing, or esports analyst profiles.",
+      "dealStructure": "Official community caster license, server hosting allocations, flat-fee sponsorships.",
+      "pitchHelper": "Dear ESL Partnerships Team,\n\nI am [Name], an esports broadcaster and community organizer at [Link]. I would love to collaborate under your community casting licenses for upcoming CS2 events. Please find my broadcast statistics attached.\n\nSincerely,\n[Name]"
+    }
+  },
+  {
+    "id": "blast",
+    "name": "BLAST",
+    "type": "brand",
+    "category": "Events & Tournaments",
+    "sponsorType": "Flat Fee / Brand Partnership",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "partnerships@blast.tv",
+    "contactForm": "https://blast.tv/",
+    "logo": "https://www.google.com/s2/favicons?domain=blast.tv&sz=128",
+    "dna": {
+      "requirements": "High-quality FPS casting (CS2, Rainbow Six), professional stream layout overlays, esports commentary.",
+      "dealStructure": "BLAST Premier co-streaming rights, official broadcast feature sponsorships.",
+      "pitchHelper": "Dear BLAST Partnerships,\n\nMy name is [Name], broadcasting competitive shooter matches at [Link]. I am a huge follower of BLAST Premier tournaments and would love to request official co-streaming licensing. Attached are my channel demographics.\n\nBest regards,\n[Name]"
+    }
+  },
+  {
+    "id": "faceit",
+    "name": "FACEIT",
+    "type": "brand",
+    "category": "Events & Tournaments",
+    "sponsorType": "Affiliate / Brand Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "organizers@faceit.com",
+    "contactForm": "https://www.faceit.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=faceit.com&sz=128",
+    "dna": {
+      "requirements": "Organizing local hubs/leagues, hosting regular competitive lobbies, active community following.",
+      "dealStructure": "FACEIT Points allocation (for user rewards), custom organizer subscription splits, server provisions.",
+      "pitchHelper": "Hi FACEIT Organizers Team,\n\nI am [Name], hosting a competitive CS2/Valorant community at [Link]. We would love to set up an official FACEIT Hub to run weekly tournaments. Please find our community player stats attached.\n\nBest,\n[Name]"
+    }
+  },
+  {
+    "id": "qiddiya",
+    "name": "Qiddiya",
+    "type": "brand",
+    "category": "Events & Tournaments",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "partnerships@qiddiya.com",
+    "contactForm": "https://qiddiya.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=qiddiya.com&sz=128",
+    "dna": {
+      "requirements": "Tier-1 gaming event organizers, global gaming broadcast networks, premium lifestyle branding partnerships.",
+      "dealStructure": "Multi-million dollar event sponsorships, long-term team partnership funding, city-activation campaigns.",
+      "pitchHelper": "Dear Qiddiya Partnerships Team,\n\nI am representing [Organization/Project] ([Link]). We admire Qiddiya's vision to build the world's premier gaming and entertainment capital. We would love to explore a B2B partnership for event coverage or sponsorships. Attached is our portfolio.\n\nWarm regards,\n[Name]"
+    }
+  },
+  {
+    "id": "riyadh-season",
+    "name": "Riyadh Season",
+    "type": "brand",
+    "category": "Events & Tournaments",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "info@riyadhseason.com",
+    "contactForm": "https://riyadhseason.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=riyadhseason.com&sz=128",
+    "dna": {
+      "requirements": "International sports cast networks, global gaming event organizers, major entertainment collaborations.",
+      "dealStructure": "Official festival partner licenses, event space provisions, large flat-fee sponsor spots.",
+      "pitchHelper": "Dear Riyadh Season Management,\n\nI represent [Organization Name] ([Link]), a global gaming festival caster. We would love to explore a B2B partnership to cast and cover key events during the upcoming Riyadh Season. Attached is our event history and viewer metrics.\n\nSincerely,\n[Name]"
     }
   }
 ]
