@@ -589,6 +589,22 @@ app.post('/api/report-deal', async (req, res) => {
     }
 });
 
+// View Success Deal Reports Endpoint (Admin helper)
+app.get('/api/admin/deal-reports', (req, res) => {
+    try {
+        const reportPath = path.join(__dirname, 'deal_reports.json');
+        if (fs.existsSync(reportPath)) {
+            const fileData = fs.readFileSync(reportPath, 'utf8');
+            const reports = JSON.parse(fileData);
+            return res.json({ success: true, count: reports.length, reports });
+        }
+        res.json({ success: true, count: 0, reports: [] });
+    } catch (err) {
+        console.error("[-] Error loading reports:", err);
+        res.status(500).json({ error: "Failed to load deal reports." });
+    }
+});
+
 // Database Status Debug Route
 app.get('/api/db-status', (req, res) => {
     res.json({
