@@ -868,18 +868,19 @@ select {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #030712;
-    background-image: linear-gradient(to bottom, rgba(3, 7, 18, 0.25), rgba(3, 7, 18, 0.70)), url('assets/skyscrapers_bg_sharp.png');
+    background-color: #02040a;
+    /* Use extremely light overlays to let the 4K skyscrapers design shine through without any blur */
+    background-image: linear-gradient(to bottom, rgba(2, 4, 10, 0.05), rgba(2, 4, 10, 0.35)), url('assets/skyscrapers_bg_sharp.png');
     background-size: cover;
-    background-position: center 25%; /* Shift background up slightly to focus on tower structures */
+    background-position: center 25%;
     background-repeat: no-repeat;
     z-index: 1000;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Place brand/logo at the top area */
+    justify-content: flex-start;
     overflow-y: auto;
-    padding: 90px 20px 40px 20px; /* Generous top padding for brand logo positioning */
+    padding: 70px 20px 40px 20px;
     font-family: 'Outfit', sans-serif;
     color: var(--text-main);
     transition: opacity 0.4s ease, visibility 0.4s ease;
@@ -892,48 +893,48 @@ select {
     pointer-events: none;
 }
 
-/* Glow Background Effects */
+/* Glow Background Effects - Lightened to keep background clear */
 .portal-glow-1, .portal-glow-2 {
     position: absolute;
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 550px;
     border-radius: 50%;
-    filter: blur(140px);
+    filter: blur(120px);
     z-index: 1;
-    opacity: 0.10;
+    opacity: 0.06;
     pointer-events: none;
     animation: portalPulse 12s infinite alternate ease-in-out;
 }
 
 .portal-glow-1 {
-    top: -10%;
-    left: -10%;
+    top: -5%;
+    left: -5%;
     background: radial-gradient(circle, var(--color-primary), transparent 70%);
 }
 
 .portal-glow-2 {
-    bottom: -10%;
-    right: -10%;
+    bottom: -5%;
+    right: -5%;
     background: radial-gradient(circle, var(--color-premium), transparent 70%);
     animation-delay: -6s;
 }
 
 @keyframes portalPulse {
     0% { transform: scale(1) translate(0, 0); }
-    100% { transform: scale(1.15) translate(40px, 30px); }
+    100% { transform: scale(1.1) translate(20px, 15px); }
 }
 
 .portal-content {
     position: relative;
     z-index: 5;
-    max-width: 1100px;
+    max-width: 1300px; /* Wider layout to accommodate split column display */
     width: 100%;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .portal-brand {
-    margin-bottom: 48px;
+    margin-bottom: 30px; /* Push logo slightly closer to the top area */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -944,8 +945,8 @@ select {
     height: 80px;
     border-radius: var(--border-radius-sm);
     object-fit: cover;
-    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3);
-    margin-bottom: 16px;
+    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.35);
+    margin-bottom: 12px;
     animation: portalFloat 4s infinite ease-in-out;
 }
 
@@ -960,6 +961,7 @@ select {
     color: #fff;
     letter-spacing: -1px;
     margin-bottom: 8px;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
 }
 
 .portal-brand h1 span {
@@ -968,29 +970,41 @@ select {
 
 .portal-tagline {
     font-size: 1.15rem;
-    color: var(--text-muted);
+    color: #f1f5f9;
     max-width: 600px;
     line-height: 1.5;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
-/* Grid System */
+/* 3-Column Split Grid System */
 .portal-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: 1.3fr 1fr 1.3fr; /* Empty middle column leaves space for the Empire State Tower */
+    gap: 30px;
     margin-bottom: 48px;
-    text-align: left;
+    align-items: center;
 }
 
-/* Portal Cards with Glassmorphism */
+/* Flex Column wrappers inside Grid */
+.portal-column-left, .portal-column-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.portal-column-center {
+    height: 100%;
+    pointer-events: none; /* Let clicks pass through the center space */
+}
+
+/* Portal Cards - Clean, high transparency, no backdrop-blur to keep background city visible */
 .portal-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(8, 12, 28, 0.45); /* Elegant translucent dark */
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: var(--border-radius-lg);
     padding: 32px 24px;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    backdrop-filter: blur(16px);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -1147,17 +1161,24 @@ select {
 }
 
 /* Responsive Grid for Portal */
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     .portal-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .portal-column-center {
+        display: none; /* Hide spacing center column on tablet/mobile */
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .portal-grid {
         grid-template-columns: 1fr;
     }
     .portal-brand h1 {
         font-size: 2.6rem;
+    }
+    .portal-container {
+        padding: 40px 16px;
     }
 }

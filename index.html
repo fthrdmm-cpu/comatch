@@ -47,54 +47,63 @@
             </div>
             
             <div class="portal-grid">
-                <div class="portal-card" id="portal-goto-sponsors">
-                    <div class="portal-card-icon-container" style="margin-bottom: 20px;">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="portal-card-svg" style="color: var(--color-primary); transition: color 0.3s;">
-                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-                        </svg>
+                <!-- Left-hand side cards -->
+                <div class="portal-column-left">
+                    <div class="portal-card" id="portal-goto-sponsors">
+                        <div class="portal-card-icon-container" style="margin-bottom: 20px;">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="portal-card-svg" style="color: var(--color-primary); transition: color 0.3s;">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                            </svg>
+                        </div>
+                        <h3>Find B2B Sponsors</h3>
+                        <p>Connect with 170+ verified brands (Vercel, Razer, Shopify) offering barter, affiliate, or paid sponsorships.</p>
+                        <span class="portal-card-action">Browse Sponsors <i class="fa-solid fa-arrow-right"></i></span>
                     </div>
-                    <h3>Find B2B Sponsors</h3>
-                    <p>Connect with 170+ verified brands (Vercel, Razer, Shopify) offering barter, affiliate, or paid sponsorships.</p>
-                    <span class="portal-card-action">Browse Sponsors <i class="fa-solid fa-arrow-right"></i></span>
+
+                    <div class="portal-card" id="portal-goto-submit">
+                        <div class="portal-card-icon-container" style="margin-bottom: 20px;">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="portal-card-svg" style="color: var(--color-primary); transition: color 0.3s;">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                            </svg>
+                        </div>
+                        <h3>Submit Listing</h3>
+                        <p>Share an open brand sponsorship program or list your startup seeking investment in our registry.</p>
+                        <span class="portal-card-action">Add Program / Startup <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
                 </div>
-                
-                <div class="portal-card premium-card" id="portal-goto-investors">
-                    <div class="portal-card-icon-container" style="margin-bottom: 20px;">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="portal-card-svg" style="color: var(--color-premium); transition: color 0.3s;">
-                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-                            <polyline points="17 6 23 6 23 12"></polyline>
-                        </svg>
+
+                <!-- Empty center space to leave the central tower unblocked and visible -->
+                <div class="portal-column-center"></div>
+
+                <!-- Right-hand side cards -->
+                <div class="portal-column-right">
+                    <div class="portal-card premium-card" id="portal-goto-investors">
+                        <div class="portal-card-icon-container" style="margin-bottom: 20px;">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="portal-card-svg" style="color: var(--color-premium); transition: color 0.3s;">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Find B2B Investors</h3>
+                        <p>Access VC funds, accelerators, and angel groups. Generate customized, metric-driven email pitches instantly.</p>
+                        <span class="portal-card-action">Explore VCs & Funds <i class="fa-solid fa-arrow-right"></i></span>
                     </div>
-                    <h3>Find B2B Investors</h3>
-                    <p>Access VC funds, accelerators, and angel groups. Generate customized, metric-driven email pitches instantly.</p>
-                    <span class="portal-card-action">Explore VCs & Funds <i class="fa-solid fa-arrow-right"></i></span>
-                </div>
-                
-                <div class="portal-card" id="portal-goto-submit">
-                    <div class="portal-card-icon-container" style="margin-bottom: 20px;">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="portal-card-svg" style="color: var(--color-primary); transition: color 0.3s;">
-                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                            <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
-                        </svg>
+
+                    <div class="portal-card" id="portal-goto-about">
+                        <div class="portal-card-icon-container" style="margin-bottom: 20px;">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="portal-card-svg" style="color: var(--color-primary); transition: color 0.3s;">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                        </div>
+                        <h3>About CoMatch</h3>
+                        <p>Learn about our 100% free, open-source matching mission. No paywalls, no subscriptions, forever.</p>
+                        <span class="portal-card-action">Read Platform DNA <i class="fa-solid fa-arrow-right"></i></span>
                     </div>
-                    <h3>Submit Listing</h3>
-                    <p>Share an open brand sponsorship program or list your startup seeking investment in our registry.</p>
-                    <span class="portal-card-action">Add Program / Startup <i class="fa-solid fa-arrow-right"></i></span>
-                </div>
-                
-                <div class="portal-card" id="portal-goto-about">
-                    <div class="portal-card-icon-container" style="margin-bottom: 20px;">
-                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="portal-card-svg" style="color: var(--color-primary); transition: color 0.3s;">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="12" y1="16" x2="12" y2="12"></line>
-                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                        </svg>
-                    </div>
-                    <h3>About CoMatch</h3>
-                    <p>Learn about our 100% free, open-source matching mission. No paywalls, no subscriptions, forever.</p>
-                    <span class="portal-card-action">Read Platform DNA <i class="fa-solid fa-arrow-right"></i></span>
                 </div>
             </div>
             
