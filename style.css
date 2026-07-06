@@ -868,8 +868,8 @@ select {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #070a13;
-    background-image: linear-gradient(to bottom, rgba(7, 10, 19, 0.40), rgba(7, 10, 19, 0.65)), url('assets/skyscrapers_bg_sharp.png');
+    background-color: #030712; /* Deep obsidian background */
+    background-image: linear-gradient(to bottom, rgba(3, 7, 18, 0.45), rgba(3, 7, 18, 0.75)), url('assets/skyscrapers_bg_sharp.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1028,14 +1028,54 @@ select {
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 20px rgba(245, 158, 11, 0.05);
 }
 
-.portal-card-icon {
-    font-size: 2.2rem;
-    color: var(--color-primary);
-    margin-bottom: 20px;
+/* Card Icon Wrapper - Premium Glassmorphic Circle */
+.portal-card-icon-container {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.05);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 10;
 }
 
-.premium-card .portal-card-icon {
-    color: var(--color-premium);
+.premium-card .portal-card-icon-container {
+    background: rgba(79, 70, 229, 0.08);
+    border: 1px solid rgba(79, 70, 229, 0.15);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.05);
+}
+
+.portal-card:hover .portal-card-icon-container {
+    transform: scale(1.1) rotate(4deg);
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 16px rgba(37, 99, 235, 0.35);
+}
+
+.portal-card.premium-card:hover .portal-card-icon-container {
+    background: var(--color-premium);
+    border-color: var(--color-premium);
+    box-shadow: 0 0 16px rgba(79, 70, 229, 0.35);
+}
+
+.portal-card-icon-container svg {
+    width: 22px;
+    height: 22px;
+    stroke: var(--color-primary);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.premium-card .portal-card-icon-container svg {
+    stroke: var(--color-premium);
+}
+
+.portal-card:hover .portal-card-icon-container svg {
+    stroke: #ffffff;
+    transform: scale(1.05);
 }
 
 .portal-card h3 {
