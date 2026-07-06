@@ -42,6 +42,7 @@ For each investor, find and extract:
 9. Key requirements (investment criteria, e.g. MVP ready, MRR target).
 10. Expected Deal structure (dilution rate, terms).
 11. A cold email pitch template matching their criteria.
+12. 3 bespoke outreach/anti-spam tips customized for this investor to prevent emails from landing in spam folders and maximize open rates.
 
 Output MUST be a valid JSON array matching this exact schema:
 [
@@ -59,7 +60,12 @@ Output MUST be a valid JSON array matching this exact schema:
     "dna": {{
       "requirements": "...",
       "dealStructure": "...",
-      "pitchHelper": "..."
+      "pitchHelper": "...",
+      "pitchTips": [
+        "Tip 1 to bypass spam filter",
+        "Tip 2 about warm intro/outreach",
+        "Tip 3 specific to this investor"
+      ]
     }}
   }}
 ]
