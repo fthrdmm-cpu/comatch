@@ -188,7 +188,7 @@ const INVESTORS_DATA = [
     "ticketSize": "$250,000 - $1,000,000",
     "contactEmail": null,
     "contactForm": "https://212.vc/pitch-us/",
-    "logo": "https://logo.clearbit.com/212.vc",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=212.vc",
     "dna": {
       "requirements": "Strong team, disruptive technology, large addressable market, clear path to scalability, often post-revenue or strong traction. Focus on B2B SaaS, enterprise in Turkey, CEE, MENA.",
       "dealStructure": "Standard equity investment. Dilution rates vary by stage and valuation, typically 10-25% for Seed stage.",
@@ -210,7 +210,7 @@ const INVESTORS_DATA = [
     "ticketSize": "$100,000 - $500,000",
     "contactEmail": null,
     "contactForm": "https://bogaziciventures.com/apply/",
-    "logo": "https://logo.clearbit.com/bogaziciventures.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=bogaziciventures.com",
     "dna": {
       "requirements": "Strong team, innovative solution, scalable business model, early traction (MVP ready, initial users/revenue preferred). Focus on technology-driven solutions within Turkey and the region.",
       "dealStructure": "Standard equity investment for Seed/Early Stage rounds.",
@@ -232,7 +232,7 @@ const INVESTORS_DATA = [
     "ticketSize": "$50,000 - $300,000",
     "contactEmail": null,
     "contactForm": "https://apyventures.com/apply/",
-    "logo": "https://logo.clearbit.com/apyventures.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=apyventures.com",
     "dna": {
       "requirements": "Strong and dedicated team, innovative and scalable product/service, clear market fit, early traction (MVP, pilot projects, initial users/revenue) desirable. Focus on companies with global ambitions.",
       "dealStructure": "Equity investment. Standard terms for early-stage VCs.",
@@ -254,7 +254,7 @@ const INVESTORS_DATA = [
     "ticketSize": "$50,000 - $250,000",
     "contactEmail": null,
     "contactForm": "https://www.galatabusinessangels.com/en/for-entrepreneurs/",
-    "logo": "https://logo.clearbit.com/galatabusinessangels.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=galatabusinessangels.com",
     "dna": {
       "requirements": "Strong, committed team, innovative idea with market potential, clear business model, preferably an MVP or proof of concept, scalable. Looking for high-growth potential, primarily in Turkey and with regional/global potential.",
       "dealStructure": "Equity investment, typically alongside other angels or lead investors. Terms can be flexible depending on the round.",
@@ -276,7 +276,7 @@ const INVESTORS_DATA = [
     "ticketSize": "$100,000 - $500,000",
     "contactEmail": null,
     "contactForm": "https://simya.vc/tr/iletisim/",
-    "logo": "https://logo.clearbit.com/simya.vc",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=simya.vc",
     "dna": {
       "requirements": "Strong founding team, innovative product/technology, clear market need, scalable business model, early traction (MVP completed, initial users/revenue, pilot projects). Emphasis on technology-driven solutions for Turkey and regional markets.",
       "dealStructure": "Equity investment. Standard Seed round terms.",

@@ -32,7 +32,7 @@ Do NOT repeat the ones I already have: {", ".join(existing_investors)}.
 
 For each investor, find and extract:
 1. Name of the VC/Angel network.
-2. Logo URL (use clearbit logo API link based on their domain, e.g. https://logo.clearbit.com/domain.com).
+2. Logo URL (use Google favicon API link based on their domain, e.g. https://www.google.com/s2/favicons?sz=128&domain=domain.com).
 3. Website URL.
 4. Investor Type (Venture Capital, Angel Network, Accelerator).
 5. Target Stage (e.g. Pre-Seed / Seed).
@@ -56,7 +56,7 @@ Output MUST be a valid JSON array matching this exact schema:
     "ticketSize": "$100k - $300k",
     "contactEmail": "pitch@domain.com",
     "contactForm": "https://domain.com/apply",
-    "logo": "https://logo.clearbit.com/domain.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=domain.com",
     "dna": {{
       "requirements": "...",
       "dealStructure": "...",
