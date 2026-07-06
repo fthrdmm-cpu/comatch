@@ -2369,5 +2369,85 @@ const BRANDS_DATA = [
         "Highlight data scale: If pitching database credits, state the volume of logs/events your project generates daily."
       ]
     }
+  },
+  {
+    "id": "esl-gaming",
+    "name": "ESL Gaming",
+    "type": "brand",
+    "category": "Events & Tournaments",
+    "sponsorType": "Flat Fee / Brand Partnership",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "partnerships@eslgaming.com",
+    "contactForm": "https://www.eslgaming.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=eslgaming.com&sz=128",
+    "dna": {
+      "requirements": "Professional CS2/Dota2 casting, community tournament organizing, or esports analyst profiles.",
+      "dealStructure": "Official community caster license, server hosting allocations, flat-fee sponsorships.",
+      "pitchHelper": "Dear ESL Partnerships Team,\n\nI am [Name], an esports broadcaster and community organizer at [Link]. I would love to collaborate under your community casting licenses for upcoming CS2 events. Please find my broadcast statistics attached.\n\nSincerely,\n[Name]"
+    }
+  },
+  {
+    "id": "blast",
+    "name": "BLAST",
+    "type": "brand",
+    "category": "Events & Tournaments",
+    "sponsorType": "Flat Fee / Brand Partnership",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "partnerships@blast.tv",
+    "contactForm": "https://blast.tv/",
+    "logo": "https://www.google.com/s2/favicons?domain=blast.tv&sz=128",
+    "dna": {
+      "requirements": "High-quality FPS casting (CS2, Rainbow Six), professional stream layout overlays, esports commentary.",
+      "dealStructure": "BLAST Premier co-streaming rights, official broadcast feature sponsorships.",
+      "pitchHelper": "Dear BLAST Partnerships,\n\nMy name is [Name], broadcasting competitive shooter matches at [Link]. I am a huge follower of BLAST Premier tournaments and would love to request official co-streaming licensing. Attached are my channel demographics.\n\nBest regards,\n[Name]"
+    }
+  },
+  {
+    "id": "faceit",
+    "name": "FACEIT",
+    "type": "brand",
+    "category": "Events & Tournaments",
+    "sponsorType": "Affiliate / Brand Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "organizers@faceit.com",
+    "contactForm": "https://www.faceit.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=faceit.com&sz=128",
+    "dna": {
+      "requirements": "Organizing local hubs/leagues, hosting regular competitive lobbies, active community following.",
+      "dealStructure": "FACEIT Points allocation (for user rewards), custom organizer subscription splits, server provisions.",
+      "pitchHelper": "Hi FACEIT Organizers Team,\n\nI am [Name], hosting a competitive CS2/Valorant community at [Link]. We would love to set up an official FACEIT Hub to run weekly tournaments. Please find our community player stats attached.\n\nBest,\n[Name]"
+    }
+  },
+  {
+    "id": "qiddiya",
+    "name": "Qiddiya",
+    "type": "brand",
+    "category": "Events & Tournaments",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "partnerships@qiddiya.com",
+    "contactForm": "https://qiddiya.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=qiddiya.com&sz=128",
+    "dna": {
+      "requirements": "Tier-1 gaming event organizers, global gaming broadcast networks, premium lifestyle branding partnerships.",
+      "dealStructure": "Multi-million dollar event sponsorships, long-term team partnership funding, city-activation campaigns.",
+      "pitchHelper": "Dear Qiddiya Partnerships Team,\n\nI am representing [Organization/Project] ([Link]). We admire Qiddiya's vision to build the world's premier gaming and entertainment capital. We would love to explore a B2B partnership for event coverage or sponsorships. Attached is our portfolio.\n\nWarm regards,\n[Name]"
+    }
+  },
+  {
+    "id": "riyadh-season",
+    "name": "Riyadh Season",
+    "type": "brand",
+    "category": "Events & Tournaments",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "info@riyadhseason.com",
+    "contactForm": "https://riyadhseason.com/",
+    "logo": "https://www.google.com/s2/favicons?domain=riyadhseason.com&sz=128",
+    "dna": {
+      "requirements": "International sports cast networks, global gaming event organizers, major entertainment collaborations.",
+      "dealStructure": "Official festival partner licenses, event space provisions, large flat-fee sponsor spots.",
+      "pitchHelper": "Dear Riyadh Season Management,\n\nI represent [Organization Name] ([Link]), a global gaming festival caster. We would love to explore a B2B partnership to cast and cover key events during the upcoming Riyadh Season. Attached is our event history and viewer metrics.\n\nSincerely,\n[Name]"
+    }
   }
 ];

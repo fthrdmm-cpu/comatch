@@ -198,7 +198,7 @@ function pingDomain(urlStr) {
     });
 }
 
-// API: Get all brands (Esports category excluded)
+// API: Get all brands (Esports teams excluded; tournament organizers kept under "Events & Tournaments")
 app.get('/api/brands', (req, res) => {
     const filtered = dbData.filter(b => b.category !== 'Esports');
     res.json(filtered);
