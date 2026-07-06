@@ -4,10 +4,7 @@ import os
 
 print("[*] Starting GitHub Creator Email Finder Tool...")
 
-# We will search for repositories that are popular, written in JS/TS/Python, and whose owners might need sponsorship
-# Query: stars:>500 language:javascript (or similar)
-# We can search users who have enabled the "Sponsor" button on GitHub, or simply active developers.
-url = "https://api.github.com/search/repositories?q=stars:50..500+language:javascript+type:user&sort=updated&order=desc&per_page=50"
+import re
 
 github_token = os.environ.get("GITHUB_TOKEN")
 headers = {
@@ -17,24 +14,31 @@ if github_token:
     headers["Authorization"] = f"token {github_token}"
 
 try:
-    print("[*] Querying GitHub API for popular repositories...")
-    response = requests.get(url, headers=headers, timeout=15)
+    print("[*] Scraping GitHub Trending page for active repositories...")
     
-    if response.status_code != 200:
-        print(f"[-] GitHub API Error: HTTP {response.status_code}")
-        print(response.text)
-        exit(1)
-        
-    data = response.json()
-    items = data.get("items", [])
-    print(f"[+] Found {len(items)} repositories. Extracting owner emails...")
+    # We scrape JS and Python trending pages
+    languages = ["javascript", "python"]
+    valid_repos = []
+    ignored = {"features", "about", "trending", "pricing", "marketplace", "login", "signup", "security", "customer-stories", "search", "sponsors", "collections", "topics", "site", "orgs", "users", "settings", "notifications"}
+    
+    for lang in languages:
+        url = f"https://github.com/trending/{lang}?since=daily"
+        try:
+            r = requests.get(url, timeout=15)
+            if r.status_code == 200:
+                matches = re.findall(r'href="/([a-zA-Z0-9\-]+)/([a-zA-Z0-9\-\._]+)"', r.text)
+                for owner, repo in matches:
+                    if owner.lower() not in ignored and repo.lower() not in ignored:
+                        if (owner, repo) not in valid_repos:
+                            valid_repos.append((owner, repo))
+        except Exception as err:
+            print(f"[!] Warning: Could not scrape trending for {lang}:", err)
+            
+    print(f"[+] Extracted {len(valid_repos)} trending repositories. Extracting owner emails...")
     
     creators_list = []
     
-    for idx, item in enumerate(items, 1):
-        owner = item.get("owner", {})
-        owner_username = owner.get("login")
-        repo_name = item.get("name")
+    for idx, (owner_username, repo_name) in enumerate(valid_repos, 1):
         
         # Get user details to check for public email
         user_url = f"https://api.github.com/users/{owner_username}"
