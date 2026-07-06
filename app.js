@@ -825,7 +825,13 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                         const dynamicSponsors = data.filter(item => item.type !== 'investor');
                         const dynamicInvestors = data.filter(item => item.type === 'investor');
 
-                        sponsorsData = dynamicSponsors;
+                        // Merge dynamic sponsors with static seed list, avoiding duplicate IDs
+                        const staticSponsors = typeof BRANDS_DATA !== 'undefined' && Array.isArray(BRANDS_DATA) ? BRANDS_DATA : fallbackData;
+                        const seenSponsorIds = new Set(staticSponsors.map(s => s.id));
+                        sponsorsData = [
+                            ...staticSponsors,
+                            ...dynamicSponsors.filter(item => !seenSponsorIds.has(item.id))
+                        ];
 
                         // Merge dynamic investors with static seed list, avoiding duplicate IDs
                         const staticInvestors = typeof INVESTORS_DATA !== 'undefined' && Array.isArray(INVESTORS_DATA) ? INVESTORS_DATA : [];
@@ -853,6 +859,12 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
     function calculateStats() {
         if (statTotalOpportunities) {
             statTotalOpportunities.textContent = dbData.length;
+            const statLabel = statTotalOpportunities.nextElementSibling;
+            if (statLabel && statLabel.classList.contains("stat-label")) {
+                statLabel.textContent = activeDirectory === "sponsors" 
+                    ? "Active B2B Partners" 
+                    : "Active VC & Angel Funds";
+            }
         }
     }
 
