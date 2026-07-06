@@ -1,0 +1,44 @@
+name: Otonom GitHub Creator Outreach
+
+on:
+  schedule:
+    - cron: '0 14 * * 0' # Runs every Sunday at 14:00 UTC (17:00 TR Time)
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  outreach:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Scrape Creator Emails
+        run: |
+          python scratch/find_creator_emails.py
+
+      - name: Run Auto-Outreach Mailer
+        env:
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          python scratch/send_outreach_emails.py
+
+      - name: Commit and Log Scraped Leads
+        run: |
+          git config --global user.name "CoMatch Otonom Bot"
+          git config --global user.email "bot@comatch.org"
+          git add creator_leads.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update scraped creator leads [skip ci]" && git push origin main)
