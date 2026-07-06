@@ -45,6 +45,29 @@
                 <h1>Co<span>Match</span></h1>
                 <p class="portal-tagline">The Ultimate Free B2B Partnership & Investment Directory</p>
             </div>
+
+            <!-- Live Match Analytics Ticker -->
+            <div class="portal-dashboard">
+                <div class="dashboard-metric">
+                    <span class="metric-value" id="dash-volume">$142,450</span>
+                    <span class="metric-label">Total Match Volume</span>
+                </div>
+                <div class="dashboard-divider"></div>
+                <div class="dashboard-metric">
+                    <span class="metric-value" id="dash-partners">185</span>
+                    <span class="metric-label">Verified Partners</span>
+                </div>
+                <div class="dashboard-divider"></div>
+                <div class="dashboard-metric">
+                    <span class="metric-value" id="dash-matches">3,412</span>
+                    <span class="metric-label">AI Matchings</span>
+                </div>
+                <div class="dashboard-divider"></div>
+                <div class="dashboard-metric clickable" id="report-deal-trigger">
+                    <span class="metric-value report-btn"><i class="fa-solid fa-trophy"></i> Report Match</span>
+                    <span class="metric-label">Report Deal Success</span>
+                </div>
+            </div>
             
             <div class="portal-grid">
                 <!-- Left-hand side cards -->
@@ -570,6 +593,53 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Report Success Modal -->
+    <div id="report-deal-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content-wrapper" style="max-width: 600px;">
+            <div class="modal-header">
+                <h2 class="modal-title">🎉 Report a Success Deal</h2>
+                <button class="modal-close-btn" id="close-report-deal-modal">&times;</button>
+            </div>
+            <div class="modal-body-content">
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">
+                    Did CoMatch help you secure a B2B sponsorship, partner agreement, or seed funding? Report your success! Your info helps us demonstrate the ecosystem's value, and we only publish stats anonymously.
+                </p>
+                
+                <form id="report-deal-form" class="submit-form-element">
+                    <div class="form-group-item">
+                        <label for="report-project-name">Your Startup / Project Name *</label>
+                        <input type="text" id="report-project-name" required placeholder="e.g., Celestial Analytics">
+                    </div>
+                    <div class="form-group-item">
+                        <label for="report-matched-with">Matched Partner (Brand or VC) *</label>
+                        <input type="text" id="report-matched-with" required placeholder="e.g., Vercel, APY Ventures">
+                    </div>
+                    <div class="form-group-item">
+                        <label for="report-deal-value">Estimated Deal Value (USD $) *</label>
+                        <input type="number" id="report-deal-value" required placeholder="e.g., 2500" min="0">
+                        <small style="color: var(--text-muted); font-size: 0.72rem; margin-top: 4px; display: block;">Enter sponsorship amount, barter value equivalent, or seed size.</small>
+                    </div>
+                    <div class="form-group-item">
+                        <label for="report-contact-email">Your Contact Email *</label>
+                        <input type="email" id="report-contact-email" required placeholder="fatih@comatch.org">
+                        <small style="color: var(--text-muted); font-size: 0.72rem; margin-top: 4px; display: block;">For verification only. We will never share or publish your email.</small>
+                    </div>
+                    <div class="form-group-item">
+                        <label for="report-message">Short Message (Optional)</label>
+                        <textarea id="report-message" placeholder="Tell us how the match went! e.g., 'We signed a $2,500 barter hosting sponsorship deal in 3 days!'" rows="3"></textarea>
+                    </div>
+                    
+                    <div id="report-form-error" class="error-msg-box" style="display: none; background: rgba(239, 68, 68, 0.15); border: 1px solid #ef4444; color: #fca5a5; padding: 12px; border-radius: 6px; font-size: 0.85rem; margin-bottom: 16px;"></div>
+                    <div id="report-form-success" class="success-msg-box" style="display: none; background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; color: #a7f3d0; padding: 12px; border-radius: 6px; font-size: 0.85rem; margin-bottom: 16px;"></div>
+                    
+                    <button type="submit" class="submit-action-btn" id="submit-report-deal-btn">
+                        <i class="fa-solid fa-paper-plane"></i> Send Success Report
+                    </button>
+                </form>
             </div>
         </div>
     </div>

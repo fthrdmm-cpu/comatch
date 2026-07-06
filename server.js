@@ -543,6 +543,54 @@ Do not include any other conversational text or wrap the response in markdown co
         return res.status(500).json({ error: "An internal error occurred during AI matching. Please try again later.", details: err.message || err.toString() });
     }
 });
+// Report Successful Match Deal Route
+app.post('/api/report-deal', async (req, res) => {
+    try {
+        const { projectName, matchedWith, dealValue, message, contactEmail } = req.body;
+        
+        if (!projectName || !matchedWith || !dealValue || !contactEmail) {
+            return res.status(400).json({ error: "Missing required fields (projectName, matchedWith, dealValue, contactEmail)" });
+        }
+        
+        // Import nodemailer dynamically
+        const nodemailer = require('nodemailer');
+        
+        // Setup SMTP transporter using Hostinger SMTP (secured with environment variables)
+        const transporter = nodemailer.createTransport({
+            host: 'smtp.hostinger.com',
+            port: 465,
+            secure: true, // SSL
+            auth: {
+                user: 'hello@comatch.org',
+                pass: process.env.SMTP_PASSWORD || 'Fatiherdem.1'
+            }
+        });
+        
+        const mailOptions = {
+            from: 'hello@comatch.org',
+            to: 'hello@comatch.org',
+            subject: `🎉 New Match Deal Reported: ${projectName} x ${matchedWith}`,
+            text: `
+CoMatch Match Success Report!
+
+- Project Name: ${projectName}
+- Matched With: ${matchedWith}
+- Deal Value: $${dealValue}
+- Contact Email: ${contactEmail}
+- Message: ${message || 'No message provided.'}
+
+This is a self-reported success lead from CoMatch. Use this to update marketing highlights or stats!
+            `
+        };
+        
+        await transporter.sendMail(mailOptions);
+        res.json({ success: true, message: "Success deal report received and forwarded." });
+    } catch (err) {
+        console.error("[-] Error handling deal report:", err);
+        res.status(500).json({ error: "Failed to process deal report. Please try again later." });
+    }
+});
+
 // Database Status Debug Route
 app.get('/api/db-status', (req, res) => {
     res.json({

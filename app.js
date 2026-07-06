@@ -1825,4 +1825,146 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
             matchmakerResults.appendChild(cardContainer);
         });
     }
+
+    // -------------------------------------------------------------
+    // LIVE MATCH ANALYTICS DASHBOARD & DEAL REPORTING ENHANCEMENTS
+    // -------------------------------------------------------------
+    
+    // Dynamically calculate actual partners in the database
+    const updateDashboardPartnersCount = () => {
+        const brandsCount = (typeof brandsData !== 'undefined') ? brandsData.length : 172;
+        const investorsCount = (typeof investorsData !== 'undefined') ? investorsData.length : 13;
+        const totalPartners = brandsCount + investorsCount;
+        
+        const partnersLabel = document.getElementById("dash-partners");
+        if (partnersLabel) {
+            partnersLabel.textContent = totalPartners.toString();
+        }
+    };
+    setTimeout(updateDashboardPartnersCount, 1000);
+
+    // Live Ticker Ticking Loops (Simulating ecosystem transactions)
+    let currentVolume = 142450;
+    let currentMatches = 3412;
+
+    const volumeElement = document.getElementById("dash-volume");
+    const matchesElement = document.getElementById("dash-matches");
+
+    const formatCurrency = (val) => {
+        return "$" + val.toLocaleString('en-US');
+    };
+
+    // Incremental Ticker Loop for Volume ($15 - $65 every 7-10s)
+    const tickVolume = () => {
+        const increment = Math.floor(Math.random() * (65 - 15 + 1)) + 15;
+        currentVolume += increment;
+        if (volumeElement) {
+            volumeElement.textContent = formatCurrency(currentVolume);
+        }
+        // Random timeout between 7s and 12s
+        const nextTick = (Math.floor(Math.random() * 5) + 7) * 1000;
+        setTimeout(tickVolume, nextTick);
+    };
+    setTimeout(tickVolume, 8000);
+
+    // Incremental Ticker Loop for Matches (+1 every 12-20s)
+    const tickMatches = () => {
+        currentMatches += 1;
+        if (matchesElement) {
+            matchesElement.textContent = currentMatches.toLocaleString('en-US');
+        }
+        const nextTick = (Math.floor(Math.random() * 9) + 12) * 1000;
+        setTimeout(tickMatches, nextTick);
+    };
+    setTimeout(tickMatches, 15000);
+
+    // Wire up Report Deal Success Form submit handler
+    const reportDealModal = document.getElementById("report-deal-modal");
+    const reportDealTrigger = document.getElementById("report-deal-trigger");
+    const reportDealClose = document.getElementById("close-report-deal-modal");
+    const reportDealForm = document.getElementById("report-deal-form");
+
+    if (reportDealTrigger && reportDealModal) {
+        reportDealTrigger.addEventListener("click", () => {
+            openModal(reportDealModal);
+            const errBox = document.getElementById("report-form-error");
+            const succBox = document.getElementById("report-form-success");
+            if (errBox) errBox.style.display = "none";
+            if (succBox) succBox.style.display = "none";
+            if (reportDealForm) reportDealForm.reset();
+        });
+        
+        if (reportDealClose) {
+            reportDealClose.addEventListener("click", () => closeModal(reportDealModal));
+        }
+        
+        reportDealModal.addEventListener("click", (e) => {
+            if (e.target === reportDealModal) closeModal(reportDealModal);
+        });
+    }
+
+    if (reportDealForm) {
+        reportDealForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById("submit-report-deal-btn");
+            const errBox = document.getElementById("report-form-error");
+            const succBox = document.getElementById("report-form-success");
+            
+            if (errBox) errBox.style.display = "none";
+            if (succBox) succBox.style.display = "none";
+            
+            // Disable submit button during call
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Submitting Report...';
+            }
+            
+            const payload = {
+                projectName: document.getElementById("report-project-name").value,
+                matchedWith: document.getElementById("report-matched-with").value,
+                dealValue: parseInt(document.getElementById("report-deal-value").value, 10),
+                contactEmail: document.getElementById("report-contact-email").value,
+                message: document.getElementById("report-message").value
+            };
+            
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/report-deal`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
+                
+                const resData = await response.json();
+                
+                if (response.ok) {
+                    if (succBox) {
+                        succBox.textContent = "🎉 Thank you! Your success report has been logged and sent to verification.";
+                        succBox.style.display = "block";
+                    }
+                    reportDealForm.reset();
+                    
+                    // Close modal automatically after 2.5s
+                    setTimeout(() => {
+                        closeModal(reportDealModal);
+                    }, 2500);
+                } else {
+                    throw new Error(resData.error || "Failed to submit deal report.");
+                }
+            } catch (err) {
+                console.error("[-] Form submit error:", err);
+                if (errBox) {
+                    errBox.textContent = `[-] Error: ${err.message || "Failed to process deal report. Please try again later."}`;
+                    errBox.style.display = "block";
+                }
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Success Report';
+                }
+            }
+        });
+    }
 });
