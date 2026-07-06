@@ -198,9 +198,10 @@ function pingDomain(urlStr) {
     });
 }
 
-// API: Get all brands
+// API: Get all brands (Esports category excluded)
 app.get('/api/brands', (req, res) => {
-    res.json(dbData);
+    const filtered = dbData.filter(b => b.category !== 'Esports');
+    res.json(filtered);
 });
 
 // API: Submit a brand (AI Auto-moderation & verification)
