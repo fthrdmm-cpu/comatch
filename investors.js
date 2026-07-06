@@ -287,6 +287,116 @@ const INVESTORS_DATA = [
         "Emphasize your potential or current presence in Turkey or the surrounding region, as Simya VC has a strong regional focus."
       ]
     }
+  },
+  {
+    "id": "point-nine",
+    "name": "Point Nine",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, Fintech, B2B Marketplaces",
+    "ticketSize": "€500k - €2M",
+    "contactEmail": "hello@pointnine.com",
+    "contactForm": "https://pointnine.typeform.com/to/W8m891",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=pointnine.com",
+    "dna": {
+      "requirements": "Strong founding team, large market opportunity, early traction (even if pre-revenue, could be users, waitlist, strong vision). Focus on capital-efficient models.",
+      "dealStructure": "Standard venture equity terms for Seed rounds. Point Nine often leads or co-leads. Typical dilution for Seed is 15-25%.",
+      "pitchHelper": "Subject: [Company Name] - Solving [Problem] for [Target Market] with [Key Metric/Insight]\n\nDear Point Nine Team,\n\nWe are [Company Name], tackling the [specific problem] faced by [target market/industry]. Our [SaaS/Fintech/B2B marketplace] solution allows [target users] to [achieve benefit] by [how it works].\n\nSince our launch [X months/weeks ago], we've achieved [impressive traction metric, e.g., 'X paying customers', 'X% MoM growth', 'X users on waitlist', '€X MRR']. This demonstrates strong product-market fit in a [€X billion] market.\n\nOur capital-efficient approach has enabled us to [achieve a specific milestone] with minimal funding. We're raising a [Pre-Seed/Seed] round of [€ amount] to [specific use of funds, e.g., 'scale product development', 'expand into new markets', 'grow our team'].\n\nWe believe Point Nine's deep expertise in [SaaS/Fintech/B2B] would be invaluable as we aim to [future vision]. Attached is our deck for your review. We're available for a brief call to discuss further.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Company Website]",
+      "pitchTips": [
+        "**Hyper-specific Subject Line:** Start with a subject line that immediately communicates value and relevance to Point Nine's SaaS/Fintech focus, e.g., 'SaaS: [Company Name] - 15% MoM Growth in B2B Payments for SMBs'.",
+        "**Data-Driven & Concise:** Present your key traction metrics (MRR, user growth, retention) upfront and keep your email under 150 words. Point Nine values brevity and concrete numbers.",
+        "**Show Capital Efficiency:** Briefly mention how you've achieved your milestones with limited resources. This aligns well with their investment thesis and can act as a positive signal to bypass initial skepticism."
+      ]
+    }
+  },
+  {
+    "id": "seedcamp",
+    "name": "Seedcamp",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "AI, Deep Tech, SaaS, Fintech, Health Tech, Future of Work (broad multi-sector)",
+    "ticketSize": "£250k - £1M",
+    "contactEmail": "hello@seedcamp.com",
+    "contactForm": "https://seedcamp.com/apply-for-funding/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=seedcamp.com",
+    "dna": {
+      "requirements": "Exceptional founding team with a big vision and global ambition. Early product or strong idea with potential for significant impact. Strong belief in the team's ability to execute.",
+      "dealStructure": "Standard Seed equity terms, typically an initial cheque of £250k for a minority stake. Often convertible notes in the earliest stages, with provisions for follow-on funding.",
+      "pitchHelper": "Subject: Global Vision: [Company Name] - [Brief, Intriguing Hook related to sector]\n\nHi Seedcamp Team,\n\nI'm [Your Name], Co-founder of [Company Name], a [Deep Tech/AI/SaaS/Fintech] startup building [describe core product/solution] to revolutionize [specific industry/problem]. Our mission is to [state your ambitious, global vision].\n\nOur team, comprising [briefly mention key backgrounds/achievements], is uniquely positioned to execute on this. We've already [mention key early milestone: e.g., 'developed a working prototype', 'secured X pilot customers', 'achieved X user engagement'].\n\nWe are currently raising a [Pre-Seed/Seed] round of [£ amount] to [explain immediate next steps, e.g., 'launch MVP', 'grow user base', 'hire key talent']. We are particularly excited about Seedcamp's track record and network in [a specific sector relevant to you, e.g., 'Deep Tech'], and believe your support would be instrumental in achieving our global aspirations.\n\nHere’s a link to our deck: [Link to deck]. We'd appreciate the opportunity for a quick chat.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Company Website]",
+      "pitchTips": [
+        "**Emphasize Team & Vision:** Seedcamp invests heavily in founders. Clearly articulate your team's unique capabilities and your audacious, global vision early in the email to grab attention and reduce 'spam' flags from generic content.",
+        "**Personalize the 'Why Seedcamp':** Instead of a generic 'why you', reference specific Seedcamp portfolio companies or their investment themes (e.g., 'Your investments in X and Y resonate with our vision for Z'). This signals genuine research and bypasses filters looking for mass outreach.",
+        "**Concise & Direct:** Keep your initial email extremely brief (3-4 paragraphs max) and get straight to the point. Long, rambling emails are often discarded. Include a clear call to action (e.g., 'a quick 15-minute call') and ensure all links are professional and working."
+      ]
+    }
+  },
+  {
+    "id": "creandum",
+    "name": "Creandum",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "SaaS, Consumer Tech, Fintech, Deep Tech, AI (global leaders)",
+    "ticketSize": "€1M - €5M",
+    "contactEmail": "contact@creandum.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=creandum.com",
+    "dna": {
+      "requirements": "Ambitious founding team, clear vision for global impact, strong product-market fit indicators, substantial market opportunity. They seek companies with the potential to become category leaders.",
+      "dealStructure": "Creandum typically acts as a lead investor, offering standard equity terms for Seed/Series A rounds. Expected dilution is usually in the 15-25% range.",
+      "pitchHelper": "Subject: [Company Name] - Global Category Leader in [Specific Niche] - Seed Round\n\nDear Creandum Team,\n\nI am [Your Name], CEO of [Company Name], a [SaaS/Fintech/AI] platform poised to become the global leader in [specific, rapidly growing market]. We empower [target users] to [achieve primary benefit] through our [unique technology/approach].\n\nOur vision is to [describe bold, global ambition]. We've already demonstrated strong traction with [X customers/€X ARR/X% retention] and a clear path to dominating this [€X billion] market. Our team's expertise in [relevant field] and our early market validation confirm our potential.\n\nWe are raising a Seed round of [€ amount] to [key milestone: e.g., 'expand our engineering team', 'accelerate international expansion', 'launch new product features']. We admire Creandum's track record with companies like [mention a relevant Creandum portfolio company] and believe our global ambitions align perfectly with your investment thesis.\n\nOur full investor deck is available here: [Link to deck]. I'd be delighted to schedule a brief introductory call.\n\nSincerely,\n[Your Name]\n[Your Title]\n[Company Website]",
+      "pitchTips": [
+        "**Targeted Partner Outreach:** If possible, identify a specific Creandum partner whose investment focus aligns with your sector. Addressing them directly by name significantly increases open rates and bypasses general inbox filters, signalling a personalized approach.",
+        "**Highlight Global Ambition:** Creandum seeks companies with global potential. Frame your company's vision and market opportunity through a global lens in the subject and opening paragraph to immediately resonate with their investment criteria and avoid being flagged as too niche or regional.",
+        "**Concise & Impactful Metrics:** Lead with your most compelling traction metrics (MRR, growth rates, key users) within the first few sentences. Overly verbose descriptions without clear, quantifiable achievements are often filtered out as less serious or spammy. Keep it to the essentials."
+      ]
+    }
+  },
+  {
+    "id": "accel",
+    "name": "Accel",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "Enterprise Software (SaaS), Fintech, Consumer, Deep Tech, AI, Cybersecurity",
+    "ticketSize": "$500k - $3M",
+    "contactEmail": "info@accel.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=accel.com",
+    "dna": {
+      "requirements": "Exceptional founding team, demonstrated market traction (users, revenue, engagement), large addressable market, disruptive technology or business model. They look for scalable businesses.",
+      "dealStructure": "Accel often acts as a lead or co-lead investor, providing standard venture equity terms for Seed/Series A rounds. Expect typical Seed dilution of 15-25%, with significant potential for follow-on capital.",
+      "pitchHelper": "Subject: [Company Name] - Disrupting [Industry] with [Key Metric] - Seed Opportunity\n\nDear Accel Team,\n\nI'm [Your Name], Co-founder & CEO of [Company Name], a [SaaS/Fintech/Deep Tech] company developing [briefly explain your disruptive solution]. We address the critical need for [problem statement] within the [target market] sector.\n\nOur traction since launch [X months ago] has been strong, with [e.g., '$X ARR', 'X,000 active users', 'X% MoM growth in key metric']. We've achieved this by [briefly explain unique advantage or approach]. This validates our product-market fit in a [large market size] opportunity.\n\nOur seasoned team, including [mention 1-2 key team member credentials], is currently raising a Seed round of [$ amount] to [specific use of funds, e.g., 'scale our engineering team', 'expand sales & marketing efforts']. We are deeply impressed by Accel's history of backing category leaders like [mention a relevant Accel portfolio company] and see strong synergy with your enterprise/Fintech investment focus.\n\nWe would welcome a brief conversation to explore how our vision aligns with Accel's expertise. Our deck is attached/available at [Link to deck].\n\nBest regards,\n[Your Name]\n[Your Title]\n[Company Website]",
+      "pitchTips": [
+        "**Prioritize Warm Intros (But if cold, make it count):** While Accel prefers warm introductions, if pitching cold, ensure your email's subject line and first paragraph are so compelling that they cut through the noise. Mentioning key traction or a disruptive element instantly signals seriousness.",
+        "**Metrics, Metrics, Metrics:** Accel is data-driven. Lead with your strongest, most tangible metrics (e.g., MRR, user growth, conversion rates) in the initial email. Vague statements increase spam flags; specific numbers demonstrate professionalism and legitimate progress.",
+        "**Personalize with Portfolio Relevance:** Show you've done your homework. Reference specific Accel partners or portfolio companies in your pitch that resonate with your sector or business model. This personalization helps bypass generic filters and shows a genuine connection, not just a mass email."
+      ]
+    }
+  },
+  {
+    "id": "balderton-capital",
+    "name": "Balderton Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "SaaS, Fintech, Deep Tech, AI, Gaming, Consumer (European focus, global ambition)",
+    "ticketSize": "$1M - $5M",
+    "contactEmail": "startups@balderton.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=balderton.com",
+    "dna": {
+      "requirements": "Ambitious European founders, large market opportunity, strong product vision, early signs of product-market fit. They value resilience, deep industry knowledge, and European companies with global ambition.",
+      "dealStructure": "Balderton typically leads Seed/Series A rounds with standard equity terms. Expected dilution for Seed stage investments is generally 15-25%.",
+      "pitchHelper": "Subject: [Company Name] - European [SaaS/AI] Leader Poised for Global Scale - Seed Round\n\nDear Balderton Capital Team,\n\nI'm [Your Name], Co-founder of [Company Name], a [European-based SaaS/Fintech/Deep Tech] company dedicated to [solve a specific problem] for [target audience/industry]. Our unique approach in [mention specific technology/methodology] is driving significant growth.\n\nWe are building a category-defining company in [specific market], currently demonstrating [e.g., 'X% MoM growth', '€X ARR', 'X active enterprise clients']. Our robust [product/platform] is designed for global scalability from day one, serving [mention European/global customer base].\n\nWe are raising a Seed round of [$ amount] to [specific use of funds, e.g., 'accelerate product development', 'expand our European presence', 'begin US market entry']. Balderton's commitment to nurturing European tech giants, as seen with [mention a relevant Balderton portfolio company], aligns perfectly with our ambition.\n\nWe've attached our pitch deck for your review and would greatly appreciate the chance for a brief discussion to delve deeper into our vision. Thank you for your time.\n\nKind regards,\n[Your Name]\n[Your Title]\n[Company Website]",
+      "pitchTips": [
+        "**Highlight European Roots & Global Ambition:** Balderton strongly focuses on European founders with global scale-up potential. Make sure to explicitly state your European origin and global vision in the subject line and opening paragraphs to immediately filter for relevance and avoid spam traps.",
+        "**Show, Don't Just Tell - Quantify:** Instead of generic claims, use specific numbers to back your statements (e.g., '15% MoM revenue growth' vs. 'rapid growth'). Data-driven pitches are less likely to be seen as spam and demonstrate professionalism.",
+        "**Concise & Action-Oriented:** Keep your email to the point, ideally readable in under 60 seconds. Include a clear call to action ('request a 15-minute call') and ensure your pitch deck link is easily accessible and not buried, signalling efficient communication rather than a mass-market email."
+      ]
+    }
   }
 ];
 
