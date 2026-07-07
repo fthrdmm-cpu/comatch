@@ -81,6 +81,48 @@ function generateBrandHtml(brand) {
         `;
     }
 
+    // JSON-LD Structured Schema Data
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": `What is the contact email for ${brand.name} sponsorships?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": brand.contactEmail 
+              ? `You can reach the partnerships team at ${brand.name} via email at ${brand.contactEmail}${brand.contactForm ? ` or apply through their official partner page at ${brand.contactForm}.` : '.'}`
+              : `You can apply for the ${brand.name} sponsorship program through their official application form at ${brand.contactForm}.`
+          }
+        },
+        {
+          "@type": "Question",
+          "name": `What are the requirements for the ${brand.name} sponsorship program?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `${brand.name} sponsorship requirements include: ${requirements}`
+          }
+        },
+        {
+          "@type": "Question",
+          "name": `What deal structure does ${brand.name} offer?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `${brand.name} offers: ${dealStructure}`
+          }
+        }
+      ]
+    };
+
+    const orgSchema = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": brand.name,
+      "url": canonicalUrl,
+      "logo": brand.logo || `https://www.google.com/s2/favicons?sz=128&domain=${brand.id}.com`
+    };
+
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,6 +138,14 @@ function generateBrandHtml(brand) {
     <meta property="og:url" content="${canonicalUrl}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="${brand.logo}">
+
+    <!-- JSON-LD Structured Schema Data -->
+    <script type="application/ld+json">
+    ${JSON.stringify(faqSchema, null, 2)}
+    </script>
+    <script type="application/ld+json">
+    ${JSON.stringify(orgSchema, null, 2)}
+    </script>
 
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -496,6 +546,48 @@ function generateInvestorHtml(investor) {
         `;
     }
 
+    // JSON-LD Structured Schema Data
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": `What is the contact email for ${investor.name} investments?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": investor.contactEmail 
+              ? `You can reach the investment relations team at ${investor.name} via email at ${investor.contactEmail}${investor.contactForm ? ` or pitch them directly through their portal at ${investor.contactForm}.` : '.'}`
+              : `You can pitch the team at ${investor.name} directly through their submission form at ${investor.contactForm}.`
+          }
+        },
+        {
+          "@type": "Question",
+          "name": `What are the investment requirements for ${investor.name}?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `${investor.name} investment requirements: ${requirements}`
+          }
+        },
+        {
+          "@type": "Question",
+          "name": `What investment deal structure does ${investor.name} offer?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `${investor.name} typically offers: ${dealStructure}`
+          }
+        }
+      ]
+    };
+
+    const orgSchema = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": investor.name,
+      "url": canonicalUrl,
+      "logo": investor.logo || `https://www.google.com/s2/favicons?sz=128&domain=${investor.id}.com`
+    };
+
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -506,11 +598,19 @@ function generateInvestorHtml(investor) {
     <link rel="canonical" href="${canonicalUrl}">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="${investor.name} B2B Startup Investment Criteria - CoMatch">
-    <meta property="og:description" content="Get investment requirements and pitch deck builders for ${investor.name}. Browse tech-focused venture funds on CoMatch.">
+    <meta property="og:title" content="${investor.name} Startup Investment Criteria & Ticket Size - CoMatch">
+    <meta property="og:description" content="Pitch to ${investor.name}. Find verified venture capital/angel investor email channels, ticket sizes, stage requirements, and customized VC pitch drafts.">
     <meta property="og:url" content="${canonicalUrl}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="${investor.logo}">
+
+    <!-- JSON-LD Structured Schema Data -->
+    <script type="application/ld+json">
+    ${JSON.stringify(faqSchema, null, 2)}
+    </script>
+    <script type="application/ld+json">
+    ${JSON.stringify(orgSchema, null, 2)}
+    </script>
 
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
