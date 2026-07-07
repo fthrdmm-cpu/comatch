@@ -1,0 +1,44 @@
+name: Otonom Uneed Creator Outreach
+
+on:
+  schedule:
+    # Runs daily at 14:00 UTC (17:00 Turkey Time)
+    - cron: '0 14 * * *'
+  workflow_dispatch: # Allows manual trigger from the GitHub Actions UI
+
+permissions:
+  contents: write
+
+jobs:
+  outreach:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run Auto-Outreach Mailer
+        env:
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          python scratch/uneed_outreach_bot.py
+
+      - name: Commit and Push Sent Leads Registry
+        run: |
+          git config --global user.name "CoMatch Otonom Bot"
+          git config --global user.email "bot@comatch.org"
+          git add ph_sent_leads.json
+          # Commit only if new domains were added to the sent registry
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update contacted Uneed domains [skip ci]" && git push origin main)
