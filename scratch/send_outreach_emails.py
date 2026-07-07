@@ -59,6 +59,10 @@ Best regards,
 Fatih Erdem
 Founder, CoMatch
 fatih@comatch.org | https://comatch.org
+
+---
+CoMatch Project, Maslak, 34485 Istanbul, Turkey
+To opt out of future project invites, reply to this email with "Unsubscribe" or "STOP".
 """
 
     msg = MIMEMultipart()
