@@ -497,6 +497,18 @@ function generateBrandHtml(brand) {
             <p>Connect directly with the partnerships team at ${brand.name}:</p>
             ${contactInfoHtml}
         </div>
+
+        <div style="border-top: 1px solid var(--border-color); margin-top: 30px; padding-top: 16px; font-size: 0.74rem; color: var(--text-muted); line-height: 1.5;">
+            <p style="margin-bottom: 8px;">
+                <strong>Legal Disclaimer:</strong> CoMatch is an independent, non-profit (100% free), and open-source community directory. All brand names, logos, and registered trademarks featured on this website are the property of their respective owners. CoMatch has no official affiliation, sponsorship, or partnership with ${brand.name} or any of the listed networks. Information is provided "as is" for convenience and educational purposes only.
+            </p>
+            <p style="margin-bottom: 8px;">
+                <strong>Privacy & Terms:</strong> Learn more about our data handling in our <a href="/privacy/" style="color: var(--color-primary); text-decoration: underline;">Privacy Policy</a> and <a href="/terms/" style="color: var(--color-primary); text-decoration: underline;">Terms of Service & Disclaimer</a>.
+            </p>
+            <p style="margin-bottom: 8px;">
+                <strong>Removal Request:</strong> If you are an authorized representative of ${brand.name} and wish to request the removal of this listing, please email <a href="mailto:hello@comatch.org" style="color: var(--color-primary); text-decoration: underline;">hello@comatch.org</a>. We respect your intellectual property and will process your request within 24 hours.
+            </p>
+        </div>
     </div>
 
     <script>
@@ -967,6 +979,18 @@ function generateInvestorHtml(investor) {
         <div class="contact-channels">
             <p>Pitch your startup directly to ${investor.name}:</p>
             ${contactInfoHtml}
+        </div>
+
+        <div style="border-top: 1px solid var(--border-color); margin-top: 30px; padding-top: 16px; font-size: 0.74rem; color: var(--text-muted); line-height: 1.5;">
+            <p style="margin-bottom: 8px;">
+                <strong>Legal Disclaimer:</strong> CoMatch is an independent, non-profit (100% free), and open-source community directory. All investment firm names, VCs, logos, and registered trademarks featured on this website are the property of their respective owners. CoMatch has no official affiliation, sponsorship, or partnership with ${investor.name} or any of the listed investment networks. Information is provided "as is" for convenience and educational purposes only.
+            </p>
+            <p style="margin-bottom: 8px;">
+                <strong>Privacy & Terms:</strong> Learn more about our data handling in our <a href="/privacy/" style="color: var(--color-premium); text-decoration: underline;">Privacy Policy</a> and <a href="/terms/" style="color: var(--color-premium); text-decoration: underline;">Terms of Service & Disclaimer</a>.
+            </p>
+            <p style="margin-bottom: 8px;">
+                <strong>Removal Request:</strong> If you are an authorized representative of ${investor.name} and wish to request the removal of this listing, please email <a href="mailto:hello@comatch.org" style="color: var(--color-premium); text-decoration: underline;">hello@comatch.org</a>. We respect your intellectual property and will process your request within 24 hours.
+            </p>
         </div>
     </div>
 

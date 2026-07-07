@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - CoMatch</title>
+    <meta name="description" content="Read the Privacy Policy of CoMatch. Learn how we handle cookies, site usage metrics, and ensure GDPR and KVKK data privacy.">
+    <link rel="canonical" href="https://www.comatch.org/privacy/">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --bg-card: rgba(17, 24, 39, 0.7);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --color-primary: #10b981;
+            --color-primary-hover: #059669;
+            --text-main: #f3f4f6;
+            --text-secondary: #d1d5db;
+            --text-muted: #9ca3af;
+            --border-radius-lg: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-lg);
+            padding: 40px;
+            backdrop-filter: blur(16px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            position: relative;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-primary), #f59e0b);
+            border-top-left-radius: var(--border-radius-lg);
+            border-top-right-radius: var(--border-radius-lg);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-bottom: 24px;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #fff;
+            letter-spacing: -0.5px;
+        }
+
+        .update-date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #fff;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h2 i {
+            color: var(--color-primary);
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-box {
+            background: rgba(16, 185, 129, 0.03);
+            border-left: 3px solid var(--color-primary);
+            padding: 16px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://www.comatch.org" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> Back to CoMatch Directory
+        </a>
+
+        <h1>Privacy Policy</h1>
+        <div class="update-date">Last updated: July 7, 2026</div>
+
+        <div class="highlight-box">
+            <strong>Data Processing Transparency:</strong> CoMatch is committed to protecting your privacy. We process 100% of your AI pitches and matching calculations locally within your web browser. We do not store, upload, or process your proprietary business descriptions on our cloud databases.
+        </div>
+
+        <p>This Privacy Policy describes how CoMatch ("we," "our," or "us") handles information collected through our open-source B2B directory and matchmaking platform (https://comatch.org). By accessing our website, you agree to the practices outlined below.</p>
+
+        <h2><i class="fa-solid fa-database"></i> 1. Information We Collect</h2>
+        <p>Since CoMatch does not require user registration or account creation, our data collection is strictly minimized to ensure privacy compliance (GDPR and KVKK):</p>
+        <ul>
+            <li><strong>Local Browser Data:</strong> Data input for the AI Matchmaker and Pitch Generator runs purely on client-side WebAssembly/JavaScript. This data remains on your device and is never sent to our servers.</li>
+            <li><strong>Partner Submission Data:</strong> If you submit a partner or investment group listing via our submission form, we collect the submitted details (company name, category, website URL, and provided contact channels) to display in the public directory.</li>
+            <li><strong>Automated Server Logs:</strong> Like most online services, our hosting providers (Vercel and Render) automatically log standard technical requests (including IP addresses, browser agent string, and page visited) to ensure stability, DDoS defense, and security.</li>
+        </ul>
+
+        <h2><i class="fa-solid fa-cookie-bite"></i> 2. Cookies and Tracking</h2>
+        <p>We do not use tracking or advertising cookies. We may use essential functional cookies or server-level telemetry provided by Vercel for website analytics (which anonymizes user IPs) to measure unique visitors and click traffic.</p>
+
+        <h2><i class="fa-solid fa-shield-halved"></i> 3. Legal Basis for Processing</h2>
+        <p>Under GDPR and KVKK, we process public business contact details (e.g. corporate emails, application form links) based on <strong>Legitimate Interest</strong> (Article 6(1)(f) GDPR) to provide a free, open-source matching directory that helps creators connect with B2B sponsors. If you are a representative of any listed brand and want your contact info updated or removed, please contact us immediately.</p>
+
+        <h2><i class="fa-solid fa-user-shield"></i> 4. Your Privacy Rights</h2>
+        <p>You have the following rights regarding any data processed by CoMatch:</p>
+        <ul>
+            <li><strong>Right to Rectification:</strong> If you notice any listed brand contact details or requirements are outdated or incorrect, you can request an edit.</li>
+            <li><strong>Right to Deletion (Right to be Forgotten):</strong> You can request the removal of your brand, VC fund, or public contact channels from our directory at any time.</li>
+            <li><strong>Right to Object:</strong> You can object to the display of your public company details in our directory.</li>
+        </ul>
+        <p>To exercise any of these rights, please send an email to <strong>hello@comatch.org</strong>. We honor deletion and rectification requests within 2 business days.</p>
+
+        <h2><i class="fa-solid fa-link"></i> 5. Third-Party Websites</h2>
+        <p>Our directory contains direct links to third-party brand application forms and VCs. We are not responsible for the privacy practices or contents of those external websites. We encourage you to read their respective privacy policies.</p>
+
+        <h2><i class="fa-solid fa-envelope"></i> 6. Contact Information</h2>
+        <p>If you have any questions, feedback, or data removal requests regarding this Privacy Policy, please reach out to us at:</p>
+        <p><strong>CoMatch Open-Source Project</strong><br>
+        Email: hello@comatch.org<br>
+        Website: https://comatch.org</p>
+
+        <div class="footer">
+            &copy; 2026 CoMatch. Built for B2B Partnerships. Open-Source & Community-Driven.
+        </div>
+    </div>
+</body>
+</html>
