@@ -43,7 +43,7 @@ def send_email(lead):
     # Professional Cold Email Template
     body = f"""Hi {name},
 
-I came across your GitHub repository '{repo}' and was really impressed by your work! 
+I came across your GitHub repository '{repo}'.
 
 As developers, we know that funding open-source projects or finding sponsorships is a major headache. Most directories charge $99/mo just to view sponsor emails.
 
