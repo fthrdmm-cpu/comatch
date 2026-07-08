@@ -315,6 +315,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const gotoInvestors = document.getElementById("portal-goto-investors");
     const gotoSubmit = document.getElementById("portal-goto-submit");
     const gotoAbout = document.getElementById("portal-goto-about");
+    const gotoMatchmaker = document.getElementById("portal-goto-matchmaker");
     
     function showAppContainer(targetDirectory, autoOpenModal = null) {
         if (!portalPage || !appContainer) return;
@@ -457,6 +458,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (gotoInvestors) gotoInvestors.addEventListener("click", () => showAppContainer("investors"));
     if (gotoSubmit) gotoSubmit.addEventListener("click", () => showAppContainer("sponsors", submitModal));
     if (gotoAbout) gotoAbout.addEventListener("click", () => showAppContainer("sponsors", aboutModal));
+    if (gotoMatchmaker) {
+        gotoMatchmaker.addEventListener("click", () => {
+            showAppContainer("sponsors", matchmakerModal);
+            if (matchmakerDesc) matchmakerDesc.value = "";
+            if (matchmakerResults) matchmakerResults.innerHTML = "";
+            if (matchmakerResultsTitle) matchmakerResultsTitle.style.display = "none";
+        });
+    }
     
     if (btnBackPortal) btnBackPortal.addEventListener("click", showPortalPage);
 

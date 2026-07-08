@@ -994,7 +994,25 @@ select {
 
 .portal-column-center {
     height: 100%;
-    pointer-events: none; /* Let clicks pass through the center space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Matchmaker Badge (Violet/Fuchsia) */
+#portal-goto-matchmaker .portal-card-icon-container {
+    background: linear-gradient(135deg, #8b5cf6, #d946ef);
+    border: 1px solid rgba(168, 85, 247, 0.4);
+}
+#portal-goto-matchmaker:hover .portal-card-icon-container {
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.6);
+}
+
+/* Pulsing AI Live dot keyframe animation */
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.6; }
+    50% { transform: scale(1.15); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.6; }
 }
 
 /* Portal Cards - Clean, high transparency, no backdrop-blur to keep background city visible */
@@ -1167,13 +1185,17 @@ select {
         gap: 20px;
     }
     .portal-column-center {
-        display: none; /* Hide spacing center column on tablet/mobile */
+        display: flex;
+        grid-column: span 2;
     }
 }
 
 @media (max-width: 700px) {
     .portal-grid {
         grid-template-columns: 1fr;
+    }
+    .portal-column-center {
+        grid-column: span 1;
     }
     .portal-brand h1 {
         font-size: 2.6rem;

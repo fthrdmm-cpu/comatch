@@ -98,8 +98,26 @@
                     </div>
                 </div>
 
-                <!-- Empty center space to leave the central tower unblocked and visible -->
-                <div class="portal-column-center"></div>
+                <!-- Center column with the AI Matchmaker card -->
+                <div class="portal-column-center">
+                    <div class="portal-card premium-card" id="portal-goto-matchmaker" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(217, 70, 239, 0.12)); border: 1px solid rgba(168, 85, 247, 0.25); box-shadow: 0 8px 32px rgba(168, 85, 247, 0.1); height: 100%; display: flex; flex-direction: column; justify-content: center; min-height: 250px;">
+                        <!-- Glowing Pulse Dot -->
+                        <div class="ai-pulse-dot" style="position: absolute; top: 20px; right: 20px; display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 0.65rem; color: #d946ef; font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em;">AI Live</span>
+                            <span style="width: 8px; height: 8px; background: #d946ef; border-radius: 50%; display: inline-block; box-shadow: 0 0 10px #d946ef; animation: pulse 2s infinite;"></span>
+                        </div>
+                        
+                        <div class="portal-card-icon-container" style="margin-bottom: 20px;">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="portal-card-svg" style="color: #d946ef;">
+                                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                                <circle cx="12" cy="12" r="4"/>
+                            </svg>
+                        </div>
+                        <h3>AI Matchmaker</h3>
+                        <p>Describe your startup or project. Get instantly matched with our verified B2B sponsor & investor network.</p>
+                        <span class="portal-card-action" style="color: #d946ef; font-weight: 700;">Launch AI Matchmaker <i class="fa-solid fa-wand-magic-sparkles" style="margin-left: 6px;"></i></span>
+                    </div>
+                </div>
 
                 <!-- Right-hand side cards -->
                 <div class="portal-column-right">
