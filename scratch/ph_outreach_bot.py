@@ -36,9 +36,24 @@ def extract_emails(html):
     valid_emails = []
     
     # Block list of false positives and placeholder addresses
-    blocked_emails = {"you@work.com", "example@example.com", "test@test.com", "info@domain.com"}
-    blocked_domains = {"example.com", "domain.com", "yourdomain.com", "email.com", "work.com", "yourcompany.com", "temp.com", "acmecorp.com", "studio.com", "test.com", "mycompany.com"}
+    blocked_emails = {
+        "you@work.com", "example@example.com", "test@test.com", "info@domain.com",
+        "you@company.com", "team@gmail.com", "your@email.com", "your-email@domain.com",
+        "username@domain.com", "placeholder@email.com", "someone@example.com",
+        "email@example.com", "username@email.com", "first.last@company.com",
+        "yourname@yourcompany.com", "mail@example.com", "info@yourcompany.com",
+        "contact@yourcompany.com", "support@yourcompany.com", "info@company.com",
+        "contact@company.com", "support@company.com", "team@company.com",
+        "hello@company.com", "admin@company.com", "webmaster@company.com",
+        "feedback@company.com", "noreply@gmail.com", "no-reply@gmail.com"
+    }
+    blocked_domains = {
+        "example.com", "domain.com", "yourdomain.com", "email.com", "work.com",
+        "yourcompany.com", "temp.com", "acmecorp.com", "studio.com", "test.com",
+        "mycompany.com", "company.com", "company.co", "website.com", "yourwebsite.com"
+    }
     blocked_extensions = {".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".mp4", ".css", ".js", ".ico"}
+    blocked_prefixes = {"you", "your-email", "username", "placeholder", "someone", "yourname", "first.last", "email", "dummy", "test", "your"}
     
     for email in emails:
         email = email.lower().strip()
@@ -49,8 +64,12 @@ def extract_emails(html):
         
         parts = email.split("@")
         if len(parts) == 2:
-            domain = parts[1]
+            username, domain = parts[0], parts[1]
             if domain in blocked_domains:
+                continue
+            if username in blocked_prefixes:
+                continue
+            if domain.startswith("company.") or domain.startswith("yourcompany."):
                 continue
             if email not in valid_emails:
                 valid_emails.append(email)
