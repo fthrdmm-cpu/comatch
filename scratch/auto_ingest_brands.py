@@ -90,7 +90,7 @@ payload = {
 
 try:
     print("[*] Contacting Gemini AI for otonom B2B brand research...")
-    response = requests.post(url, headers=headers, json=payload, timeout=45)
+    response = requests.post(url, headers=headers, json=payload, timeout=120)
     
     if response.status_code != 200:
         print(f"[-] Gemini API Error: HTTP {response.status_code}")
@@ -143,3 +143,5 @@ if (typeof module !== 'undefined' && module.exports) {{
         
 except Exception as e:
     print("[-] Ingestion failed:", e)
+    import sys
+    sys.exit(1)
