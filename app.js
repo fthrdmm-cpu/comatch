@@ -2144,4 +2144,24 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
             }
         });
     }
+
+    // ==========================================
+    // SEO URL ROUTING (Option D)
+    // ==========================================
+    function checkUrlRouting() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const sponsorId = urlParams.get("sponsor") || urlParams.get("investor") || urlParams.get("partner");
+        if (sponsorId) {
+            const allItems = [...sponsorsData, ...investorsData];
+            const targetItem = allItems.find(item => item.id === sponsorId);
+            if (targetItem) {
+                const targetDir = targetItem.investorType ? "investors" : "sponsors";
+                showAppContainer(targetDir);
+                openBrandDetails(targetItem.id, targetDir);
+            }
+        }
+    }
+
+    // Run router check after a short delay to ensure assets are fully loaded and rendered
+    setTimeout(checkUrlRouting, 400);
 });
