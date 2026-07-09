@@ -2449,5 +2449,114 @@ const BRANDS_DATA = [
       "dealStructure": "Official festival partner licenses, event space provisions, large flat-fee sponsor spots.",
       "pitchHelper": "Dear Riyadh Season Management,\n\nI represent [Organization Name] ([Link]), a global gaming festival caster. We would love to explore a B2B partnership to cast and cover key events during the upcoming Riyadh Season. Attached is our event history and viewer metrics.\n\nSincerely,\n[Name]"
     }
+  },
+  {
+    "id": "cloudflare",
+    "name": "Cloudflare",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "info@cloudflare.com",
+    "contactForm": "https://www.cloudflare.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=cloudflare.com",
+    "dna": {
+      "requirements": "Focus on technical content (security, performance, network, serverless), audience interested in web infrastructure/development/operations, clear alignment with Cloudflare's mission (building a better internet).",
+      "dealStructure": "Flat fee for podcast/newsletter spots, sponsored video content, event sponsorship packages (booth, speaking slot, branding). Could include product credits for technical content.",
+      "pitchHelper": "Subject: Collaboration Opportunity: [Your Channel/Podcast Name] x Cloudflare\n\nDear Cloudflare Partnerships Team,\n\nMy name is [Your Name] and I run [Your Channel/Podcast Name], a [brief description of your content, e.g., weekly podcast on web development and infrastructure]. My audience of [X] developers and tech enthusiasts is keenly interested in topics like web performance, security, and scalable infrastructure – all areas where Cloudflare excels.\n\nI've personally been a long-time user of Cloudflare's services, appreciating [mention a specific Cloudflare product/feature you like]. I believe my platform offers a unique opportunity to connect Cloudflare with a highly engaged audience looking for cutting-edge solutions.\n\nI propose a [mention type of collaboration, e.g., sponsored segment, dedicated video, newsletter feature] where we can highlight Cloudflare's value proposition, particularly [mention a specific Cloudflare product or initiative]. I'm confident this partnership would drive significant awareness and engagement within the developer community.\n\nYou can find more about my work here: [Link to your channel/podcast/portfolio]\nAnd my media kit here: [Link to your media kit, if available]\n\nLooking forward to discussing how we can create impactful content together.\n\nBest regards,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Use a subject line that immediately signals relevance to their developer/tech focus, e.g., 'DevOps Podcast x Cloudflare: CDN & Security Deep Dive.'",
+        "Emphasize how your content directly relates to Cloudflare's core offerings (security, performance, edge computing) and target audience, rather than just general tech.",
+        "If you've worked with other dev tools or infrastructure companies, briefly mention it to demonstrate your experience and audience's receptiveness to such products."
+      ]
+    }
+  },
+  {
+    "id": "monday-com",
+    "name": "monday.com",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partners@monday.com",
+    "contactForm": "https://monday.com/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=monday.com",
+    "dna": {
+      "requirements": "Content focused on productivity, project management, team collaboration, business growth, remote work. Audience typically small to medium businesses, startups, entrepreneurs, or teams within larger organizations. Content should be professional and solution-oriented.",
+      "dealStructure": "Flat fee for sponsored video integrations, podcast ad reads, dedicated reviews, or placements in business-focused newsletters. Could involve a free premium account for content creation.",
+      "pitchHelper": "Subject: Empowering Productivity: [Your Platform Name] x monday.com Sponsorship\n\nDear monday.com Partnership Team,\n\nMy name is [Your Name], and I create content focused on [Your Niche, e.g., boosting small business productivity, optimizing remote work, project management best practices] for an engaged audience of [X] [Audience Type, e.g., entrepreneurs, team leads, freelancers].\n\nI've been impressed by monday.com's versatile Work OS and its ability to transform how teams manage projects and collaborate. Many in my community consistently seek robust solutions for [mention a specific pain point monday.com solves, e.g., streamlining workflows, tracking progress, improving communication].\n\nI believe a sponsored integration on [Your Platform, e.g., my YouTube channel, podcast, newsletter] would be a perfect fit to showcase monday.com's features, particularly [mention a specific feature, e.g., custom dashboards, automations, integrations], to an audience actively looking for tools to enhance their work.\n\nHere's a link to my work and media kit for your review: [Link to your portfolio/media kit]\n\nI'm excited about the possibility of collaborating to help more teams become efficient with monday.com.\n\nSincerely,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Frame your pitch around how monday.com helps businesses and teams, not just individuals. Emphasize ROI or efficiency gains.",
+        "Mention specific monday.com features or use cases (e.g., CRM, marketing planning, software development) that resonate with your content and audience.",
+        "Ensure your email is highly professional, concise, and error-free, reflecting the corporate nature of monday.com's target market."
+      ]
+    }
+  },
+  {
+    "id": "algolia",
+    "name": "Algolia",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "community@algolia.com",
+    "contactForm": "https://www.algolia.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=algolia.com",
+    "dna": {
+      "requirements": "Highly technical audience (developers, engineers), content focused on search, discovery, e-commerce, front-end development, API integration, data, and user experience. Authentic enthusiasm for Algolia's technology.",
+      "dealStructure": "Flat fee for sponsored technical tutorials, code-along videos, podcast segments discussing search architecture, newsletter features, hackathon sponsorships (API credits, prizes).",
+      "pitchHelper": "Subject: Dev Content Collaboration: [Your Dev Platform] x Algolia Search & Discovery\n\nDear Algolia Community Team,\n\nMy name is [Your Name], and I run [Your Dev Platform Name], a [brief description, e.g., YouTube channel focused on front-end development and API integration, or a popular dev newsletter]. My audience of [X] active developers and engineers is always looking for robust, scalable solutions to enhance user experience.\n\nI've been a keen admirer of Algolia's powerful search and discovery API, particularly its speed and flexibility, which truly elevates user experience. I recently [mention how you've used or admired Algolia, e.g., experimented with building a search feature, saw it implemented on a favorite site].\n\nI see a fantastic opportunity to create highly engaging technical content around Algolia's capabilities, such as [propose specific content, e.g., a tutorial on integrating Algolia with a modern web framework, a deep dive into its instant search features]. This would directly resonate with my audience's interests in building high-performance applications.\n\nYou can view my recent work and audience demographics here: [Link to your channel/newsletter/portfolio]\n\nI'm excited to explore how we can bring Algolia's innovative solutions to more developers through [Your Platform].\n\nBest regards,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Show, don't just tell, that you understand their product. Mention specific Algolia features or use cases in your pitch.",
+        "Emphasize how your content will provide tangible value (e.g., code examples, best practices, performance tips) to developers using or considering Algolia.",
+        "Instead of a vague sponsorship, suggest specific tutorial ideas, code reviews, or architectural discussions involving Algolia."
+      ]
+    }
+  },
+  {
+    "id": "cockroach-labs",
+    "name": "Cockroach Labs",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "community@cockroachlabs.com",
+    "contactForm": "https://www.cockroachlabs.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=cockroachlabs.com",
+    "dna": {
+      "requirements": "Deeply technical audience (database administrators, software engineers, DevOps), content focused on distributed databases, SQL, cloud-native architecture, data scalability, resilience. Content should be informative, problem-solving, and demonstrate practical application.",
+      "dealStructure": "Flat fee for sponsored technical articles, video tutorials (e.g., setting up a cluster, migration guides), podcast interviews with their engineers, hackathon sponsorships (free credits for CockroachDB Cloud, prizes).",
+      "pitchHelper": "Subject: Distributed Database Content: [Your Channel Name] x CockroachDB Collaboration\n\nDear Cockroach Labs Community Team,\n\nMy name is [Your Name], and I run [Your Channel/Platform Name], a [description, e.g., blog and YouTube channel dedicated to cloud-native development and database architecture]. My audience of [X] engineers and database professionals regularly seeks insights into scalable, resilient data solutions.\n\nI've been particularly impressed by CockroachDB's geo-distributed capabilities and its strong focus on consistency and resilience, which addresses critical challenges many developers face today. I've personally [mention specific interaction, e.g., followed your releases, experimented with a local cluster].\n\nI believe a sponsored collaboration would be highly valuable, allowing me to create in-depth content around topics like [suggest specific content ideas, e.g., \"building a globally distributed application with CockroachDB,\" \"comparing SQL features in CockroachDB vs. traditional databases,\" \"operationalizing CockroachDB in Kubernetes\"]. This would directly engage my audience with a powerful, modern database solution.\n\nYou can find examples of my technical content and audience data here: [Link to your portfolio/media kit]\n\nI'm eager to discuss how we can partner to educate and empower more developers with CockroachDB.\n\nSincerely,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Open by demonstrating genuine familiarity and appreciation for CockroachDB's unique value proposition (e.g., 'SQL compatibility with global scale' or 'ACID transactions for distributed systems').",
+        "Instead of a generic 'review,' suggest a concrete technical project, tutorial, or deep dive that showcases a particular CockroachDB feature relevant to a developer's workflow.",
+        "Clearly state that your audience consists of active developers, engineers, or DBAs who are directly involved in technical decision-making and implementation."
+      ]
+    }
+  },
+  {
+    "id": "hashicorp",
+    "name": "HashiCorp",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "community@hashicorp.com",
+    "contactForm": "https://www.hashicorp.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=hashicorp.com",
+    "dna": {
+      "requirements": "Highly technical audience (DevOps, SRE, infrastructure engineers, developers), content focused on infrastructure as code (Terraform), secrets management (Vault), service mesh (Consul), etc. Strong focus on practical application and best practices in enterprise environments.",
+      "dealStructure": "Flat fee for sponsored technical deep-dives, whitepapers (if a blog), video tutorials, podcast interviews with their engineers or product leads, event sponsorships.",
+      "pitchHelper": "Subject: Infrastructure Automation Content: [Your Platform] x HashiCorp Collaboration\n\nDear HashiCorp Community Team,\n\nMy name is [Your Name], and I manage [Your Platform Name], a [description, e.g., leading blog/podcast focused on DevOps practices and cloud infrastructure automation]. My audience of [X] DevOps engineers, SREs, and architects regularly seeks expert insights and practical guides on managing modern infrastructure.\n\nHashiCorp's tools, particularly [mention a specific tool like Terraform, Vault, or Consul], are foundational to the modern infrastructure landscape, and I've been a long-time admirer and user of their innovative approach to infrastructure as code and security.\n\nI see a significant opportunity to collaborate on creating high-value content that educates my audience on [propose specific content, e.g., \"advanced Terraform patterns for multi-cloud deployments,\" \"integrating Vault for secrets management in CI/CD pipelines,\" \"implementing service mesh with Consul\"]. This would resonate deeply with professionals looking to optimize their cloud operations.\n\nYou can review my audience demographics and previous technical content here: [Link to your portfolio/media kit]\n\nI'm excited by the prospect of bringing HashiCorp's powerful solutions to a broader technical audience through a meaningful partnership.\n\nSincerely,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "HashiCorp's tools are often used in enterprise environments. Highlight how your content caters to or can inform professionals in such settings.",
+        "Demonstrate deep product knowledge by mentioning specific tools (Terraform, Vault, Consul, Nomad) and their relevance to your content idea.",
+        "Frame your proposed content around solving common infrastructure challenges (e.g., 'solving multi-cloud complexity with Terraform,' 'enhancing security with Vault') rather than just product reviews."
+      ]
+    }
   }
 ];
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = BRANDS_DATA;
+}
