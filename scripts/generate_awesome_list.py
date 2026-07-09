@@ -100,7 +100,7 @@ def main():
         
     markdown.append("\n---\n*Generated automatically by CoMatch Engine. Help us keep this directory fresh by submitting new listings at [comatch.org](https://comatch.org).*")
     
-    output_path = "../AWESOME_LIST.md"
+    output_path = "AWESOME_LIST.md"
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(markdown))
         
