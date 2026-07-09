@@ -159,7 +159,13 @@ document.addEventListener("DOMContentLoaded", () => {
             activeDirectory = tab.getAttribute("data-directory");
             
             // Switch active data list
-            dbData = activeDirectory === "sponsors" ? sponsorsData : investorsData;
+            if (activeDirectory === "sponsors") {
+                dbData = sponsorsData;
+            } else if (activeDirectory === "investors") {
+                dbData = investorsData;
+            } else if (activeDirectory === "checklist") {
+                dbData = loadChecklistData();
+            }
             
             // Reset filters to "all" when switching directories to prevent empty state bugs
             activeFilters.category = "all";
@@ -260,6 +266,102 @@ document.addEventListener("DOMContentLoaded", () => {
             renderBrands();
         });
     });
+    
+    // DRY helper function to update app styling and variables dynamically based on active directory
+    function updateAppLayoutForDirectory(dir) {
+        activeDirectory = dir;
+        
+        if (activeDirectory === "sponsors") {
+            dbData = sponsorsData;
+        } else if (activeDirectory === "investors") {
+            dbData = investorsData;
+        } else if (activeDirectory === "checklist") {
+            dbData = loadChecklistData();
+        }
+
+        // Toggle sidebar filter panels visibility
+        const sidebarSections = document.querySelectorAll(".sidebar-section");
+        sidebarSections.forEach((sec, idx) => {
+            if (activeDirectory === "checklist") {
+                if (idx > 0) sec.style.display = "none";
+            } else {
+                sec.style.display = "block";
+            }
+        });
+
+        // Hide/Show sidebar filter groups based on tab selection
+        const typeFilterSection = document.querySelector("#filter-type") ? document.querySelector("#filter-type").parentElement : null;
+        const sizeFilterSection = document.querySelector("#filter-size") ? document.querySelector("#filter-size").parentElement : null;
+        const scaleTitle = sizeFilterSection ? sizeFilterSection.querySelector("h3") : null;
+        const typeTitle = typeFilterSection ? typeFilterSection.querySelector("h3") : null;
+        const headerActions = document.querySelector(".header-actions");
+        
+        if (activeDirectory === "checklist") {
+            if (headerActions) headerActions.style.display = "none";
+        } else if (activeDirectory === "investors") {
+            if (typeTitle) typeTitle.textContent = "INVESTOR TYPE";
+            if (typeBtns[0]) typeBtns[0].textContent = "All";
+            if (typeBtns[1]) {
+                typeBtns[1].textContent = "Accelerator";
+                typeBtns[1].setAttribute("data-sponsortype", "Accelerator");
+            }
+            if (typeBtns[2]) {
+                typeBtns[2].textContent = "Venture Capital";
+                typeBtns[2].setAttribute("data-sponsortype", "Venture Capital");
+            }
+            if (typeBtns[3]) {
+                typeBtns[3].textContent = "Angel Network";
+                typeBtns[3].setAttribute("data-sponsortype", "Angel Network");
+            }
+            if (typeBtns[4]) typeBtns[4].style.display = "none";
+            
+            if (scaleTitle) scaleTitle.textContent = "TARGET STAGE";
+            if (sizeBtns[0]) sizeBtns[0].textContent = "All Stages";
+            if (sizeBtns[1]) {
+                sizeBtns[1].textContent = "Pre-Seed / Seed";
+                sizeBtns[1].setAttribute("data-size", "Pre-Seed");
+            }
+            if (sizeBtns[2]) {
+                sizeBtns[2].textContent = "Series A / B";
+                sizeBtns[2].setAttribute("data-size", "Series A");
+            }
+            
+            if (headerActions) headerActions.style.display = "none";
+        } else {
+            if (typeTitle) typeTitle.textContent = "PARTNERSHIP TYPE";
+            if (typeBtns[0]) typeBtns[0].textContent = "All";
+            if (typeBtns[1]) {
+                typeBtns[1].textContent = "Barter / Product";
+                typeBtns[1].setAttribute("data-sponsortype", "Product Gifting");
+            }
+            if (typeBtns[2]) {
+                typeBtns[2].textContent = "Affiliate / Referral";
+                typeBtns[2].setAttribute("data-sponsortype", "Affiliate");
+            }
+            if (typeBtns[3]) {
+                typeBtns[3].textContent = "Sponsorship / Paid";
+                typeBtns[3].setAttribute("data-sponsortype", "Flat Fee");
+            }
+            if (typeBtns[4]) {
+                typeBtns[4].style.display = "block";
+                typeBtns[4].textContent = "B2B Collab";
+                typeBtns[4].setAttribute("data-sponsortype", "B2B Partnership");
+            }
+            
+            if (scaleTitle) scaleTitle.textContent = "COLLABORATION SCALE";
+            if (sizeBtns[0]) sizeBtns[0].textContent = "All Scale";
+            if (sizeBtns[1]) {
+                sizeBtns[1].textContent = "Startup / Mid-Scale";
+                sizeBtns[1].setAttribute("data-size", "Micro");
+            }
+            if (sizeBtns[2]) {
+                sizeBtns[2].textContent = "Enterprise / Tier-1";
+                sizeBtns[2].setAttribute("data-size", "Macro");
+            }
+            
+            if (headerActions) headerActions.style.display = "block";
+        }
+    }
 
     searchInput.addEventListener("input", (e) => {
         activeFilters.search = e.target.value.toLowerCase().trim();
@@ -320,9 +422,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function showAppContainer(targetDirectory, autoOpenModal = null) {
         if (!portalPage || !appContainer) return;
         
-        // Switch active directory first
-        activeDirectory = targetDirectory;
-        dbData = activeDirectory === "sponsors" ? sponsorsData : investorsData;
+        updateAppLayoutForDirectory(targetDirectory);
         
         // Update active directory tab styles
         const directoryTabs = document.querySelectorAll(".directory-tab");
@@ -333,78 +433,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 tab.classList.remove("active");
             }
         });
-        
-        // Trigger matching filter update logic
-        const typeFilterSection = document.querySelector("#filter-type") ? document.querySelector("#filter-type").parentElement : null;
-        const sizeFilterSection = document.querySelector("#filter-size") ? document.querySelector("#filter-size").parentElement : null;
-        const scaleTitle = sizeFilterSection ? sizeFilterSection.querySelector("h3") : null;
-        const typeTitle = typeFilterSection ? typeFilterSection.querySelector("h3") : null;
-        
-        if (activeDirectory === "investors") {
-            if (typeTitle) typeTitle.textContent = "INVESTOR TYPE";
-            if (typeBtns[0]) typeBtns[0].textContent = "All";
-            if (typeBtns[1]) {
-                typeBtns[1].textContent = "Accelerator";
-                typeBtns[1].setAttribute("data-sponsortype", "Accelerator");
-            }
-            if (typeBtns[2]) {
-                typeBtns[2].textContent = "Venture Capital";
-                typeBtns[2].setAttribute("data-sponsortype", "Venture Capital");
-            }
-            if (typeBtns[3]) {
-                typeBtns[3].textContent = "Angel Network";
-                typeBtns[3].setAttribute("data-sponsortype", "Angel Network");
-            }
-            if (typeBtns[4]) typeBtns[4].style.display = "none";
-            
-            if (scaleTitle) scaleTitle.textContent = "TARGET STAGE";
-            if (sizeBtns[0]) sizeBtns[0].textContent = "All Stages";
-            if (sizeBtns[1]) {
-                sizeBtns[1].textContent = "Pre-Seed / Seed";
-                sizeBtns[1].setAttribute("data-size", "Pre-Seed");
-            }
-            if (sizeBtns[2]) {
-                sizeBtns[2].textContent = "Series A / B";
-                sizeBtns[2].setAttribute("data-size", "Series A");
-            }
-            
-            const headerActions = document.querySelector(".header-actions");
-            if (headerActions) headerActions.style.display = "none";
-        } else {
-            if (typeTitle) typeTitle.textContent = "PARTNERSHIP TYPE";
-            if (typeBtns[0]) typeBtns[0].textContent = "All";
-            if (typeBtns[1]) {
-                typeBtns[1].textContent = "Barter / Product";
-                typeBtns[1].setAttribute("data-sponsortype", "Product Gifting");
-            }
-            if (typeBtns[2]) {
-                typeBtns[2].textContent = "Affiliate / Referral";
-                typeBtns[2].setAttribute("data-sponsortype", "Affiliate");
-            }
-            if (typeBtns[3]) {
-                typeBtns[3].textContent = "Sponsorship / Paid";
-                typeBtns[3].setAttribute("data-sponsortype", "Flat Fee");
-            }
-            if (typeBtns[4]) {
-                typeBtns[4].style.display = "block";
-                typeBtns[4].textContent = "B2B Collab";
-                typeBtns[4].setAttribute("data-sponsortype", "B2B Partnership");
-            }
-            
-            if (scaleTitle) scaleTitle.textContent = "COLLABORATION SCALE";
-            if (sizeBtns[0]) sizeBtns[0].textContent = "All Scale";
-            if (sizeBtns[1]) {
-                sizeBtns[1].textContent = "Startup / Mid-Scale";
-                sizeBtns[1].setAttribute("data-size", "Micro");
-            }
-            if (sizeBtns[2]) {
-                sizeBtns[2].textContent = "Enterprise / Tier-1";
-                sizeBtns[2].setAttribute("data-size", "Macro");
-            }
-            
-            const headerActions = document.querySelector(".header-actions");
-            if (headerActions) headerActions.style.display = "block";
-        }
         
         // Reset active filters
         activeFilters.category = "all";
@@ -516,6 +544,16 @@ document.addEventListener("DOMContentLoaded", () => {
         matchmakerModalClose.addEventListener("click", () => closeModal(matchmakerModal));
         matchmakerModal.addEventListener("click", (e) => {
             if (e.target === matchmakerModal) closeModal(matchmakerModal);
+        });
+        
+        // Hook up Quick Demo suggestion tags
+        document.querySelectorAll(".matchmaker-suggestion-tag").forEach(tag => {
+            tag.addEventListener("click", () => {
+                if (matchmakerDesc) {
+                    matchmakerDesc.value = tag.getAttribute("data-text");
+                    matchmakerDesc.focus();
+                }
+            });
         });
     }
     // Handle brand submission form
@@ -864,6 +902,35 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
         }
     }
 
+    // Helper functions for Checklist
+    function getStarredIds() {
+        try {
+            return JSON.parse(localStorage.getItem("comatch_starred") || "[]");
+        } catch (e) {
+            return [];
+        }
+    }
+    
+    function toggleStarId(id) {
+        let ids = getStarredIds();
+        const idx = ids.indexOf(id);
+        let added = false;
+        if (idx > -1) {
+            ids.splice(idx, 1);
+        } else {
+            ids.push(id);
+            added = true;
+        }
+        localStorage.setItem("comatch_starred", JSON.stringify(ids));
+        return added;
+    }
+
+    function loadChecklistData() {
+        const starred = getStarredIds();
+        const allItems = [...(sponsorsData || []), ...(investorsData || [])];
+        return allItems.filter(item => starred.includes(item.id));
+    }
+
     // Helper functions
     function calculateStats() {
         if (statTotalOpportunities) {
@@ -872,13 +939,18 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
             if (statLabel && statLabel.classList.contains("stat-label")) {
                 statLabel.textContent = activeDirectory === "sponsors" 
                     ? "Active B2B Partners" 
-                    : "Active VC & Angel Funds";
+                    : (activeDirectory === "investors" ? "Active VC & Angel Funds" : "Shortlisted Partners");
             }
         }
     }
 
     function renderBrands() {
         brandGrid.innerHTML = "";
+        
+        // Switch to checklist data dynamically if tab active
+        if (activeDirectory === "checklist") {
+            dbData = loadChecklistData();
+        }
         
         const filtered = dbData.filter(item => {
             // Search criteria
@@ -887,6 +959,11 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                                   (item.sectors && item.sectors.toLowerCase().includes(activeFilters.search)) ||
                                   (item.sponsorType && item.sponsorType.toLowerCase().includes(activeFilters.search)) ||
                                   (item.investorType && item.investorType.toLowerCase().includes(activeFilters.search));
+            
+            // In checklist mode we bypass all other dropdown category filters to keep it simple
+            if (activeDirectory === "checklist") {
+                return matchesSearch;
+            }
             
             // Category criteria
             let matchesCategory = false;
@@ -936,21 +1013,36 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
         resultsCountEl.textContent = `${filtered.length} opportunit${filtered.length === 1 ? 'y' : 'ies'} found`;
 
         if (filtered.length === 0) {
-            brandGrid.innerHTML = `
-                <div class="no-results">
-                    <i class="fa-solid fa-face-frown"></i>
-                    <h3>No results found</h3>
-                    <p>Try adjusting your search criteria or resetting the filters.</p>
-                </div>
-            `;
+            if (activeDirectory === "checklist") {
+                brandGrid.innerHTML = `
+                    <div class="no-results" style="grid-column: 1 / -1; padding: 48px 16px; text-align: center;">
+                        <i class="fa-solid fa-list-check" style="font-size: 2.5rem; color: var(--color-accent); margin-bottom: 12px; opacity: 0.5;"></i>
+                        <h3>Your checklist is empty</h3>
+                        <p>Click the star icon at the top of any brand or investor card in the directory to add them here.</p>
+                    </div>
+                `;
+            } else {
+                brandGrid.innerHTML = `
+                    <div class="no-results">
+                        <i class="fa-solid fa-face-frown"></i>
+                        <h3>No results found</h3>
+                        <p>Try adjusting your search criteria or resetting the filters.</p>
+                    </div>
+                `;
+            }
             return;
         }
+
+        const starredIds = getStarredIds();
+        const statusMap = JSON.parse(localStorage.getItem("comatch_status") || "{}");
 
         filtered.forEach(item => {
             const card = document.createElement("div");
             card.className = "brand-card";
             card.setAttribute("data-id", item.id);
-            if (activeDirectory === "investors") {
+            
+            const isInvestorCard = item.investorType || activeDirectory === "investors" || (activeDirectory === "checklist" && item.investorType);
+            if (isInvestorCard) {
                 card.classList.add("investor-card");
             }
             
@@ -960,17 +1052,34 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
             
             // Initials for avatar fallback
             const initials = item.name.substring(0, 2).toUpperCase();
+            const isStarred = starredIds.includes(item.id);
 
-            if (activeDirectory === "sponsors") {
+            // Fetch outreach status and make badge
+            const itemStatus = statusMap[item.id] || { draft: false, sent: false, replied: false };
+            let statusBadgeHTML = "";
+            if (itemStatus.replied) {
+                statusBadgeHTML = `<span class="tag-capsule" style="background: rgba(16, 185, 129, 0.12); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.2);"><i class="fa-solid fa-circle-check"></i> Replied</span>`;
+            } else if (itemStatus.sent) {
+                statusBadgeHTML = `<span class="tag-capsule" style="background: rgba(59, 130, 246, 0.12); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.2);"><i class="fa-solid fa-paper-plane"></i> Sent</span>`;
+            } else if (itemStatus.draft) {
+                statusBadgeHTML = `<span class="tag-capsule" style="background: rgba(245, 158, 11, 0.12); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.2);"><i class="fa-solid fa-pen"></i> Drafted</span>`;
+            }
+
+            if (!isInvestorCard) {
                 card.innerHTML = `
                     <div class="card-header">
                         <div class="brand-logo-container">
                             <img src="${item.logo}" alt="${item.name}" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.15rem; border-radius: var(--border-radius-sm);">${initials}</div>
                         </div>
-                        <span class="badge-type ${item.type === 'team' ? 'team-badge' : 'brand-badge'}">
-                            ${item.type === 'team' ? 'PARTNERSHIP' : 'BRAND'}
-                        </span>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <button class="btn-star-outreach" data-id="${item.id}" style="background: none; border: none; color: ${isStarred ? '#fbbf24' : 'rgba(255,255,255,0.2)'}; cursor: pointer; font-size: 1.25rem; padding: 4px; transition: all 0.2s; z-index: 100; display: flex; align-items: center;" title="${isStarred ? 'Remove from checklist' : 'Add to checklist'}">
+                                <i class="${isStarred ? 'fa-solid' : 'fa-regular'} fa-star"></i>
+                            </button>
+                            <span class="badge-type ${item.type === 'team' ? 'team-badge' : 'brand-badge'}">
+                                ${item.type === 'team' ? 'PARTNERSHIP' : 'BRAND'}
+                            </span>
+                        </div>
                     </div>
                     <h3>${item.name}</h3>
                     <p class="brand-category">${item.category}</p>
@@ -978,6 +1087,7 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                     <div class="card-tags">
                         <span class="tag-capsule"><i class="fa-solid fa-tag"></i> ${getSponsorTypeLabel(item.sponsorType)}</span>
                         <span class="tag-capsule"><i class="fa-solid fa-users"></i> ${getScaleLabel(item.creatorSize)}</span>
+                        ${statusBadgeHTML}
                     </div>
                     
                     <div class="card-contact-indicator ${contactStatus}">
@@ -991,9 +1101,14 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                             <img src="${item.logo}" alt="${item.name}" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.15rem; border-radius: var(--border-radius-sm);">${initials}</div>
                         </div>
-                        <span class="badge-type investor-badge" style="background: rgba(245, 158, 11, 0.1); color: var(--color-premium); border: 1px solid rgba(245, 158, 11, 0.2);">
-                            INVESTOR
-                        </span>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <button class="btn-star-outreach" data-id="${item.id}" style="background: none; border: none; color: ${isStarred ? '#fbbf24' : 'rgba(255,255,255,0.2)'}; cursor: pointer; font-size: 1.25rem; padding: 4px; transition: all 0.2s; z-index: 100; display: flex; align-items: center;" title="${isStarred ? 'Remove from checklist' : 'Add to checklist'}">
+                                <i class="${isStarred ? 'fa-solid' : 'fa-regular'} fa-star"></i>
+                            </button>
+                            <span class="badge-type investor-badge" style="background: rgba(245, 158, 11, 0.1); color: var(--color-premium); border: 1px solid rgba(245, 158, 11, 0.2);">
+                                INVESTOR
+                            </span>
+                        </div>
                     </div>
                     <h3>${item.name}</h3>
                     <p class="brand-category" style="color: var(--color-premium); font-weight: 500;">${item.investorType}</p>
@@ -1001,6 +1116,7 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                     <div class="card-tags">
                         <span class="tag-capsule"><i class="fa-solid fa-sack-dollar"></i> ${item.ticketSize}</span>
                         <span class="tag-capsule"><i class="fa-solid fa-layer-group"></i> ${item.targetStage}</span>
+                        ${statusBadgeHTML}
                     </div>
                     
                     <div class="card-contact-indicator ${contactStatus}">
@@ -1009,14 +1125,43 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                 `;
             }
 
-            card.addEventListener("click", () => openBrandDetails(item.id));
+            card.addEventListener("click", () => openBrandDetails(item.id, isInvestorCard ? "investors" : "sponsors"));
+            
+            // Star Button Click Handler
+            const starBtn = card.querySelector(".btn-star-outreach");
+            if (starBtn) {
+                starBtn.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    const added = toggleStarId(item.id);
+                    const icon = starBtn.querySelector("i");
+                    if (added) {
+                        icon.className = "fa-solid fa-star";
+                        starBtn.style.color = "#fbbf24";
+                        starBtn.title = "Remove from checklist";
+                        showNotification("Added to Outreach Checklist!");
+                    } else {
+                        icon.className = "fa-regular fa-star";
+                        starBtn.style.color = "rgba(255,255,255,0.2)";
+                        starBtn.title = "Add to checklist";
+                        showNotification("Removed from checklist.");
+                    }
+                    if (activeDirectory === "checklist") {
+                        renderBrands();
+                    }
+                });
+            }
+
             brandGrid.appendChild(card);
         });
     }
 
-    function openBrandDetails(id) {
+    function openBrandDetails(id, forcedDirectory = null) {
         window.openBrandDetails = openBrandDetails; // Expose globally for matchmaker card clicks
-        const item = dbData.find(b => b.id === id);
+        const currentDir = forcedDirectory || activeDirectory;
+        
+        // Find the item globally in both lists if needed
+        const allItems = [...sponsorsData, ...investorsData];
+        const item = allItems.find(b => b.id === id);
         if (!item) return;
 
         // Track GA Event: View Item
@@ -1036,7 +1181,27 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
         const pitchTemplate = item.dna.pitchHelper || "";
         const initials = item.name.substring(0, 2).toUpperCase();
 
-        if (activeDirectory === "sponsors") {
+        const statusMap = JSON.parse(localStorage.getItem("comatch_status") || "{}");
+        const itemStatus = statusMap[item.id] || { draft: false, sent: false, replied: false };
+
+        const statusTrackerHTML = `
+            <div class="modal-section" style="margin-top: 24px; border-top: 1px solid var(--border-color); padding-top: 20px;">
+                <h4><i class="fa-solid fa-list-check" style="color: var(--color-accent);"></i> Outreach Checklist Status</h4>
+                <div style="display: flex; gap: 15px; background: var(--bg-main); border: 1px solid var(--border-color); padding: 14px 16px; border-radius: var(--border-radius-sm); justify-content: space-between; flex-wrap: wrap;">
+                    <label style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary); font-size: 0.82rem; cursor: pointer; font-weight: 500;">
+                        <input type="checkbox" class="status-checkbox" data-field="draft" ${itemStatus.draft ? 'checked' : ''} style="accent-color: var(--color-primary); cursor: pointer;"> ✍️ Drafted
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary); font-size: 0.82rem; cursor: pointer; font-weight: 500;">
+                        <input type="checkbox" class="status-checkbox" data-field="sent" ${itemStatus.sent ? 'checked' : ''} style="accent-color: var(--color-primary); cursor: pointer;"> ✉️ Sent
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 8px; color: var(--text-secondary); font-size: 0.82rem; cursor: pointer; font-weight: 500;">
+                        <input type="checkbox" class="status-checkbox" data-field="replied" ${itemStatus.replied ? 'checked' : ''} style="accent-color: var(--color-accent); cursor: pointer;"> 🎉 Replied!
+                    </label>
+                </div>
+            </div>
+        `;
+
+        if (currentDir === "sponsors" || !item.investorType) {
             modalBodyContent.innerHTML = `
                 <div class="modal-header-block">
                     <div style="width: 64px; height: 64px; border-radius: var(--border-radius-sm); overflow: hidden; border: 1px solid var(--border-color); display: flex; flex-shrink: 0; background: var(--bg-main);">
@@ -1085,6 +1250,8 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                 </div>
 
                 ${getPitchTipsHTML(item)}
+                
+                ${statusTrackerHTML}
 
                 <div class="modal-actions-footer">
                     <a href="${item.contactForm || '#'}" target="_blank" class="btn btn-action-primary">
