@@ -1073,7 +1073,7 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                             <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.15rem; border-radius: var(--border-radius-sm);">${initials}</div>
                         </div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <button class="btn-star-outreach" data-id="${item.id}" style="background: none; border: none; color: ${isStarred ? '#fbbf24' : 'rgba(255,255,255,0.2)'}; cursor: pointer; font-size: 1.25rem; padding: 4px; transition: all 0.2s; z-index: 100; display: flex; align-items: center;" title="${isStarred ? 'Remove from checklist' : 'Add to checklist'}">
+                            <button class="btn-star-outreach ${isStarred ? 'starred' : ''}" data-id="${item.id}" title="${isStarred ? 'Remove from checklist' : 'Add to checklist'}">
                                 <i class="${isStarred ? 'fa-solid' : 'fa-regular'} fa-star"></i>
                             </button>
                             <span class="badge-type ${item.type === 'team' ? 'team-badge' : 'brand-badge'}">
@@ -1102,7 +1102,7 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                             <div class="avatar-fallback" style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--color-primary), var(--color-premium)); color: #fff; font-weight: bold; font-size: 1.15rem; border-radius: var(--border-radius-sm);">${initials}</div>
                         </div>
                         <div style="display: flex; align-items: center; gap: 8px;">
-                            <button class="btn-star-outreach" data-id="${item.id}" style="background: none; border: none; color: ${isStarred ? '#fbbf24' : 'rgba(255,255,255,0.2)'}; cursor: pointer; font-size: 1.25rem; padding: 4px; transition: all 0.2s; z-index: 100; display: flex; align-items: center;" title="${isStarred ? 'Remove from checklist' : 'Add to checklist'}">
+                            <button class="btn-star-outreach ${isStarred ? 'starred' : ''}" data-id="${item.id}" title="${isStarred ? 'Remove from checklist' : 'Add to checklist'}">
                                 <i class="${isStarred ? 'fa-solid' : 'fa-regular'} fa-star"></i>
                             </button>
                             <span class="badge-type investor-badge" style="background: rgba(245, 158, 11, 0.1); color: var(--color-premium); border: 1px solid rgba(245, 158, 11, 0.2);">
@@ -1136,12 +1136,12 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                     const icon = starBtn.querySelector("i");
                     if (added) {
                         icon.className = "fa-solid fa-star";
-                        starBtn.style.color = "#fbbf24";
+                        starBtn.classList.add("starred");
                         starBtn.title = "Remove from checklist";
                         showNotification("Added to Outreach Checklist!");
                     } else {
                         icon.className = "fa-regular fa-star";
-                        starBtn.style.color = "rgba(255,255,255,0.2)";
+                        starBtn.classList.remove("starred");
                         starBtn.title = "Add to checklist";
                         showNotification("Removed from checklist.");
                     }
