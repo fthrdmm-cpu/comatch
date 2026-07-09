@@ -1074,7 +1074,9 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                         </div>
                         <div style="display: flex; align-items: center; gap: 8px;">
                             <button class="btn-star-outreach ${isStarred ? 'starred' : ''}" data-id="${item.id}" title="${isStarred ? 'Remove from checklist' : 'Add to checklist'}">
-                                <i class="${isStarred ? 'fa-solid' : 'fa-regular'} fa-star"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svg-star" style="width: 20px; height: 20px; transition: all 0.2s;">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                </svg>
                             </button>
                             <span class="badge-type ${item.type === 'team' ? 'team-badge' : 'brand-badge'}">
                                 ${item.type === 'team' ? 'PARTNERSHIP' : 'BRAND'}
@@ -1103,7 +1105,9 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                         </div>
                         <div style="display: flex; align-items: center; gap: 8px;">
                             <button class="btn-star-outreach ${isStarred ? 'starred' : ''}" data-id="${item.id}" title="${isStarred ? 'Remove from checklist' : 'Add to checklist'}">
-                                <i class="${isStarred ? 'fa-solid' : 'fa-regular'} fa-star"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="svg-star" style="width: 20px; height: 20px; transition: all 0.2s;">
+                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                </svg>
                             </button>
                             <span class="badge-type investor-badge" style="background: rgba(245, 158, 11, 0.1); color: var(--color-premium); border: 1px solid rgba(245, 158, 11, 0.2);">
                                 INVESTOR
@@ -1133,14 +1137,11 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
                 starBtn.addEventListener("click", (e) => {
                     e.stopPropagation();
                     const added = toggleStarId(item.id);
-                    const icon = starBtn.querySelector("i");
                     if (added) {
-                        icon.className = "fa-solid fa-star";
                         starBtn.classList.add("starred");
                         starBtn.title = "Remove from checklist";
                         showNotification("Added to Outreach Checklist!");
                     } else {
-                        icon.className = "fa-regular fa-star";
                         starBtn.classList.remove("starred");
                         starBtn.title = "Add to checklist";
                         showNotification("Removed from checklist.");
