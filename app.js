@@ -2148,7 +2148,7 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
     // ==========================================
     // FEEDBACK MODAL WIDGET
     // ==========================================
-    const FORMSPREE_FORM_ID = "xknargbo"; // Replace with your Formspree form ID if needed
+    const FORMSPREE_FORM_ID = "mdarqdrk"; // Replace with your Formspree form ID if needed
 
     const feedbackFab = document.getElementById("feedback-fab");
     const feedbackModal = document.getElementById("feedback-modal");
