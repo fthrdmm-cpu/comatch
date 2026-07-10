@@ -2146,6 +2146,121 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
     }
 
     // ==========================================
+    // FEEDBACK MODAL WIDGET
+    // ==========================================
+    const FORMSPREE_FORM_ID = "xknargbo"; // Replace with your Formspree form ID if needed
+
+    const feedbackFab = document.getElementById("feedback-fab");
+    const feedbackModal = document.getElementById("feedback-modal");
+    const closeFeedbackModalBtn = document.getElementById("close-feedback-modal");
+    const feedbackForm = document.getElementById("feedback-form");
+    const feedbackErrBox = document.getElementById("feedback-form-error");
+    const feedbackSuccessBox = document.getElementById("feedback-form-success");
+    const feedbackSubmitBtn = document.getElementById("submit-feedback-btn");
+
+    if (feedbackFab && feedbackModal && closeFeedbackModalBtn) {
+        feedbackFab.addEventListener("click", () => {
+            if (feedbackForm) feedbackForm.reset();
+            if (feedbackErrBox) feedbackErrBox.style.display = "none";
+            if (feedbackSuccessBox) feedbackSuccessBox.style.display = "none";
+            openModal(feedbackModal);
+        });
+
+        closeFeedbackModalBtn.addEventListener("click", () => {
+            closeModal(feedbackModal);
+        });
+
+        // Close on background click
+        feedbackModal.addEventListener("click", (e) => {
+            if (e.target === feedbackModal) {
+                closeModal(feedbackModal);
+            }
+        });
+    }
+
+    if (feedbackForm) {
+        feedbackForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            
+            if (feedbackErrBox) feedbackErrBox.style.display = "none";
+            if (feedbackSuccessBox) feedbackSuccessBox.style.display = "none";
+            
+            const categoryInput = document.querySelector('input[name="feedback-category"]:checked');
+            const category = categoryInput ? categoryInput.value : "other";
+            const message = document.getElementById("feedback-message").value.trim();
+            const email = document.getElementById("feedback-email").value.trim();
+            
+            if (!message) {
+                if (feedbackErrBox) {
+                    feedbackErrBox.textContent = "[-] Message details are required.";
+                    feedbackErrBox.style.display = "block";
+                }
+                return;
+            }
+            
+            if (feedbackSubmitBtn) {
+                feedbackSubmitBtn.disabled = true;
+                feedbackSubmitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Sending Feedback...';
+            }
+            
+            try {
+                if (!FORMSPREE_FORM_ID || FORMSPREE_FORM_ID === "YOUR_FORM_ID_HERE") {
+                    console.log("[*] Mock submitting feedback (Formspree ID not configured):", { category, message, email });
+                    await new Promise(resolve => setTimeout(resolve, 800));
+                } else {
+                    const response = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Accept": "application/json"
+                        },
+                        body: JSON.stringify({
+                            category,
+                            message,
+                            email,
+                            page: window.location.href,
+                            userAgent: navigator.userAgent
+                        })
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error("Failed to submit feedback. Please try again later.");
+                    }
+                }
+                
+                if (feedbackSuccessBox) {
+                    feedbackSuccessBox.textContent = "🎉 Thank you! Your feedback has been sent successfully.";
+                    feedbackSuccessBox.style.display = "block";
+                }
+                
+                if (feedbackForm) feedbackForm.reset();
+                
+                setTimeout(() => {
+                    closeModal(feedbackModal);
+                }, 2200);
+                
+            } catch (err) {
+                console.error("[-] Feedback submit error:", err);
+                if (feedbackErrBox) {
+                    feedbackErrBox.textContent = `[-] Error: ${err.message || "Failed to submit feedback. Please try again."}`;
+                    feedbackErrBox.style.display = "block";
+                }
+            } finally {
+                if (feedbackSubmitBtn) {
+                    feedbackSubmitBtn.disabled = false;
+                    feedbackSubmitBtn.innerHTML = `
+                        <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle; margin-right: 6px;">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                        Send Feedback
+                    `;
+                }
+            }
+        });
+    }
+
+    // ==========================================
     // SEO URL ROUTING (Option D)
     // ==========================================
     function checkUrlRouting() {
