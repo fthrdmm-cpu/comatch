@@ -2554,6 +2554,111 @@ const BRANDS_DATA = [
         "Frame your proposed content around solving common infrastructure challenges (e.g., 'solving multi-cloud complexity with Terraform,' 'enhancing security with Vault') rather than just product reviews."
       ]
     }
+  },
+  {
+    "id": "datadog",
+    "name": "Datadog",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "press@datadoghq.com",
+    "contactForm": "https://www.datadoghq.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=datadoghq.com",
+    "dna": {
+      "requirements": "Reach to developers, DevOps, SREs; high-quality, technical content; alignment with monitoring, security, observability topics; strong engagement metrics.",
+      "dealStructure": "Flat payout for podcast ads, newsletter sponsorships, conference booths; potential for co-marketing and content collaboration.",
+      "pitchHelper": "Subject: Collaboration Opportunity: [Your Podcast/Newsletter Name] x Datadog\n\nDear Datadog Team,\n\nMy name is [Your Name] and I host/publish [Your Podcast/Newsletter Name], reaching [Your Audience Size] engaged [developers/DevOps engineers/SREs] who are deeply invested in [relevant tech topics like observability, cloud infrastructure, performance monitoring].\n\nI've been a long-time admirer of Datadog's comprehensive monitoring and analytics platform, and I believe my audience would greatly benefit from understanding how Datadog can enhance their workflows and system reliability.\n\nI'd like to explore a potential sponsorship where we could feature Datadog through [e.g., dedicated ad reads, sponsored segments, a deep-dive article]. We consistently see strong engagement with [mention a metric, e.g., 5-star reviews, high open rates, specific episode downloads].\n\nWould you be open to a brief chat to discuss how we could introduce Datadog to our highly relevant audience? I've attached our media kit for your review.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Frame the subject line to highlight the value to Datadog's specific target (developers, SREs), e.g., 'Reach 50k DevOps Professionals: [Your Brand] x Datadog.'",
+        "Clearly state your technical audience alignment and how your content directly relates to observability, monitoring, or cloud infrastructure in the first two sentences to pass relevance filters.",
+        "Include a concise, direct link to your media kit or a prominent piece of content relevant to their audience early in the email, proving expertise and audience quality without clutter."
+      ]
+    }
+  },
+  {
+    "id": "netlify",
+    "name": "Netlify",
+    "type": "brand",
+    "category": "Hosting",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "community@netlify.com",
+    "contactForm": "https://www.netlify.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=netlify.com",
+    "dna": {
+      "requirements": "Focus on front-end development, Jamstack, modern web technologies; active developer community engagement; high-quality tutorials, demos, or technical discussions.",
+      "dealStructure": "Flat payout for podcast/newsletter ads, free Netlify credits/accounts, co-promotion, event sponsorships, potential for affiliate revenue.",
+      "pitchHelper": "Subject: Empowering Web Devs: Partnership with [Your Name/Brand] & Netlify\n\nHi Netlify Team,\n\nI'm [Your Name], a [developer/content creator/podcast host] focused on [front-end development/Jamstack/modern web technologies]. My platform, [Your Website/Podcast/Newsletter Name], reaches [Your Audience Size] active web developers and designers who are always looking for efficient ways to build and deploy.\n\nNetlify's platform is a cornerstone for modern web development, and I frequently recommend it to my audience. I believe a partnership could be incredibly valuable, allowing us to showcase Netlify's benefits through [e.g., a dedicated tutorial, a sponsored segment on the podcast, a featured spot in my newsletter].\n\nWe have a strong track record of engaging our audience with relevant tools and technologies, as seen by [mention a specific metric like subscriber growth, engagement rate, or project success stories].\n\nWould you be interested in exploring how we can collaborate to reach more developers passionate about building on the modern web? I’ve attached our audience demographics and collaboration options.\n\nBest regards,\n[Your Name]\n[Your Link]",
+      "pitchTips": [
+        "Emphasize keywords like 'Jamstack,' 'front-end,' 'modern web dev' in your subject line and opening to align with Netlify's core messaging.",
+        "Provide a clear example of existing content where you've organically discussed or used Netlify (or similar tools) to demonstrate genuine audience fit.",
+        "Suggest a specific, low-commitment initial collaboration idea (e.g., a single newsletter mention or a quick review) rather than a large, complex campaign, making it easier for them to say 'yes' to a test."
+      ]
+    }
+  },
+  {
+    "id": "calendly",
+    "name": "Calendly",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Affiliate / Referral",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "affiliates@calendly.com",
+    "contactForm": "https://calendly.com/affiliates",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=calendly.com",
+    "dna": {
+      "requirements": "Audience of professionals, entrepreneurs, sales teams, small businesses; focus on productivity, business growth, remote work; clear demonstration of Calendly's value proposition.",
+      "dealStructure": "Affiliate commissions on sign-ups/subscriptions, flat fee for sponsored content (podcasts, videos, newsletters), co-marketing opportunities.",
+      "pitchHelper": "Subject: Boost Productivity for [Your Audience Niche] with Calendly x [Your Brand]\n\nHello Calendly Team,\n\nMy name is [Your Name], and I create content for [Your Audience Niche, e.g., entrepreneurs, remote teams, sales professionals] through my [Podcast/Newsletter/Blog Name] which reaches [Your Audience Size] engaged subscribers/listeners. My focus is on [mention relevant topics like productivity, business efficiency, streamlined workflows].\n\nI've personally found Calendly indispensable for managing my scheduling, and I believe my audience would greatly benefit from its simplicity and power. I'd love to explore a partnership to highlight how Calendly can transform their scheduling process.\n\nWe could collaborate on [e.g., a sponsored review, an integrated ad segment, a dedicated article on efficient meeting booking]. Our audience consistently responds well to tools that offer clear ROI for their business.\n\nAre you currently seeking new content creators to partner with, especially those reaching [Your Audience Niche]? I've attached our media kit with audience insights and engagement statistics for your review.\n\nLooking forward to hearing from you.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Directly mention 'productivity,' 'scheduling,' or 'time management' in the subject line to immediately signal relevance to Calendly's core offering.",
+        "Briefly share a personal anecdote about how you use Calendly and how it solves a problem for you, making the pitch more authentic and less like generic spam.",
+        "Suggest focusing on a specific use case that resonates with their target market (e.g., 'streamlining sales calls,' 'easy client bookings') rather than a general product promotion."
+      ]
+    }
+  },
+  {
+    "id": "twilio",
+    "name": "Twilio",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "pr@twilio.com",
+    "contactForm": "https://www.twilio.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=twilio.com",
+    "dna": {
+      "requirements": "Highly technical audience (developers, engineers), focus on communications APIs, cloud infrastructure, specific use cases (SMS, voice, video, email); high-quality technical content (tutorials, code examples, project builds).",
+      "dealStructure": "Flat payout for technical podcast ads, blog sponsorships, hackathon prizes/sponsorships, free API credits for community projects.",
+      "pitchHelper": "Subject: Integrating Twilio into [Your Platform/Content Focus] for [Your Audience]\n\nDear Twilio Developer Relations Team,\n\nMy name is [Your Name], and I'm a [developer/educator/content creator] specializing in [relevant tech stack/area, e.g., web development with Python, building scalable applications]. My platform, [Your Blog/YouTube Channel/Podcast], reaches [Your Audience Size] engaged developers who are actively building and integrating powerful APIs into their projects.\n\nTwilio's APIs are fundamental to modern communication infrastructure, and I frequently see my audience seeking robust solutions for [mention specific Twilio use case, e.g., SMS notifications, in-app chat, programmable voice]. I believe a collaboration would be highly valuable, allowing us to demonstrate Twilio's capabilities through [e.g., a practical coding tutorial, a series on building communication features, a sponsored discussion on its impact].\n\nWe have a proven ability to deliver high-quality, technical content that resonates deeply with our developer audience, resulting in [mention a metric, e.g., high tutorial completion rates, active community discussions].\n\nWould you be interested in exploring a partnership to showcase Twilio to our dedicated developer community? I've attached a link to our past work and audience demographics.\n\nBest regards,\n[Your Name]\n[Your Website/GitHub/Social Link]",
+      "pitchTips": [
+        "Use technical jargon (e.g., 'programmable APIs,' 'communications infrastructure,' 'event-driven architectures') in the subject and opening to signal you're speaking the language of their developer audience.",
+        "Pitch a specific, technical project idea involving Twilio (e.g., 'building a serverless SMS bot,' 'integrating Twilio Video into a React app') to show you understand their product deeply.",
+        "Include a link to your GitHub profile or a relevant technical article you've written, establishing your credibility as a developer/technical creator."
+      ]
+    }
+  },
+  {
+    "id": "plaid",
+    "name": "Plaid",
+    "type": "brand",
+    "category": "Fintech",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "press@plaid.com",
+    "contactForm": "https://plaid.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=plaid.com",
+    "dna": {
+      "requirements": "Audience interested in fintech, financial APIs, personal finance apps, banking technology; high-quality content that educates or demonstrates practical applications of financial data/APIs; strong ethical and professional standards.",
+      "dealStructure": "Flat payout for sponsored articles/podcasts, event sponsorships, co-marketing efforts, potential for API access for specific developer projects.",
+      "pitchHelper": "Subject: Exploring Fintech Innovation: Plaid x [Your Podcast/Newsletter Name]\n\nDear Plaid Partnerships Team,\n\nMy name is [Your Name], and I host/publish [Your Podcast/Newsletter Name], a platform dedicated to [fintech innovation/developer insights into financial APIs/personal finance technology]. We reach [Your Audience Size] highly engaged [developers, fintech founders, financial professionals] who are keenly interested in the future of finance and the tools powering it.\n\nPlaid's role in democratizing financial data access is truly transformative, and I believe my audience would greatly benefit from understanding how your APIs are enabling new financial products and services.\n\nI'd like to propose a potential collaboration where we could feature Plaid through [e.g., a deep-dive interview with a Plaid expert, a sponsored segment discussing API integration, an article on building a fintech product with Plaid]. Our content consistently achieves [mention a relevant metric, e.g., high retention rates, strong engagement on financial topics].\n\nWould you be open to a brief discussion to explore how we could educate and inspire our audience about Plaid's impact? Our media kit, including audience demographics, is available for your review.\n\nSincerely,\n[Your Name]\n[Your Website/LinkedIn Profile]",
+      "pitchTips": [
+        "Use 'Fintech,' 'financial APIs,' or 'open banking' in the subject line to immediately categorize your pitch for a company like Plaid.",
+        "Clearly articulate your understanding of Plaid's specific value proposition (e.g., 'securely connecting bank accounts,' 'powering financial apps') early in the email to demonstrate domain knowledge.",
+        "Suggest interviewing one of their engineers or product managers rather than just a flat ad, as this indicates a deeper content play that aligns with their thought leadership goals."
+      ]
+    }
   }
 ];
 

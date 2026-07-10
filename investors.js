@@ -397,6 +397,116 @@ const INVESTORS_DATA = [
         "**Concise & Action-Oriented:** Keep your email to the point, ideally readable in under 60 seconds. Include a clear call to action ('request a 15-minute call') and ensure your pitch deck link is easily accessible and not buried, signalling efficient communication rather than a mass-market email."
       ]
     }
+  },
+  {
+    "id": "localglobe",
+    "name": "LocalGlobe",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, AI, Fintech, Deep Tech, Consumer, Marketplaces",
+    "ticketSize": "£250,000 - £1,000,000",
+    "contactEmail": "info@localglobe.com",
+    "contactForm": "https://localglobe.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=localglobe.com",
+    "dna": {
+      "requirements": "Strong founding team, clear vision, large market potential, evidence of product-market fit or a clear path to achieving it. Focus on building category-defining companies from inception, often based in or looking to expand to the UK/Europe.",
+      "dealStructure": "Standard equity investment for pre-seed/seed rounds. Typically takes 10-20% dilution for seed-stage investments.",
+      "pitchHelper": "Subject: [Company Name] | [Brief Value Proposition] | LocalGlobe\n\nHi [Investor Name/Team],\n\nI’m writing from [Company Name] ([Website URL]), where we are building [describe your company in one concise sentence, e.g., \"the AI-powered platform revolutionizing X for Y\"].\n\nWe’ve observed [the problem you're solving] in the [target market] space, which affects [target customer] by [negative impact]. Our [product/solution] addresses this by [how it solves the problem uniquely], enabling [key benefit].\n\nWe've already achieved [1-2 key metrics, e.g., \"X customers onboarded,\" \"Y% month-over-month growth,\" \"Z MRR,\" \"successful pilot with X enterprise\"]. We believe our [unique technology/team's expertise] positions us strongly to capture a significant share of the [market size] opportunity.\n\nWe are currently raising a [Pre-Seed/Seed] round of [amount] to [achieve key milestones, e.g., \"scale our engineering team,\" \"expand into new markets,\" \"further develop our AI models\"]. We admire LocalGlobe's early-stage focus and your track record with [mention a relevant portfolio company if possible, or their general thesis around a sector].\n\nWould you be open to a brief 15-minute call to discuss how [Company Name] fits your investment thesis?\n\nThanks,\n[Your Name]\n[Your Title]\n[Your LinkedIn]\n[Your Contact Number]",
+      "pitchTips": [
+        "Personalize Beyond Name: Reference specific LocalGlobe investments, articles by their partners, or their stated investment thesis on their website. Show you've done your homework beyond a mail merge.",
+        "Concise & Clear Subject Line: Keep it under 50 characters, clearly stating your company name and core value. Avoid buzzwords like \"disruptive\" without immediate context.",
+        "Warm Intro (Preferred): While direct emails are possible, LocalGlobe highly values warm introductions from trusted founders, angels, or LPs. If possible, seek an intro first."
+      ]
+    }
+  },
+  {
+    "id": "atomico",
+    "name": "Atomico",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "Deep Tech, SaaS, Fintech, AI, Marketplaces, Gaming, Health (focus on ambitious European tech)",
+    "ticketSize": "$1,000,000 - $20,000,000 (first cheque)",
+    "contactEmail": "info@atomico.com",
+    "contactForm": "https://atomico.com/contact-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=atomico.com",
+    "dna": {
+      "requirements": "European founder/company, significant market opportunity, strong technical founders, mission-driven approach, often with early product and/or customer validation. Seeking exceptional founders with bold visions for the future.",
+      "dealStructure": "Standard equity investment. Atomico often acts as the lead investor in Seed and Series A rounds.",
+      "pitchHelper": "Subject: [Company Name] - Revolutionizing [Sector] with [Key Technology] | Seed Investment\n\nDear Atomico Team,\n\nI’m [Your Name], CEO of [Company Name] ([Website URL]), and we are building [a concise description of your company, e.g., \"the intelligent platform leveraging AI to automate complex financial compliance for enterprises\"].\n\nWe're tackling [the significant problem] within the [target European market], a challenge exacerbated by [current inefficiencies/lack of solutions]. Our [product/solution] uniquely addresses this by [explain core differentiation and technology], resulting in [quantifiable benefits for customers, e.g., \"a 40% reduction in processing time and 20% cost savings\"].\n\nCurrently, we have [1-2 impressive metrics, e.g., \"secured X LOIs from enterprise clients,\" \"achieved Y MRR with Z% MoM growth,\" \"a successful beta with X users and glowing feedback\"]. Our team, based in [City, Country], brings deep expertise in [relevant areas], making us uniquely suited to execute this vision.\n\nWe are seeking Seed funding of [amount] to [specific use of funds and milestones, e.g., \"expand our engineering team to accelerate product development and secure first commercial contracts\"]. Atomico's commitment to supporting ambitious European deep tech startups, exemplified by your investment in [mention a relevant portfolio company if possible], deeply resonates with our mission.\n\nWould you be available for a brief call to explore how [Company Name] aligns with Atomico's investment focus?\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company]\n[Contact Information]",
+      "pitchTips": [
+        "Hyper-Specific European Angle: Highlight your European base and market focus explicitly. Atomico is very focused on European tech innovation.",
+        "Strong Tech & Mission Focus: Emphasize the deep tech aspect, your intellectual property, and the grand vision or 'mission' behind your company, as this aligns with Atomico's stated criteria.",
+        "Concise & Metric-Driven: Get straight to your most impressive metrics and traction. Atomico receives many pitches; clear, data-backed statements cut through the noise."
+      ]
+    }
+  },
+  {
+    "id": "kima-ventures",
+    "name": "Kima Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, AI, Fintech, Deep Tech, Consumer, Marketplaces (broad focus, aim to be first money in)",
+    "ticketSize": "€100,000 - €300,000",
+    "contactEmail": "pitch@kimaventures.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=kimaventures.com",
+    "dna": {
+      "requirements": "Strong founding team, global ambition, early traction (even an MVP or strong idea), clear problem/solution. Known for investing fast, globally, and at pre-seed/seed, seeking strong teams with big ambitions.",
+      "dealStructure": "Often convertible notes or simple equity. Aim for speed and founder-friendliness with typical seed-stage dilution.",
+      "pitchHelper": "Subject: [Company Name] | [One-liner] | Kima Ventures Pitch\n\nHi Kima Team,\n\nI’m [Your Name], co-founder of [Company Name] ([Website URL]), and we are developing [a concise description, e.g., \"an AI-powered SaaS platform that automates lead qualification for B2B sales teams\"].\n\nWe're solving [the specific problem] for [target audience], who currently struggle with [current pain point/inefficiency]. Our [product/solution] offers a [unique benefit/approach], allowing them to [key outcome, e.g., \"save 20 hours per week on manual prospecting and increase conversion rates by 15%\"].\n\nSince launching our [MVP/beta] [X weeks/months ago], we've achieved [1-2 critical metrics, e.g., \"X active users,\" \"Y% weekly growth,\" \"Z customer testimonials,\" \"secured X pilots\"]. We have a clear roadmap to [next milestone, e.g., \"reach €10k MRR by Q3\" or \"expand into X new markets\"].\n\nWe are currently raising a Pre-Seed round of [amount] and are particularly drawn to Kima Ventures' speed, global outlook, and founder-friendly approach, having seen your early support for companies like [mention a relevant Kima portfolio company if applicable, or their general investment philosophy].\n\nWe would appreciate the opportunity for a quick chat to elaborate on our vision. Please find our deck attached for your review.\n\nThanks,\n[Your Name]\n[Your Title]\n[Your LinkedIn]",
+      "pitchTips": [
+        "Direct & Concise to `pitch@`: Use their specified pitch email. Keep the email extremely short and to the point. Kima is known for reviewing pitches quickly.",
+        "Focus on Traction & Vision: Clearly articulate your current traction, even if early, and your global ambition. Kima appreciates founders who can move fast and think big.",
+        "Attach a Deck: Include a concise, well-designed pitch deck as an attachment (or a link to one) with your initial email to streamline their review process."
+      ]
+    }
+  },
+  {
+    "id": "cherry-ventures",
+    "name": "Cherry Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed / Series A",
+    "sectors": "SaaS, AI, Fintech, Deep Tech, Consumer, Marketplaces (European focus)",
+    "ticketSize": "€300,000 - €1,000,000 (Pre-Seed/Seed)",
+    "contactEmail": "hello@cherry.vc",
+    "contactForm": "https://www.cherry.vc/pitch-us",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=cherry.vc",
+    "dna": {
+      "requirements": "Exceptional founders, clear vision for market leadership, often technical or product-focused teams, strong initial insights or early traction. Primarily focused on European founders at the earliest stage.",
+      "dealStructure": "Standard equity investment for early-stage companies, supporting founders from pre-seed through series A and beyond.",
+      "pitchHelper": "Subject: [Company Name] | [Concise Problem Solved] | Pre-Seed/Seed Pitch for Cherry Ventures\n\nDear Cherry Ventures Team,\n\nI’m [Your Name], CEO & Co-founder of [Company Name] ([Website URL]), based in [City, Europe]. We are developing [describe your company in one sentence, e.g., \"a Deep Tech platform utilizing quantum-inspired algorithms to optimize logistics for complex supply chains\"].\n\nWe are addressing the critical challenge of [specific problem] for [target industry/customer], which costs them [quantifiable negative impact]. Our proprietary [technology/solution] provides [unique advantage/differentiation], leading to [key benefits, e.g., \"a 30% reduction in operational costs and 15% improvement in efficiency\"].\n\nWe've made significant progress since our inception [X months ago], including [1-2 key achievements, e.g., \"securing our first pilot with a Fortune 500 company,\" \"developing a functional MVP with early user validation,\" \"assembling a world-class team with X years of combined experience in Y\"].\n\nWe are currently raising a Pre-Seed round of [amount] to [achieve next milestones, e.g., \"expand our R&D team,\" \"secure 3 additional pilot customers,\" \"file key patents\"]. Cherry Ventures' reputation for backing ambitious European founders at the very beginning, particularly in deep tech and B2B SaaS, makes you an ideal partner. Your support for [mention a relevant portfolio company if possible] is particularly inspiring.\n\nWould you be open to a brief introductory call to discuss our vision?\n\nSincerely,\n[Your Name]\n[Your Title]\n[Your LinkedIn]\n[Contact Number]",
+      "pitchTips": [
+        "Highlight European Origin & Scale: Clearly state your European base and emphasize the potential for global scale from day one, aligning with Cherry's investment thesis for European champions.",
+        "Focus on Founder Quality & Deep Insights: Emphasize your team's unique expertise, the depth of your understanding of the problem, and your \"bold vision.\" Cherry highly values the founders themselves.",
+        "Refer to Specific Cherry Partners/Thesis: If you can find a specific partner whose investment focus aligns with your company or an article/podcast where they discuss a relevant thesis, reference it directly in your email to show targeted research."
+      ]
+    }
+  },
+  {
+    "id": "index-ventures",
+    "name": "Index Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A / Growth",
+    "sectors": "SaaS, AI, Fintech, Deep Tech, Consumer, Gaming, Healthcare (global focus)",
+    "ticketSize": "$500,000 - $3,000,000+ (for Seed)",
+    "contactEmail": "info@indexventures.com",
+    "contactForm": "https://www.indexventures.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=indexventures.com",
+    "dna": {
+      "requirements": "Ambitious founders, large market opportunity, often disruptive technology or business model, early traction or exceptional team. Strong focus on companies with global potential.",
+      "dealStructure": "Standard equity investment. Index Ventures is highly competitive and often leads seed and later-stage rounds.",
+      "pitchHelper": "Subject: [Company Name] | [One-sentence problem/solution] | Seed Opportunity\n\nDear Index Ventures Team,\n\nI'm [Your Name], Co-founder & CEO of [Company Name] ([Website URL]), and we are pioneering [a concise description of your company, e.g., \"an AI-driven platform transforming supply chain resilience for global manufacturers\"].\n\nWe are tackling the immense challenge of [specific problem] within the [target global market], an issue that leads to [quantifiable negative impact, e.g., \"$X billion in losses annually\"]. Our [proprietary technology/innovative approach] offers a unique solution by [how it solves the problem], providing [key benefits, e.g., \"real-time risk prediction and automated mitigation strategies\"].\n\nSince our inception, we have [1-2 impressive metrics, e.g., \"secured X LOIs with tier-1 enterprises,\" \"achieved Y% MoM growth on our pilot program,\" \"built an exceptional team with X relevant industry experience\"]. We believe our scalable technology and clear market entry strategy position us to become a leader in this [market size] opportunity.\n\nWe are raising a Seed round of [amount] to [achieve key milestones, e.g., \"expand our R&D efforts,\" \"scale our go-to-market team,\" \"secure X paying customers\"]. Index Ventures' unparalleled track record in backing category-defining companies from their earliest stages, particularly in the enterprise SaaS and AI space, makes you an ideal partner. We especially admire your investment in [mention a relevant Index portfolio company].\n\nWhile we understand Index often prefers warm introductions, we felt compelled to share our vision directly given the strong alignment. Would you be open to a brief 15-minute introductory call?\n\nThank you,\n[Your Name]\n[Your Title]\n[Your Company]\n[Contact Information]",
+      "pitchTips": [
+        "Acknowledge Warm Intro Preference: Explicitly mention you understand they prefer warm intros, but make a strong case for why your direct outreach is warranted due to clear alignment. This shows respect for their process while still making your pitch.",
+        "Focus on Global Scale & Disruptive Potential: Index seeks global category leaders. Emphasize the massive market opportunity, your unique disruption, and clear path to international expansion.",
+        "High-Quality, Concise Deck/Summary: Given their volume, any attached material (or link to a deck) must be exceptionally polished, visual, and convey the core story quickly. Avoid overly dense text."
+      ]
+    }
   }
 ];
 
