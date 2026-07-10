@@ -52,7 +52,7 @@ def extract_emails(html):
         "mycompany.com", "company.com", "company.co", "website.com", "yourwebsite.com"
     }
     blocked_extensions = {".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".mp4", ".css", ".js", ".ico"}
-    blocked_prefixes = {"you", "your-email", "username", "placeholder", "someone", "yourname", "first.last", "email", "dummy", "test", "your"}
+    blocked_prefixes = {"you", "your-email", "username", "placeholder", "someone", "yourname", "first.last", "email", "dummy", "test", "your", "legal", "privacy", "abuse", "security", "terms", "jobs", "careers", "billing", "invoice", "dpo", "compliance", "noreply", "no-reply"}
     
     for email in emails:
         email = email.lower().strip()
