@@ -1,4 +1,17 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://comatch.org/sitemap.xml
+# Explicitly invite OpenAI and AI search crawlers to index our directory
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://www.comatch.org/sitemap.xml
