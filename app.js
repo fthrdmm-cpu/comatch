@@ -1509,8 +1509,18 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks like
     }
 
     function openModal(modal) {
+        if (!modal) return;
         modal.classList.add("open");
         document.body.style.overflow = "hidden";
+        
+        // Auto-initialize Pitch Roaster dropdown and tabs whenever matchmaker modal is opened
+        if (modal === matchmakerModal) {
+            if (typeof populateRoasterDropdown === "function") {
+                populateRoasterDropdown();
+            }
+            const tabMatchmaker = document.getElementById("tab-matchmaker");
+            if (tabMatchmaker) tabMatchmaker.click();
+        }
     }
 
     function closeModal(modal) {
@@ -2533,13 +2543,36 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
 
     if (btnRoasterCopy && roasterRewriteText) {
         btnRoasterCopy.addEventListener("click", () => {
-            roasterRewriteText.select();
-            document.execCommand("copy");
-            const originalBtn = btnRoasterCopy.innerHTML;
-            btnRoasterCopy.innerHTML = `<i class="fa-solid fa-check"></i> Copied!`;
-            setTimeout(() => {
-                btnRoasterCopy.innerHTML = originalBtn;
-            }, 2000);
+            const textToCopy = roasterRewriteText.value;
+            if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    const originalBtn = btnRoasterCopy.innerHTML;
+                    btnRoasterCopy.innerHTML = `<i class="fa-solid fa-check"></i> Copied!`;
+                    setTimeout(() => {
+                        btnRoasterCopy.innerHTML = originalBtn;
+                    }, 2000);
+                }).catch(err => {
+                    console.error("Failed to copy via navigator.clipboard: ", err);
+                    fallbackCopyText();
+                });
+            } else {
+                fallbackCopyText();
+            }
+
+            function fallbackCopyText() {
+                roasterRewriteText.select();
+                try {
+                    document.execCommand("copy");
+                    const originalBtn = btnRoasterCopy.innerHTML;
+                    btnRoasterCopy.innerHTML = `<i class="fa-solid fa-check"></i> Copied!`;
+                    setTimeout(() => {
+                        btnRoasterCopy.innerHTML = originalBtn;
+                    }, 2000);
+                } catch (err) {
+                    console.error("Fallback copy failed: ", err);
+                }
+            }
+            
             trackGAEvent("pitch_roast_copy");
         });
     }
