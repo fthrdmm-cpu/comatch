@@ -492,6 +492,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if (matchmakerDesc) matchmakerDesc.value = "";
             if (matchmakerResults) matchmakerResults.innerHTML = "";
             if (matchmakerResultsTitle) matchmakerResultsTitle.style.display = "none";
+            populateRoasterDropdown();
+            const tabMatchmaker = document.getElementById("tab-matchmaker");
+            if (tabMatchmaker) tabMatchmaker.click();
         });
     }
     
@@ -2367,4 +2370,170 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
 
     // Run router check after a short delay to ensure assets are fully loaded and rendered
     setTimeout(checkUrlRouting, 400);
+
+    // ==========================================
+    // PITCH ROASTER & OPTIMIZER CONTROLLER
+    // ==========================================
+    function populateRoasterDropdown() {
+        const select = document.getElementById("roaster-target");
+        if (!select) return;
+        
+        select.innerHTML = '<option value="">-- Choose a Brand or VC Fund --</option>';
+        
+        // Merge and sort alphabetically
+        const allItems = [];
+        if (typeof sponsorsData !== 'undefined') {
+            sponsorsData.forEach(s => allItems.push({ id: s.id, name: s.name, type: "Brand" }));
+        }
+        if (typeof investorsData !== 'undefined') {
+            investorsData.forEach(i => allItems.push({ id: i.id, name: i.name, type: "VC Fund" }));
+        }
+        
+        allItems.sort((a, b) => a.name.localeCompare(b.name));
+        
+        allItems.forEach(item => {
+            const opt = document.createElement("option");
+            opt.value = item.id;
+            opt.textContent = `${item.name} (${item.type})`;
+            select.appendChild(opt);
+        });
+    }
+
+    const tabMatchmaker = document.getElementById("tab-matchmaker");
+    const tabPitchRoaster = document.getElementById("tab-pitchroaster");
+    const containerMatchmaker = document.getElementById("container-matchmaker");
+    const containerPitchRoaster = document.getElementById("container-pitchroaster");
+    
+    const roasterResultsContainer = document.getElementById("roaster-results-container");
+    const roasterRoastText = document.getElementById("roaster-roast-text");
+    const roasterRewriteText = document.getElementById("roaster-rewrite-text");
+    
+    const btnRoasterSubmit = document.getElementById("btn-roaster-submit");
+    const btnRoasterCopy = document.getElementById("btn-roaster-copy");
+    const btnRoasterShare = document.getElementById("btn-roaster-share");
+
+    if (tabMatchmaker && tabPitchRoaster) {
+        tabMatchmaker.addEventListener("click", () => {
+            tabMatchmaker.style.background = "var(--color-primary)";
+            tabMatchmaker.style.color = "#fff";
+            tabMatchmaker.style.fontWeight = "bold";
+            
+            tabPitchRoaster.style.background = "transparent";
+            tabPitchRoaster.style.color = "var(--text-secondary)";
+            tabPitchRoaster.style.fontWeight = "600";
+            
+            if (containerMatchmaker) containerMatchmaker.style.display = "block";
+            if (containerPitchRoaster) containerPitchRoaster.style.display = "none";
+            if (roasterResultsContainer) roasterResultsContainer.style.display = "none";
+            
+            const matchmakerResultsTitle = document.getElementById("matchmaker-results-title");
+            const matchmakerResults = document.getElementById("matchmaker-results");
+            if (matchmakerResultsTitle) matchmakerResultsTitle.style.display = "none";
+            if (matchmakerResults) matchmakerResults.style.display = "flex";
+        });
+
+        tabPitchRoaster.addEventListener("click", () => {
+            tabPitchRoaster.style.background = "linear-gradient(135deg, #f97316, #ea580c)";
+            tabPitchRoaster.style.color = "#fff";
+            tabPitchRoaster.style.fontWeight = "bold";
+            
+            tabMatchmaker.style.background = "transparent";
+            tabMatchmaker.style.color = "var(--text-secondary)";
+            tabMatchmaker.style.fontWeight = "600";
+            
+            if (containerMatchmaker) containerMatchmaker.style.display = "none";
+            if (containerPitchRoaster) containerPitchRoaster.style.display = "block";
+            
+            const matchmakerResultsTitle = document.getElementById("matchmaker-results-title");
+            const matchmakerResults = document.getElementById("matchmaker-results");
+            if (matchmakerResultsTitle) matchmakerResultsTitle.style.display = "none";
+            if (matchmakerResults) matchmakerResults.style.display = "none";
+            if (roasterResultsContainer) roasterResultsContainer.style.display = "none";
+            
+            populateRoasterDropdown();
+        });
+    }
+
+    if (btnRoasterSubmit) {
+        btnRoasterSubmit.addEventListener("click", async () => {
+            const pitch = document.getElementById("roaster-pitch").value.trim();
+            const targetId = document.getElementById("roaster-target").value;
+            const matchmakerLoading = document.getElementById("matchmaker-loading");
+            const matchmakerLoadingText = document.getElementById("matchmaker-loading-text");
+
+            if (!targetId) {
+                showNotification("Please select a target partner brand or VC fund.", true);
+                return;
+            }
+            if (pitch.length < 10) {
+                showNotification("Please write a pitch draft (minimum 10 characters).", true);
+                return;
+            }
+
+            btnRoasterSubmit.disabled = true;
+            const originalBtn = btnRoasterSubmit.innerHTML;
+            btnRoasterSubmit.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Roasting Pitch...`;
+            
+            if (matchmakerLoadingText) matchmakerLoadingText.textContent = "AI is brutally roasting your pitch draft...";
+            if (matchmakerLoading) matchmakerLoading.style.display = "block";
+            if (roasterResultsContainer) roasterResultsContainer.style.display = "none";
+
+            try {
+                const res = await fetch(`${API_BASE_URL}/api/roast`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ pitch, targetId })
+                });
+
+                if (!res.ok) {
+                    const errData = await res.json();
+                    throw new Error(errData.error || "Roast failed. Please try again.");
+                }
+
+                const data = await res.json();
+                
+                if (roasterRoastText) roasterRoastText.textContent = data.roast || "No critique generated.";
+                if (roasterRewriteText) roasterRewriteText.value = data.rewrite || "No template generated.";
+                
+                if (roasterResultsContainer) roasterResultsContainer.style.display = "block";
+                
+                trackGAEvent("pitch_roast", { targetId: targetId });
+
+            } catch (err) {
+                console.error("[-] Roast failed:", err);
+                showNotification(`Error: ${err.message || "Failed to roast pitch."}`, true);
+            } finally {
+                btnRoasterSubmit.disabled = false;
+                btnRoasterSubmit.innerHTML = originalBtn;
+                if (matchmakerLoading) matchmakerLoading.style.display = "none";
+            }
+        });
+    }
+
+    if (btnRoasterCopy && roasterRewriteText) {
+        btnRoasterCopy.addEventListener("click", () => {
+            roasterRewriteText.select();
+            document.execCommand("copy");
+            const originalBtn = btnRoasterCopy.innerHTML;
+            btnRoasterCopy.innerHTML = `<i class="fa-solid fa-check"></i> Copied!`;
+            setTimeout(() => {
+                btnRoasterCopy.innerHTML = originalBtn;
+            }, 2000);
+            trackGAEvent("pitch_roast_copy");
+        });
+    }
+
+    if (btnRoasterShare) {
+        btnRoasterShare.addEventListener("click", () => {
+            const roast = roasterRoastText ? roasterRoastText.textContent : "";
+            const truncatedRoast = roast.length > 100 ? roast.substring(0, 97) + "..." : roast;
+            
+            const tweetText = encodeURIComponent(
+                `My B2B pitch just got brutally roasted by CoMatch AI: "${truncatedRoast}" 😂\n\nBut it re-wrote a killer template. Roast yours free: https://comatch.org/`
+            );
+            const shareUrl = `https://twitter.com/intent/tweet?text=${tweetText}`;
+            window.open(shareUrl, "_blank");
+            trackGAEvent("pitch_roast_share");
+        });
+    }
 });

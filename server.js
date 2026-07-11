@@ -552,6 +552,70 @@ Do not include any other conversational text or wrap the response in markdown co
         return res.status(500).json({ error: "An internal error occurred during AI matching. Please try again later.", details: err.message || err.toString() });
     }
 });
+
+// API: Brutally roast and re-write cold pitch (Generative AI optimization)
+app.post('/api/roast', async (req, res) => {
+    const { pitch, targetId } = req.body;
+
+    if (!pitch || pitch.trim().length < 10) {
+        return res.status(400).json({ error: "Please write a more detailed pitch draft (minimum 10 characters)." });
+    }
+
+    console.log(`[*] AI Pitch Roast request received. Pitch length: ${pitch.length} chars. Target: ${targetId}`);
+
+    const apiKey = process.env.GEMINI_API_KEY;
+    
+    // Fallback: Default witty critique if no API Key is provided
+    if (!apiKey) {
+        console.warn("[-] GEMINI_API_KEY is not defined. Using local fallback for pitch roasting.");
+        return res.json({
+            roast: "🔥 Oh, a pitch with no API Key? Classic bootstrap move. This draft is so generic it reads like a standard cookie policy. You need to focus on what the brand actually gains (distribution, brand alignment) instead of just asking for sponsorships.",
+            rewrite: `Subject: Partnership Proposal: Driving value for ${targetId || 'your team'}\n\nHi Partnerships Team,\n\nI run a B2B platform helping startups find sponsors. I notice your brand targets active SaaS developers. I'd love to discuss a developer-focused integration package that aligns with your Q3 targets.\n\nLet me know if you have 5 minutes to chat next week!\n\nBest,\n[Name]`
+        });
+    }
+
+    try {
+        const ai = new GoogleGenerativeAI(apiKey);
+        const model = ai.getGenerativeModel({ model: 'gemini-2.5-flash' });
+
+        const targetEntity = dbData.find(item => item.id === targetId) || { name: targetId || "Sponsor" };
+
+        const prompt = `You are a brutally honest, sarcastic, and world-class B2B copywriter and startup investor.
+Your task is to analyze the user's pitch draft and provide two things:
+1. "roast": A brutally honest, sarcastic, and funny critique (roast) of their pitch. Tell them why the sponsor (specifically targeting ${targetEntity.name}) or VC will immediately delete this email. Keep it around 3-4 sentences, very witty and spicy, with fire emojis.
+2. "rewrite": A highly professional, optimized, and high-converting cold email template that they should actually send to ${targetEntity.name} instead. Keep it short, personalized, and focused on B2B value exchange.
+
+User's Pitch Draft:
+"${pitch}"
+
+Target Partner Details:
+Name: ${targetEntity.name}
+Category: ${targetEntity.category || 'N/A'}
+Requirements: ${targetEntity.dna?.requirements || 'N/A'}
+
+Return ONLY a raw JSON object matching this schema:
+{
+  "roast": "Brutally honest roast here.",
+  "rewrite": "Optimized cold email rewrite here."
+}
+
+Do not include any other conversational text or wrap the response in markdown code blocks.`;
+
+        const result = await model.generateContent(prompt);
+        let responseText = await result.response.text();
+        
+        responseText = responseText.replace(/```json/gi, '').replace(/```/g, '').trim();
+        const data = JSON.parse(responseText);
+
+        console.log(`[+] AI Pitch Roaster successfully roasted pitch for [${targetEntity.name}].`);
+        return res.json(data);
+
+    } catch (err) {
+        console.error("[-] AI Roaster error:", err);
+        return res.status(500).json({ error: "An internal error occurred during AI roasting. Please try again later.", details: err.message || err.toString() });
+    }
+});
+
 // Report Successful Match Deal Route
 app.post('/api/report-deal', async (req, res) => {
     try {
