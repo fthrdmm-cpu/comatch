@@ -580,22 +580,29 @@ app.post('/api/roast', async (req, res) => {
 
         const targetEntity = dbData.find(item => item.id === targetId) || { name: targetId || "Sponsor" };
 
-        const prompt = `You are a brutally honest, sarcastic, and world-class B2B copywriter and startup investor.
-Your task is to analyze the user's pitch draft and provide two things:
-1. "roast": A brutally honest, sarcastic, and funny critique (roast) of their pitch. Tell them why the sponsor (specifically targeting ${targetEntity.name}) or VC will immediately delete this email. Keep it around 3-4 sentences, very witty and spicy, with fire emojis.
-2. "rewrite": A highly professional, optimized, and high-converting cold email template that they should actually send to ${targetEntity.name} instead. Keep it short, personalized, and focused on B2B value exchange.
-
-User's Pitch Draft:
-"${pitch}"
+        const prompt = `You are a brutally honest, analytical, and sharp B2B copywriter and startup investor.
+Your task is to analyze the user's pitch draft targeting ${targetEntity.name} and provide a diagnostic critique (roast) and a high-converting re-write.
 
 Target Partner Details:
 Name: ${targetEntity.name}
 Category: ${targetEntity.category || 'N/A'}
 Requirements: ${targetEntity.dna?.requirements || 'N/A'}
 
+User's Pitch Draft:
+"${pitch}"
+
+INSTRUCTIONS FOR THE "roast" (Brutally Honest Critique):
+1. Do not use generic, lazy insults. The critique must be brutally honest but highly specific and diagnostic based on the actual draft.
+2. Clearly identify what is missing in the pitch (e.g., lack of B2B value exchange, missing audience stats/demographics, vague call-to-action, lack of personalization for ${targetEntity.name}, or looking like a flat handout request instead of a partnership).
+3. Keep it to 3-4 sentences. Use a sarcastic, sharp, but educational tone. Use fire emojis where appropriate. Point out exactly which sentence or missing piece makes it an immediate "delete" for the partnerships team at ${targetEntity.name}.
+
+INSTRUCTIONS FOR THE "rewrite":
+1. Write a highly professional, optimized, and high-converting cold email template that they should actually send.
+2. Focus on clear value exchange, target audience fit, and a low-friction call-to-action (CTA). Keep it short (under 150 words).
+
 Return ONLY a raw JSON object matching this schema:
 {
-  "roast": "Brutally honest roast here.",
+  "roast": "Sarcastic but highly specific diagnostic roast highlighting actual missing components.",
   "rewrite": "Optimized cold email rewrite here."
 }
 
