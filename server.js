@@ -555,22 +555,29 @@ Do not include any other conversational text or wrap the response in markdown co
 
 // API: Brutally roast and re-write cold pitch (Generative AI optimization)
 app.post('/api/roast', async (req, res) => {
-    const { pitch, targetId } = req.body;
+    const { pitch, targetId, channel = 'Email', tone = 'Brutal' } = req.body;
 
     if (!pitch || pitch.trim().length < 10) {
         return res.status(400).json({ error: "Please write a more detailed pitch draft (minimum 10 characters)." });
     }
 
-    console.log(`[*] AI Pitch Roast request received. Pitch length: ${pitch.length} chars. Target: ${targetId}`);
+    console.log(`[*] AI Pitch Roast request received. Pitch length: ${pitch.length} chars. Target: ${targetId}. Channel: ${channel}. Tone: ${tone}`);
 
     const apiKey = process.env.GEMINI_API_KEY;
     
     // Fallback: Default witty critique if no API Key is provided
     if (!apiKey) {
         console.warn("[-] GEMINI_API_KEY is not defined. Using local fallback for pitch roasting.");
+        const fallbackText = channel === 'LinkedIn' 
+            ? `Hi team, I notice your brand targets active SaaS developers. I'd love to connect to discuss a quick partnership package that aligns with your Q3 targets.`
+            : channel === 'Twitter'
+            ? `Hey, love your developer tools. Do you have 2 minutes to discuss a quick integration for our SaaS audience?`
+            : `Subject: Partnership Proposal: Driving value for ${targetId || 'your team'}\n\nHi Partnerships Team,\n\nI run a B2B platform helping startups find sponsors. I notice your brand targets active SaaS developers. I'd love to discuss a developer-focused integration package that aligns with your Q3 targets.\n\nLet me know if you have 5 minutes to chat next week!\n\nBest,\n[Name]`;
+            
         return res.json({
-            roast: "🔥 Oh, a pitch with no API Key? Classic bootstrap move. This draft is so generic it reads like a standard cookie policy. You need to focus on what the brand actually gains (distribution, brand alignment) instead of just asking for sponsorships.",
-            rewrite: `Subject: Partnership Proposal: Driving value for ${targetId || 'your team'}\n\nHi Partnerships Team,\n\nI run a B2B platform helping startups find sponsors. I notice your brand targets active SaaS developers. I'd love to discuss a developer-focused integration package that aligns with your Q3 targets.\n\nLet me know if you have 5 minutes to chat next week!\n\nBest,\n[Name]`
+            roast: `🔥 Oh, a pitch with no API Key? Classic bootstrap move. This draft is so generic it reads like a standard cookie policy. You need to focus on what the brand actually gains (distribution, brand alignment) instead of just asking for sponsorships.`,
+            rewrite: fallbackText,
+            score: 30
         });
     }
 
@@ -580,7 +587,27 @@ app.post('/api/roast', async (req, res) => {
 
         const targetEntity = dbData.find(item => item.id === targetId) || { name: targetId || "Sponsor" };
 
-        const prompt = `You are a brutally honest, analytical, and sharp B2B copywriter and startup investor.
+        // Tone Instruction builder
+        let toneInstruction = "";
+        if (tone === "Brutal") {
+            toneInstruction = "Make the roast brutally honest, highly sarcastic, and funny. Point out flaws with wit and fire emojis. Let them know exactly why their pitch makes them look like an amateur.";
+        } else if (tone === "Spicy") {
+            toneInstruction = "Make the roast a spicy audit. Point out actual flaws with dry humor and constructive criticism, without being overly cruel but keeping it sharp.";
+        } else {
+            toneInstruction = "Make the critique a highly formal corporate evaluation. Detail why the pitch fails from a B2B ROI and marketing perspective, keeping a professional, serious investor tone.";
+        }
+
+        // Channel Instruction builder
+        let channelInstruction = "";
+        if (channel === "LinkedIn") {
+            channelInstruction = "Write a short, engaging LinkedIn DM template (under 100 words) instead of an email. Keep it punchy, conversational, and direct.";
+        } else if (channel === "Twitter") {
+            channelInstruction = "Write an extremely concise Twitter DM template (under 60 words). No subject lines. Focus on quick interest hook and simple call to action.";
+        } else {
+            channelInstruction = "Write a professional B2B cold email template (under 150 words) with a clear, high-open-rate Subject line.";
+        }
+
+        const prompt = `You are an B2B copywriter, outreach optimizer, and startup investor.
 Your task is to analyze the user's pitch draft targeting ${targetEntity.name} and provide a diagnostic critique (roast) and a high-converting re-write.
 
 Target Partner Details:
@@ -591,19 +618,22 @@ Requirements: ${targetEntity.dna?.requirements || 'N/A'}
 User's Pitch Draft:
 "${pitch}"
 
-INSTRUCTIONS FOR THE "roast" (Brutally Honest Critique):
-1. Do not use generic, lazy insults. The critique must be brutally honest but highly specific and diagnostic based on the actual draft.
+INSTRUCTIONS FOR THE "roast" (Critique):
+1. Do not use generic, lazy insults. The critique must be highly specific and diagnostic based on the actual draft.
 2. Clearly identify what is missing in the pitch (e.g., lack of B2B value exchange, missing audience stats/demographics, vague call-to-action, lack of personalization for ${targetEntity.name}, or looking like a flat handout request instead of a partnership).
-3. Keep it to 3-4 sentences. Use a sarcastic, sharp, but educational tone. Use fire emojis where appropriate. Point out exactly which sentence or missing piece makes it an immediate "delete" for the partnerships team at ${targetEntity.name}.
+3. Keep it to 3-4 sentences.
+4. ${toneInstruction}
+5. Point out exactly which sentence or missing piece makes it an immediate "delete" for the partnerships team at ${targetEntity.name}.
 
 INSTRUCTIONS FOR THE "rewrite":
-1. Write a highly professional, optimized, and high-converting cold email template that they should actually send.
-2. Focus on clear value exchange, target audience fit, and a low-friction call-to-action (CTA). Keep it short (under 150 words).
+1. ${channelInstruction}
+2. Focus on clear value exchange, target audience fit, and a low-friction call-to-action (CTA).
+3. Use placeholder brackets like [Your Name] where appropriate.
 
 Return ONLY a raw JSON object matching this schema:
 {
-  "roast": "Sarcastic but highly specific diagnostic roast highlighting actual missing components.",
-  "rewrite": "Optimized cold email rewrite here.",
+  "roast": "The critique text here.",
+  "rewrite": "The optimized outreach template here.",
   "score": 35
 }
 

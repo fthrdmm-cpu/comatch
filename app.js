@@ -2464,6 +2464,87 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
         });
     }
 
+    // Chip Selector Controllers
+    let selectedChannel = "Email";
+    let selectedTone = "Brutal";
+
+    const channelChips = document.querySelectorAll(".roaster-channel-chip");
+    channelChips.forEach(chip => {
+        chip.addEventListener("click", () => {
+            channelChips.forEach(c => {
+                c.classList.remove("active");
+                c.style.background = "rgba(255,255,255,0.03)";
+                c.style.borderColor = "var(--border-color)";
+                c.style.color = "var(--text-secondary)";
+                c.style.fontWeight = "500";
+            });
+            chip.classList.add("active");
+            chip.style.background = "var(--color-primary)";
+            chip.style.borderColor = "var(--color-primary)";
+            chip.style.color = "#fff";
+            chip.style.fontWeight = "600";
+            selectedChannel = chip.getAttribute("data-channel");
+        });
+    });
+
+    const toneChips = document.querySelectorAll(".roaster-tone-chip");
+    toneChips.forEach(chip => {
+        chip.addEventListener("click", () => {
+            toneChips.forEach(t => {
+                t.classList.remove("active");
+                t.style.background = "rgba(255,255,255,0.03)";
+                t.style.borderColor = "var(--border-color)";
+                t.style.color = "var(--text-secondary)";
+                t.style.fontWeight = "500";
+            });
+            chip.classList.add("active");
+            chip.style.background = "linear-gradient(135deg, #f97316, #ea580c)";
+            chip.style.borderColor = "#f97316";
+            chip.style.color = "#fff";
+            chip.style.fontWeight = "600";
+            selectedTone = chip.getAttribute("data-tone");
+        });
+    });
+
+    // Pitch textarea character counter
+    const roasterPitchArea = document.getElementById("roaster-pitch");
+    const charCounter = document.getElementById("roaster-char-counter");
+    if (roasterPitchArea && charCounter) {
+        roasterPitchArea.addEventListener("input", () => {
+            const len = roasterPitchArea.value.length;
+            charCounter.textContent = `${len} character${len === 1 ? '' : 's'}`;
+        });
+    }
+
+    // Auto-fill Demo Pitch Controller
+    const btnAutofill = document.getElementById("btn-roaster-autofill");
+    if (btnAutofill && roasterPitchArea) {
+        btnAutofill.addEventListener("click", () => {
+            const targetSelect = document.getElementById("roaster-target");
+            if (targetSelect) {
+                let foundRazer = false;
+                for (let i = 0; i < targetSelect.options.length; i++) {
+                    if (targetSelect.options[i].value === 'razer') {
+                        targetSelect.selectedIndex = i;
+                        foundRazer = true;
+                        break;
+                    }
+                }
+                if (!foundRazer && targetSelect.options.length > 1) {
+                    targetSelect.selectedIndex = 1;
+                }
+            }
+
+            roasterPitchArea.value = "Hi Razer team, I have 1,000 followers on Twitch. Can you send me a free Razer BlackWidow keyboard and mouse? I will show them on stream. Thanks!";
+            roasterPitchArea.dispatchEvent(new Event('input'));
+            
+            if (channelChips[0]) channelChips[0].click();
+            if (toneChips[0]) toneChips[0].click();
+
+            showNotification("Demo pitch pre-filled successfully! Try roasting it.", false);
+        });
+    }
+
     if (btnRoasterSubmit) {
         btnRoasterSubmit.addEventListener("click", async () => {
             const pitch = document.getElementById("roaster-pitch").value.trim();
@@ -2484,7 +2565,15 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
             const originalBtn = btnRoasterSubmit.innerHTML;
             btnRoasterSubmit.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i> Roasting Pitch...`;
             
-            if (matchmakerLoadingText) matchmakerLoadingText.textContent = "AI is brutally roasting your pitch draft...";
+            if (matchmakerLoadingText) {
+                if (selectedTone === "Brutal") {
+                    matchmakerLoadingText.textContent = "AI is brutally roasting your pitch draft...";
+                } else if (selectedTone === "Spicy") {
+                    matchmakerLoadingText.textContent = "AI is performing a spicy audit on your pitch...";
+                } else {
+                    matchmakerLoadingText.textContent = "AI is evaluating your outreach from a B2B perspective...";
+                }
+            }
             if (matchmakerLoading) matchmakerLoading.style.display = "block";
             if (roasterResultsContainer) roasterResultsContainer.style.display = "none";
 
@@ -2492,7 +2581,7 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
                 const res = await fetch(`${API_BASE_URL}/api/roast`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ pitch, targetId })
+                    body: JSON.stringify({ pitch, targetId, channel: selectedChannel, tone: selectedTone })
                 });
 
                 if (!res.ok) {
