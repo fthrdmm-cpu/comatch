@@ -2261,6 +2261,89 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
     }
 
     // ==========================================
+    // BUDGET ALERTS / NEWSLETTER SUBMISSION
+    // ==========================================
+    const newsletterForm = document.getElementById("newsletter-form");
+    const newsletterEmailInput = document.getElementById("newsletter-email");
+    const newsletterSubmitBtn = document.getElementById("submit-newsletter-btn");
+    const newsletterErrBox = document.getElementById("newsletter-form-error");
+    const newsletterSuccBox = document.getElementById("newsletter-form-success");
+
+    if (newsletterForm) {
+        newsletterForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            
+            if (newsletterErrBox) newsletterErrBox.style.display = "none";
+            if (newsletterSuccBox) newsletterSuccBox.style.display = "none";
+            
+            const email = newsletterEmailInput ? newsletterEmailInput.value.trim() : "";
+            
+            if (!email) return;
+            
+            if (newsletterSubmitBtn) {
+                newsletterSubmitBtn.disabled = true;
+                newsletterSubmitBtn.innerHTML = `
+                    <svg class="animate-spin" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none" style="display: inline-block; vertical-align: middle; animation: spin 1s linear infinite; margin-right: 6px;">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-opacity="0.25"></circle>
+                        <path d="M12 2v4M12 18v4" stroke-linecap="round"></path>
+                    </svg>
+                    Subscribing...
+                `;
+            }
+            
+            try {
+                if (!FORMSPREE_FORM_ID || FORMSPREE_FORM_ID === "YOUR_FORM_ID_HERE") {
+                    console.log("[*] Mock subscribing email to alerts:", email);
+                    await new Promise(resolve => setTimeout(resolve, 800));
+                } else {
+                    const response = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Accept": "application/json"
+                        },
+                        body: JSON.stringify({
+                            email: email,
+                            type: "newsletter_alert_subscription",
+                            page: window.location.href,
+                            userAgent: navigator.userAgent
+                        })
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error("Failed to subscribe. Please try again later.");
+                    }
+                }
+                
+                if (newsletterSuccBox) {
+                    newsletterSuccBox.textContent = "🎉 Successfully subscribed! You'll receive live budget updates.";
+                    newsletterSuccBox.style.display = "block";
+                }
+                
+                if (newsletterForm) newsletterForm.reset();
+                
+            } catch (err) {
+                console.error("[-] Newsletter submit error:", err);
+                if (newsletterErrBox) {
+                    newsletterErrBox.textContent = `[-] Error: ${err.message || "Failed to submit. Please try again."}`;
+                    newsletterErrBox.style.display = "block";
+                }
+            } finally {
+                if (newsletterSubmitBtn) {
+                    newsletterSubmitBtn.disabled = false;
+                    newsletterSubmitBtn.innerHTML = `
+                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: middle;">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Subscribe Alerts
+                    `;
+                }
+            }
+        });
+    }
+
+    // ==========================================
     // SEO URL ROUTING (Option D)
     // ==========================================
     function checkUrlRouting() {
