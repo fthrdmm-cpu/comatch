@@ -2021,8 +2021,13 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
     setTimeout(updateDashboardPartnersCount, 1000);
 
     // Live Ticker Ticking Loops (Simulating ecosystem transactions)
-    let currentVolume = 142450;
-    let currentMatches = 3412;
+    // Base volume starts at $2,450,000 and grows by ~$3,500 every day since June 1, 2026
+    const startDate = new Date("2026-06-01").getTime();
+    const currentDate = new Date().getTime();
+    const daysElapsed = Math.max(0, (currentDate - startDate) / (1000 * 60 * 60 * 24));
+    
+    let currentVolume = Math.floor(2450000 + (daysElapsed * 3500) + (Math.random() * 500));
+    let currentMatches = Math.floor(3412 + (daysElapsed * 8) + (Math.random() * 5));
 
     const volumeElement = document.getElementById("dash-volume");
     const matchesElement = document.getElementById("dash-matches");
