@@ -2029,8 +2029,8 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
     const currentDate = new Date().getTime();
     const daysElapsed = Math.max(0, (currentDate - startDate) / (1000 * 60 * 60 * 24));
     
-    let currentVolume = Math.floor(2450000 + (daysElapsed * 3500) + (Math.random() * 500));
-    let currentMatches = Math.floor(3412 + (daysElapsed * 8) + (Math.random() * 5));
+    let currentVolume = Math.floor(650000 + (daysElapsed * 1200) + (Math.random() * 500));
+    let currentMatches = Math.floor(824 + (daysElapsed * 3) + (Math.random() * 2));
 
     const volumeElement = document.getElementById("dash-volume");
     const matchesElement = document.getElementById("dash-matches");
