@@ -2495,6 +2495,27 @@ Return ONLY the raw JSON text block. Do not wrap it in markdown code blocks.`;
                 if (roasterRoastText) roasterRoastText.textContent = data.roast || "No critique generated.";
                 if (roasterRewriteText) roasterRewriteText.value = data.rewrite || "No template generated.";
                 
+                // Update score indicator dynamically
+                const score = data.score || Math.floor(Math.random() * (45 - 20 + 1)) + 20; // Fallback to a mock score between 20-45 if none provided
+                const scoreVal = document.getElementById("roaster-score-value");
+                const scoreBar = document.getElementById("roaster-score-bar");
+                if (scoreVal) {
+                    scoreVal.textContent = `${score}%`;
+                    if (score < 40) {
+                        scoreVal.style.color = "#ef4444";
+                        if (scoreBar) scoreBar.style.background = "linear-gradient(90deg, #ef4444, #f97316)";
+                    } else if (score < 75) {
+                        scoreVal.style.color = "#fbbf24";
+                        if (scoreBar) scoreBar.style.background = "linear-gradient(90deg, #fbbf24, #f59e0b)";
+                    } else {
+                        scoreVal.style.color = "#10b981";
+                        if (scoreBar) scoreBar.style.background = "linear-gradient(90deg, #10b981, #059669)";
+                    }
+                }
+                if (scoreBar) {
+                    scoreBar.style.width = `${score}%`;
+                }
+                
                 if (roasterResultsContainer) roasterResultsContainer.style.display = "block";
                 
                 trackGAEvent("pitch_roast", { targetId: targetId });

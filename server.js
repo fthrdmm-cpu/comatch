@@ -603,7 +603,8 @@ INSTRUCTIONS FOR THE "rewrite":
 Return ONLY a raw JSON object matching this schema:
 {
   "roast": "Sarcastic but highly specific diagnostic roast highlighting actual missing components.",
-  "rewrite": "Optimized cold email rewrite here."
+  "rewrite": "Optimized cold email rewrite here.",
+  "score": 35
 }
 
 Do not include any other conversational text or wrap the response in markdown code blocks.`;
