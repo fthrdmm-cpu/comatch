@@ -507,6 +507,116 @@ const INVESTORS_DATA = [
         "High-Quality, Concise Deck/Summary: Given their volume, any attached material (or link to a deck) must be exceptionally polished, visual, and convey the core story quickly. Avoid overly dense text."
       ]
     }
+  },
+  {
+    "id": "speedinvest",
+    "name": "Speedinvest",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "AI, SaaS, Deep Tech, Fintech",
+    "ticketSize": "€500,000 - €1,500,000",
+    "contactEmail": "info@speedinvest.com",
+    "contactForm": "https://www.speedinvest.com/pitch-us",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=speedinvest.com",
+    "dna": {
+      "requirements": "Strong founding team, compelling vision, significant market potential, early traction (MVP, initial users/revenue depending on sector), innovative technology, deep understanding of their market, ambition, and ability to execute.",
+      "dealStructure": "Standard Seed stage equity investment, often leading or co-leading rounds. Focus on supporting growth, board representation possible depending on stage/size. Dilution typical for seed rounds (10-20% for first institutional round).",
+      "pitchHelper": "Subject: [Company Name] - Revolutionizing [Sector] with [Key Innovation] | Seeking Seed Investment\nHi [Investor Name/Team],\n\nI'm [Your Name], Co-founder & CEO of [Company Name] ([Website URL]). We're building [brief, compelling description of what your company does and the problem it solves, e.g., 'a SaaS platform that uses AI to automate X for Y businesses'].\n\nOur traction includes [mention 1-2 key metrics: e.g., '$X MRR with Y customers', 'Z% month-over-month growth', 'successful pilot with X enterprise']. We believe we're uniquely positioned to capitalize on the [Market Size] market opportunity because [unique insight/advantage].\n\nWe're currently raising a [e.g., €1M Seed round] to [briefly state what funds will be used for, e.g., 'expand our engineering team and scale customer acquisition']. We're particularly impressed by Speedinvest's expertise in [mention relevant Speedinvest sector, e.g., 'SaaS & Infrastructure / Fintech'] and your portfolio companies like [mention one or two relevant Speedinvest portfolio companies if possible].\n\nWould you be open to a brief call to discuss how [Company Name] is set to disrupt [Industry]?\n\nThanks,\n[Your Name]\n[Your Title]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Personalize the subject line with their relevant sector focus (e.g., 'SaaS Innovation' or 'Deep Tech Breakthrough') and your company's unique value, avoiding generic buzzwords.",
+        "Engage with Speedinvest's partners and associates on LinkedIn or X (formerly Twitter) by commenting on their posts or sharing relevant industry insights before sending any email.",
+        "Prioritize a warm introduction if possible. If not, explicitly mention a relevant Speedinvest portfolio company or their investment thesis in your email to show you've done your homework, then direct them to your application via their form, stating you're also providing this direct outreach for awareness."
+      ]
+    }
+  },
+  {
+    "id": "antler",
+    "name": "Antler",
+    "type": "investor",
+    "investorType": "Accelerator",
+    "targetStage": "Pre-Seed",
+    "sectors": "AI, SaaS, Deep Tech, Fintech",
+    "ticketSize": "$100,000 - $150,000 (initial)",
+    "contactEmail": "hello@antler.co",
+    "contactForm": "https://www.antler.co/apply",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=antler.co",
+    "dna": {
+      "requirements": "Exceptional founders (often solo founders at the start), strong domain expertise, ambition, problem-solving skills, ability to attract talent. They invest in people and ideas, providing resources to build a company from scratch. Focus on global scalability.",
+      "dealStructure": "Standard deal for their program is typically ~10% equity for initial investment ($100k-$150k) plus program support. Follow-on rounds are negotiated.",
+      "pitchHelper": "Subject: [Your Name] - Vision for [Problem/Opportunity] in [Sector] | Antler Cohort Application\nHi Antler Team,\n\nMy name is [Your Name], and I am an experienced [Your Background/Expertise, e.g., 'AI Engineer with 10+ years at Google' or 'Fintech product leader who scaled X product to Y users']. I am passionate about solving [Specific Problem] in the [Sector, e.g., 'future of work SaaS'] space.\n\nI am deeply impressed by Antler's model of backing exceptional individuals to build groundbreaking companies from scratch, particularly in areas like [mention relevant Antler focus, e.g., 'AI-driven solutions' or 'Fintech innovation']. My initial concept involves [briefly describe your idea or problem you want to solve, e.g., 'leveraging generative AI to personalize professional development at scale'].\n\nWhile I am actively exploring forming a co-founding team, I have a clear vision and initial market validation for [your idea/problem]. I am eager to discuss how my expertise and drive align with Antler's program to transform this vision into a high-growth venture.\n\nI've also submitted an application via your platform, but wanted to reach out directly to highlight my fit. Would you be open to a brief discussion about my profile and vision?\n\nBest regards,\n[Your Name]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Keep the subject line concise and founder-centric, emphasizing your unique background and alignment with Antler's venture-builder model rather than a fully-formed company pitch.",
+        "Attend Antler's online or in-person events and engage with their local partners or program managers on platforms like LinkedIn *before* sending an email.",
+        "Clearly articulate *why* you are an ideal founder for Antler's program, highlighting your individual strengths, domain expertise, and global ambition rather than focusing solely on a product idea."
+      ]
+    }
+  },
+  {
+    "id": "entrepreneur-first",
+    "name": "Entrepreneur First",
+    "type": "investor",
+    "investorType": "Accelerator",
+    "targetStage": "Pre-Seed",
+    "sectors": "AI, SaaS, Deep Tech, Fintech",
+    "ticketSize": "£80,000 - £100,000 (initial)",
+    "contactEmail": "hello@joinef.com",
+    "contactForm": "https://www.joinef.com/apply",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=joinef.com",
+    "dna": {
+      "requirements": "Exceptional individual talent (technical or commercial), deep domain expertise, high ambition, ability to find a co-founder and build a disruptive company from scratch. They look for individuals with 'unfair advantages' – unique skills, experiences, or insights.",
+      "dealStructure": "Initial investment (around £80k-£100k) for ~8-10% equity, usually split between EF and the co-founders formed during the program. Follow-on capital from EF and other VCs.",
+      "pitchHelper": "Subject: [Your Name] - [Your Expertise] Founder Seeking EF Program | [Specific Idea/Problem Area]\nHi EF Team,\n\nMy name is [Your Name], and I am a [Your Expertise, e.g., 'PhD in AI from Cambridge' or 'Senior Product Manager at Stripe with a focus on B2B SaaS']. I'm reaching out because I'm deeply impressed by EF's unique model for building high-potential, deep tech companies from individual talent, particularly your success in areas like [mention relevant EF sector, e.g., 'generative AI' or 'Fintech infrastructure'].\n\nMy 'unfair advantage' lies in [briefly state your unique skill/insight, e.g., 'my research on novel neural network architectures' or 'my experience scaling a payments platform in emerging markets']. I am passionate about tackling [Specific Problem/Opportunity, e.g., 'the inefficiencies in enterprise data synthesis' or 'the lack of accessible financial tools for SMEs'].\n\nI have a strong inclination to build a company around [briefly describe potential problem/idea] and am actively seeking a co-founder with complementary skills. I believe my profile aligns perfectly with the caliber of founders EF attracts and develops.\n\nI have submitted my application for the next cohort and would appreciate the opportunity for a brief conversation to discuss how my background and ambition fit within the EF ecosystem.\n\nThank you,\n[Your Name]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Frame the subject line around your individual 'unfair advantage' and alignment with EF's talent-first approach, rather than a fully-formed startup pitch, to signal relevance.",
+        "Engage directly with EF's Talent team or program managers on LinkedIn, sharing insights related to deep tech or founder journeys, demonstrating your intellectual curiosity.",
+        "Clearly articulate your unique expertise and what specific 'deep tech' or 'frontier tech' problem you're passionate about solving, emphasizing your individual potential over a pre-existing company."
+      ]
+    }
+  },
+  {
+    "id": "hoxton-ventures",
+    "name": "Hoxton Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "AI, SaaS, Deep Tech, Fintech",
+    "ticketSize": "$500,000 - $3,000,000",
+    "contactEmail": "info@hoxtonventures.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=hoxtonventures.com",
+    "dna": {
+      "requirements": "Ambitious founders targeting large global markets, strong product-market fit indicators (early traction, customer testimonials, clear growth potential), defensible technology. They look for companies with the potential to become category leaders.",
+      "dealStructure": "Standard Seed/Series A equity investment, often leading or co-leading rounds. Active board participation is common. Dilution typically 15-25% for Series A, lower for Seed.",
+      "pitchHelper": "Subject: [Company Name] - Disrupting [Industry] with [Key Technology] | Seed/Series A Round\nHi Hoxton Ventures Team,\n\nMy name is [Your Name], Co-founder & CEO of [Company Name] ([Website URL]). We are building [brief, compelling description of what your company does, e.g., 'an AI-powered SaaS platform that automates X for Y enterprises'].\n\nWe've achieved significant early traction including [mention 1-2 impressive metrics: e.g., '$X ARR with Y paying customers in Z months', 'successful pilot with X Fortune 500 companies', 'Z% MoM growth']. We address a critical need in the [Market Size] market, which we believe is ripe for disruption through our [unique technology/approach].\n\nWe are currently raising a [e.g., $2M Seed round] to [briefly state use of funds, e.g., 'accelerate product development and expand our sales team']. We are particularly impressed by Hoxton Ventures' focus on backing ambitious founders building category leaders, and your portfolio in [mention relevant Hoxton sector, e.g., 'B2B SaaS / Deep Tech'] like [mention one or two relevant Hoxton portfolio companies if possible].\n\nWould you be open to a brief introductory call to discuss our vision for [Company Name] and its potential to dominate the [Target Market]?\n\nThanks,\n[Your Name]\n[Your Title]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Ensure your subject line highlights a clear problem solved and measurable traction, avoiding overly generic 'opportunity' language, to signal immediate value.",
+        "Personalize the email by referencing a specific partner's recent article or investment thesis that aligns with your startup, showing genuine research.",
+        "Clearly articulate your path to becoming a 'category leader' in a global market, reflecting Hoxton's investment philosophy, and back it up with a tangible, defensible competitive advantage."
+      ]
+    }
+  },
+  {
+    "id": "partech",
+    "name": "Partech",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "AI, SaaS, Deep Tech, Fintech",
+    "ticketSize": "€300,000 - €1,500,000",
+    "contactEmail": "contact@partechpartners.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=partechpartners.com",
+    "dna": {
+      "requirements": "Strong product and team, clear vision for global scalability, significant market opportunity, early commercial traction or strong MVP, defensible technology. They value diverse teams and look for companies with a strong understanding of their target customers.",
+      "dealStructure": "Standard Seed stage equity investment, often leading or co-leading. Active involvement and strategic support. Dilution typical for seed rounds (10-20%).",
+      "pitchHelper": "Subject: [Company Name] - Scaling [Solution] in [Market] with [Technology] | Seed Round\nHi Partech Team,\n\nMy name is [Your Name], Co-founder & CEO of [Company Name] ([Website URL]). We are developing [brief, compelling description of what your company does, e.g., 'a B2B SaaS platform leveraging AI for predictive analytics in X industry'].\n\nWe have already achieved [mention 1-2 key metrics: e.g., '$X MRR with Y enterprise clients', 'Z% weekly active users with an impressive retention rate', 'successful proof-of-concept with a leading player']. Our solution addresses a critical pain point in the [Market Size] market, which we are uniquely positioned to capture due to [our unique differentiation/IP].\n\nWe are currently raising a [e.g., €1M Seed round] to [briefly state use of funds, e.g., 'expand our product features and penetrate new European markets']. We are particularly drawn to Partech's global reach and deep expertise in supporting Seed-stage companies in sectors like [mention relevant Partech sector, e.g., 'SaaS / AI / Fintech'] and your success with portfolio companies such as [mention one or two relevant Partech portfolio companies if possible].\n\nWould you be available for a quick chat to explore how [Company Name] aligns with Partech's investment thesis?\n\nThank you,\n[Your Name]\n[Your Title]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Use a clear, benefit-driven subject line that includes your company name and the core value proposition, ensuring it's concise and impactful.",
+        "Research specific Partech partners or analysts active in your sector (AI, SaaS, Fintech) and tailor your outreach to mention their recent insights or investments.",
+        "Highlight your potential for *global* scalability early in the pitch, as Partech has a strong international footprint and seeks companies with broad market ambition."
+      ]
+    }
   }
 ];
 

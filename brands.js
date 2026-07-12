@@ -2659,6 +2659,111 @@ const BRANDS_DATA = [
         "Suggest interviewing one of their engineers or product managers rather than just a flat ad, as this indicates a deeper content play that aligns with their thought leadership goals."
       ]
     }
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "info@mongodb.com",
+    "contactForm": "https://www.mongodb.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=mongodb.com",
+    "dna": {
+      "requirements": "Focus on active developers; content related to data, databases, backend development, cloud-native apps; engagement with developer communities; workshops, tutorials, code-focused content; authenticity.",
+      "dealStructure": "Flat fee for content/event sponsorship, free MongoDB Atlas credits for hackathons/workshops, access to MongoDB experts for content collaboration, co-marketing opportunities.",
+      "pitchHelper": "Subject: Partnership Opportunity: Engaging Your Developer Community with [Your Name/Brand] & MongoDB\n\nDear MongoDB Developer Relations Team,\n\nMy name is [Your Name] and I'm a [Your Role/Creator Type, e.g., developer advocate, content creator, podcast host] focused on [Your Niche, e.g., backend development, cloud infrastructure, data-driven applications]. I've been a long-time admirer and user of MongoDB, particularly [mention a specific MongoDB product/feature, e.g., Atlas, Realm, Aggregation Framework].\n\nI'm reaching out because I believe there's a strong synergy between [Your Brand/Platform]'s engaged audience of [Audience Size, e.g., X thousand developers, X thousand podcast listeners] and MongoDB's mission to empower developers. I specialize in creating [Content Type, e.g., in-depth tutorials, practical workshops, engaging podcast discussions] that resonate with [describe your audience, e.g., developers looking to build scalable applications, data engineers exploring modern database solutions].\n\nI envision a collaboration where we could [Propose a specific idea, e.g., develop a series of video tutorials on building a serverless app with MongoDB Atlas, host a live coding workshop on MongoDB fundamentals, dedicate a podcast episode to a MongoDB expert discussing a relevant topic]. My content consistently drives [mention metrics, e.g., high engagement rates, significant organic reach, positive feedback on practical application].\n\nWould you be open to a brief call next week to discuss how we could bring valuable, practical MongoDB content to my audience? I've attached a media kit/link to my work for your review.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Be specific about MongoDB products: Mentioning specific features like Atlas, Realm, or the aggregation pipeline in your subject or opening shows you're a genuine user and not a generic pitch.",
+        "Highlight developer-centric metrics: Instead of just follower count, emphasize engagement rates, workshop attendance, code downloads, or active community participation to resonate with their developer relations team.",
+        "Propose a concrete, practical content idea: A vague 'sponsorship' request is less effective than suggesting a specific tutorial series, hackathon challenge, or workshop topic that clearly benefits their developer community."
+      ]
+    }
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "community@postman.com",
+    "contactForm": "https://www.postman.com/contact-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=postman.com",
+    "dna": {
+      "requirements": "Focus on API development, testing, collaboration, API lifecycle. Content should be practical, educational, and demonstrate Postman's value. Engagement with developers, testers, and engineering teams.",
+      "dealStructure": "Flat fee for content sponsorship, free Postman Team licenses for events, speaker slots at Postman events, co-promotion, access to Postman experts.",
+      "pitchHelper": "Subject: Elevating API Development: Collaboration Idea with [Your Name/Brand] & Postman\n\nDear Postman Community/Partnerships Team,\n\nMy name is [Your Name] and I'm a [Your Role/Creator Type, e.g., API enthusiast, software engineer, tech educator] with a focus on [Your Niche, e.g., efficient API workflows, microservices testing, backend development]. As an avid user of Postman for [mention specific use case, e.g., streamlining my API testing, documenting my projects, collaborating with my team], I deeply appreciate how your platform empowers developers.\n\nI'm reaching out to propose a collaboration that I believe would greatly benefit Postman's community and my engaged audience of [Audience Size, e.g., X thousand developers, X thousand subscribers]. My content platform, [Your Brand/Platform], specializes in [Content Type, e.g., practical API tutorials, live coding sessions, deep dives into developer tools], which consistently garners [mention metrics, e.g., high viewership, strong interaction, positive feedback on Postman-related content].\n\nI envision creating [Propose a specific idea, e.g., a series on advanced Postman features for API automation, a workshop demonstrating API mocking with Postman, an interview with a Postman expert on industry trends]. My goal is to deliver highly valuable content that showcases Postman's capabilities in a tangible, inspiring way.\n\nWould you be open to a brief discussion to explore how we can collaboratively create impactful content for the API development community? My media kit/portfolio is available at [Link].\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Focus on API use cases: Clearly articulate how your content demonstrates Postman's practical applications for API design, development, testing, or documentation, rather than just a general tech review.",
+        "Showcase existing Postman familiarity: Mentioning how you currently use Postman, or linking to previous content where you've featured it, establishes credibility and genuine interest.",
+        "Propose specific, actionable content: Instead of asking for general sponsorship, suggest a clear tutorial, project, or event idea that directly aligns with Postman's product features and developer advocacy goals."
+      ]
+    }
+  },
+  {
+    "id": "gitlab",
+    "name": "GitLab",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "partners@gitlab.com",
+    "contactForm": "https://about.gitlab.com/partners/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=about.gitlab.com",
+    "dna": {
+      "requirements": "Focus on DevOps, Git, CI/CD, security, collaboration. Content should appeal to developers and operations professionals. Emphasis on open-source values and community engagement. Practical demonstrations of GitLab features.",
+      "dealStructure": "Flat fee for content sponsorship, GitLab Ultimate licenses for open-source projects or events, co-marketing, speaking opportunities at GitLab events.",
+      "pitchHelper": "Subject: DevOps & Open Source Collaboration: [Your Brand] x GitLab Partnership Idea\n\nDear GitLab Community/Partnerships Team,\n\nMy name is [Your Name] and I'm a [Your Role/Creator Type, e.g., DevOps advocate, software architect, tech content creator] passionate about [Your Niche, e.g., streamlining CI/CD pipelines, secure software development, open-source contributions]. As a dedicated user of GitLab for [mention specific use case, e.g., managing my projects, automating deployments, fostering team collaboration], I deeply value its comprehensive DevOps platform.\n\nI'm reaching out to propose a partnership that I believe would resonate strongly with GitLab's values and my engaged audience of [Audience Size, e.g., X thousand DevOps engineers, X thousand developers]. My platform, [Your Brand/Platform], focuses on creating [Content Type, e.g., in-depth CI/CD tutorials, practical guides on GitLab features, discussions on modern DevOps practices] that consistently achieve [mention metrics, e.g., high engagement, significant organic reach, positive feedback from practitioners].\n\nI envision a collaboration where we could [Propose a specific idea, e.g., develop a series demonstrating advanced GitLab CI/CD pipelines, host a workshop on GitLab security features, feature a GitLab expert on my podcast to discuss the future of DevOps]. My aim is to deliver high-quality, practical content that highlights GitLab's end-to-end capabilities and empowers the developer community.\n\nWould you be available for a brief call next week to explore this potential collaboration further? You can find examples of my work at [Link to portfolio/media kit].\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Emphasize DevOps and Open Source alignment: Clearly state how your content or community aligns with GitLab's core focus on the full DevOps lifecycle and their commitment to open-source principles.",
+        "Showcase practical GitLab expertise: Instead of general tech content, demonstrate your ability to create hands-on tutorials or discussions that specifically leverage GitLab features like CI/CD, GitOps, or security scanning.",
+        "Reference their 'all-remote' culture (subtly): Mentioning an appreciation for their transparency or community-driven approach can subtly signal you've done your homework and understand their company culture."
+      ]
+    }
+  },
+  {
+    "id": "airtable",
+    "name": "Airtable",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "info@airtable.com",
+    "contactForm": "https://www.airtable.com/partners/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=airtable.com",
+    "dna": {
+      "requirements": "Focus on productivity, workflow automation, no-code/low-code solutions, data organization. Content should be practical, showing how Airtable solves real-world problems for businesses or individuals. Engagement with diverse audiences (SMBs, non-profits, creative agencies, tech teams).",
+      "dealStructure": "Flat fee for sponsored content, affiliate commissions, free Airtable credits/licenses, co-marketing on success stories, speaking opportunities.",
+      "pitchHelper": "Subject: Enhancing Productivity: [Your Brand] x Airtable Collaboration Proposal\n\nDear Airtable Partnerships Team,\n\nMy name is [Your Name] and I'm a [Your Role/Creator Type, e.g., productivity expert, no-code builder, business strategist] dedicated to helping [Your Niche, e.g., small businesses, creative professionals, teams] optimize their workflows. As a firm believer in the power of Airtable for [mention specific use case, e.g., managing complex projects, organizing content calendars, building custom CRMs], I've seen firsthand how it transforms efficiency.\n\nI'm reaching out to propose a collaboration that I believe aligns perfectly with Airtable's mission to empower teams to build and organize anything. My platform, [Your Brand/Platform], reaches an engaged audience of [Audience Size, e.g., X thousand entrepreneurs, X thousand project managers] who are actively seeking [Content Type, e.g., practical productivity hacks, no-code solutions, workflow automation strategies]. My content consistently drives [mention metrics, e.g., high engagement, measurable conversions, positive feedback on implementation].\n\nI envision creating [Propose a specific idea, e.g., a series of tutorials on building a dynamic project management system with Airtable, a case study demonstrating Airtable's use for a specific industry, a webinar on advanced Airtable automation with scripting]. My goal is to showcase Airtable's versatility and empower more users to unlock its full potential.\n\nWould you be open to a brief conversation to explore how we could work together to bring valuable Airtable content to my audience? My media kit/portfolio is available at [Link].\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Showcase practical Airtable solutions: Instead of a generic tool review, propose content that solves a specific business problem using Airtable, demonstrating tangible value for their target users.",
+        "Highlight 'no-code/low-code' or 'workflow' relevance: Use keywords that resonate with Airtable's marketing focus, indicating your content is relevant to their key messaging and audience.",
+        "Reference specific features/templates: Mentioning familiarity with specific Airtable features like automations, extensions, or popular templates shows you're an informed user and can create authentic content."
+      ]
+    }
+  },
+  {
+    "id": "paddle",
+    "name": "Paddle",
+    "type": "brand",
+    "category": "Fintech",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "hello@paddle.com",
+    "contactForm": "https://www.paddle.com/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=paddle.com",
+    "dna": {
+      "requirements": "Focus on SaaS growth, monetization, global payments, subscriptions, taxes, indie hacking. Content should appeal to SaaS founders, developers launching products, and businesses looking to scale globally. Practical advice on optimizing revenue and operations.",
+      "dealStructure": "Flat fee for sponsored content/podcast ads, referral commissions for sign-ups, co-hosted webinars, access to Paddle experts for interviews.",
+      "pitchHelper": "Subject: Growing SaaS: Collaboration Idea with [Your Brand] & Paddle for Founders & Indie Hackers\n\nDear Paddle Partnerships Team,\n\nMy name is [Your Name] and I'm a [Your Role/Creator Type, e.g., SaaS advisor, indie hacker, business development expert] focused on helping [Your Niche, e.g., early-stage SaaS founders, developers launching their first product, subscription businesses] navigate the complexities of monetization and global growth. As someone who deeply understands the challenges of selling software, I'm a strong advocate for platforms like Paddle that simplify [mention specific pain point, e.g., global payments, subscription management, sales tax compliance].\n\nI'm reaching out to propose a strategic partnership that I believe aligns perfectly with Paddle's mission to help SaaS companies grow. My platform, [Your Brand/Platform], reaches an engaged audience of [Audience Size, e.g., X thousand SaaS founders, X thousand indie hackers] who are actively seeking [Content Type, e.g., practical advice on pricing strategies, scaling global sales, simplifying tax compliance]. My content consistently generates [mention metrics, e.g., high engagement from founders, demonstrable interest in business tools, positive feedback on monetization strategies].\n\nI envision a collaboration where we could [Propose a specific idea, e.g., create a deep-dive video series on using Paddle for international sales and tax compliance, co-host a webinar on subscription analytics, feature a Paddle expert on my podcast discussing future-proofing SaaS monetization]. My goal is to provide highly practical and actionable insights that showcase how Paddle empowers businesses to focus on product, not payments.\n\nWould you be open to a brief discussion to explore how we can collaboratively support the SaaS community? You can review my work at [Link to portfolio/media kit].\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Frame around 'SaaS growth' or 'indie hacking': Paddle targets SaaS businesses and founders. Tailor your pitch to problems they solve for this audience (payments, taxes, subscriptions) and position yourself as a resource for growth.",
+        "Quantify audience relevance: Instead of general tech followers, specify 'SaaS founders,' 'developers launching products,' or 'subscription business owners' to show a precise demographic match.",
+        "Propose solution-oriented content: Suggest content that clearly demonstrates how Paddle solves a common pain point for SaaS businesses (e.g., 'demystifying global sales tax with Paddle' or 'scaling subscriptions without payment headaches')."
+      ]
+    }
   }
 ];
 
