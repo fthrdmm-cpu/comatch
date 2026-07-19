@@ -617,6 +617,116 @@ const INVESTORS_DATA = [
         "Highlight your potential for *global* scalability early in the pitch, as Partech has a strong international footprint and seeks companies with broad market ambition."
       ]
     }
+  },
+  {
+    "id": "notion-capital",
+    "name": "Notion Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, Cloud, Fintech, Future of Work",
+    "ticketSize": "$250k - $2M",
+    "contactEmail": "info@notion.vc",
+    "contactForm": "https://notion.vc/pitch-deck",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=notion.vc",
+    "dna": {
+      "requirements": "We back exceptional European entrepreneurs building category-leading B2B SaaS and cloud companies. Strong team, compelling product, large addressable market, early signs of product-market fit or strong vision.",
+      "dealStructure": "Standard equity investment. Active involvement and strategic support for portfolio companies.",
+      "pitchHelper": "Subject: [Company Name] - Revolutionizing [Your Niche] with AI SaaS - Seed Round\n\nDear Notion Capital Team,\n\nI'm writing to introduce [Company Name], a [briefly describe your company - e.g., AI-powered SaaS platform] designed to [solve specific problem for target customer]. We're addressing the growing need for [market pain point], which represents a [size of market] opportunity in the [SaaS/Cloud/Fintech] sector.\n\nOur solution, [product name], leverages [key technology/feature] to provide [unique benefit/value proposition]. We've achieved [mention key traction - e.g., X users, Y MRR, Z partnerships, MVP ready]. Our team, [briefly mention key founders and their relevant experience], is uniquely positioned to execute on this vision.\n\nWe are currently raising a [e.g., $1.5M Seed round] to [use of funds - e.g., expand product features, scale sales & marketing]. We believe our mission aligns perfectly with Notion Capital's focus on category-leading B2B SaaS, and we'd be thrilled to share our deck and discuss how we're set to redefine [your market].\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "Clearly articulate your company's alignment with Notion Capital's strict B2B SaaS and cloud focus in the subject line and opening. Avoid generic intros.",
+        "Show tangible traction (even early indicators like pilot programs, user growth, or strong product engagement for Pre-Seed) rather than just ideas. Notion values execution.",
+        "Reference their portfolio companies or specific partners whose investment theses align with your venture to demonstrate thorough research and a targeted outreach."
+      ]
+    }
+  },
+  {
+    "id": "first-round-capital",
+    "name": "First Round Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, AI, Developer Tools, Fintech, Consumer, Broad Tech",
+    "ticketSize": "$500k - $3M",
+    "contactEmail": "info@firstround.com",
+    "contactForm": "https://firstround.com/apply/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=firstround.com",
+    "dna": {
+      "requirements": "We back companies that are just getting started. Exceptional founders with a strong vision, clear understanding of their market, innovative product or unique approach. Focus on the team and product at very early stages.",
+      "dealStructure": "Standard equity investment, founder-friendly terms, strong emphasis on community and support for founders through resources and network.",
+      "pitchHelper": "Subject: [Company Name] - Empowering [Target Users] with [Your Solution] - Seed Investment\n\nDear First Round Capital Team,\n\nMy name is [Your Name], and I'm the founder of [Company Name]. We're building [briefly describe your product/service, e.g., an AI-powered platform] to help [target users] achieve [specific outcome] by [how your solution works]. We're addressing a massive opportunity in the [SaaS/AI/Fintech] space, currently valued at [market size] and growing rapidly.\n\nWhat makes us unique is [explain your differentiation or key innovation]. We've recently [mention early milestones - e.g., launched our MVP, onboarded X beta users, received positive feedback from Y industry experts]. Our vision is to [state your ambitious long-term goal].\n\nAs a founder, my journey through [relevant past experience] has uniquely prepared me to tackle this challenge. We are seeking [e.g., $2M Seed funding] to [use of funds, e.g., expand our engineering team and accelerate user acquisition]. We admire First Round's commitment to early-stage founders and believe our values align perfectly.\n\nI've attached our pitch deck for your review and would be grateful for the opportunity to discuss further.\n\nThank you,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "Prioritize a warm introduction if possible; First Round highly values network referrals. If cold, highlight mutual connections or interests.",
+        "Focus your pitch heavily on the founding team's unique insights, passion, and ability to execute. First Round invests primarily in founders at the earliest stages.",
+        "Show, don't just tell: if you have an MVP or a compelling demo, include a concise link or screenshot that quickly conveys your product's core value."
+      ]
+    }
+  },
+  {
+    "id": "project-a-ventures",
+    "name": "Project A Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "SaaS, Data & AI, Fintech, Digital Health, Supply Chain & Logistics, B2B Marketplaces",
+    "ticketSize": "€500k - €2M",
+    "contactEmail": "contact@project-a.com",
+    "contactForm": "https://www.project-a.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=project-a.com",
+    "dna": {
+      "requirements": "Strong founding team, large market opportunity, robust business model, clear plan for operational excellence, and a desire for an active investor partnership. They seek companies they can actively support with their operational team.",
+      "dealStructure": "Equity investment with significant operational support from their in-house team (e.g., marketing, data, HR, tech).",
+      "pitchHelper": "Subject: [Company Name] - Scaling [Your Solution] with Project A's Operational Expertise - Seed Round\n\nDear Project A Team,\n\nI'm [Your Name], founder of [Company Name], a [briefly describe your AI/SaaS/Fintech solution] that addresses [specific market inefficiency or customer need]. We've identified a [size] market opportunity within [relevant sector, e.g., B2B SaaS for supply chain logistics], currently underserved by existing solutions.\n\nOur proprietary [technology/approach] offers [key benefits, e.g., X% efficiency gains, Y cost reduction] to [target customers]. We're currently at [stage, e.g., MVP launched, X active users, €Y MRR] and have a clear roadmap to [next major milestone].\n\nWe are raising a [e.g., €1.5M Seed round] to [use of funds, e.g., further develop our core platform and accelerate market entry]. Knowing Project A's unique operational venture approach and expertise in areas like [mention relevant Project A domain like data, marketing, or tech], we believe a partnership with you would be instrumental in achieving our ambitious growth targets. We're particularly keen on leveraging your [specific operational strength].\n\nI've attached our pitch deck and would welcome the chance to discuss how our vision aligns with your investment thesis and operational support model.\n\nThank you,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "Explicitly mention how you envision leveraging Project A's operational team (e.g., marketing, tech, data) to accelerate your growth. This shows you understand their unique model.",
+        "Highlight your team's operational competence and readiness to scale. Project A values strong execution capabilities alongside vision.",
+        "Research specific Project A partners or investment managers whose domain expertise aligns directly with your sector (SaaS, AI, Fintech, etc.) and address your email to them directly if possible."
+      ]
+    }
+  },
+  {
+    "id": "eqt-ventures",
+    "name": "EQT Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "SaaS, AI, Deep Tech, Fintech, Gaming, Healthtech, Broad Tech",
+    "ticketSize": "€500k - €5M",
+    "contactEmail": "info@eqtventures.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=eqtventures.com",
+    "dna": {
+      "requirements": "Ambitious founders, large addressable markets, innovative technology (especially Deep Tech, AI), strong product vision. They like companies with the potential to become global leaders. They use their proprietary 'Motherbrain' AI platform to identify companies.",
+      "dealStructure": "Equity investment, long-term partnership with access to EQT's global network and resources, including support from Motherbrain insights.",
+      "pitchHelper": "Subject: [Company Name] - Disrupting [Industry] with [AI/Deep Tech] - Seed Round\n\nDear EQT Ventures Team,\n\nI'm writing as [Your Name], founder of [Company Name], a [briefly describe your Deep Tech/AI/SaaS solution] set to transform [industry or market]. We're tackling [major problem] within a global market estimated at [market size], with a unique approach using [key technology, e.g., proprietary AI algorithms, novel deep learning architecture].\n\nOur product, [product name], has already achieved [key milestones, e.g., successful pilot with X enterprise, Y% improvement in Z metric, MVP launch with strong user feedback]. We believe our technology has the potential to become a category leader in the [AI/Deep Tech/SaaS] space, aligning with EQT Ventures' focus on ambitious, game-changing companies.\n\nWe are currently raising [e.g., €3M Seed capital] to [use of funds, e.g., expand our engineering team and accelerate product development for enterprise clients]. We are particularly drawn to EQT Ventures' expertise in scaling deep tech globally and the insights from your Motherbrain platform.\n\nI've attached our pitch deck and would greatly appreciate the opportunity to discuss our vision for global impact.\n\nSincerely,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "Highlight the 'deep tech' or 'AI-first' aspect of your solution, even if it's SaaS. EQT Ventures has a strong interest in groundbreaking technology.",
+        "Demonstrate a clear understanding of your global market potential and how your product can scale internationally, as EQT Ventures thinks globally.",
+        "If you have an impressive technical team or unique intellectual property, make sure to emphasize this early in your communication."
+      ]
+    }
+  },
+  {
+    "id": "blossom-capital",
+    "name": "Blossom Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "Deep Tech, SaaS, Fintech, Consumer, Future of Work",
+    "ticketSize": "$1M - $5M",
+    "contactEmail": "hello@blossomcap.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=blossomcap.com",
+    "dna": {
+      "requirements": "We back the audacious European founders of tomorrow. Ambitious founders solving huge problems, clear product differentiation, significant market opportunity, strong team, typically European focus with global ambitions.",
+      "dealStructure": "Equity investment, highly engaged support for founders, strong belief in building long-term relationships.",
+      "pitchHelper": "Subject: [Company Name] - Audaciously Redefining [Your Niche] with [Deep Tech/SaaS] - Seed Round\n\nDear Blossom Capital Team,\n\nI'm [Your Name], co-founder of [Company Name], a [briefly describe your Deep Tech/SaaS/Fintech solution] that is audaciously tackling [a significant, often overlooked, problem] for [target customers] in the [European/Global] market. We are building [state your unique value proposition, e.g., the next-gen AI platform for X industry] with the potential to reach [ambitious market size].\n\nOur approach involves [briefly explain your unique technology or insight]. We've made significant progress, including [key milestones, e.g., securing X pilots, validating our MVP with Y customer feedback, achieving Z early traction]. We are a team of [number] experienced individuals with backgrounds in [relevant areas], committed to building a generational company.\n\nWe are raising a [e.g., $3M Seed round] to [use of funds, e.g., accelerate product development and scale our initial go-to-market efforts]. We deeply resonate with Blossom Capital's focus on audacious European founders and believe our bold vision aligns perfectly with your investment thesis.\n\nAttached is our pitch deck, and we'd be thrilled to connect for a brief discussion.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "Emphasize the 'audacity' and ambitious nature of your vision and problem-solving approach. Blossom Capital looks for founders with big, bold ideas.",
+        "Clearly articulate your European roots or strong connection to the European tech ecosystem, while also demonstrating global potential.",
+        "Personalize your outreach to a specific partner at Blossom Capital if you can find a direct connection to their background or prior investments."
+      ]
+    }
   }
 ];
 

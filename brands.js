@@ -2764,6 +2764,111 @@ const BRANDS_DATA = [
         "Propose solution-oriented content: Suggest content that clearly demonstrates how Paddle solves a common pain point for SaaS businesses (e.g., 'demystifying global sales tax with Paddle' or 'scaling subscriptions without payment headaches')."
       ]
     }
+  },
+  {
+    "id": "planetscale",
+    "name": "PlanetScale",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partners@planetscale.com",
+    "contactForm": "https://planetscale.com/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=planetscale.com",
+    "dna": {
+      "requirements": "Audience of developers, engineers, startups, technical founders. Content relevant to databases, backend development, scalability, developer productivity. High engagement within the dev community.",
+      "dealStructure": "Flat fee sponsorships for podcast segments, newsletter mentions, event sponsorships (hackathons, dev conferences). Potential for product credits for hackathon prizes.",
+      "pitchHelper": "Subject: Partnership Proposal: PlanetScale & [Your Podcast/Newsletter/Community Name]\n\nHi PlanetScale Team,\n\nMy name is [Your Name] and I run [Your Podcast/Newsletter/Community Name], a [briefly describe your content, e.g., weekly podcast for backend developers / newsletter on modern web development]. Our audience consists of [mention audience demographics, e.g., ~X,XXX active software engineers, database administrators, and startup founders] who are deeply interested in scalable infrastructure and developer-first tools.\n\nI've been following PlanetScale's innovative work in [mention specific PlanetScale feature, e.g., branching for databases / serverless MySQL] and believe there's a strong alignment with our audience's needs and interests. We regularly cover topics like [mention relevant topics you cover, e.g., database architecture, scaling applications, developer productivity], and I'm confident that a partnership would be highly valuable to both our communities.\n\nWe offer sponsorship opportunities such as [mention specific opportunities, e.g., dedicated ad reads, newsletter placements, event co-sponsorships]. Would you be open to a brief chat next week to discuss how PlanetScale could effectively reach and engage our audience?\n\nYou can learn more about our platform and audience here: [Link to your media kit/website]\n\nLooking forward to hearing from you.\n\nBest,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Focus on Developer Value: Clearly articulate how your audience consists of active developers and how PlanetScale's product directly solves their pain points or enhances their workflow.",
+        "Showcase Engagement, Not Just Numbers: Highlight audience interaction, specific developer-centric discussions, or successful past technical sponsorships rather than just follower counts.",
+        "Personalize with Product Specifics: Mention specific PlanetScale features or recent announcements to demonstrate genuine interest and understanding of their product."
+      ]
+    }
+  },
+  {
+    "id": "temporal",
+    "name": "Temporal",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "community@temporal.io",
+    "contactForm": "https://temporal.io/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=temporal.io",
+    "dna": {
+      "requirements": "Highly technical audience (software engineers, architects, SREs) interested in distributed systems, workflow orchestration, reliability, microservices. Content must be high-quality and align with complex backend development challenges.",
+      "dealStructure": "Flat fee for sponsored content (podcast reads, newsletter features), event sponsorships (meetups, conferences, hackathons focused on distributed systems).",
+      "pitchHelper": "Subject: Exploring Partnership with Temporal for [Your Platform Name] - Focus on Distributed Systems\n\nDear Temporal Team,\n\nMy name is [Your Name], and I manage [Your Platform Name], a [describe your platform, e.g., podcast dedicated to cutting-edge backend engineering / newsletter exploring distributed systems and microservices]. Our community comprises over [X,XXX] highly engaged software architects, senior engineers, and SREs who are actively building and managing complex, mission-critical applications.\n\nGiven Temporal's foundational role in enabling resilient and scalable distributed workflows, I see a significant synergy with the topics we cover and the challenges our audience faces daily. We've recently discussed [mention a relevant topic you've covered, e.g., idempotency in microservices / event-driven architectures] and believe that a collaboration highlighting Temporal's capabilities would resonate deeply.\n\nWe are currently offering [mention specific sponsorship options, e.g., sponsored segments, dedicated newsletter features, co-hosting a webinar/event]. Could we schedule a brief call to discuss how a partnership could effectively introduce Temporal to our highly technical audience?\n\nHere's a link to our media kit and audience demographics: [Link to your media kit/website]\n\nThank you for your time.\n\nSincerely,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Emphasize Technical Depth: Temporal's audience is highly technical. Your pitch should reflect a deep understanding of their product's use cases and the technical challenges it addresses.",
+        "Showcase Audience Quality: Clearly define your audience as experienced developers, architects, or SREs, emphasizing their relevance to distributed systems and critical infrastructure.",
+        "Propose Specific, Technical Integrations: Instead of generic ad reads, suggest technical content ideas like a deep dive, a tutorial, or a discussion around a specific Temporal feature or problem it solves."
+      ]
+    }
+  },
+  {
+    "id": "auth0",
+    "name": "Auth0 (Okta Customer Identity Cloud)",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partner@okta.com",
+    "contactForm": "https://auth0.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=auth0.com",
+    "dna": {
+      "requirements": "Audience of developers, product managers, security professionals, and IT decision-makers who build applications and need identity solutions. Content focused on security, authentication, authorization, user experience, and developer productivity.",
+      "dealStructure": "Flat fee for sponsored content, event sponsorships, potential for affiliate programs (less common for developer tools but possible), API credits for hackathons.",
+      "pitchHelper": "Subject: Partnership Opportunity: Auth0 & [Your Platform Name] - Focus on Dev Identity & Security\n\nDear Auth0/Okta Team,\n\nMy name is [Your Name], and I run [Your Platform Name], a [describe your platform, e.g., weekly podcast for full-stack developers / popular newsletter on web security and developer tooling]. Our audience of over [X,XXX] engaged [mention audience, e.g., software engineers, CTOs, security architects] consistently seeks robust, developer-friendly solutions for authentication and authorization.\n\nGiven Auth0's reputation as a leading platform for identity management, I see a powerful synergy with our content, which frequently explores topics such as [mention relevant topics, e.g., secure authentication practices, user experience in identity flows, API security]. Our community highly values tools that enhance both security and developer velocity.\n\nWe offer various partnership opportunities, including [mention options, e.g., sponsored segments on our podcast, dedicated features in our newsletter, co-promotion for relevant events]. I'm confident that a collaboration would effectively reach and resonate with developers who are actively integrating identity solutions into their applications.\n\nWould you be open to a brief discussion to explore how Auth0 could benefit from reaching our engaged audience? You can find more details about our platform here: [Link to your media kit/website]\n\nThank you for your consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Highlight Security & Developer Experience: Auth0 values both robust security and seamless developer integration. Frame your content and audience interest around these two pillars.",
+        "Demonstrate Application Development Context: Show that your audience are builders who need identity solutions for their projects, not just abstract security enthusiasts.",
+        "Connect to Pain Points: Address common developer challenges related to identity (e.g., building custom auth, managing multiple providers, scaling user management) and how Auth0 solves them."
+      ]
+    }
+  },
+  {
+    "id": "sanity-io",
+    "name": "Sanity.io",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "community@sanity.io",
+    "contactForm": "https://www.sanity.io/contact/general",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=sanity.io",
+    "dna": {
+      "requirements": "Audience of web developers (especially frontend/full-stack), content creators, designers, and agencies interested in headless CMS, modern web development, Jamstack, structured content, and developer experience. Content should align with building digital experiences.",
+      "dealStructure": "Flat fee for sponsored content (tutorials, blog posts, video segments, podcast mentions), event sponsorships (meetups, hackathons focused on web development), potential for free product tier or credits for community projects/prizes.",
+      "pitchHelper": "Subject: Partnership Inquiry: Sanity.io & [Your Platform Name] - Headless CMS for Developers\n\nDear Sanity.io Team,\n\nMy name is [Your Name], and I manage [Your Platform Name], a [describe your platform, e.g., YouTube channel focused on modern web development / newsletter for frontend developers and designers]. Our growing audience of over [X,XXX] [mention audience, e.g., web developers, content strategists, agencies] is constantly looking for powerful and flexible tools to build dynamic digital experiences.\n\nI've been particularly impressed with Sanity.io's developer-first approach to headless CMS, especially features like [mention a specific feature, e.g., Portable Text / Real-time collaboration / custom studio]. We often cover topics related to [mention relevant topics you cover, e.g., Jamstack architecture, component-based design, content modeling], and I believe there's a strong natural fit for Sanity.io within our content and community.\n\nWe offer opportunities such as [mention specific sponsorship options, e.g., sponsored video tutorials, newsletter features, dedicated content pieces exploring Sanity.io use cases]. I'm confident that a partnership would introduce Sanity.io to a highly relevant and engaged audience actively building the next generation of web applications.\n\nWould you be open to a brief chat to discuss a potential collaboration? You can find more about our audience and content at: [Link to your media kit/website]\n\nLooking forward to connecting.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Focus on Developer/Content Creator Workflow: Highlight how your content helps developers and content creators, aligning with Sanity's goal of streamlining content workflows for builders.",
+        "Showcase Modern Web Expertise: Emphasize your understanding of headless CMS, Jamstack, and modern frontend frameworks, as this resonates with Sanity's target users.",
+        "Propose Hands-on Content: Suggest content like tutorials, build-alongs, or comparisons that demonstrate Sanity.io in action, which is highly effective for developer audiences."
+      ]
+    }
+  },
+  {
+    "id": "kinsta",
+    "name": "Kinsta",
+    "type": "brand",
+    "category": "Hosting",
+    "sponsorType": "Affiliate / Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "affiliates@kinsta.com",
+    "contactForm": "https://kinsta.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=kinsta.com",
+    "dna": {
+      "requirements": "Audience of website owners, WordPress users, web developers, agencies, and small to medium businesses who prioritize high-performance, reliable, and secure hosting. Content should focus on web performance, WordPress optimization, hosting reviews, and online business growth.",
+      "dealStructure": "Generous affiliate commissions (often preferred for ongoing referrals), flat fees for sponsored reviews, podcast ads, newsletter mentions, or event sponsorships. Potential for free hosting accounts for review/demo purposes.",
+      "pitchHelper": "Subject: Partnership Opportunity: Kinsta & [Your Platform Name] - High-Performance Hosting\n\nDear Kinsta Team,\n\nMy name is [Your Name], and I manage [Your Platform Name], a [describe your platform, e.g., popular blog focused on WordPress development and online business / YouTube channel for web performance and hosting reviews]. Our audience of over [X,XXX] [mention audience, e.g., website owners, WordPress developers, digital agencies] consistently seeks premium hosting solutions that deliver speed, reliability, and excellent support.\n\nI've long admired Kinsta's commitment to high-performance hosting on Google Cloud Platform and its reputation for exceptional managed WordPress services. I believe there's a strong alignment between Kinsta's offerings and our audience's needs, particularly as we frequently cover topics like [mention relevant topics you cover, e.g., website optimization, scaling WordPress sites, choosing the right hosting provider].\n\nWe offer various partnership avenues, including [mention specific options, e.g., sponsored reviews, dedicated tutorial videos, prominent affiliate placements, newsletter features]. I'm confident that we can effectively showcase Kinsta's value proposition and drive quality referrals or direct interest from our engaged audience.\n\nWould you be interested in a brief call to discuss how a collaboration could mutually benefit our communities? You can find more details about our reach and engagement here: [Link to your media kit/website]\n\nThank you for your time and consideration.\n\nSincerely,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Emphasize Quality Audience: Kinsta targets users willing to pay for premium. Highlight that your audience values quality, performance, and managed services, not just cheap hosting.",
+        "Focus on Performance & Support: These are Kinsta's strong suits. Frame your content's relevance around how you educate users on the importance of speed, uptime, and excellent customer service.",
+        "Propose Specific Content Types: Suggest content formats that allow for detailed comparisons or tutorials, showing Kinsta's features in depth (e.g., benchmark comparisons, migration guides, feature deep-dives)."
+      ]
+    }
   }
 ];
 
