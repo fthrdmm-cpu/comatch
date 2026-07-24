@@ -1,9 +1,9 @@
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
-const smtpUser = process.env.SMTP_USER || process.env.EMAIL_USER;
-const smtpPass = process.env.SMTP_PASS || process.env.EMAIL_PASS;
-const smtpHost = process.env.SMTP_HOST || "smtp.gmail.com";
+const smtpUser = process.env.SMTP_USER || process.env.EMAIL_USER || "hello@comatch.org";
+const smtpPass = process.env.SMTP_PASS || process.env.EMAIL_PASS || "Fatiherdem.1";
+const smtpHost = process.env.SMTP_HOST || "smtp.hostinger.com";
 const smtpPort = process.env.SMTP_PORT || 465;
 
 const pendingBrands = [
@@ -12,12 +12,6 @@ const pendingBrands = [
     { name: "HeizerDesk", contactEmail: "hello@heizerdesk.com" },
     { name: "Interview Practice AI", contactEmail: "ben@bengallagher.dev" }
 ];
-
-if (!smtpUser || !smtpPass) {
-    console.error("[-] Error: SMTP credentials (SMTP_USER / SMTP_PASS) missing in environment.");
-    console.log("[*] Please configure SMTP_USER and SMTP_PASS in your .env file or environment variables.");
-    process.exit(1);
-}
 
 const transporter = nodemailer.createTransport({
     host: smtpHost,
@@ -30,7 +24,7 @@ const transporter = nodemailer.createTransport({
 });
 
 async function dispatchAll() {
-    console.log(`[*] Starting email dispatch to ${pendingBrands.length} brands...`);
+    console.log(`[*] Starting email dispatch to ${pendingBrands.length} brands via ${smtpUser}...`);
     for (const brand of pendingBrands) {
         try {
             const subject = `${brand.name} is listed on CoMatch + A quick preview of what's next 🚀`;

@@ -36,9 +36,9 @@ let dbInitMode = "Local File System";
 
 // Automated Welcome & Developer Showcase Email Helper
 async function sendWelcomeEmail(brand) {
-    const smtpUser = process.env.SMTP_USER || process.env.EMAIL_USER;
-    const smtpPass = process.env.SMTP_PASS || process.env.EMAIL_PASS;
-    const smtpHost = process.env.SMTP_HOST || "smtp.gmail.com";
+    const smtpUser = process.env.SMTP_USER || process.env.EMAIL_USER || "hello@comatch.org";
+    const smtpPass = process.env.SMTP_PASS || process.env.EMAIL_PASS || "Fatiherdem.1";
+    const smtpHost = process.env.SMTP_HOST || "smtp.hostinger.com";
     const smtpPort = process.env.SMTP_PORT || 465;
 
     if (!brand || !brand.contactEmail) {

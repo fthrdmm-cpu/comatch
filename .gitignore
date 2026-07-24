@@ -1,6 +1,4 @@
-node_modules/
 .env
-.system_generated/
+node_modules/
 *.log
-scratch/
-creator_leads.json
+scratch/__pycache__/
