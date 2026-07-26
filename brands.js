@@ -2869,6 +2869,111 @@ const BRANDS_DATA = [
         "Propose Specific Content Types: Suggest content formats that allow for detailed comparisons or tutorials, showing Kinsta's features in depth (e.g., benchmark comparisons, migration guides, feature deep-dives)."
       ]
     }
+  },
+  {
+    "id": "vultr",
+    "name": "Vultr",
+    "type": "brand",
+    "category": "Hosting",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "info@vultr.com",
+    "contactForm": "https://www.vultr.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=vultr.com",
+    "dna": {
+      "requirements": "Audience primarily consists of developers, sysadmins, IT professionals, or startups interested in cloud infrastructure, high-performance computing, and global network deployment. Content should be technically sound, demonstrative of Vultr's platform capabilities, and align with hosting, DevOps, or web development topics. Clean and professional content is essential.",
+      "dealStructure": "Typically offers free credits for testing/demonstration, flat fee for dedicated video segments, podcast mentions, or blog posts. Affiliate commission structures are also available for referred sign-ups. Sponsorships for hackathons or events might include credits and branding.",
+      "pitchHelper": "Subject: Collaboration Opportunity: [Your Channel/Podcast Name] x Vultr for Developers\n\nDear Vultr Partnerships Team,\n\nMy name is [Your Name] and I run [Your Channel/Podcast/Newsletter Name] ([Link to Channel/Podcast/Newsletter]), where I create content focused on [Your Niche, e.g., cloud infrastructure, DevOps, web development tutorials] for an audience of [Your Audience Size] passionate [developers/engineers/tech enthusiasts].\n\nI've been a long-time admirer of Vultr's high-performance cloud infrastructure and commitment to empowering developers. Many of my viewers/listeners are actively looking for reliable, scalable, and cost-effective hosting solutions, and I believe Vultr aligns perfectly with their needs and my content's mission.\n\nI'm reaching out to explore a potential sponsorship or partnership. I envision [mention specific idea, e.g., a dedicated segment on a new Vultr product, a series of tutorials on deploying apps to Vultr, integration into a hackathon I'm organizing]. I am confident this collaboration would deliver significant value by introducing Vultr to a highly engaged and relevant technical audience.\n\nWould you be open to a brief discussion about how we could collaborate? I've attached my media kit for your review.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Emphasize Technical Fit: Clearly state your audience's technical background (developers, sysadmins) and how it directly aligns with Vultr's product offerings. Avoid generic 'tech enthusiast' descriptions.",
+        "Propose Specific, Actionable Content: Instead of just asking for sponsorship, suggest concrete content ideas like 'tutorial series on deploying X to Vultr,' 'comparison of Vultr vs. Y for Z use case,' or 'featuring Vultr during a hackathon setup guide.'",
+        "Highlight Engagement Metrics: Beyond subscriber count, mention average view duration, comment rates, or audience demographics (e.g., '70% of my audience are professional software engineers aged 25-45') to demonstrate value beyond mere reach."
+      ]
+    }
+  },
+  {
+    "id": "jetbrains",
+    "name": "JetBrains",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "marketing@jetbrains.com",
+    "contactForm": "https://www.jetbrains.com/company/contacts/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=jetbrains.com",
+    "dna": {
+      "requirements": "Highly technical developer audience with a focus on specific programming languages or frameworks (e.g., Java, Python, Kotlin, C#, Web development). Content must be of high quality, educational, and demonstrate a deep understanding of development tools and practices. Emphasis on pedagogical value and professional content is crucial.",
+      "dealStructure": "Often provides free licenses for their suite of IDEs and tools for content creation or educational purposes, flat fees for dedicated reviews/integrations, and support for developer conferences, hackathons, or meetups through licenses, swag, and potentially speakers.",
+      "pitchHelper": "Subject: Proposal: Partnering with JetBrains to Empower [Language/Framework] Developers on [Your Platform Name]\n\nDear JetBrains Marketing Team,\n\nMy name is [Your Name], and I create highly technical content focused on [Your Specific Niche, e.g., advanced Java development, Python best practices, Kotlin tutorials] for a dedicated audience of [Your Audience Size] developers on [Your Channel/Podcast/Newsletter Name] ([Link to Platform]).\n\nJetBrains IDEs, particularly [Mention a specific IDE, e.g., IntelliJ IDEA, PyCharm], are indispensable tools for my audience and myself. My content often features live coding and in-depth discussions where JetBrains products naturally integrate as the industry standard.\n\nI am reaching out to explore a potential partnership or sponsorship opportunity. I believe a collaboration, such as [propose a specific idea, e.g., a series demonstrating productivity tips with IntelliJ, a sponsored segment discussing a new feature in PyCharm, providing licenses for a coding challenge/hackathon I'm hosting], would be highly valuable. It would authentically showcase JetBrains' value to a highly engaged and relevant segment of the developer community.\n\nCould we schedule a brief call to discuss this further? My media kit is attached for your reference.\n\nThank you for your consideration.\n\nSincerely,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Deep Technical Alignment: Explicitly demonstrate your expertise in the programming languages or development areas that JetBrains tools serve. Mention specific IDEs and how they are already a natural fit for your content.",
+        "Focus on Education/Productivity: Frame your pitch around how you can help developers learn more effectively or be more productive using JetBrains products, aligning with their mission to empower developers.",
+        "Showcase Quality, Not Just Quantity: For JetBrains, quality and depth of technical content often matter more than sheer subscriber numbers. Highlight engagement, expert audience, and your ability to produce high-quality, in-depth tutorials or discussions."
+      ]
+    }
+  },
+  {
+    "id": "cloudways",
+    "name": "Cloudways",
+    "type": "brand",
+    "category": "Hosting",
+    "sponsorType": "Affiliate / Referral",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "affiliates@cloudways.com",
+    "contactForm": "https://www.cloudways.com/en/contact-us.php",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=cloudways.com",
+    "dna": {
+      "requirements": "Audience interested in web development, WordPress, Magento, Laravel, PHP, e-commerce, cloud hosting, or managed hosting solutions. Content should address topics like site performance, scalability, simplified server management, or running online businesses. Relevant for web agencies, freelancers, and small to medium businesses.",
+      "dealStructure": "Offers attractive affiliate commission rates for new sign-ups, flat fees for dedicated content (reviews, comparisons, migration tutorials), and exclusive discount codes for the audience. B2B partnerships often focus on lead generation and brand exposure.",
+      "pitchHelper": "Subject: Collaboration with Cloudways: Reaching [Your Audience Type] for Managed Hosting\n\nDear Cloudways Partnerships Team,\n\nMy name is [Your Name], and I produce content for [Your Channel/Podcast/Newsletter Name] ([Link to Platform]), reaching an engaged audience of [Your Audience Size] [Your Audience Type, e.g., WordPress developers, web agencies, small business owners interested in performance]. My focus is on [Your Niche, e.g., optimizing WordPress sites, scalable web infrastructure, e-commerce solutions].\n\nI've seen firsthand the benefits of Cloudways' managed cloud hosting, particularly its ease of use for [mention specific pain point or technology, e.g., deploying WordPress applications, managing multiple client sites]. My audience frequently seeks reliable, high-performance hosting solutions that simplify server management, and Cloudways is an ideal fit.\n\nI am keen to discuss a potential partnership. I propose [mention specific idea, e.g., a dedicated video review highlighting Cloudways' features, a tutorial series on migrating to Cloudways, a sponsored segment discussing the benefits of managed cloud hosting for agencies]. I am confident this would genuinely resonate with my audience and drive significant qualified leads to Cloudways.\n\nAre you available for a brief call to explore this further? I've attached my media kit for your review.\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Target Specific Audience Pain Points: Clearly articulate how your audience struggles with hosting challenges (e.g., slow sites, complex server management, scaling issues) and how Cloudways provides a direct, elegant solution.",
+        "Focus on Business Impact/Growth: Cloudways often targets agencies and businesses. Frame your value proposition in terms of helping their customers grow, improve efficiency, or reduce operational overhead by using Cloudways.",
+        "Propose a Clear Call-to-Action: Suggest content ideas that naturally lead to a conversion, such as a migration guide, a performance comparison, or a 'how-to' for setting up specific applications on Cloudways, always including a unique tracking link or discount code."
+      ]
+    }
+  },
+  {
+    "id": "coda",
+    "name": "Coda",
+    "type": "brand",
+    "category": "Productivity",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "partnerships@coda.io",
+    "contactForm": "https://coda.io/company/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=coda.io",
+    "dna": {
+      "requirements": "Audience interested in productivity, project management, team collaboration, no-code/low-code solutions, documentation, or knowledge management. Content should be educational, creative, and showcase Coda's unique 'doc as an app' capabilities, its Packs, and how it solves real-world workflow challenges. High-quality visual demonstrations are often preferred.",
+      "dealStructure": "Typically offers a flat fee for sponsored content like tutorials, platform reviews, 'build with me' videos, or integration demonstrations. May provide access to Coda product experts and offer exclusive discount codes to the audience. Emphasis is on creative and innovative content.",
+      "pitchHelper": "Subject: Unlocking Productivity for [Your Audience Type] with Coda on [Your Platform Name]\n\nDear Coda Partnerships Team,\n\nMy name is [Your Name], and I run [Your Channel/Podcast/Newsletter Name] ([Link to Platform]), where I guide an audience of [Your Audience Size] [Your Audience Type, e.g., productivity enthusiasts, startup founders, project managers] through tools and strategies for enhanced efficiency and organization.\n\nI'm deeply impressed by Coda's unique approach to document collaboration and app-building, transforming static documents into powerful, interactive tools. My audience is constantly seeking innovative solutions to streamline workflows, manage projects, and consolidate information, making Coda an incredibly relevant and valuable platform.\n\nI would love to discuss a potential partnership. I envision creating content such as [propose specific idea, e.g., a tutorial demonstrating Coda's flexibility for project tracking, a review showcasing how Coda Packs integrate with other tools, a sponsored segment on building a custom team dashboard in Coda]. This would offer Coda authentic exposure to a highly engaged audience eager for productivity breakthroughs.\n\nCould we schedule a brief call to explore this further? My media kit is available for your review.\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Focus on Coda's 'Doc as an App' Concept: Highlight specific features that make Coda unique (e.g., Packs, buttons, formulas in docs) and how you can showcase these to solve real-world problems for your audience, rather than just 'another document editor.'",
+        "Demonstrate Problem-Solving: Illustrate how you can use Coda to solve a specific pain point relevant to your audience (e.g., 'how to manage a startup's entire operations in Coda,' 'building a CRM for freelancers with Coda').",
+        "Visual Appeal is Key: Coda is highly visual. If your platform allows, suggest visually rich content ideas like screen-share tutorials, live builds, or walkthroughs of custom Coda docs you've created."
+      ]
+    }
+  },
+  {
+    "id": "rollbar",
+    "name": "Rollbar",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "marketing@rollbar.com",
+    "contactForm": "https://rollbar.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=rollbar.com",
+    "dna": {
+      "requirements": "Highly technical developer audience (software engineers, DevOps, SREs) with a focus on specific programming languages (e.g., Python, JavaScript, Ruby, PHP, Java, .NET, Go). Content should address error monitoring, debugging, application performance, and improving code quality in production environments. Authenticity and technical depth are highly valued.",
+      "dealStructure": "Offers flat fees for dedicated segments in videos/podcasts, sponsored tutorials or blog posts, and integration into coding projects. May provide extended trials or special access to Rollbar features for content creators and their audience. Often supports developer events with swag or licensing.",
+      "pitchHelper": "Subject: Partnership Proposal: Enhancing Developer Debugging with Rollbar on [Your Platform Name]\n\nDear Rollbar Marketing Team,\n\nMy name is [Your Name], and I create content for [Your Channel/Podcast/Newsletter Name] ([Link to Platform]), engaging an audience of [Your Audience Size] professional [Your Audience Type, e.g., Python developers, front-end engineers, DevOps practitioners]. My focus is on [Your Niche, e.g., robust software development, error handling best practices, improving application stability].\n\nAs a developer, I understand the critical importance of effective error monitoring, and Rollbar's comprehensive solution for real-time error tracking across multiple languages is an invaluable tool. My audience consistently seeks ways to build more resilient applications and streamline debugging processes, making Rollbar a perfect fit for my content.\n\nI'm reaching out to propose a collaboration. I envision [mention specific idea, e.g., a dedicated tutorial demonstrating Rollbar's integration with a specific framework, a sponsored discussion on proactive error monitoring, a segment showcasing how Rollbar helps identify critical bugs in production]. This would provide Rollbar with authentic exposure to a highly technical and problem-solving-oriented developer audience.\n\nWould you be open to a brief discussion about this opportunity? My media kit is attached for your consideration.\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Demonstrate Real-World Problem/Solution: Frame your content ideas around common developer pain points related to errors (e.g., 'hard-to-reproduce bugs,' 'alert fatigue,' 'slow debugging') and then show how Rollbar specifically solves these problems.",
+        "Focus on Specific Integrations/Languages: If your content is language or framework-specific, highlight how you can showcase Rollbar's integration with that particular ecosystem (e.g., 'Rollbar for Django applications,' 'Error tracking in React with Rollbar').",
+        "Highlight Production Readiness: Rollbar is a production-grade tool. Emphasize how your content can help developers integrate Rollbar into their production workflows and improve application reliability, appealing to their enterprise-readiness focus."
+      ]
+    }
   }
 ];
 

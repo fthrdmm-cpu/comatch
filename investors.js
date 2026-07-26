@@ -727,6 +727,115 @@ const INVESTORS_DATA = [
         "Personalize your outreach to a specific partner at Blossom Capital if you can find a direct connection to their background or prior investments."
       ]
     }
+  },
+  {
+    "id": "playfair-capital",
+    "name": "Playfair Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, AI, Deep Tech, Fintech, Marketplaces, Digital Health, Future of Work",
+    "ticketSize": "£250,000 - £1,000,000",
+    "contactEmail": "hello@playfair.vc",
+    "contactForm": "https://playfair.vc/pitch/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=playfair.vc",
+    "dna": {
+      "requirements": "Strong founding team, large market opportunity, early traction (users, partnerships, etc.), clear vision, focus on solving real problems. Primarily UK/European B2B tech startups.",
+      "dealStructure": "Standard equity investment, convertible notes for pre-seed. Often lead investor, typical seed stage dilution (15-25% for a lead).",
+      "pitchHelper": "Subject: [Company Name] - Solving [Problem] with [Unique Solution] (Pre-Seed/Seed)\n\nDear Playfair Team,\n\nI’m writing to you today because of your strong focus on early-stage B2B SaaS/Deep Tech startups, particularly your interest in [mention a specific portfolio company or thesis that aligns with Playfair, e.g., 'companies leveraging AI for enterprise efficiency' or 'innovative solutions in the future of work'].\n\nOur company, [Company Name], is building [briefly describe what you do, e.g., 'an AI-powered platform for X professionals to Y, dramatically increasing Z efficiency']. We address the critical problem of [specific problem] for [target audience], a market we estimate at $[TAM].\n\nWe’ve achieved [key traction metric - e.g., 'secured 5 pilot customers including two Fortune 500 companies,' or 'grown our user base to 10,000 active users with 30% month-over-month growth,' or 'developed a patent-pending technology that achieves X breakthrough'].\n\nOur ask is for £[Amount] in seed funding to [specific use of funds, e.g., 'expand our engineering team, refine our MVP for commercial launch, and scale our initial customer acquisition efforts']. This will enable us to reach [next key milestone, e.g., '£10k MRR within 12 months'].\n\nWe believe our [unique aspect, e.g., 'proprietary algorithm' or 'deep industry expertise'] and the team's background in [relevant experience] position us uniquely to win this market.\n\nI’ve attached our pitch deck for your review and would love to schedule a brief call to discuss how [Company Name] aligns with Playfair Capital's investment thesis.\n\nThank you for your time and consideration.\n\nBest regards,\n\n[Your Name]\n[Your Title]\n[Company Website]",
+      "pitchTips": [
+        "Personalize with Portfolio Insight: Reference a specific Playfair portfolio company or investment thesis that directly aligns with your startup to show you've done your homework and aren't just mass emailing.",
+        "Highlight UK/European Connection: Playfair has a strong UK and European focus. If you're based in or targeting these markets, explicitly mention how this aligns with their geographic interest.",
+        "Concise Traction & Vision: Get straight to your most compelling traction and your bold vision in the first few sentences. Playfair emphasizes strong teams and big market opportunities, so demonstrate both immediately."
+      ]
+    }
+  },
+  {
+    "id": "earlybird-venture-capital",
+    "name": "Earlybird Venture Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed to Growth (focus on Seed/Series A for Digital East Fund)",
+    "sectors": "Deep Tech, AI, SaaS, Fintech, Health Tech, Web3",
+    "ticketSize": "€500,000 - €5,000,000 (Seed/Series A)",
+    "contactEmail": "info@earlybird.com",
+    "contactForm": "https://earlybird.typeform.com/to/Bf0N0P",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=earlybird.com",
+    "dna": {
+      "requirements": "Visionary founders, disruptive technology, strong market fit, early traction (evidence of product-market fit or strong customer interest), scalable business model, focus on European startups.",
+      "dealStructure": "Standard equity investment. Can lead or co-invest. Typical European seed/Series A terms.",
+      "pitchHelper": "Subject: Disrupting [Industry] with [Company Name] - Seed Investment Opportunity\n\nDear Earlybird Team,\n\nI’m reaching out today as a founder of [Company Name], a [briefly describe your solution, e.g., 'deep tech platform leveraging quantum computing for X problem'] based in [Your City/Country]. We are aware of Earlybird's leading role in backing visionary European deep tech and enterprise SaaS companies, particularly your investments in [mention a relevant portfolio company or their thesis, e.g., 'companies pushing the boundaries of AI'].\n\nWe are tackling [major problem] in the [target industry] market, which currently relies on [outdated solution/process]. Our proprietary [technology/approach] offers a [quantifiable improvement, e.g., '10x speed increase and 50% cost reduction'], positioning us to capture a significant share of the €[TAM] market.\n\nSince our inception, we have [key traction, e.g., 'secured LOIs from 3 major enterprises,' 'developed a robust MVP with 1,000 active beta users,' or 'completed a successful technical pilot demonstrating X capabilities']. Our team of [number] brings together [relevant expertise/backgrounds].\n\nWe are currently raising a Seed round of €[Amount] to [specific use of funds, e.g., 'scale our engineering team, accelerate product development, and expand into key European markets']. This funding will enable us to reach [next key milestone, e.g., '€50k MRR and solidify our IP portfolio'].\n\nWe would be grateful for the opportunity to share our deck and discuss how our vision aligns with Earlybird's focus on groundbreaking European startups.\n\nThank you for your time.\n\nSincerely,\n\n[Your Name]\nFounder & CEO, [Company Name]\n[Company Website]",
+      "pitchTips": [
+        "Emphasize European Roots: Earlybird is a pan-European VC. Clearly state your European base and/or your focus on European markets early in the email to resonate with their geographic mandate.",
+        "Focus on Deep Tech/Disruption: Earlybird has a strong appetite for technically challenging, disruptive innovations. Frame your problem/solution in terms of fundamental technological advancement or significant market disruption.",
+        "Demonstrate Scalability: Highlight how your business model is inherently scalable across multiple markets or industries, aligning with their goal of backing future European tech leaders."
+      ]
+    }
+  },
+  {
+    "id": "passion-capital",
+    "name": "Passion Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "SaaS, Fintech, AI, Marketplaces, Consumer (primarily UK-based tech)",
+    "ticketSize": "£500,000 - £1,000,000 (initial)",
+    "contactEmail": "hello@passioncapital.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=passioncapital.com",
+    "dna": {
+      "requirements": "Strong founding team (passionate, resilient, experienced), large market opportunity, innovative product/service, clear vision for scalability, UK focus. They love to be the first institutional money in.",
+      "dealStructure": "Lead investor, standard equity terms for seed rounds. Often take a board seat.",
+      "pitchHelper": "Subject: Seed Round: [Company Name] - Powering [Specific Outcome] for [Target Audience]\n\nDear Passion Capital Team,\n\nI’m writing to you today as a founder of [Company Name], a [briefly describe your solution, e.g., 'SaaS platform transforming how X businesses manage Y']. Having followed Passion Capital's dedication to backing the UK's most ambitious founders at the very earliest stages, with successes like [mention a relevant portfolio company if possible, e.g., 'Monzo' or 'GoCardless' if your sector aligns], I believe we are a strong fit.\n\nWe are solving the acute problem of [specific problem] for [target audience] within the [industry] sector, a market valued at £[TAM]. Our unique approach involves [key differentiator/technology, e.g., 'leveraging predictive AI to automate Z task'].\n\nDespite being pre-seed/seed, we've already achieved [key traction, e.g., 'secured 10 paying pilot customers,' 'developed a fully functional MVP with positive user feedback,' or 'built a waiting list of 500+ interested users']. Our team, comprised of [relevant experience of founders], is uniquely positioned to execute on this vision.\n\nWe are currently raising a £[Amount] seed round, aiming to [specific use of funds, e.g., 'onboard our first 100 customers, expand our product features, and prove out our go-to-market strategy']. This will allow us to reach [next key milestone, e.g., '£20k MRR within 9-12 months'].\n\nWe’re looking for a lead investor who shares our conviction in building a category-defining company. I've attached our deck and would welcome the opportunity for a brief discussion to explore how [Company Name] can become the next Passion Capital success story.\n\nThank you,\n\n[Your Name]\nCo-founder & CEO, [Company Name]\n[Company Website]",
+      "pitchTips": [
+        "Strong UK Focus: Clearly state your UK presence and/or market focus early, as Passion Capital is deeply ingrained in the UK startup ecosystem.",
+        "Founder-Market Fit: Highlight the founding team's passion, resilience, and relevant experience. Passion Capital places a huge emphasis on the founders themselves, so showcase why *you* are the right team.",
+        "Concise Storytelling: Get to the point quickly, clearly articulating the problem, your unique solution, and early validation. Passion Capital partners are known for their direct communication and appreciate clarity."
+      ]
+    }
+  },
+  {
+    "id": "la-famiglia",
+    "name": "La Famiglia",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed to Series A",
+    "sectors": "B2B SaaS, AI, Fintech, Deep Tech, Enterprise software",
+    "ticketSize": "€1,000,000 - €5,000,000 (initial for Seed/Series A)",
+    "contactEmail": "info@lafamiglia.vc",
+    "contactForm": "https://airtable.com/shra7xU0qLg3L0TgF",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=lafamiglia.vc",
+    "dna": {
+      "requirements": "Visionary founders, strong B2B focus, scalable business model, early product validation/traction, strong team, European relevance. Emphasize network effects, community, and platform potential.",
+      "dealStructure": "Lead or co-investor. Standard equity terms.",
+      "pitchHelper": "Subject: [Company Name]: Building the Next-Gen [B2B Sector] Platform (Seed Round)\n\nDear La Famiglia Team,\n\nI’m writing to you today as the founder of [Company Name], a [briefly describe your B2B SaaS solution, e.g., 'AI-powered platform streamlining X for enterprise clients']. Your commitment to supporting B2B disruptors and your belief in network effects, as demonstrated by investments like [mention a relevant portfolio company, e.g., 'Personio' or a specific thesis they've published], deeply resonates with our vision.\n\nWe are addressing the critical pain point of [specific problem] for [target B2B customer] within the €[TAM] market. Our platform offers a [key benefit, e.g., 'unified solution that enhances Y efficiency by Z% and fosters collaboration across teams'], replacing fragmented legacy systems.\n\nWe’ve achieved significant early traction, including [key metric - e.g., 'signed LOIs with 3 pilot enterprises,' 'secured €50k ARR from initial customers,' or 'developed an MVP with high engagement from 20 beta companies']. Our team's expertise in [relevant areas] positions us to build a category leader.\n\nWe are raising a Seed round of €[Amount] to [specific use of funds, e.g., 'accelerate product development, expand our sales and marketing efforts across Europe, and onboard our first 50 paying customers']. This investment will enable us to reach [next key milestone, e.g., '€150k ARR within 12 months'].\n\nWe believe [Company Name]'s potential for strong network effects and its B2B focus align perfectly with La Famiglia’s investment thesis. We would appreciate the opportunity to share our detailed pitch deck and discuss how we can build a significant European tech company together.\n\nThank you for your time.\n\nBest regards,\n\n[Your Name]\nFounder & CEO, [Company Name]\n[Company Website]",
+      "pitchTips": [
+        "Emphasize B2B Network Effects: Clearly articulate how your solution creates network effects or leverages community to drive value and growth, as this is a core thesis for La Famiglia.",
+        "Highlight European Market Potential: As a Europe-focused fund, stress your plans for expansion within the European market and how your solution is tailored for its enterprise landscape.",
+        "Showcase Strategic Partnerships/Traction: La Famiglia values founders who can execute. Any early strategic partnerships, strong customer testimonials, or significant pilot programs should be highlighted to demonstrate execution capability and market validation."
+      ]
+    }
+  },
+  {
+    "id": "elaia-partners",
+    "name": "Elaia Partners",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed to Series B (with dedicated Seed fund)",
+    "sectors": "Deep Tech, SaaS, AI, Digital, Fintech",
+    "ticketSize": "€300,000 - €1,000,000 (Seed)",
+    "contactEmail": "contact@elaia.com",
+    "contactForm": "https://www.elaia.com/submit-your-project/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=elaia.com",
+    "dna": {
+      "requirements": "Deep Tech / science-based innovation, strong IP, ambitious and technical founding team, large market opportunity, European focus (especially France), early product development or significant scientific progress.",
+      "dealStructure": "Lead or co-investor. Standard equity terms. Value hands-on support.",
+      "pitchHelper": "Subject: Seed Round: [Company Name] - Revolutionizing [Industry] with Deep Tech AI\n\nDear Elaia Partners Team,\n\nI’m reaching out today as the founder of [Company Name], a [briefly describe your deep tech solution, e.g., 'pioneering AI platform leveraging novel neuro-symbolic techniques for X complex problem']. We are inspired by Elaia’s consistent support for groundbreaking European deep tech and enterprise software companies, particularly your expertise in nurturing science-based innovations from their earliest stages, as seen with [mention a relevant portfolio company, e.g., 'Shift Technology' or 'Criteo' for their deep tech roots'].\n\nWe are addressing the critical challenge of [specific, technically complex problem] within the [target industry], a market we estimate at €[TAM]. Our unique [technology/approach, e.g., 'patent-pending algorithm' or 'proprietary hardware design'] offers a [quantifiable advantage, e.g., 'breakthrough in data processing speed and accuracy'] that is currently unmatched.\n\nDespite our early stage, we have already achieved [key technical or commercial traction, e.g., 'developed a functional prototype demonstrating X performance,' 'secured a research grant of €Y,' 'published a peer-reviewed paper on Z breakthrough,' or 'engaged with 3 enterprise partners for pilot projects']. Our team comprises [relevant technical/scientific backgrounds and experience].\n\nWe are seeking €[Amount] in seed funding to [specific use of funds, e.g., 'further develop our core AI engine, secure key IP, and expand our scientific and engineering team']. This investment will enable us to reach [next key milestone, e.g., 'commercialize our MVP and demonstrate initial market adoption within 18 months'].\n\nWe are confident that [Company Name]'s deep tech foundation and significant market potential align perfectly with Elaia's investment thesis. I’ve attached our detailed deck and would welcome a discussion to elaborate on our technology and vision.\n\nThank you for your consideration.\n\nSincerely,\n\n[Your Name]\nFounder & CTO, [Company Name]\n[Company Website]",
+      "pitchTips": [
+        "Emphasize Deep Tech & IP: Lead with the technical innovation, scientific breakthrough, or unique intellectual property. Elaia highly values true deep tech and strong defensible technology.",
+        "Highlight Founder's Technical Expertise: Showcase the founding team's deep technical or scientific background. Elaia invests in founders who are experts in their domain.",
+        "Mention European/French Nexus: If applicable, highlight your connection to the European (especially French) ecosystem, as Elaia is a prominent player there. Demonstrate how your solution can thrive in this market."
+      ]
+    }
   }
 ];
 
