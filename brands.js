@@ -1,5 +1,5 @@
 // CoMatch Brands & Teams Database
-// Curated with high-definition, ad-blocker-safe logo assets from Wikipedia and Simple Icons.
+// Curated with high-definition, ad-blocker-safe logo assets.
 
 const BRANDS_DATA = [
   {
@@ -2972,6 +2972,111 @@ const BRANDS_DATA = [
         "Demonstrate Real-World Problem/Solution: Frame your content ideas around common developer pain points related to errors (e.g., 'hard-to-reproduce bugs,' 'alert fatigue,' 'slow debugging') and then show how Rollbar specifically solves these problems.",
         "Focus on Specific Integrations/Languages: If your content is language or framework-specific, highlight how you can showcase Rollbar's integration with that particular ecosystem (e.g., 'Rollbar for Django applications,' 'Error tracking in React with Rollbar').",
         "Highlight Production Readiness: Rollbar is a production-grade tool. Emphasize how your content can help developers integrate Rollbar into their production workflows and improve application reliability, appealing to their enterprise-readiness focus."
+      ]
+    }
+  },
+  {
+    "id": "modal-labs",
+    "name": "Modal Labs",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Product Gifting / B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "support@modal.com",
+    "contactForm": "https://modal.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=modal.com",
+    "dna": {
+      "requirements": "Python AI/ML engineers, GPU cloud infrastructure builders, serverless container tutorial creators.",
+      "dealStructure": "Modal GPU compute credits + technical tutorial sponsorships + AI hackathon sponsorship slots.",
+      "pitchHelper": "Hi Modal Team,\n\nI build open-source AI applications and publish Python serverless tutorials at [Link]. We are showcasing serverless GPU deployments and want to feature Modal as the best option. Let's discuss compute credits.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Focus on Python/GPU scale: Highlight the number of GPU inference jobs or serverless functions your tutorials run.",
+        "Bypass spam filters: Mention specific Modal primitives like @app.function() or modal.Volume.",
+        "Show developer reach: State your GitHub star counts or active developer subscriber metrics."
+      ]
+    }
+  },
+  {
+    "id": "mistral-ai",
+    "name": "Mistral AI",
+    "type": "brand",
+    "category": "AI",
+    "sponsorType": "Flat Fee / B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "contact@mistral.ai",
+    "contactForm": "https://mistral.ai",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=mistral.ai",
+    "dna": {
+      "requirements": "Open-source LLM developers, AI agent builders, enterprise AI tutorial channels.",
+      "dealStructure": "Mistral API tokens + flat fee tutorial sponsorships + hackathon prize backing.",
+      "pitchHelper": "Hi Mistral Team,\n\nI develop open-source LLM agents and publish AI tutorials at [Link]. We are building a comparison on open-weights vs closed models and want to feature Mistral Large. Let's discuss a partnership.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Highlight open-weights tech: Mention Mistral 8x22B, Codestral, or Pixtral integration use cases.",
+        "Show real API usage: Include your estimated monthly token consumption in your pitch.",
+        "Clear CTA: Propose a specific YouTube video or dev newsletter issue featuring their API."
+      ]
+    }
+  },
+  {
+    "id": "langchain",
+    "name": "LangChain",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Product Gifting / B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "hello@langchain.dev",
+    "contactForm": "https://www.langchain.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=langchain.com",
+    "dna": {
+      "requirements": "AI agent builders, RAG architecture creators, LangGraph and LangSmith tutorial authors.",
+      "dealStructure": "LangSmith tracing credits + official community showcase features + sponsored dev content.",
+      "pitchHelper": "Hi LangChain Team,\n\nI build multi-agent AI systems and write tutorials on LangGraph at [Link]. We'd love to partner to feature LangSmith observability tools in our upcoming guide.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Mention LangGraph/LangSmith: Demonstrate familiarity with their enterprise observability products.",
+        "Provide GitHub links: Link directly to active repos using LangChain packages.",
+        "Focus on AI engineering: Target your pitch to professional software engineers building LLM apps."
+      ]
+    }
+  },
+  {
+    "id": "pinecone",
+    "name": "Pinecone",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Product Gifting / B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "info@pinecone.io",
+    "contactForm": "https://www.pinecone.io",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=pinecone.io",
+    "dna": {
+      "requirements": "Vector search engineers, RAG system architects, enterprise AI search developers.",
+      "dealStructure": "Pinecone serverless vector index credits + sponsored dev tutorials + event sponsorship.",
+      "pitchHelper": "Hi Pinecone Team,\n\nI build enterprise RAG applications and vector search tutorials at [Link]. We are publishing a benchmark guide on vector databases and want to showcase Pinecone Serverless.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Focus on Vector RAG: Highlight semantic search, hybrid search, and vector embeddings scale.",
+        "Bypass spam filters: Mention Pinecone Serverless and cost-per-query optimizations.",
+        "Include developer audience stats: Mention your newsletter open rate or developer subscriber count."
+      ]
+    }
+  },
+  {
+    "id": "neon-db",
+    "name": "Neon Database",
+    "type": "brand",
+    "category": "Hosting",
+    "sponsorType": "Product Gifting / B2B Partnership",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "support@neon.tech",
+    "contactForm": "https://neon.tech",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=neon.tech",
+    "dna": {
+      "requirements": "Fullstack Next.js/React developers, serverless Postgres users, Drizzle/Prisma ORM tutorial creators.",
+      "dealStructure": "Neon Postgres scale plan credits + Next.js database tutorial sponsorships + dev conference slots.",
+      "pitchHelper": "Hi Neon Team,\n\nI publish fullstack Next.js & Drizzle ORM tutorials at [Link]. We are featuring serverless Postgres branching in our next course and want to partner with Neon.\n\nBest,\n[Name]",
+      "pitchTips": [
+        "Highlight Database Branching: Neon's signature feature is Instant Database Branching.",
+        "Show Vercel/Next.js fit: Neon is the default serverless Postgres choice for Vercel users.",
+        "Propose clear ROI: Offer a dedicated tutorial on building serverless apps with Neon."
       ]
     }
   }
