@@ -836,6 +836,116 @@ const INVESTORS_DATA = [
         "Mention European/French Nexus: If applicable, highlight your connection to the European (especially French) ecosystem, as Elaia is a prominent player there. Demonstrate how your solution can thrive in this market."
       ]
     }
+  },
+  {
+    "id": "fabric-ventures",
+    "name": "Fabric Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "Web3 Infrastructure, DeFi, Gaming, Deep Tech",
+    "ticketSize": "€500k - €2M",
+    "contactEmail": "info@fabric.vc",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=fabric.vc",
+    "dna": {
+      "requirements": "Visionary founders building foundational Web3/decentralized technology. Demonstrable technical progress (MVP, whitepaper, early code). Clear understanding of market need in the decentralized space. Strong community engagement or potential.",
+      "dealStructure": "Standard equity investment with typical VC terms for early-stage rounds. Convertible notes or SAFEs for very early rounds.",
+      "pitchHelper": "Subject: Seed Pitch: [Company Name] - Revolutionizing [Specific Web3 Niche] with [Key Innovation]\n\nDear Fabric Ventures Team,\n\nI'm writing to introduce [Company Name], a [brief description of company, e.g., \"decentralized protocol\" or \"Web3 infrastructure provider\"] that is [explain the problem it solves and its innovative solution in 1-2 sentences].\n\nWe are building [Specific Product/Service] which targets the rapidly growing [Specific Web3 Market, e.g., \"DeFi lending market\" or \"interoperable gaming assets\"]. Our unique approach, centered around [mention a key differentiator like \"zero-knowledge proofs\" or \"community-governed DAO structure\"], has already achieved [mention key traction like \"alpha launch,\" \"X active users,\" \"Y integrations,\" or \"successful testnet\"].\n\nWe are currently raising a €[X]M Seed round to [explain how funds will be used, e.g., \"expand our engineering team,\" \"launch mainnet,\" \"acquire initial users\"]. We believe Fabric Ventures' deep expertise in Web3 infrastructure and token economics makes you an ideal partner.\n\nYou can learn more at [Link to your Website/Whitepaper] or our [Link to Pitch Deck]. We would be grateful for the opportunity to discuss how [Company Name] can contribute to the decentralized future.\n\nBest regards,\n\n[Your Name]\n[Your Title]\n[Your Company]\n[Your Contact Info]",
+      "pitchTips": [
+        "Tailor Web3-Specific Language: Use precise Web3 terminology in your subject line and intro. Avoid generic startup jargon. Highlight a unique technical or community aspect of your project relevant to Fabric's portfolio.",
+        "Highlight Technical / Protocol-level Innovation: Fabric Ventures focuses on foundational Web3 tech. Your pitch should clearly articulate the deep tech or protocol-level innovation rather than just a dApp or use case, to show alignment with their investment thesis.",
+        "Mention Specific Portfolio Companies or Theses: Show you've done your homework by briefly referencing a Fabric portfolio company or a specific investment thesis they've published, and how your project aligns or complements it."
+      ]
+    }
+  },
+  {
+    "id": "frontline-ventures",
+    "name": "Frontline Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "B2B SaaS, Cloud, AI/ML, Fintech, Security",
+    "ticketSize": "€1M - €5M",
+    "contactEmail": "pitch@frontline.vc",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=frontline.vc",
+    "dna": {
+      "requirements": "European B2B SaaS teams, clear path to Product-Market Fit, early revenue traction (MRR is a strong indicator), strong founder-market fit, global ambitions (especially US expansion potential).",
+      "dealStructure": "Standard VC equity investment, typically leading or co-leading Seed rounds.",
+      "pitchHelper": "Subject: Seed Pitch: [Company Name] - Scaling B2B SaaS in [Specific Vertical] (MRR: €[X]K)\n\nDear Frontline Ventures Team,\n\nI'm reaching out from [Company Name], a [brief description of company, e.g., \"B2B SaaS platform\"] that empowers [target customer] to [solve specific problem] by [your unique value proposition].\n\nWe've developed [Product Name], a [describe product type] that utilizes [mention a key technology like AI/ML] to deliver [quantifiable benefit, e.g., \"reduce operational costs by X%\"]. Since our launch [X] months ago, we've achieved significant traction, including €[X]K in monthly recurring revenue (MRR), serving [number] paying customers like [mention 1-2 recognizable customer names if possible].\n\nWe are currently raising a €[Y]M Seed round to [explain use of funds, e.g., \"accelerate product development,\" \"expand sales team across Europe,\" \"lay groundwork for US market entry\"]. Frontline's expertise in B2B SaaS and trans-Atlantic growth makes you an ideal partner for our ambitious plans.\n\nOur pitch deck is available here: [Link to Pitch Deck]. We'd be thrilled to share more about our vision for [Company Name].\n\nBest regards,\n\n[Your Name]\n[Your Title]\n[Your Company]\n[Your Contact Info]",
+      "pitchTips": [
+        "Lead with Traction & B2B Focus: Immediately state your current MRR or key B2B traction in the subject line or opening sentence. Frontline values quantifiable progress in B2B SaaS.",
+        "Emphasize European Roots & US Ambition: Explicitly mention your European base and your clear strategy for US market entry. This aligns directly with their core investment thesis and value proposition.",
+        "Reference Specific Partner or Portfolio Company: Demonstrate you've researched their team by mentioning a specific partner whose interests align with your sector, or a portfolio company that resonates with your market, showcasing a thoughtful approach rather than a mass email."
+      ]
+    }
+  },
+  {
+    "id": "mangrove-capital-partners",
+    "name": "Mangrove Capital Partners",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "SaaS, Fintech, Deep Tech, Marketplaces, AI",
+    "ticketSize": "€500k - €3M",
+    "contactEmail": "info@mangrove.vc",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=mangrove.vc",
+    "dna": {
+      "requirements": "Disruptive technology or business model, visionary founders, large market potential, strong product vision, early indications of market validation. They look for bold ideas.",
+      "dealStructure": "Standard VC equity, often leading or co-leading early rounds.",
+      "pitchHelper": "Subject: Seed Investment: [Company Name] - Disrupting [Industry/Problem] with [Unique Tech/Approach]\n\nDear Mangrove Capital Partners Team,\n\nI am [Your Name], Co-founder of [Company Name], a [brief description, e.g., \"Deep Tech startup\" or \"SaaS platform\"] that is poised to [explain the disruptive vision, e.g., \"fundamentally change how X operates\" or \"unlock Y market opportunity\"].\n\nOur core innovation, [describe key technology or business model innovation, e.g., \"an AI-driven predictive engine\" or \"a novel peer-to-peer marketplace protocol\"], addresses [specific problem or inefficiency]. We believe this approach will enable us to [quantifiable impact or market disruption]. We have [mention early proof points like \"successful pilot,\" \"validated MVP with X users,\" or \"pre-orders from Y key customers\"].\n\nWe are currently raising a €[X]M Seed round to [explain use of funds, e.g., \"scale our R&D efforts,\" \"launch commercially,\" \"expand our user base\"]. Given Mangrove's history of backing transformative companies like [mention a Mangrove portfolio company if relevant], we believe there's a strong strategic fit.\n\nYou can find our deck and learn more at [Link to Pitch Deck]. We look forward to the possibility of discussing this further.\n\nBest regards,\n\n[Your Name]\n[Your Title]\n[Your Company]\n[Your Contact Info]",
+      "pitchTips": [
+        "Focus on Disruptive Innovation: Frame your subject line and opening around the \"disruptive\" or \"transformative\" nature of your solution. Mangrove explicitly seeks out bold, paradigm-shifting ideas.",
+        "Highlight Visionary Founders: Briefly articulate why your founding team is uniquely positioned to execute this bold vision, emphasizing relevant experience or unique insights that align with their value for strong founders.",
+        "Connect to a Mangrove Success Story: If your vision shares parallels with a past Mangrove investment (e.g., Skype, Wix, Walkme), subtly draw that connection in your email to demonstrate alignment and genuine interest."
+      ]
+    }
+  },
+  {
+    "id": "lightspeed-venture-partners",
+    "name": "Lightspeed Venture Partners",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "Enterprise SaaS, Fintech, Deep Tech, AI/ML, Consumer",
+    "ticketSize": "$1M - $5M",
+    "contactEmail": "info@lsvp.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=lsvp.com",
+    "dna": {
+      "requirements": "Category-defining ambition, exceptional founding teams, significant market opportunity, strong defensible technology/product, early product-market fit indications. Often seek high-growth potential.",
+      "dealStructure": "Standard VC equity. Will typically lead or co-lead large Seed rounds.",
+      "pitchHelper": "Subject: Seed Investment: [Company Name] - Building the Next [Category] for [Target Market]\n\nDear Lightspeed Team,\n\nI am writing to you as the founder of [Company Name], a [brief description of company, e.g., \"Enterprise AI platform\" or \"Deep Tech solution\"] set to redefine [specific industry or problem space].\n\nWe are developing [Product Name], which leverages [key technology, e.g., \"proprietary AI algorithms\" or \"novel blockchain architecture\"] to solve [critical problem] for [target customers]. Our solution offers [quantifiable benefit, e.g., \"Xx efficiency gains\" or \"Y% cost reduction\"], positioning us to become the market leader in [specific niche]. We have already secured [mention early validation like \"X enterprise pilot customers,\" \"achieved Y MRR,\" or \"developed Z breakthrough technology\"].\n\nWe are currently raising a $C M Seed round to [explain use of funds, e.g., \"scale our engineering team,\" \"expand into new geographies,\" \"accelerate product roadmap\"]. Given Lightspeed's impressive track record in backing transformative enterprise and deep tech companies, we believe our vision aligns well with your investment thesis.\n\nOur detailed deck is available at [Link to Pitch Deck]. We would appreciate the opportunity to discuss how [Company Name] is poised for category leadership.\n\nBest regards,\n\n[Your Name]\n[Your Title]\n[Your Company]\n[Your Contact Info]",
+      "pitchTips": [
+        "Aim for a Warm Introduction: Lightspeed strongly prefers warm introductions. While using the general email, state if you've been referred by a mutual connection or if you attempted to get an intro, making the email more credible.",
+        "Focus on Category-Defining Ambition: Your subject and opening should immediately convey the scale of your ambition – how you're building a \"category leader\" or a \"new paradigm,\" which resonates with Lightspeed's investment philosophy.",
+        "Showcase Deep Tech/Enterprise Expertise: Clearly articulate the technical depth, competitive moat, and enterprise-readiness of your solution. Lightspeed values robust, defensible technology and a clear path to significant enterprise adoption."
+      ]
+    }
+  },
+  {
+    "id": "episode1-ventures",
+    "name": "Episode 1 Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "UK B2B SaaS, AI/ML, Marketplaces, Fintech",
+    "ticketSize": "£500k - £2M",
+    "contactEmail": "hello@episode1.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=episode1.com",
+    "dna": {
+      "requirements": "UK-based team, strong technical founders, MVP with early commercial traction (or clear path to it), large addressable B2B market, clear differentiator.",
+      "dealStructure": "Standard VC equity, typically leading or co-leading Seed rounds.",
+      "pitchHelper": "Subject: Seed Pitch: [Company Name] - UK B2B SaaS for [Target Industry] with £[X]K MRR\n\nDear Episode 1 Team,\n\nI'm [Your Name], co-founder of [Company Name], a UK-based [brief description, e.g., \"B2B SaaS platform\" or \"AI-driven solution\"] designed to help [target customer] [solve specific problem].\n\nOur product, [Product Name], provides [key functionality] and has quickly gained traction in the [specific UK B2B market] by [explain unique benefit or differentiator]. We're proud to have achieved £[X]K in monthly recurring revenue (MRR) within [Y] months, serving [number] active customers. Our team is based in [City, UK] and comprises [mention key technical/domain expertise].\n\nWe are currently raising a £[Z]M Seed round to [explain use of funds, e.g., \"expand our product roadmap,\" \"grow our sales and marketing efforts across the UK,\" \"further develop our AI capabilities\"]. Episode 1's deep focus on early-stage UK B2B SaaS makes you an ideal partner to help us scale.\n\nOur pitch deck is available here: [Link to Pitch Deck]. We'd welcome the opportunity to connect and discuss our growth journey.\n\nBest regards,\n\n[Your Name]\n[Your Title]\n[Your Company]\n[Your Contact Info]",
+      "pitchTips": [
+        "Clearly State UK Focus & B2B SaaS: Immediately mention your UK base and B2B SaaS nature in the subject line or opening. Episode 1 has a strong geographic and sector focus.",
+        "Highlight Technical Founder & Early Traction: Emphasize the technical strength of your founding team and any early commercial traction (e.g., MRR, pilot successes) early in the email, as these are key criteria for Seed investments.",
+        "Reference a Specific UK B2B Market Insight: Show awareness of the UK B2B landscape or specific trends in your industry within the UK. This demonstrates alignment and a tailored approach to a UK-focused investor."
+      ]
+    }
   }
 ];
 

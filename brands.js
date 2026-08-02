@@ -1,5 +1,5 @@
 // CoMatch Brands & Teams Database
-// Curated with high-definition, ad-blocker-safe logo assets.
+// Curated with high-definition, ad-blocker-safe logo assets from Wikipedia and Simple Icons.
 
 const BRANDS_DATA = [
   {
@@ -3077,6 +3077,111 @@ const BRANDS_DATA = [
         "Highlight Database Branching: Neon's signature feature is Instant Database Branching.",
         "Show Vercel/Next.js fit: Neon is the default serverless Postgres choice for Vercel users.",
         "Propose clear ROI: Offer a dedicated tutorial on building serverless apps with Neon."
+      ]
+    }
+  },
+  {
+    "id": "akamai-cloud",
+    "name": "Akamai Cloud",
+    "type": "brand",
+    "category": "Hosting",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "cloud-partnerships@akamai.com",
+    "contactForm": "https://www.akamai.com/partners/contact-us",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=akamai.com",
+    "dna": {
+      "requirements": "Audience of active developers, DevOps professionals, or tech educators. Content should be highly technical, showcasing Akamai Cloud services (formerly Linode) through tutorials, project builds, deep dives into cloud infrastructure, or performance comparisons. Preference for content related to cloud hosting, Kubernetes, object storage, or global network solutions.",
+      "dealStructure": "Cloud credits for content development, flat fee for sponsored videos/articles, potential for affiliate commission on new customer sign-ups. Deal size depends on audience reach and content complexity.",
+      "pitchHelper": "Subject: Sponsorship Opportunity: [Your Name/Channel] & Akamai Cloud - [Specific Content Idea]\n\nDear Akamai Cloud Partnerships Team,\n\nMy name is [Your Name] and I run [Your Channel/Platform - e.g., a YouTube channel, tech blog, podcast] focused on [Your Niche, e.g., cloud development, DevOps, open-source projects]. With [X] subscribers/readers and an average [Y]% engagement rate, my audience consists primarily of [Target Audience - e.g., developers, system administrators, startups] who are actively seeking robust and scalable cloud solutions.\n\nI've been impressed by Akamai Cloud's performance and developer-friendly tools, particularly [mention a specific service like Linodes, Kubernetes, Object Storage]. I believe there's a strong alignment between your offerings and my content, and I'd love to propose a sponsored integration featuring [Your Specific Content Idea, e.g., a tutorial on deploying a scalable web app on Akamai Kubernetes Engine, a comparison of Akamai services for a specific use case, a deep dive into Akamai's global network]. This would provide significant value to my audience while effectively showcasing Akamai Cloud's capabilities.\n\nI'm confident we can deliver a high-quality, authentic campaign that resonates with the developer community. You can find my media kit and past collaborations here: [Link to Media Kit/Portfolio].\n\nLooking forward to discussing this further.\n\nBest regards,\n[Your Name]\n[Your Website/Social Links]",
+      "pitchTips": [
+        "Highlight Technical Alignment: Emphasize how your content specifically relates to cloud infrastructure, DevOps, or specific Akamai Cloud products (e.g., Linode instances, Kubernetes, Object Storage, CDN). Technical depth is key for this audience.",
+        "Showcase Developer Audience: Clearly articulate the demographics and interests of your audience, proving they are active developers, engineers, or IT professionals who would benefit from Akamai Cloud services.",
+        "Propose a Specific, Actionable Content Idea: Instead of a generic 'I want to promote you,' suggest a concrete video tutorial, blog series, or project build that naturally integrates Akamai Cloud and solves a real problem for developers."
+      ]
+    }
+  },
+  {
+    "id": "atlassian",
+    "name": "Atlassian",
+    "type": "brand",
+    "category": "Productivity",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "pr@atlassian.com",
+    "contactForm": "https://www.atlassian.com/company/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=atlassian.com",
+    "dna": {
+      "requirements": "Audience of developers, project managers, IT professionals, or teams interested in collaboration and workflow tools. Content should be professional, insightful, and relevant to improving team productivity, agile methodologies, or software development processes using Atlassian products like Jira, Confluence, Trello, or Bitbucket.",
+      "dealStructure": "Flat fee for sponsored business content (e.g., tutorials, workflow showcases, expert discussions), potential for event sponsorships, and B2B partnerships for broader reach.",
+      "pitchHelper": "Subject: Collaboration Proposal: Enhancing Team Productivity with Atlassian - [Your Channel/Platform]\n\nDear Atlassian Partnerships Team,\n\nMy name is [Your Name], and I manage [Your Channel/Platform - e.g., a blog, YouTube channel, podcast] dedicated to [Your Niche, e.g., software development best practices, agile methodologies, project management]. With a highly engaged audience of [X] professionals, including [Target Audience - e.g., developers, engineering managers, product owners], my goal is to provide valuable insights and tools that streamline workflows and boost team efficiency.\n\nAtlassian products like Jira, Confluence, and Trello are staples in the modern professional landscape, and I've personally seen their impact on [mention personal experience or common pain point your audience faces]. I envision creating [Your Specific Content Idea, e.g., a series on optimizing Jira workflows for remote teams, a guide to leveraging Confluence for documentation, an in-depth review comparing Trello features for startups] that educates my audience on effectively utilizing Atlassian's powerful suite.\n\nThis collaboration would allow us to deliver practical, relevant content to professionals actively seeking solutions for team collaboration and project management, highlighting Atlassian's strengths in a real-world context. My media kit and previous B2B collaborations can be reviewed here: [Link to Media Kit/Portfolio].\n\nI'm keen to explore how we can work together.\n\nSincerely,\n[Your Name]\n[Your Website/Social Links]",
+      "pitchTips": [
+        "Focus on Business Value: Frame your proposal around how Atlassian products solve real business problems (e.g., efficiency, collaboration, project tracking) for your audience, rather than just product features.",
+        "Target the Right Persona: Clearly define if your audience consists of developers, project managers, IT admins, or executives, and tailor your content idea to address their specific needs and pain points related to team productivity.",
+        "Showcase Professionalism & Authority: Atlassian targets professionals; ensure your pitch reflects a high level of professionalism, clear communication, and demonstrates your authority in topics like team collaboration or software development."
+      ]
+    }
+  },
+  {
+    "id": "turso",
+    "name": "Turso",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "hello@turso.tech",
+    "contactForm": "https://turso.tech/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=turso.tech",
+    "dna": {
+      "requirements": "Audience of developers interested in databases, serverless architectures, edge computing, or the JavaScript/TypeScript ecosystem. Content should be technical tutorials, project builds, or comparisons demonstrating Turso's benefits as a lightweight, embeddable, and globally distributed SQLite database.",
+      "dealStructure": "Turso credits for development/showcasing, flat fee for integration into technical content (videos, blog posts, code examples).",
+      "pitchHelper": "Subject: Partnership Idea: Building Edge-Powered Apps with Turso & [Your Channel/Platform]\n\nDear Turso Team,\n\nMy name is [Your Name], and I run [Your Channel/Platform - e.g., a YouTube channel, dev blog, newsletter] focused on [Your Niche, e.g., modern web development, serverless architectures, database technologies]. My audience of [X] developers is constantly looking for innovative tools to build high-performance, scalable applications, and your edge database solution, Turso, has truly captured my interest.\n\nI believe there's a fantastic opportunity to showcase Turso's unique capabilities to my engaged community. I propose creating [Your Specific Content Idea, e.g., a step-by-step tutorial on building a full-stack application with Turso and Next.js, a deep dive into LibSQL's benefits for edge functions, a comparison demonstrating Turso's performance advantages]. This would provide practical value to developers seeking efficient, low-latency data solutions.\n\nMy content consistently generates [Y]% engagement, and I'm confident in delivering an authentic and technically sound integration that highlights Turso's strengths. You can find examples of my work here: [Link to Media Kit/Portfolio].\n\nI'm excited about the possibility of collaborating.\n\nBest regards,\n[Your Name]\n[Your Website/Social Links]",
+      "pitchTips": [
+        "Emphasize 'Edge' and Performance: Highlight your understanding of Turso's core value proposition (edge database, low latency, SQLite compatibility) and how your content will demonstrate these benefits for real-world applications.",
+        "Target Developers Directly: Your pitch should clearly state that your audience is primarily developers interested in technical solutions, and your content will be code-focused, tutorials, or architecture discussions.",
+        "Be Specific with Technical Integration: Instead of general praise, suggest a concrete project or tutorial idea that directly involves implementing Turso into a popular framework or use case (e.g., 'building a global leaderboard with Turso and Cloudflare Workers')."
+      ]
+    }
+  },
+  {
+    "id": "adyen",
+    "name": "Adyen",
+    "type": "brand",
+    "category": "Fintech",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "press@adyen.com",
+    "contactForm": "https://www.adyen.com/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=adyen.com",
+    "dna": {
+      "requirements": "Audience of businesses, e-commerce merchants, fintech professionals, or startups looking for global payment solutions. Content must be professional, focus on business growth, payment innovation, global commerce, or technical aspects of payment integration for B2B. Thought leadership, industry analysis, or case study style content is preferred.",
+      "dealStructure": "Flat fee for sponsored business-oriented content (e.g., industry reports, expert interviews, thought leadership articles), B2B partnerships for events/conferences, or co-marketing initiatives.",
+      "pitchHelper": "Subject: Strategic Partnership Opportunity: Adyen & [Your Channel/Platform] - Future of Payments\n\nDear Adyen Partnerships Team,\n\nMy name is [Your Name], and I lead [Your Channel/Platform - e.g., a podcast, business blog, industry newsletter] which provides insights to [Your Niche, e.g., e-commerce leaders, fintech founders, retail strategists]. With an audience of [X] engaged professionals actively seeking solutions for scalable, secure, and global payment processing, I see a significant alignment with Adyen's mission and capabilities.\n\nAdyen's innovative platform for unified commerce and global payments is highly relevant to the challenges my audience faces, particularly concerning [mention a specific industry trend or pain point, e.g., international expansion, fraud prevention, optimizing conversion rates]. I propose a collaboration to create [Your Specific Content Idea, e.g., a thought leadership piece on headless commerce and payments, an interview discussing Adyen's role in omnichannel retail, a guide to selecting the right payment processor for hyper-growth startups].\n\nThis partnership would allow us to deliver authoritative content that educates and empowers businesses, showcasing Adyen's expertise and cutting-edge solutions to a highly targeted, decision-making audience. My media kit and successful B2B collaborations are available here: [Link to Media Kit/Portfolio].\n\nI am eager to explore how we can create impactful content together.\n\nSincerely,\n[Your Name]\n[Your Website/Social Links]",
+      "pitchTips": [
+        "Focus on Business Impact: Frame your content idea around how Adyen helps businesses achieve tangible results (e.g., increased conversion, reduced fraud, global expansion) rather than just listing features.",
+        "Target B2B Decision-Makers: Emphasize that your audience consists of business owners, e-commerce managers, or fintech professionals who make purchasing decisions for payment solutions, and tailor your language accordingly.",
+        "Demonstrate Industry Knowledge: Show that you understand the complexities of the payment industry, global commerce, or specific challenges Adyen addresses, positioning yourself as a credible voice for their target market."
+      ]
+    }
+  },
+  {
+    "id": "mux",
+    "name": "Mux",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "hello@mux.com",
+    "contactForm": "https://www.mux.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=mux.com",
+    "dna": {
+      "requirements": "Audience of developers building video-centric applications, or tech educators focused on video streaming, web development, and API integrations. Content should involve technical tutorials, project builds, or deep dives into video APIs, playback, and analytics, showcasing Mux's platform.",
+      "dealStructure": "Mux API credits for content development, flat fee for sponsored content (tutorials, project showcases), or co-marketing initiatives.",
+      "pitchHelper": "Subject: Collaboration Proposal: Elevating Video Experiences with Mux & [Your Channel/Platform]\n\nDear Mux Team,\n\nMy name is [Your Name], and I run [Your Channel/Platform - e.g., a YouTube channel, developer blog, podcast] focused on [Your Niche, e.g., modern web development, video streaming, API integrations]. With an engaged audience of [X] developers and engineers, my community is always eager to discover powerful tools for building cutting-edge applications, especially in the rapidly evolving video space.\n\nMux's robust video API and data platform are incredibly impressive, offering solutions for [mention a specific Mux feature or benefit, e.g., seamless video streaming, powerful analytics, automatic encoding]. I envision creating [Your Specific Content Idea, e.g., a hands-on tutorial for integrating Mux Video into a live streaming application, a deep dive into Mux Data for optimizing video performance, a project showcasing a custom video player built with Mux]. This would provide immense value to my audience who are actively working on video-intensive projects.\n\nI'm confident in producing high-quality, technically accurate content that highlights Mux's strengths and resonates with the developer community. My media kit and examples of previous API integrations can be found here: [Link to Media Kit/Portfolio].\n\nI'm excited about the potential for a impactful collaboration.\n\nSincerely,\n[Your Name]\n[Your Website/Social Links]",
+      "pitchTips": [
+        "Demonstrate Technical Proficiency in Video: Showcase your expertise in video development, streaming, or related technologies. Your pitch should reflect an understanding of Mux's place in the video ecosystem.",
+        "Highlight Practical Use Cases: Propose content that demonstrates practical applications of Mux for developers, such as building a specific video feature, optimizing performance, or integrating with popular frameworks.",
+        "Quantify Audience Relevance: Clearly explain why your audience specifically cares about video APIs and development, demonstrating that they are the target demographic for Mux's solutions."
       ]
     }
   }
