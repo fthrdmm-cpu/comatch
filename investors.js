@@ -946,6 +946,116 @@ const INVESTORS_DATA = [
         "Reference a Specific UK B2B Market Insight: Show awareness of the UK B2B landscape or specific trends in your industry within the UK. This demonstrates alignment and a tailored approach to a UK-focused investor."
       ]
     }
+  },
+  {
+    "id": "heartcore-capital",
+    "name": "Heartcore Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "Consumer Tech, AI (consumer-focused), SaaS (consumer-focused), Deep Tech (consumer-focused), Fintech (consumer-focused)",
+    "ticketSize": "€500,000 - €1,500,000",
+    "contactEmail": "contact@heartcore.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=heartcore.com",
+    "dna": {
+      "requirements": "Strong founding team, compelling vision for a consumer product, significant market opportunity within consumer technology, evidence of early traction or strong product-market fit indicators. Focus on European B2C startups.",
+      "dealStructure": "Standard equity investment for early-stage venture capital, typical for Seed rounds in Europe.",
+      "pitchHelper": "Subject: [Your Company Name] - Revolutionizing [Specific Consumer Problem] with [Key Differentiator]\n\nDear Heartcore Capital Team,\n\nI'm [Your Name], founder of [Your Company], and we're building [briefly describe your consumer product/service] to solve [specific consumer problem]. We've identified a massive opportunity in [market size/trend] and are seeing incredible traction, with [1-2 key metrics, e.g., 10k active users, 20% MoM growth, €X ARR].\n\nOur [product/service] uniquely [explain your differentiation and how it captures consumer attention/solves the problem better]. We believe this aligns perfectly with Heartcore's deep expertise in backing visionary consumer tech companies like [mention one of their portfolio companies if relevant].\n\nWe're raising a €[X]M Seed round to [briefly state use of funds, e.g., scale user acquisition, expand product features, hire key talent]. Our goal is to become the leading [category] in Europe. I've attached our deck for your review and would be grateful for a brief call to discuss our vision further.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Website]\n[Link to Deck]",
+      "pitchTips": [
+        "Emphasize Consumer Insights: Start by clearly articulating your deep understanding of the consumer problem you're solving and why your product resonates with modern users.",
+        "Show, Don't Just Tell Traction: Instead of just numbers, include a compelling visual or user story link (e.g., short video, user testimonial page) to demonstrate user engagement for your consumer product.",
+        "Align with their B2C Thesis: Explicitly connect your venture to Heartcore's investment philosophy in 'consumer technology' by highlighting how your product captivates and grows a loyal user base."
+      ]
+    }
+  },
+  {
+    "id": "reimann-investors",
+    "name": "Reimann Investors",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "Fintech, SaaS, E-commerce, Digital Health, AI",
+    "ticketSize": "€250,000 - €1,000,000",
+    "contactEmail": "info@reimann-investors.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=reimann-investors.com",
+    "dna": {
+      "requirements": "Strong founding team, scalable business model, initial product or MVP, significant market potential, clear path to profitability. Focus on German-speaking (DACH) region and broader Europe.",
+      "dealStructure": "Standard equity investment. They typically take a minority stake and look for long-term partnerships.",
+      "pitchHelper": "Subject: [Your Company Name] - Seed Investment Opportunity: [Clear Value Proposition/Traction]\n\nDear Reimann Investors Team,\n\nMy name is [Your Name], and I'm the founder of [Your Company], a [SaaS/Fintech/etc.] solution addressing [specific problem] for [target audience]. We've developed [briefly describe your solution] and are already seeing strong market validation with [1-2 key metrics, e.g., €X ARR, Y paying customers, Z% conversion rate].\n\nOur vision is to [briefly state ambition, e.g., become the leading provider of X in the DACH region] by [unique approach/technology]. We are actively looking for strategic partners for our €[X]M Seed round, and your expertise in [mention a relevant sector, e.g., fintech, digital health] and focus on the German market makes you an ideal fit.\n\nWe've attached our pitch deck for your review, detailing our team, product, and financial projections. We'd appreciate the opportunity for a brief introductory call.\n\nThank you for your consideration.\n\nSincerely,\n[Your Name]\n[Your Website]\n[Link to Deck]",
+      "pitchTips": [
+        "Highlight Tangible Value & Profitability: In your subject or opening, quickly convey how your solution generates clear revenue or cost savings, appealing to their pragmatic family office approach.",
+        "Mention DACH/European Relevance: If applicable, briefly state your market focus or expansion plans within Germany/DACH or wider Europe, showing alignment with their regional interests.",
+        "Keep it Concise and Data-Driven: Reimann Investors appreciates directness. Focus on quantifiable achievements and market data in a succinct manner, avoiding overly verbose language."
+      ]
+    }
+  },
+  {
+    "id": "possible-ventures",
+    "name": "Possible Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, Fintech, AI, Deep Tech, Future of Work, Developer Tools, B2B Marketplaces",
+    "ticketSize": "€200,000 - €700,000",
+    "contactEmail": "hello@possible.ventures",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=possible.ventures",
+    "dna": {
+      "requirements": "European founders, strong technical teams, innovative B2B solutions, large market potential, early product/user feedback, sometimes pre-product. They emphasize backing 'exceptional founders building frontier technologies'.",
+      "dealStructure": "Standard equity investment, aiming for 10-20% dilution in Seed rounds.",
+      "pitchHelper": "Subject: Pre-Seed: [Your Company] - Pioneering [Specific B2B Sector] with [Unique Tech/Approach]\n\nDear Possible Ventures Team,\n\nI'm [Your Name], co-founder of [Your Company], and we're a team of [number] technical founders based in [City, Country], building [briefly describe your innovative B2B SaaS/Deep Tech solution] for [target industry/problem]. We believe [existing solutions are lacking/market is ripe for disruption] and our [proprietary technology/unique approach] gives us a significant edge.\n\nThough early-stage, we've achieved [1-2 key milestones, e.g., robust MVP, first pilots secured, strong early user feedback from X companies]. Our vision is to [state ambitious goal, e.g., redefine how X is done in enterprise].\n\nWe are raising a €[X]K Pre-Seed round to [briefly state use of funds, e.g., finalize product, onboard first paying customers, expand technical team]. Given your focus on technical B2B founders building frontier tech in Europe, we believe there's a strong alignment. Our deck is linked below for your review.\n\nWould you be open to a quick 15-minute chat to hear more about what we're building?\n\nSincerely,\n[Your Name]\n[Your Website]\n[Link to Deck]",
+      "pitchTips": [
+        "Showcase Technical Depth: For deep tech or B2B, ensure your pitch clearly articulates the innovative technology or unique intellectual property behind your solution, even at a high level.",
+        "Focus on Founder-Market Fit: Emphasize the unique expertise and background of your founding team that makes them uniquely positioned to solve the specific problem you're tackling in your niche.",
+        "European Founder Perspective: Briefly mention your European roots or your plan to build a category leader from Europe, aligning with their focus on backing European founders."
+      ]
+    }
+  },
+  {
+    "id": "atlantic-labs",
+    "name": "Atlantic Labs",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "Deep Tech, AI, Health Tech, Future of Work, Enterprise SaaS, Fintech, Creator Economy",
+    "ticketSize": "€500,000 - €1,500,000",
+    "contactEmail": "hello@atlanticlabs.de",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=atlanticlabs.de",
+    "dna": {
+      "requirements": "Strong founders with a unique vision, disruptive technology focus, large market opportunity, often looking for founders to join their venture building process or invest in very early-stage teams. Strong technical defensibility is key.",
+      "dealStructure": "Equity investment, often with significant involvement in company building through their platform. Terms are typical for early-stage venture capital.",
+      "pitchHelper": "Subject: Deep Tech Seed: [Your Company Name] - Solving [Critical Industry Problem] with [Novel Technology]\n\nDear Atlantic Labs Team,\n\nI'm [Your Name], founder of [Your Company], a [Deep Tech/AI/Enterprise SaaS] venture addressing [critical industry problem] in the [specific sector]. We've developed [briefly describe your disruptive technology/approach] that offers a [quantifiable improvement/unique capability] compared to existing solutions.\n\nWe are operating in a market with immense potential ([market size]) and have already achieved [1-2 key technical milestones, e.g., functional prototype, patent filed, initial pilot success]. Our team brings [relevant expertise, e.g., PhD in AI, 10+ years in X industry].\n\nWe're raising a €[X]M Seed round to [briefly state use of funds, e.g., further develop our IP, expand pilot programs, recruit core engineering talent]. Your expertise in fostering deep tech and enterprise solutions from the ground up makes Atlantic Labs an ideal partner. I've attached our deck for your review and would welcome a brief discussion.\n\nThank you for your time.\n\nSincerely,\n[Your Name]\n[Your Website]\n[Link to Deck]",
+      "pitchTips": [
+        "Articulate the 'Why Now': For disruptive deep tech, clearly explain the market shifts or technological breakthroughs that make your solution uniquely viable and impactful *right now*.",
+        "Demonstrate Venture Building Potential: Frame your pitch not just as a product, but as a potential category-defining business, highlighting areas where strategic support could accelerate growth, appealing to their company-builder mindset.",
+        "Highlight Technical Defensibility: Clearly state what makes your technology proprietary or difficult to replicate, as they are keen on foundational, defensible innovations."
+      ]
+    }
+  },
+  {
+    "id": "target-global",
+    "name": "Target Global",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "Fintech, SaaS, AI, Deep Tech, Health Tech, Mobility, PropTech, Consumer",
+    "ticketSize": "$500,000 - $2,000,000",
+    "contactEmail": "info@targetglobal.vc",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=targetglobal.vc",
+    "dna": {
+      "requirements": "Strong team, large market potential, compelling product, evidence of early traction, scalable business model. European and Israeli focus with global ambitions.",
+      "dealStructure": "Standard VC equity investment with a focus on long-term partnerships and follow-on rounds.",
+      "pitchHelper": "Subject: Seed Round: [Your Company Name] - Scaling [Solution] in [Large Market] (X% MoM Growth)\n\nDear Target Global Team,\n\nI'm [Your Name], CEO of [Your Company], and we are building [briefly describe your scalable tech solution] for the [large, growing market]. We are tackling [specific problem] and have achieved impressive early traction, including [1-2 impressive KPIs, e.g., $X ARR in Y months, Z active users, strong retention metrics].\n\nOur product [explain your core offering and competitive advantage] is poised for significant expansion, and we're targeting a [regional/global] leadership position. We believe our vision aligns with Target Global's track record of backing high-growth companies with global potential, particularly in [mention a relevant sector, e.g., Fintech, SaaS].\n\nWe are currently raising a $[X]M Seed round to [briefly state use of funds, e.g., accelerate market entry, expand our engineering team, invest in sales & marketing]. Our detailed pitch deck is linked below. We would greatly appreciate the opportunity for an introductory call to share more about our progress and plans.\n\nThank you,\n[Your Name]\n[Your Website]\n[Link to Deck]",
+      "pitchTips": [
+        "Emphasize Market Scale & Ambition: From the outset, articulate the massive market opportunity and your global or regional leadership ambitions, as Target Global looks for ventures with significant scale potential.",
+        "Highlight Key Performance Indicators (KPIs) Clearly: Provide your most impressive and relevant KPIs (e.g., rapid user growth, revenue metrics, retention) upfront to demonstrate traction and scalability.",
+        "Structured and Professional: Given their broad investment scope and large fund, present a well-structured, professional, and easily digestible pitch that quickly conveys your value proposition and potential."
+      ]
+    }
   }
 ];
 

@@ -3184,6 +3184,111 @@ const BRANDS_DATA = [
         "Quantify Audience Relevance: Clearly explain why your audience specifically cares about video APIs and development, demonstrating that they are the target demographic for Mux's solutions."
       ]
     }
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "support@github.com",
+    "contactForm": "https://support.github.com/contact/support_ticket",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=github.com",
+    "dna": {
+      "requirements": "Focus on developer audience, open-source community engagement, educational content, relevant tech stack (Git, CI/CD, DevSecOps). Authenticity and active participation in the developer ecosystem are key.",
+      "dealStructure": "Flat fee for events/podcasts, potential product access or features for hackathons, promotion within GitHub channels for strategic partnerships.",
+      "pitchHelper": "Subject: Partnership Opportunity: Elevating [Your Community/Platform Name] with GitHub\n\nDear GitHub Partnerships Team,\n\nMy name is [Your Name] and I lead [Your Community/Platform Name], a [brief description of your community/platform, e.g., rapidly growing developer community focused on open-source projects / popular podcast for DevOps professionals / hackathon series for aspiring software engineers].\n\nWe deeply admire GitHub's commitment to the developer ecosystem and believe our audience of [mention audience size and demographic, e.g., 75,000 active developers, primarily focused on [specific tech/topic]] aligns perfectly with GitHub's mission to empower developers.\n\nWe are seeking partners to [explain your need, e.g., sponsor our upcoming hackathon, support our weekly podcast, co-host a technical workshop series]. We offer [mention specific opportunities, e.g., dedicated segments, logo placement, speaking slots, featured content, direct engagement with our community members].\n\nCould we schedule a brief call next week to discuss how a partnership could provide significant value to GitHub in reaching a highly engaged developer audience?\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Personalize for Developer Culture: Avoid overly corporate jargon. Use language that resonates with developers, focusing on collaboration, open-source values, and practical impact.",
+        "Highlight Community Fit: Clearly articulate how your audience's interests (e.g., specific programming languages, open-source contributions, CI/CD) directly align with GitHub's strategic initiatives or product features.",
+        "Include Specific Metrics: Provide concrete data on engagement rates, audience demographics, or past event successes, demonstrating tangible value beyond just follower counts."
+      ]
+    }
+  },
+  {
+    "id": "aws",
+    "name": "AWS (Amazon Web Services)",
+    "type": "brand",
+    "category": "Hosting",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "aws-marketing@amazon.com",
+    "contactForm": "https://aws.amazon.com/contact-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=aws.amazon.com",
+    "dna": {
+      "requirements": "Focus on cloud development, specific AWS services (e.g., AI/ML, serverless, data analytics), innovation, educating new users on cloud adoption. Audience should be technical and interested in scaling or building on AWS.",
+      "dealStructure": "Flat fee sponsorships, AWS credits for participants/winners, co-marketing opportunities, access to AWS experts for content.",
+      "pitchHelper": "Subject: Partnership Proposal: Reaching Cloud Developers with [Your Community/Platform Name]\n\nDear AWS Marketing Team,\n\nMy name is [Your Name] and I oversee [Your Community/Platform Name], a [brief description, e.g., prominent online platform for cloud architects / leading podcast for machine learning engineers / large-scale hackathon series focused on serverless technologies].\n\nWe have a highly engaged audience of [mention audience size and demographic, e.g., 100,000+ cloud professionals, primarily using/interested in AWS services for [specific use case, e.g., AI/ML, data analytics, web hosting]]. Given AWS's leadership in cloud innovation, we see a strong synergy with our mission to [explain your mission, e.g., educate and empower developers in the cloud space].\n\nWe are proposing a partnership to [explain your specific opportunity, e.g., sponsor our upcoming [Event Name] / integrate AWS content into our [Podcast/Newsletter] series / provide AWS credits for our developer challenges]. This would offer AWS [mention specific benefits, e.g., direct exposure to skilled cloud developers, lead generation for specific services, brand visibility as a thought leader].\n\nWould you be open to a brief discussion next week to explore how this collaboration could effectively reach and engage the AWS developer community?\n\nThank you for your time.\n\nSincerely,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Be Specific About AWS Services: Mention specific AWS services or solutions your audience uses or would benefit from (e.g., Lambda, EC2, S3, SageMaker) rather than just 'cloud,' demonstrating a clear understanding.",
+        "Quantify Technical Impact: Highlight how your content or community drives *technical adoption* or problem-solving using AWS, aligning with their focus on practical application.",
+        "Connect to a Larger Trend: Frame your proposal within a current industry trend that AWS is leading (e.g., AI/ML, sustainability in cloud, serverless evolution), showing strategic alignment."
+      ]
+    }
+  },
+  {
+    "id": "microsoft-azure",
+    "name": "Microsoft Azure",
+    "type": "brand",
+    "category": "Hosting",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "azureinfo@microsoft.com",
+    "contactForm": "https://azure.microsoft.com/en-us/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=azure.microsoft.com",
+    "dna": {
+      "requirements": "Focus on Microsoft technologies, enterprise solutions, AI/ML, data platforms, hybrid cloud scenarios, developer advocacy. Audience should be technical, potentially focused on .NET, SQL Server, or enterprise migration.",
+      "dealStructure": "Flat fee for sponsorships, Azure credits, co-marketing, technical content collaboration, speaking opportunities at Microsoft events.",
+      "pitchHelper": "Subject: Partnership: Engaging the Azure Developer Community with [Your Platform]\n\nDear Microsoft Azure Partnerships Team,\n\nMy name is [Your Name] and I lead [Your Community/Platform Name], a [brief description, e.g., thriving community for enterprise developers / leading podcast exploring cloud architecture / highly anticipated hackathon for AI/ML solutions].\n\nWe have built a dedicated audience of [mention audience size and demographic, e.g., 60,000+ technical professionals, many of whom are actively leveraging Azure for [specific technologies, e.g., .NET applications, data warehousing, AI services]]. We believe our platform offers a unique opportunity for Azure to connect directly with this engaged and influential developer base.\n\nWe are reaching out to propose a partnership to [explain your specific opportunity, e.g., sponsor our upcoming [Event Name] / feature Azure solutions in our [content series] / provide Azure credits and mentorship for our participants]. This collaboration would enable Azure to [mention specific benefits, e.g., increase brand awareness among key developer segments, showcase new services, drive adoption of specific Azure features].\n\nWould you be available for a brief call next week to explore how we can align our efforts for mutual success?\n\nThank you for your consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Reference Microsoft's Ecosystem: Specifically mention how your content or audience interacts with the broader Microsoft ecosystem (e.g., Visual Studio, GitHub, .NET), showing integration beyond just Azure itself.",
+        "Focus on Enterprise/Business Value: Frame the partnership in terms of driving business outcomes, developer productivity, or specific industry solutions, which resonates well with Microsoft's enterprise focus.",
+        "Highlight Technical Depth: Demonstrate a deep understanding of Azure's offerings by mentioning specific services or features relevant to your pitch, indicating a technically informed outreach."
+      ]
+    }
+  },
+  {
+    "id": "google-cloud-platform",
+    "name": "Google Cloud Platform (GCP)",
+    "type": "brand",
+    "category": "Hosting",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "cloud-partnerships@google.com",
+    "contactForm": "https://cloud.google.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=cloud.google.com",
+    "dna": {
+      "requirements": "Focus on open-source, data analytics, AI/ML, Kubernetes, developer productivity, global scale. Audience should be technical, interested in modern cloud practices, and potentially familiar with other Google technologies.",
+      "dealStructure": "Flat fee sponsorships, GCP credits, co-marketing initiatives, access to Google Cloud experts, promotion via Google Cloud channels.",
+      "pitchHelper": "Subject: Collaborating with Google Cloud: [Your Platform] for Next-Gen Developers\n\nDear Google Cloud Partnerships Team,\n\nMy name is [Your Name] and I lead [Your Community/Platform Name], a [brief description, e.g., vibrant community for data engineers / influential podcast focusing on AI/ML in the cloud / annual hackathon challenging developers with cutting-edge tech].\n\nOur audience of [mention audience size and demographic, e.g., 80,000+ developers, passionate about open-source, Kubernetes, and leveraging Google Cloud for [specific applications, e.g., data analytics, machine learning, scalable web services]] is a natural fit for Google Cloud's innovative platform. We admire GCP's commitment to cutting-edge technology and developer empowerment.\n\nWe are reaching out to explore a partnership to [explain your specific opportunity, e.g., sponsor our upcoming [Event Name] / create a dedicated content series around [GCP Service] / provide GCP credits for our community projects]. This collaboration would offer Google Cloud [mention specific benefits, e.g., direct engagement with a highly skilled developer base, increased visibility for new services, enhanced brand loyalty among early adopters].\n\nWould you be available for a brief discussion next week to delve deeper into this exciting opportunity?\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Highlight Innovation & Open Source: Emphasize how your content or community aligns with Google Cloud's reputation for innovation, open-source contributions, and next-gen technologies (e.g., Kubernetes, TensorFlow, Go).",
+        "Showcase Data & AI/ML Focus: If relevant, specifically mention how your audience or content engages with data analytics, machine learning, or AI services, as these are key pillars for GCP.",
+        "Connect to Google's Broader Ecosystem: Mentioning familiarity or integration with other Google products (e.g., Android, Chrome, Firebase) can demonstrate a broader alignment with Google's strategic vision."
+      ]
+    }
+  },
+  {
+    "id": "databricks",
+    "name": "Databricks",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "partners@databricks.com",
+    "contactForm": "https://www.databricks.com/company/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=databricks.com",
+    "dna": {
+      "requirements": "Focus on data science, machine learning, data engineering, Apache Spark, Delta Lake, Lakehouse architecture, cloud data platforms. Audience should be data professionals, data scientists, ML engineers, or anyone working with large-scale data.",
+      "dealStructure": "Flat fee sponsorships, product access/credits, co-marketing initiatives, guest spots on Databricks content, access to experts.",
+      "pitchHelper": "Subject: Partnership Opportunity: Empowering Data Professionals with Databricks on [Your Platform]\n\nDear Databricks Partnerships Team,\n\nMy name is [Your Name] and I lead [Your Community/Platform Name], a [brief description, e.g., highly engaged community for data scientists / popular podcast for machine learning engineers / dedicated newsletter for big data architects].\n\nOur audience of [mention audience size and demographic, e.g., 55,000+ data professionals, keenly interested in topics like Apache Spark, Delta Lake, and building scalable Lakehouse architectures] aligns perfectly with Databricks' mission to unify data, analytics, and AI. We recognize Databricks as a leader in the data intelligence platform space.\n\nWe are proposing a partnership to [explain your specific opportunity, e.g., sponsor our upcoming [Event Name] / create educational content showcasing the Databricks Lakehouse Platform / offer Databricks access for our community challenges]. This collaboration would provide Databricks [mention specific benefits, e.g., direct access to a highly relevant technical audience, increased awareness of new features, thought leadership positioning among data practitioners].\n\nCould we schedule a brief introductory call next week to discuss how a partnership could deliver significant value to Databricks?\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Speak the 'Data Language': Use specific terms like 'Lakehouse,' 'Delta Lake,' 'MLflow,' 'Apache Spark,' 'data bricks notebook' to demonstrate domain expertise and target their specific product offerings.",
+        "Quantify Data Professional Reach: Emphasize the quality and professional level of your audience (e.g., 'senior data scientists,' 'ML engineers,' 'data architects') rather than just general 'developers.'",
+        "Highlight AI/ML Integration: Databricks is heavily invested in AI/ML. If your content touches on these areas, make it a prominent part of your pitch, demonstrating alignment with their strategic focus."
+      ]
+    }
   }
 ];
 
