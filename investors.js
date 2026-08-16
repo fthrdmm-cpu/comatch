@@ -1056,6 +1056,116 @@ const INVESTORS_DATA = [
         "Structured and Professional: Given their broad investment scope and large fund, present a well-structured, professional, and easily digestible pitch that quickly conveys your value proposition and potential."
       ]
     }
+  },
+  {
+    "id": "andreessen-horowitz",
+    "name": "Andreessen Horowitz (a16z)",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "AI, SaaS, Fintech, Deep Tech, Bio, Crypto",
+    "ticketSize": "$500k - $2M+",
+    "contactEmail": "info@a16z.com",
+    "contactForm": "",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=a16z.com",
+    "dna": {
+      "requirements": "Exceptional founders with deep technical insights or unique market understanding. Disruptive technology or business model with the potential for significant market impact. Focus on large, expanding markets.",
+      "dealStructure": "Typically equity investments, convertible notes for earlier stages. Standard Silicon Valley VC terms, often leading rounds with significant ownership percentages.",
+      "pitchHelper": "Subject: [Company Name] - Revolutionizing [Specific Industry/Problem] with [Your Solution/Tech]\n\nDear a16z Team,\n\nI'm writing to introduce [Company Name], where we are building [brief, compelling problem statement] for [target market]. Our [unique technology/approach] allows us to [key differentiator/impact], achieving [early traction or proof of concept, e.g., 'X users in Y months', 'Z MRR', or 'successful pilot with A customer'].\n\nOur founding team, [Co-founder 1 Name] ([relevant background, e.g., 'ex-Google AI researcher']) and [Co-founder 2 Name] ([relevant background, e.g., 'successful SaaS entrepreneur']), combines deep domain expertise with a proven ability to execute. We believe [Company Name] is uniquely positioned to become a leader in the [specific market] space, aligning with a16z's thesis on [mention a specific a16z sector/theme, e.g., 'the future of enterprise AI' or 'creator economy infrastructure'].\n\nWe are currently raising a [Pre-Seed/Seed] round of [$X] to [achieve key milestones, e.g., 'scale our engineering team', 'launch v2', 'acquire X customers']. I've attached a brief deck outlining our vision, team, and early progress. We would be thrilled to share more about how we are [big vision statement] and explore how a16z's expertise could accelerate our journey.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Company Website]\n[LinkedIn Profile]",
+      "pitchTips": [
+        "Seek a warm introduction from a mutual connection, as a16z highly values network referrals. This significantly increases the likelihood of your email being read and taken seriously.",
+        "Your subject line should be clear, concise, and immediately convey your value proposition. Avoid buzzwords and focus on the core problem you solve and the innovative nature of your solution.",
+        "Given their deep expertise, tailor your pitch to show a profound understanding of the market you're entering and how your technology uniquely addresses it. Highlight any proprietary research or fundamental breakthroughs."
+      ]
+    }
+  },
+  {
+    "id": "general-catalyst",
+    "name": "General Catalyst",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "AI, SaaS, Fintech, Deep Tech, Health, Climate",
+    "ticketSize": "$500k - $3M+",
+    "contactEmail": "info@generalcatalyst.com",
+    "contactForm": "",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=generalcatalyst.com",
+    "dna": {
+      "requirements": "Exceptional founders tackling large, important problems with a vision to build enduring companies. Focus on companies with significant potential for positive impact and scalable business models.",
+      "dealStructure": "Flexible investment approach ranging from convertible notes at Seed to significant equity stakes at Series A and beyond. Emphasis on long-term partnership.",
+      "pitchHelper": "Subject: [Company Name] - Building the Future of [Specific Industry] with [Key Innovation]\n\nDear General Catalyst Team,\n\nMy name is [Your Name], and I am the [Founder/CEO] of [Company Name]. We are addressing the critical challenge of [specific problem statement] for [target audience], a market we estimate to be worth [$X billion]. Our [AI-driven platform/deep tech solution/innovative SaaS] is designed to [describe unique value proposition], providing [tangible benefits, e.g., '50% efficiency gains' or 'unlocking new revenue streams'].\n\nWe have already achieved [mention key traction, e.g., 'signed X pilot customers', 'generated Y MRR in Z months', 'successful MVP with strong user engagement'] and are seeing [positive trend or market validation]. Our team, including [Co-founder 1, relevant expertise] and [Co-founder 2, relevant expertise], is uniquely qualified to execute on this vision, having previously [mention relevant achievements/backgrounds].\n\nWe are currently raising a [Pre-Seed/Seed] round of [$X] to [outline immediate goals, e.g., 'expand our product roadmap', 'grow our sales team', 'penetrate new markets']. We are particularly drawn to General Catalyst's commitment to 'enduring companies' and believe our long-term vision aligns perfectly with your investment philosophy, especially your work in [mention relevant GC portfolio area or partner interest].\n\nAttached is our deck for your review. We would appreciate the opportunity to discuss how [Company Name] is poised to make a significant impact in [your sector].\n\nSincerely,\n[Your Name]\n[Your Title]\n[Company Website]\n[LinkedIn Profile]",
+      "pitchTips": [
+        "Research individual partners at General Catalyst who have relevant sector expertise or express interest in your specific problem space. Address your email directly to them for higher impact.",
+        "Focus on the 'why' – why your problem is massive and why your team is uniquely equipped to solve it. General Catalyst looks for bold, foundational ideas, so emphasize the long-term potential and impact.",
+        "Keep your initial email concise, highlighting key metrics or milestones that demonstrate clear progress and market validation. Avoid overly technical jargon; explain your innovation in terms of its business value and impact."
+      ]
+    }
+  },
+  {
+    "id": "northzone",
+    "name": "Northzone",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "SaaS, Fintech, Deep Tech, Health, Consumer",
+    "ticketSize": "€1M - €10M+",
+    "contactEmail": "info@northzone.com",
+    "contactForm": "https://northzone.com/pitch-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=northzone.com",
+    "dna": {
+      "requirements": "Strong founding team, compelling product vision solving a significant problem, clear market opportunity, and a scalable business model. European focus or global ambition starting from Europe. Initial traction is highly valued.",
+      "dealStructure": "Typical European Seed/Series A equity investments. Participates in rounds from €1M up to €10M+, often co-leading or leading rounds.",
+      "pitchHelper": "Subject: Pitch: [Company Name] - [Concise Value Proposition] for the European Market\n\nDear Northzone Team,\n\nI am [Your Name], Co-founder & CEO of [Company Name], a [brief description of your company, e.g., 'AI-powered SaaS platform'] revolutionizing [specific industry] by [solve problem/provide benefit]. We are building a solution that addresses [specific European market pain point/opportunity], estimated to be a €[X] billion market.\n\nOur [product/service] provides [key features/benefits] to [target customer segment]. We've achieved strong early traction, including [mention specific metrics, e.g., '€Y ARR', 'Z active users', 'X enterprise pilot customers'], demonstrating clear product-market fit. Our team, composed of [Co-founder 1, key experience] and [Co-founder 2, key experience], possesses the unique blend of technical and commercial expertise required to dominate this space.\n\nWe are currently raising a [Seed/Series A] round of €[X] to [outline use of funds, e.g., 'expand our engineering team', 'accelerate market penetration in key European cities', 'further develop our AI capabilities']. We are particularly impressed by Northzone's track record in scaling European tech giants and believe your deep understanding of the [SaaS/Fintech/Deep Tech] landscape would be invaluable as we grow.\n\nAttached is our investor deck. We would be grateful for the opportunity to present our vision and discuss how [Company Name] can become a leader in [our sector] with Northzone's support.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Company Website]\n[LinkedIn Profile]",
+      "pitchTips": [
+        "Clearly articulate your company's European focus or global ambitions stemming from a strong European base. Northzone is a European fund, and showing you understand this context is crucial.",
+        "When submitting through their 'Pitch Us' form, ensure all requested fields are thoroughly completed. Pay special attention to the 'What problem are you solving?' and 'What's unique about your solution?' sections.",
+        "Highlight your traction and key performance indicators early in your pitch. Northzone looks for evidence of execution and market validation, so concrete numbers (MRR, user growth, pilot agreements) are highly impactful."
+      ]
+    }
+  },
+  {
+    "id": "connect-ventures",
+    "name": "Connect Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, Fintech, AI, Deep Tech, Marketplaces",
+    "ticketSize": "£250k - £1.5M",
+    "contactEmail": "hello@connectventures.co",
+    "contactForm": "",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=connectventures.co",
+    "dna": {
+      "requirements": "Exceptional founders with compelling vision and deep passion. Early-stage focus on pre-seed and seed. Strong preference for UK-based teams or those with clear UK/European market entry strategy. Prioritizes product-led growth and innovative tech.",
+      "dealStructure": "Flexible Seed investment terms, often convertible notes or equity. Typically leads or co-leads Pre-Seed/Seed rounds.",
+      "pitchHelper": "Subject: Pre-Seed Pitch: [Company Name] - [Brief, Intriguing Problem Solved] for [Target Market]\n\nDear Connect Ventures Team,\n\nMy name is [Your Name], Co-founder of [Company Name], a [brief description, e.g., 'Pre-Seed SaaS startup'] tackling the challenge of [specific problem] for [target audience]. We believe the existing solutions are inadequate because [explain why], leading to [negative consequences for users/businesses]. Our [innovative approach/AI-powered solution] offers a superior way to [key benefit], creating [positive impact].\n\nWe are a [UK/European]-based team of [X] founders, bringing together [Co-founder 1's key expertise, e.g., 'ex-DeepMind ML engineer'] and [Co-founder 2's key expertise, e.g., 'proven SaaS operator']. While early stage, we have [mention any early traction, e.g., 'a functional MVP with X early adopters', 'strong customer interest validated through Y interviews', 'initial pilots underway'].\n\nWe are currently raising a [Pre-Seed/Seed] round of £[X] to [outline specific use of funds, e.g., 'build out our core engineering team', 'launch our beta product', 'acquire initial paying customers']. We are particularly impressed by Connect Ventures' focus on backing founders from day zero and your expertise in nurturing early-stage SaaS and AI companies, exemplified by your investment in [mention a relevant Connect portfolio company, if known].\n\nI've attached a concise deck that dives deeper into our vision and early progress. We'd love the opportunity to share our story and discuss how we can partner to build a category-defining company.\n\nWarmly,\n[Your Name]\n[Your Title]\n[Company Website]\n[LinkedIn Profile]",
+      "pitchTips": [
+        "Connect Ventures emphasizes a founder-first approach. In your pitch, clearly articulate your personal story, vision, and the 'why' behind building your company. Authenticity resonates.",
+        "Keep your email concise and focus on the core problem, your unique solution, and any early evidence of potential. Avoid attaching large documents; a brief, compelling deck linked or attached is sufficient.",
+        "Demonstrate a clear understanding of the UK/European market, even if your ambition is global. Connect Ventures is deeply embedded in the European ecosystem, and showing this awareness is beneficial."
+      ]
+    }
+  },
+  {
+    "id": "nauta-capital",
+    "name": "Nauta Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "B2B SaaS, AI (within B2B), Fintech (within B2B), Deep Tech (within B2B)",
+    "ticketSize": "€1M - €5M",
+    "contactEmail": "info@nautacapital.com",
+    "contactForm": "https://www.nautacapital.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=nautacapital.com",
+    "dna": {
+      "requirements": "Strong focus on B2B SaaS companies. Scalable business model targeting enterprise clients or significant B2B verticals. Demonstrated initial traction (e.g., pilot customers, early recurring revenue) and a clear path to market leadership in a specific niche.",
+      "dealStructure": "Typically leads or co-leads Seed/Series A rounds for B2B SaaS companies. Equity investments ranging from €1M to €5M, with the ability to follow on in subsequent rounds.",
+      "pitchHelper": "Subject: B2B SaaS Seed Round: [Company Name] - Automating [Specific Enterprise Pain Point]\n\nDear Nauta Capital Team,\n\nI'm [Your Name], Co-founder & CEO of [Company Name], a B2B SaaS platform designed to [solve specific enterprise problem] for [target industry/segment]. We've identified a significant gap in the market for [describe current inefficient process/lack of solution], costing enterprises an estimated €[X] annually.\n\nOur [AI-driven/deep tech] solution provides [key features, e.g., 'real-time analytics', 'automated workflows', 'enhanced security'] that directly translate into [tangible business benefits, e.g., 'X% cost reduction', 'Y% increase in productivity']. We are proud to already be working with [mention 1-2 pilot/early paying customers, if applicable] and have achieved [key metric, e.g., '€Z MRR after 6 months', 'X active enterprise users'].\n\nThe founding team, comprising [Co-founder 1, relevant B2B/tech background] and [Co-founder 2, relevant sales/domain expertise], has a proven track record in building and scaling enterprise software. We are raising a Seed round of €[X] to [outline specific use of funds, e.g., 'expand our engineering team', 'launch a robust sales & marketing engine', 'enter new European markets'].\n\nWe are particularly drawn to Nauta Capital's deep expertise and singular focus on B2B SaaS, and believe our vision for [Company Name] aligns perfectly with your portfolio of transformative enterprise solutions. Attached is our investor deck, and we'd be delighted to discuss how we can solve critical challenges for businesses globally.\n\nSincerely,\n[Your Name]\n[Your Title]\n[Company Website]\n[LinkedIn Profile]",
+      "pitchTips": [
+        "Explicitly state your company's B2B SaaS nature in the subject line and throughout the pitch. Nauta Capital has a clear investment thesis, and aligning with it immediately is crucial.",
+        "Focus on quantifiable business value for your target enterprise customers. Highlight how your solution drives efficiency, saves costs, or unlocks new revenue streams, using any available early traction data.",
+        "When using their contact form, provide a concise summary of your business plan that clearly outlines the problem, solution, market size, team, and current traction. Ensure it's easy to grasp the B2B value proposition."
+      ]
+    }
   }
 ];
 

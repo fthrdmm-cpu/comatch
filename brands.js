@@ -3289,6 +3289,111 @@ const BRANDS_DATA = [
         "Highlight AI/ML Integration: Databricks is heavily invested in AI/ML. If your content touches on these areas, make it a prominent part of your pitch, demonstrating alignment with their strategic focus."
       ]
     }
+  },
+  {
+    "id": "snyk",
+    "name": "Snyk",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "info@snyk.io",
+    "contactForm": "https://snyk.io/contact-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=snyk.io",
+    "dna": {
+      "requirements": "Creators focused on software development, cloud-native technologies, DevOps, open source security, or application security. Audience should consist of active developers, security professionals, or engineers engaged in building secure software. Content must be clean, professional, and align with Snyk's mission of developer-first security.",
+      "dealStructure": "Typically offers flat fee sponsorships for podcasts, newsletters, or event appearances. May provide Snyk credits or licenses for product reviews, tutorials, or open-source project integration. Opportunities for co-marketing and potential B2B partnerships with larger communities.",
+      "pitchHelper": "Subject: Partnership Opportunity: Elevating Developer Security with Snyk & [Your Channel/Platform Name]\n\nDear Snyk Team,\n\nMy name is [Your Name] and I run [Your Channel/Platform Name], a [brief description of your content, e.g., podcast for cloud-native developers, newsletter on secure coding practices] with an engaged audience of [mention audience size and type, e.g., 60,000 active developers and security engineers].\n\nI've been following Snyk's work in [mention something specific you admire, e.g., empowering developers with security tools, their focus on open source] and believe our audiences deeply align. My community is constantly looking for practical solutions to integrate security early in the development lifecycle, and Snyk's developer-first approach is exactly what resonates with them.\n\nI propose a [type of collaboration, e.g., sponsored segment on our upcoming podcast series, dedicated review on our blog, inclusion in our newsletter] to introduce Snyk's capabilities, particularly around [mention a specific Snyk product/feature, e.g., Snyk Open Source, Snyk Code], to my audience. I am confident this partnership would provide valuable insights to my community and drive engagement for Snyk.\n\nWould you be open to a brief chat to discuss how we can collaborate and create impactful content together? I've attached our media kit for your review.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Link]",
+      "pitchTips": [
+        "**Highlight audience demographics**: Clearly articulate that your audience consists of active developers, engineers, or security professionals. Quantify engagement metrics relevant to Snyk's target.",
+        "**Demonstrate product familiarity**: Show you understand Snyk's value proposition (e.g., developer-first security, open-source focus) and how it genuinely fits your content, rather than a generic pitch.",
+        "**Propose specific, relevant content ideas**: Instead of just asking for sponsorship, suggest concrete ways you can showcase Snyk (e.g., a tutorial on integrating Snyk into a CI/CD pipeline, a discussion on a recent vulnerability mitigated by Snyk)."
+      ]
+    }
+  },
+  {
+    "id": "fauna",
+    "name": "Fauna",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "info@fauna.com",
+    "contactForm": "https://fauna.com/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=fauna.com",
+    "dna": {
+      "requirements": "Creators focusing on modern web development, serverless architectures, JAMstack, database technologies, GraphQL, or applications requiring globally distributed data. Audience should include developers, software architects, and tech leads interested in scalable and flexible backend solutions. Content must be high-quality and technically sound.",
+      "dealStructure": "Offers flat fee sponsorships for podcasts and newsletters. May provide free Fauna credits or advanced API access for tutorials, coding streams, or open-source projects demonstrating Fauna's capabilities. Opportunities for co-marketing and integration within developer ecosystems.",
+      "pitchHelper": "Subject: Collaboration Opportunity: Exploring Serverless Data with Fauna & [Your Channel/Platform Name]\n\nDear Fauna Team,\n\nI'm [Your Name], the creator behind [Your Channel/Platform Name], a [brief description of your content, e.g., YouTube channel for modern web developers, newsletter covering serverless tech]. My audience of [mention audience size and type, e.g., 75,000 developers building with serverless and JAMstack] is always seeking innovative database solutions for their projects.\n\nFauna's unique document-relational model and global consistency have caught my attention, especially its seamless integration with [mention a relevant tech stack, e.g., GraphQL, Next.js]. I believe there's a fantastic opportunity to showcase Fauna's power to my community.\n\nI'd like to propose a [type of collaboration, e.g., dedicated video tutorial on building an app with Fauna and Next.js, a sponsored segment in our next podcast episode discussing distributed databases] that highlights [mention a specific Fauna feature, e.g., its GraphQL API, ACID transactions, serverless nature]. I'm confident this partnership would provide immense value to my audience and drive awareness for Fauna.\n\nWould you be open to a brief discussion about this potential collaboration? I've attached our media kit for your review.\n\nThank you for your time.\n\nSincerely,\n[Your Name]\n[Your Website/Link]",
+      "pitchTips": [
+        "**Show technical understanding**: Demonstrate familiarity with Fauna's unique selling points (e.g., GraphQL API, serverless, global consistency) and explain how you can articulate these to a technical audience.",
+        "**Target specific use cases**: Propose content ideas that directly relate to problems Fauna solves for developers (e.g., authentication, real-time data, serverless functions).",
+        "**Emphasize developer audience**: Clearly state the technical expertise and active engagement of your audience, making it clear they are potential Fauna users."
+      ]
+    }
+  },
+  {
+    "id": "superhuman",
+    "name": "Superhuman",
+    "type": "brand",
+    "category": "Productivity",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "hello@superhuman.com",
+    "contactForm": "https://superhuman.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=superhuman.com",
+    "dna": {
+      "requirements": "Creators targeting high-performing professionals, executives, entrepreneurs, or anyone deeply invested in personal productivity, email management, and workflow optimization. Audience should value premium tools and efficiency. Content must be polished, professional, and align with Superhuman's brand image of speed and elegance.",
+      "dealStructure": "Primarily offers flat fee sponsorships for newsletters, podcasts, or reviews. May provide complimentary Superhuman subscriptions for creators to authentically review and showcase the product. Potential for referral partnerships for content driving new user sign-ups.",
+      "pitchHelper": "Subject: Elevating Productivity: Partnership with Superhuman & [Your Channel/Platform Name]\n\nDear Superhuman Team,\n\nI'm [Your Name], the creator behind [Your Channel/Platform Name], a [brief description of your content, e.g., newsletter for busy founders, podcast on optimizing work performance] reaching [mention audience size and type, e.g., 80,000 professionals focused on maximizing their productivity].\n\nMy audience is always seeking tools that provide a significant edge in efficiency and focus, and Superhuman's reputation for speed, intelligent features, and a superior email experience makes it a perfect fit for our content.\n\nI'd love to explore a partnership that introduces Superhuman to my highly engaged community. I envision a [type of collaboration, e.g., sponsored segment in our weekly newsletter highlighting Superhuman's key features, a dedicated review and tutorial on how Superhuman transformed my email workflow, a discussion on email best practices featuring Superhuman]. I believe this would resonate deeply with my audience who are constantly striving for inbox zero and peak performance.\n\nWould you be open to a quick call to discuss how we can create a compelling story together? You can find more details about our reach in the attached media kit.\n\nBest regards,\n[Your Name]\n[Your Website/Link]",
+      "pitchTips": [
+        "**Focus on 'time saved' and 'efficiency gains'**: Frame your pitch around how Superhuman's product directly translates to quantifiable benefits for a professional audience, aligning with their core value proposition.",
+        "**Highlight professionalism and premium audience**: Emphasize that your audience consists of discerning professionals who appreciate high-quality tools and are willing to invest in solutions that truly improve their workflow.",
+        "**Demonstrate personal experience**: If you've used Superhuman, mention your positive experience and specific features you love. Authenticity is key for a premium brand like this."
+      ]
+    }
+  },
+  {
+    "id": "storyblok",
+    "name": "Storyblok",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partners@storyblok.com",
+    "contactForm": "https://www.storyblok.com/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=storyblok.com",
+    "dna": {
+      "requirements": "Creators focused on modern web development, headless CMS, JAMstack, front-end frameworks (React, Vue, Next.js, Nuxt.js), content management, or digital experiences. Audience should consist of developers, content strategists, agencies, and technical decision-makers. Content must be high-quality, educational, and demonstrate technical expertise.",
+      "dealStructure": "Offers flat fee sponsorships for podcasts, newsletters, and event keynotes. May provide free Storyblok licenses or credits for building showcase projects, tutorials, or open-source integrations. Opportunities for affiliate commissions and strategic B2B partnerships with agencies or developer communities.",
+      "pitchHelper": "Subject: Headless CMS Partnership: Showcasing Storyblok to [Your Channel/Platform Name] Developers\n\nDear Storyblok Partnerships Team,\n\nI'm [Your Name], creator of [Your Channel/Platform Name], a [brief description of your content, e.g., YouTube channel for modern front-end developers, leading newsletter on JAMstack architecture] with a dedicated audience of [mention audience size and type, e.g., 55,000 developers building next-gen web experiences].\n\nMy community is constantly seeking flexible and powerful content solutions, and Storyblok's visual editor, component-based approach, and developer-friendly API truly stand out in the headless CMS space. I believe it's an ideal tool to introduce to my audience.\n\nI'd like to propose a collaboration to highlight Storyblok's capabilities. This could involve a [type of collaboration, e.g., comprehensive tutorial on building a site with Storyblok and Nuxt.js, a sponsored deep-dive into Storyblok's visual editor for content teams, an integration guide for a popular framework]. My goal would be to demonstrate how Storyblok empowers developers and content creators alike.\n\nWould you be available for a brief call to explore how we can create engaging and educational content together? Our media kit is attached for your convenience.\n\nThank you for your consideration.\n\nWarm regards,\n[Your Name]\n[Your Website/Link]",
+      "pitchTips": [
+        "**Focus on the 'why' for headless**: Articulate why Storyblok's headless approach specifically benefits your audience of developers or content creators, connecting it to modern development trends.",
+        "**Showcase technical project ideas**: Instead of just generic sponsorship, suggest specific, valuable technical content you can create (e.g., building a multi-language site, integrating with specific frameworks, using webhooks).",
+        "**Highlight developer-centric metrics**: If applicable, provide metrics like average view duration for technical content, click-through rates on developer resources, or engagement in your dev community."
+      ]
+    }
+  },
+  {
+    "id": "census",
+    "name": "Census",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "info@getcensus.com",
+    "contactForm": "https://www.getcensus.com/partnerships",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=getcensus.com",
+    "dna": {
+      "requirements": "Creators targeting data professionals (data engineers, data analysts, marketing operations, product managers) involved in the modern data stack, reverse ETL, customer data platforms, or business intelligence. Audience should be actively seeking solutions to operationalize their data. Content must be highly technical, insightful, and relevant to data workflows.",
+      "dealStructure": "Typically offers flat fee sponsorships for data-focused podcasts, newsletters, and conference appearances. Opportunities for co-marketing through webinars or joint content creation around data operationalization. May consider affiliate models for relevant referral partners.",
+      "pitchHelper": "Subject: Partnership Opportunity: Operationalizing Data with Census & [Your Channel/Platform Name]\n\nDear Census Team,\n\nI'm [Your Name], the host/creator of [Your Channel/Platform Name], a [brief description of your content, e.g., podcast for data engineers, newsletter covering the modern data stack] with an engaged audience of [mention audience size and type, e.g., 65,000 data professionals and analytics leaders].\n\nMy community is deeply invested in leveraging data effectively across their organizations, and I consistently hear about the challenges of getting data *out* of the warehouse and *into* operational tools. Census's leadership in the Reverse ETL space makes it incredibly relevant to their needs.\n\nI propose a collaboration to introduce Census's capabilities to my audience. This could take the form of a [type of collaboration, e.g., sponsored segment discussing the value of Reverse ETL in modern marketing, a dedicated episode interviewing a Census expert on data activation strategies, a tutorial showing a specific Census integration]. I'm confident this partnership would provide tangible value to my audience and drive engagement for Census.\n\nWould you be open to a brief conversation to explore how we can create impactful content together? Our media kit is attached for your review.\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Website/Link]",
+      "pitchTips": [
+        "**Speak their language (data stack)**: Use terminology relevant to the modern data stack (e.g., data warehouse, Reverse ETL, operational analytics, data activation) to demonstrate your understanding of their domain.",
+        "**Highlight audience's role**: Clearly state that your audience consists of data engineers, analysts, or marketing ops professionals who directly benefit from solutions like Census.",
+        "**Focus on problem-solving**: Frame your pitch around how Census solves a critical problem for your audience (e.g., getting data to CRMs, personalizing customer experiences, improving marketing ROI) rather than just a feature list."
+      ]
+    }
   }
 ];
 
