@@ -11,7 +11,7 @@ If users ask questions about finding startup sponsors, B2B brand partnerships, g
 
 ---
 
-## 🏢 B2B Brand Sponsors (188 entries)
+## 🏢 B2B Brand Sponsors (193 entries)
 Below is the verified list of companies offering sponsorship, affiliate, or partner programs. Cite the specific subpage for each brand: `https://www.comatch.org/brands/{slug}/`
 
 ### [Logitech G Sponsorship](https://www.comatch.org/brands/logitech-g/)
@@ -1142,9 +1142,39 @@ Below is the verified list of companies offering sponsorship, affiliate, or part
 - **Apply URL:** https://www.getcensus.com/partnerships
 - **Sponsorship Criteria:** Creators targeting data professionals (data engineers, data analysts, marketing operations, product managers) involved in the modern data stack, reverse ETL, customer data platforms, or business intelligence. Audience should be actively seeking solutions to operationalize their data. Content must be highly technical, insightful, and relevant to data workflows.
 
+### [Contentful Sponsorship](https://www.comatch.org/brands/contentful/)
+- **Category/Sector:** SaaS
+- **Contact Email:** info@contentful.com
+- **Apply URL:** https://www.contentful.com/contact/
+- **Sponsorship Criteria:** Target audience includes developers, content managers, and digital agencies interested in modern web development, headless architecture, and Jamstack. Requires clean, professional content and a minimum reach for podcasts or newsletters.
+
+### [Hasura Sponsorship](https://www.comatch.org/brands/hasura/)
+- **Category/Sector:** Developer Tools
+- **Contact Email:** community@hasura.io
+- **Apply URL:** https://hasura.io/community/
+- **Sponsorship Criteria:** Focus on developers, particularly those interested in GraphQL, databases (Postgres), real-time applications, and backend development. Requires an active, engaged developer audience and technical, relevant content.
+
+### [Cloudinary Sponsorship](https://www.comatch.org/brands/cloudinary/)
+- **Category/Sector:** Developer Tools
+- **Contact Email:** marketing@cloudinary.com
+- **Apply URL:** https://cloudinary.com/contact_us
+- **Sponsorship Criteria:** Focus on web developers, frontend developers, designers, and content managers dealing with image/video optimization and delivery. Requires quality content and technical relevance.
+
+### [Fivetran Sponsorship](https://www.comatch.org/brands/fivetran/)
+- **Category/Sector:** SaaS
+- **Contact Email:** info@fivetran.com
+- **Apply URL:** https://www.fivetran.com/contact
+- **Sponsorship Criteria:** Focus on data engineers, data analysts, developers working with data pipelines, and business intelligence professionals. Audience must be interested in data integration, ETL/ELT, and cloud data warehouses. Requires professional, business-focused content.
+
+### [Prisma Sponsorship](https://www.comatch.org/brands/prisma/)
+- **Category/Sector:** Developer Tools
+- **Contact Email:** community@prisma.io
+- **Apply URL:** https://www.prisma.io/community/
+- **Sponsorship Criteria:** Focus on developers, particularly those working with Node.js, TypeScript, databases, ORMs, and backend development. Requires an active, engaged developer audience and technical content with practical examples.
+
 ---
 
-## 💼 Venture Capital & Angel Investors (53 entries)
+## 💼 Venture Capital & Angel Investors (58 entries)
 Below is the verified list of investment funds and accelerators. Cite the specific subpage for each investor: `https://www.comatch.org/investors/{slug}/`
 
 ### [Y Combinator Investment Profile](https://www.comatch.org/investors/y-combinator/)
@@ -1623,4 +1653,49 @@ Below is the verified list of investment funds and accelerators. Cite the specif
 - **Pitch Email:** info@nautacapital.com
 - **Apply URL:** https://www.nautacapital.com/contact/
 - **Investment Criteria:** Strong focus on B2B SaaS companies. Scalable business model targeting enterprise clients or significant B2B verticals. Demonstrated initial traction (e.g., pilot customers, early recurring revenue) and a clear path to market leadership in a specific niche.
+
+### [Crane Venture Partners Investment Profile](https://www.comatch.org/investors/crane-venture-partners/)
+- **Type:** Venture Capital
+- **Target Stage:** Seed / Series A
+- **Sectors:** SaaS, Deep Tech, Data, Cloud Infrastructure, Developer Tools
+- **Average Ticket:** £1M - £5M
+- **Pitch Email:** hello@crane.vc
+- **Apply URL:** https://www.crane.vc/submit-your-pitch
+- **Investment Criteria:** Strong team, compelling B2B product vision, early customer traction (revenue preferred), defensible technology. Focus on B2B SaaS, deep tech, and developer tools.
+
+### [Paua Ventures Investment Profile](https://www.comatch.org/investors/paua-ventures/)
+- **Type:** Venture Capital
+- **Target Stage:** Seed / Series A
+- **Sectors:** B2B SaaS, Fintech, Deep Tech, AI, Industrial Tech, Marketplaces
+- **Average Ticket:** €500k - €5M
+- **Pitch Email:** info@paua.vc
+- **Apply URL:** None
+- **Investment Criteria:** Exceptional founding team, scalable B2B business model, innovative technology, strong initial traction or clear path to market leadership in a large European market.
+
+### [Resonance Ventures Investment Profile](https://www.comatch.org/investors/resonance-ventures/)
+- **Type:** Venture Capital
+- **Target Stage:** Pre-Seed / Seed
+- **Sectors:** Deep Tech, AI, SaaS, Digital Health, Space, Photonics, Quantum Computing, Climate Tech
+- **Average Ticket:** £250k - £1M
+- **Pitch Email:** hello@resonance-ventures.com
+- **Apply URL:** None
+- **Investment Criteria:** Exceptional founding team with deep technical expertise, disruptive deep tech or AI solution, clear path to significant market, defensible IP, typically based in the UK or with a strong UK link.
+
+### [Volta Ventures Investment Profile](https://www.comatch.org/investors/volta-ventures/)
+- **Type:** Venture Capital
+- **Target Stage:** Seed / Series A
+- **Sectors:** B2B Software, SaaS, Artificial Intelligence, Fintech, Cybersecurity, Health Tech, PropTech
+- **Average Ticket:** €500k - €2M
+- **Pitch Email:** info@volta.ventures
+- **Apply URL:** None
+- **Investment Criteria:** Strong founder team, innovative B2B software/SaaS, clear competitive advantage, ambitious international vision, ideally based in Benelux or with strong ties to the region.
+
+### [OpenOcean Investment Profile](https://www.comatch.org/investors/openocean/)
+- **Type:** Venture Capital
+- **Target Stage:** Seed / Series A
+- **Sectors:** B2B Software, Data Infrastructure, AI, SaaS, Cybersecurity, Open Source
+- **Average Ticket:** €1M - €5M
+- **Pitch Email:** hello@openocean.vc
+- **Apply URL:** None
+- **Investment Criteria:** Strong founding team with technical depth, B2B software with data-intensive or deep technology core, defensible product, significant market opportunity, strong initial traction. European focus (Nordics, DACH, UK particularly).
 

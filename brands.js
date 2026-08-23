@@ -3394,6 +3394,111 @@ const BRANDS_DATA = [
         "**Focus on problem-solving**: Frame your pitch around how Census solves a critical problem for your audience (e.g., getting data to CRMs, personalizing customer experiences, improving marketing ROI) rather than just a feature list."
       ]
     }
+  },
+  {
+    "id": "contentful",
+    "name": "Contentful",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "info@contentful.com",
+    "contactForm": "https://www.contentful.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=contentful.com",
+    "dna": {
+      "requirements": "Target audience includes developers, content managers, and digital agencies interested in modern web development, headless architecture, and Jamstack. Requires clean, professional content and a minimum reach for podcasts or newsletters.",
+      "dealStructure": "Flat payout for podcast episodes/spots, newsletter inclusions, event booths, and potential speaking opportunities at Contentful-sponsored events.",
+      "pitchHelper": "Subject: Sponsorship Opportunity: [Creator Name/Podcast Name] x Contentful - Elevating Developer Content\n\nDear Contentful Partnerships Team,\n\nI'm reaching out from [Your Name/Creator Name], host/owner of [Your Podcast/Newsletter/Channel], where we consistently deliver high-quality content to an engaged audience of [mention audience type, e.g., developers, content strategists, Jamstack enthusiasts]. With [X] subscribers/listeners and an average [Y]% engagement rate, our platform is a trusted resource for those building modern digital experiences.\n\nWe deeply admire Contentful's commitment to empowering developers and content teams with its flexible headless CMS. We believe our audience would greatly benefit from learning more about how Contentful streamlines content delivery and development workflows.\n\nWe are particularly interested in exploring a sponsorship for our [upcoming series/specific segment/newsletter edition] where we plan to discuss [relevant topic, e.g., 'The Future of Headless CMS,' 'Scaling Content with APIs']. This would be an excellent opportunity to introduce Contentful to highly relevant professionals seeking powerful content infrastructure.\n\nCould you share any information regarding your creator or content sponsorship programs? I've attached our media kit for your review.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Link to Content]",
+      "pitchTips": [
+        "Personalize with specific content context: Reference a recent Contentful blog post, feature, or announcement in your pitch to show you've done your research and understand their current focus.",
+        "Highlight technical audience overlap: Clearly articulate how your audience's technical profile (e.g., specific tech stack usage, job roles) directly aligns with Contentful's ideal user base beyond just general 'developers.'",
+        "Propose a unique integration idea: Instead of just offering a standard ad read, suggest a creative way to feature Contentful (e.g., a tutorial series, a mini-project demonstrating its use, a themed discussion around headless architecture challenges Contentful solves)."
+      ]
+    }
+  },
+  {
+    "id": "hasura",
+    "name": "Hasura",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "community@hasura.io",
+    "contactForm": "https://hasura.io/community/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=hasura.io",
+    "dna": {
+      "requirements": "Focus on developers, particularly those interested in GraphQL, databases (Postgres), real-time applications, and backend development. Requires an active, engaged developer audience and technical, relevant content.",
+      "dealStructure": "Flat payout for video integrations, podcast reads, workshop support, hackathon prizes, and event booths.",
+      "pitchHelper": "Subject: Partnering with Hasura: Elevating GraphQL and Backend Development for [Your Audience]\n\nDear Hasura Community/Partnerships Team,\n\nI'm [Your Name], content creator behind [Your Channel/Blog/Podcast], dedicated to exploring cutting-edge tools and best practices in modern backend and application development for an audience of [X] active developers. Our community is deeply engaged with topics like real-time data, API efficiency, and database management.\n\nI've been a long-time admirer of Hasura's powerful GraphQL engine, particularly its ability to instantly generate GraphQL APIs over new and existing databases. I believe my audience, who are constantly seeking ways to accelerate their development cycles and build scalable applications, would find immense value in learning more about Hasura's capabilities.\n\nI'm proposing a collaboration to create [mention specific content idea, e.g., a tutorial series on building a real-time app with Hasura, a deep-dive podcast episode on GraphQL performance, sponsoring a hackathon focused on backend APIs]. This would be a fantastic opportunity to showcase Hasura to a highly targeted and enthusiastic developer community.\n\nCould you guide me on your sponsorship or community partnership opportunities? My media kit is attached for your review.\n\nThank you for your time.\n\nSincerely,\n[Your Name]\n[Your Website/Content Link]",
+      "pitchTips": [
+        "Demonstrate GraphQL/Database proficiency: Show concrete examples in your content or portfolio that prove your understanding of GraphQL, database concepts, and developer pain points that Hasura solves.",
+        "Focus on specific use cases: Instead of a generic 'Hasura is cool,' propose content around a specific problem (e.g., 'how to build a real-time chat app,' 'integrating with existing REST APIs,' 'optimizing database queries') where Hasura shines.",
+        "Highlight community involvement: If you host local meetups, online communities, or speak at events, mention this to demonstrate your reach within the developer ecosystem beyond just your digital channels."
+      ]
+    }
+  },
+  {
+    "id": "cloudinary",
+    "name": "Cloudinary",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "marketing@cloudinary.com",
+    "contactForm": "https://cloudinary.com/contact_us",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=cloudinary.com",
+    "dna": {
+      "requirements": "Focus on web developers, frontend developers, designers, and content managers dealing with image/video optimization and delivery. Requires quality content and technical relevance.",
+      "dealStructure": "Flat payout for sponsored videos/articles, event support, and potential API credits for content creation.",
+      "pitchHelper": "Subject: Sponsorship Opportunity: Optimizing Media with Cloudinary on [Your Platform Name]\n\nDear Cloudinary Marketing Team,\n\nI'm [Your Name], creator of [Your Channel/Blog/Podcast], a platform dedicated to [mention content focus, e.g., frontend development best practices, web performance optimization, modern media delivery]. Our audience of [X] developers and designers consistently seeks out tools that enhance user experience and streamline development workflows, particularly concerning media assets.\n\nCloudinary's comprehensive suite for image and video management, optimization, and delivery is a solution I deeply respect and believe our audience would greatly benefit from exploring. Your platform addresses critical challenges in web performance and responsive design that are highly relevant to our content.\n\nI'm proposing a collaboration to showcase Cloudinary's capabilities through [mention specific content idea, e.g., a tutorial series on responsive images, a deep-dive into video transformations, a case study on optimizing a website's media assets]. This would be an ideal opportunity to reach a highly engaged audience eager to improve their media workflows.\n\nCould you please share details on your creator sponsorship programs? My media kit is attached for your review.\n\nThank you for your consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Content Link]",
+      "pitchTips": [
+        "Demonstrate visual content expertise: Show prior content where you've discussed or worked with images/videos, proving your understanding of media challenges and how Cloudinary fits into the solution.",
+        "Highlight performance metrics: If your content focuses on web performance, link this directly to Cloudinary's benefits (e.g., faster load times, reduced bandwidth) and show how you can effectively communicate these advantages.",
+        "Propose a creative use case beyond basic delivery: Suggest demonstrating advanced Cloudinary features like AI-based cropping, video manipulation, or dynamic overlays, showcasing a deeper understanding of the product's potential."
+      ]
+    }
+  },
+  {
+    "id": "fivetran",
+    "name": "Fivetran",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "info@fivetran.com",
+    "contactForm": "https://www.fivetran.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=fivetran.com",
+    "dna": {
+      "requirements": "Focus on data engineers, data analysts, developers working with data pipelines, and business intelligence professionals. Audience must be interested in data integration, ETL/ELT, and cloud data warehouses. Requires professional, business-focused content.",
+      "dealStructure": "Flat payout for podcast sponsorships, webinar collaborations, event presence, and featured content opportunities.",
+      "pitchHelper": "Subject: Collaboration Opportunity: Data Integration with Fivetran on [Your Platform Name]\n\nDear Fivetran Partnerships/Marketing Team,\n\nI'm [Your Name], host/creator of [Your Podcast/Newsletter/Channel], a platform dedicated to [mention content focus, e.g., data engineering best practices, cloud analytics, modern data stack]. Our audience of [X] data professionals and developers are constantly seeking efficient and reliable solutions for data integration and transformation.\n\nFivetran's reputation as a leader in automated data movement and its extensive connector library make it an invaluable tool for any data-driven organization. I believe our audience, who are actively building and optimizing data pipelines, would greatly benefit from learning more about how Fivetran simplifies complex data challenges.\n\nI'm interested in exploring a potential sponsorship for [mention specific content idea, e.g., an episode discussing the challenges of data replication, a series on building a robust data warehouse, a newsletter feature on simplifying ETL]. This would be an excellent opportunity to showcase Fivetran's capabilities to a highly targeted community of data practitioners.\n\nCould you share details on your content partnership programs? My media kit is available for your review.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Content Link]",
+      "pitchTips": [
+        "Quantify data-related audience pain points: Frame your content idea around specific, measurable pain points in data integration (e.g., 'manual ETL takes X hours,' 'data latency hinders Y decisions') that Fivetran directly solves, demonstrating market understanding.",
+        "Align with their target data stack: If your audience is heavily invested in a specific cloud data warehouse (Snowflake, BigQuery, Redshift) or BI tool, highlight this as Fivetran integrates directly with these, showing a perfect synergy.",
+        "Propose a 'before & after' content piece: Offer to create content that contrasts the complexity of manual data integration with the simplicity and efficiency gained by using Fivetran, providing a clear value proposition for viewers."
+      ]
+    }
+  },
+  {
+    "id": "prisma",
+    "name": "Prisma",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Nano (under 10k)",
+    "contactEmail": "community@prisma.io",
+    "contactForm": "https://www.prisma.io/community/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=prisma.io",
+    "dna": {
+      "requirements": "Focus on developers, particularly those working with Node.js, TypeScript, databases, ORMs, and backend development. Requires an active, engaged developer audience and technical content with practical examples.",
+      "dealStructure": "Flat payout for video integrations, podcast reads, workshop support, hackathon prizes, and API credits.",
+      "pitchHelper": "Subject: Elevating Developer Workflows: [Your Platform Name] x Prisma Sponsorship\n\nDear Prisma Community Team,\n\nI'm [Your Name], creator of [Your Channel/Blog/Podcast], a platform dedicated to exploring modern backend development, database solutions, and developer productivity for an engaged audience of [X] developers, primarily focused on Node.js and TypeScript ecosystems.\n\nPrisma's innovative ORM and database toolkit have significantly streamlined data access for countless developers, and I've personally been impressed by its type safety and developer experience. I believe my audience, who are constantly seeking to build robust and efficient backend applications, would greatly benefit from a deeper dive into Prisma.\n\nI'm reaching out to propose a partnership where I can showcase Prisma's power through [mention specific content idea, e.g., a tutorial series on integrating Prisma with Next.js, a deep-dive episode on database migrations with Prisma Migrate, a live-coding session demonstrating Prisma Client]. This would be a fantastic opportunity to reach a highly relevant and active segment of the developer community.\n\nCould you share information about your creator or community sponsorship programs? My media kit is attached for your review.\n\nThank you for your consideration.\n\nSincerely,\n[Your Name]\n[Your Website/Content Link]",
+      "pitchTips": [
+        "Showcase existing ORM/Database knowledge: Highlight any past content or projects where you've worked with databases, SQL, or other ORMs to establish credibility and demonstrate a solid foundation for discussing Prisma.",
+        "Target specific Prisma features: Instead of a generic overview, propose content that focuses on a particularly powerful or often-misunderstood Prisma feature (e.g., Prisma Migrate, data proxies, relations, raw queries) to show a deep product interest.",
+        "Suggest a code-focused collaboration: Offer to create a practical, open-source project or snippet that utilizes Prisma in a novel way, providing tangible value and a reusable asset for the community that Prisma can also promote."
+      ]
+    }
   }
 ];
 

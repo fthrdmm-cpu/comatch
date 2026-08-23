@@ -1166,6 +1166,116 @@ const INVESTORS_DATA = [
         "When using their contact form, provide a concise summary of your business plan that clearly outlines the problem, solution, market size, team, and current traction. Ensure it's easy to grasp the B2B value proposition."
       ]
     }
+  },
+  {
+    "id": "crane-venture-partners",
+    "name": "Crane Venture Partners",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "SaaS, Deep Tech, Data, Cloud Infrastructure, Developer Tools",
+    "ticketSize": "£1M - £5M",
+    "contactEmail": "hello@crane.vc",
+    "contactForm": "https://www.crane.vc/submit-your-pitch",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=crane.vc",
+    "dna": {
+      "requirements": "Strong team, compelling B2B product vision, early customer traction (revenue preferred), defensible technology. Focus on B2B SaaS, deep tech, and developer tools.",
+      "dealStructure": "Equity investment, standard VC terms for Seed/Series A rounds. Typically targets 15-25% dilution.",
+      "pitchHelper": "Subject: [Company Name] | Disrupting [Specific Niche] with AI-powered [Solution]\n\nDear Crane Venture Partners Team,\n\nMy name is [Your Name] and I'm the CEO/Founder of [Company Name], a [brief 1-sentence description of your company, e.g., \"B2B SaaS platform that helps enterprises automate their data privacy compliance using AI\"].\n\nWe've been deeply impressed by your focus on deep tech and B2B SaaS infrastructure, particularly your investments in [mention 1-2 relevant portfolio companies, e.g., \"Obsidian Security and Humio\"]. Our solution, [Company Name], is uniquely positioned to [solve a critical problem/capture a significant market opportunity, e.g., \"streamline data governance in the cloud, an area we believe aligns with your thesis on scalable infrastructure\"].\n\nWe have developed [mention key technology or innovation, e.g., \"proprietary AI models that identify and classify sensitive data with 99% accuracy across diverse data landscapes\"], resulting in [quantifiable achievement, e.g., \"$X ARR with Y paying customers in 6 months\"]. Our early traction demonstrates a strong product-market fit in [target market].\n\nWe are currently raising a [Seed/Series A] round of [amount] to [briefly state use of funds, e.g., \"expand our engineering team and accelerate market penetration\"]. We believe our vision to [Company's long-term vision] strongly resonates with Crane's investment philosophy.\n\nWould you be open to a brief 15-minute call next week to discuss how [Company Name] is poised to become a leader in the [industry] space?\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Company Website]\n[Link to Pitch Deck/Executive Summary]",
+      "pitchTips": [
+        "Personalize with Portfolio Relevance: Reference specific Crane portfolio companies or their stated investment thesis (B2B SaaS, Deep Tech, Data) in your subject line or opening paragraph. This shows you've done your homework and aren't mass emailing.",
+        "Concise Value Proposition & Data: Get straight to your unique value proposition and back it up with hard data (traction, revenue, key metrics) within the first two sentences. VCs scan emails quickly.",
+        "Focus on the Problem & Solution: Clearly articulate the significant B2B problem you're solving and how your technology (especially if deep tech/data-driven) provides a unique, defensible solution that aligns with their expertise."
+      ]
+    }
+  },
+  {
+    "id": "paua-ventures",
+    "name": "Paua Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "B2B SaaS, Fintech, Deep Tech, AI, Industrial Tech, Marketplaces",
+    "ticketSize": "€500k - €5M",
+    "contactEmail": "info@paua.vc",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=paua.vc",
+    "dna": {
+      "requirements": "Exceptional founding team, scalable B2B business model, innovative technology, strong initial traction or clear path to market leadership in a large European market.",
+      "dealStructure": "Equity investment, standard VC terms for Seed/Series A rounds.",
+      "pitchHelper": "Subject: [Company Name] | [Problem Solved] for [Target Industry] | Seed Round\n\nDear Paua Ventures Team,\n\nMy name is [Your Name], Co-founder & CEO of [Company Name], a [B2B SaaS/AI/Deep Tech] solution that [briefly explain what you do and for whom, e.g., \"automates quality control for industrial manufacturers using computer vision AI\"].\n\nWe've been following Paua's impactful investments in the B2B tech space, particularly in companies like [mention a relevant Paua portfolio company, e.g., \"CoachHub or Cofenex\"], which resonate with our vision for transforming traditional industries with cutting-edge technology.\n\nThe [Target Industry] market faces a critical challenge with [specific problem, e.g., \"high defect rates and manual inspection costs, leading to significant waste\"]. Our platform leverages [key technology, e.g., \"proprietary AI algorithms and IoT sensors\"] to provide [key benefit, e.g., \"real-time, predictive quality analysis, reducing defects by X% and saving Y euros annually\"].\n\nSince launching [X months ago], we've achieved [quantifiable traction, e.g., \"€Z MRR from N paying customers, including two pilot projects with Fortune 500 companies\"]. We are raising a Seed round of €[Amount] to [use of funds, e.g., \"scale our engineering team and expand our sales footprint across Europe\"].\n\nWe believe our strong European roots, B2B focus, and deep tech innovation align perfectly with Paua's investment thesis. Would you be available for a brief 15-minute call next week to learn more about our journey?\n\nThank you for your consideration.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Company Website]\n[Link to Pitch Deck/Executive Summary]",
+      "pitchTips": [
+        "Highlight European Focus & Market: Emphasize your company's European presence or market focus, as Paua Ventures primarily invests in European startups. Clearly state the market opportunity within Europe.",
+        "Quantify Impact Early: Lead with quantifiable metrics on the problem you solve and the value you deliver (e.g., \"reducing costs by X%\", \"increasing efficiency by Y%\"). This demonstrates clear business impact.",
+        "Connect to B2B & Deep Tech Thesis: Frame your solution within Paua's clear focus on B2B SaaS, Fintech, and Deep Tech. Use keywords and examples that directly relate to their portfolio or stated interests."
+      ]
+    }
+  },
+  {
+    "id": "resonance-ventures",
+    "name": "Resonance Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "Deep Tech, AI, SaaS, Digital Health, Space, Photonics, Quantum Computing, Climate Tech",
+    "ticketSize": "£250k - £1M",
+    "contactEmail": "hello@resonance-ventures.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=resonance-ventures.com",
+    "dna": {
+      "requirements": "Exceptional founding team with deep technical expertise, disruptive deep tech or AI solution, clear path to significant market, defensible IP, typically based in the UK or with a strong UK link.",
+      "dealStructure": "Equity investment, typically first cheque investor, standard Seed terms.",
+      "pitchHelper": "Subject: Pre-Seed: [Company Name] | AI-powered [Tech Solution] for [Sector]\n\nDear Resonance Ventures Team,\n\nMy name is [Your Name], Co-founder of [Company Name], a [Pre-Seed/Seed stage] deep tech startup building [brief, clear description of your technology and what it does, e.g., \"a quantum computing-powered platform to optimize complex logistical networks\"].\n\nWe are deeply familiar with Resonance Ventures' commitment to backing ambitious deep tech founders, and your investments in [mention 1-2 relevant portfolio companies, e.g., \"Immense and Quantum Motion] particularly resonate with our mission to [Company's mission].\n\nThe core challenge we are addressing is [specific, hard technical problem, e.g., \"the computational bottleneck in supply chain optimization, which costs the global economy billions annually\"]. Our unique approach leverages [proprietary technology/IP, e.g., \"our novel quantum algorithm and patented hardware interface\"] to achieve [key breakthrough/advantage, e.g., \"a 1000x speedup in optimization calculations, previously impossible with classical computing\"].\n\nWe are a team of [mention key team members' expertise, e.g., \"PhD quantum physicists and experienced software engineers from XYZ labs/companies\"] and have successfully [mention early milestone, e.g., \"developed a working prototype/secured initial academic validation/filed core IP\"]. We are now raising a Pre-Seed round of £[Amount] to [use of funds, e.g., \"further develop our MVP and conduct our first commercial pilot\"].\n\nGiven your deep expertise in deep tech and AI, we believe Resonance Ventures is the ideal partner to support our journey. Would you be open to a brief 15-minute introductory call next week?\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Company Website]\n[Link to Pitch Deck/Executive Summary]",
+      "pitchTips": [
+        "Emphasize Deep Tech/Scientific Innovation: Lead with the specific scientific or technological breakthrough your company is achieving. Resonance is looking for true innovation and defensible IP, so make that immediately clear.",
+        "Highlight Team's Technical Credentials: Given their focus on deep tech, emphasize the technical expertise and scientific background of your founding team. This builds credibility for tackling complex problems.",
+        "Clearly State UK Link (if applicable): If you have a strong UK presence, mention it. While they invest globally, many of their portfolio companies have a UK base or significant operations there."
+      ]
+    }
+  },
+  {
+    "id": "volta-ventures",
+    "name": "Volta Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "B2B Software, SaaS, Artificial Intelligence, Fintech, Cybersecurity, Health Tech, PropTech",
+    "ticketSize": "€500k - €2M",
+    "contactEmail": "info@volta.ventures",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=volta.ventures",
+    "dna": {
+      "requirements": "Strong founder team, innovative B2B software/SaaS, clear competitive advantage, ambitious international vision, ideally based in Benelux or with strong ties to the region.",
+      "dealStructure": "Equity investment, standard Seed/Series A terms.",
+      "pitchHelper": "Subject: Seed Round: [Company Name] | Disrupting [Industry] B2B with [SaaS/AI Solution]\n\nDear Volta Ventures Team,\n\nMy name is [Your Name], CEO & Co-founder of [Company Name], a [Benelux-based, if applicable] B2B SaaS company that [concisely describe what your company does, e.g., \"optimizes inventory management for e-commerce businesses using AI-driven demand forecasting\"].\n\nWe've followed Volta Ventures' impressive portfolio of B2B software innovators, and your investments in companies like [mention a relevant Volta portfolio company, e.g., \"Lalaland or Castor\"] demonstrate a clear alignment with our mission to [Company's mission].\n\nThe [Target Industry] market is struggling with [specific problem, e.g., \"inefficient manual inventory processes leading to significant overstocking and stockouts\"]. Our platform leverages [key technology, e.g., \"predictive AI and advanced analytics\"] to provide [key benefit, e.g., \"a 30% reduction in capital tied up in inventory and a 20% increase in order fulfillment rates\"].\n\nSince our launch [X months ago], we've secured [quantifiable traction, e.g., \"€Y MRR from N paying customers, including initial traction in the Benelux market\"]. We are now raising a Seed round of €[Amount] to [use of funds, e.g., \"accelerate product development and expand our sales team across Europe\"].\n\nGiven Volta's expertise in scaling B2B software companies from the Benelux region internationally, we believe we would be a strong fit. Would you be open to a brief 15-minute call to explore this further?\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Company Website]\n[Link to Pitch Deck/Executive Summary]",
+      "pitchTips": [
+        "Emphasize Benelux Connection: If your company is based in or has strong ties to the Benelux region, make this clear early in your email. Volta Ventures has a strong regional focus.",
+        "Focus on B2B SaaS Metrics: Highlight key B2B SaaS metrics like MRR, customer acquisition cost, retention rates, or ARR growth. Volta is highly analytical and values clear performance indicators.",
+        "Demonstrate Scalability & International Ambition: Clearly articulate your plan for scaling beyond your initial market and your international growth aspirations. Volta looks for companies with global potential."
+      ]
+    }
+  },
+  {
+    "id": "openocean",
+    "name": "OpenOcean",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "B2B Software, Data Infrastructure, AI, SaaS, Cybersecurity, Open Source",
+    "ticketSize": "€1M - €5M",
+    "contactEmail": "hello@openocean.vc",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=openocean.vc",
+    "dna": {
+      "requirements": "Strong founding team with technical depth, B2B software with data-intensive or deep technology core, defensible product, significant market opportunity, strong initial traction. European focus (Nordics, DACH, UK particularly).",
+      "dealStructure": "Equity investment, standard Seed/Series A terms.",
+      "pitchHelper": "Subject: Seed Round: [Company Name] | Next-Gen [Data/AI Solution] for Enterprises\n\nDear OpenOcean Team,\n\nMy name is [Your Name], Co-founder & CEO of [Company Name], a [European-based, if applicable] B2B software company building [concise description, e.g., \"an AI-powered data observability platform for cloud-native enterprises\"].\n\nWe've closely followed OpenOcean's impressive track record in backing category-defining B2B software and data companies, and your investments in [mention 1-2 relevant portfolio companies, e.g., \"Supermetrics or MariaDB\"] perfectly align with our vision for the future of enterprise data.\n\nEnterprises today face a critical challenge with [specific data-related problem, e.g., \"data quality issues and pipeline failures leading to significant operational downtime and lost revenue\"]. Our solution leverages [key technology, e.g., \"novel AI/ML algorithms and a unique graph-based approach\"] to provide [key benefit, e.g., \"proactive identification and resolution of data anomalies, ensuring 99.9% data reliability\"].\n\nSince our launch [X months ago], we've achieved [quantifiable traction, e.g., \"secured €Y MRR from N enterprises, demonstrating strong product-market fit in the data infrastructure space\"]. We are raising a Seed round of €[Amount] to [use of funds, e.g., \"accelerate our product roadmap and expand our market presence in Europe and the US\"].\n\nGiven OpenOcean's deep technical expertise and focus on data infrastructure and B2B SaaS, we believe we would be a highly complementary addition to your portfolio. Would you be open to a brief 15-minute call to discuss our solution and vision?\n\nThank you for your consideration.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Company Website]\n[Link to Pitch Deck/Executive Summary]",
+      "pitchTips": [
+        "Lead with Technical Differentiator: OpenOcean's partners often have strong technical backgrounds. Clearly articulate the technical innovation or data-centric approach that makes your B2B software unique and defensible.",
+        "Quantify Enterprise Value: Focus on the tangible, quantifiable business value your solution brings to enterprises (e.g., cost savings, efficiency gains, revenue impact). They invest in solutions that drive significant commercial outcomes.",
+        "Reference Data/Open Source Expertise: If your solution relates to data infrastructure, AI, or open source, explicitly mention this and how it aligns with OpenOcean's historical strengths and investment themes."
+      ]
+    }
   }
 ];
 
