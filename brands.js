@@ -3499,6 +3499,111 @@ const BRANDS_DATA = [
         "Suggest a code-focused collaboration: Offer to create a practical, open-source project or snippet that utilizes Prisma in a novel way, providing tangible value and a reusable asset for the community that Prisma can also promote."
       ]
     }
+  },
+  {
+    "id": "aiven-io",
+    "name": "Aiven",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "marketing@aiven.io",
+    "contactForm": "https://aiven.io/company/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=aiven.io",
+    "dna": {
+      "requirements": "Expertise in data technologies (Kafka, PostgreSQL, M3, Redis, OpenSearch), active developer/data engineering audience, high-quality technical content (tutorials, deep dives, architecture).",
+      "dealStructure": "Flat fee for content (videos, blog posts), speaking slots, co-marketing, potential long-term content series.",
+      "pitchHelper": "Subject: Partnership Proposal: Enhancing Developer Education with [Your Name/Brand] & Aiven\n\nHi Aiven Team,\n\nMy name is [Your Name] and I'm a [Your Role/Creator Type] focused on [Your Niche, e.g., data engineering, backend development, open-source databases]. My [Platform, e.g., YouTube channel, podcast, blog] reaches [Audience Size] developers and engineers who are deeply interested in efficient data infrastructure and scalable solutions.\n\nI've been impressed with Aiven's commitment to managed open-source data technologies, especially your offerings for [mention specific Aiven product, e.g., Apache Kafka, PostgreSQL]. I believe my audience would greatly benefit from understanding how Aiven simplifies deployment and management of these critical services.\n\nI propose creating [Specific Content Idea, e.g., a tutorial series on deploying a Kafka cluster with Aiven, a deep-dive into Aiven for PostgreSQL performance] that highlights the value proposition of Aiven to a highly engaged and relevant technical audience.\n\nWould you be open to a brief chat to discuss how we could collaborate? I'm confident we can deliver significant value in educating developers on Aiven's capabilities.\n\nBest regards,\n[Your Name]\n[Link to Your Portfolio/Platform]",
+      "pitchTips": [
+        "Emphasize Technical Value: Use subject lines and opening sentences that immediately convey technical understanding and value to their developer-focused marketing team (e.g., 'Exploring Kafka on Aiven for X Devs').",
+        "Reference Specific Aiven Products: Show you've done your homework by mentioning specific managed services like Apache Kafka, PostgreSQL, or M3 in your pitch, rather than just 'data solutions.'",
+        "Highlight Developer Audience: Clearly state your audience size and *type* (e.g., '100k data engineers,' 'active open-source contributors') to demonstrate alignment with their target market."
+      ]
+    }
+  },
+  {
+    "id": "hetzner",
+    "name": "Hetzner",
+    "type": "brand",
+    "category": "Hosting",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "info@hetzner.com",
+    "contactForm": "https://www.hetzner.com/support/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=hetzner.com",
+    "dna": {
+      "requirements": "Audience interested in self-hosting, bare metal, VPS, cloud servers, open-source projects, cost-efficiency. Content demonstrating practical use cases, benchmarks, tutorials.",
+      "dealStructure": "Free server resources, flat fee for sponsored content (videos, blog posts), affiliate commission.",
+      "pitchHelper": "Subject: Collaboration Idea: Showcasing Hetzner Cloud for [Your Niche] Developers\n\nHello Hetzner Team,\n\nMy name is [Your Name], and I run [Your Platform Name], a [Your Platform Type] focused on [Your Niche, e.g., self-hosting, budget-friendly cloud deployments, open-source projects]. My community of [Audience Size] developers and enthusiasts regularly seeks reliable, performant, and cost-effective hosting solutions.\n\nI've been a long-time admirer and user of Hetzner's services, particularly [mention specific service, e.g., Hetzner Cloud for its NVMe performance, dedicated servers for raw power]. I believe my audience would greatly appreciate content demonstrating how to leverage Hetzner for [Specific Use Case, e.g., deploying a robust web application, setting up a media server, running a dev environment].\n\nI'd love to propose creating [Specific Content Idea, e.g., a video tutorial on setting up a Docker swarm on Hetzner Cloud, a blog post comparing Hetzner's performance for X workload] that highlights the practical advantages of Hetzner for real-world projects.\n\nWould you be interested in exploring a potential sponsorship to bring this valuable content to my engaged audience?\n\nThank you,\n[Your Name]\n[Link to Your Portfolio/Platform]",
+      "pitchTips": [
+        "Focus on Practicality & Cost-Efficiency: Hetzner users prioritize value. Frame your pitch around how you can demonstrate their services' practical benefits and cost-effectiveness to a relevant audience.",
+        "Mention Specific Hetzner Services: Clearly state which Hetzner products (Cloud, Dedicated, Storage Box) you plan to feature to show you understand their offerings and target the right internal team.",
+        "Highlight Self-Hosting/DevOps Audience: Explicitly mention that your audience consists of developers, sysadmins, or self-hosters who are making infrastructure decisions, aligning with Hetzner's user base."
+      ]
+    }
+  },
+  {
+    "id": "strapi",
+    "name": "Strapi",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "community@strapi.io",
+    "contactForm": "https://strapi.io/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=strapi.io",
+    "dna": {
+      "requirements": "Audience of frontend developers, backend developers, content managers, JAMstack/headless CMS enthusiasts. Content focused on tutorials, integration guides, use cases with popular frameworks (React, Vue, Next.js, Nuxt.js).",
+      "dealStructure": "Flat fee for content, access to Strapi Cloud, co-marketing, feature on their community channels.",
+      "pitchHelper": "Subject: Collaboration Idea: Bringing Strapi to [Your Niche] Developers\n\nHi Strapi Community Team,\n\nMy name is [Your Name], and I create [Platform Type, e.g., video tutorials, articles] for a community of [Audience Size] developers focused on [Your Niche, e.g., modern web development, headless CMS implementations, JAMstack architectures].\n\nI'm a big advocate for open-source tools that empower developers, and Strapi stands out as an exceptional headless CMS. I've been particularly impressed with [mention specific Strapi feature, e.g., its flexibility, plugin ecosystem, Strapi Cloud's ease of use].\n\nI'd love to propose creating [Specific Content Idea, e.g., a tutorial series on building a Next.js app with Strapi backend, a deep dive into Strapi's custom field capabilities] that would resonate perfectly with my audience who are actively looking for robust content management solutions.\n\nAre you currently exploring partnerships with creators who can educate and inspire the developer community about Strapi's capabilities? I'm confident this collaboration would drive engagement and adoption.\n\nLooking forward to hearing from you.\n\nBest regards,\n[Your Name]\n[Link to Your Portfolio/Platform]",
+      "pitchTips": [
+        "Emphasize Community & Open Source: Strapi has a strong open-source community ethos. Frame your pitch around contributing to this community and educating developers, rather than just transactional sponsorship.",
+        "Reference Frontend Frameworks: Show you understand their ecosystem by mentioning popular frontend frameworks (React, Next.js, Vue, Nuxt.js) that often integrate with Strapi.",
+        "Target 'Community' Email: Directing your email to 'community@strapi.io' (or similar) instead of general info shows you've researched their structure and understand their emphasis on community building."
+      ]
+    }
+  },
+  {
+    "id": "convex",
+    "name": "Convex",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Nano (under 10k)",
+    "contactEmail": "hello@convex.dev",
+    "contactForm": "https://www.convex.dev/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=convex.dev",
+    "dna": {
+      "requirements": "Audience of full-stack developers, frontend developers, real-time app builders. Content focused on building modern web apps, real-time features, backend-as-a-service, serverless.",
+      "dealStructure": "Flat fee for sponsored content (tutorials, project builds), free usage credits, co-marketing opportunities.",
+      "pitchHelper": "Subject: Partnership Idea: Building Real-Time Apps with Convex for [Your Audience]\n\nHi Convex Team,\n\nMy name is [Your Name], and I run [Your Platform Name], where I teach [Your Audience, e.g., full-stack developers, React engineers] how to build modern, performant web applications to my [Audience Size] audience.\n\nI've been following Convex's innovative approach to backend development with great interest, particularly its focus on real-time capabilities and ease of use for building dynamic applications. [Mention specific feature, e.g., reactive queries, integrated database, functions].\n\nI believe my audience, who are constantly looking for ways to streamline their development workflow and add powerful features, would greatly benefit from understanding how Convex can empower them.\n\nI'd love to propose creating [Specific Content Idea, e.g., a video tutorial series on building a collaborative app with Convex and React, a blog post exploring Convex's real-time updates for a chat application] to showcase its advantages.\n\nWould you be open to a quick discussion about a potential content partnership?\n\nBest regards,\n[Your Name]\n[Link to Your Portfolio/Platform]",
+      "pitchTips": [
+        "Focus on 'Real-time' & 'Full-Stack': Convex's core value proposition is real-time, full-stack development. Use these keywords in your subject and opening to immediately signal relevance.",
+        "Show Technical Curiosity: Mentioning specific features like 'reactive queries,' 'integrated database,' or 'functions' demonstrates you've engaged with their product beyond surface level.",
+        "Highlight Practical Project Builds: Convex is for *building*. Propose concrete project ideas (e.g., 'building a chat app,' 'collaborative whiteboard') that directly showcase their product in action to appeal to their use cases."
+      ]
+    }
+  },
+  {
+    "id": "circleci",
+    "name": "CircleCI",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "partnerships@circleci.com",
+    "contactForm": "https://circleci.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=circleci.com",
+    "dna": {
+      "requirements": "Audience of developers, DevOps engineers, software teams, CI/CD practitioners. Content focused on best practices, automation, specific language/framework integrations, cloud deployments, security in CI/CD.",
+      "dealStructure": "Flat fee for sponsored content (webinars, blog posts, deep-dive videos), co-marketing, potential speaking engagements.",
+      "pitchHelper": "Subject: Partnership Opportunity: Elevating CI/CD Practices with CircleCI & [Your Name/Brand]\n\nHi CircleCI Partnerships Team,\n\nMy name is [Your Name], and I specialize in creating [Platform Type, e.g., advanced tutorials, deep-dive videos, articles] for a highly engaged audience of [Audience Size] DevOps engineers and software developers at [Your Platform Name]. My content focuses on [Your Niche, e.g., modern software delivery, CI/CD best practices, cloud-native deployments].\n\nI've long admired CircleCI's robust and flexible CI/CD platform, which is a staple for many of my audience members. I believe there's a significant opportunity to educate and empower developers further by showcasing [mention specific CircleCI feature/advantage, e.g., Orbs, parallelism, enterprise features].\n\nI'd like to propose a content partnership where I create [Specific Content Idea, e.g., a tutorial series on optimizing CI/CD pipelines with CircleCI Orbs, a deep dive into securing pipelines with CircleCI for enterprise teams] that delivers practical value and drives adoption among your target users.\n\nAre you open to discussing how we can collaborate to reach and educate the developer community on advanced CI/CD strategies with CircleCI?\n\nThank you,\n[Your Name]\n[Link to Your Portfolio/Platform]",
+      "pitchTips": [
+        "Lead with DevOps/CI/CD Expertise: CircleCI's audience is highly technical. Start by showcasing your expertise in DevOps, CI/CD, or software delivery to establish credibility.",
+        "Mention Specific Features (Orbs, Parallelism): Referencing distinct CircleCI features like Orbs, parallelism, or specific integrations demonstrates deep product knowledge and relevance.",
+        "Target 'Partnerships' or 'Marketing' Department: Clearly directing your email to a partnerships or marketing email (if available) signals that you are seeking a business collaboration, not just support."
+      ]
+    }
   }
 ];
 

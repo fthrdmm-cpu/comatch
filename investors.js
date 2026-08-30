@@ -1276,6 +1276,116 @@ const INVESTORS_DATA = [
         "Reference Data/Open Source Expertise: If your solution relates to data infrastructure, AI, or open source, explicitly mention this and how it aligns with OpenOcean's historical strengths and investment themes."
       ]
     }
+  },
+  {
+    "id": "dawn-capital",
+    "name": "Dawn Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "SaaS, Fintech",
+    "ticketSize": "€500k - €2M (Seed)",
+    "contactEmail": "info@dawncapital.com",
+    "contactForm": "https://www.dawncapital.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=dawncapital.com",
+    "dna": {
+      "requirements": "Focused on B2B SaaS and FinTech. We look for businesses with ambitious founders, game-changing technology, and the potential to become category leaders within Europe. Early traction (e.g., MRR, user growth) is generally expected, along with a significant market opportunity.",
+      "dealStructure": "Standard VC equity investment. Typically 15-25% dilution at Seed stage.",
+      "pitchHelper": "Subject: [Company Name] - Revolutionizing [Specific B2B Sector] with [Unique Value Prop]\n\nDear [Investor Name or Team],\n\nI'm reaching out from [Company Name] ([Website URL]), where we are building [brief, compelling description of your company and what it does in 1-2 sentences]. We are addressing a critical pain point for [target customers] in the [specific B2B SaaS/Fintech sub-sector] market, which is experiencing [relevant market trend/growth].\n\nOur [product/platform] leverages [key technology/innovation] to [achieve a specific, quantifiable benefit for customers]. In just [timeframe], we've achieved [impressive traction metric, e.g., €X MRR, Y customers, Z user growth], demonstrating strong product-market fit and the potential for rapid scaling.\n\nWe are currently raising a [Seed] round of €[Amount] to [key use of funds, e.g., expand our sales team, accelerate product development, enter new markets]. We believe Dawn Capital's deep expertise in B2B SaaS and Fintech, particularly your focus on [mention specific relevant portfolio company or investment thesis if applicable], makes you an ideal partner for our next stage of growth.\n\nWould you be open to a brief 15-minute call next week to discuss how [Company Name] is poised to become a leader in the [sector] space? I've attached our deck for your review.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Contact Number]",
+      "pitchTips": [
+        "Use a clear, concise subject line that immediately conveys value and is personalized, e.g., 'Dawn Capital: [Your Company] - Seed Round for [Specific B2B SaaS/Fintech Niche]'. Avoid generic 'Investment Opportunity' titles.",
+        "Directly highlight your key B2B SaaS or FinTech metrics (MRR, churn, customer acquisition cost, LTV) early in the email. Dawn Capital is highly data-driven in these sectors.",
+        "If relevant, emphasize your understanding of the European market and how you plan to scale within it. Dawn has a strong European focus, and demonstrating this alignment can resonate."
+      ]
+    }
+  },
+  {
+    "id": "octopus-ventures",
+    "name": "Octopus Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, AI, Deep Tech, Fintech",
+    "ticketSize": "£250k - £2M (Pre-Seed/Seed)",
+    "contactEmail": "info@octopusventures.com",
+    "contactForm": "https://octopusventures.com/contact-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=octopusventures.com",
+    "dna": {
+      "requirements": "We back ambitious founders solving big problems. Seeking significant market opportunity, defensible technology/business model, and early traction (e.g., user interest, pilot successes). Clear vision and strong team are essential. Focus on key sectors like B2B SaaS, FinTech, Future of Industry (Deep Tech, AI), and Health.",
+      "dealStructure": "Standard VC equity investment. Typically 15-25% dilution at Pre-Seed/Seed stage.",
+      "pitchHelper": "Subject: Pre-Seed/Seed: [Company Name] - [Sector] Innovation for [Target Market]\n\nDear Octopus Ventures Team,\n\nI'm [Your Name], founder of [Company Name] ([Website URL]), a [brief company description focused on your sector - e.g., deep tech AI platform, B2B SaaS for SMBs, fintech solution for X]. We are tackling [specific problem] for [target customers] by [how your solution works].\n\nWe're particularly excited about [mention a specific Octopus Ventures theme/portfolio company that aligns, e.g., 'your focus on Future of Industry' or 'your investment in X company']. Our [product/platform] has already achieved [key milestone: e.g., successful pilot with X, Y users on beta, Z revenue in pre-launch].\n\nWe are seeking a [Pre-Seed/Seed] investment of £[Amount] to [explain 1-2 key uses of funds, e.g., expand our engineering team, accelerate go-to-market for our MVP]. Our goal is to [long-term vision/impact].\n\nWould you be open to a quick call to explore how [Company Name] fits within your early-stage portfolio? Our deck is attached for your review.\n\nSincerely,\n[Your Name]\n[Your Title]\n[Contact Number]",
+      "pitchTips": [
+        "Clearly state which of Octopus's investment 'bands' (e.g., Future of Industry/Deep Tech, Fintech) your company aligns with in the subject or first sentence to catch the right team's attention.",
+        "Octopus emphasizes backing founders solving 'big problems.' Frame your pitch around the significant problem you're solving and its potential impact, not just the technology.",
+        "For Pre-Seed/Seed, any form of traction (LOIs, pilot successes, strong user engagement, unique data insights) is crucial. Include a quantifiable metric to demonstrate early market validation."
+      ]
+    }
+  },
+  {
+    "id": "khosla-ventures",
+    "name": "Khosla Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "AI, Deep Tech, Fintech",
+    "ticketSize": "$1M - $5M (Seed)",
+    "contactEmail": "info@khoslaventures.com",
+    "contactForm": "https://www.khoslaventures.com/contact-us",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=khoslaventures.com",
+    "dna": {
+      "requirements": "Revolutionary ideas, 'outlier' thinking, deep technical innovation, challenging conventional wisdom, large market potential, strong technical founding team. We like to be deeply involved in the creation of new businesses across various frontier tech sectors.",
+      "dealStructure": "Standard VC equity investment. Typically 15-25% dilution at Seed stage. Can offer founder-friendly terms for groundbreaking ideas.",
+      "pitchHelper": "Subject: Khosla Ventures: Disrupting [Industry] with [Deep Tech/AI Innovation] - [Company Name]\n\nDear Khosla Ventures Team,\n\nI'm [Your Name], founder of [Company Name] ([Website URL]), where we are developing [brief, audacious description of your deep tech/AI solution and its revolutionary potential]. We are challenging the conventional approach to [specific problem/industry] by [how your unique technology/approach works].\n\nOur core innovation lies in [describe the technical breakthrough or unique IP]. Unlike existing solutions, [explain a key differentiator or why current approaches fail]. We believe this will unlock a [quantifiable market opportunity or societal impact].\n\nWe are currently raising a [Seed] round of $[Amount] to [key use of funds, e.g., further develop our prototype, conduct advanced R&D, secure initial patents]. We deeply admire Khosla Ventures' track record of backing 'outlier' and frontier technologies, and we see strong alignment with your vision for [mention a specific Khosla investment or thesis related to deep tech/AI].\n\nWould you be open to a brief discussion about how [Company Name] is poised to create a fundamentally new future in [Industry]? Our technical white paper/deck is attached.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Contact Number]",
+      "pitchTips": [
+        "Khosla Ventures seeks 'outlier' ideas. Don't be shy about emphasizing the disruptive, transformative nature of your deep tech or AI solution. Avoid understated language.",
+        "While concise, be prepared to convey the core technical innovation succinctly. If you have patents, academic papers, or complex algorithms, mention them briefly and offer to elaborate.",
+        "Khosla is known for asking 'why not'. Frame your problem as a fundamental flaw in current approaches and your solution as a necessary, bold departure."
+      ]
+    }
+  },
+  {
+    "id": "lux-capital",
+    "name": "Lux Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "AI, Deep Tech",
+    "ticketSize": "$1M - $10M (Seed)",
+    "contactEmail": "hello@luxcapital.com",
+    "contactForm": "https://www.luxcapital.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=luxcapital.com",
+    "dna": {
+      "requirements": "Science-driven, engineering-driven companies with big audacious visions. We seek ventures solving hard problems, with strong intellectual property and technical founders, often challenging the status quo in frontier tech, AI, biotech, space, and advanced materials.",
+      "dealStructure": "Standard VC equity investment. Typically 15-25% dilution at Seed stage.",
+      "pitchHelper": "Subject: Lux Capital: [Company Name] - Engineering the Future of [Specific Deep Tech Area]\n\nDear Lux Capital Team,\n\nI'm [Your Name], founder of [Company Name] ([Website URL]), a company at the forefront of [specific deep tech/frontier tech sector, e.g., AI-driven materials science, quantum computing for X]. We are building [brief, ambitious description of your technology/product] to solve [critical, hard problem].\n\nOur approach involves [briefly explain the core scientific/engineering breakthrough]. This innovation has the potential to fundamentally reshape [industry/market] by [quantifiable impact or benefit]. We have already [mention key technical milestone, e.g., validated our core IP, built a working prototype, published research].\n\nWe are currently raising a [Seed] round of $[Amount] to [key use of funds, e.g., expand our R&D capabilities, accelerate development of our MVP, build out our technical team]. We are deeply inspired by Lux Capital's commitment to backing science-driven ventures and believe our vision aligns perfectly with your portfolio companies pushing the boundaries of what's possible.\n\nWould you be open to a brief conversation about our unique approach to [sector]? Our technical overview/deck is attached.\n\nSincerely,\n[Your Name]\n[Your Title]\n[Contact Number]",
+      "pitchTips": [
+        "Lux values companies built on deep science and engineering. Highlight your technical team's credentials, patents, or research background and how they underpin your innovation.",
+        "Clearly define the complex, fundamental problem you're solving and why it's difficult. Lux is attracted to ventures tackling truly challenging issues rather than incremental improvements.",
+        "Showcase how your solution challenges existing paradigms or proposes a novel, potentially unconventional, but scientifically sound approach. This resonates with Lux's contrarian investment philosophy."
+      ]
+    }
+  },
+  {
+    "id": "global-founders-capital",
+    "name": "Global Founders Capital (GFC)",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, AI, Deep Tech, Fintech",
+    "ticketSize": "€250k - €3M (Pre-Seed/Seed)",
+    "contactEmail": "pitch@globalfounderscapital.com",
+    "contactForm": "https://www.globalfounderscapital.com/contact-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=globalfounderscapital.com",
+    "dna": {
+      "requirements": "Strong founding teams with a clear market opportunity and the ambition to build global category leaders. We look for early traction (e.g., rapid user adoption, revenue growth) and a global mindset. We support founders from idea to IPO across broad sectors.",
+      "dealStructure": "Standard VC equity investment. Typically 15-25% dilution at Pre-Seed/Seed stage.",
+      "pitchHelper": "Subject: [Company Name]: Pre-Seed/Seed for [SaaS/AI/Fintech] - Global Ambition\n\nDear GFC Team,\n\nI'm [Your Name], founder of [Company Name] ([Website URL]), where we are developing [brief and impactful description of your company and its sector focus, e.g., an AI-powered SaaS platform for X industry, a fintech solution for Y segment]. We are addressing a significant and underserved market opportunity in [specific market] with our [unique product/service].\n\nIn a short time, we've achieved [impressive traction metric, e.g., secured X active users, generated Y MRR, closed Z pilot customers, achieved W% month-over-month growth]. Our global ambition is to [state your ultimate goal, e.g., become the leading platform for X in Europe and beyond].\n\nWe are currently raising a [Pre-Seed/Seed] round of €[Amount] to [key use of funds, e.g., scale our go-to-market efforts, expand our product features, hire key talent]. GFC's reputation for backing global category leaders from the earliest stages, as evidenced by your support for [mention a relevant GFC portfolio company if known], makes you an ideal partner.\n\nWould you be available for a brief call next week to discuss our vision for [Company Name] and how we plan to achieve global scale? Our detailed deck is attached.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Contact Number]",
+      "pitchTips": [
+        "GFC has 'Global' in its name for a reason. Clearly articulate your plans for international expansion and how your product/market has global potential early in the email.",
+        "GFC is known for backing companies with hyper-growth potential. Showcase any early signs of rapid adoption, revenue growth, or strong user engagement with quantifiable metrics.",
+        "Get straight to the point. GFC is very active and receives many pitches, so a clear, concise, and impactful email that conveys your core value and traction quickly will stand out."
+      ]
+    }
   }
 ];
 
