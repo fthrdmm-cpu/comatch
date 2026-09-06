@@ -1386,6 +1386,116 @@ const INVESTORS_DATA = [
         "Get straight to the point. GFC is very active and receives many pitches, so a clear, concise, and impactful email that conveys your core value and traction quickly will stand out."
       ]
     }
+  },
+  {
+    "id": "startup-wise-guys",
+    "name": "Startup Wise Guys",
+    "type": "investor",
+    "investorType": "Accelerator",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, Fintech, Cyber, Sustainability, Deep Tech",
+    "ticketSize": "Initial €30k-100k, with potential follow-on up to €250k",
+    "contactEmail": "info@startupwiseguys.com",
+    "contactForm": "https://startupwiseguys.com/apply/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=startupwiseguys.com",
+    "dna": {
+      "requirements": "Strong and committed team (2+ founders), working MVP or clear prototype, some initial traction/users/revenue is a plus, globally scalable solution, disruptive idea.",
+      "dealStructure": "Convertible note, typically 8-9% equity for initial investment (€30k-100k) + program value, with potential for follow-on.",
+      "pitchHelper": "Subject: [Company Name] - Solving [Problem] with [Solution] - Pre-Seed AI/SaaS for [Target Market] | From Startup Wise Guys program?\nDear Startup Wise Guys Team,\n\nI'm reaching out because [Company Name] is developing [briefly describe your innovative SaaS/AI/Deep Tech/Fintech solution] that addresses [specific problem] for [target market]. We've achieved [mention key traction: MVP launched, X users, Y revenue, Z partnerships].\n\nOur [solution] stands out by [unique selling proposition]. We believe our vision aligns perfectly with your focus on [mention specific SWG program or sector, e.g., SaaS, Deep Tech, Fintech]. We're a [number]-person founding team with [relevant experience] and are seeking Pre-Seed/Seed investment and acceleration to [specific goal, e.g., scale user acquisition, enhance product, enter new markets].\n\nWe would be thrilled to learn more about your program and discuss how [Company Name] can benefit from your expertise and network.\n\nThank you for your time.\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Personalized Intro: Identify which specific program (e.g., SaaS, Fintech, Cyber, Sustainability) your startup fits best and mention it explicitly. If possible, find and address a specific program manager or previous mentor by name.",
+        "Traction First: Start with your most compelling traction point immediately. Startup Wise Guys values execution, so showcase your MVP, user growth, or revenue upfront to grab attention.",
+        "Show Program Fit & Ambition: Clearly state why you chose SWG (e.g., 'impressed by your success with X startup in Y sector') and articulate a clear, ambitious vision for global scalability that resonates with their pan-European focus."
+      ]
+    }
+  },
+  {
+    "id": "demium",
+    "name": "Demium",
+    "type": "investor",
+    "investorType": "Accelerator",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, AI, Fintech, Deep Tech (broad focus on disruptive ideas)",
+    "ticketSize": "Initial investment €100k, with potential for follow-on rounds",
+    "contactEmail": "apply@demium.com",
+    "contactForm": "https://demium.com/apply-now/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=demium.com",
+    "dna": {
+      "requirements": "Ambitious founders (often pre-team or early team), innovative and disruptive business idea, large market potential, global scalability.",
+      "dealStructure": "Typically ~10% equity for initial €100k investment, potentially convertible note.",
+      "pitchHelper": "Subject: [Company Name/Idea] - Disrupting [Industry] with [Solution] | Potential for Demium's Incubation?\nDear Demium Team,\n\nI am an ambitious founder with [relevant experience] and a vision for [briefly describe your innovative idea or early-stage startup's solution]. We aim to revolutionize [industry] by [how your solution works and its unique value proposition], targeting a [large market size] opportunity.\n\nMy [current status: e.g., working MVP, pre-team with strong concept, initial user feedback] suggests significant potential for [Company Name/Idea]. I am particularly drawn to Demium's model of [mention something specific, e.g., 'building disruptive companies from scratch', 'supporting founders pre-team'] and your track record in [mention a relevant sector or success story if possible].\n\nWe are seeking Pre-Seed/Seed funding and acceleration to [specific goals: e.g., validate market, build MVP, assemble founding team, achieve initial traction]. I believe my profile and vision align well with your criteria for creating impactful startups.\n\nWould you be open to a brief discussion about how [Company Name/Idea] could fit within Demium's ecosystem?\n\nThank you for your consideration.\n[Your Name]\n[Your Title/Role]\n[Your LinkedIn Profile]\n[Your Company Website (if applicable)]",
+      "pitchTips": [
+        "Focus on Founder Potential: Demium often invests in founders *before* they have a full team or even a fully fleshed-out product. Emphasize your entrepreneurial drive, relevant skills, and coachability.",
+        "Highlight Market Opportunity & Vision: Clearly articulate the problem you're solving, the size of the market, and your disruptive vision. Demium seeks bold ideas with global potential.",
+        "Be Concise & Direct: Get straight to the point. Demium likely receives many applications, so a clear, brief, and impactful summary of your idea and why it's a good fit for *their* specific model (venture building/incubation) is key."
+      ]
+    }
+  },
+  {
+    "id": "rockstart",
+    "name": "Rockstart",
+    "type": "investor",
+    "investorType": "Accelerator / Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "AgriFood, Energy, Health, Emerging Technologies (SaaS, AI related)",
+    "ticketSize": "Initial €100k, with potential for up to €1M in follow-on funding",
+    "contactEmail": "info@rockstart.com",
+    "contactForm": "https://rockstart.com/startup/apply",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=rockstart.com",
+    "dna": {
+      "requirements": "Strong team (typically 2+ founders), innovative solution to a significant problem in their target verticals, scalable business model, demonstrable initial traction/MVP.",
+      "dealStructure": "Initial convertible note for €100k in exchange for ~8-10% equity, with potential for follow-on investments.",
+      "pitchHelper": "Subject: [Company Name] - Accelerating [AgriFood/Energy/Health/Emerging Tech] with [Solution] | Seed Round\nDear Rockstart Team,\n\nI am writing to introduce [Company Name], a [briefly describe your SaaS/AI/Deep Tech solution] that is transforming [specific Rockstart vertical, e.g., 'sustainable energy solutions' or 'precision agriculture']. We've developed [mention MVP/product] and have achieved [key traction metrics: e.g., X pilots, Y users, Z revenue].\n\nOur [solution] offers a unique approach to [specific problem] by [unique selling proposition]. We are deeply aligned with Rockstart's focus on [mention specific vertical, e.g., 'energy startups with global ambitions'] and believe your accelerator program and network would be invaluable for our next stage of growth.\n\nWe are seeking Pre-Seed/Seed funding (targeting an initial €100k investment) to [specific goals: e.g., scale operations, expand product features, enter new markets]. Our team of [number] founders brings [relevant experience] and is fully committed to building a category leader.\n\nWould you be interested in learning more about [Company Name] and our potential impact in the [vertical] sector?\n\nThank you,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Align with Verticals: Rockstart is highly vertical-focused (AgriFood, Energy, Health, Emerging Tech). Explicitly state how your startup fits into one of these specific areas in your subject line and opening paragraph.",
+        "Showcase 'Impact' and Scalability: Rockstart emphasizes impact-driven ventures. Frame your solution not just as a business, but how it solves a significant global problem within its vertical, and clearly outline its scalability.",
+        "Highlight Team & Traction: Demonstrate that you have a capable team and have already made tangible progress (MVP, early users, pilots). They look for teams that can execute on their vision."
+      ]
+    }
+  },
+  {
+    "id": "future-labs-capital",
+    "name": "Future Labs Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "Deep Tech, AI, Robotics, New Materials, Sustainable Tech",
+    "ticketSize": "€200k - €1M",
+    "contactEmail": "pitch@future-labs.capital",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=future-labs.capital",
+    "dna": {
+      "requirements": "Strong scientific/engineering founding team, deep tech innovation, defensible IP, clear market potential for groundbreaking technology, usually spin-offs from universities or research institutes.",
+      "dealStructure": "Equity investment, typically 10-20% dilution in Seed rounds.",
+      "pitchHelper": "Subject: [Company Name] - Pre-Seed/Seed Round: Revolutionizing [Specific Deep Tech Area] with [Proprietary Technology]\nDear Future Labs Capital Team,\n\nI am writing to introduce [Company Name], a Deep Tech startup pioneering [briefly describe your core scientific/engineering innovation, e.g., 'a novel AI-driven material discovery platform' or 'next-gen robotic systems for X']. Our technology, developed from [mention university/research background if applicable], addresses [significant technical/market problem] with a [unique, defensible IP-protected solution].\n\nWe have successfully [mention key technical milestones: e.g., 'developed a working prototype,' 'published in peer-reviewed journals,' 'achieved proof-of-concept for X performance improvement']. Our team comprises [number] founders with [relevant PhDs, research experience, industry expertise] in [specific deep tech domains].\n\nWe are currently raising a Pre-Seed/Seed round of [e.g., €500k - €1M] to [specific goals: e.g., further develop our core technology, conduct pilot projects, build out our engineering team]. Future Labs Capital's expertise in deep tech and early-stage science-based ventures makes you an ideal partner for our journey.\n\nWould you be open to a brief call to delve deeper into our technological breakthroughs and market potential?\n\nSincerely,\n[Your Name]\n[Your Title/Role]\n[Your Company Website]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Lead with Deep Tech Innovation: Immediately highlight the scientific or engineering breakthrough. Future Labs Capital primarily invests in groundbreaking technology, so make your unique IP and technical advantage clear from the start.",
+        "Emphasize Scientific Credentials: Showcase the founding team's academic background, research achievements, and technical expertise. This builds credibility for their deep tech focus.",
+        "Quantify Technical Milestones: Instead of vague statements, provide concrete examples of technical validation or progress (e.g., 'achieved 95% accuracy in X,' 'reduced energy consumption by 40%'). This demonstrates real progress beyond just an idea."
+      ]
+    }
+  },
+  {
+    "id": "byfounders",
+    "name": "ByFounders",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "SaaS, Fintech, Deep Tech, Consumer",
+    "ticketSize": "€500k - €5M",
+    "contactEmail": "pitch@byfounders.vc",
+    "contactForm": "https://www.byfounders.vc/pitch",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=byfounders.vc",
+    "dna": {
+      "requirements": "Ambitious founders with global vision, strong product with early traction, large market potential, preference for Nordic/Baltic founders or teams with strong ties to the region.",
+      "dealStructure": "Equity investment, typically for a minority stake (~15-25% in a seed round), convertible notes or priced rounds.",
+      "pitchHelper": "Subject: [Company Name] - Seed Round: Scaling [SaaS/Fintech/Deep Tech] Solution for Global Market\nDear ByFounders Team,\n\nI am writing to introduce [Company Name], a [briefly describe your SaaS/Fintech/Deep Tech solution] based in [mention Nordic/Baltic region if applicable, or connection to it] that is gaining significant traction in [target market]. We've built [mention product/platform] and have achieved [key traction metrics: e.g., €X MRR, Y active users, Z enterprise clients, 20% MoM growth].\n\nOur [solution] uniquely addresses [specific market pain point] by [unique value proposition], positioning us for rapid global expansion. We are particularly impressed by ByFounders' [mention specific portfolio company or focus area, e.g., 'commitment to Nordic excellence', 'expertise in scaling SaaS businesses'] and believe our ambitious vision aligns perfectly.\n\nWe are currently raising a Seed round of [e.g., €1M - €3M] to [specific goals: e.g., accelerate product development, expand sales & marketing, enter new geographies]. Our team of [number] founders brings [relevant experience] and is committed to building a category-defining company.\n\nWould you be open to a brief conversation to explore how [Company Name] can leverage ByFounders' network and expertise?\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Highlight Nordic/Baltic Connection (if any): While not exclusive, ByFounders has a strong affinity for the Nordics and Baltics. If you have a connection, prominently mention it. If not, emphasize your strong European ties and global ambition.",
+        "Show Strong, Quantifiable Traction: ByFounders looks for companies with early signs of market validation and growth. Lead with your most impressive metrics (MRR, user growth, customer logos) to demonstrate momentum.",
+        "Emphasize Global Ambition: They back founders with a truly global vision. Clearly articulate how your solution can scale beyond your initial market and become a dominant player internationally."
+      ]
+    }
   }
 ];
 

@@ -3604,6 +3604,111 @@ const BRANDS_DATA = [
         "Target 'Partnerships' or 'Marketing' Department: Clearly directing your email to a partnerships or marketing email (if available) signals that you are seeking a business collaboration, not just support."
       ]
     }
+  },
+  {
+    "id": "datadome",
+    "name": "DataDome",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "info@datadome.co",
+    "contactForm": "https://datadome.co/partners/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=datadome.co",
+    "dna": {
+      "requirements": "Audience of web developers, security professionals, e-commerce managers, IT decision-makers. Content should relate to web security, bot protection, fraud prevention, API security, performance. Clean, professional content aligned with industry best practices.",
+      "dealStructure": "Flat fee for sponsored content (podcast reads, newsletter ads, dedicated videos), potential for joint webinars or co-authored technical content, free trial access for audience.",
+      "pitchHelper": "Subject: Partnership Proposal: Reaching {Audience Niche} with DataDome's Bot Protection\n\nDear DataDome Team,\n\nI'm [Your Name], creator of [Your Platform Name] ([Link to Platform]), where I reach an engaged audience of [mention audience size and demographic, e.g., '50,000 web developers and e-commerce professionals'].\n\nI've been following DataDome's work in [mention specific area, e.g., 'API security' or 'preventing online fraud'] and believe my audience would greatly benefit from learning about your industry-leading bot and online fraud protection solution. Many in my community are actively seeking ways to [mention a pain point DataDome solves, e.g., 'secure their websites against malicious bots' or 'improve their e-commerce conversion rates by eliminating bad traffic'].\n\nI propose a partnership to [suggest specific content format, e.g., 'feature DataDome in a dedicated podcast segment' or 'include an ad in my upcoming newsletter focused on web security']. We could explore topics such as [suggest relevant topics, e.g., 'the latest trends in bot attacks' or 'how DataDome helps protect user data'].\n\nHere's a link to my media kit/audience demographics: [Link to Media Kit]\n\nWould you be open to discussing how DataDome could reach my audience effectively?\n\nBest regards,\n[Your Name]",
+      "pitchTips": [
+        "Emphasize Niche Relevance: Clearly state how your audience aligns with DataDome's target (e.g., 'Our podcast reaches 15,000 IT security managers in the SaaS industry...').",
+        "Showcase Technical Understanding: Briefly mention specific DataDome features or solutions (e.g., 'I've been impressed by your AI-driven bot detection...') to demonstrate you've done your homework.",
+        "Propose Clear Value Metrics: Instead of just 'exposure,' offer specifics like 'average listenership/readership,' 'engagement rates,' or 'potential lead generation for relevant trial sign-ups.'"
+      ]
+    }
+  },
+  {
+    "id": "kinde",
+    "name": "Kinde",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "hello@kinde.com",
+    "contactForm": "https://kinde.com/contact-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=kinde.com",
+    "dna": {
+      "requirements": "Audience of developers, SaaS founders, product managers building new applications. Content should focus on developer experience, authentication, user management, identity solutions. Tech-focused and practical content.",
+      "dealStructure": "Flat fee for sponsored segments/ads on developer podcasts/newsletters, potential for dedicated tutorials or code-along sessions using Kinde, free access to premium Kinde features for creator and audience giveaways.",
+      "pitchHelper": "Subject: Collaboration Idea: Kinde for [Your Platform Name] Developer Audience\n\nHi Kinde Team,\n\nMy name is [Your Name], and I run [Your Platform Name] ([Link to Platform]), a [describe platform, e.g., 'popular YouTube channel for full-stack developers' or 'newsletter for early-stage SaaS founders'] with [X] subscribers/readers.\n\nI'm reaching out because I've been really impressed with Kinde's developer-first approach to authentication and user management – it simplifies a crucial part of building SaaS products. My audience frequently discusses challenges around [mention a pain point Kinde solves, e.g., 'implementing secure login flows' or 'managing user roles efficiently'].\n\nI believe Kinde would be an excellent fit for my content. I'd love to explore opportunities like [suggest content format, e.g., 'a sponsored segment in my upcoming video on building modern APIs' or 'a dedicated deep-dive article on integrating Kinde into a new project']. I'm confident my audience would find immense value in learning how Kinde can streamline their development process.\n\nHere's a link to my audience demographics/previous collaborations: [Link to Media Kit]\n\nWould you be open to a brief chat about this potential partnership?\n\nBest,\n[Your Name]",
+      "pitchTips": [
+        "Speak their Language: Use developer-centric terms and clearly articulate how Kinde solves real developer problems.",
+        "Highlight Niche Dev Audience: Be specific about the type of developers you reach (e.g., 'Node.js developers,' 'React engineers,' 'SaaS founders').",
+        "Offer a Technical Content Idea: Suggest a concrete tutorial or code example featuring Kinde to demonstrate immediate value and relevance to their product."
+      ]
+    }
+  },
+  {
+    "id": "workos",
+    "name": "WorkOS",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "hello@workos.com",
+    "contactForm": "https://workos.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=workos.com",
+    "dna": {
+      "requirements": "Audience of SaaS engineers, founders, product managers focused on selling to enterprise. Content should cover enterprise features (SSO, SCIM, Audit Logs), B2B SaaS growth, developer APIs, security. High-quality, professional technical content.",
+      "dealStructure": "Flat fee for sponsored podcast segments/newsletter ads, co-marketing opportunities like joint webinars or guest posts, potential for API credits for testing/development.",
+      "pitchHelper": "Subject: Exploring Partnership with WorkOS: Reaching Enterprise-Focused SaaS Builders\n\nDear WorkOS Partnerships Team,\n\nI'm [Your Name] from [Your Platform Name] ([Link to Platform]), a [describe platform, e.g., 'leading podcast for SaaS founders' or 'developer community focused on scaling B2B applications']. We consistently reach [mention audience size and type, e.g., 'over 40,000 engineers and product leaders at B2B SaaS companies'].\n\nI've been following WorkOS closely and see immense value in your platform for any SaaS company looking to conquer the enterprise market with essential features like SSO and SCIM. My audience frequently expresses the need for streamlined solutions to implement these complex features without getting bogged down.\n\nI envision a compelling partnership where we could [suggest content format, e.g., 'integrate a WorkOS sponsorship into our upcoming episode discussing enterprise readiness' or 'collaborate on a technical guide showcasing WorkOS implementation']. I'm confident that introducing WorkOS to my highly relevant audience would drive significant interest and awareness.\n\nMy media kit, including audience demographics and engagement rates, is available here: [Link to Media Kit]\n\nAre you available for a quick call to discuss how we can create a impactful campaign together?\n\nSincerely,\n[Your Name]",
+      "pitchTips": [
+        "Focus on Enterprise Value: Clearly articulate that your audience consists of builders who understand the pain points of selling to enterprise and the value of features like SSO and SCIM.",
+        "Highlight SaaS Focus: Emphasize that your content specifically targets SaaS companies or those aspiring to be.",
+        "Quantify Audience's Business Relevance: Instead of just 'developers,' specify 'SaaS developers,' 'CTOs of B2B startups,' or 'product managers scaling to enterprise.'"
+      ]
+    }
+  },
+  {
+    "id": "plausible-analytics",
+    "name": "Plausible Analytics",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Nano (under 10k)",
+    "contactEmail": "hello@plausible.io",
+    "contactForm": "https://plausible.io/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=plausible.io",
+    "dna": {
+      "requirements": "Audience interested in privacy, ethical tech, open-source software, web development, analytics, marketing. Content should align with their values (simplicity, transparency, privacy-first).",
+      "dealStructure": "Flat fee for sponsored mentions or dedicated ad slots in newsletters/podcasts, free premium accounts for giveaways or personal use, affiliate link opportunities.",
+      "pitchHelper": "Subject: Partnership Proposal: Plausible Analytics for my Privacy-Conscious Audience\n\nHello Plausible Team,\n\nMy name is [Your Name], and I run [Your Platform Name] ([Link to Platform]), a [describe platform, e.g., 'newsletter focused on ethical web development' or 'podcast exploring open-source alternatives'] with [X] highly engaged readers/listeners.\n\nI'm a big admirer of Plausible Analytics' commitment to privacy and simplicity – it's a breath of fresh air in the analytics space. My audience is constantly looking for tools that respect user data and offer transparent solutions, making Plausible a perfect fit for them.\n\nI'd love to explore a partnership where I could [suggest content format, e.g., 'feature Plausible in my next newsletter issue on privacy-friendly tools' or 'do a sponsored segment discussing the importance of ethical analytics on my podcast']. I believe this would resonate strongly with my community, who value both privacy and powerful, straightforward tools.\n\nYou can view my audience insights: [Link to Media Kit]\n\nWould you be interested in discussing a potential collaboration?\n\nBest regards,\n[Your Name]",
+      "pitchTips": [
+        "Emphasize Shared Values: Start by expressing genuine admiration for their privacy-first and open-source approach, demonstrating alignment.",
+        "Target Specific Audience Niche: Mention if your audience is focused on open-source, privacy advocacy, indie hackers, or ethical tech to show precise relevance.",
+        "Propose Authentic Integration: Suggest how Plausible could be naturally integrated into your content, perhaps by discussing its benefits in a real-world scenario or an ethical tech discussion."
+      ]
+    }
+  },
+  {
+    "id": "balsamiq",
+    "name": "Balsamiq",
+    "type": "brand",
+    "category": "Design",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "sales@balsamiq.com",
+    "contactForm": "https://balsamiq.com/company/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=balsamiq.com",
+    "dna": {
+      "requirements": "Audience of UX/UI designers, product managers, developers, entrepreneurs, students interested in wireframing, prototyping, product design. Clean, educational content focusing on design workflow and ideation.",
+      "dealStructure": "Flat fee for event sponsorships, free Balsamiq Cloud licenses for contest giveaways or community members, educational discounts for associated programs.",
+      "pitchHelper": "Subject: Collaboration Opportunity: Balsamiq with [Your Platform Name]'s Design Community\n\nHi Balsamiq Team,\n\nI'm [Your Name], the creator behind [Your Platform Name] ([Link to Platform]), a [describe platform, e.g., 'thriving YouTube channel for aspiring UX designers' or 'newsletter for product managers and entrepreneurs'] with a dedicated following of [X] individuals passionate about design and product development.\n\nBalsamiq has long been a go-to tool for quick wireframing and ideation, and I know many in my community already use it or are looking for intuitive ways to visualize their ideas. Your focus on simplicity and efficiency aligns perfectly with the needs of my audience, who are always seeking tools to streamline their design workflow.\n\nI'd be excited to discuss a partnership that could involve [suggest content format, e.g., 'a sponsored segment in an upcoming video on prototyping workflows' or 'a dedicated review showcasing Balsamiq's new features']. We could also explore giveaways of Balsamiq licenses to engage my audience further.\n\nYou can view my audience demographics and engagement metrics here: [Link to Media Kit]\n\nWould you be open to a brief discussion about how we could collaborate to reach and educate the next generation of designers and product innovators?\n\nThanks,\n[Your Name]",
+      "pitchTips": [
+        "Show Visual Examples: If applicable, include a link to a previous design-related content piece you've created to showcase your expertise and content quality.",
+        "Highlight Practical Application: Suggest ways your content could demonstrate Balsamiq's practical use cases for different roles (e.g., 'for rapid ideation in a startup,' 'for communicating ideas in a design sprint').",
+        "Focus on Learning & Growth: Balsamiq often supports education; position your audience as learners or professionals looking to improve their skills, making the pitch more aligned with their community initiatives."
+      ]
+    }
   }
 ];
 
