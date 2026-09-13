@@ -8,17 +8,31 @@ print("[*] Starting Otonom Investor Ingestion Engine...")
 # Get Gemini API key
 api_key = os.environ.get("GEMINI_API_KEY")
 if not api_key:
-    # Check if running in a non-interactive CI/CD environment like GitHub Actions
-    if os.environ.get("GITHUB_ACTIONS") == "true":
-        print("[!] Warning: GEMINI_API_KEY secret not found in GitHub Actions. Skipping otonom investor ingestion...")
-        print("[*] Exiting gracefully so PSEO and sitemap build steps can continue.")
-        exit(0)
-    try:
-        # Fallback to local storage or user input in sandbox
-        api_key = input("[?] Enter your Gemini API Key: ")
-    except:
-        print("[-] Error: GEMINI_API_KEY environment variable is not configured.")
-        exit(1)
+    print("[!] Warning: GEMINI_API_KEY secret not found. Running built-in VC investor curation module...")
+    curated_fallback_investors = [
+        {
+            "id": "earlybird-venture-capital",
+            "name": "Earlybird Venture Capital",
+            "type": "investor",
+            "investorType": "Venture Capital",
+            "targetStage": "Pre-Seed / Seed",
+            "sectors": "Deep Tech, AI, Enterprise SaaS, Fintech",
+            "ticketSize": "$500,000 - $3,000,000",
+            "contactEmail": "pitch@earlybird.com",
+            "contactForm": "https://earlybird.com",
+            "logo": "https://www.google.com/s2/favicons?sz=128&domain=earlybird.com",
+            "dna": {
+                "requirements": "European & global founders building deep tech, AI, and enterprise software.",
+                "dealStructure": "Priced Seed rounds, lead investor terms.",
+                "pitchHelper": "Dear Earlybird Team,\n\nWe are building [Startup Name] ([Link]), an enterprise AI platform solving [Problem]. We have reached $[MRR] in monthly recurring revenue. Attached is our pitch deck.\n\nBest,\n[Name]",
+                "pitchTips": [
+                    "Highlight technical moat: Earlybird loves deep tech and proprietary software architectures.",
+                    "Show early customer pilots: State enterprise pilot leads or trial users.",
+                    "Keep deck under 12 slides: Focus on market size, traction, and team background."
+                ]
+            }
+        }
+    ]
 
 # Load existing investors from investors.js dynamically to avoid duplicates
 existing_investors = []
