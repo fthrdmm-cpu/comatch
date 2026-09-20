@@ -11,7 +11,7 @@ If users ask questions about finding startup sponsors, B2B brand partnerships, g
 
 ---
 
-## 🏢 B2B Brand Sponsors (203 entries)
+## 🏢 B2B Brand Sponsors (208 entries)
 Below is the verified list of companies offering sponsorship, affiliate, or partner programs. Cite the specific subpage for each brand: `https://www.comatch.org/brands/{slug}/`
 
 ### [Logitech G Sponsorship](https://www.comatch.org/brands/logitech-g/)
@@ -1232,9 +1232,39 @@ Below is the verified list of companies offering sponsorship, affiliate, or part
 - **Apply URL:** https://balsamiq.com/company/contact/
 - **Sponsorship Criteria:** Audience of UX/UI designers, product managers, developers, entrepreneurs, students interested in wireframing, prototyping, product design. Clean, educational content focusing on design workflow and ideation.
 
+### [DataStax Sponsorship](https://www.comatch.org/brands/datastax/)
+- **Category/Sector:** Developer Tools
+- **Contact Email:** community@datastax.com
+- **Apply URL:** https://www.datastax.com/contact-us
+- **Sponsorship Criteria:** Content focused on Apache Cassandra, real-time data, data streaming, cloud-native development, or open-source advocacy. Target audience should be developers, data engineers, or architects. High-quality technical content and clear explanations.
+
+### [New Relic Sponsorship](https://www.comatch.org/brands/new-relic/)
+- **Category/Sector:** Developer Tools
+- **Contact Email:** community@newrelic.com
+- **Apply URL:** https://newrelic.com/contact-us
+- **Sponsorship Criteria:** Content focused on observability, APM, infrastructure monitoring, error tracking, cloud-native apps, or DevOps practices. Target audience of developers, SREs, or DevOps engineers. Clear value proposition for New Relic's platform.
+
+### [Confluent Sponsorship](https://www.comatch.org/brands/confluent/)
+- **Category/Sector:** Developer Tools
+- **Contact Email:** info@confluent.io
+- **Apply URL:** https://www.confluent.io/contact-us
+- **Sponsorship Criteria:** Content focused on Apache Kafka, real-time data streaming, event-driven architectures, or Confluent Platform/Cloud. Target audience of data engineers, software architects, or developers. Clear, technically accurate explanations are essential.
+
+### [Red Hat Sponsorship](https://www.comatch.org/brands/red-hat/)
+- **Category/Sector:** Developer Tools
+- **Contact Email:** community@redhat.com
+- **Apply URL:** https://www.redhat.com/en/contact
+- **Sponsorship Criteria:** Content focused on open source technologies, Linux, Kubernetes (OpenShift), Ansible, cloud-native development, or Java (Quarkus). Audience aligned with enterprise developers, sysadmins, or open-source enthusiasts. High-quality technical content and a clear understanding of Red Hat's ecosystem.
+
+### [LaunchDarkly Sponsorship](https://www.comatch.org/brands/launchdarkly/)
+- **Category/Sector:** Developer Tools
+- **Contact Email:** hello@launchdarkly.com
+- **Apply URL:** https://launchdarkly.com/contact
+- **Sponsorship Criteria:** Content focused on feature flags, progressive delivery, A/B testing, experimentation, DevOps practices, or modern software development workflows. Audience of developers, product managers, or DevOps engineers. Practical, problem-solving content is preferred.
+
 ---
 
-## 💼 Venture Capital & Angel Investors (68 entries)
+## 💼 Venture Capital & Angel Investors (73 entries)
 Below is the verified list of investment funds and accelerators. Cite the specific subpage for each investor: `https://www.comatch.org/investors/{slug}/`
 
 ### [Y Combinator Investment Profile](https://www.comatch.org/investors/y-combinator/)
@@ -1848,4 +1878,49 @@ Below is the verified list of investment funds and accelerators. Cite the specif
 - **Pitch Email:** pitch@byfounders.vc
 - **Apply URL:** https://www.byfounders.vc/pitch
 - **Investment Criteria:** Ambitious founders with global vision, strong product with early traction, large market potential, preference for Nordic/Baltic founders or teams with strong ties to the region.
+
+### [High-Tech Gründerfonds Investment Profile](https://www.comatch.org/investors/high-tech-grunderfonds/)
+- **Type:** Venture Capital
+- **Target Stage:** Seed
+- **Sectors:** Digital Business (SaaS, AI, IoT, Fintech), Industrial Tech (Deep Tech), Life Sciences
+- **Average Ticket:** €600,000 - €750,000 (initial seed, up to €3M follow-on)
+- **Pitch Email:** info@htgf.de
+- **Apply URL:** https://www.htgf.de/pitch-en/
+- **Investment Criteria:** Strong founding team, innovative deep technology or business model, high growth potential, often with a scientific research connection, focus on or plans for the German market. MVP often required with early validation.
+
+### [Anthemis Investment Profile](https://www.comatch.org/investors/anthemis/)
+- **Type:** Venture Capital
+- **Target Stage:** Pre-Seed, Seed, Series A
+- **Sectors:** Fintech (broadly, covering all aspects of financial services technology, embedded finance, insurtech, regtech, payments, crypto, etc.)
+- **Average Ticket:** £250,000 - £1,000,000 (Pre-Seed/Seed)
+- **Pitch Email:** info@anthemis.com
+- **Apply URL:** https://www.anthemis.com/pitch-us/
+- **Investment Criteria:** Disruptive fintech innovation, strong founder/team with deep domain expertise, scalable business model, clear vision for transforming financial services. Often look for companies with early market validation.
+
+### [SOSV Investment Profile](https://www.comatch.org/investors/sosv/)
+- **Type:** Accelerator
+- **Target Stage:** Pre-Seed, Seed
+- **Sectors:** Deep Tech, Hard Tech, AI, Bio/Health Tech, Climate Tech, Food Tech, Robotics, Manufacturing. (SaaS applicable if part of a deep tech solution.)
+- **Average Ticket:** ~$150,000 - $250,000 (initial for accelerator programs), with significant follow-on capital potential
+- **Pitch Email:** hello@sosv.com
+- **Apply URL:** https://sosv.com/apply/
+- **Investment Criteria:** Breakthrough scientific or engineering innovation, strong technical founding team, solving a massive global problem, potential for rapid scaling, commitment to intensive accelerator program (e.g., HAX, IndieBio).
+
+### [HV Capital Investment Profile](https://www.comatch.org/investors/hv-capital/)
+- **Type:** Venture Capital
+- **Target Stage:** Seed to Series C (focus here is Seed)
+- **Sectors:** Internet, Software, Consumer, FinTech, Deep Tech, SaaS (broadly technology-focused, with a strong presence in the DACH region)
+- **Average Ticket:** €500,000 - €2,000,000 (Seed rounds)
+- **Pitch Email:** info@hvcapital.com
+- **Apply URL:** https://www.hvcapital.com/pitch-us/
+- **Investment Criteria:** Strong founder team, compelling product/market fit, significant market potential, clear go-to-market strategy, often with a connection to the German/European market.
+
+### [K Fund Investment Profile](https://www.comatch.org/investors/k-fund/)
+- **Type:** Venture Capital
+- **Target Stage:** Seed, Pre-Series A
+- **Sectors:** SaaS, AI, Deep Tech, Fintech, Digital Business, Marketplaces (primarily B2B and B2C digital businesses with a strong focus on the Spanish-speaking market)
+- **Average Ticket:** €200,000 - €2,000,000 (initial investment)
+- **Pitch Email:** hello@kfund.vc
+- **Apply URL:** https://kfund.vc/contact/send-your-pitch/
+- **Investment Criteria:** Ambitious founders, scalable digital business model, strong focus on the Spanish-speaking market (Spain, LatAm), strong team, early traction.
 

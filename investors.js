@@ -1496,6 +1496,116 @@ const INVESTORS_DATA = [
         "Emphasize Global Ambition: They back founders with a truly global vision. Clearly articulate how your solution can scale beyond your initial market and become a dominant player internationally."
       ]
     }
+  },
+  {
+    "id": "high-tech-grunderfonds",
+    "name": "High-Tech Gründerfonds",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "Digital Business (SaaS, AI, IoT, Fintech), Industrial Tech (Deep Tech), Life Sciences",
+    "ticketSize": "€600,000 - €750,000 (initial seed, up to €3M follow-on)",
+    "contactEmail": "info@htgf.de",
+    "contactForm": "https://www.htgf.de/pitch-en/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=htgf.de",
+    "dna": {
+      "requirements": "Strong founding team, innovative deep technology or business model, high growth potential, often with a scientific research connection, focus on or plans for the German market. MVP often required with early validation.",
+      "dealStructure": "Equity investment, typically taking a significant minority stake (around 15-20% for the initial seed round). Standard VC terms. Convertible loans sometimes for initial bridge funding.",
+      "pitchHelper": "Subject: [Company Name] - Deep Tech AI for [Industry/Problem] - Seed Round\n\nDear HTGF Team,\n\nI hope this email finds you well.\n\nMy name is [Your Name] and I'm the CEO/Founder of [Company Name], a [briefly describe your deep tech/AI solution, e.g., \"pioneering AI platform that uses quantum algorithms to optimize supply chains\" or \"innovative SaaS solution leveraging computer vision for industrial quality control\"]. We are solving [specific, impactful problem] for [target market/industry].\n\nOur innovative approach has already achieved [mention key traction, e.g., \"an MVP with 5 pilot customers\", \"€X ARR in 6 months\", \"validated our core tech with a successful grant project\"]. We have a strong founding team with [mention relevant experience/backgrounds, e.g., \"PhDs in AI from TU Munich and extensive industry experience\"].\n\nWe are currently raising a Seed round of €[Amount] to [briefly explain use of funds, e.g., \"scale our development team, launch our product officially, and expand into the DACH market\"]. We believe our deep tech focus and ambition align perfectly with HTGF's investment thesis in [Digital Business/Industrial Tech].\n\nWe would be grateful for the opportunity to share more about [Company Name] and our vision. Attached is our pitch deck for your review.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Be concise and structured: HTGF receives many applications. Clearly state your value proposition, problem, solution, and traction in the first few sentences. Avoid jargon where possible, but clearly convey your deep tech credentials.",
+        "Highlight German Connection: If applicable, emphasize your team's connection to Germany, your plans for the German market, or how your technology benefits German industries. This resonates well with HTGF's mandate.",
+        "Use a reputable email service and clear subject line: Ensure your email isn't flagged as spam by using professional email domains. The subject line should immediately convey your company's core and the stage you're raising (e.g., '[Company Name]: Deep Tech AI for X - Seed Round')."
+      ]
+    }
+  },
+  {
+    "id": "anthemis",
+    "name": "Anthemis",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed, Seed, Series A",
+    "sectors": "Fintech (broadly, covering all aspects of financial services technology, embedded finance, insurtech, regtech, payments, crypto, etc.)",
+    "ticketSize": "£250,000 - £1,000,000 (Pre-Seed/Seed)",
+    "contactEmail": "info@anthemis.com",
+    "contactForm": "https://www.anthemis.com/pitch-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=anthemis.com",
+    "dna": {
+      "requirements": "Disruptive fintech innovation, strong founder/team with deep domain expertise, scalable business model, clear vision for transforming financial services. Often look for companies with early market validation.",
+      "dealStructure": "Equity investment, standard VC terms for early-stage rounds.",
+      "pitchHelper": "Subject: [Company Name] - Revolutionizing [Specific Fintech Area, e.g., Embedded Finance for SMEs] - Seed Round\n\nDear Anthemis Team,\n\nI hope this email finds you well.\n\nMy name is [Your Name], CEO & Co-founder of [Company Name]. We are building [briefly describe your fintech solution, e.g., \"an API-first platform enabling seamless embedded finance solutions for non-financial businesses\" or \"a data-driven insurtech solution using AI to personalize risk assessment\"]. We are addressing the critical challenge of [specific problem in fintech industry, e.g., \"the slow and expensive integration of financial services into new platforms\"].\n\nOur traction includes [mention key achievements, e.g., \"successfully onboarded 3 pilot customers generating €X MRR\", \"developed a proprietary algorithm with proven accuracy in Y trials\", \"secured regulatory sandbox approval\"]. Our team comprises [mention relevant experience, e.g., \"ex-banking professionals, fintech entrepreneurs, and seasoned developers\"].\n\nWe are currently raising a Seed round of £[Amount] to [briefly explain use of funds, e.g., \"expand our product offering, scale our sales team, and penetrate the UK/European market\"]. Given Anthemis' deep expertise and focus on disruptive fintech, we believe there's a strong alignment.\n\nWould you be open to a brief introductory call to discuss how [Company Name] is set to transform [specific fintech area]? I've attached our deck for your review.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Demonstrate deep fintech understanding: Anthemis lives and breathes fintech. Show you understand the nuances of the industry, regulatory landscape, and your specific niche. Avoid generic startup pitches.",
+        "Focus on transformation: Anthemis looks for startups that can fundamentally change financial services. Frame your solution not just as an improvement but as a transformative force.",
+        "Connect with a relevant partner: If possible, identify a specific Anthemis partner or principal whose investment thesis or portfolio companies align directly with your startup. Directing your email to them (if you have their email or can find it) or referencing their work in your pitch can increase relevance."
+      ]
+    }
+  },
+  {
+    "id": "sosv",
+    "name": "SOSV",
+    "type": "investor",
+    "investorType": "Accelerator",
+    "targetStage": "Pre-Seed, Seed",
+    "sectors": "Deep Tech, Hard Tech, AI, Bio/Health Tech, Climate Tech, Food Tech, Robotics, Manufacturing. (SaaS applicable if part of a deep tech solution.)",
+    "ticketSize": "~$150,000 - $250,000 (initial for accelerator programs), with significant follow-on capital potential",
+    "contactEmail": "hello@sosv.com",
+    "contactForm": "https://sosv.com/apply/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=sosv.com",
+    "dna": {
+      "requirements": "Breakthrough scientific or engineering innovation, strong technical founding team, solving a massive global problem, potential for rapid scaling, commitment to intensive accelerator program (e.g., HAX, IndieBio).",
+      "dealStructure": "Typically an equity investment (e.g., $150k for 7-10% equity, varies by program) in exchange for participation in their accelerator program, office space, mentorship, and extensive network. Follow-on funding is often convertible notes or equity.",
+      "pitchHelper": "Subject: [Company Name] - Deep Tech [AI/Robotics/Bio] for [Problem] - Seeking [HAX/IndieBio/SOSV] Accelerator\n\nDear SOSV/HAX/IndieBio Team,\n\nI hope this email finds you well.\n\nMy name is [Your Name], CEO & Founder of [Company Name]. We are developing [briefly describe your deep tech innovation, e.g., \"a novel robotic system for autonomous manufacturing in hazardous environments\" or \"a synthetic biology platform to produce sustainable alternative proteins\"]. Our technology addresses [specific, urgent global problem, e.g., \"the critical shortage of skilled labor in industrial manufacturing\" or \"the environmental impact of traditional agriculture\"].\n\nOur core innovation lies in [explain the unique technological advantage, e.g., \"our patented sensor fusion and AI control algorithms\" or \"our proprietary microbial strain engineering process\"]. We have achieved [mention key milestones, e.g., \"a functional prototype with TRL 5 readiness\", \"successful lab-scale validation with X% efficiency gain\", \"a strong scientific advisory board\"]. Our team brings together [mention relevant technical expertise, e.g., \"PhDs in robotics, material science, and serial entrepreneurs\"].\n\nWe are seeking to join [mention specific SOSV program, e.g., HAX for hardware/deep tech] to accelerate our product development, gain market entry expertise, and leverage SOSV's unparalleled network in [relevant sector]. We are confident our deep tech solution aligns perfectly with SOSV's mission to invest in \"human and planetary survival.\"\n\nWe have attached our detailed pitch deck and a link to our prototype/research paper for your review. We would appreciate the opportunity for an initial discussion.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Target the specific program: SOSV has multiple specialized accelerators (HAX, IndieBio, Chinaccelerator, MOX). Tailor your email to the specific program most relevant to your deep tech, mentioning it in the subject line and body. Their general hello@sosv.com is a fallback, but finding the program-specific application portal is best.",
+        "Emphasize \"hard tech\" / scientific innovation: SOSV is known for backing challenging, often capital-intensive deep tech. Clearly articulate the scientific or engineering breakthrough at the core of your company and its global impact potential.",
+        "Be ready to commit to the program: SOSV's investments come with an intensive accelerator program. Show enthusiasm and understanding of what participation entails. Highlight your team's willingness to relocate (if required) and fully engage."
+      ]
+    }
+  },
+  {
+    "id": "hv-capital",
+    "name": "HV Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed to Series C (focus here is Seed)",
+    "sectors": "Internet, Software, Consumer, FinTech, Deep Tech, SaaS (broadly technology-focused, with a strong presence in the DACH region)",
+    "ticketSize": "€500,000 - €2,000,000 (Seed rounds)",
+    "contactEmail": "info@hvcapital.com",
+    "contactForm": "https://www.hvcapital.com/pitch-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=hvcapital.com",
+    "dna": {
+      "requirements": "Strong founder team, compelling product/market fit, significant market potential, clear go-to-market strategy, often with a connection to the German/European market.",
+      "dealStructure": "Equity investment, standard VC terms for early-stage rounds.",
+      "pitchHelper": "Subject: [Company Name] - B2B SaaS for [Industry Problem] - Seed Investment Opportunity\n\nDear HV Capital Team,\n\nI hope this email finds you well.\n\nMy name is [Your Name] and I'm the CEO & Co-founder of [Company Name]. We are developing [briefly describe your SaaS/tech solution, e.g., \"an AI-powered SaaS platform that automates invoice reconciliation for mid-market enterprises\" or \"a data analytics tool specifically for e-commerce brands to optimize conversion funnels\"]. We are solving [specific pain point, e.g., \"the inefficiency and error rates in manual financial processes\" or \"the struggle e-commerce businesses face in deriving actionable insights from vast data\"].\n\nWe have achieved significant early traction, including [mention key metrics, e.g., \"€X MRR with Y paying customers in Z months\", \"successful pilot programs with leading companies in the sector\", \"strong user engagement metrics\"]. Our team consists of [mention relevant experience, e.g., \"seasoned software engineers from [known company] and experienced entrepreneurs\"].\n\nWe are currently raising a Seed round of €[Amount] to [briefly explain use of funds, e.g., \"expand our engineering team, accelerate product roadmap, and scale our sales and marketing efforts across the DACH region\"]. We believe our focus on [SaaS/AI/Fintech] and strong market potential aligns well with HV Capital's investment strategy in European tech leaders.\n\nWe have attached our pitch deck for your review and would welcome the opportunity to discuss [Company Name] further.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Demonstrate DACH market understanding: HV Capital has a strong focus on the DACH region. If you have a presence, specific plans, or a go-to-market strategy for this market, highlight it clearly.",
+        "Focus on measurable traction: While early-stage, HV Capital appreciates tangible evidence of market validation and growth. Quantify your traction (MRR, user growth, pilot successes) in the initial pitch.",
+        "Reference portfolio alignment: Scan HV Capital's portfolio companies. If your startup operates in a complementary sector or solves a similar problem to one of their successful investments, mention this briefly to show you've done your homework and see a strategic fit."
+      ]
+    }
+  },
+  {
+    "id": "k-fund",
+    "name": "K Fund",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed, Pre-Series A",
+    "sectors": "SaaS, AI, Deep Tech, Fintech, Digital Business, Marketplaces (primarily B2B and B2C digital businesses with a strong focus on the Spanish-speaking market)",
+    "ticketSize": "€200,000 - €2,000,000 (initial investment)",
+    "contactEmail": "hello@kfund.vc",
+    "contactForm": "https://kfund.vc/contact/send-your-pitch/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=kfund.vc",
+    "dna": {
+      "requirements": "Ambitious founders, scalable digital business model, strong focus on the Spanish-speaking market (Spain, LatAm), strong team, early traction.",
+      "dealStructure": "Equity investment, standard VC terms for early-stage rounds.",
+      "pitchHelper": "Subject: [Company Name] - AI-Powered SaaS for [Specific Industry] in LatAm/Spain - Seed Round\n\nDear K Fund Team,\n\nI hope this email finds you well.\n\nMy name is [Your Name], CEO & Founder of [Company Name]. We are developing [briefly describe your AI/SaaS solution, e.g., \"an AI-driven platform that streamlines customer support for e-commerce businesses across Latin America\" or \"a fintech SaaS simplifying cross-border payments for SMEs in Spain\"]. We are tackling [specific problem], which is particularly acute in [target Spanish-speaking market].\n\nOur platform has already achieved [mention key traction, e.g., \"secured X LOIs from Spanish SMEs\", \"processed Y transactions with Z% efficiency improvement\", \"grown user base by X% month-over-month in Mexico\"]. We have a passionate team with [mention relevant experience, e.g., \"deep domain expertise in [sector] and strong ties to the Spanish/LatAm tech ecosystem\"].\n\nWe are currently raising a Seed round of €[Amount] to [briefly explain use of funds, e.g., \"accelerate product development, expand our sales team in Spain and LatAm, and capture significant market share\"]. Given K Fund's leadership in the Spanish and Latin American startup ecosystem, we see a strong synergy with your investment focus.\n\nWe have attached our pitch deck for your consideration and would be delighted to schedule a brief call to discuss our vision for [Company Name].\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Emphasize Spanish/LatAm market focus: K Fund is a key player in the Spanish-speaking world. Clearly articulate your strategy and traction within Spain and/or Latin America. Show you understand the local market nuances.",
+        "Highlight ambition and scalability: K Fund backs ambitious founders with highly scalable digital businesses. Frame your startup's potential for significant growth and market dominance in its niche.",
+        "Personalize by mentioning a specific partner/portfolio company: Review K Fund's team and portfolio. If there's a partner whose expertise aligns with your sector or a portfolio company that complements yours, mention this to show thoughtful outreach."
+      ]
+    }
   }
 ];
 

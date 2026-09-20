@@ -3709,6 +3709,111 @@ const BRANDS_DATA = [
         "Focus on Learning & Growth: Balsamiq often supports education; position your audience as learners or professionals looking to improve their skills, making the pitch more aligned with their community initiatives."
       ]
     }
+  },
+  {
+    "id": "datastax",
+    "name": "DataStax",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "community@datastax.com",
+    "contactForm": "https://www.datastax.com/contact-us",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=datastax.com",
+    "dna": {
+      "requirements": "Content focused on Apache Cassandra, real-time data, data streaming, cloud-native development, or open-source advocacy. Target audience should be developers, data engineers, or architects. High-quality technical content and clear explanations.",
+      "dealStructure": "Flat fee for sponsored content (e.g., dedicated video, article, live stream), product access to Astra DB for content creation, potential for joint webinars or co-marketing activities.",
+      "pitchHelper": "Subject: Partnership Opportunity: [Your Channel/Podcast Name] x DataStax (Astra DB/Cassandra Content)\n\nDear DataStax Team,\n\nI'm [Your Name] from [Your Channel/Podcast Name], a growing platform ([Number] subscribers/listeners) dedicated to [Your Niche, e.g., cloud-native development, data engineering, backend systems]. My audience is highly engaged with [Specific Technologies, e.g., distributed databases, open-source solutions, real-time data processing].\n\nI've been impressed by DataStax's commitment to Apache Cassandra and the innovation with Astra DB. I believe there's a significant synergy between DataStax's offerings and my audience's interests in scalable, high-performance data solutions.\n\nI propose creating [Type of Content, e.g., a dedicated video tutorial, a series of blog posts, a podcast segment] showcasing [Specific DataStax Product/Feature, e.g., Astra DB's serverless capabilities, getting started with Cassandra, building real-time apps]. My goal would be to provide valuable, practical insights to my community while highlighting how DataStax solves key challenges.\n\nYou can find examples of my work here: [Link to relevant content]. My media kit is attached for your review.\n\nWould you be open to discussing a potential collaboration?\n\nBest regards,\n[Your Name]",
+      "pitchTips": [
+        "Hyper-Target Content: Show concrete examples of how your content aligns with Cassandra, Astra DB, or real-time data topics. Mention specific features or use cases you plan to cover.",
+        "Highlight Developer Audience: Emphasize that your audience consists primarily of developers, data engineers, or architects, as DataStax's target demographic is very technical.",
+        "Suggest Specific Call-to-Action: Instead of a general 'partnership,' propose a clear deliverable like a tutorial series, a specific project build, or a 'deep dive' into a DataStax technology."
+      ]
+    }
+  },
+  {
+    "id": "new-relic",
+    "name": "New Relic",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "community@newrelic.com",
+    "contactForm": "https://newrelic.com/contact-us",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=newrelic.com",
+    "dna": {
+      "requirements": "Content focused on observability, APM, infrastructure monitoring, error tracking, cloud-native apps, or DevOps practices. Target audience of developers, SREs, or DevOps engineers. Clear value proposition for New Relic's platform.",
+      "dealStructure": "Flat fee for dedicated content (e.g., video, blog post, live stream), mentions in podcasts, free access to New Relic platform features for content creation, co-promotion opportunities.",
+      "pitchHelper": "Subject: Collaboration Proposal: Enhancing Observability with New Relic on [Your Platform Name]\n\nDear New Relic Team,\n\nMy name is [Your Name], and I run [Your Platform Name], a [Type of Platform, e.g., YouTube channel, podcast, newsletter] with a dedicated audience of [Number] [Target Audience, e.g., developers, DevOps engineers, SREs] passionate about [Specific Topics, e.g., building resilient systems, performance optimization, cloud infrastructure].\n\nI deeply appreciate New Relic's comprehensive approach to observability, which is a critical topic for my community. I believe a partnership could genuinely benefit my audience by illustrating how New Relic helps solve real-world challenges in monitoring and debugging complex applications.\n\nI propose creating [Type of Content, e.g., an in-depth tutorial, a practical demo, a discussion panel] focusing on [Specific New Relic Feature/Use Case, e.g., using APM for performance bottlenecks, setting up custom dashboards, integrating with cloud services]. I aim to deliver high-quality, practical content that resonates with engineers looking to improve their system's reliability and performance.\n\nYou can view my previous work here: [Link to relevant content]. My media kit is available upon request.\n\nWould you be interested in exploring a content collaboration?\n\nBest regards,\n[Your Name]",
+      "pitchTips": [
+        "Focus on 'Why Observability Matters': Frame your pitch around solving developer pain points related to system performance, debugging, or reliability, and how New Relic provides the solution.",
+        "Show Technical Depth: Demonstrate a clear understanding of observability concepts and how New Relic fits into a modern tech stack. Mention specific New Relic products or features you'd like to highlight.",
+        "Quantify Audience Engagement: Provide specific metrics beyond just follower count, such as average view duration, engagement rates, or demographic data that aligns with New Relic's target users."
+      ]
+    }
+  },
+  {
+    "id": "confluent",
+    "name": "Confluent",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "info@confluent.io",
+    "contactForm": "https://www.confluent.io/contact-us",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=confluent.io",
+    "dna": {
+      "requirements": "Content focused on Apache Kafka, real-time data streaming, event-driven architectures, or Confluent Platform/Cloud. Target audience of data engineers, software architects, or developers. Clear, technically accurate explanations are essential.",
+      "dealStructure": "Flat fee for sponsored videos, articles, or workshops; free access to Confluent Cloud credits for content creation; co-marketing opportunities for highly relevant content.",
+      "pitchHelper": "Subject: Exploring a Partnership: Real-time Data Streaming with Confluent on [Your Platform Name]\n\nDear Confluent Team,\n\nMy name is [Your Name], and I manage [Your Platform Name], a [Type of Platform, e.g., blog, YouTube channel, podcast] that reaches [Number] [Target Audience, e.g., data engineers, software architects, backend developers] passionate about [Specific Topics, e.g., distributed systems, event-driven architecture, data pipelines].\n\nI'm deeply impressed by Confluent's role in advancing Apache Kafka and real-time data streaming. My audience frequently seeks practical guidance on building scalable, event-driven applications, and I believe Confluent Cloud is an ideal solution to showcase.\n\nI propose creating [Type of Content, e.g., a tutorial series, a project build, a deep-dive analysis] demonstrating [Specific Confluent/Kafka Use Case, e.g., building a real-time analytics pipeline, integrating Kafka Connect with X, migrating to Confluent Cloud]. My aim is to provide valuable, hands-on content that educates my community on the power of event streaming with Confluent.\n\nExamples of my relevant work can be found here: [Link to relevant content]. I can provide a media kit detailing my audience demographics and engagement.\n\nWould you be open to discussing how a collaboration could benefit both our communities?\n\nSincerely,\n[Your Name]",
+      "pitchTips": [
+        "Demonstrate Kafka Expertise: Show prior knowledge or a strong interest in Apache Kafka and event streaming. This demonstrates you understand their core business.",
+        "Focus on Specific Use Cases: Propose content that solves a clear problem for developers, e.g., 'how to build X with Kafka,' 'migrating Y to Confluent Cloud,' rather than a general overview.",
+        "Highlight Data/Architect Audience: Emphasize that your audience consists of data professionals, architects, or senior developers who are likely to implement or recommend streaming platforms."
+      ]
+    }
+  },
+  {
+    "id": "red-hat",
+    "name": "Red Hat",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "community@redhat.com",
+    "contactForm": "https://www.redhat.com/en/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=redhat.com",
+    "dna": {
+      "requirements": "Content focused on open source technologies, Linux, Kubernetes (OpenShift), Ansible, cloud-native development, or Java (Quarkus). Audience aligned with enterprise developers, sysadmins, or open-source enthusiasts. High-quality technical content and a clear understanding of Red Hat's ecosystem.",
+      "dealStructure": "Flat fee for sponsored content (e.g., videos, articles, workshops), opportunities for joint presentations or webinars, access to Red Hat technologies for content creation, co-promotion through Red Hat Developer channels.",
+      "pitchHelper": "Subject: Open Source & Developer Content Collaboration with Red Hat - [Your Channel/Platform Name]\n\nDear Red Hat Community/DevRel Team,\n\nMy name is [Your Name], and I operate [Your Channel/Platform Name], a [Type of Platform, e.g., YouTube channel, blog, podcast] with a dedicated audience of [Number] [Target Audience, e.g., developers, sysadmins, open source enthusiasts] keenly interested in [Specific Topics, e.g., cloud-native technologies, Kubernetes, Linux administration, open-source development].\n\nAs a long-time admirer of Red Hat's unwavering commitment to open source and its significant contributions to the developer ecosystem, I see immense potential for a collaboration. My community frequently engages with topics related to [Specific Red Hat Technologies, e.g., OpenShift, Ansible, Quarkus, RHEL], seeking practical guidance and insights.\n\nI propose creating [Type of Content, e.g., a series of tutorials, a deep-dive project, a comparative analysis] that highlights [Specific Red Hat Product/Initiative, e.g., getting started with OpenShift, automating with Ansible, building microservices with Quarkus]. My goal is to deliver high-quality, educational content that empowers developers to leverage Red Hat's powerful open-source solutions.\n\nYou can find examples of my technical content here: [Link to relevant content]. My media kit, with detailed audience demographics, is available for your review.\n\nWould you be interested in exploring a content partnership?\n\nBest regards,\n[Your Name]",
+      "pitchTips": [
+        "Emphasize Open Source Alignment: Clearly state your passion for open source and how your content aligns with Red Hat's core values and developer community initiatives.",
+        "Propose Technical Depth: Focus on specific Red Hat products or open-source technologies they champion (e.g., OpenShift, Ansible, Quarkus) and propose deep, technical content rather than superficial reviews.",
+        "Target Developer/IT Pro Audience: Highlight that your audience comprises IT professionals, developers, or system administrators who are actual users or decision-makers for Red Hat technologies."
+      ]
+    }
+  },
+  {
+    "id": "launchdarkly",
+    "name": "LaunchDarkly",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "hello@launchdarkly.com",
+    "contactForm": "https://launchdarkly.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=launchdarkly.com",
+    "dna": {
+      "requirements": "Content focused on feature flags, progressive delivery, A/B testing, experimentation, DevOps practices, or modern software development workflows. Audience of developers, product managers, or DevOps engineers. Practical, problem-solving content is preferred.",
+      "dealStructure": "Flat fee for sponsored content (e.g., video, blog post, podcast segment), free access to LaunchDarkly's platform for content creation, co-promotion through their developer channels.",
+      "pitchHelper": "Subject: Partnership Idea: Boosting Development Workflows with LaunchDarkly on [Your Platform Name]\n\nDear LaunchDarkly Team,\n\nMy name is [Your Name], and I manage [Your Platform Name], a [Type of Platform, e.g., YouTube channel, blog, newsletter] that reaches [Number] [Target Audience, e.g., software engineers, product managers, DevOps practitioners] focused on [Specific Topics, e.g., efficient software delivery, modern DevOps, product experimentation].\n\nI'm incredibly impressed by LaunchDarkly's leadership in feature management and progressive delivery – topics that are increasingly vital for efficient and safe software releases. My audience constantly seeks tools and strategies to streamline their development cycles and accelerate innovation.\n\nI propose creating [Type of Content, e.g., a practical tutorial, a case study, a live coding session] that showcases [Specific LaunchDarkly Feature/Use Case, e.g., implementing feature flags for phased rollouts, A/B testing new features, using kill switches for incidents]. My aim would be to provide clear, actionable insights into how LaunchDarkly empowers teams to deliver software with confidence.\n\nYou can find examples of my work demonstrating technical explanations here: [Link to relevant content]. A media kit outlining my audience demographics and engagement rates is available upon request.\n\nWould you be interested in discussing a potential content collaboration?\n\nBest regards,\n[Your Name]",
+      "pitchTips": [
+        "Focus on Software Delivery Outcomes: Frame your pitch around how LaunchDarkly helps teams achieve faster, safer releases, reduce risk, and enable experimentation – appealing to their core value proposition.",
+        "Target Developers/Product Managers: Emphasize that your audience consists of the roles that directly benefit from feature management.",
+        "Propose a Specific Feature Flag Use Case: Instead of a general mention, suggest a concrete scenario where feature flags provide clear value, like 'A/B testing a new UI component' or 'gradually rolling out a critical backend change.'"
+      ]
+    }
   }
 ];
 
