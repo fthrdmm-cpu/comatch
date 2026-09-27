@@ -1606,6 +1606,116 @@ const INVESTORS_DATA = [
         "Personalize by mentioning a specific partner/portfolio company: Review K Fund's team and portfolio. If there's a partner whose expertise aligns with your sector or a portfolio company that complements yours, mention this to show thoughtful outreach."
       ]
     }
+  },
+  {
+    "id": "500-global",
+    "name": "500 Global",
+    "type": "investor",
+    "investorType": "Venture Capital / Accelerator",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, AI, Fintech, Deep Tech",
+    "ticketSize": "$150k - $500k",
+    "contactEmail": "info@500.co",
+    "contactForm": "https://500.co/accelerators/apply",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=500.co",
+    "dna": {
+      "requirements": "Strong team, innovative solution, global potential, some traction (MVP usually ready, often with early users/revenue). Fit with their accelerator cohorts or specific fund theses.",
+      "dealStructure": "Accelerator typically involves a SAFE or convertible note (e.g., $150k for ~6% equity, varies by program). Direct investments are standard equity rounds.",
+      "pitchHelper": "Subject: [Company Name] - Revolutionizing [Specific Niche] with AI/SaaS\n\nHi [Investor Name/Team],\n\nI'm [Your Name], CEO of [Company Name], and we're building [a brief, impactful one-sentence description of your company and what it does]. We've developed [mention core technology/product, e.g., an AI-powered platform, a deep tech solution, a SaaS product] that addresses [specific problem] for [target market].\n\nWe have achieved [1-2 key metrics, e.g., $X MRR, Y users, Z% growth, significant pilot wins, successful MVP launch]. Our solution differentiates from competitors by [1-2 unique selling points].\n\nWe are currently raising a [Pre-Seed/Seed] round of [$X] to [achieve key milestone, e.g., scale our platform, expand into new markets]. We believe our mission aligns with 500 Global's focus on innovative, globally scalable startups, particularly in [mention a relevant specific vertical, e.g., fintech, enterprise SaaS, AI].\n\nWould you be open to a brief 15-minute call to discuss how [Company Name] is poised to disrupt the [Industry] market?\n\nThanks,\n[Your Name]\n[Your Title]\n[Your Website]",
+      "pitchTips": [
+        "Personalize & Research: 500 Global has many partners and mentors. Identify a specific partner whose portfolio or expertise aligns with your startup's sector. Address them directly and reference something specific about their recent activity or investment thesis.",
+        "Leverage Alumni Network: If possible, get an introduction from a founder who went through a 500 Global program. Warm intros from trusted sources are highly effective and bypass many spam filters.",
+        "Clear Value Proposition in Subject: Make your email subject line incredibly concise and compelling, immediately highlighting your sector and value, e.g., 'AI-Powered B2B SaaS for [Industry] - [Company Name]' or 'Fintech for [Segment] - [Company Name] Traction Update.'"
+      ]
+    }
+  },
+  {
+    "id": "plug-and-play-tech-center",
+    "name": "Plug and Play Tech Center",
+    "type": "investor",
+    "investorType": "Accelerator / Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "Fintech, AI, Deep Tech, SaaS (Enterprise)",
+    "ticketSize": "$50k - $250k",
+    "contactEmail": "info@plugandplaytechcenter.com",
+    "contactForm": "https://www.plugandplaytechcenter.com/apply/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=plugandplaytechcenter.com",
+    "dna": {
+      "requirements": "Strong team, innovative technology, clear problem-solution fit, scalability, readiness to engage with corporate partners. Focus on a specific Plug and Play vertical.",
+      "dealStructure": "Often a convertible note or SAFE for a relatively small equity stake (e.g., 5-7%) in exchange for accelerator program, investment, and access to corporate network.",
+      "pitchHelper": "Subject: [Company Name] - Innovating [Specific PnP Vertical, e.g., Fintech, Enterprise AI] for Corporates\n\nHi [Investor Name/Team],\n\nI'm [Your Name], CEO of [Company Name]. We are developing [a concise description of your solution, e.g., an AI-driven platform for predictive maintenance, a SaaS tool for supply chain optimization] that targets [specific problem] within the [PnP Vertical, e.g., Fintech, IoT, Enterprise SaaS] space.\n\nOur unique approach involves [mention core technology or methodology] which has led to [1-2 key achievements, e.g., successful pilots with X enterprise clients, X% efficiency gains validated by early users, a robust MVP with Y active users]. We believe our solution is particularly well-suited for Plug and Play's ecosystem given its potential for corporate partnerships.\n\nWe are seeking [Pre-Seed/Seed] funding of [$X] to [next key milestone, e.g., expand our pilot program, develop new modules, scale customer acquisition]. We are specifically interested in [mention a specific PnP program, if applicable, e.g., their Fintech program, IoT program] and the opportunity to engage with relevant corporate partners.\n\nWould you be open to a brief call to explore how [Company Name] can deliver value to your network?\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Website]",
+      "pitchTips": [
+        "Target Specific Programs: Plug and Play has numerous industry-specific accelerators. Research which program aligns best with your startup (e.g., Fintech, AI, Mobility) and tailor your outreach to the program's managing director or relevant partners.",
+        "Highlight Corporate Partnership Potential: Emphasize how your solution can benefit large corporations. Plug and Play thrives on connecting startups with their extensive corporate network, so showing this synergy is crucial.",
+        "Be Direct about Traction & Fit: Given the volume of applications, clearly state your current traction (even if early) and directly articulate why your solution is a perfect fit for their specific vertical and corporate engagement model in the opening lines."
+      ]
+    }
+  },
+  {
+    "id": "lytical-ventures",
+    "name": "Lytical Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "Enterprise AI/SaaS, Cybersecurity, Data Infrastructure",
+    "ticketSize": "$500k - $3M",
+    "contactEmail": "info@lytical.com",
+    "contactForm": "",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=lytical.com",
+    "dna": {
+      "requirements": "Focus on enterprise solutions, strong technical founders, defensible technology (AI/data focus), clear market need, early traction (even if just pilots). Experience in cybersecurity/data.",
+      "dealStructure": "Standard equity investment in Seed/Series A rounds.",
+      "pitchHelper": "Subject: [Company Name] - Disrupting [Specific Enterprise Niche] with AI/SaaS - Seed Round\n\nHi [Investor Name/Team],\n\nI'm [Your Name], CEO of [Company Name], and we're building [a specific, impactful one-sentence description, e.g., the next-gen AI-powered cybersecurity platform for enterprises]. Our solution addresses the critical challenge of [specific enterprise problem] by leveraging [mention core AI/data/deep tech innovation].\n\nWe have developed [mention product, e.g., a SaaS platform, an AI engine] that has achieved [1-2 key early metrics, e.g., successful pilot with Fortune 500 company, X% reduction in security incidents, Y enterprise customers, $Z ARR]. We believe our deep technical expertise in [relevant tech, e.g., machine learning, threat intelligence] combined with our understanding of enterprise needs positions us for rapid growth.\n\nWe are currently raising a [Seed/Seed Extension] round of [$X] to [achieve key milestone, e.g., expand our engineering team, accelerate go-to-market, secure additional enterprise pilots]. Given Lytical Ventures' expertise and focus on enterprise AI, cybersecurity, and data infrastructure, we believe our vision strongly aligns.\n\nWould you be available for a quick 15-minute discussion next week?\n\nThanks,\n[Your Name]\n[Your Title]\n[Your Website]",
+      "pitchTips": [
+        "Technical Depth & Enterprise Focus: Lytical Ventures highly values deep technical solutions for enterprise problems. Your pitch should clearly articulate the technical innovation and its tangible impact on enterprise clients. Avoid vague buzzwords.",
+        "Mention Relevant Experience: If you or your team have prior experience in cybersecurity or enterprise software, highlight it. This signals domain expertise, which is crucial for a specialized investor like Lytical.",
+        "Data-Driven Early Traction: Even at Seed stage, provide concrete (even if small) data points on early traction, pilot results, or customer validation. Lytical will want to see evidence that your solution is solving a real problem for businesses."
+      ]
+    }
+  },
+  {
+    "id": "illuminate-financial-management",
+    "name": "Illuminate Financial Management",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "Fintech (Capital Markets, Financial Infrastructure), Enterprise SaaS (Financial Services)",
+    "ticketSize": "$750k - $4M",
+    "contactEmail": "info@illuminatefinancial.com",
+    "contactForm": "https://www.illuminatefinancial.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=illuminatefinancial.com",
+    "dna": {
+      "requirements": "Deep understanding of financial markets/institutions, B2B fintech, strong team with relevant industry experience, disruptive technology for financial services, clear path to revenue from financial institutions.",
+      "dealStructure": "Standard equity investment in Seed/Series A rounds.",
+      "pitchHelper": "Subject: [Company Name] - Transforming [Specific Financial Market Process] with AI/SaaS - Seed Round\n\nHi [Investor Name/Team],\n\nI'm [Your Name], CEO of [Company Name]. We are building [a concise, impactful description, e.g., an AI-driven platform revolutionizing trade execution for institutional investors]. Our solution addresses a critical pain point for [specific financial institutions, e.g., investment banks, asset managers] by [how your solution helps].\n\nOur team has [mention relevant experience, e.g., deep experience in capital markets, track record in enterprise software development]. We have developed [mention product, e.g., a SaaS platform, a data analytics tool] that has demonstrated [1-2 key early metrics, e.g., successful pilot with Tier 1 bank, X% cost reduction for financial operations, significant interest from Y financial institutions].\n\nWe are currently raising a [Seed/Seed Extension] round of [$X] to [achieve key milestone, e.g., expand our product features, secure additional institutional clients, scale our engineering team]. Given Illuminate Financial's specialized focus on fintech and deep expertise in capital markets, we believe our vision aligns perfectly.\n\nWould you be open to a brief 15-minute call to discuss how [Company Name] is poised to make a significant impact in financial markets?\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Website]",
+      "pitchTips": [
+        "Deep Financial Domain Expertise: Illuminate Financial speaks the language of capital markets. Your pitch must demonstrate a sophisticated understanding of the financial sector problem you're solving and how your solution integrates into existing workflows.",
+        "Highlight Institutional Validation: Any early validation from financial institutions – even letters of intent, pilot agreements, or advisory board members from finance – will be extremely impactful. This shows you understand your target customer.",
+        "Focus on B2B Fintech: Clearly articulate that your solution is for financial institutions or enterprises within the financial sector, not consumer fintech. This is a core focus for Illuminate Financial."
+      ]
+    }
+  },
+  {
+    "id": "mmc-ventures",
+    "name": "MMC Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "B2B SaaS, AI, Data, Fintech",
+    "ticketSize": "$1M - $5M",
+    "contactEmail": "pitch@mmcventures.com",
+    "contactForm": "",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=mmcventures.com",
+    "dna": {
+      "requirements": "Strong team, B2B focus, innovative technology (SaaS/AI/Data), significant market opportunity, evidence of early traction/product-market fit, UK/European base.",
+      "dealStructure": "Standard equity investment in Seed/Series A rounds.",
+      "pitchHelper": "Subject: [Company Name] - UK/EU Seed: [Brief Value Prop, e.g., AI-Powered SaaS for Supply Chain Optimization]\n\nHi [Investor Name/Team],\n\nI'm [Your Name], CEO of [Company Name], a [UK/EU-based] startup building [a concise, impactful description, e.g., an intelligent B2B SaaS platform that leverages AI to significantly reduce operational costs for logistics companies]. We are tackling the challenge of [specific business problem] by providing [your solution's key benefit].\n\nOur product has achieved [1-2 key early metrics, e.g., X enterprise customers, $Y MRR, Z% MoM growth, successful MVP with positive feedback]. Our team possesses deep expertise in [relevant areas, e.g., AI development, enterprise sales, logistics operations], positioning us strongly within the [Industry] market.\n\nWe are currently raising a [Seed/Seed Extension] round of [$X] to [achieve key milestone, e.g., accelerate product development, expand our sales team, enter new European markets]. Given MMC Ventures' impressive track record in B2B SaaS and AI, and your focus on UK/European early-stage companies, we see a strong alignment.\n\nWould you be open to a brief introductory call to learn more about our vision for [Company Name]?\n\nThanks,\n[Your Name]\n[Your Title]\n[Your Website]",
+      "pitchTips": [
+        "Highlight UK/European Roots: MMC Ventures is a prominent UK-based VC with a strong focus on the region. Clearly state your company's location and emphasize your understanding of the UK/European market.",
+        "B2B SaaS/AI Traction: Focus on quantifiable metrics relevant to B2B SaaS and AI, even at Seed stage. Metrics like MRR, number of active customers, pilot conversions, or unique data advantages will resonate well.",
+        "Direct Pitch Email: Utilize their dedicated pitch email (pitch@mmcventures.com) but ensure your subject line is highly informative and engaging to stand out in a potentially crowded inbox. Avoid generic subjects."
+      ]
+    }
   }
 ];
 

@@ -3814,6 +3814,111 @@ const BRANDS_DATA = [
         "Propose a Specific Feature Flag Use Case: Instead of a general mention, suggest a concrete scenario where feature flags provide clear value, like 'A/B testing a new UI component' or 'gradually rolling out a critical backend change.'"
       ]
     }
+  },
+  {
+    "id": "replit",
+    "name": "Replit",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "partnerships@replit.com",
+    "contactForm": "https://replit.com/site/partnerships",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=replit.com",
+    "dna": {
+      "requirements": "Active developers, educational focus, hands-on tutorials, hackathon participation, strong community engagement.",
+      "dealStructure": "Sponsorship packages for events (cash, premium accounts), affiliate programs, co-marketing, educational licenses.",
+      "pitchHelper": "Subject: Collaboration Opportunity: [Your Channel/Podcast/Event Name] x Replit\n\nDear Replit Partnerships Team,\n\nMy name is [Your Name] and I run [Your Channel/Podcast/Event Name] ([Link to your platform]), where I focus on [Your Niche, e.g., web development, coding tutorials, hackathon organization]. My audience of [X,000+] developers and students is always eager to discover powerful, accessible tools that enhance their coding experience.\n\nI'm a big admirer of Replit's mission to make coding universally accessible, and I believe my content/event aligns perfectly with your goals. I'm proposing a partnership where I can [e.g., create a dedicated tutorial series, integrate Replit into my hackathon, feature Replit in my newsletter] to showcase its capabilities to a highly engaged and relevant audience.\n\nMy audience demographics are [briefly describe, e.g., 60% students, 40% early-career developers, interested in Python/JavaScript]. I am confident this collaboration would drive significant awareness and user acquisition for Replit among a crucial demographic.\n\nCould we schedule a brief call to discuss how we can tailor a mutually beneficial partnership?\n\nBest regards,\n[Your Name]",
+      "pitchTips": [
+        "Showcase Replit-specific projects: Briefly mention a personal project you've built or seen built on Replit to show genuine interest and understanding of the platform.",
+        "Highlight educational impact: Emphasize how your audience learns or benefits from coding platforms, aligning with Replit's educational focus.",
+        "Quantify community engagement: Beyond follower count, mention average views, engagement rate, or past successful community events to demonstrate active audience participation."
+      ]
+    }
+  },
+  {
+    "id": "dagster",
+    "name": "Dagster",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "contact@dagster.io",
+    "contactForm": "https://dagster.io/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=dagster.io",
+    "dna": {
+      "requirements": "Data engineering audience, expertise in data orchestration/MLOps, technical depth, relevant podcast/newsletter.",
+      "dealStructure": "Podcast/newsletter sponsorships, conference booth sponsorships, joint webinars/content.",
+      "pitchHelper": "Subject: Data Engineering Sponsorship Opportunity: Dagster x [Your Podcast/Newsletter/Event]\n\nDear Dagster Team,\n\nMy name is [Your Name], and I host/curate [Your Podcast/Newsletter/Event Name] ([Link to your platform]), which reaches [X,000+] dedicated data engineers and MLOps professionals. My audience values deep dives into modern data stack tooling and best practices.\n\nI've been following Dagster's impressive work in data orchestration and believe its approach to building and maintaining data assets would resonate strongly with my listeners/readers. I'm reaching out to explore a potential sponsorship where Dagster could be featured as a [e.g., segment sponsor, dedicated ad read, featured tool in a tutorial].\n\nOur audience demographics are [briefly describe, e.g., 80% data engineers, 15% data scientists, interested in Python, orchestrators, ETL]. I am confident that partnering with [Your Platform Name] would provide Dagster with highly targeted exposure to key decision-makers and practitioners in the data space.\n\nPlease let me know if you'd be open to a brief discussion about this opportunity.\n\nSincerely,\n[Your Name]",
+      "pitchTips": [
+        "Highlight niche relevance: Clearly state your audience's interest in data orchestration, MLOps, or Python-based data tooling, directly connecting to Dagster's core offering.",
+        "Demonstrate technical understanding: Use a relevant data engineering term or briefly mention a Dagster feature you appreciate to show you're not just a generic sponsor seeker.",
+        "Provide engagement metrics: Focus on listener/subscriber quality and engagement (e.g., average listen time, open rates, demographic breakdown) rather than just raw numbers, to prove audience value."
+      ]
+    }
+  },
+  {
+    "id": "apollo-graphql",
+    "name": "Apollo GraphQL",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "contact@apollographql.com",
+    "contactForm": "https://www.apollographql.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=apollographql.com",
+    "dna": {
+      "requirements": "GraphQL-focused content, developer audience, expertise in API development, strong community engagement.",
+      "dealStructure": "Event sponsorships, podcast/newsletter ads, content collaboration (e.g., guest posts on their blog, joint webinars).",
+      "pitchHelper": "Subject: Apollo GraphQL Sponsorship: [Your Channel/Podcast/Newsletter] - [Topic]\n\nDear Apollo GraphQL Team,\n\nMy name is [Your Name], and I manage [Your Channel/Podcast/Newsletter Name] ([Link to your platform]), a growing resource for [X,000+] developers passionate about modern API development and GraphQL. My audience actively seeks out best practices and tooling that streamline their backend and frontend interactions.\n\nI'm highly impressed by Apollo GraphQL's pivotal role in the GraphQL ecosystem, from Federation to Studio. I believe a partnership with [Your Platform Name] would be an excellent way to connect Apollo's innovations with a highly engaged and relevant developer community. I envision [e.g., a sponsored segment on my podcast discussing Schema design, a tutorial series on using Apollo Client, a feature in my newsletter on new Apollo features].\n\nOur audience includes [briefly describe, e.g., backend developers, frontend engineers, full-stack teams, interested in Node.js, React, API design]. This presents a unique opportunity to showcase Apollo GraphQL to developers actively building and scaling their applications.\n\nWould you be open to a brief conversation to explore how our platforms can collaborate effectively?\n\nBest regards,\n[Your Name]",
+      "pitchTips": [
+        "Demonstrate GraphQL proficiency: Mention specific GraphQL concepts or Apollo features (e.g., Apollo Federation, caching strategies) to show you genuinely understand the technology.",
+        "Target specific products: Instead of just 'Apollo GraphQL,' if relevant, specify which part of their ecosystem (e.g., Apollo Client, Apollo Server, Apollo Studio) you plan to feature, showing a focused approach.",
+        "Highlight community involvement: If you're active in the GraphQL community (e.g., attend meetups, contribute to open source), mention this to show alignment with Apollo's community-driven nature."
+      ]
+    }
+  },
+  {
+    "id": "assemblyai",
+    "name": "AssemblyAI",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "partnerships@assemblyai.com",
+    "contactForm": "https://www.assemblyai.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=assemblyai.com",
+    "dna": {
+      "requirements": "AI/ML developer audience, content focused on speech-to-text, NLP, audio processing, technical demonstrations.",
+      "dealStructure": "Podcast/newsletter sponsorships, dedicated video reviews/tutorials, hackathon challenges with API credits.",
+      "pitchHelper": "Subject: AI/ML Developer Sponsorship: AssemblyAI x [Your Channel/Podcast/Newsletter]\n\nDear AssemblyAI Partnerships Team,\n\nMy name is [Your Name], and I create content for [Your Channel/Podcast/Newsletter Name] ([Link to your platform]), reaching [X,000+] developers, data scientists, and AI/ML enthusiasts interested in cutting-edge AI technologies, particularly in areas like natural language processing and audio analysis.\n\nI'm particularly impressed by AssemblyAI's robust APIs for speech-to-text, summarization, and sentiment analysis, which I believe offer immense value to developers building voice-enabled applications. I am keen to explore a partnership where I could [e.g., develop a hands-on tutorial integrating AssemblyAI, feature your latest models in a tech review, sponsor a segment on my podcast discussing audio AI].\n\nMy audience demographics are [briefly describe, e.g., 70% software engineers, 20% data scientists, interested in Python, AI APIs, large language models]. This collaboration would provide AssemblyAI with direct access to highly motivated developers looking for powerful AI tools.\n\nCould we schedule a quick call to discuss how we can create impactful content together?\n\nBest regards,\n[Your Name]",
+      "pitchTips": [
+        "Showcase a use case: Propose a specific, creative project or problem that AssemblyAI could solve, demonstrating your understanding of their API's capabilities.",
+        "Highlight audience's AI interest: Emphasize your audience's specific interest in AI, NLP, or voice technology, proving they are a perfect fit for AssemblyAI.",
+        "Mention specific features: Refer to specific AssemblyAI features like 'Speaker Diarization' or 'Sentiment Analysis' to show you've done your homework and understand their offerings."
+      ]
+    }
+  },
+  {
+    "id": "raycast",
+    "name": "Raycast",
+    "type": "brand",
+    "category": "Productivity",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "hello@raycast.com",
+    "contactForm": "https://www.raycast.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=raycast.com",
+    "dna": {
+      "requirements": "Productivity-focused content, developer/power-user audience, Mac user base, integration showcases, extensions development.",
+      "dealStructure": "Product keys, affiliate codes, flat fees for dedicated reviews/integrations, co-marketing.",
+      "pitchHelper": "Subject: Enhance Developer Productivity: Raycast x [Your Channel/Blog/Newsletter]\n\nDear Raycast Team,\n\nMy name is [Your Name], and I run [Your Channel/Blog/Newsletter Name] ([Link to your platform]), where I help [X,000+] developers and power users streamline their workflows and boost productivity, particularly on macOS. My audience is always on the lookout for tools that make their daily computing faster and more efficient.\n\nI'm a massive fan and daily user of Raycast – it has fundamentally changed how I interact with my Mac. I believe its powerful features and extensibility would resonate incredibly well with my audience, who are constantly seeking ways to optimize their developer experience. I'd love to explore a partnership where I could [e.g., create a deep-dive video on custom Raycast extensions, showcase how Raycast supercharges my coding workflow, review its latest features in my newsletter].\n\nMy audience demographics are [briefly describe, e.g., 90% macOS users, 80% developers/engineers, interested in productivity hacks, coding tools]. I am confident this collaboration would introduce Raycast to a highly targeted and appreciative user base.\n\nWould you be open to a brief discussion about how we can collaborate to showcase Raycast's value?\n\nBest regards,\n[Your Name]",
+      "pitchTips": [
+        "Be a genuine user: Mention specific Raycast commands, extensions, or features you personally use and love, demonstrating authentic enthusiasm.",
+        "Highlight Mac user base: Explicitly state your audience consists predominantly of macOS users, which is Raycast's primary target.",
+        "Focus on productivity gains: Frame the sponsorship around how Raycast helps your audience *save time* or *be more efficient*, aligning with its core value proposition."
+      ]
+    }
   }
 ];
 
