@@ -153,6 +153,8 @@ Need dynamic matchmaking or customized cold email pitch templates? Visit the liv
 | **Qiddiya** | Events & Tournaments | Flat Fee | Macro (50k+) | `partnerships@qiddiya.com` | [Apply](https://qiddiya.com/) |
 | **Riyadh Season** | Events & Tournaments | Flat Fee | Macro (50k+) | `info@riyadhseason.com` | [Apply](https://riyadhseason.com/) |
 
+| **VideoGen** | SaaS | Affiliate | All Scale | `info@videogen.io` | [Apply](https://videogen.io/affiliate-program) |
+
 ## 💼 VC Funds & Startup Accelerators
 | Investor / Fund | Investor Type | Target Sectors | Target Stage | Ticket Size | Contact Channel | Link |
 | --- | --- | --- | --- | --- | --- | --- |

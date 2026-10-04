@@ -3919,6 +3919,22 @@ const BRANDS_DATA = [
         "Focus on productivity gains: Frame the sponsorship around how Raycast helps your audience *save time* or *be more efficient*, aligning with its core value proposition."
       ]
     }
+  },
+  {
+    "id": "videogen",
+    "name": "VideoGen",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Affiliate",
+    "creatorSize": "All Scale",
+    "contactEmail": "info@videogen.io",
+    "contactForm": "https://videogen.io/affiliate-program",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=videogen.io",
+    "dna": {
+      "requirements": "Manually reviewed applications from creators and marketers. No self-referrals, Google search ads, unauthorized branded keyword bidding, spam, incentivized traffic or cookie stuffing. Official terms: https://videogen.io/affiliate-tos",
+      "dealStructure": "30% recurring commission on referred VideoGen subscriptions. Up to 60-day cookie with last-click attribution. Monthly payouts with a $50 minimum; commissions payable at least 30 days after purchase. Tracking via FirstPromoter.",
+      "pitchHelper": "Hi VideoGen Team,\n\nI would like to apply to the VideoGen affiliate program. My audience is [Audience] on [Channel URL], and I plan to promote VideoGen through [Content plan]. Please review my application through https://videogen.io/affiliate-program.\n\nBest,\n[Name]"
+    }
   }
 ];
 
