@@ -3919,6 +3919,111 @@ const BRANDS_DATA = [
         "Focus on productivity gains: Frame the sponsorship around how Raycast helps your audience *save time* or *be more efficient*, aligning with its core value proposition."
       ]
     }
+  },
+  {
+    "id": "convertkit",
+    "name": "ConvertKit",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Affiliate / Referral",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partners@convertkit.com",
+    "contactForm": "https://convertkit.com/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=convertkit.com",
+    "dna": {
+      "requirements": "Audience of creators, entrepreneurs, bloggers, podcasters. Alignment with 'creator first' mission. High engagement with creators seeking email marketing and audience growth solutions.",
+      "dealStructure": "Affiliate commissions for new sign-ups, potential flat fees for larger podcast/newsletter placements, access to ConvertKit tools for content creation.",
+      "pitchHelper": "Subject: Partnership Opportunity: [Your Name/Podcast/Newsletter] x ConvertKit\n\nDear ConvertKit Partnerships Team,\n\nMy name is [Your Name] and I'm the creator behind [Your Podcast/Newsletter/Platform - e.g., 'The Creative Hustle Podcast'], reaching a dedicated audience of [Number] creators, entrepreneurs, and indie builders focused on growing their online businesses.\n\nI've been deeply impressed by ConvertKit's commitment to empowering creators, and I believe my audience would greatly benefit from your robust email marketing tools. Many of my listeners/readers are actively looking for reliable platforms to connect with their audience and monetize their work effectively.\n\nI propose a partnership to introduce ConvertKit to my engaged community through [mention specific channels, e.g., dedicated podcast segments, newsletter features, blog reviews]. I envision demonstrating how ConvertKit helps creators build stronger relationships and scale their impact.\n\nCould we schedule a brief call to discuss how our shared values of creator empowerment could translate into a successful collaboration?\n\nThank you for your time and consideration.\n\nBest regards,\n\n[Your Name]\n[Your Website/Link to content]\n[Your Social Media Link]",
+      "pitchTips": [
+        "Highlight Creator Alignment: Emphasize how your content directly supports or resonates with the creator economy, aligning perfectly with ConvertKit's mission.",
+        "Showcase Engagement, Not Just Size: Provide specific metrics beyond follower count, such as average open rates, listenership, community interaction, or subscriber growth, to prove active engagement.",
+        "Propose Specific Content Ideas: Don't just ask for sponsorship; suggest concrete ways you'd integrate ConvertKit authentically into your content (e.g., 'a series on building an email list with ConvertKit,' 'a live demo of ConvertKit automation')."
+      ]
+    }
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "partner_program@docker.com",
+    "contactForm": "https://www.docker.com/partners/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=docker.com",
+    "dna": {
+      "requirements": "Audience of developers, DevOps professionals, software engineers. Content focused on containerization, cloud-native development, open-source. Strong technical credibility and active participation in developer communities.",
+      "dealStructure": "Sponsorship of conferences, hackathons, developer meetups, technical content series. Potential for free Docker licenses or credits for sponsored events. Flat payout for content.",
+      "pitchHelper": "Subject: Collaboration Opportunity: [Your Dev Community/Podcast] x Docker\n\nDear Docker Partnerships Team,\n\nMy name is [Your Name], and I lead [Your Developer Community/Podcast/YouTube Channel - e.g., 'Container Insights Podcast'], a highly engaged platform for [Number] developers, DevOps engineers, and tech enthusiasts passionate about containerization, cloud-native solutions, and efficient software delivery.\n\nDocker is an indispensable tool for our audience, and we regularly discuss its pivotal role in modern development workflows. We believe a partnership would be incredibly valuable in providing our community with direct insights and resources from the industry leader.\n\nWe propose collaborating on [mention specific ideas, e.g., sponsoring a segment on container best practices, hosting a workshop on Docker Compose, featuring Docker in a series on microservices]. Our goal is to empower developers with practical knowledge and tools.\n\nWould you be open to a brief discussion about how we can craft a mutually beneficial partnership to reach and educate the developer community?\n\nThank you for your time.\n\nSincerely,\n\n[Your Name]\n[Link to Your Content/Community]\n[Link to Your Professional Profile]",
+      "pitchTips": [
+        "Showcase Technical Authority: Emphasize your deep technical knowledge and credibility within the developer community to assure them your content is accurate and valuable.",
+        "Focus on Specific Use Cases: Instead of general praise, highlight how your audience *uses* Docker and propose content that solves specific developer challenges using Docker's features.",
+        "Quantify Developer Engagement: Provide metrics on developer audience size, engagement rates (e.g., GitHub stars, YouTube watch time, meetup attendance), and demographic data if available, to show the quality of your reach."
+      ]
+    }
+  },
+  {
+    "id": "vimeo",
+    "name": "Vimeo",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partnerships@vimeo.com",
+    "contactForm": "https://vimeo.com/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=vimeo.com",
+    "dna": {
+      "requirements": "Audience of video creators, small businesses, marketers, educators. Focus on high-quality video content, professional use cases, education around video production/distribution. Content should align with Vimeo's brand of quality and professionalism.",
+      "dealStructure": "Flat fee for sponsored content, free Vimeo Pro/Business accounts, co-marketing opportunities, potential affiliate commissions for referrals.",
+      "pitchHelper": "Subject: Partnership Proposal: [Your Channel/Agency] & Vimeo - Empowering Visual Storytellers\n\nDear Vimeo Partnerships Team,\n\nMy name is [Your Name], and I run [Your YouTube Channel/Blog/Agency - e.g., 'Creative Lens Tutorials'], where I guide a community of [Number] video creators, filmmakers, and small businesses on mastering video production, marketing, and distribution.\n\nVimeo's platform is renowned for its professional-grade tools and commitment to quality, which aligns perfectly with the needs and aspirations of my audience. Many of our members rely on robust video solutions for their client work, online courses, and business growth.\n\nI envision a partnership where we can showcase Vimeo's powerful features for [mention specific benefits, e.g., professional hosting, advanced analytics, live streaming, collaboration tools] through [mention specific content, e.g., dedicated video tutorials, in-depth reviews, a sponsored segment on my podcast]. I'm confident this would provide immense value to both our communities.\n\nWould you be available for a quick chat to explore how a collaboration could mutually benefit our audiences and elevate professional video endeavors?\n\nThank you for your consideration.\n\nSincerely,\n\n[Your Name]\n[Your Content Link]\n[Your Portfolio/Relevant Social Link]",
+      "pitchTips": [
+        "Focus on Professionalism & Quality: Highlight how your content emphasizes high-quality production and professional use cases, mirroring Vimeo's brand image.",
+        "Demonstrate Niche Expertise: Clearly define your audience's specific video needs (e.g., educators needing course hosting, agencies needing client review tools, filmmakers needing portfolio showcases) and how Vimeo addresses them.",
+        "Provide Engagement Metrics for Video: Share metrics relevant to video content, such as average view duration, audience demographics, comments, and conversion rates from your video content, to demonstrate impact."
+      ]
+    }
+  },
+  {
+    "id": "asana",
+    "name": "Asana",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partners@asana.com",
+    "contactForm": "https://asana.com/resources/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=asana.com",
+    "dna": {
+      "requirements": "Audience of professionals, teams, entrepreneurs, startups. Content focused on productivity, project management, remote work, team collaboration, business growth. Demonstrates practical application of productivity tools.",
+      "dealStructure": "Flat fee for sponsored content (e.g., podcast ads, newsletter features, dedicated videos), affiliate commissions for new sign-ups to Asana.",
+      "pitchHelper": "Subject: Partnership Opportunity: [Your Productivity Channel/Podcast] x Asana\n\nDear Asana Partnerships Team,\n\nMy name is [Your Name], and I am the creator of [Your Blog/YouTube Channel/Podcast - e.g., 'Productivity Power-Up'], where I share actionable strategies and tool reviews with a dedicated audience of [Number] entrepreneurs, team leaders, and busy professionals seeking to optimize their workflows and enhance team collaboration.\n\nAsana is a name synonymous with efficient project management, and its features for task tracking, team coordination, and goal setting are directly relevant to the challenges my audience faces daily. I believe a partnership could introduce Asana to a highly engaged group actively looking for solutions to improve their productivity.\n\nI propose creating [mention specific content, e.g., a tutorial series on using Asana for small business growth, a podcast segment on remote team management with Asana, a comparative review emphasizing Asana's strengths]. My aim is to provide practical value and demonstrate how Asana can transform team productivity.\n\nWould you be open to a brief call to discuss a potential collaboration?\n\nThank you for your time and consideration.\n\nBest regards,\n\n[Your Name]\n[Your Content Link]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Emphasize Problem/Solution: Clearly articulate a common productivity challenge your audience faces and how Asana provides an elegant solution, making the partnership highly relevant.",
+        "Showcase Workflow Examples: If possible, demonstrate your own experience or willingness to showcase practical workflows and templates within Asana that your audience can replicate.",
+        "Target Decision-Makers: Highlight that your audience includes team leaders, managers, and small business owners who are often the decision-makers for adopting new project management software."
+      ]
+    }
+  },
+  {
+    "id": "sendgrid",
+    "name": "SendGrid",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "partner_program@sendgrid.com",
+    "contactForm": "https://sendgrid.com/partners/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=sendgrid.com",
+    "dna": {
+      "requirements": "Audience of developers, software engineers, marketers, product managers working with transactional email or email marketing at scale. Content about APIs, web development, marketing automation, deliverability, e-commerce.",
+      "dealStructure": "Flat fee for sponsored content (e.g., technical blog posts, video tutorials, podcast ads), free SendGrid credits for developers, co-marketing opportunities.",
+      "pitchHelper": "Subject: Partnership Opportunity: [Your Dev Blog/Podcast] x SendGrid - Email API Expertise\n\nDear SendGrid Partnerships Team,\n\nMy name is [Your Name], and I manage [Your Developer Blog/YouTube Channel/Podcast - e.g., 'The API Explorer Podcast'], a platform dedicated to [Number] developers and technical founders exploring the best tools and practices for building robust applications, with a particular focus on backend services and APIs.\n\nSendGrid is an industry-leading solution for transactional and marketing email, and its reliability and developer-friendly API are highly relevant to my audience who are constantly seeking robust and scalable communication infrastructure.\n\nI propose a collaboration where we can delve into [mention specific topics, e.g., integrating SendGrid with a specific framework, best practices for email deliverability, setting up email marketing automation with SendGrid]. This would offer invaluable, practical insights to developers building features that rely on email.\n\nWould you be open to a brief discussion about how our shared interest in empowering developers can lead to a successful partnership?\n\nThank you for your consideration.\n\nBest regards,\n\n[Your Name]\n[Link to Your Content/Community]\n[Link to Your GitHub/Professional Profile]",
+      "pitchTips": [
+        "Highlight Technical Depth: Emphasize that your content goes beyond surface-level reviews and dives into actual implementation, code examples, and best practices relevant to SendGrid's technical users.",
+        "Quantify Developer Audience: Clearly state the size and demographic of your developer audience (e.g., '50k backend developers,' 'startups using Python/Node.js') to demonstrate target market fit.",
+        "Propose a Specific Technical Use Case: Instead of a generic ad, suggest a tutorial or project demonstrating a specific, valuable use case of SendGrid (e.g., 'Building a user notification system with SendGrid and Next.js')."
+      ]
+    }
   }
 ];
 

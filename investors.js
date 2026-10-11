@@ -1716,6 +1716,116 @@ const INVESTORS_DATA = [
         "Direct Pitch Email: Utilize their dedicated pitch email (pitch@mmcventures.com) but ensure your subject line is highly informative and engaging to stand out in a potentially crowded inbox. Avoid generic subjects."
       ]
     }
+  },
+  {
+    "id": "dn-capital",
+    "name": "DN Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "Marketplaces, SaaS, Fintech, Digital Media, Deep Tech",
+    "ticketSize": "$1M - $10M",
+    "contactEmail": "info@dncapital.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=dncapital.com",
+    "dna": {
+      "requirements": "Strong founding team, large addressable market, clear product-market fit indicators (even at early stage), defensible technology/business model, often prefers companies with early traction or compelling vision for disruption.",
+      "dealStructure": "Standard equity investment for Seed/Series A, typically convertible notes for very early seed. Dilution depends on valuation, but usually 15-25% for Seed rounds.",
+      "pitchHelper": "Subject: [Company Name] - Disrupting [Specific Industry/Problem] with [SaaS/AI/Deep Tech] - Seed Round\n\nDear DN Capital Team,\n\nMy name is [Your Name] and I'm the co-founder/CEO of [Company Name] ([Your Website URL]). We are building [briefly explain what your company does and for whom, e.g., \"an AI-powered SaaS platform that helps B2B businesses optimize X by Y\"].\n\nWe've observed that [mention the key problem/inefficiency in the market]. Our solution provides [unique value proposition and how it solves the problem], resulting in [quantifiable benefits for customers, e.g., \"reducing costs by 30% and increasing efficiency by 2x\"].\n\nWe are particularly excited about [mention a key metric or early traction, e.g., \"achieving $XXk ARR in 6 months post-launch with Y paying customers\" or \"our MVP has secured X pilot customers and Z pre-orders\"]. Our founding team brings [relevant experience, e.g., \"deep expertise in AI/SaaS from previous roles at X and Y\"].\n\nWe are currently raising a Seed round of [$X million] to [specific use of funds, e.g., \"expand our engineering team, launch new features, and scale our sales efforts\"]. We believe DN Capital's expertise in [mention relevant sector, e.g., \"SaaS/Deep Tech and experience with scale-ups like X and Y\"] makes you an ideal partner.\n\nI've attached our deck for your review and would be grateful for the opportunity to discuss how [Company Name] is poised to [achieve its vision].\n\nBest regards,\n\n[Your Name]\n[Your Title]\n[Your Company]\n[Your Phone Number]",
+      "pitchTips": [
+        "Personalize Beyond Name: Research specific investments or partners at DN Capital related to your sector. Mention a relevant portfolio company or a partner's public statement to show genuine interest and relevance.",
+        "Concise Subject Line with Value: A clear, value-driven subject line (e.g., \"Seed: [Company Name] - AI-powered SaaS for X - [Early Metric]\") helps it stand out from generic pitches.",
+        "Leverage LinkedIn/Warm Intro: While direct email is possible, a warm introduction from a mutual connection (e.g., another founder, advisor, or investor) significantly increases the chances of being reviewed by a partner at DN Capital."
+      ]
+    }
+  },
+  {
+    "id": "picus-capital",
+    "name": "Picus Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed / Series A",
+    "sectors": "Enterprise SaaS, Fintech, Deep Tech, Mobility, Healthcare, Crypto",
+    "ticketSize": "€200k - €5M",
+    "contactEmail": "info@picuscapital.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=picuscapital.com",
+    "dna": {
+      "requirements": "Ambitious and driven founders, scalable business model, large market potential, strong focus on B2B, strong product vision, potential for global leadership. They are very active in company building and providing operational support.",
+      "dealStructure": "Flexible, often initial check as convertible loan or SAFE, moving to equity at later stages. Dilution is standard for early-stage (10-20% for Pre-Seed/Seed).",
+      "pitchHelper": "Subject: [Company Name] - Building the Future of [Enterprise SaaS/Fintech] with [Unique Tech] - Pre-Seed/Seed\n\nDear Picus Capital Team,\n\nMy name is [Your Name] and I'm the CEO/co-founder of [Company Name] ([Your Website URL]). We are developing [briefly describe your B2B solution and its core functionality, e.g., \"a Deep Tech solution that uses AI to automate X for large enterprises\"].\n\nWe've identified a significant gap in the [specific industry] market where [current solutions/pain points] lead to [quantifiable problem]. Our platform offers [your unique approach/technology] to deliver [specific benefits, e.g., \"unprecedented efficiency and cost savings\"].\n\nWe are particularly drawn to Picus Capital's focus on enterprise B2B and your operational expertise, which we believe would be invaluable as we [mention current stage, e.g., \"move from MVP to first paying customers\" or \"scale our initial traction\"]. Our team of [number] brings together [relevant experience/expertise].\n\nCurrently, we are [mention key progress, e.g., \"developing our MVP with X pilot customers lined up,\" or \"have achieved $YY ARR in our first Z months\"]. We are seeking a Pre-Seed/Seed investment of [€X million] to [specific goals, e.g., \"accelerate product development, expand our engineering team, and acquire initial enterprise clients\"].\n\nI've attached our pitch deck for your review and would welcome the opportunity to discuss how [Company Name] is set to become a leader in [your market].\n\nBest regards,\n\n[Your Name]\n[Your Title]\n[Your Company]\n[Your Phone Number]",
+      "pitchTips": [
+        "Highlight B2B Enterprise Focus: Clearly state your B2B nature and enterprise relevance in the subject and opening. Picus is highly focused on this, and demonstrating alignment early is key.",
+        "Focus on Scalability & Global Ambition: Emphasize the potential for your solution to scale globally and achieve market leadership, aligning with Picus's thesis.",
+        "Show \"Company Building\" Fit: Briefly mention your appreciation for their hands-on approach and how you envision leveraging their operational support to show a deeper understanding of their value proposition."
+      ]
+    }
+  },
+  {
+    "id": "white-star-capital",
+    "name": "White Star Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A / Series B",
+    "sectors": "Deep Tech, Fintech, AI, SaaS, Gaming, Digital Health",
+    "ticketSize": "$1M - $10M",
+    "contactEmail": "info@whitestarcapital.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=whitestarcapital.com",
+    "dna": {
+      "requirements": "Exceptional teams, innovative and scalable technology, large market opportunities, global potential, defensible competitive advantage, strong early traction or visionary product.",
+      "dealStructure": "Standard equity investment for Seed/Series A/B. Dilution typically 15-25% for Seed rounds.",
+      "pitchHelper": "Subject: [Company Name] - Pioneering [Deep Tech/AI] for [Global Market] - Seed Round\n\nDear White Star Capital Team,\n\nMy name is [Your Name] and I'm the co-founder/CEO of [Company Name] ([Your Website URL]). We are building [concise description of your product/solution and target audience, e.g., \"a Deep Tech platform leveraging proprietary AI to solve X critical challenge for Y global enterprises\"].\n\nThe global [mention specific market] market is ripe for disruption due to [explain the existing problem or inefficiency]. Our technology provides [unique solution/value proposition], leading to [quantifiable impact, e.g., \"unprecedented gains in efficiency and data insights\"].\n\nWe are particularly impressed by White Star Capital's global footprint and expertise in [mention relevant sector, e.g., \"Deep Tech and AI,\" or \"scaling international businesses\"], aligning perfectly with our ambition to [achieve global market leadership]. Our founding team has [relevant experience, e.g., \"a strong background in X and Y from global companies\"].\n\nWe have already [mention key achievements, e.g., \"secured X pilot customers across Y countries,\" or \"achieved $ZZK ARR with a 20% month-over-month growth rate\"]. We are raising a Seed round of [$X million] to [specific use of funds, e.g., \"expand our R&D, grow our sales team, and enter new international markets\"].\n\nI’ve attached our deck for your consideration and would appreciate the chance to discuss how [Company Name] is poised for global impact.\n\nSincerely,\n\n[Your Name]\n[Your Title]\n[Your Company]\n[Your Phone Number]",
+      "pitchTips": [
+        "Emphasize Global Vision: White Star Capital has a strong global focus. Frame your pitch from a global perspective, mentioning international market potential or existing cross-border traction.",
+        "Highlight Defensible Technology: Clearly articulate what makes your Deep Tech/AI solution proprietary and defensible, as this is a key differentiator for their investments.",
+        "Seek a Portfolio Company Intro: Many VCs, including White Star, value warm introductions from their existing portfolio companies. Research their portfolio for potential connections."
+      ]
+    }
+  },
+  {
+    "id": "plural-platform",
+    "name": "Plural Platform",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed / Series A",
+    "sectors": "Deep Tech, AI, SaaS, Fintech, Climate Tech, Health Tech, Web3, Future of Work",
+    "ticketSize": "€1M - €10M",
+    "contactEmail": "hello@pluralplatform.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=pluralplatform.com",
+    "dna": {
+      "requirements": "Ambitious European founders, large vision, strong technical teams, focus on \"big problems,\" often with a deep tech component. They are former founders/operators themselves.",
+      "dealStructure": "Standard equity investment. As they tend to write larger seed/early A checks, expect typical dilution for those stages (15-25%).",
+      "pitchHelper": "Subject: [Company Name] - Solving [Big Problem] with [Deep Tech/AI SaaS] - Seed Round\n\nDear Plural Team,\n\nMy name is [Your Name] and I'm the co-founder/CEO of [Company Name] ([Your Website URL]). We are tackling the critical challenge of [big societal or industrial problem] by building [describe your solution, e.g., \"a Deep Tech platform that harnesses AI to revolutionize X for Y industry\"].\n\nThe current approaches to [problem] are [explain their shortcomings]. Our [proprietary technology/innovative approach] enables [specific, measurable impact, e.g., \"unprecedented efficiency, sustainability, or cost reduction\"]. We are driven by the belief that [Company Name] can become a foundational player in [your market].\n\nGiven Plural's background as operators and your focus on enabling ambitious European founders to build impactful companies, we see a strong alignment with our vision. Our founding team comprises [relevant background/achievements, e.g., \"experts in X and Y, with prior startup success/deep technical expertise\"].\n\nWe have achieved [key traction, e.g., \"developed a robust MVP with X successful pilots,\" or \"reached $YY ARR with Z% month-over-month growth\"]. We are raising a Seed round of [€X million] to [specific milestones, e.g., \"expand our engineering team, accelerate R&D, and secure key strategic partnerships\"].\n\nI've attached our deck and would be thrilled to explore how Plural's insights and capital can help us scale our ambition.\n\nBest regards,\n\n[Your Name]\n[Your Title]\n[Your Company]\n[Your Phone Number]",
+      "pitchTips": [
+        "Emphasize \"Big Problems\" & Impact: Plural specifically looks for companies solving large, impactful problems. Frame your pitch around the significance of the problem you're addressing and the scale of your solution's potential impact.",
+        "Acknowledge Operator Background: Plural's investors are experienced founders/operators. Show that you understand and appreciate this, perhaps by referencing a specific partner's past company or expertise.",
+        "Clear on European Ambition: While global, they are rooted in European ambition. Clearly state your plans for building a significant European tech company."
+      ]
+    }
+  },
+  {
+    "id": "superseed-ventures",
+    "name": "SuperSeed Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "B2B SaaS, AI, Deep Tech",
+    "ticketSize": "£500k - £1.5M",
+    "contactEmail": "pitch@superseed.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=superseed.com",
+    "dna": {
+      "requirements": "Exceptional B2B SaaS/AI companies, strong founding teams (often with commercial & technical balance), demonstrable early traction (e.g., pilot customers, LOIs, early revenue), clear path to product-market fit, scalable business model.",
+      "dealStructure": "Standard equity investment for Pre-Seed/Seed. Typically aiming for 10-20% ownership in the initial round.",
+      "pitchHelper": "Subject: Pitch: [Company Name] - [B2B SaaS/AI] for [Specific Industry] - Seeking Seed Investment\n\nDear SuperSeed Ventures Team,\n\nMy name is [Your Name] and I'm the co-founder/CEO of [Company Name] ([Your Website URL]). We are developing [briefly describe your B2B SaaS/AI solution, e.g., \"an AI-powered SaaS platform that automates X for Y businesses\"].\n\nOur deep understanding of the [specific industry] market has revealed a critical need for [problem your solution addresses]. Existing tools are [explain their shortcomings]. Our platform provides [unique benefits and features], enabling our customers to [quantifiable outcomes, e.g., \"save Z% on costs and increase productivity by W%\"].\n\nWe are particularly impressed by SuperSeed's dedicated focus on B2B SaaS and AI, and your hands-on approach to helping early-stage companies scale. Our team of [number] brings together [relevant commercial and technical experience, e.g., \"deep industry expertise from X and Y, combined with strong AI/SaaS development backgrounds\"].\n\nWe've already secured [key traction, e.g., \"X pilot customers, generating £YYK ARR,\" or \"strong engagement from Z enterprise clients for our beta program\"]. We are raising a Seed round of [£X million] to [specific goals, e.g., \"expand our product roadmap, build out our sales team, and scale our customer acquisition\"].\n\nAttached is our pitch deck. We would be grateful for the opportunity to share more about [Company Name] and its potential to dominate the [specific niche] market.\n\nBest regards,\n\n[Your Name]\n[Your Title]\n[Your Company]\n[Your Phone Number]",
+      "pitchTips": [
+        "Directly Use \"Pitch\" Email & Subject: They explicitly provide \"pitch@superseed.com\". Use this and a clear \"Pitch\" prefix in your subject line to signal purpose.",
+        "Quantify Early Traction: SuperSeed highly values early traction. Include specific, measurable achievements (MRR, user growth, pilot numbers) directly in your email body to immediately grab attention.",
+        "Balance Commercial & Technical: If your team has both strong commercial and technical co-founders, highlight this in the email, as it aligns with their preference for balanced early teams in B2B SaaS."
+      ]
+    }
   }
 ];
 
