@@ -4024,6 +4024,111 @@ const BRANDS_DATA = [
         "Propose a Specific Technical Use Case: Instead of a generic ad, suggest a tutorial or project demonstrating a specific, valuable use case of SendGrid (e.g., 'Building a user notification system with SendGrid and Next.js')."
       ]
     }
+  },
+  {
+    "id": "zendesk",
+    "name": "Zendesk",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "contact@zendesk.com",
+    "contactForm": "https://www.zendesk.com/partner/get-in-touch/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=zendesk.com",
+    "dna": {
+      "requirements": "Audience interested in customer service, sales, CRM, and business growth. Requires professional content and strong engagement with a B2B audience (e.g., founders, sales leaders, support managers).",
+      "dealStructure": "Co-marketing initiatives, affiliate commissions, referral fees, flat fee for sponsored content, event sponsorships, or speaking opportunities.",
+      "pitchHelper": "Subject: Partnership Opportunity: Elevating Customer Experience with Zendesk to [Your Audience Name]\n\nHi [Zendesk Contact Name],\n\nI'm [Your Name] from [Your Platform], a [brief description of platform/audience, e.g., prominent podcast for SaaS founders, blog for growing businesses]. My audience of [X] professionals is constantly looking for innovative solutions to enhance customer service and streamline operations.\n\nI believe Zendesk's comprehensive suite of customer experience tools would resonate strongly with them. I'd love to explore how a partnership, potentially involving [mention specific idea: e.g., sponsored segment, dedicated review, co-created content], could effectively showcase Zendesk's value to our engaged community.\n\nWould you be open to a brief discussion about the potential synergies?\n\nBest,\n[Your Name]",
+      "pitchTips": [
+        "Clearly state your value proposition for a B2B audience directly in the subject line to immediately capture attention.",
+        "Reference specific Zendesk products or features that you genuinely find valuable and can tie to your audience's needs.",
+        "Provide data on your audience demographics, not just size, to highlight their specific B2B relevance and purchasing power."
+      ]
+    }
+  },
+  {
+    "id": "segment",
+    "name": "Segment (Twilio Segment)",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "partners@segment.com",
+    "contactForm": "https://segment.com/partners/technology/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=segment.com",
+    "dna": {
+      "requirements": "Audience of developers, data engineers, product managers, or marketers interested in customer data platforms, analytics, and integrations. Requires high-quality, technically-focused content.",
+      "dealStructure": "Flat fee for sponsored content, co-produced webinars or technical content, potential product access/credits, event sponsorships, or content feature on Segment channels.",
+      "pitchHelper": "Subject: Partnering with Segment: Reaching [Your Audience Type] Developers and Data Professionals\n\nHi [Segment Contact Name],\n\nI'm [Your Name] from [Your Platform], a [brief description of platform/audience, e.g., popular newsletter for data engineers, YouTube channel for SaaS product managers]. My audience of [X] highly engaged professionals is always seeking robust solutions for customer data management and activation.\n\nSegment stands out as a critical tool for unifying customer data, and I see a strong alignment between your offerings and my audience's needs. I'm keen to discuss a potential collaboration, such as [mention specific idea: e.g., a technical deep-dive sponsorship, a joint webinar, a sponsored tutorial], to educate our community on Segment's power.\n\nCould we schedule a brief call to explore this further?\n\nBest,\n[Your Name]",
+      "pitchTips": [
+        "Highlight your audience's technical proficiency and direct relevance to data infrastructure or customer data roles.",
+        "Suggest specific, technically-focused content ideas that align with Segment's core use cases and features.",
+        "Emphasize audience engagement metrics (e.g., average open rates, watch time, interaction rate) rather than just raw subscriber count."
+      ]
+    }
+  },
+  {
+    "id": "mailgun",
+    "name": "Mailgun",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Affiliate / Referral",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "info@mailgun.com",
+    "contactForm": "https://www.mailgun.com/partners/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=mailgun.com",
+    "dna": {
+      "requirements": "Audience of developers, DevOps professionals, product builders, or small to mid-sized businesses who frequently send transactional or marketing emails. Content should be related to web development, SaaS, or backend infrastructure.",
+      "dealStructure": "Flat fee for sponsored content, free credits/access for creators, affiliate commissions for referrals, or co-marketing opportunities.",
+      "pitchHelper": "Subject: Partnership Idea: Mailgun for Developers at [Your Platform Name]\n\nHi [Mailgun Contact Name],\n\nI'm [Your Name], the creator behind [Your Platform], a [brief description of platform/audience, e.g., popular blog for web developers, podcast for indie hackers]. My audience of [X] developers frequently tackles challenges with reliable email delivery and management.\n\nI've personally found Mailgun to be an indispensable tool for transactional emails and robust email APIs. I believe a partnership could be highly beneficial, allowing me to create [mention specific idea: e.g., a sponsored tutorial on integrating Mailgun, a segment discussing email best practices with Mailgun] that directly addresses my audience's pain points while showcasing your powerful features.\n\nWould you be interested in exploring a potential collaboration?\n\nBest,\n[Your Name]",
+      "pitchTips": [
+        "Clearly state your audience's relevance to email API solutions and development in the subject line.",
+        "Mention a specific Mailgun feature or a practical use case that you believe would resonate most with your audience.",
+        "Provide examples of past successful integrations or sponsorships with other developer tools to demonstrate credibility."
+      ]
+    }
+  },
+  {
+    "id": "appsmith",
+    "name": "Appsmith",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "community@appsmith.com",
+    "contactForm": "https://www.appsmith.com/contact-us",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=appsmith.com",
+    "dna": {
+      "requirements": "Audience of developers, product managers, or technical founders interested in building internal tools, dashboards, or workflows quickly. Content should be related to web development, low-code, productivity, or specific database/API integrations.",
+      "dealStructure": "Flat fee for sponsored content, free access to Appsmith Enterprise features, co-promotion on Appsmith's community channels, or opportunities for contributions to open-source initiatives.",
+      "pitchHelper": "Subject: Collaboration Idea: Appsmith for [Your Audience Type] Building Internal Tools\n\nHi [Appsmith Contact Name],\n\nI'm [Your Name] from [Your Platform], a [brief description of platform/audience, e.g., YouTube channel for full-stack developers, newsletter for SaaS founders]. My audience of [X] professionals is constantly seeking efficient ways to build internal applications and custom dashboards.\n\nAppsmith's open-source, low-code platform for building internal tools is incredibly powerful, and I see a strong fit for my community. I'd love to explore a partnership to create [mention specific idea: e.g., a tutorial series on building an app with Appsmith and [X database], a demo showcasing Appsmith's integration capabilities] that highlights its value to our engaged audience.\n\nWould you be open to a quick chat about this opportunity?\n\nBest,\n[Your Name]",
+      "pitchTips": [
+        "Demonstrate prior experience or knowledge of Appsmith or low-code development, showing genuine interest.",
+        "Propose a specific project or tutorial idea that clearly showcases Appsmith's unique features and solves a real problem for your audience.",
+        "Highlight your audience's hunger for practical, time-saving development solutions and tools."
+      ]
+    }
+  },
+  {
+    "id": "typeform",
+    "name": "Typeform",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "hello@typeform.com",
+    "contactForm": "https://www.typeform.com/partners/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=typeform.com",
+    "dna": {
+      "requirements": "Audience interested in data collection, user feedback, lead generation, interactive content, surveys, or quizzes. Requires professional and engaging content that aligns with Typeform's brand aesthetic and user experience focus.",
+      "dealStructure": "Flat fee for sponsored content, affiliate commissions, co-marketing opportunities, or product access/credits for premium features.",
+      "pitchHelper": "Subject: Partnership Opportunity: Engaging Audiences with Typeform on [Your Platform]\n\nHi [Typeform Contact Name],\n\nI'm [Your Name] from [Your Platform], a [brief description of platform/audience, e.g., popular marketing blog, podcast for small business owners]. My audience of [X] professionals is constantly looking for innovative ways to interact with their users, collect feedback, and generate leads.\n\nTypeform's beautiful and engaging forms are a perfect fit for these needs, offering a superior user experience. I'm excited to propose a partnership to create [mention specific idea: e.g., a sponsored guide on maximizing Typeform for lead generation, a segment demonstrating interactive surveys with Typeform] that resonates deeply with my community.\n\nWould you be open to a brief conversation about how we can collaborate?\n\nBest,\n[Your Name]",
+      "pitchTips": [
+        "Showcase how Typeform's visual appeal and interactivity align perfectly with your existing content style and audience expectations.",
+        "Highlight specific use cases (e.g., lead generation, customer feedback, event registration) that are strong points for Typeform and relevant to your audience.",
+        "Provide examples of how you've previously incorporated interactive elements or surveys into your content, demonstrating your ability to promote engagement."
+      ]
+    }
   }
 ];
 

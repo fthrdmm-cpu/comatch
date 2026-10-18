@@ -1826,6 +1826,114 @@ const INVESTORS_DATA = [
         "Balance Commercial & Technical: If your team has both strong commercial and technical co-founders, highlight this in the email, as it aligns with their preference for balanced early teams in B2B SaaS."
       ]
     }
+  },
+  {
+    "id": "firstminute-capital",
+    "name": "Firstminute Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "B2B SaaS, AI, Fintech, Deep Tech, Consumer, Healthcare",
+    "ticketSize": "$500k - $2M",
+    "contactEmail": "hello@firstminute.capital",
+    "contactForm": "https://firstminute.capital/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=firstminute.capital",
+    "dna": {
+      "requirements": "Strong founding team, large market opportunity, early traction (even if qualitative), compelling vision. Often look for founders with deep domain expertise or exceptional prior experience. B2B SaaS, AI, Fintech, Deep Tech focus.",
+      "dealStructure": "Standard Seed equity terms, typically taking 10-20% ownership for their initial check. Focus on long-term partnership.",
+      "pitchHelper": "Subject: [Company Name] | AI-driven SaaS for [Specific Problem] | Seed Round\n\nHi [Investor Name/Team],\n\nI'm [Your Name], Co-founder & CEO of [Company Name]. We're building [brief one-sentence description of what you do, e.g., \"an AI-powered platform that automates X for Y\"].\n\nWe've identified a critical pain point for [target customers] in [industry/sector] related to [specific problem], which currently costs them [quantifiable impact, e.g., \"millions in lost productivity\" or \"significant manual effort\"]. Our solution leverages [key tech, e.g., \"proprietary AI algorithms\"] to [explain how it solves the problem and unique benefit, e.g., \"reduce operational costs by 30% and improve decision-making accuracy\"].\n\nWe've achieved [1-2 key traction metrics, e.g., \"secured X customers with $Y ARR/MRR in 6 months\" or \"piloted with 3 enterprise clients showing Z% efficiency gains\"]. Our team of [briefly mention team's relevant background, e.g., \"ex-Google AI engineers and SaaS founders\"] is uniquely positioned to execute on this vision.\n\nWe're currently raising a [e.g., \"$1.5M Seed round\"] to [briefly state use of funds, e.g., \"expand our engineering team and accelerate product development\"]. I've attached our deck for your review and would be grateful for the opportunity to discuss how [Company Name] is poised to disrupt the [market] space.\n\nBest,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Deck (e.g., DocSend)]",
+      "pitchTips": [
+        "Personalized Hook: Reference a specific portfolio company, a recent article, or a partner's publicly stated interest that aligns directly with your company's mission or tech.",
+        "Concise & Data-Driven: Get straight to the point with quantifiable traction and market opportunity. Firstminute values founders who can articulate their vision clearly and back it with data.",
+        "Subject Line Clarity: Use a clear, informative subject line that immediately conveys your company's focus and stage. Avoid overly creative or vague titles."
+      ]
+    }
+  },
+  {
+    "id": "fly-ventures",
+    "name": "Fly Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "Deep Tech, AI/ML, SaaS, B2B",
+    "ticketSize": "€500k - €1.5M",
+    "contactEmail": "info@fly.vc",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=fly.vc",
+    "dna": {
+      "requirements": "Strong technical founding team, solving complex problems with proprietary technology, clear product vision, large addressable market, early signs of product-market fit. Focus on Deep Tech, AI/ML, SaaS, B2B.",
+      "dealStructure": "Standard Seed equity, typically seeking 10-15% ownership. Convertible notes for very early pre-seed sometimes.",
+      "pitchHelper": "Subject: Deep Tech Seed: [Company Name] - AI for [Specific Industry/Problem]\n\nDear Fly Ventures Team,\n\nMy name is [Your Name], Co-founder & CEO of [Company Name]. We are developing [brief, tech-focused description, e.g., \"a novel AI-driven platform that optimizes X using Y proprietary algorithms\"] for [target market/industry].\n\nOur core innovation lies in [explain the deep tech aspect, e.g., \"our breakthrough in Z neural network architecture\" or \"our patented sensor technology\"], which allows us to [quantifiable benefit, e.g., \"achieve Z% higher accuracy/efficiency/speed compared to existing solutions\"] in [specific use case]. This directly addresses the critical need for [problem being solved] in [industry], a market we estimate to be worth [market size].\n\nOur team comprises [briefly mention technical credentials, e.g., \"PhD experts in AI/ML from top research institutions and experienced B2B SaaS builders\"]. We have successfully [1-2 key technical milestones or early traction, e.g., \"developed a functional MVP with X demonstrable capabilities\" or \"secured a pilot with an early adopter showing Y results\"].\n\nWe are raising a Seed round of [e.g., \"€1M\"] to [use of funds, e.g., \"expand our R&D efforts and bring our product to its first commercial launch\"]. We believe our deep tech approach and strong technical foundation align well with Fly Ventures' investment thesis. Our deck is attached for your review.\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Deck (e.g., DocSend)]",
+      "pitchTips": [
+        "Lead with Technology: Fly Ventures is deeply technical. Your pitch should emphasize the unique technological innovation, the underlying science, and how it creates a defensible advantage.",
+        "Technical Team Emphasis: Highlight the academic and industry backgrounds of your technical co-founders, showcasing their expertise relevant to your deep tech solution.",
+        "Focus on Problem Complexity: Clearly articulate the hard, complex problem you are solving and why only a deep tech approach like yours can effectively address it, demonstrating a large, unmet need."
+      ]
+    }
+  },
+  {
+    "id": "fintech-collective",
+    "name": "Fintech Collective",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "Fintech (all sub-sectors: infrastructure, crypto/blockchain, wealthtech, insurtech, payments, lending, etc.)",
+    "ticketSize": "$500k - $3M",
+    "contactEmail": "info@fintech.io",
+    "contactForm": "https://www.fintech.io/for-founders",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=fintech.io",
+    "dna": {
+      "requirements": "Strong founding team with domain expertise in financial services, innovative solution addressing a significant pain point in fintech, scalable business model, early product validation/traction, regulatory awareness. Exclusively Fintech focused.",
+      "dealStructure": "Standard Seed/Series A equity terms.",
+      "pitchHelper": "Subject: Seed Stage: [Company Name] - Revolutionizing [Specific Fintech Sub-sector]\n\nDear Fintech Collective Team,\n\nMy name is [Your Name], Co-founder & CEO of [Company Name]. We are building [brief, fintech-specific description, e.g., \"a B2B SaaS platform that streamlines compliance for digital asset exchanges\" or \"an embedded finance solution for SMBs in the gig economy\"].\n\nWe've identified a critical challenge for [target financial institution/business] in [specific fintech area], currently leading to [quantifiable problem, e.g., \"manual processes causing X% error rates\" or \"lack of access to Y financial services\"]. Our platform leverages [key technology/approach, e.g., \"AI-driven fraud detection\" or \"novel blockchain infrastructure\"] to [explain how it solves the problem and unique benefit, e.g., \"reduce operational costs by Z% and enable new revenue streams\"].\n\nOur team brings deep expertise from [relevant financial institutions/fintech companies], having [relevant experience, e.g., \"managed multi-billion dollar portfolios\" or \"scaled fintech products to millions of users\"]. We've achieved strong early traction, including [1-2 key metrics, e.g., \"onboarded X pilot customers,\" \"$Y processing volume monthly,\" or \"received regulatory approval for Z\"].\n\nWe are raising a Seed round of [e.g., \"$1.5M\"] to [use of funds, e.g., \"accelerate product development and expand our market reach\"]. We believe our vision for the future of [fintech sub-sector] aligns perfectly with Fintech Collective's focus. Our deck is attached.\n\nThank you for your consideration.\n\nSincerely,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Deck (e.g., DocSend)]",
+      "pitchTips": [
+        "Domain Expertise: Clearly articulate your team's background in financial services. Fintech Collective values founders who understand the nuances and regulatory landscape of the industry.",
+        "Fintech-Specific Language: Use precise fintech terminology. Show you understand the specific market, regulations, and challenges within your niche.",
+        "Show Regulatory Awareness: Briefly touch upon how you are approaching regulatory compliance or how your solution fits within the existing financial framework, as this is crucial in fintech."
+      ]
+    }
+  },
+  {
+    "id": "verve-ventures",
+    "name": "Verve Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "Deep Tech, B2B SaaS, Fintech, HealthTech, AI/ML",
+    "ticketSize": "CHF 500k - CHF 5M",
+    "contactEmail": "pitches@verve.vc",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=verve.vc",
+    "dna": {
+      "requirements": "Strong founding team, compelling and scalable business model, addressing a significant market, defensible technology/IP, clear go-to-market strategy, based in Europe. Focus on Deep Tech, B2B SaaS, FinTech, HealthTech, AI/ML.",
+      "dealStructure": "Standard Seed/Series A equity terms, usually taking a significant minority stake.",
+      "pitchHelper": "Subject: Seed Round: [Company Name] - Deep Tech SaaS for [Specific Industry Challenge]\n\nDear Verve Ventures Team,\n\nMy name is [Your Name], Co-founder & CEO of [Company Name]. We are building [brief, clear description, e.g., \"a Deep Tech SaaS platform that leverages AI to optimize X for Y enterprises\"].\n\nWe're tackling the critical issue of [specific problem] within the [industry/sector], which results in [quantifiable negative impact, e.g., \"significant operational inefficiencies\" or \"data silos costing Z% of revenue\"]. Our proprietary [mention tech, e.g., \"AI inference engine\" or \"novel data analytics framework\"] provides [unique solution/benefit, e.g., \"unprecedented accuracy and scalability\"] to enable [clear outcome, e.g., \"data-driven decision-making and automated workflows\"].\n\nOur founding team has deep expertise in [relevant tech/industry, e.g., \"AI research and enterprise software sales\"]. We have demonstrated early product validation and traction by [1-2 key achievements, e.g., \"securing X LOIs from leading enterprises\" or \"achieving Y% month-over-month growth with our MVP\"].\n\nWe are currently raising a [e.g., \"CHF 1.5M Seed round\"] to [use of funds, e.g., \"further develop our core AI models and expand our sales team across Europe\"]. We believe our Deep Tech approach and focus on tangible B2B impact resonate strongly with Verve Ventures' investment focus. Our detailed deck is attached.\n\nThank you for your time and consideration.\n\nSincerely,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Deck (e.g., DocSend)]",
+      "pitchTips": [
+        "Direct Pitch Email: Use their designated `pitches@verve.vc` email for initial outreach. This indicates they actively review unsolicited pitches.",
+        "European Focus: Emphasize your connection to the European market, your expansion plans within Europe, or why Europe is a key market for your solution.",
+        "Quantify Impact for Enterprises: For B2B SaaS/Deep Tech, clearly articulate the quantifiable business impact (cost savings, revenue generation, efficiency gains) your solution delivers for enterprises."
+      ]
+    }
+  },
+  {
+    "id": "capitalt",
+    "name": "CapitalT",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed",
+    "sectors": "AI-driven B2B SaaS",
+    "ticketSize": "€500k - €1.5M",
+    "contactEmail": "hello@capitalt.com",
+    "contactForm": "https://capitalt.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=capitalt.com",
+    "dna": {
+      "requirements": "Strong, diverse founding team (they have a unique data-driven approach to evaluating team composition and dynamics), clear problem/solution fit for AI-driven B2B SaaS, scalable model, early product or customer validation, potential for significant market impact.",
+      "dealStructure": "Standard Seed equity, typically taking 10-20% ownership.",
+      "pitchHelper": "Subject: Seed Stage AI SaaS: [Company Name] - [Briefly State Your AI Solution]\n\nDear CapitalT Team,\n\nMy name is [Your Name], Co-founder & CEO of [Company Name]. We are developing [brief, clear description, e.g., \"an AI-driven B2B SaaS platform that revolutionizes X for Y businesses\"].\n\nOur solution addresses the critical inefficiencies and challenges faced by [target businesses] in [industry/function] regarding [specific problem], which often leads to [quantifiable negative outcome]. By leveraging our [mention AI approach, e.g., \"proprietary machine learning models and natural language processing\"], we enable [unique benefits, e.g., \"automation of complex tasks, predictive insights, and significant operational cost reductions\"].\n\nWhat truly sets us apart, beyond our technology, is our commitment to building a high-performing and diverse team. Our founding team, composed of [briefly mention diverse backgrounds, e.g., \"expertise in AI research, enterprise sales, and product management, with a strong emphasis on inclusive leadership\"], is uniquely positioned to execute on this vision. We have already achieved [1-2 key traction metrics, e.g., \"secured X paying customers with $Y MRR\" or \"completed successful pilot programs demonstrating Z% efficiency gains\"].\n\nWe are seeking to raise a [e.g., \"€1M Seed round\"] to [use of funds, e.g., \"scale our engineering team and expand our customer acquisition efforts\"]. We are particularly drawn to CapitalT's data-driven approach to team evaluation and your focus on impactful AI SaaS. Our deck is attached for your review.\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Deck (e.g., DocSend)]",
+      "pitchTips": [
+        "Highlight Team Diversity & Dynamics: CapitalT has a very unique approach to team evaluation. Emphasize your team's diverse skills, backgrounds, and how you foster a strong team culture (if applicable and genuine).",
+        "AI's Core Role: Clearly explain how AI is *central* to your solution, not just a buzzword. Detail the specific AI techniques used and the unique value proposition it creates for B2B clients.",
+        "Show Product-Market Fit: Demonstrate early validation through customer testimonials, pilot results, or revenue, as they look for teams that are already proving their solution's value."
+      ]
+    }
   }
 ];
 
