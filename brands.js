@@ -4129,6 +4129,111 @@ const BRANDS_DATA = [
         "Provide examples of how you've previously incorporated interactive elements or surveys into your content, demonstrating your ability to promote engagement."
       ]
     }
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "partnerships@openai.com",
+    "contactForm": "https://openai.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=openai.com",
+    "dna": {
+      "requirements": "Strong alignment with OpenAI's mission of ensuring artificial general intelligence benefits all of humanity. Preference for innovative use cases, educational content, or events (hackathons, conferences) targeting developers, researchers, or tech enthusiasts. High-quality content and significant reach within the AI/tech community are crucial. Ethical considerations and responsible AI development are key themes.",
+      "dealStructure": "Financial sponsorship for events or dedicated content, API credits for contests or innovative projects, co-marketing opportunities, access to beta features for influential creators, technical support for deep integrations.",
+      "pitchHelper": "Subject: Partnership Proposal: Integrating [Your Content/Community] with OpenAI's Ecosystem\n\nDear OpenAI Partnerships Team,\n\nI'm [Your Name] from [Your Organization/Channel], a [brief description of your platform/audience, e.g., tech podcast reaching X developers, YouTube channel focused on AI development with Y subscribers]. Our mission aligns with advancing AI understanding and application, and we believe our audience would greatly benefit from deeper engagement with OpenAI's cutting-edge technologies.\n\nWe're particularly interested in exploring sponsorship opportunities for [specific initiative, e.g., our upcoming series on AI development, our community hackathon focused on GPT APIs, a sponsored segment showcasing DALL-E/ChatGPT capabilities]. We aim to [explain goal, e.g., educate developers on ethical AI use, inspire new applications with your tools].\n\nCould we discuss how a collaboration could amplify OpenAI's message within our engaged community, potentially through [mention specific deal structure ideas, e.g., a flat fee for dedicated content, API credit integration for a contest, co-hosting a workshop]? We're eager to contribute to the responsible and innovative growth of the AI ecosystem.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Clearly articulate how your content/community aligns with OpenAI's mission of ensuring AI benefits all of humanity, not just promoting tool usage, by focusing on safe, ethical, and beneficial applications.",
+        "Highlight specific, innovative use cases or ethical discussions related to OpenAI's products that you plan to cover, demonstrating thoughtful engagement beyond basic tutorials.",
+        "Focus on the quality and active engagement of your developer or tech-savvy audience, emphasizing genuine interest in AI advancement rather than just raw follower count."
+      ]
+    }
+  },
+  {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "partnerships@anthropic.com",
+    "contactForm": "https://www.anthropic.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=anthropic.com",
+    "dna": {
+      "requirements": "Strong emphasis on AI safety, responsible development, and ethical considerations. Target audience should consist of AI researchers, developers focused on LLM safety, policymakers, or academic institutions. Content should reflect a deep understanding of large language models and their societal impact.",
+      "dealStructure": "Research grants, event sponsorship (especially for AI safety/ethics conferences), API credits for academic/non-profit projects, co-marketing opportunities for thought leadership content.",
+      "pitchHelper": "Subject: Collaboration Proposal: Advancing Responsible AI with [Your Platform]\n\nDear Anthropic Partnerships Team,\n\nMy name is [Your Name] from [Your Organization/Channel], a [brief description of your platform/audience, e.g., an AI ethics research group, a developer community focused on LLM safety, a podcast exploring the societal impact of AI]. We deeply resonate with Anthropic's commitment to developing safe and steerable AI systems.\n\nWe are actively seeking to [explain your initiative, e.g., host a series of discussions on constitutional AI, organize a hackathon focused on mitigating LLM biases, publish in-depth analyses of AI safety benchmarks]. Given your pioneering work with Claude and responsible AI, we believe a partnership would be mutually beneficial, offering Anthropic visibility among our [quantify audience, e.g., 60,000 engaged researchers and developers] while enriching our content with your expertise.\n\nWould you be open to exploring sponsorship opportunities for [specific project, e.g., our upcoming Responsible AI Summit, a dedicated research paper series]? We envision a collaboration that could include [mention deal structure ideas, e.g., financial support for event logistics, providing Claude API access for research projects, a co-authored piece].\n\nThank you for considering our proposal to collaboratively foster safer AI development.\n\nSincerely,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Clearly articulate your understanding of and commitment to AI safety and responsible AI, directly referencing Anthropic's core principles and research areas like Constitutional AI.",
+        "Propose initiatives that focus on the *impact* and *safety* of AI, demonstrating a deeper alignment than just promoting their product's features.",
+        "Target an audience that is either academic, policy-oriented, or deeply technical in AI/ML, emphasizing quality engagement and intellectual rigor over broad, general reach."
+      ]
+    }
+  },
+  {
+    "id": "perplexity-ai",
+    "name": "Perplexity AI",
+    "type": "brand",
+    "category": "Productivity",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partnerships@perplexity.ai",
+    "contactForm": "https://www.perplexity.ai/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=perplexity.ai",
+    "dna": {
+      "requirements": "Audience interested in AI, productivity, research, verifiable information, or developer tools. Content should authentically showcase Perplexity AI's accuracy, source citation, and innovative features (e.g., Copilot, Collections, API). High-quality content with clear calls to action.",
+      "dealStructure": "Financial sponsorships for podcast/YouTube segments, affiliate links for Perplexity Pro subscriptions, product credits for creators, co-marketing for content pieces or product launches.",
+      "pitchHelper": "Subject: Sponsorship Opportunity: Elevating [Your Content Topic] with Perplexity AI\n\nDear Perplexity AI Partnerships Team,\n\nI'm [Your Name], host/creator of [Your Podcast/Channel/Newsletter], where we [briefly describe your content and audience, e.g., explore cutting-edge AI tools for productivity, provide in-depth analysis for 40,000 tech enthusiasts]. I'm a big admirer of Perplexity AI's innovative approach to answer engine technology, especially its transparency with sources.\n\nI believe my audience, who are constantly seeking reliable information and powerful AI tools, would highly value an introduction to Perplexity AI. I envision a sponsorship that could involve [mention specific ideas, e.g., dedicated segments on our weekly podcast, a tutorial video showcasing Perplexity Pro's features, an integrated review in our newsletter]. We could highlight [specific Perplexity feature, e.g., 'Discover' function, API for developers, Pro features] and drive adoption through [e.g., a custom affiliate link, promo code].\n\nWe typically see [mention metrics, e.g., X average listens/views, Y open rate] and are confident we can deliver a highly engaged audience. Would you be interested in discussing a potential partnership to integrate Perplexity AI into our upcoming content?\n\nThank you for your consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Emphasize how your content specifically aligns with the *value proposition* of Perplexity AI (e.g., research, fact-checking, developer API use, productivity gains) rather than just general AI interest.",
+        "Provide concrete, natural ideas for how you would integrate Perplexity AI into your content, showcasing specific features and benefits relevant to your audience without feeling forced.",
+        "Quantify your audience's engagement and relevance (e.g., 'my audience of software engineers actively researches new tools') beyond just follower counts, demonstrating a clear target market."
+      ]
+    }
+  },
+  {
+    "id": "cal-com",
+    "name": "Cal.com",
+    "type": "brand",
+    "category": "Productivity",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partnerships@cal.com",
+    "contactForm": "https://cal.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=cal.com",
+    "dna": {
+      "requirements": "Enthusiasm for open-source software and developer-focused tools. Audience should be interested in productivity, workflow automation, or building custom solutions. Content creators should demonstrate authentic use and promotion of Cal.com's features (e.g., API, self-hosting, integrations).",
+      "dealStructure": "Financial sponsorship for open-source projects or developer events, premium account access for creators, affiliate commissions, co-marketing via blog posts or social media mentions, feature spotlights within the Cal.com community.",
+      "pitchHelper": "Subject: Open-Source Collaboration: Integrating Cal.com into [Your Community/Content]\n\nDear Cal.com Partnerships Team,\n\nI'm [Your Name], the founder/creator of [Your Organization/Channel], a [brief description, e.g., growing open-source developer community, a YouTube channel focused on developer productivity with X subscribers]. I'm a huge advocate for open-source solutions and have been incredibly impressed with Cal.com's mission to create an open and flexible scheduling infrastructure.\n\nMy audience/community is actively seeking efficient and customizable tools, and I believe Cal.com's self-hostable and API-first approach perfectly aligns with their needs. I'd love to explore a partnership where we could [mention specific ideas, e.g., integrate Cal.com as a scheduling solution for our community events, create a tutorial series on customizing Cal.com for specific workflows, highlight Cal.com's API in a developer workshop].\n\nWe could offer [mention what you offer, e.g., dedicated promotional slots, a featured integration guide, a co-branded open-source project] to help expand Cal.com's reach within the developer and productivity-focused communities. Would you be interested in discussing how we can work together to promote open-source innovation and superior scheduling?\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Highlight your genuine connection to open-source software and developer communities, demonstrating an authentic fit with Cal.com's ethos and its commitment to an open ecosystem.",
+        "Propose integration ideas that go beyond simple advertisements, such as building on top of Cal.com's API, creating custom themes, or contributing to its open-source ecosystem.",
+        "Showcase how your audience actively uses or is interested in productivity and developer tools, making it clear that they are a relevant and engaged target for a flexible scheduling platform."
+      ]
+    }
+  },
+  {
+    "id": "readme",
+    "name": "ReadMe",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partners@readme.com",
+    "contactForm": "https://readme.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=readme.com",
+    "dna": {
+      "requirements": "Developer-centric audience. Content focused on APIs, documentation best practices, developer experience, or building technical products. Authentic advocacy for clear, interactive, and user-friendly API documentation. Engagement with developer communities (e.g., hackathons, dev conferences, online forums).",
+      "dealStructure": "Event/hackathon sponsorship, financial support for high-quality technical content (e.g., tutorials, deep-dives), premium account access for creators, co-marketing through their blog/social channels, potential for featured content in ReadMe's resources.",
+      "pitchHelper": "Subject: Partnership Idea: Enhancing Developer Experience with ReadMe on [Your Platform]\n\nDear ReadMe Partnerships Team,\n\nI'm [Your Name] from [Your Organization/Channel], a [brief description, e.g., platform dedicated to API development tutorials, a podcast interviewing leading developers, a newsletter reaching 35,000 software engineers]. My work consistently emphasizes the importance of excellent API documentation and a superior developer experience, making me a strong admirer of ReadMe's platform.\n\nI believe my audience, who are actively building with and consuming APIs, would greatly benefit from understanding how ReadMe empowers businesses to create interactive and user-friendly documentation. I'm keen to explore sponsorship opportunities that could involve [mention specific ideas, e.g., a dedicated segment on our podcast discussing best practices for API docs using ReadMe, a technical deep-dive on our blog showcasing ReadMe's features, sponsoring our upcoming developer workshop focused on API integration].\n\nOur content typically garners [mention metrics, e.g., X views/reads, Y engagement rate] from a highly technical audience. Would you be open to discussing how a partnership could help ReadMe reach more API builders and enthusiasts, fostering better documentation standards across the industry?\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Demonstrate a deep understanding of API documentation best practices and the challenges developers face, showing genuine insight into ReadMe's value proposition for improving DX.",
+        "Propose content ideas that are highly technical and provide tangible value to developers, such as tutorials on interactive docs, case studies of great API portals, or discussions on improving the developer journey using ReadMe.",
+        "Highlight your audience's composition (e.g., backend developers, API product managers, technical writers, DevOps engineers) to clearly illustrate a direct and relevant target market for ReadMe's solutions."
+      ]
+    }
   }
 ];
 

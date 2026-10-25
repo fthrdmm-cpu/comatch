@@ -1934,6 +1934,116 @@ const INVESTORS_DATA = [
         "Show Product-Market Fit: Demonstrate early validation through customer testimonials, pilot results, or revenue, as they look for teams that are already proving their solution's value."
       ]
     }
+  },
+  {
+    "id": "aster-capital",
+    "name": "Aster Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Early Series A",
+    "sectors": "Deep Tech, Industrial Tech, Climate Tech, Enterprise Software (SaaS)",
+    "ticketSize": "€500k - €2M",
+    "contactEmail": "contact@aster.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=aster.com",
+    "dna": {
+      "requirements": "Strong founding team, deep tech with defensible IP, B2B focus, scalable business model, addressing large industrial or climate challenges, global ambition.",
+      "dealStructure": "Equity investment, standard VC terms for Seed/Series A rounds. Typically seeking 15-25% dilution at Seed stage.",
+      "pitchHelper": "Subject: Seed Funding - [Startup Name]: Deep Tech AI for Industrial Automation\n\nDear Aster Capital Team,\n\nI'm reaching out from [Startup Name], where we're developing an innovative [briefly describe deep tech solution, e.g., AI-powered predictive maintenance platform] for the industrial sector. Our technology leverages [mention key tech, e.g., novel sensor fusion and machine learning algorithms] to [quantifiable benefit, e.g., reduce machinery downtime by 30% and optimize operational efficiency for manufacturers].\n\nWe have a strong founding team with [mention relevant experience/background]. We've secured [mention any early traction, e.g., pilot projects with major industrial players, key partnerships, or initial revenue].\n\nGiven Aster Capital's deep expertise in industrial tech and deep tech, we believe our vision aligns perfectly with your investment thesis. We are currently raising a Seed round of [amount] to [achieve key milestones, e.g., scale our pilot programs and expand our engineering team].\n\nHere's a brief overview:\n*   **Problem**: [Briefly state the industrial problem you solve].\n*   **Solution**: [Your unique deep tech solution].\n*   **Traction**: [Key achievements, e.g., LoIs, early revenue, successful pilots].\n*   **Team**: [Briefly highlight founder expertise].\n\nWe've attached our deck for your review and would appreciate the opportunity to discuss how our solution can transform industrial operations.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Startup Name]\n[Website]",
+      "pitchTips": [
+        "Personalize by Sector Focus: Specifically mention how your deep tech/industrial solution aligns with their portfolio companies or investment themes outlined on their website. Avoid generic intros.",
+        "Highlight IP & Team Strength: Aster heavily emphasizes strong intellectual property and experienced teams. Make these elements clear and prominent in the first few sentences to capture attention.",
+        "Concise & Data-Driven: Get straight to the point with measurable results or strong indicators of potential impact. Aster deals with complex tech, so demonstrate clear value proposition and scientific rigor quickly."
+      ]
+    }
+  },
+  {
+    "id": "shard-capital-venture",
+    "name": "Shard Capital Venture",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, Fintech, Deep Tech, Digital Health, Gaming",
+    "ticketSize": "£250k - £1.5M",
+    "contactEmail": "venture@shardcapital.com",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=shardcapital.com",
+    "dna": {
+      "requirements": "Strong founding team, defensible technology/business model, large market potential, clear path to scale, early traction (MVP/pilot projects), primarily UK/European focus.",
+      "dealStructure": "Equity investment, typically SAFE or Convertible Note for Pre-Seed, then equity for Seed, usually seeking 10-20% dilution.",
+      "pitchHelper": "Subject: Pre-Seed Round - [Startup Name]: Disrupting [Your Sector] with [Key Technology]\n\nDear Shard Capital Ventures Team,\n\nI'm [Your Name], Co-founder of [Startup Name], an innovative [SaaS/Fintech/Deep Tech] startup transforming [specific problem/market]. We are building [briefly describe your product/solution, e.g., an AI-powered compliance platform for SMEs, a B2B SaaS tool for supply chain optimization].\n\nOur [unique selling proposition, e.g., proprietary algorithm, novel data approach] addresses [specific pain point] by [how it solves it, e.g., automating manual processes, providing real-time insights], leading to [quantifiable benefit, e.g., 50% cost reduction, 2x efficiency gain].\n\nWe are currently raising a Pre-Seed round of [amount] to [achieve key milestones, e.g., expand our user base to 1,000 active customers, finalize our product roadmap for V2]. We believe our mission aligns well with Shard Capital Venture's focus on early-stage, high-growth tech companies.\n\nKey highlights:\n*   **Product**: [Brief description of MVP/product].\n*   **Traction**: [Mention key metrics like early users, pilot results, MRR, LoIs].\n*   **Team**: [Highlight relevant experience of founders].\n\nWe have attached our pitch deck and would appreciate the opportunity to share more about our vision.\n\nThank you for your consideration.\n\nSincerely,\n[Your Name]\n[Your Title]\n[Startup Name]\n[Website]",
+      "pitchTips": [
+        "Clear Financial/Market Opportunity: Shard Capital is part of a larger financial services group. Emphasize the clear market opportunity, business model, and potential for financial returns early in the email.",
+        "Focus on UK/European Relevance: If your startup has a strong UK/European nexus, highlight this. Shard Capital has a significant focus on the region.",
+        "Direct & Professional Tone: Maintain a very professional and direct tone. Avoid overly casual language or excessive hype. Provide facts and clear value propositions."
+      ]
+    }
+  },
+  {
+    "id": "seed-x",
+    "name": "Seed X",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed / Seed",
+    "sectors": "SaaS, AI, Fintech, Deep Tech, Digital Health",
+    "ticketSize": "$500k - $1.5M",
+    "contactEmail": "info@seedx.vc",
+    "contactForm": "https://www.seedx.vc/pitch-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=seedx.vc",
+    "dna": {
+      "requirements": "Exceptional founding team, large market opportunity, innovative product, strong vision for growth, early validation, European and Israeli market focus.",
+      "dealStructure": "Standard equity investment for Seed rounds, often leading or co-leading. Typical dilution for Seed around 15-20%.",
+      "pitchHelper": "Subject: [Startup Name] - Pre-Seed/Seed Round: [Your Solution] for [Target Market]\n\nDear Seed X Team,\n\nMy name is [Your Name], and I'm the CEO & Co-founder of [Startup Name], a [briefly describe your company, e.g., AI-powered SaaS platform] designed to revolutionize [specific industry/problem]. We're addressing [problem] with our [unique solution/technology], which enables [quantifiable benefit, e.g., businesses to save 40% on operational costs, developers to build x faster].\n\nOur vision is to [state ambitious but achievable goal]. We have already achieved [mention key traction, e.g., MVP launched with 5 paying customers, strong user growth, significant partnerships].\n\nWe are currently raising a [Pre-Seed/Seed] round of [amount] and believe our focus on [e.g., deep tech innovation, SaaS scalability] aligns perfectly with Seed X's investment thesis in early-stage, high-potential ventures across Europe and Israel.\n\nKey aspects of our venture:\n*   **Innovation**: [Briefly highlight what makes your tech/approach unique].\n*   **Market**: [Size of the market opportunity].\n*   **Team**: [Briefly mention relevant experience of key founders].\n*   **Traction**: [1-2 key metrics/achievements].\n\nWe've attached our deck and would be thrilled to schedule a brief call to delve deeper.\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Startup Name]\n[Website]",
+      "pitchTips": [
+        "Highlight Founder Strength: Seed X places a strong emphasis on the founding team. Dedicate a sentence or two early on to showcasing the unique qualifications and relevant experience of the founders.",
+        "European/Israeli Market Fit: If your startup has ties or ambitions in either the European or Israeli markets, make this explicit as it aligns with their geographic focus.",
+        "Concise & Value-Driven: Avoid jargon. Clearly articulate the problem, your solution, and the value proposition (especially quantifiable benefits) in a very direct manner."
+      ]
+    }
+  },
+  {
+    "id": "finch-capital",
+    "name": "Finch Capital",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Early Series A",
+    "sectors": "Fintech, AI (with financial applications), SaaS (for financial industry)",
+    "ticketSize": "€500k - €3M",
+    "contactEmail": "info@finchcapital.com",
+    "contactForm": "https://finchcapital.com/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=finchcapital.com",
+    "dna": {
+      "requirements": "Strong founder-market fit, disruptive innovation in financial services, defensible IP, clear path to revenue, significant market opportunity, European focus.",
+      "dealStructure": "Equity investment, typically SAFE or Convertible Note for early Seed, then equity for later Seed. Expect 15-25% dilution.",
+      "pitchHelper": "Subject: Seed Round - [Startup Name]: Next-gen [Fintech/AI Solution] for [Specific Financial Sector]\n\nDear Finch Capital Team,\n\nI'm [Your Name], Co-founder of [Startup Name], an innovative [Fintech/AI SaaS] company addressing the critical need for [specific problem in financial services, e.g., enhanced fraud detection, streamlined lending processes, AI-driven investment insights] within the [target financial sector].\n\nOur platform utilizes [mention core technology, e.g., proprietary machine learning models, blockchain-based protocols] to deliver [quantifiable benefits, e.g., a 20% reduction in financial crime risk, 3x faster loan approvals, superior alpha generation]. We believe our solution is uniquely positioned to capitalize on the evolving demands of the European financial market.\n\nWe are currently raising a Seed round of [amount] to [achieve key milestones, e.g., expand our European market presence, integrate with two major financial institutions, scale our data science team]. Given Finch Capital's deep expertise and network in European Fintech, we are confident this aligns with your investment focus.\n\nHighlights:\n*   **Innovation**: [Briefly describe your unique approach to fintech/AI].\n*   **Traction**: [Key achievements, e.g., successful pilots with banks, early MRR, regulatory approvals].\n*   **Team**: [Highlight relevant financial services/tech experience of founders].\n\nAttached is our pitch deck for your review. We would be grateful for the opportunity to discuss our vision.\n\nThank you,\n[Your Name]\n[Your Title]\n[Startup Name]\n[Website]",
+      "pitchTips": [
+        "Deep Fintech/AI Specificity: Finch Capital is a specialist. Clearly articulate your fintech/AI solution and its direct relevance to the financial services industry, demonstrating a deep understanding of the sector.",
+        "European Market Focus: Emphasize your strategy for the European market and any early traction or partnerships within Europe, as this is a core geographic focus for them.",
+        "Quantifiable Financial Impact: Financial VCs prioritize measurable impact. Highlight clear, quantifiable benefits of your solution (e.g., cost savings, revenue increase, risk reduction) in your pitch."
+      ]
+    }
+  },
+  {
+    "id": "360-capital-partners",
+    "name": "360 Capital Partners",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed / Series A",
+    "sectors": "Deep Tech, SaaS, Industrial Tech, Fintech, Cybersecurity, Healthcare",
+    "ticketSize": "€500k - €3M",
+    "contactEmail": "contact@360capital.vc",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=360capital.vc",
+    "dna": {
+      "requirements": "Ambitious teams, disruptive technology, strong market potential, defensible business model, European founders/market focus.",
+      "dealStructure": "Equity investment, standard Seed/Series A terms. Anticipate 15-25% dilution at Seed.",
+      "pitchHelper": "Subject: Seed Round - [Startup Name]: Deep Tech SaaS for [Specific European Industry]\n\nDear 360 Capital Partners Team,\n\nI'm [Your Name], Co-founder of [Startup Name], a [Deep Tech/SaaS] startup based in [Your City, Country - ideally France/Italy/Europe] that is building [briefly describe your product/solution, e.g., an AI-driven platform for optimizing industrial supply chains, a secure fintech solution for SME cross-border payments].\n\nOur unique [technology/approach] addresses the critical challenge of [specific problem] by [how it solves it, e.g., enhancing operational efficiency with predictive analytics, ensuring compliance with novel cryptographic methods], offering [quantifiable benefit, e.g., 30% cost savings, improved data security].\n\nWe are currently raising a Seed round of [amount] to [achieve key milestones, e.g., expand our engineering team, launch our platform in two new European markets, secure 10 new enterprise clients]. Given 360 Capital's strong European roots and focus on deep tech and B2B SaaS, we believe our venture aligns perfectly with your investment strategy.\n\nHighlights:\n*   **Technology**: [Briefly explain the innovative core of your deep tech/SaaS].\n*   **Market Opportunity**: [Size of the addressable European market].\n*   **Team**: [Relevant expertise and entrepreneurial background of founders].\n*   **Traction**: [Mention any early metrics, pilots, or partnerships].\n\nWe've attached our pitch deck for your review and would appreciate the chance for a brief introduction.\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Startup Name]\n[Website]",
+      "pitchTips": [
+        "Highlight European Origin/Ambition: 360 Capital has a strong European focus, particularly France and Italy. Clearly state your European ties, target markets, or founding team's origin to resonate.",
+        "Focus on Tech/SaaS Disruption: They emphasize disruptive technologies and scalable SaaS models. Ensure your pitch clearly articulates the innovation and market-changing potential of your solution.",
+        "Concise Executive Summary: Given their portfolio diversity, get straight to the point with a compelling executive summary. Avoid overly technical jargon without explaining the impact clearly."
+      ]
+    }
   }
 ];
 
