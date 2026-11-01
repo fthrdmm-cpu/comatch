@@ -4234,6 +4234,111 @@ const BRANDS_DATA = [
         "Highlight your audience's composition (e.g., backend developers, API product managers, technical writers, DevOps engineers) to clearly illustrate a direct and relevant target market for ReadMe's solutions."
       ]
     }
+  },
+  {
+    "id": "zoom",
+    "name": "Zoom",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "press@zoom.us",
+    "contactForm": "https://www.zoom.com/en/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=zoom.us",
+    "dna": {
+      "requirements": "Audience interested in business, remote work, collaboration, education, or virtual events. High engagement rates, professional content production. Sponsorships often target large-scale events or influential platforms in relevant niches.",
+      "dealStructure": "Financial sponsorships for podcasts, newsletters, and conferences. Potential for product licenses or enhanced features for smaller-scale collaborations. Co-marketing and content collaboration opportunities.",
+      "pitchHelper": "Subject: Partnership Opportunity: Elevating [Your Content/Event Name] with Zoom\n\nDear Zoom Partnerships Team,\n\nMy name is [Your Name] and I lead [Your Content/Event Name], a [brief description of your content/event, e.g., weekly podcast, developer newsletter, virtual conference series] that reaches [Your Audience Size] [e.g., tech professionals, remote workers, educators].\n\nOur audience is highly engaged with topics related to [mention relevant topics like productivity, collaboration, remote work, virtual events], making them an ideal fit for Zoom's suite of communication solutions.\n\nWe're particularly impressed with [mention a specific Zoom feature or recent initiative, e.g., Zoom Events, AI Companion, seamless integration], and believe a partnership would offer significant value by [explain value proposition, e.g., providing our audience with access to premium communication tools, enhancing the virtual experience of our events].\n\nWe offer various sponsorship opportunities including [mention specific formats, e.g., dedicated segments, newsletter features, event branding, co-hosted webinars] to effectively connect with our community. Would you be open to a brief call to discuss how [Your Content/Event Name] can help Zoom reach a highly targeted and engaged audience?\n\nThank you for your time and consideration.\n\nBest regards,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Clearly articulate how your audience aligns with Zoom's business objectives, focusing on roles like IT decision-makers, remote teams, or educators.",
+        "Emphasize the professional quality of your content/event and your ability to deliver a broad, engaged audience, potentially backed by audience demographics.",
+        "Propose specific Zoom products (e.g., Zoom Webinars, Zoom Events, Zoom Phone) that could be integrated or promoted, rather than just 'Zoom' generally."
+      ]
+    }
+  },
+  {
+    "id": "drift",
+    "name": "Drift",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "info@drift.com",
+    "contactForm": "https://www.drift.com/contact-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=drift.com",
+    "dna": {
+      "requirements": "Audience primarily consists of B2B marketers, sales leaders, and SaaS founders. Content should focus on demand generation, lead qualification, conversational AI, and enhancing customer experience. High-quality, strategic content is preferred.",
+      "dealStructure": "Financial sponsorship for podcasts, newsletters, or online communities targeting B2B marketing/sales professionals. Opportunities for joint webinars or co-created content.",
+      "pitchHelper": "Subject: Collaboration Opportunity: Reaching B2B Marketing & Sales Leaders with Drift\n\nDear Drift Marketing Team,\n\nMy name is [Your Name], and I manage [Your Content/Event Name], a [brief description, e.g., leading podcast for SaaS sales, newsletter focused on B2B demand gen, conference for marketing operations]. Our community of [Your Audience Size] actively seeks out innovative solutions for [mention relevant pain points, e.g., improving lead qualification, personalizing buyer journeys, scaling conversations].\n\nGiven Drift's leadership in conversational AI and buyer experience, I see a strong synergy with our audience, who are ideal users and decision-makers for your platform. We often cover topics such as [mention relevant topics like ABM, conversational marketing, pipeline acceleration], which directly align with Drift's value proposition.\n\nWe are currently exploring sponsorship opportunities to provide our audience with valuable resources and connect them with cutting-edge tools. We can offer [mention specific formats, e.g., sponsored segments, dedicated newsletter features, event speaking slots, co-created content].\n\nWould you be open to a brief discussion about how [Your Content/Event Name] can help Drift engage with a highly targeted and influential audience in the B2B space?\n\nThank you for your consideration.\n\nBest regards,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Provide specific demographics or psychographics that prove your audience consists of B2B sales/marketing decision-makers.",
+        "Demonstrate a clear understanding of Drift's product, market position, and how it solves specific challenges for their target customers.",
+        "Be ready to discuss actionable metrics like engagement rates, typical conversion metrics, or qualitative feedback from previous B2B sponsorships."
+      ]
+    }
+  },
+  {
+    "id": "sendoso",
+    "name": "Sendoso",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partnerships@sendoso.com",
+    "contactForm": "https://sendoso.com/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=sendoso.com",
+    "dna": {
+      "requirements": "Audience consists of B2B sales, marketing, customer success, or HR professionals. Content should discuss gifting strategies, customer engagement, ABM, virtual events, or direct mail campaigns. Emphasis on tangible ROI for engagement.",
+      "dealStructure": "Financial sponsorships for relevant podcasts, newsletters, or events. Potential for joint content creation (e.g., case studies, webinars) or affiliate commissions for new customer referrals. Product credits for hands-on experience/reviews.",
+      "pitchHelper": "Subject: Partnership Proposal: Engaging B2B Gifting & Customer Experience Leaders with Sendoso\n\nDear Sendoso Partnerships Team,\n\nMy name is [Your Name], and I manage [Your Content/Event Name], a [brief description, e.g., thriving community for B2B sales development professionals, newsletter on modern marketing tactics, industry event focused on customer engagement]. Our audience of [Your Audience Size] is keenly interested in strategies to [mention relevant goals, e.g., deepen customer relationships, accelerate sales cycles, improve event ROI].\n\nI believe Sendoso's leading platform for gifting and direct mail offers immense value to our community, aligning perfectly with our discussions around [mention relevant topics like personalized outreach, virtual event engagement, account-based experiences]. We often highlight innovative tools that help B2B teams stand out and drive results.\n\nWe are seeking partners to sponsor our [mention specific formats, e.g., podcast episodes, newsletter spotlights, workshop sessions, content series] and would love to explore how Sendoso can effectively reach and resonate with our highly targeted audience. We can facilitate [mention specific offerings, e.g., product reviews, case study features, co-authored articles].\n\nWould you be available for a brief call to discuss a potential collaboration that introduces Sendoso to a highly receptive audience?\n\nThank you for your time.\n\nBest regards,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Clearly demonstrate how your content or audience specifically aligns with the concept of strategic B2B gifting and relationship-building.",
+        "Emphasize that your audience consists of professionals making purchasing decisions for B2B tools, not just general consumers.",
+        "Suggest ways to involve Sendoso's platform directly, such as using Sendoso to send gifts to your audience members as part of a campaign or demonstrating its use."
+      ]
+    }
+  },
+  {
+    "id": "canny",
+    "name": "Canny",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "contact@canny.io",
+    "contactForm": "https://canny.io/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=canny.io",
+    "dna": {
+      "requirements": "Audience primarily comprised of product managers, SaaS founders, developers, and teams involved in building products. Content should focus on product management, customer feedback, feature prioritization, and roadmapping. An engaged, professional community is key.",
+      "dealStructure": "Financial sponsorship for podcasts, newsletters, or online communities dedicated to product development. Opportunities for product accounts for review or demonstration purposes.",
+      "pitchHelper": "Subject: Sponsorship Inquiry: Connecting Canny with Product-Focused Audiences\n\nDear Canny Team,\n\nMy name is [Your Name], and I manage [Your Content/Event Name], a [brief description, e.g., popular podcast for product managers, newsletter for SaaS founders, online community for developers focused on product strategy]. Our audience of [Your Audience Size] is deeply invested in best practices for [mention relevant topics, e.g., collecting customer feedback, prioritizing features, building effective product roadmaps].\n\nCanny's reputation as a leading solution for capturing and organizing customer feedback resonates strongly with the needs of our community. We often discuss the challenges of [mention a specific problem Canny solves, e.g., managing disparate feedback channels, ensuring user voice is heard in development].\n\nWe are seeking aligned partners to sponsor our content, offering opportunities such as [mention specific formats, e.g., sponsored segments, dedicated newsletter mentions, guest blog posts, co-hosted Q&A sessions]. We believe a partnership would effectively introduce Canny to a highly relevant and influential audience of product builders.\n\nWould you be open to a brief call to explore how a collaboration could benefit both Canny and our community?\n\nThank you for your consideration.\n\nBest regards,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Demonstrate your understanding of the nuances of product management and how Canny fits into a product team's workflow.",
+        "Emphasize that your audience isn't just 'tech' but specifically 'product-focused' or actively involved in 'SaaS building'.",
+        "Offer to showcase how you or a relevant figure in your community uses Canny to solve real-world problems in product development."
+      ]
+    }
+  },
+  {
+    "id": "rippling",
+    "name": "Rippling",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "info@rippling.com",
+    "contactForm": "https://www.rippling.com/contact-us",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=rippling.com",
+    "dna": {
+      "requirements": "Audience of HR leaders, IT managers, startup founders, and business operators interested in streamlining employee management (HR, IT, Payroll). Content should be professional and business-oriented, focusing on HR tech, SaaS management, benefits, global payroll, or IT automation.",
+      "dealStructure": "Financial sponsorship for podcasts, newsletters, and events targeting HR/IT decision-makers and founders. Potential for co-hosted webinars or joint whitepapers.",
+      "pitchHelper": "Subject: Partnership Opportunity: Reaching HR & Business Leaders with Rippling\n\nDear Rippling Marketing Team,\n\nMy name is [Your Name], and I lead [Your Content/Event Name], a [brief description, e.g., leading podcast for HR professionals, newsletter for startup founders, conference for IT managers] that reaches [Your Audience Size] business leaders and decision-makers. Our community is constantly seeking integrated solutions to simplify [mention relevant pain points, e.g., HR, IT, and payroll management, employee onboarding, global workforce operations].\n\nRippling's unified platform for HR, IT, and Finance perfectly addresses these needs, making it highly relevant to our audience. We frequently cover topics such as [mention relevant topics like HR tech stack, global payroll, IT automation, employee experience], which directly align with Rippling's comprehensive offering.\n\nWe are exploring sponsorship opportunities for [mention specific formats, e.g., sponsored segments, dedicated newsletter features, event keynotes, co-branded content] to provide valuable resources to our audience while connecting them with innovative solutions like Rippling.\n\nWould you be open to a brief discussion about how [Your Content/Event Name] can help Rippling engage with a highly targeted and influential audience of business operators?\n\nThank you for your time and consideration.\n\nBest regards,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Emphasize that your audience appreciates comprehensive solutions like Rippling's, rather than fragmented tools, by referencing pain points of disjointed systems.",
+        "Clearly state which specific business roles (HR, IT, Finance, Founders) your content reaches, as Rippling targets multiple departments.",
+        "Frame the value proposition in terms of how Rippling helps businesses save time, reduce costs, or improve employee experience, and how your content can effectively communicate these benefits."
+      ]
+    }
   }
 ];
 
