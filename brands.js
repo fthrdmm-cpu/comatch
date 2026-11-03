@@ -3921,6 +3921,426 @@ const BRANDS_DATA = [
     }
   },
   {
+    "id": "convertkit",
+    "name": "ConvertKit",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Affiliate / Referral",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partners@convertkit.com",
+    "contactForm": "https://convertkit.com/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=convertkit.com",
+    "dna": {
+      "requirements": "Audience of creators, entrepreneurs, bloggers, podcasters. Alignment with 'creator first' mission. High engagement with creators seeking email marketing and audience growth solutions.",
+      "dealStructure": "Affiliate commissions for new sign-ups, potential flat fees for larger podcast/newsletter placements, access to ConvertKit tools for content creation.",
+      "pitchHelper": "Subject: Partnership Opportunity: [Your Name/Podcast/Newsletter] x ConvertKit\n\nDear ConvertKit Partnerships Team,\n\nMy name is [Your Name] and I'm the creator behind [Your Podcast/Newsletter/Platform - e.g., 'The Creative Hustle Podcast'], reaching a dedicated audience of [Number] creators, entrepreneurs, and indie builders focused on growing their online businesses.\n\nI've been deeply impressed by ConvertKit's commitment to empowering creators, and I believe my audience would greatly benefit from your robust email marketing tools. Many of my listeners/readers are actively looking for reliable platforms to connect with their audience and monetize their work effectively.\n\nI propose a partnership to introduce ConvertKit to my engaged community through [mention specific channels, e.g., dedicated podcast segments, newsletter features, blog reviews]. I envision demonstrating how ConvertKit helps creators build stronger relationships and scale their impact.\n\nCould we schedule a brief call to discuss how our shared values of creator empowerment could translate into a successful collaboration?\n\nThank you for your time and consideration.\n\nBest regards,\n\n[Your Name]\n[Your Website/Link to content]\n[Your Social Media Link]",
+      "pitchTips": [
+        "Highlight Creator Alignment: Emphasize how your content directly supports or resonates with the creator economy, aligning perfectly with ConvertKit's mission.",
+        "Showcase Engagement, Not Just Size: Provide specific metrics beyond follower count, such as average open rates, listenership, community interaction, or subscriber growth, to prove active engagement.",
+        "Propose Specific Content Ideas: Don't just ask for sponsorship; suggest concrete ways you'd integrate ConvertKit authentically into your content (e.g., 'a series on building an email list with ConvertKit,' 'a live demo of ConvertKit automation')."
+      ]
+    }
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "partner_program@docker.com",
+    "contactForm": "https://www.docker.com/partners/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=docker.com",
+    "dna": {
+      "requirements": "Audience of developers, DevOps professionals, software engineers. Content focused on containerization, cloud-native development, open-source. Strong technical credibility and active participation in developer communities.",
+      "dealStructure": "Sponsorship of conferences, hackathons, developer meetups, technical content series. Potential for free Docker licenses or credits for sponsored events. Flat payout for content.",
+      "pitchHelper": "Subject: Collaboration Opportunity: [Your Dev Community/Podcast] x Docker\n\nDear Docker Partnerships Team,\n\nMy name is [Your Name], and I lead [Your Developer Community/Podcast/YouTube Channel - e.g., 'Container Insights Podcast'], a highly engaged platform for [Number] developers, DevOps engineers, and tech enthusiasts passionate about containerization, cloud-native solutions, and efficient software delivery.\n\nDocker is an indispensable tool for our audience, and we regularly discuss its pivotal role in modern development workflows. We believe a partnership would be incredibly valuable in providing our community with direct insights and resources from the industry leader.\n\nWe propose collaborating on [mention specific ideas, e.g., sponsoring a segment on container best practices, hosting a workshop on Docker Compose, featuring Docker in a series on microservices]. Our goal is to empower developers with practical knowledge and tools.\n\nWould you be open to a brief discussion about how we can craft a mutually beneficial partnership to reach and educate the developer community?\n\nThank you for your time.\n\nSincerely,\n\n[Your Name]\n[Link to Your Content/Community]\n[Link to Your Professional Profile]",
+      "pitchTips": [
+        "Showcase Technical Authority: Emphasize your deep technical knowledge and credibility within the developer community to assure them your content is accurate and valuable.",
+        "Focus on Specific Use Cases: Instead of general praise, highlight how your audience *uses* Docker and propose content that solves specific developer challenges using Docker's features.",
+        "Quantify Developer Engagement: Provide metrics on developer audience size, engagement rates (e.g., GitHub stars, YouTube watch time, meetup attendance), and demographic data if available, to show the quality of your reach."
+      ]
+    }
+  },
+  {
+    "id": "vimeo",
+    "name": "Vimeo",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partnerships@vimeo.com",
+    "contactForm": "https://vimeo.com/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=vimeo.com",
+    "dna": {
+      "requirements": "Audience of video creators, small businesses, marketers, educators. Focus on high-quality video content, professional use cases, education around video production/distribution. Content should align with Vimeo's brand of quality and professionalism.",
+      "dealStructure": "Flat fee for sponsored content, free Vimeo Pro/Business accounts, co-marketing opportunities, potential affiliate commissions for referrals.",
+      "pitchHelper": "Subject: Partnership Proposal: [Your Channel/Agency] & Vimeo - Empowering Visual Storytellers\n\nDear Vimeo Partnerships Team,\n\nMy name is [Your Name], and I run [Your YouTube Channel/Blog/Agency - e.g., 'Creative Lens Tutorials'], where I guide a community of [Number] video creators, filmmakers, and small businesses on mastering video production, marketing, and distribution.\n\nVimeo's platform is renowned for its professional-grade tools and commitment to quality, which aligns perfectly with the needs and aspirations of my audience. Many of our members rely on robust video solutions for their client work, online courses, and business growth.\n\nI envision a partnership where we can showcase Vimeo's powerful features for [mention specific benefits, e.g., professional hosting, advanced analytics, live streaming, collaboration tools] through [mention specific content, e.g., dedicated video tutorials, in-depth reviews, a sponsored segment on my podcast]. I'm confident this would provide immense value to both our communities.\n\nWould you be available for a quick chat to explore how a collaboration could mutually benefit our audiences and elevate professional video endeavors?\n\nThank you for your consideration.\n\nSincerely,\n\n[Your Name]\n[Your Content Link]\n[Your Portfolio/Relevant Social Link]",
+      "pitchTips": [
+        "Focus on Professionalism & Quality: Highlight how your content emphasizes high-quality production and professional use cases, mirroring Vimeo's brand image.",
+        "Demonstrate Niche Expertise: Clearly define your audience's specific video needs (e.g., educators needing course hosting, agencies needing client review tools, filmmakers needing portfolio showcases) and how Vimeo addresses them.",
+        "Provide Engagement Metrics for Video: Share metrics relevant to video content, such as average view duration, audience demographics, comments, and conversion rates from your video content, to demonstrate impact."
+      ]
+    }
+  },
+  {
+    "id": "asana",
+    "name": "Asana",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partners@asana.com",
+    "contactForm": "https://asana.com/resources/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=asana.com",
+    "dna": {
+      "requirements": "Audience of professionals, teams, entrepreneurs, startups. Content focused on productivity, project management, remote work, team collaboration, business growth. Demonstrates practical application of productivity tools.",
+      "dealStructure": "Flat fee for sponsored content (e.g., podcast ads, newsletter features, dedicated videos), affiliate commissions for new sign-ups to Asana.",
+      "pitchHelper": "Subject: Partnership Opportunity: [Your Productivity Channel/Podcast] x Asana\n\nDear Asana Partnerships Team,\n\nMy name is [Your Name], and I am the creator of [Your Blog/YouTube Channel/Podcast - e.g., 'Productivity Power-Up'], where I share actionable strategies and tool reviews with a dedicated audience of [Number] entrepreneurs, team leaders, and busy professionals seeking to optimize their workflows and enhance team collaboration.\n\nAsana is a name synonymous with efficient project management, and its features for task tracking, team coordination, and goal setting are directly relevant to the challenges my audience faces daily. I believe a partnership could introduce Asana to a highly engaged group actively looking for solutions to improve their productivity.\n\nI propose creating [mention specific content, e.g., a tutorial series on using Asana for small business growth, a podcast segment on remote team management with Asana, a comparative review emphasizing Asana's strengths]. My aim is to provide practical value and demonstrate how Asana can transform team productivity.\n\nWould you be open to a brief call to discuss a potential collaboration?\n\nThank you for your time and consideration.\n\nBest regards,\n\n[Your Name]\n[Your Content Link]\n[Your LinkedIn Profile]",
+      "pitchTips": [
+        "Emphasize Problem/Solution: Clearly articulate a common productivity challenge your audience faces and how Asana provides an elegant solution, making the partnership highly relevant.",
+        "Showcase Workflow Examples: If possible, demonstrate your own experience or willingness to showcase practical workflows and templates within Asana that your audience can replicate.",
+        "Target Decision-Makers: Highlight that your audience includes team leaders, managers, and small business owners who are often the decision-makers for adopting new project management software."
+      ]
+    }
+  },
+  {
+    "id": "sendgrid",
+    "name": "SendGrid",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "partner_program@sendgrid.com",
+    "contactForm": "https://sendgrid.com/partners/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=sendgrid.com",
+    "dna": {
+      "requirements": "Audience of developers, software engineers, marketers, product managers working with transactional email or email marketing at scale. Content about APIs, web development, marketing automation, deliverability, e-commerce.",
+      "dealStructure": "Flat fee for sponsored content (e.g., technical blog posts, video tutorials, podcast ads), free SendGrid credits for developers, co-marketing opportunities.",
+      "pitchHelper": "Subject: Partnership Opportunity: [Your Dev Blog/Podcast] x SendGrid - Email API Expertise\n\nDear SendGrid Partnerships Team,\n\nMy name is [Your Name], and I manage [Your Developer Blog/YouTube Channel/Podcast - e.g., 'The API Explorer Podcast'], a platform dedicated to [Number] developers and technical founders exploring the best tools and practices for building robust applications, with a particular focus on backend services and APIs.\n\nSendGrid is an industry-leading solution for transactional and marketing email, and its reliability and developer-friendly API are highly relevant to my audience who are constantly seeking robust and scalable communication infrastructure.\n\nI propose a collaboration where we can delve into [mention specific topics, e.g., integrating SendGrid with a specific framework, best practices for email deliverability, setting up email marketing automation with SendGrid]. This would offer invaluable, practical insights to developers building features that rely on email.\n\nWould you be open to a brief discussion about how our shared interest in empowering developers can lead to a successful partnership?\n\nThank you for your consideration.\n\nBest regards,\n\n[Your Name]\n[Link to Your Content/Community]\n[Link to Your GitHub/Professional Profile]",
+      "pitchTips": [
+        "Highlight Technical Depth: Emphasize that your content goes beyond surface-level reviews and dives into actual implementation, code examples, and best practices relevant to SendGrid's technical users.",
+        "Quantify Developer Audience: Clearly state the size and demographic of your developer audience (e.g., '50k backend developers,' 'startups using Python/Node.js') to demonstrate target market fit.",
+        "Propose a Specific Technical Use Case: Instead of a generic ad, suggest a tutorial or project demonstrating a specific, valuable use case of SendGrid (e.g., 'Building a user notification system with SendGrid and Next.js')."
+      ]
+    }
+  },
+  {
+    "id": "zendesk",
+    "name": "Zendesk",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "contact@zendesk.com",
+    "contactForm": "https://www.zendesk.com/partner/get-in-touch/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=zendesk.com",
+    "dna": {
+      "requirements": "Audience interested in customer service, sales, CRM, and business growth. Requires professional content and strong engagement with a B2B audience (e.g., founders, sales leaders, support managers).",
+      "dealStructure": "Co-marketing initiatives, affiliate commissions, referral fees, flat fee for sponsored content, event sponsorships, or speaking opportunities.",
+      "pitchHelper": "Subject: Partnership Opportunity: Elevating Customer Experience with Zendesk to [Your Audience Name]\n\nHi [Zendesk Contact Name],\n\nI'm [Your Name] from [Your Platform], a [brief description of platform/audience, e.g., prominent podcast for SaaS founders, blog for growing businesses]. My audience of [X] professionals is constantly looking for innovative solutions to enhance customer service and streamline operations.\n\nI believe Zendesk's comprehensive suite of customer experience tools would resonate strongly with them. I'd love to explore how a partnership, potentially involving [mention specific idea: e.g., sponsored segment, dedicated review, co-created content], could effectively showcase Zendesk's value to our engaged community.\n\nWould you be open to a brief discussion about the potential synergies?\n\nBest,\n[Your Name]",
+      "pitchTips": [
+        "Clearly state your value proposition for a B2B audience directly in the subject line to immediately capture attention.",
+        "Reference specific Zendesk products or features that you genuinely find valuable and can tie to your audience's needs.",
+        "Provide data on your audience demographics, not just size, to highlight their specific B2B relevance and purchasing power."
+      ]
+    }
+  },
+  {
+    "id": "segment",
+    "name": "Segment (Twilio Segment)",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "partners@segment.com",
+    "contactForm": "https://segment.com/partners/technology/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=segment.com",
+    "dna": {
+      "requirements": "Audience of developers, data engineers, product managers, or marketers interested in customer data platforms, analytics, and integrations. Requires high-quality, technically-focused content.",
+      "dealStructure": "Flat fee for sponsored content, co-produced webinars or technical content, potential product access/credits, event sponsorships, or content feature on Segment channels.",
+      "pitchHelper": "Subject: Partnering with Segment: Reaching [Your Audience Type] Developers and Data Professionals\n\nHi [Segment Contact Name],\n\nI'm [Your Name] from [Your Platform], a [brief description of platform/audience, e.g., popular newsletter for data engineers, YouTube channel for SaaS product managers]. My audience of [X] highly engaged professionals is always seeking robust solutions for customer data management and activation.\n\nSegment stands out as a critical tool for unifying customer data, and I see a strong alignment between your offerings and my audience's needs. I'm keen to discuss a potential collaboration, such as [mention specific idea: e.g., a technical deep-dive sponsorship, a joint webinar, a sponsored tutorial], to educate our community on Segment's power.\n\nCould we schedule a brief call to explore this further?\n\nBest,\n[Your Name]",
+      "pitchTips": [
+        "Highlight your audience's technical proficiency and direct relevance to data infrastructure or customer data roles.",
+        "Suggest specific, technically-focused content ideas that align with Segment's core use cases and features.",
+        "Emphasize audience engagement metrics (e.g., average open rates, watch time, interaction rate) rather than just raw subscriber count."
+      ]
+    }
+  },
+  {
+    "id": "mailgun",
+    "name": "Mailgun",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Affiliate / Referral",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "info@mailgun.com",
+    "contactForm": "https://www.mailgun.com/partners/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=mailgun.com",
+    "dna": {
+      "requirements": "Audience of developers, DevOps professionals, product builders, or small to mid-sized businesses who frequently send transactional or marketing emails. Content should be related to web development, SaaS, or backend infrastructure.",
+      "dealStructure": "Flat fee for sponsored content, free credits/access for creators, affiliate commissions for referrals, or co-marketing opportunities.",
+      "pitchHelper": "Subject: Partnership Idea: Mailgun for Developers at [Your Platform Name]\n\nHi [Mailgun Contact Name],\n\nI'm [Your Name], the creator behind [Your Platform], a [brief description of platform/audience, e.g., popular blog for web developers, podcast for indie hackers]. My audience of [X] developers frequently tackles challenges with reliable email delivery and management.\n\nI've personally found Mailgun to be an indispensable tool for transactional emails and robust email APIs. I believe a partnership could be highly beneficial, allowing me to create [mention specific idea: e.g., a sponsored tutorial on integrating Mailgun, a segment discussing email best practices with Mailgun] that directly addresses my audience's pain points while showcasing your powerful features.\n\nWould you be interested in exploring a potential collaboration?\n\nBest,\n[Your Name]",
+      "pitchTips": [
+        "Clearly state your audience's relevance to email API solutions and development in the subject line.",
+        "Mention a specific Mailgun feature or a practical use case that you believe would resonate most with your audience.",
+        "Provide examples of past successful integrations or sponsorships with other developer tools to demonstrate credibility."
+      ]
+    }
+  },
+  {
+    "id": "appsmith",
+    "name": "Appsmith",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "community@appsmith.com",
+    "contactForm": "https://www.appsmith.com/contact-us",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=appsmith.com",
+    "dna": {
+      "requirements": "Audience of developers, product managers, or technical founders interested in building internal tools, dashboards, or workflows quickly. Content should be related to web development, low-code, productivity, or specific database/API integrations.",
+      "dealStructure": "Flat fee for sponsored content, free access to Appsmith Enterprise features, co-promotion on Appsmith's community channels, or opportunities for contributions to open-source initiatives.",
+      "pitchHelper": "Subject: Collaboration Idea: Appsmith for [Your Audience Type] Building Internal Tools\n\nHi [Appsmith Contact Name],\n\nI'm [Your Name] from [Your Platform], a [brief description of platform/audience, e.g., YouTube channel for full-stack developers, newsletter for SaaS founders]. My audience of [X] professionals is constantly seeking efficient ways to build internal applications and custom dashboards.\n\nAppsmith's open-source, low-code platform for building internal tools is incredibly powerful, and I see a strong fit for my community. I'd love to explore a partnership to create [mention specific idea: e.g., a tutorial series on building an app with Appsmith and [X database], a demo showcasing Appsmith's integration capabilities] that highlights its value to our engaged audience.\n\nWould you be open to a quick chat about this opportunity?\n\nBest,\n[Your Name]",
+      "pitchTips": [
+        "Demonstrate prior experience or knowledge of Appsmith or low-code development, showing genuine interest.",
+        "Propose a specific project or tutorial idea that clearly showcases Appsmith's unique features and solves a real problem for your audience.",
+        "Highlight your audience's hunger for practical, time-saving development solutions and tools."
+      ]
+    }
+  },
+  {
+    "id": "typeform",
+    "name": "Typeform",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "B2B Partnership",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "hello@typeform.com",
+    "contactForm": "https://www.typeform.com/partners/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=typeform.com",
+    "dna": {
+      "requirements": "Audience interested in data collection, user feedback, lead generation, interactive content, surveys, or quizzes. Requires professional and engaging content that aligns with Typeform's brand aesthetic and user experience focus.",
+      "dealStructure": "Flat fee for sponsored content, affiliate commissions, co-marketing opportunities, or product access/credits for premium features.",
+      "pitchHelper": "Subject: Partnership Opportunity: Engaging Audiences with Typeform on [Your Platform]\n\nHi [Typeform Contact Name],\n\nI'm [Your Name] from [Your Platform], a [brief description of platform/audience, e.g., popular marketing blog, podcast for small business owners]. My audience of [X] professionals is constantly looking for innovative ways to interact with their users, collect feedback, and generate leads.\n\nTypeform's beautiful and engaging forms are a perfect fit for these needs, offering a superior user experience. I'm excited to propose a partnership to create [mention specific idea: e.g., a sponsored guide on maximizing Typeform for lead generation, a segment demonstrating interactive surveys with Typeform] that resonates deeply with my community.\n\nWould you be open to a brief conversation about how we can collaborate?\n\nBest,\n[Your Name]",
+      "pitchTips": [
+        "Showcase how Typeform's visual appeal and interactivity align perfectly with your existing content style and audience expectations.",
+        "Highlight specific use cases (e.g., lead generation, customer feedback, event registration) that are strong points for Typeform and relevant to your audience.",
+        "Provide examples of how you've previously incorporated interactive elements or surveys into your content, demonstrating your ability to promote engagement."
+      ]
+    }
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "partnerships@openai.com",
+    "contactForm": "https://openai.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=openai.com",
+    "dna": {
+      "requirements": "Strong alignment with OpenAI's mission of ensuring artificial general intelligence benefits all of humanity. Preference for innovative use cases, educational content, or events (hackathons, conferences) targeting developers, researchers, or tech enthusiasts. High-quality content and significant reach within the AI/tech community are crucial. Ethical considerations and responsible AI development are key themes.",
+      "dealStructure": "Financial sponsorship for events or dedicated content, API credits for contests or innovative projects, co-marketing opportunities, access to beta features for influential creators, technical support for deep integrations.",
+      "pitchHelper": "Subject: Partnership Proposal: Integrating [Your Content/Community] with OpenAI's Ecosystem\n\nDear OpenAI Partnerships Team,\n\nI'm [Your Name] from [Your Organization/Channel], a [brief description of your platform/audience, e.g., tech podcast reaching X developers, YouTube channel focused on AI development with Y subscribers]. Our mission aligns with advancing AI understanding and application, and we believe our audience would greatly benefit from deeper engagement with OpenAI's cutting-edge technologies.\n\nWe're particularly interested in exploring sponsorship opportunities for [specific initiative, e.g., our upcoming series on AI development, our community hackathon focused on GPT APIs, a sponsored segment showcasing DALL-E/ChatGPT capabilities]. We aim to [explain goal, e.g., educate developers on ethical AI use, inspire new applications with your tools].\n\nCould we discuss how a collaboration could amplify OpenAI's message within our engaged community, potentially through [mention specific deal structure ideas, e.g., a flat fee for dedicated content, API credit integration for a contest, co-hosting a workshop]? We're eager to contribute to the responsible and innovative growth of the AI ecosystem.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Clearly articulate how your content/community aligns with OpenAI's mission of ensuring AI benefits all of humanity, not just promoting tool usage, by focusing on safe, ethical, and beneficial applications.",
+        "Highlight specific, innovative use cases or ethical discussions related to OpenAI's products that you plan to cover, demonstrating thoughtful engagement beyond basic tutorials.",
+        "Focus on the quality and active engagement of your developer or tech-savvy audience, emphasizing genuine interest in AI advancement rather than just raw follower count."
+      ]
+    }
+  },
+  {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "partnerships@anthropic.com",
+    "contactForm": "https://www.anthropic.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=anthropic.com",
+    "dna": {
+      "requirements": "Strong emphasis on AI safety, responsible development, and ethical considerations. Target audience should consist of AI researchers, developers focused on LLM safety, policymakers, or academic institutions. Content should reflect a deep understanding of large language models and their societal impact.",
+      "dealStructure": "Research grants, event sponsorship (especially for AI safety/ethics conferences), API credits for academic/non-profit projects, co-marketing opportunities for thought leadership content.",
+      "pitchHelper": "Subject: Collaboration Proposal: Advancing Responsible AI with [Your Platform]\n\nDear Anthropic Partnerships Team,\n\nMy name is [Your Name] from [Your Organization/Channel], a [brief description of your platform/audience, e.g., an AI ethics research group, a developer community focused on LLM safety, a podcast exploring the societal impact of AI]. We deeply resonate with Anthropic's commitment to developing safe and steerable AI systems.\n\nWe are actively seeking to [explain your initiative, e.g., host a series of discussions on constitutional AI, organize a hackathon focused on mitigating LLM biases, publish in-depth analyses of AI safety benchmarks]. Given your pioneering work with Claude and responsible AI, we believe a partnership would be mutually beneficial, offering Anthropic visibility among our [quantify audience, e.g., 60,000 engaged researchers and developers] while enriching our content with your expertise.\n\nWould you be open to exploring sponsorship opportunities for [specific project, e.g., our upcoming Responsible AI Summit, a dedicated research paper series]? We envision a collaboration that could include [mention deal structure ideas, e.g., financial support for event logistics, providing Claude API access for research projects, a co-authored piece].\n\nThank you for considering our proposal to collaboratively foster safer AI development.\n\nSincerely,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Clearly articulate your understanding of and commitment to AI safety and responsible AI, directly referencing Anthropic's core principles and research areas like Constitutional AI.",
+        "Propose initiatives that focus on the *impact* and *safety* of AI, demonstrating a deeper alignment than just promoting their product's features.",
+        "Target an audience that is either academic, policy-oriented, or deeply technical in AI/ML, emphasizing quality engagement and intellectual rigor over broad, general reach."
+      ]
+    }
+  },
+  {
+    "id": "perplexity-ai",
+    "name": "Perplexity AI",
+    "type": "brand",
+    "category": "Productivity",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partnerships@perplexity.ai",
+    "contactForm": "https://www.perplexity.ai/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=perplexity.ai",
+    "dna": {
+      "requirements": "Audience interested in AI, productivity, research, verifiable information, or developer tools. Content should authentically showcase Perplexity AI's accuracy, source citation, and innovative features (e.g., Copilot, Collections, API). High-quality content with clear calls to action.",
+      "dealStructure": "Financial sponsorships for podcast/YouTube segments, affiliate links for Perplexity Pro subscriptions, product credits for creators, co-marketing for content pieces or product launches.",
+      "pitchHelper": "Subject: Sponsorship Opportunity: Elevating [Your Content Topic] with Perplexity AI\n\nDear Perplexity AI Partnerships Team,\n\nI'm [Your Name], host/creator of [Your Podcast/Channel/Newsletter], where we [briefly describe your content and audience, e.g., explore cutting-edge AI tools for productivity, provide in-depth analysis for 40,000 tech enthusiasts]. I'm a big admirer of Perplexity AI's innovative approach to answer engine technology, especially its transparency with sources.\n\nI believe my audience, who are constantly seeking reliable information and powerful AI tools, would highly value an introduction to Perplexity AI. I envision a sponsorship that could involve [mention specific ideas, e.g., dedicated segments on our weekly podcast, a tutorial video showcasing Perplexity Pro's features, an integrated review in our newsletter]. We could highlight [specific Perplexity feature, e.g., 'Discover' function, API for developers, Pro features] and drive adoption through [e.g., a custom affiliate link, promo code].\n\nWe typically see [mention metrics, e.g., X average listens/views, Y open rate] and are confident we can deliver a highly engaged audience. Would you be interested in discussing a potential partnership to integrate Perplexity AI into our upcoming content?\n\nThank you for your consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Emphasize how your content specifically aligns with the *value proposition* of Perplexity AI (e.g., research, fact-checking, developer API use, productivity gains) rather than just general AI interest.",
+        "Provide concrete, natural ideas for how you would integrate Perplexity AI into your content, showcasing specific features and benefits relevant to your audience without feeling forced.",
+        "Quantify your audience's engagement and relevance (e.g., 'my audience of software engineers actively researches new tools') beyond just follower counts, demonstrating a clear target market."
+      ]
+    }
+  },
+  {
+    "id": "cal-com",
+    "name": "Cal.com",
+    "type": "brand",
+    "category": "Productivity",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partnerships@cal.com",
+    "contactForm": "https://cal.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=cal.com",
+    "dna": {
+      "requirements": "Enthusiasm for open-source software and developer-focused tools. Audience should be interested in productivity, workflow automation, or building custom solutions. Content creators should demonstrate authentic use and promotion of Cal.com's features (e.g., API, self-hosting, integrations).",
+      "dealStructure": "Financial sponsorship for open-source projects or developer events, premium account access for creators, affiliate commissions, co-marketing via blog posts or social media mentions, feature spotlights within the Cal.com community.",
+      "pitchHelper": "Subject: Open-Source Collaboration: Integrating Cal.com into [Your Community/Content]\n\nDear Cal.com Partnerships Team,\n\nI'm [Your Name], the founder/creator of [Your Organization/Channel], a [brief description, e.g., growing open-source developer community, a YouTube channel focused on developer productivity with X subscribers]. I'm a huge advocate for open-source solutions and have been incredibly impressed with Cal.com's mission to create an open and flexible scheduling infrastructure.\n\nMy audience/community is actively seeking efficient and customizable tools, and I believe Cal.com's self-hostable and API-first approach perfectly aligns with their needs. I'd love to explore a partnership where we could [mention specific ideas, e.g., integrate Cal.com as a scheduling solution for our community events, create a tutorial series on customizing Cal.com for specific workflows, highlight Cal.com's API in a developer workshop].\n\nWe could offer [mention what you offer, e.g., dedicated promotional slots, a featured integration guide, a co-branded open-source project] to help expand Cal.com's reach within the developer and productivity-focused communities. Would you be interested in discussing how we can work together to promote open-source innovation and superior scheduling?\n\nThank you for your time.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Highlight your genuine connection to open-source software and developer communities, demonstrating an authentic fit with Cal.com's ethos and its commitment to an open ecosystem.",
+        "Propose integration ideas that go beyond simple advertisements, such as building on top of Cal.com's API, creating custom themes, or contributing to its open-source ecosystem.",
+        "Showcase how your audience actively uses or is interested in productivity and developer tools, making it clear that they are a relevant and engaged target for a flexible scheduling platform."
+      ]
+    }
+  },
+  {
+    "id": "readme",
+    "name": "ReadMe",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partners@readme.com",
+    "contactForm": "https://readme.com/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=readme.com",
+    "dna": {
+      "requirements": "Developer-centric audience. Content focused on APIs, documentation best practices, developer experience, or building technical products. Authentic advocacy for clear, interactive, and user-friendly API documentation. Engagement with developer communities (e.g., hackathons, dev conferences, online forums).",
+      "dealStructure": "Event/hackathon sponsorship, financial support for high-quality technical content (e.g., tutorials, deep-dives), premium account access for creators, co-marketing through their blog/social channels, potential for featured content in ReadMe's resources.",
+      "pitchHelper": "Subject: Partnership Idea: Enhancing Developer Experience with ReadMe on [Your Platform]\n\nDear ReadMe Partnerships Team,\n\nI'm [Your Name] from [Your Organization/Channel], a [brief description, e.g., platform dedicated to API development tutorials, a podcast interviewing leading developers, a newsletter reaching 35,000 software engineers]. My work consistently emphasizes the importance of excellent API documentation and a superior developer experience, making me a strong admirer of ReadMe's platform.\n\nI believe my audience, who are actively building with and consuming APIs, would greatly benefit from understanding how ReadMe empowers businesses to create interactive and user-friendly documentation. I'm keen to explore sponsorship opportunities that could involve [mention specific ideas, e.g., a dedicated segment on our podcast discussing best practices for API docs using ReadMe, a technical deep-dive on our blog showcasing ReadMe's features, sponsoring our upcoming developer workshop focused on API integration].\n\nOur content typically garners [mention metrics, e.g., X views/reads, Y engagement rate] from a highly technical audience. Would you be open to discussing how a partnership could help ReadMe reach more API builders and enthusiasts, fostering better documentation standards across the industry?\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Demonstrate a deep understanding of API documentation best practices and the challenges developers face, showing genuine insight into ReadMe's value proposition for improving DX.",
+        "Propose content ideas that are highly technical and provide tangible value to developers, such as tutorials on interactive docs, case studies of great API portals, or discussions on improving the developer journey using ReadMe.",
+        "Highlight your audience's composition (e.g., backend developers, API product managers, technical writers, DevOps engineers) to clearly illustrate a direct and relevant target market for ReadMe's solutions."
+      ]
+    }
+  },
+  {
+    "id": "zoom",
+    "name": "Zoom",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "press@zoom.us",
+    "contactForm": "https://www.zoom.com/en/contact/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=zoom.us",
+    "dna": {
+      "requirements": "Audience interested in business, remote work, collaboration, education, or virtual events. High engagement rates, professional content production. Sponsorships often target large-scale events or influential platforms in relevant niches.",
+      "dealStructure": "Financial sponsorships for podcasts, newsletters, and conferences. Potential for product licenses or enhanced features for smaller-scale collaborations. Co-marketing and content collaboration opportunities.",
+      "pitchHelper": "Subject: Partnership Opportunity: Elevating [Your Content/Event Name] with Zoom\n\nDear Zoom Partnerships Team,\n\nMy name is [Your Name] and I lead [Your Content/Event Name], a [brief description of your content/event, e.g., weekly podcast, developer newsletter, virtual conference series] that reaches [Your Audience Size] [e.g., tech professionals, remote workers, educators].\n\nOur audience is highly engaged with topics related to [mention relevant topics like productivity, collaboration, remote work, virtual events], making them an ideal fit for Zoom's suite of communication solutions.\n\nWe're particularly impressed with [mention a specific Zoom feature or recent initiative, e.g., Zoom Events, AI Companion, seamless integration], and believe a partnership would offer significant value by [explain value proposition, e.g., providing our audience with access to premium communication tools, enhancing the virtual experience of our events].\n\nWe offer various sponsorship opportunities including [mention specific formats, e.g., dedicated segments, newsletter features, event branding, co-hosted webinars] to effectively connect with our community. Would you be open to a brief call to discuss how [Your Content/Event Name] can help Zoom reach a highly targeted and engaged audience?\n\nThank you for your time and consideration.\n\nBest regards,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Clearly articulate how your audience aligns with Zoom's business objectives, focusing on roles like IT decision-makers, remote teams, or educators.",
+        "Emphasize the professional quality of your content/event and your ability to deliver a broad, engaged audience, potentially backed by audience demographics.",
+        "Propose specific Zoom products (e.g., Zoom Webinars, Zoom Events, Zoom Phone) that could be integrated or promoted, rather than just 'Zoom' generally."
+      ]
+    }
+  },
+  {
+    "id": "drift",
+    "name": "Drift",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "info@drift.com",
+    "contactForm": "https://www.drift.com/contact-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=drift.com",
+    "dna": {
+      "requirements": "Audience primarily consists of B2B marketers, sales leaders, and SaaS founders. Content should focus on demand generation, lead qualification, conversational AI, and enhancing customer experience. High-quality, strategic content is preferred.",
+      "dealStructure": "Financial sponsorship for podcasts, newsletters, or online communities targeting B2B marketing/sales professionals. Opportunities for joint webinars or co-created content.",
+      "pitchHelper": "Subject: Collaboration Opportunity: Reaching B2B Marketing & Sales Leaders with Drift\n\nDear Drift Marketing Team,\n\nMy name is [Your Name], and I manage [Your Content/Event Name], a [brief description, e.g., leading podcast for SaaS sales, newsletter focused on B2B demand gen, conference for marketing operations]. Our community of [Your Audience Size] actively seeks out innovative solutions for [mention relevant pain points, e.g., improving lead qualification, personalizing buyer journeys, scaling conversations].\n\nGiven Drift's leadership in conversational AI and buyer experience, I see a strong synergy with our audience, who are ideal users and decision-makers for your platform. We often cover topics such as [mention relevant topics like ABM, conversational marketing, pipeline acceleration], which directly align with Drift's value proposition.\n\nWe are currently exploring sponsorship opportunities to provide our audience with valuable resources and connect them with cutting-edge tools. We can offer [mention specific formats, e.g., sponsored segments, dedicated newsletter features, event speaking slots, co-created content].\n\nWould you be open to a brief discussion about how [Your Content/Event Name] can help Drift engage with a highly targeted and influential audience in the B2B space?\n\nThank you for your consideration.\n\nBest regards,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Provide specific demographics or psychographics that prove your audience consists of B2B sales/marketing decision-makers.",
+        "Demonstrate a clear understanding of Drift's product, market position, and how it solves specific challenges for their target customers.",
+        "Be ready to discuss actionable metrics like engagement rates, typical conversion metrics, or qualitative feedback from previous B2B sponsorships."
+      ]
+    }
+  },
+  {
+    "id": "sendoso",
+    "name": "Sendoso",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partnerships@sendoso.com",
+    "contactForm": "https://sendoso.com/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=sendoso.com",
+    "dna": {
+      "requirements": "Audience consists of B2B sales, marketing, customer success, or HR professionals. Content should discuss gifting strategies, customer engagement, ABM, virtual events, or direct mail campaigns. Emphasis on tangible ROI for engagement.",
+      "dealStructure": "Financial sponsorships for relevant podcasts, newsletters, or events. Potential for joint content creation (e.g., case studies, webinars) or affiliate commissions for new customer referrals. Product credits for hands-on experience/reviews.",
+      "pitchHelper": "Subject: Partnership Proposal: Engaging B2B Gifting & Customer Experience Leaders with Sendoso\n\nDear Sendoso Partnerships Team,\n\nMy name is [Your Name], and I manage [Your Content/Event Name], a [brief description, e.g., thriving community for B2B sales development professionals, newsletter on modern marketing tactics, industry event focused on customer engagement]. Our audience of [Your Audience Size] is keenly interested in strategies to [mention relevant goals, e.g., deepen customer relationships, accelerate sales cycles, improve event ROI].\n\nI believe Sendoso's leading platform for gifting and direct mail offers immense value to our community, aligning perfectly with our discussions around [mention relevant topics like personalized outreach, virtual event engagement, account-based experiences]. We often highlight innovative tools that help B2B teams stand out and drive results.\n\nWe are seeking partners to sponsor our [mention specific formats, e.g., podcast episodes, newsletter spotlights, workshop sessions, content series] and would love to explore how Sendoso can effectively reach and resonate with our highly targeted audience. We can facilitate [mention specific offerings, e.g., product reviews, case study features, co-authored articles].\n\nWould you be available for a brief call to discuss a potential collaboration that introduces Sendoso to a highly receptive audience?\n\nThank you for your time.\n\nBest regards,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Clearly demonstrate how your content or audience specifically aligns with the concept of strategic B2B gifting and relationship-building.",
+        "Emphasize that your audience consists of professionals making purchasing decisions for B2B tools, not just general consumers.",
+        "Suggest ways to involve Sendoso's platform directly, such as using Sendoso to send gifts to your audience members as part of a campaign or demonstrating its use."
+      ]
+    }
+  },
+  {
+    "id": "canny",
+    "name": "Canny",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "contact@canny.io",
+    "contactForm": "https://canny.io/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=canny.io",
+    "dna": {
+      "requirements": "Audience primarily comprised of product managers, SaaS founders, developers, and teams involved in building products. Content should focus on product management, customer feedback, feature prioritization, and roadmapping. An engaged, professional community is key.",
+      "dealStructure": "Financial sponsorship for podcasts, newsletters, or online communities dedicated to product development. Opportunities for product accounts for review or demonstration purposes.",
+      "pitchHelper": "Subject: Sponsorship Inquiry: Connecting Canny with Product-Focused Audiences\n\nDear Canny Team,\n\nMy name is [Your Name], and I manage [Your Content/Event Name], a [brief description, e.g., popular podcast for product managers, newsletter for SaaS founders, online community for developers focused on product strategy]. Our audience of [Your Audience Size] is deeply invested in best practices for [mention relevant topics, e.g., collecting customer feedback, prioritizing features, building effective product roadmaps].\n\nCanny's reputation as a leading solution for capturing and organizing customer feedback resonates strongly with the needs of our community. We often discuss the challenges of [mention a specific problem Canny solves, e.g., managing disparate feedback channels, ensuring user voice is heard in development].\n\nWe are seeking aligned partners to sponsor our content, offering opportunities such as [mention specific formats, e.g., sponsored segments, dedicated newsletter mentions, guest blog posts, co-hosted Q&A sessions]. We believe a partnership would effectively introduce Canny to a highly relevant and influential audience of product builders.\n\nWould you be open to a brief call to explore how a collaboration could benefit both Canny and our community?\n\nThank you for your consideration.\n\nBest regards,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Demonstrate your understanding of the nuances of product management and how Canny fits into a product team's workflow.",
+        "Emphasize that your audience isn't just 'tech' but specifically 'product-focused' or actively involved in 'SaaS building'.",
+        "Offer to showcase how you or a relevant figure in your community uses Canny to solve real-world problems in product development."
+      ]
+    }
+  },
+  {
+    "id": "rippling",
+    "name": "Rippling",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Macro (50k+)",
+    "contactEmail": "info@rippling.com",
+    "contactForm": "https://www.rippling.com/contact-us",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=rippling.com",
+    "dna": {
+      "requirements": "Audience of HR leaders, IT managers, startup founders, and business operators interested in streamlining employee management (HR, IT, Payroll). Content should be professional and business-oriented, focusing on HR tech, SaaS management, benefits, global payroll, or IT automation.",
+      "dealStructure": "Financial sponsorship for podcasts, newsletters, and events targeting HR/IT decision-makers and founders. Potential for co-hosted webinars or joint whitepapers.",
+      "pitchHelper": "Subject: Partnership Opportunity: Reaching HR & Business Leaders with Rippling\n\nDear Rippling Marketing Team,\n\nMy name is [Your Name], and I lead [Your Content/Event Name], a [brief description, e.g., leading podcast for HR professionals, newsletter for startup founders, conference for IT managers] that reaches [Your Audience Size] business leaders and decision-makers. Our community is constantly seeking integrated solutions to simplify [mention relevant pain points, e.g., HR, IT, and payroll management, employee onboarding, global workforce operations].\n\nRippling's unified platform for HR, IT, and Finance perfectly addresses these needs, making it highly relevant to our audience. We frequently cover topics such as [mention relevant topics like HR tech stack, global payroll, IT automation, employee experience], which directly align with Rippling's comprehensive offering.\n\nWe are exploring sponsorship opportunities for [mention specific formats, e.g., sponsored segments, dedicated newsletter features, event keynotes, co-branded content] to provide valuable resources to our audience while connecting them with innovative solutions like Rippling.\n\nWould you be open to a brief discussion about how [Your Content/Event Name] can help Rippling engage with a highly targeted and influential audience of business operators?\n\nThank you for your time and consideration.\n\nBest regards,\n\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Emphasize that your audience appreciates comprehensive solutions like Rippling's, rather than fragmented tools, by referencing pain points of disjointed systems.",
+        "Clearly state which specific business roles (HR, IT, Finance, Founders) your content reaches, as Rippling targets multiple departments.",
+        "Frame the value proposition in terms of how Rippling helps businesses save time, reduce costs, or improve employee experience, and how your content can effectively communicate these benefits."
+      ]
+    }
+  },
+  {
     "id": "videogen",
     "name": "VideoGen",
     "type": "brand",
