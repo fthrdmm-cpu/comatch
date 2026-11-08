@@ -3900,6 +3900,22 @@ const BRANDS_DATA = [
     }
   },
   {
+    "id": "videogen",
+    "name": "VideoGen",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Affiliate",
+    "creatorSize": "All Scale",
+    "contactEmail": "info@videogen.io",
+    "contactForm": "https://videogen.io/affiliate-program",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=videogen.io",
+    "dna": {
+      "requirements": "Manually reviewed applications from creators and marketers. No self-referrals, Google search ads, unauthorized branded keyword bidding, spam, incentivized traffic or cookie stuffing. Official terms: https://videogen.io/affiliate-tos",
+      "dealStructure": "30% recurring commission on referred VideoGen subscriptions. Up to 60-day cookie with last-click attribution. Monthly payouts with a $50 minimum; commissions payable at least 30 days after purchase. Tracking via FirstPromoter.",
+      "pitchHelper": "Hi VideoGen Team,\n\nI would like to apply to the VideoGen affiliate program. My audience is [Audience] on [Channel URL], and I plan to promote VideoGen through [Content plan]. Please review my application through https://videogen.io/affiliate-program.\n\nBest,\n[Name]"
+    }
+  },
+  {
     "id": "raycast",
     "name": "Raycast",
     "type": "brand",
@@ -4341,19 +4357,108 @@ const BRANDS_DATA = [
     }
   },
   {
-    "id": "videogen",
-    "name": "VideoGen",
+    "id": "mixpanel",
+    "name": "Mixpanel",
     "type": "brand",
     "category": "SaaS",
-    "sponsorType": "Affiliate",
-    "creatorSize": "All Scale",
-    "contactEmail": "info@videogen.io",
-    "contactForm": "https://videogen.io/affiliate-program",
-    "logo": "https://www.google.com/s2/favicons?sz=128&domain=videogen.io",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "partnerships@mixpanel.com",
+    "contactForm": "https://mixpanel.com/partners/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=mixpanel.com",
     "dna": {
-      "requirements": "Manually reviewed applications from creators and marketers. No self-referrals, Google search ads, unauthorized branded keyword bidding, spam, incentivized traffic or cookie stuffing. Official terms: https://videogen.io/affiliate-tos",
-      "dealStructure": "30% recurring commission on referred VideoGen subscriptions. Up to 60-day cookie with last-click attribution. Monthly payouts with a $50 minimum; commissions payable at least 30 days after purchase. Tracking via FirstPromoter.",
-      "pitchHelper": "Hi VideoGen Team,\n\nI would like to apply to the VideoGen affiliate program. My audience is [Audience] on [Channel URL], and I plan to promote VideoGen through [Content plan]. Please review my application through https://videogen.io/affiliate-program.\n\nBest,\n[Name]"
+      "requirements": "Creators/developers focused on product management, data analytics, growth, SaaS. Audience should be product managers, marketers, developers, founders. High engagement, quality content, and alignment with data-driven product development.",
+      "dealStructure": "Flat fee for sponsored content (videos, podcasts, newsletters), co-marketing opportunities, affiliate commissions for referrals, access to Mixpanel experts/resources.",
+      "pitchHelper": "Subject: Partnership Opportunity: Elevating Product Analytics for [Your Audience Niche] with Mixpanel\n\nHi [Partner Contact Name],\n\nI'm [Your Name] from [Your Channel/Platform Name], where I create [brief description of content, e.g., in-depth tutorials, expert interviews, thought leadership articles] for a community of [Number] product managers, developers, and founders focused on [Audience Niche, e.g., data-driven growth, product-led strategies].\n\nI've been deeply impressed by Mixpanel's robust product analytics capabilities, particularly [mention a specific feature or use case, e.g., its intuitive funnel analysis or powerful segmentation for understanding user behavior]. My audience consistently seeks tools that empower them to make smarter product decisions, and I believe Mixpanel is a perfect fit to address this need.\n\nI envision a collaboration where we could [suggest specific content ideas, e.g., develop a tutorial series on advanced Mixpanel features, host a webinar on using analytics for feature prioritization, or integrate Mixpanel insights into my upcoming 'Product Growth Strategies' guide]. This would provide immense value to my audience while effectively showcasing Mixpanel's impact to a highly relevant and engaged demographic.\n\nWould you be open to a brief chat next week to explore how a partnership could benefit both our communities?\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Personalize with product depth: Reference specific Mixpanel features or case studies your audience would find valuable. This shows you've done your homework beyond just their name.",
+        "Focus on audience synergy: Clearly articulate *who* your audience is and *why* they are an ideal match for Mixpanel's user base (e.g., 'my audience of product managers actively looking for better conversion tracking tools').",
+        "Suggest concrete B2B content ideas: Instead of vague sponsorship, propose specific content types like a 'deep dive into Mixpanel's A/B testing features' or 'a guest post on product analytics best practices using Mixpanel,' indicating a clear, professional value proposition."
+      ]
+    }
+  },
+  {
+    "id": "amplitude",
+    "name": "Amplitude",
+    "type": "brand",
+    "category": "SaaS",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Mid (50k-100k)",
+    "contactEmail": "partnerships@amplitude.com",
+    "contactForm": "https://amplitude.com/partners",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=amplitude.com",
+    "dna": {
+      "requirements": "Creators with an audience of product leaders, data scientists, developers, and marketers interested in product analytics, user engagement, and data-driven decision-making. High-quality content and audience relevance.",
+      "dealStructure": "Sponsored content (articles, videos, podcasts), co-hosted webinars or events, integration into educational resources, thought leadership collaborations.",
+      "pitchHelper": "Subject: Data-Driven Product Insights: Collaboration with [Your Channel/Platform Name] & Amplitude\n\nDear [Partner Contact Name],\n\nMy name is [Your Name], and I run [Your Channel/Platform Name], a growing community of [Number] product professionals, data analysts, and founders deeply invested in [Audience Focus, e.g., optimizing user journeys, leveraging behavioral data for product growth].\n\nI'm particularly impressed by Amplitude's focus on unlocking product intelligence and its robust capabilities for understanding user behavior, especially features like [mention a specific Amplitude feature, e.g., Behavioral Cohorts or Journeys]. My audience consistently seeks tools that translate complex user data into actionable product strategies.\n\nI believe there's a strong synergy for a partnership where we could [suggest specific content ideas, e.g., produce a case study series showcasing Amplitude's impact on product KPIs, develop a masterclass on using Amplitude for feature adoption, or highlight Amplitude in my upcoming 'Product Stack Reviews']. This would not only provide immense value to my engaged audience but also effectively position Amplitude as a crucial tool for data-driven product development.\n\nWould you be available for a brief call next week to discuss this potential collaboration further?\n\nSincerely,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Highlight specific Amplitude features: Demonstrate familiarity with their platform by mentioning features like 'Behavioral Cohorts,' 'Journeys,' or 'Conversion Drivers' in your pitch, showing genuine interest.",
+        "Quantify audience relevance: Instead of just 'product people,' specify 'X product managers and Y data analysts keenly interested in user retention,' linking directly to Amplitude's core value proposition.",
+        "Propose a specific content format aligned with product analytics: Suggest content types that naturally lend themselves to demonstrating Amplitude's value, such as 'a live demo walkthrough,' 'a comparative analysis with other analytics tools,' or 'a problem/solution focused on a common product challenge Amplitude solves.'"
+      ]
+    }
+  },
+  {
+    "id": "grafanalabs",
+    "name": "Grafana Labs",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "partners@grafana.com",
+    "contactForm": "https://grafana.com/partners/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=grafana.com",
+    "dna": {
+      "requirements": "Creators with an audience of developers, DevOps engineers, SREs, and data professionals interested in observability, monitoring, data visualization, and open-source technologies. Strong technical understanding and quality content, with engagement in the Grafana ecosystem (Grafana, Loki, Prometheus, Tempo).",
+      "dealStructure": "Sponsored technical content (tutorials, deep dives, project showcases), hackathon sponsorships, conference speaking opportunities, co-marketing on open-source projects, access to Grafana Cloud credits.",
+      "pitchHelper": "Subject: Collaborating on Observability: [Your Channel/Platform Name] x Grafana Labs\n\nHi [Partner Contact Name],\n\nMy name is [Your Name], and I manage [Your Channel/Platform Name], a dedicated resource for [Number] developers, DevOps engineers, and SREs passionate about [Audience Focus, e.g., building robust observability stacks, mastering cloud-native monitoring].\n\nI've been a long-time admirer and user of the Grafana ecosystem, particularly [mention a specific product or feature, e.g., Grafana Cloud's integrated Loki and Tempo capabilities, or the flexibility of Grafana's dashboarding]. My audience consistently seeks practical, deep-dive content on cutting-edge observability solutions, and Grafana Labs stands out as a clear leader.\n\nI see a fantastic opportunity for a partnership where we could [suggest specific content ideas, e.g., create a comprehensive tutorial series on building an end-to-end observability stack with Grafana, Loki, and Prometheus; host a live coding session showcasing Grafana Cloud for incident response; or feature Grafana in my upcoming 'DevOps Tooling Deep Dive']. This would resonate strongly with my engaged technical audience, demonstrating Grafana Labs' power and versatility.\n\nWould you be open to a brief discussion next week to explore how we can collaborate to empower more engineers with Grafana's solutions?\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Demonstrate deep technical knowledge: Reference specific Grafana products (Loki, Tempo, Prometheus), plugins, or advanced dashboarding features. This shows you're not just a general tech influencer but a knowledgeable member of their target community.",
+        "Highlight open-source contribution potential: If you contribute to open-source or create tutorials for open-source projects, mention how your content aligns with Grafana Labs' open-source ethos.",
+        "Propose actionable technical content: Instead of generic sponsorships, suggest concrete project ideas like 'building a custom Grafana dashboard for Kubernetes monitoring' or 'a tutorial on Grafana Alerts integrated with Slack,' making the value tangible."
+      ]
+    }
+  },
+  {
+    "id": "appwrite",
+    "name": "Appwrite",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Nano (under 10k)",
+    "contactEmail": "team@appwrite.io",
+    "contactForm": "https://appwrite.io/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=appwrite.io",
+    "dna": {
+      "requirements": "Developers, educators, and content creators focusing on backend development, web/mobile app building, open-source technologies, and serverless architectures. Audience should be engaged developers looking for backend solutions. Strong emphasis on practical, hands-on content.",
+      "dealStructure": "Sponsored tutorials, coding challenges, hackathon prizes, co-created documentation/examples, cloud credits for demo projects, flat fee for video/article placements.",
+      "pitchHelper": "Subject: Empowering Developers with Appwrite: Partnership with [Your Channel/Platform Name]\n\nHi [Appwrite Contact Name],\n\nI'm [Your Name], the creator behind [Your Channel/Platform Name], where I guide a passionate community of [Number] developers through [Audience Focus, e.g., building full-stack applications, exploring open-source backend alternatives].\n\nI've been following Appwrite's journey closely and am incredibly impressed by its mission to simplify backend development with a powerful, open-source platform, especially features like [mention a specific Appwrite feature, e.g., Functions for serverless logic, or Storage for file management]. My audience frequently seeks efficient and developer-friendly backend solutions to accelerate their projects.\n\nI envision a highly impactful partnership where we could [suggest specific content ideas, e.g., develop a multi-part tutorial series building an app from scratch with Appwrite; host a live coding challenge leveraging Appwrite's APIs; or create a comparison guide positioning Appwrite against other backend-as-a-service platforms]. This would provide immense practical value to my developer audience and showcase Appwrite's capabilities to a highly engaged and relevant technical demographic.\n\nWould you be available for a brief chat next week to discuss potential collaboration opportunities?\n\nBest regards,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Highlight open-source alignment: Emphasize your support for open-source projects and how Appwrite's open-source nature aligns with your content philosophy, making it a natural fit.",
+        "Focus on practical developer content: Propose hands-on tutorials, code-along sessions, or project builds that directly demonstrate Appwrite's utility for common developer tasks (auth, database, storage, functions).",
+        "Mention specific Appwrite features or use cases: Show you understand their product by referencing 'Appwrite Functions,' 'Database,' or specific SDKs, demonstrating that you're genuinely interested and informed."
+      ]
+    }
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "type": "brand",
+    "category": "Developer Tools",
+    "sponsorType": "Flat Fee",
+    "creatorSize": "Micro (10k-50k)",
+    "contactEmail": "press@elevenlabs.io",
+    "contactForm": "https://elevenlabs.io/contact",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=elevenlabs.io",
+    "dna": {
+      "requirements": "Creators, developers, and media professionals focused on AI, voice technology, content creation, game development, and productivity. Audience should be engaged with cutting-edge tech, interested in applying AI to practical projects. High-quality audio/video content.",
+      "dealStructure": "Sponsored video reviews/tutorials, podcast segment sponsorships, integration into developer projects/demos, API credits for content creation, co-promotional activities.",
+      "pitchHelper": "Subject: Amplifying Content Creation with AI Voice: Partnership with ElevenLabs\n\nDear [ElevenLabs Contact Name],\n\nI'm [Your Name], the voice and creator behind [Your Channel/Platform Name], reaching a dynamic community of [Number] developers, content creators, and media professionals who are constantly seeking innovative tools to [Audience Focus, e.g., enhance audio production, integrate AI into their applications, or streamline content workflows].\n\nI've been incredibly impressed by ElevenLabs' groundbreaking work in AI voice synthesis, especially the realistic quality and emotional range of your models, like [mention a specific ElevenLabs feature or use case, e.g., your Voice Library for diverse voices, or the API for custom applications]. My audience is deeply interested in leveraging such powerful AI tools to elevate their projects.\n\nI believe there's a unique opportunity for a partnership where we could [suggest specific content ideas, e.g., create a tutorial series on integrating ElevenLabs API into a game; produce a showcase demonstrating advanced voice design for podcasts using your platform; or develop a segment on my show exploring the future of AI in content creation with ElevenLabs]. This would provide immense value and practical insights to my engaged audience, while highlighting ElevenLabs' leading-edge technology.\n\nWould you be open to a brief conversation next week to explore how we can collaborate?\n\nWarmly,\n[Your Name]\n[Your Website/Social Link]",
+      "pitchTips": [
+        "Showcase relevant content creation: If you produce audio or video content, highlight examples where high-quality voice synthesis would be impactful (e.g., 'my podcast thrives on engaging narration,' or 'I create game dev tutorials requiring realistic voiceovers').",
+        "Demonstrate AI/Tech fluency: Use terms like 'AI voice synthesis,' 'generative AI,' 'API integration,' or 'emotional granularity' to show you understand their technical domain and are not just a generic influencer.",
+        "Propose a direct, creative application: Instead of just 'reviewing your product,' suggest a specific creative project like 'building a dialogue system for an indie game with ElevenLabs' or 'creating an AI-narrated documentary short,' illustrating a clear, value-driven partnership."
+      ]
     }
   }
 ];
