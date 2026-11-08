@@ -2154,6 +2154,116 @@ const INVESTORS_DATA = [
         "Use Specific Data & Ambition: Back up claims with strong, quantifiable traction and articulate clear, ambitious milestones that demonstrate your path to market dominance."
       ]
     }
+  },
+  {
+    "id": "apx",
+    "name": "APX",
+    "type": "investor",
+    "investorType": "Accelerator, Venture Capital",
+    "targetStage": "Pre-Seed",
+    "sectors": "B2B SaaS, AI, Fintech, Digital Business Models",
+    "ticketSize": "€50k (initial) + follow-on up to €500k+",
+    "contactEmail": "hello@apx.vc",
+    "contactForm": "https://apx.vc/apply/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=apx.vc",
+    "dna": {
+      "requirements": "Strong founding team (2+ founders), idea/MVP, ambition to build a global company, fit with APX program/network, scalable digital business model.",
+      "dealStructure": "€50k for 5% equity (fixed terms for program), with potential for significant follow-on investment on market terms.",
+      "pitchHelper": "Subject: [Company Name] - Solving [Problem] with [Solution] at Pre-Seed\n\nDear APX Team,\n\nI'm reaching out because we're building [Company Name], a [brief description of what you do, e.g., 'AI-powered SaaS platform for X'] that addresses [specific problem] for [target audience]. We've achieved [key traction, e.g., 'an MVP with X early users and Y positive feedback,' or 'X customer LOIs'].\n\nOur [differentiating factor, e.g., 'proprietary AI algorithm,' or 'unique distribution model'] positions us to [achieve significant market impact/growth]. We believe our vision aligns well with APX's focus on pre-seed digital businesses and strong founder teams.\n\nWe are seeking pre-seed funding to [specific use of funds, e.g., 'scale our MVP and acquire our first 10 paying customers']. Would you be open to a brief call to learn more about how we plan to [achieve key milestone]?\n\nThanks,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "**Direct to Program:** Emphasize how your team and idea fit their accelerator program, not just general investment. Use 'APX Program' in the subject or opening.",
+        "**Highlight Team & Traction (early):** APX heavily emphasizes the founding team and early signs of validation (even an MVP and early user feedback). Clearly articulate why *your team* is uniquely qualified.",
+        "**Concise & Actionable:** Keep the email extremely short, ideally readable on mobile. End with a clear call to action, like a 15-minute intro call."
+      ]
+    }
+  },
+  {
+    "id": "preseed-ventures",
+    "name": "PreSeed Ventures",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed, Seed",
+    "sectors": "B2B SaaS, Deep Tech, Fintech, AI, Climate Tech, Health Tech",
+    "ticketSize": "DKK 2M - 10M (approx. €270k - €1.3M) initially",
+    "contactEmail": "pitch@preseedventures.dk",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=preseedventures.dk",
+    "dna": {
+      "requirements": "Strong team, compelling vision, defensible technology/business model, large market potential, ideally some early traction or proof-of-concept. Focus on Nordic founders or companies with strong Nordic ties.",
+      "dealStructure": "Standard VC equity investment, typically taking a significant minority stake at Seed stage, with potential for significant follow-on.",
+      "pitchHelper": "Subject: Pre-Seed: [Company Name] - AI-powered [Sector] for [Target Market]\n\nDear PreSeed Ventures Team,\n\nOur company, [Company Name], is developing [brief, compelling description of your solution, e.g., 'a Deep Tech platform utilizing explainable AI to optimize X for Y industry']. We are tackling [significant problem] within the [sector] market, estimated at [market size].\n\nWe've already achieved [key milestones, e.g., 'a working prototype with initial pilot customers,' 'secured X LOIs,' or 'assembled a world-class team with backgrounds from Z']. We believe our [unique technology/business model] gives us a strong competitive edge.\n\nWe are currently raising a pre-seed round of [amount] to [achieve next key milestones, e.g., 'expand our pilot program and secure our first 5 paying enterprise customers']. Given PreSeed Ventures' focus on Nordic/European Deep Tech and SaaS at the pre-seed stage, we believe there's a strong fit.\n\nWould you be available for a brief introductory call to discuss our vision and progress?\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "**Nordic/European Angle:** Clearly articulate your connection to the Nordics or Europe, or your strategy to tackle these markets, as they have a strong regional focus.",
+        "**Deep Tech/SaaS Specifics:** When pitching, highlight the technological innovation, competitive moat, and the B2B SaaS model's scalability. Avoid vague buzzwords.",
+        "**Traction & Vision:** Even at pre-seed, demonstrate any form of traction (research, pilots, team experience, early customer interest). Couple this with a clear, ambitious vision for market leadership."
+      ]
+    }
+  },
+  {
+    "id": "venture-friends",
+    "name": "Venture Friends",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed, Series A",
+    "sectors": "SaaS, Fintech, Marketplaces, Proptech, Traveltech, AI",
+    "ticketSize": "€500k - €2M for Seed",
+    "contactEmail": "info@venturefriends.vc",
+    "contactForm": "https://venturefriends.vc/pitch-us/",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=venturefriends.vc",
+    "dna": {
+      "requirements": "Strong founding team, validated problem, early traction (users, revenue, partnerships), clear path to market leadership, scalable business model. Focus on Greece, Southern, and Eastern Europe, or diaspora founders.",
+      "dealStructure": "Standard VC equity investment, minority stake, with potential for follow-on in later rounds.",
+      "pitchHelper": "Subject: Seed Stage: [Company Name] - Scaling [SaaS/Fintech Solution] in [Region]\n\nDear Venture Friends Team,\n\nI'm [Your Name], Co-founder of [Company Name], a [briefly describe your company, e.g., 'SaaS platform automating X for Y businesses']. We are addressing [specific market need] within the [Fintech/SaaS/Marketplace] sector, which we believe has significant growth potential in Southern/Eastern Europe.\n\nIn just [timeframe], we've achieved [key traction metrics, e.g., '€X MRR with Y paying customers,' or 'Z active users and strong engagement']. Our initial market focus is [specific region/country, e.g., 'Greece and neighbouring markets'], where we've identified a clear demand for our solution.\n\nWe are currently raising a Seed round of [amount] to [explain use of funds, e.g., 'accelerate product development and expand our sales team to reach X customers within 12 months']. Given Venture Friends' expertise and track record in scaling early-stage companies in our target regions, we see a strong synergy.\n\nWould you be open to a quick 20-minute discussion to delve deeper into our growth strategy?\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "**Regional Focus:** Explicitly mention your connection to Southern/Eastern Europe or how your solution addresses needs in these markets. This is a key differentiator for them.",
+        "**Traction is Key:** At Seed, they expect to see some tangible traction (revenue, users, pilot projects). Quantify your achievements clearly and early in the email.",
+        "**Show Scalability:** Highlight how your business model can scale rapidly, especially if it's a marketplace or SaaS, which are their core interests."
+      ]
+    }
+  },
+  {
+    "id": "dream-machine",
+    "name": "Dream Machine",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Pre-Seed, Seed",
+    "sectors": "AI, Deep Tech, SaaS, Fintech, Future of Work, Digital Health, Sustainability",
+    "ticketSize": "€200k - €1.5M",
+    "contactEmail": "hello@dreammachine.vc",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=dreammachine.vc",
+    "dna": {
+      "requirements": "Visionary founders, disruptive technology/approach, large market opportunity, early product development (even just an idea with strong founders at Pre-Seed), demonstrable potential for impact. Focus on Europe.",
+      "dealStructure": "Standard VC equity investment, minority stake, with reserves for follow-on rounds.",
+      "pitchHelper": "Subject: Pre-Seed/Seed: [Company Name] - Disrupting [Industry] with [AI/Deep Tech Solution]\n\nDear Dream Machine Team,\n\nI am writing to you today as the co-founder of [Company Name], a [brief description, e.g., 'Deep Tech startup leveraging AI to solve X problem']. We are building [your core product/technology] to address [specific pain point] within the [target sector] market, which we believe is ripe for disruption.\n\nOur team has [relevant experience/background, e.g., 'deep expertise in AI research and product development']. While we are at [stage, e.g., 'MVP development' or 'initial customer validation'], we have already achieved [any early wins, e.g., 'successful proof-of-concept,' 'positive feedback from X industry experts,' or 'a strong technical roadmap'].\n\nWe are seeking a Pre-Seed/Seed investment of [amount] to [explain specific goals, e.g., 'finalize our MVP, conduct initial pilots, and secure early customer traction']. We are particularly drawn to Dream Machine's focus on visionary teams and impactful AI/Deep Tech solutions across Europe.\n\nWould you be open to a brief conversation to explore how our vision aligns with your investment thesis?\n\nSincerely,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "**Visionary Angle:** Dream Machine emphasizes visionary founders and disruptive potential. Frame your company's mission and future impact boldly.",
+        "**Deep Dive into Tech/Problem:** If you're Deep Tech or AI, give a glimpse into the innovative core of your technology and how it uniquely solves the problem. Provide enough detail to pique their interest.",
+        "**Founder Story:** Briefly touch upon why *you* and your team are the right people to build this. They care deeply about the founders' drive and insights; weaving this into your pitch can be impactful."
+      ]
+    }
+  },
+  {
+    "id": "inventure",
+    "name": "Inventure",
+    "type": "investor",
+    "investorType": "Venture Capital",
+    "targetStage": "Seed, Series A",
+    "sectors": "Deep Tech, SaaS, Fintech, AI, Digital Health, Industrial Tech",
+    "ticketSize": "€1M - €5M+",
+    "contactEmail": "info@inventure.fi",
+    "contactForm": null,
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=inventure.fi",
+    "dna": {
+      "requirements": "Strong founding team, large market opportunity, scalable business model, defensible technology (especially in Deep Tech), early commercial traction or strong product-market fit indicators. Focus on Nordic and Baltic roots/market.",
+      "dealStructure": "Standard VC equity investment, significant minority stake, with substantial reserves for follow-on investments through Series A.",
+      "pitchHelper": "Subject: Seed Round: [Company Name] - Nordic Deep Tech SaaS for [Industry]\n\nDear Inventure Team,\n\nI'm writing from [Company Name], a [brief description, e.g., 'Deep Tech SaaS company developing X for Y enterprises']. We are addressing [critical problem] within the [industry] sector with our [innovative technology/approach], targeting the [Nordic/European] market.\n\nWe have already achieved significant traction, including [quantifiable metrics like: '€X ARR with Y enterprise customers,' 'successful pilots with Z major players,' or 'patented technology with strong IP']. Our team, composed of [relevant backgrounds], is uniquely positioned to execute on this vision.\n\nWe are currently raising a Seed round of [amount] to [explain key milestones, e.g., 'scale our sales team across the Nordics and further develop our AI capabilities']. Inventure's deep expertise in Deep Tech, SaaS, and the Nordic market makes you an ideal partner for our next phase of growth.\n\nWould you be available for a call to explore a potential partnership? We've attached our deck for your review.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Website]\n[Link to Pitch Deck]",
+      "pitchTips": [
+        "**Nordic/Baltic Relevance:** Clearly articulate your connection to the Nordic/Baltic region, either through team, market focus, or initial operations. This is a crucial filter for Inventure.",
+        "**Focus on Traction & Defensibility:** At Seed, Inventure expects to see strong early traction and a clear competitive advantage (e.g., Deep Tech IP). Quantify these achievements early in your message.",
+        "**Strategic Fit:** Emphasize how your company's long-term vision and sector align with Inventure's portfolio and areas of expertise (Deep Tech, specific SaaS verticals). Highlight any unique partnerships or market access you bring."
+      ]
+    }
   }
 ];
 
